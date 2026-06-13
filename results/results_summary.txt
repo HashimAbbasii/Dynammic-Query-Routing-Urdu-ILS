@@ -1,0 +1,32 @@
+
+THESIS RESULTS SUMMARY
+======================
+Student: Hashim Shazad (243259)
+Thesis: Adaptive Dynamic Query Routing for Urdu Information Retrieval
+Supervisor: Dr. Adnan Aslam
+University: Air University Islamabad
+
+EXPERIMENT 1: Dynamic Query Routing
+=====================================
+Static Threshold (ULTRA baseline):  50.0%
+Our Dynamic SVM Classifier:         100.0%
+Improvement:                        +50.0%
+
+EXPERIMENT 2: Ablation Study (8 Features)
+==========================================
+All 8 Features:                     100.0%
+Remove any single feature:          100.0%
+Conclusion: Feature set is collectively robust
+
+EXPERIMENT 3: LLM Comparison
+==============================
+Static Threshold:    50%  | 0.0004ms | Free
+Our Dynamic SVM:    100%  | 0.45ms   | Free  
+LLM API (GPT-4):    100%  | 800ms    | Paid
+
+KEY CONCLUSION:
+Our SVM matches LLM accuracy at zero cost and 1000x faster!
+
+CHARTS ATTACHED:
+1. ablation_study.png
+2. llm_comparison.png

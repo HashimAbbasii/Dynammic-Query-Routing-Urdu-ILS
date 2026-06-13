@@ -1,0 +1,74 @@
+{
+  "experiment": "Confidence-Based Query Routing",
+  "total_queries_tested": 8,
+  "confidence_levels": {
+    "HIGH (>=85%)": "Full semantic search — ChromaDB",
+    "MEDIUM (60-85%)": "Hybrid search — BM25 + ChromaDB",
+    "LOW (<60%)": "Expand query first"
+  },
+  "results": [
+    {
+      "query": "کرکٹ میچ",
+      "label": "short",
+      "confidence": 99.72,
+      "level": "HIGH",
+      "action": "Full semantic search — ChromaDB"
+    },
+    {
+      "query": "ڈالر قیمت",
+      "label": "short",
+      "confidence": 99.69,
+      "level": "HIGH",
+      "action": "Full semantic search — ChromaDB"
+    },
+    {
+      "query": "پاکستان میں معاشی بحران کے دوران عالمی بینک کی امداد",
+      "label": "long",
+      "confidence": 93.68,
+      "level": "HIGH",
+      "action": "Full semantic search — ChromaDB"
+    },
+    {
+      "query": "cricket match",
+      "label": "short",
+      "confidence": 99.34,
+      "level": "HIGH",
+      "action": "Full semantic search — ChromaDB"
+    },
+    {
+      "query": "what are the latest developments in pakistan cricket team",
+      "label": "long",
+      "confidence": 98.44,
+      "level": "HIGH",
+      "action": "Full semantic search — ChromaDB"
+    },
+    {
+      "query": "پی ایس ایل",
+      "label": "short",
+      "confidence": 99.48,
+      "level": "HIGH",
+      "action": "Full semantic search — ChromaDB"
+    },
+    {
+      "query": "حکومت کی جانب سے نئی تعلیمی پالیسی کا اعلان اور مضمرات",
+      "label": "long",
+      "confidence": 95.93,
+      "level": "HIGH",
+      "action": "Full semantic search — ChromaDB"
+    },
+    {
+      "query": "pm speech today",
+      "label": "short",
+      "confidence": 99.14,
+      "level": "HIGH",
+      "action": "Full semantic search — ChromaDB"
+    }
+  ],
+  "summary": {
+    "HIGH": 8,
+    "MEDIUM": 0,
+    "LOW": 0,
+    "avg_confidence": 98.18
+  },
+  "conclusion": "System achieves HIGH confidence on all queries — avg confidence 98%+"
+}

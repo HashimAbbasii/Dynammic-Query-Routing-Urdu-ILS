@@ -1,0 +1,53 @@
+{
+  "experiment": "Feature Ablation Study",
+  "model": "SVM (RBF kernel)",
+  "total_features": 8,
+  "results": [
+    {
+      "name": "ALL 8 Features",
+      "accuracy": 100.0,
+      "drop": "—"
+    },
+    {
+      "name": "Without: char_length",
+      "accuracy": 100.0,
+      "drop": "-0.00%"
+    },
+    {
+      "name": "Without: word_count",
+      "accuracy": 100.0,
+      "drop": "-0.00%"
+    },
+    {
+      "name": "Without: unique_words",
+      "accuracy": 100.0,
+      "drop": "-0.00%"
+    },
+    {
+      "name": "Without: avg_word_length",
+      "accuracy": 100.0,
+      "drop": "-0.00%"
+    },
+    {
+      "name": "Without: lexical_diversity",
+      "accuracy": 100.0,
+      "drop": "-0.00%"
+    },
+    {
+      "name": "Without: urdu_char_ratio",
+      "accuracy": 100.0,
+      "drop": "-0.00%"
+    },
+    {
+      "name": "Without: has_question_words",
+      "accuracy": 100.0,
+      "drop": "-0.00%"
+    },
+    {
+      "name": "Without: is_long_by_static",
+      "accuracy": 100.0,
+      "drop": "-0.00%"
+    }
+  ],
+  "conclusion": "All feature subsets achieve 100% — collectively robust"
+}

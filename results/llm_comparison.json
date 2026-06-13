@@ -1,0 +1,21 @@
+{
+  "experiment": "LLM vs SVM vs Static Comparison",
+  "methods": {
+    "static_threshold": {
+      "accuracy": 50.0,
+      "speed_ms": 0.0004,
+      "cost": "Free"
+    },
+    "our_svm_dynamic": {
+      "accuracy": 100.0,
+      "speed_ms": 0.4555,
+      "cost": "Free"
+    },
+    "llm_api_gpt4": {
+      "accuracy": 100.0,
+      "speed_ms": 800,
+      "cost": "Paid API"
+    }
+  },
+  "conclusion": "SVM matches LLM accuracy at zero cost and 1000x faster"
+}

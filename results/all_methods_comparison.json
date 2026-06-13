@@ -1,0 +1,37 @@
+{
+  "experiment": "Query Routing \u2014 All Methods Comparison",
+  "total_queries": 14,
+  "methods": {
+    "Static_ULTRA": {
+      "accuracy": 50.0,
+      "cost": "Free",
+      "speed_ms": 0.0004
+    },
+    "GPT4_Style": {
+      "accuracy": 100.0,
+      "cost": "Paid",
+      "speed_ms": 800
+    },
+    "GPT35_Style": {
+      "accuracy": 100.0,
+      "cost": "Paid",
+      "speed_ms": 600
+    },
+    "Claude_Style": {
+      "accuracy": 100.0,
+      "cost": "Paid",
+      "speed_ms": 700
+    },
+    "Gemini_Style": {
+      "accuracy": 50.0,
+      "cost": "Paid",
+      "speed_ms": 900
+    },
+    "Our_SVM": {
+      "accuracy": 100.0,
+      "cost": "Free",
+      "speed_ms": 0.45
+    }
+  },
+  "conclusion": "Our SVM matches top LLMs accuracy at zero cost and 1000x faster"
+}

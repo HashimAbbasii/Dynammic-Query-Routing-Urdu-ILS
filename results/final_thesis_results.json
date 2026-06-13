@@ -1,0 +1,34 @@
+{
+  "thesis_title": "ULTRA Roman Urdu Extension & Dynamic Threshold",
+  "author": "Hashim Shazad",
+  "date": "2026-06-12 13:51:24.810822",
+  "research_question_1": {
+    "question": "Can Roman Urdu queries be handled effectively?",
+    "result": "YES",
+    "original_ultra": "0.00%",
+    "your_system": "92.50%",
+    "improvement": "+92.50%",
+    "conclusion": "Roman Urdu layer enables completely new capability"
+  },
+  "research_question_2": {
+    "question": "Can dynamic classifier beat static threshold?",
+    "result": "YES",
+    "static_threshold_accuracy": "50.00%",
+    "dynamic_classifier_accuracy": "100.00%",
+    "improvement": "+50.00%",
+    "conclusion": "SVM classifier dramatically outperforms static θ=150"
+  },
+  "research_question_3": {
+    "question": "Which transformer model performs best?",
+    "model_used": "paraphrase-multilingual-MiniLM-L12-v2",
+    "baseline_precision": "87.50%",
+    "extended_precision": "92.50%",
+    "conclusion": "Multilingual model handles both Urdu and Roman Urdu"
+  },
+  "overall_summary": {
+    "baseline_p15_native_urdu": "87.50%",
+    "extended_p15_roman_urdu": "92.50%",
+    "query_routing_improvement": "+50.00%",
+    "roman_urdu_improvement": "+92.50%"
+  }
+}

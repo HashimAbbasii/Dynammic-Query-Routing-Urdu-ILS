@@ -1,0 +1,10 @@
+import pandas as pd
+import transformers
+import chromadb
+import urduhack
+print("All libraries loaded successfully!")
+print("Transformers version:", transformers.__version__)
+
+df = pd.read_csv("../data/urdu_news.csv")
+print("Dataset shape:", df.shape)
+print(df.head(3))

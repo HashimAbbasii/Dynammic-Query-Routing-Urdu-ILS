@@ -1,0 +1,17 @@
+{
+  "experiment": "Roman Urdu Extension",
+  "date": "2026-05-25 16:10:47.367868",
+  "original_ultra_roman_urdu": 0.0,
+  "your_system_roman_urdu": 92.5,
+  "improvement": 92.5,
+  "individual_results": {
+    "cricket match ka nateeja": 100.0,
+    "PM ki speech about economy": 100.0,
+    "pakistan team ka game": 100.0,
+    "dollar rate aaj pakistan": 100.0,
+    "drama serial episode aaj": 100.0,
+    "mobile phone naya model": 86.67,
+    "punjab police corruption": 53.33,
+    "cricket world cup score": 100.0
+  }
+}
