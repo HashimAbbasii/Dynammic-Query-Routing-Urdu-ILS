@@ -38,25 +38,15 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
-*.mo
-*.pot
+
+# ===== LOGS & LOCAL SETTINGS =====
 *.log
 local_settings.py
-db.sqlite3
-db.sqlite3-journal
 instance/
 .webassets-cache
 .scrapy
-docs/_build/
-.pybuilder/
-target/
-.ipynb_checkpoints
-profile_default/
-ipython_config.py
-__pypackages__/
-celerybeat-schedule
-celerybeat.pid
-*.sage.py
+
+# ===== VIRTUAL ENVIRONMENTS =====
 .env
 .venv
 env/
@@ -64,10 +54,31 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-.spyderproject
-.spyproject
-.ropeproject
-/site
+ultra_env/
+
+# ===== JUPYTER =====
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# ===== DATABASES =====
+db.sqlite3
+db.sqlite3-journal
+*.db
+*.sqlite3
+*.sqlite
+
+# ===== BUILD / DIST =====
+docs/_build/
+.pybuilder/
+target/
+__pypackages__/
+celerybeat-schedule
+celerybeat.pid
+*.sage.py
+
+# ===== TYPE CHECKERS & LINTERS =====
 .mypy_cache/
 .dmypy.json
 dmypy.json
@@ -75,57 +86,16 @@ dmypy.json
 .pytype/
 cython_debug/
 .ruff_cache/
-.pypirc
+
+# ===== EDITOR & TOOL CONFIGS =====
 .cursorignore
 .cursorindexingignore
 .pdm.toml
 .pdm-python
 .pdm-build/
-
-# ===== JUPYTER =====
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/*
-
-# ===== ULTRA PROJECT SPECIFIC =====
-
-# ChromaDB — EXACT folder name fix!
-data/chromadb/
-data/chromadb/**
-chroma_db/
-
-# Dataset — bohot bara!
-data/urdu_news.csv
-data/clean_articles.csv
-data/*.csv
-data/*.txt
-data/*.parquet
-data/*.xlsx
-
-# Embeddings — GB size!
-data/*.npy
-data/*.npz
-embeddings/
-*.npy
-*.npz
-
-# Large binary files
-*.bin
-*.pt
-*.pth
-*.h5
-*.db
-*.sqlite3
-*.sqlite
-
-# Large pretrained models
-models/sentence_transformer/
-models/paraphrase*/
-
-# Anaconda environment
-ultra_env/
-
-# HashimAbbasii folder — wrong location!
-HashimAbbasii/
+.spyderproject
+.spyproject
+.ropeproject
 
 # ===== OS FILES =====
 .DS_Store
@@ -133,13 +103,48 @@ Thumbs.db
 desktop.ini
 *~
 
-# ===== KEEP THESE — DO NOT IGNORE =====
-# data/training_queries_real.py ✅
-# models/svm_classifier.pkl ✅
-# models/scaler.pkl ✅
-# models/training_info.json ✅
-# models/roman_urdu_dict_expanded.json ✅
-# results/*.json ✅
-# results/*.png ✅
-# results/*.txt ✅
-# notebooks/*.ipynb ✅
+# ===== ULTRA PROJECT — LARGE DATA FILES =====
+
+# ChromaDB (very large binary database)
+data/chromadb/
+data/chromadb/**
+chroma_db/
+
+# Raw datasets (hundreds of MBs)
+data/*.csv
+data/*.txt
+data/*.parquet
+data/*.xlsx
+
+# Numpy embeddings (100–200 MB each)
+data/*.npy
+data/*.npz
+*.npy
+*.npz
+
+# Large binary / model weights
+*.bin
+*.pt
+*.pth
+*.h5
+
+# Pretrained sentence transformer models
+models/sentence_transformer/
+models/paraphrase*/
+
+# ===== PERSONAL / MISPLACED FOLDERS =====
+HashimAbbasii/
+
+# ===== DO NOT IGNORE — THESE MUST GO TO GITHUB =====
+# (Git tracks these automatically, listed here just as a reminder)
+#
+# data/training_queries_real.py        ✅ your query generator script
+# models/svm_classifier.pkl            ✅ trained SVM model
+# models/scaler.pkl                    ✅ feature scaler
+# models/training_info.json            ✅ training metadata
+# models/roman_urdu_dict_expanded.json ✅ Roman Urdu dictionary
+# results/*.json                       ✅ evaluation results
+# results/*.png                        ✅ charts and plots
+# results/*.txt                        ✅ result logs
+# notebooks/*.ipynb                    ✅ all your notebooks
+# scripts/*.py                         ✅ utility scripts
