@@ -13,9 +13,8 @@
 
 | | |
 |---|---|
-| **Student** | Hashim Shazad (Roll No: 243259) |
+| **Student** | Hashim Shazad |
 | **Program** | MS Artificial Intelligence |
-| **University** | Air University Islamabad |
 | **Supervisor** | Dr. Adnan Aslam |
 | **Base Paper** | ULTRA — Bashir, Qaiser, Hussain (PIEAS 2026) |
 
@@ -182,7 +181,7 @@ data/*.npy                # Embeddings
 ## 📬 Contact
 
 **Hashim Shazad**  
-MS Artificial Intelligence — Air University Islamabad  
+MS Artificial Intelligence  
 GitHub: [@HashimAbbasii](https://github.com/HashimAbbasii)
 
 ---
