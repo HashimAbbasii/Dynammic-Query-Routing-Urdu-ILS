@@ -4,7 +4,8 @@
   <img src="https://img.shields.io/badge/Python-3.11.15-blue?style=for-the-badge&logo=python"/>
   <img src="https://img.shields.io/badge/ML-SVM-green?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/NLP-Urdu%20IR-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Accuracy-100%25-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/AUC-1.000-brightgreen?style=for-the-badge"/>
 </p>
 
 ---
@@ -22,36 +23,9 @@
 
 ## 📌 Overview
 
-This project proposes the **first dynamic query intent classifier for Urdu Information Retrieval**, replacing the static length-based routing of ULTRA with a learned semantic SVM approach.
+This project proposes the **first dynamic query intent classifier for Urdu Information Retrieval**, replacing the static length-based routing of ULTRA with a learned semantic SVM approach achieving **100% routing accuracy** versus **50% for the static baseline**.
 
 > *"We propose the first dynamic query intent classifier for Urdu IR, replacing static length-based routing with a learned semantic approach achieving 100% routing accuracy versus 50% for the static baseline."*
-
----
-
-## 🏆 Key Results
-
-| Experiment | Result |
-|---|---|
-| Baseline Precision@15 | **96%** |
-| Roman Urdu Precision@15 | **92.5%** |
-| Dynamic SVM Accuracy | **100%** |
-| Static Threshold Accuracy | **50%** |
-| Confidence Score (avg) | **98.18%** |
-| Dictionary Expansion | **30 → 179 words (6x)** |
-| Dataset Size | **369 real queries** |
-
-### 🤖 LLM Comparison
-
-| Method | Accuracy | Speed | Cost |
-|---|---|---|---|
-| Static Threshold | ❌ 50% | 0.0004ms | Free |
-| GPT-4 Style | ✅ 100% | ~800ms | Paid |
-| GPT-3.5 Style | ✅ 100% | ~600ms | Paid |
-| Claude Style | ✅ 100% | ~700ms | Paid |
-| Gemini Style | ❌ 50% | ~900ms | Paid |
-| **Our SVM** | ✅ **100%** | **0.45ms** | **Free** |
-
-> **Our SVM matches top LLMs at zero cost and 1000x faster!**
 
 ---
 
@@ -68,15 +42,15 @@ Roman Urdu Detection
          ↓                         ↓
 8-Feature Extraction ←────────────┘
          ↓
-Dynamic SVM Classifier
+Dynamic SVM Classifier (100% Accuracy)
          ↓
-Confidence Score (0-100%)
+Confidence Score (Avg: 98.18%)
          ↓
-┌────────────────────────────────┐
-│ HIGH (≥85%) → Full Semantic   │
-│ MED  (60%)  → Hybrid Search   │
-│ LOW  (<60%) → Expand Query    │
-└────────────────────────────────┘
+┌────────────────────────────────────┐
+│ HIGH (≥85%)  → Full Semantic Search│
+│ MED  (60-85%)→ Hybrid Search       │
+│ LOW  (<60%)  → Expand Query        │
+└────────────────────────────────────┘
          ↓
 ChromaDB Vector Search (HNSW)
          ↓
@@ -85,32 +59,107 @@ Top-15 Relevant Articles
 
 ---
 
+## 🏆 Key Results
+
+| Experiment | Result |
+|---|---|
+| Baseline Precision@15 | **96%** |
+| Roman Urdu Precision@15 | **92.5%** |
+| Dynamic SVM Accuracy | **100%** |
+| Static Threshold Accuracy | **50%** |
+| ROC-AUC Score | **1.000** |
+| Confidence Score (avg) | **98.18%** |
+| Dictionary Expansion | **30 → 179 words (6x)** |
+| Training Dataset | **369 real queries** |
+| F1 / Precision / Recall | **1.00 / 1.00 / 1.00** |
+
+---
+
+## 🤖 LLM Comparison
+
+| Method | Accuracy | Speed | Cost |
+|---|---|---|---|
+| Static Threshold (ULTRA) | ❌ 50% | 0.0004ms | Free |
+| GPT-4 Style | ✅ 100% | ~800ms | Paid |
+| GPT-3.5 Style | ✅ 100% | ~600ms | Paid |
+| Claude Style | ✅ 100% | ~700ms | Paid |
+| Gemini Style | ❌ 50% | ~900ms | Paid |
+| **Our Dynamic SVM** | ✅ **100%** | **0.45ms** | **Free** |
+
+> **Our SVM matches top LLMs at zero cost and 1000x faster!**
+
+---
+
+## 📊 Results Visualization
+
+### System Architecture
+![System Architecture](results/system_architecture.png)
+
+### Performance Comparison
+![Performance](results/performance_comparison.png)
+
+### Confusion Matrix
+![Confusion Matrix](results/confusion_matrix.png)
+
+### ROC Curve
+![ROC Curve](results/roc_curve.png)
+
+### Feature Importance
+![Feature Importance](results/feature_importance.png)
+
+### Query Distribution
+![Query Distribution](results/query_distribution.png)
+
+### Efficiency Analysis
+![Efficiency](results/efficiency_analysis.png)
+
+---
+
+## 🔬 Novel Contributions
+
+1. **Dynamic SVM Routing** — replaces static θ=150 threshold
+2. **8-Feature Semantic Classifier** — char, word, lexical, Urdu ratio features
+3. **Confidence-Based 3-Tier Routing** — HIGH/MEDIUM/LOW adaptive search
+4. **Roman Urdu Support** — 179-word dictionary (6x expansion)
+5. **LLM Comparison** — validated against GPT-4, GPT-3.5, Claude, Gemini
+6. **Ablation Study** — all 8 features validated as collectively robust
+
+---
+
 ## 📁 Project Structure
 
 ```
 ULTRA_Project/
 ├── notebooks/
-│   ├── 01_preprocessing.ipynb      # Data cleaning
-│   ├── 02_embeddings.ipynb         # Sentence embeddings
-│   ├── 03_chromadb.ipynb           # Vector database
-│   ├── 04_retrieval.ipynb          # Top-15 retrieval
-│   ├── 05_roman_urdu.ipynb         # Roman Urdu layer
-│   ├── 06_dynamic_classifier.ipynb # SVM classifier
-│   ├── 07_evaluation.ipynb         # Results & charts
-│   ├── 08_baseline_fix.ipynb       # Baseline comparison
-│   ├── 09_ablation.ipynb           # Ablation study
-│   ├── 10_llm_comparison.ipynb     # LLM comparison
-│   ├── 11_confidence_routing.ipynb # Confidence routing
-│   ├── 12_roman_urdu_expansion.ipynb # Dictionary expansion
-│   └── DEMO_defense.ipynb          # Live demo
+│   ├── 01_preprocessing.ipynb
+│   ├── 02_embeddings.ipynb
+│   ├── 03_chromadb.ipynb
+│   ├── 04_retrieval.ipynb
+│   ├── 05_roman_urdu.ipynb
+│   ├── 06_dynamic_classifier.ipynb
+│   ├── 07_evaluation.ipynb
+│   ├── 08_baseline_fix.ipynb
+│   ├── 09_ablation.ipynb
+│   ├── 10_llm_comparison.ipynb
+│   ├── 11_confidence_routing.ipynb
+│   ├── 12_roman_urdu_expansion.ipynb
+│   ├── 13_thesis_graphs.ipynb
+│   └── DEMO_defense.ipynb
 ├── models/
-│   ├── svm_classifier.pkl          # Trained SVM model
-│   ├── scaler.pkl                  # Feature scaler
-│   ├── training_info.json          # Training metadata
-│   └── roman_urdu_dict_expanded.json # 179-word dictionary
+│   ├── svm_classifier.pkl
+│   ├── scaler.pkl
+│   ├── training_info.json
+│   └── roman_urdu_dict_expanded.json
 ├── data/
-│   └── training_queries_real.py    # 369 training queries
+│   └── training_queries_real.py
 ├── results/
+│   ├── confusion_matrix.png
+│   ├── roc_curve.png
+│   ├── system_architecture.png
+│   ├── feature_importance.png
+│   ├── performance_comparison.png
+│   ├── query_distribution.png
+│   ├── efficiency_analysis.png
 │   ├── ablation_study.png
 │   ├── llm_comparison.png
 │   ├── confidence_routing.png
@@ -141,7 +190,7 @@ pip install pandas numpy matplotlib seaborn joblib
 ```
 
 ### 4. Large Files (Contact Author)
-These files exceed GitHub limits — contact for access:
+These files exceed GitHub limits:
 ```
 data/urdu_news.csv        # 111,860 Urdu articles
 data/chromadb/            # Vector database
@@ -152,17 +201,6 @@ data/*.npy                # Embeddings
 ```
 01 → 02 → 03 → 04 → 05 → 06 → 07
 ```
-
----
-
-## 🔬 Novel Contributions
-
-1. **Dynamic SVM Routing** — replaces static θ=150 threshold
-2. **8-Feature Semantic Classifier** — char, word, lexical, Urdu ratio features
-3. **Confidence-Based 3-Tier Routing** — HIGH/MEDIUM/LOW adaptive search
-4. **Roman Urdu Support** — 179-word dictionary (6x expansion)
-5. **LLM Comparison** — validated against GPT-4, GPT-3.5, Claude, Gemini
-6. **Ablation Study** — all 8 features validated as collectively robust
 
 ---
 
@@ -180,8 +218,8 @@ data/*.npy                # Embeddings
 
 ## 📬 Contact
 
-**Hashim Shazad**  
-MS Artificial Intelligence  
+**Hashim Shazad**
+MS Artificial Intelligence
 GitHub: [@HashimAbbasii](https://github.com/HashimAbbasii)
 
 ---
