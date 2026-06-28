@@ -1,0 +1,13 @@
+Test,Result,Threshold,Status,Examiner Concern
+Cohen's d (Mean),3.581,>= 0.8 (Large),PASS ✅,369 queries sufficient?
+Cohen's d (Max),14.249,>= 0.8 (Large),PASS ✅,369 queries sufficient?
+Large Effect Features,3 / 8,>= 3/8,PASS ✅,369 queries sufficient?
+Learning Curve — Train Acc,100.00%,>= 95%,PASS ✅,100% = overfitting?
+Learning Curve — Val Acc,100.00%,>= 95%,PASS ✅,100% = overfitting?
+Learning Curve — Gap,0.00%,<= 5%,PASS ✅,100% = overfitting?
+C-Param Range (Practical),0.54%,<= 5%,PASS ✅,SVM overfit kar sakta hai?
+C-Param Min CV Acc,99.46%,>= 95%,PASS ✅,SVM overfit kar sakta hai?
+C-Param Max CV Acc,100.00%,>= 95%,PASS ✅,SVM overfit kar sakta hai?
+External Validation Acc,100.00%,>= 95%,PASS ✅,No external validation?
+External Validation Conf,99.27%,>= 95%,PASS ✅,No external validation?
+External Queries Tested,50,>= 50,PASS ✅,No external validation?
