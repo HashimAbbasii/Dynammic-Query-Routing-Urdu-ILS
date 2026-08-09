@@ -7,7 +7,7 @@
 [![AUC-ROC](https://img.shields.io/badge/AUC--ROC-1.000-brightgreen?style=for-the-badge)](https://github.com/HashimAbbasii/Dynammic-Query-Routing-Urdu-ILS)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-> **MS Thesis Project** — The first dynamic query intent classifier for Urdu Information Retrieval, replacing static length-based routing with a learned semantic SVM approach that achieves **100% routing accuracy** versus 50% for the static baseline — at **zero cost** and **1000× faster** than LLMs.
+> **MS Thesis Project** — To the best of our knowledge, one of the first dynamic query intent classifiers for Urdu Information Retrieval, replacing static length-based routing with a learned semantic SVM approach that achieves **100% routing accuracy** versus 50% for the static baseline (validated via 5-fold CV, leave-one-topic-out across 13 domains, and external testing — see [Robustness Validation](#-robustness-validation)) — at **zero cost** and **1000× faster** than GPT-4.
 
 ---
 
@@ -80,7 +80,8 @@ Urdu is Pakistan's national language with **230 million+ speakers**, yet existin
         ┌────────────────────┐ │
         │ Dictionary         │ │
         │ Transliteration    │ │
-        │ (179-word lexicon) │ │
+        │ (198-word lexicon, │ │
+        │ + fuzzy fallback)  │ │
         └────────┬───────────┘ │
                  │             │
                  └──────┬──────┘
@@ -147,9 +148,9 @@ This thesis makes **6 original contributions** to Urdu IR:
 | 1 | **Dynamic SVM Routing** | Replaces static θ=150 threshold; 100% vs 50% accuracy |
 | 2 | **8-Feature Semantic Classifier** | Char, word, lexical, Urdu-ratio features — all validated |
 | 3 | **Confidence-Based 3-Tier Routing** | HIGH / MEDIUM / LOW adaptive search strategy |
-| 4 | **Roman Urdu Support Layer** | 179-word dictionary (6× expansion from 30) |
-| 5 | **LLM Comparison Benchmark** | Validated against GPT-4, GPT-3.5, Claude, Gemini |
-| 6 | **Ablation + Robustness Study** | Cohen's d=3.58, 12/12 robustness checks passed |
+| 4 | **Roman Urdu Support Layer** | 198-word dictionary with fuzzy spelling-match fallback |
+| 5 | **LLM Comparison Benchmark** | Validated against GPT-4 (live); Gemini/GPT-3.5/Claude figures are illustrative pending live benchmarking |
+| 6 | **Ablation + Robustness Study** | Cohen's d=3.58, feature-leak ablation, leave-one-topic-out across 13 domains |
 
 ---
 
@@ -157,16 +158,18 @@ This thesis makes **6 original contributions** to Urdu IR:
 
 | Experiment | Result |
 |------------|--------|
-| Baseline Precision@15 | **96%** |
-| Roman Urdu Precision@15 | **92.5%** |
-| Dynamic SVM Accuracy | **100%** |
-| Static Threshold Accuracy | **50%** |
+| Baseline Precision@15 (native Urdu, `08_baseline_fix.ipynb` test set) | **96%** |
+| Roman Urdu Precision@15 (`05_roman_urdu.ipynb`, updated after dictionary fix — see note below) | **90.83%** |
+| Dynamic SVM Accuracy | **100%** (5-fold CV, leave-one-topic-out, and 369→548-query scaling all confirm this — see [Robustness Validation](#-robustness-validation)) |
+| Static Threshold Accuracy | **50%** (chance-level on this test set; the rule itself is deterministic, not random) |
 | F1 / Precision / Recall | **1.00 / 1.00 / 1.00** |
 | AUC-ROC | **1.000** |
 | Confidence Score (avg) | **98.18%** |
-| Dictionary Expansion | **30 → 179 words (6×)** |
-| Training Dataset | **369 real Urdu queries** |
+| Dictionary Expansion | **40 → 198 words** (regression-fixed 2026-08-08; a prior expansion pass had accidentally dropped 20 original words) |
+| Training Dataset | **369 real Urdu queries** (independently re-validated up to 548 — see [Robustness Validation](#-robustness-validation)) |
 | Topics Covered | **15+ domains** |
+
+> **Note on 87.5% vs 96% vs 92.5%/90.83%:** earlier drafts of this README cited a baseline P@15 of 87.5% (`04_retrieval.ipynb`, an early test set) and a Roman Urdu P@15 of 92.5%. These have been superseded: 96% comes from the later, larger baseline run in `08_baseline_fix.ipynb`, and 90.83% is the Roman Urdu result re-measured after fixing a dictionary regression bug (see [Robustness Validation](#-robustness-validation)). Numbers above are the current, correct ones.
 
 ---
 
@@ -174,45 +177,61 @@ This thesis makes **6 original contributions** to Urdu IR:
 
 > Can an SVM beat expensive LLMs at query routing?
 
-| Method | Accuracy | Latency | Cost |
-|--------|----------|---------|------|
-| Static Threshold | ❌ 50% | 0.0004 ms | Free |
-| Gemini | ❌ 50% | ~900 ms | Paid |
-| GPT-3.5 | ✅ 100% | ~600 ms | Paid |
-| Claude | ✅ 100% | ~700 ms | Paid |
-| GPT-4 | ✅ 100% | ~800 ms | Paid |
-| **Our SVM** | ✅ **100%** | **0.45 ms** | **Free** |
+| Method | Accuracy | Latency | Cost | Data source |
+|--------|----------|---------|------|-------------|
+| Static Threshold | ❌ 50% | 0.0004 ms | Free | Measured (`06_dynamic_classifier.ipynb`) |
+| GPT-4 | ✅ 100% | ~800 ms | Paid | Measured (`results/llm_comparison.json`) |
+| **Our SVM** | ✅ **100%** | **0.45 ms** | **Free** | Measured |
+| Gemini | ~50%* | ~900 ms* | Paid | *Illustrative estimate, not a live API benchmark* |
+| GPT-3.5 | ~100%* | ~600 ms* | Paid | *Illustrative estimate, not a live API benchmark* |
+| Claude | ~100%* | ~700 ms* | Paid | *Illustrative estimate, not a live API benchmark* |
 
-**Conclusion:** Our SVM matches top-tier LLMs at **zero API cost** and is **~1,500× faster** than GPT-4.
+**Conclusion:** Our SVM matches GPT-4 (the one LLM actually benchmarked here) at **zero API cost** and is **~1,500× faster**. The Gemini/GPT-3.5/Claude rows are typical/expected figures based on published model behavior, not measured API calls — live benchmarking against these providers is planned as follow-up work before final submission.
 
 ---
 
 ## 🔬 Robustness Validation
 
-All 4 examiner concerns addressed with statistical evidence:
+Every concern below was checked against the actual code and re-run independently (see `validation_response.py` in the repo root, reproducible with `python validation_response.py`).
 
 ### 1. Is 369 queries sufficient?
-- **Cohen's d = 3.58** (Large effect — Cohen 1988)
-- Large effect requires only 52 samples/class → we have 176+193 = **3.7× more**
+- **Cohen's d = 3.58 mean / 14.25 max** (Large effect — Cohen 1988)
+- Large effect requires only ~52 samples/class → we have 176+193 = **3.7× more**
+- Independently re-tested by scaling the dataset to **548 queries** — identical 100% CV accuracy, confirming this isn't a small-sample artifact
 - ✅ **PASS**
 
 ### 2. Is 100% accuracy = overfitting?
-- Learning curve **train-validation gap = 0.00%**
-- Both curves converge to 100% together
-- Overfitting would show large gap — ours shows none
+- Learning curve **train-validation gap = 0.00%** — overfitting would show a widening gap; ours shows none
+- **Leave-one-topic-out validation**: model trained with an entire topic domain (e.g. health, politics, cricket) completely excluded, then tested only on that unseen topic. All 13 tested domains scored 100% — this is stronger evidence of generalization than a random split, since the model never saw that topic's vocabulary during training
 - ✅ **PASS**
 
-### 3. Is SVM sensitive to hyperparameters?
-- Tested C = {0.01, 0.1, 1, 10, 100, 1000}
-- Accuracy range across all C values = **only 0.54%**
-- ✅ **ROBUST**
+### 3. Is the `is_long_by_static` feature "cheating" by encoding the old static rule?
+This is a fair methodological concern — one of the 8 features literally is the old θ=150 static rule. Feature ablation shows it is **not** what drives the result:
 
-### 4. External validation?
-- 50 completely unseen Urdu queries (5 new topics)
-- Result: **100% accuracy, 99.27% avg confidence**
+| Feature set | 5-fold CV Accuracy |
+|---|---|
+| Length-only (`char_length`, `word_count`) | 100% |
+| **Non-length features only** (no length signal at all) | **100%** |
+| All 7 features with `is_long_by_static` removed | 100% |
+| Original 8 features (with `is_long_by_static`) | 100% |
+
+Even purely non-length semantic features achieve 100% alone — task separability, not feature leakage, explains the accuracy.
 - ✅ **PASS**
 
-**Final Robustness Score: 12/12 checks PASSED ✅**
+### 4. Is SVM sensitive to hyperparameters?
+- Tested C = {0.001, 0.01, 0.1, 1, 10, 100, 1000}
+- Performance is stable (99.46–100%) across C=0.01–1000 (range: only 0.54%)
+- Under extreme under-regularization (**C=0.001**), accuracy drops to **52.30%** — this is expected behavior (too much regularization erases the model's learned boundary), not evidence of fragility, but it's disclosed here rather than excluded from the "practical range" claim
+- ✅ **ROBUST** (within the C=0.01–1000 practical range)
+
+### 5. External validation?
+- 50 completely unseen Urdu queries (5 new topics): **100% accuracy, 99.27% avg confidence**
+- ⚠️ These 50 queries (and 10 additional ones used in re-testing) were created by the author, not an independent party — a genuinely independent 200–500 query external test set, ideally labeled by someone else, is planned as follow-up work.
+
+### 6. Dataset consistency note
+`06_dynamic_classifier.ipynb` includes an inline 40-query demo (20 short/20 long) used to illustrate the pipeline; the actual final model is trained on the full 369-query set in `data/training_queries_real.py` (see item 1 above for the 548-query re-validation). This is called out explicitly here to avoid any appearance of inconsistency.
+
+**Summary: every reported number above is backed by an independently reproducible test in `validation_response.py`.**
 
 ---
 
@@ -246,7 +265,7 @@ ULTRA_Project/
 │   ├── 09_ablation.ipynb               # Ablation study (8 features)
 │   ├── 10_llm_comparison.ipynb         # LLM vs SVM comparison
 │   ├── 11_confidence_routing.ipynb     # 3-tier confidence routing
-│   ├── 12_roman_urdu_expansion.ipynb   # Dictionary 30→179 expansion
+│   ├── 12_roman_urdu_expansion.ipynb   # Dictionary expansion (40→198, regression-fixed)
 │   ├── 13_*.ipynb                      # Additional experiments
 │   ├── 14_robustness_validation.ipynb  # ✅ Final robustness study
 │   └── DEMO_defense.ipynb              # 🎯 Live defense demo
@@ -255,7 +274,7 @@ ULTRA_Project/
 │   ├── svm_classifier.pkl              # Trained SVM (369 queries)
 │   ├── scaler.pkl                      # Feature StandardScaler
 │   ├── training_info.json              # Training metadata
-│   └── roman_urdu_dict_expanded.json   # 179-word transliteration dict
+│   └── roman_urdu_dict_expanded.json   # 198-word transliteration dict (regression-fixed)
 │
 ├── 📦 data/
 │   ├── training_queries_real.py        # 369 labeled queries (tuples list)
@@ -277,6 +296,7 @@ ULTRA_Project/
 │
 ├── .gitignore
 ├── .gitattributes
+├── validation_response.py              # ✅ Independent re-validation script (run: python validation_response.py)
 └── README.md
 ```
 
@@ -374,11 +394,15 @@ All graphs are saved in the `results/` folder:
 | `learning_curves.png` | Train vs Val accuracy — gap = 0.00% |
 | `c_parameter_sensitivity.png` | SVM C sensitivity — range = 0.54% |
 | `external_validation.png` | 50 unseen queries — 100% accuracy |
-| `robustness_final_report.png` | 12/12 robustness checks summary |
+| `robustness_final_report.png` | Robustness checks summary (see [Robustness Validation](#-robustness-validation) for the full, current list) |
 | `ablation_study.png` | All 8 features validated |
 | `llm_comparison.png` | SVM vs GPT-4/Claude/Gemini |
 | `confidence_routing.png` | 3-tier routing distribution |
 | `all_methods_comparison.png` | Complete experiment comparison |
+| `validation_summary_dashboard.png` | ✅ Consolidated dashboard — feature ablation, leave-one-topic-out, dataset scaling, Cohen's d, Roman Urdu spelling-variant coverage |
+| `thesis_chart2_roman_urdu_UPDATED.png` | Roman Urdu P@15 breakdown with corrected numbers (90.83% avg, post dictionary-regression fix) |
+
+> Run `python validation_response.py` to reproduce every number in the [Robustness Validation](#-robustness-validation) section independently.
 
 ---
 
@@ -394,7 +418,16 @@ All graphs are saved in the `results/` folder:
 > We tested C = 0.01 to 1000 (6 orders of magnitude). Accuracy range across all values = **only 0.54%**. The model is highly robust to parameter choice.
 
 **Q: No external validation was done?**
-> We tested 50 completely unseen Urdu queries across 5 new topics never seen during training. Result: **100% accuracy, 99.27% average confidence**.
+> We tested 50 completely unseen Urdu queries across 5 new topics never seen during training. Result: **100% accuracy, 99.27% average confidence**. These were author-created, not independently labeled — a larger, independently-labeled external set is planned as follow-up work.
+
+**Q: Isn't `is_long_by_static` just feeding the old static rule into the "dynamic" classifier?**
+> Yes, it's one of the 8 input features, and that's a fair concern. Feature ablation shows it isn't what's driving the result, though: removing it entirely, or using only non-length semantic features (no length signal at all), both still achieve 100% CV accuracy. Task separability — not this feature — explains the accuracy.
+
+**Q: Doesn't `06_dynamic_classifier.ipynb` show a 40-query dataset, not 369?**
+> That 40-query set is an inline demo used to illustrate the pipeline early in the notebook. The actual final model is trained on the full 369-query set in `data/training_queries_real.py`, independently re-validated up to 548 queries.
+
+**Q: Are the Gemini/GPT-3.5/Claude comparison numbers real?**
+> Only the GPT-4 row was benchmarked directly. The Gemini/GPT-3.5/Claude figures are illustrative estimates based on typical published model behavior, not live API calls — this is now labeled explicitly in the [LLM Comparison](#-llm-comparison) table, and live benchmarking is planned before final submission.
 
 ---
 
