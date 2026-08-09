@@ -1,13 +1,13 @@
-Test,Result,Threshold,Status,Examiner Concern
-Cohen's d (Mean),3.581,>= 0.8 (Large),PASS ✅,369 queries sufficient?
-Cohen's d (Max),14.249,>= 0.8 (Large),PASS ✅,369 queries sufficient?
-Large Effect Features,3 / 8,>= 3/8,PASS ✅,369 queries sufficient?
-Learning Curve — Train Acc,100.00%,>= 95%,PASS ✅,100% = overfitting?
-Learning Curve — Val Acc,100.00%,>= 95%,PASS ✅,100% = overfitting?
-Learning Curve — Gap,0.00%,<= 5%,PASS ✅,100% = overfitting?
-C-Param Range (Practical),0.54%,<= 5%,PASS ✅,SVM overfit kar sakta hai?
-C-Param Min CV Acc,99.46%,>= 95%,PASS ✅,SVM overfit kar sakta hai?
-C-Param Max CV Acc,100.00%,>= 95%,PASS ✅,SVM overfit kar sakta hai?
-External Validation Acc,100.00%,>= 95%,PASS ✅,No external validation?
-External Validation Conf,99.27%,>= 95%,PASS ✅,No external validation?
-External Queries Tested,50,>= 50,PASS ✅,No external validation?
+Test,Result,Threshold,Status,Note
+Cohen's d (Mean),3.575,>= 0.8 (Large),PASS,Recomputed with verified deployed-model features
+Cohen's d (Max),14.249,>= 0.8 (Large),PASS,Recomputed with verified deployed-model features
+Large Effect Features,3 / 8,>= 3/8,PASS,query_len char_len urdu_chars
+Learning Curve - Train Acc,100.00%,>= 95%,PASS,Recomputed - unchanged
+Learning Curve - Val Acc,100.00%,>= 95%,PASS,Recomputed - unchanged
+Learning Curve - Gap,0.00%,<= 5%,PASS,Recomputed - unchanged
+C-Param Range (Practical C=0.01-1000),0.27%,<= 5%,PASS,Recomputed with verified features
+C-Param Min CV Acc (practical range),99.73%,>= 95%,PASS,Recomputed with verified features
+C-Param C=0.001 (extreme),52.30%,N/A,DISCLOSED,Expected degradation under extreme regularization - shown not hidden
+External Validation Acc,74.00%,>= 95%,FAIL,"CORRECTED 2026-08-09: previous 100% was computed with inconsistent/stale model state across notebook cells. Clean re-run shows genuine weakness: 46% recall on long queries, concentrated in Roman Urdu long queries being misclassified as short."
+External Validation Conf,90.24%,>= 95%,PARTIAL,Recomputed
+External Queries Tested,50,>= 50,PASS,Unchanged

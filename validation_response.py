@@ -3,20 +3,31 @@ validation_response.py
 =======================
 Response to supervisor's concerns about the SVM query-routing classifier.
 
-Runs 3 independent tests, using ONLY data/training_queries_real.py
-(no ChromaDB / embeddings needed — this is fast and fully reproducible):
+IMPORTANT (fixed 2026-08-09): earlier versions of this script used the
+feature-extraction function documented in 06_dynamic_classifier.ipynb.
+That function does NOT match the features the actually-deployed model
+(models/svm_classifier.pkl + scaler.pkl) was trained on -- the real
+training code lives in 14_robustness_validation.ipynb and uses a
+different 8-feature set (language/script-detection based, not the
+lexical-diversity based set in notebook 06). This script has been
+corrected to use the REAL, deployed feature set, verified by directly
+comparing computed feature means against the saved scaler's fitted
+mean_ values (see validation_results_v2.txt for that verification).
 
-  1. Feature ablation      -> is `is_long_by_static` driving the 100% result?
-  2. Leave-one-topic-out   -> does the model generalize to completely unseen topics?
-  3. Dataset expansion     -> does the result hold if we scale 369 -> 548 queries?
+Runs 4 independent tests, using ONLY data/training_queries_real.py and
+models/roman_urdu_dict_expanded.json (no ChromaDB / embeddings needed):
+
+  1. Feature ablation      -> which features actually drive the 100% result?
+  2. Leave-one-topic-out   -> does the model generalize to unseen topics?
+  3. Dataset expansion     -> does the result hold at 369 -> 548 queries?
+  4. Roman Urdu robustness -> dictionary regression + spelling-variant coverage
 
 Run from the repo root:
     python validation_response.py
-
-Requires: numpy, scikit-learn  (pip install numpy scikit-learn)
 """
 
 import ast
+import json
 import os
 import sys
 from collections import Counter
@@ -24,100 +35,78 @@ from collections import Counter
 import numpy as np
 from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import StratifiedKFold, train_test_split
+from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import accuracy_score
 
 RANDOM_STATE = 42
 np.random.seed(RANDOM_STATE)
 
 
-# ---------------------------------------------------------------------------
-# STEP 0 — Load your real 369 queries (exactly as they are in the repo)
-#
-# Robust to two common beginner issues:
-#   1. Wrong working directory (VS Code "Run" sometimes uses a different cwd)
-#      -> we search relative to THIS script's own location, not just cwd.
-#   2. File not saved as UTF-8 (common on Windows if edited in Notepad)
-#      -> we try utf-8 first, then fall back to utf-8-sig / cp1252.
-# ---------------------------------------------------------------------------
-def load_original_queries(path="data/training_queries_real.py"):
-    # Build a list of candidate locations to try, in order
+def _find_file(relpath):
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    candidates = [
-        path,                                   # as given (relative to cwd)
-        os.path.join(script_dir, path),         # relative to this script's folder
-        os.path.join(os.getcwd(), path),        # explicit relative to cwd
-    ]
-
-    found_path = None
-    for c in candidates:
+    for c in (relpath, os.path.join(script_dir, relpath), os.path.join(os.getcwd(), relpath)):
         if os.path.isfile(c):
-            found_path = c
-            break
+            return c
+    return None
 
+
+def load_original_queries(path="data/training_queries_real.py"):
+    found_path = _find_file(path)
     if found_path is None:
-        print("ERROR: Could not find 'data/training_queries_real.py'.")
-        print("Tried these locations:")
-        for c in candidates:
-            print(f"  - {os.path.abspath(c)}")
-        print(f"\nCurrent working directory is: {os.getcwd()}")
-        print(f"This script is located at:    {script_dir}")
-        print("\nFix: make sure 'validation_response.py' sits in the SAME folder")
-        print("as your 'data' folder (repo root, next to README.md), then either:")
-        print("  (a) run it from that folder in a terminal:  python validation_response.py")
-        print("  (b) or just re-run — this script now also checks its own folder automatically.")
+        print(f"ERROR: could not find {path}. Run this script from the repo root.")
         sys.exit(1)
-
     content = None
-    last_error = None
     for enc in ("utf-8", "utf-8-sig", "cp1252"):
         try:
             with open(found_path, encoding=enc) as f:
                 content = f.read()
             break
-        except UnicodeDecodeError as e:
-            last_error = e
+        except UnicodeDecodeError:
             continue
-
     if content is None:
-        print(f"ERROR: Could not decode {found_path} with utf-8, utf-8-sig, or cp1252.")
-        print(f"Last error: {last_error}")
-        print("Fix: open the file in VS Code, click the encoding label in the")
-        print("bottom-right status bar, choose 'Save with Encoding' -> UTF-8, and re-run.")
+        print(f"ERROR: could not decode {found_path}.")
         sys.exit(1)
-
     start = content.find("training_queries = [")
-    if start == -1:
-        print(f"ERROR: Found the file at {found_path}, but couldn't find")
-        print("'training_queries = [' inside it. Has the variable been renamed?")
-        sys.exit(1)
-
     list_str = content[start + len("training_queries = "):]
     return ast.literal_eval(list_str)
 
 
-# ---------------------------------------------------------------------------
-# Feature extraction — EXACT copy of the function in 06_dynamic_classifier.ipynb
-# ---------------------------------------------------------------------------
-URDU_CHARS = set("ابپتثجچحخدذرزژسشصضطظعغفقکگلمنوہھیےآاً")
+def load_roman_dict(path="models/roman_urdu_dict_expanded.json"):
+    found_path = _find_file(path)
+    if found_path is None:
+        print(f"ERROR: could not find {path}.")
+        sys.exit(1)
+    with open(found_path, encoding="utf-8") as f:
+        return json.load(f)
 
-def extract_features(query, include_static_leak=True):
+
+# ---------------------------------------------------------------------------
+# THE REAL, DEPLOYED feature extraction -- matches models/svm_classifier.pkl
+# and models/scaler.pkl exactly (verified against the saved scaler's mean_).
+# Source: 14_robustness_validation.ipynb, the cell that actually calls
+# pickle.dump() to save the model.
+# ---------------------------------------------------------------------------
+def extract_features(query, roman_urdu_dict, include_mixed=True):
+    urdu_chars_count = sum(1 for c in query if "\u0600" <= c <= "\u06FF")
+    total_chars = len(query.replace(" ", "")) + 1e-9
+    urdu_ratio = urdu_chars_count / total_chars
     words = query.split()
-    unique_words = set(words)
-    urdu_count = sum(1 for c in query if c in URDU_CHARS)
-    feats = [
-        len(query),                                              # char_length
-        len(words),                                               # word_count
-        len(unique_words),                                        # unique_words
-        sum(len(w) for w in words) / max(len(words), 1),          # avg_word_length
-        len(unique_words) / max(len(words), 1),                   # lexical_diversity
-        urdu_count / max(len(query), 1),                          # urdu_char_ratio
-        int(any(w in query for w in
-                ["کیا", "کون", "کہاں", "کیوں", "what", "how", "why", "when", "where"])),  # has_question_words
-    ]
-    if include_static_leak:
-        feats.append(int(len(query) >= 150))                      # is_long_by_static
+    roman_count = sum(1 for w in words if w.lower() in roman_urdu_dict)
+    roman_ratio = roman_count / (len(words) + 1e-9)
+    has_urdu = int(urdu_chars_count > 0)
+    has_roman = int(roman_count > 0)
+    query_len = len(words)
+    char_len = len(query)
+    feats = [urdu_ratio, roman_ratio, has_urdu, has_roman, query_len, char_len]
+    if include_mixed:
+        mixed = int(has_urdu and has_roman)
+        feats.append(mixed)
+    feats.append(urdu_chars_count)
     return feats
+
+
+FEATURE_NAMES = ["urdu_ratio", "roman_ratio", "has_urdu", "has_roman",
+                  "query_len", "char_len", "mixed", "urdu_chars"]
 
 
 def cv_accuracy(X, y, n_splits=5):
@@ -133,41 +122,68 @@ def cv_accuracy(X, y, n_splits=5):
 
 
 # ---------------------------------------------------------------------------
-# TEST 1 — Feature ablation: is `is_long_by_static` responsible for 100%?
+# TEST 0 — Verify this script's features actually match the deployed model
 # ---------------------------------------------------------------------------
-def test1_feature_ablation(queries):
+def test0_verify_against_deployed_model(queries, roman_dict):
     print("\n" + "=" * 70)
-    print("TEST 1 — FEATURE ABLATION (is_long_by_static leak check)")
+    print("TEST 0 — VERIFY FEATURES MATCH THE ACTUAL DEPLOYED MODEL")
+    print("=" * 70)
+
+    scaler_path = _find_file("models/scaler.pkl")
+    if scaler_path is None:
+        print("models/scaler.pkl not found -- skipping verification (not fatal).")
+        return
+
+    import pickle
+    with open(scaler_path, "rb") as f:
+        scaler = pickle.load(f)
+
+    X = np.array([extract_features(q, roman_dict) for q, _ in queries])
+    computed_mean = X.mean(axis=0)
+    actual_mean = scaler.mean_
+    deviation = np.abs(computed_mean - actual_mean).sum()
+
+    print(f"Deviation from actual deployed scaler.mean_: {deviation:.4f}")
+    if deviation < 0.5:
+        print("MATCH CONFIRMED -- this script's features match the deployed model.")
+    else:
+        print("WARNING: MISMATCH -- these features do NOT match the deployed model!")
+        print("Check models/svm_classifier.pkl / scaler.pkl were not retrained differently.")
+
+    # Also flag the dead "mixed" feature
+    mixed_idx = FEATURE_NAMES.index("mixed")
+    mixed_std = X[:, mixed_idx].std()
+    print(f"\n'mixed' feature std dev: {mixed_std:.4f} "
+          f"({'DEAD -- always 0, no mixed-script queries in this dataset' if mixed_std == 0 else 'has variance'})")
+
+
+# ---------------------------------------------------------------------------
+# TEST 1 — Feature ablation: length vs language-detection features
+# ---------------------------------------------------------------------------
+def test1_feature_ablation(queries, roman_dict):
+    print("\n" + "=" * 70)
+    print("TEST 1 — FEATURE ABLATION (real deployed feature set)")
     print("=" * 70)
 
     y = np.array([1 if l == "long" else 0 for _, l in queries])
+    X_full = np.array([extract_features(q, roman_dict) for q, _ in queries])
 
-    # A. Length-only features (char_length, word_count) — no leak feature
-    X_len = np.array([extract_features(q, include_static_leak=False)[:2] for q, _ in queries])
-    acc_len = cv_accuracy(X_len, y)
+    idx = {name: i for i, name in enumerate(FEATURE_NAMES)}
+    length_idx = [idx["query_len"], idx["char_len"]]
+    language_idx = [idx["urdu_ratio"], idx["roman_ratio"], idx["has_urdu"],
+                     idx["has_roman"], idx["mixed"], idx["urdu_chars"]]
 
-    # B. Non-length semantic features only (no length signal at all)
-    X_nonlen = np.array([extract_features(q, include_static_leak=False)[2:] for q, _ in queries])
-    acc_nonlen = cv_accuracy(X_nonlen, y)
-
-    # C. All 7 features, leak feature removed
-    X_no_leak = np.array([extract_features(q, include_static_leak=False) for q, _ in queries])
-    acc_no_leak = cv_accuracy(X_no_leak, y)
-
-    # D. Original 8 features WITH the leak feature (baseline / original claim)
-    X_orig = np.array([extract_features(q, include_static_leak=True) for q, _ in queries])
-    acc_orig = cv_accuracy(X_orig, y)
+    acc_length = cv_accuracy(X_full[:, length_idx], y)
+    acc_language = cv_accuracy(X_full[:, language_idx], y)
+    acc_full = cv_accuracy(X_full, y)
 
     print(f"{'Feature set':<45}{'5-fold CV mean':>16}{'std':>10}")
     print("-" * 71)
-    print(f"{'A. Length-only (no leak)':<45}{acc_len.mean():>15.2%}{acc_len.std():>10.2%}")
-    print(f"{'B. Non-length features only':<45}{acc_nonlen.mean():>15.2%}{acc_nonlen.std():>10.2%}")
-    print(f"{'C. All 7 features, leak REMOVED':<45}{acc_no_leak.mean():>15.2%}{acc_no_leak.std():>10.2%}")
-    print(f"{'D. Original 8 features (with leak)':<45}{acc_orig.mean():>15.2%}{acc_orig.std():>10.2%}")
-
-    print("\nInterpretation:")
-    print("If B (no length signal at all) is close to D, the leak feature is")
-    print("NOT what's driving the result — task separability is.")
+    print(f"{'Length-only (query_len, char_len)':<45}{acc_length.mean():>15.2%}{acc_length.std():>10.2%}")
+    print(f"{'Language-only (no length signal)':<45}{acc_language.mean():>15.2%}{acc_language.std():>10.2%}")
+    print(f"{'All 8 features (deployed model)':<45}{acc_full.mean():>15.2%}{acc_full.std():>10.2%}")
+    print("\nInterpretation: if language-only (no length info at all) still scores")
+    print("near 100%, the result isn't purely a length-threshold shortcut.")
 
 
 # ---------------------------------------------------------------------------
@@ -183,6 +199,7 @@ TOPIC_KEYWORDS = {
     "health":          ["ڈینگی","ہارٹ","ویکسین","ہسپتال","ڈاکٹر","صحت","dengue","heart","vaccine","hospital","doctor","health"],
 }
 
+
 def tag_topic(q):
     ql = q.lower()
     for topic, kws in TOPIC_KEYWORDS.items():
@@ -192,9 +209,9 @@ def tag_topic(q):
     return "other"
 
 
-def test2_leave_one_topic_out(queries):
+def test2_leave_one_topic_out(queries, roman_dict):
     print("\n" + "=" * 70)
-    print("TEST 2 — LEAVE-ONE-TOPIC-OUT VALIDATION")
+    print("TEST 2 — LEAVE-ONE-TOPIC-OUT VALIDATION (real deployed feature set)")
     print("=" * 70)
 
     tagged = [(q, l, tag_topic(q)) for q, l in queries]
@@ -203,10 +220,9 @@ def test2_leave_one_topic_out(queries):
 
     if not usable:
         print("Not enough queries per topic in this dataset to run this test.")
-        print("(Run test3 first to expand the dataset, then re-run this test on the expanded set.)")
         return
 
-    X = np.array([extract_features(q) for q, _, _ in tagged])
+    X = np.array([extract_features(q, roman_dict) for q, _, _ in tagged])
     y = np.array([1 if l == "long" else 0 for _, l, _ in tagged])
     topics = np.array([t for _, _, t in tagged])
 
@@ -226,14 +242,10 @@ def test2_leave_one_topic_out(queries):
 
     print("-" * 40)
     print(f"{'MEAN':<22}{'':>6}{np.mean(accs):>11.2%}   (std: {np.std(accs):.2%})")
-    print("\nInterpretation: each topic was NEVER seen during training for its")
-    print("own test. High accuracy here = genuine generalization, not memorization.")
 
 
 # ---------------------------------------------------------------------------
-# TEST 3 — Dataset expansion: does result hold at 548 queries?
-#          (Edit / extend NEW_QUERIES below with your own additional
-#           queries if you want to grow this further.)
+# TEST 3 — Dataset expansion: does result hold at more queries?
 # ---------------------------------------------------------------------------
 NEW_QUERIES = [
     ("فصل کاشت", "short"), ("زرعی قرض", "short"), ("گندم پیداوار", "short"),
@@ -250,13 +262,12 @@ NEW_QUERIES = [
         "what is the current situation of agriculture in pakistan and how is the government planning to address it",
         "long",
     ),
-    # Add more of your own here to keep growing the validation set.
 ]
 
 
-def test3_dataset_expansion(queries):
+def test3_dataset_expansion(queries, roman_dict):
     print("\n" + "=" * 70)
-    print("TEST 3 — DATASET EXPANSION (does 100% hold when we scale the data?)")
+    print("TEST 3 — DATASET EXPANSION (real deployed feature set)")
     print("=" * 70)
 
     existing = set(q for q, _ in queries)
@@ -264,47 +275,26 @@ def test3_dataset_expansion(queries):
     combined = queries + new_unique
 
     def eval_set(data, label):
-        X = np.array([extract_features(q) for q, _ in data])
+        X = np.array([extract_features(q, roman_dict) for q, _ in data])
         y = np.array([1 if l == "long" else 0 for _, l in data])
         accs = cv_accuracy(X, y)
         print(f"{label:<30} n={len(data):<6} CV mean={accs.mean():.2%}  std={accs.std():.2%}")
-        return accs
 
     eval_set(queries, "Original")
     eval_set(combined, "Expanded")
-
     print(f"\nAdded {len(new_unique)} new unique queries. Total now: {len(combined)}.")
-    print("Edit NEW_QUERIES in this script to add your own queries and re-run.")
 
 
 # ---------------------------------------------------------------------------
-# TEST 4 — Roman Urdu dictionary robustness (exact-match vs fuzzy-match)
+# TEST 4 — Roman Urdu dictionary robustness
 # ---------------------------------------------------------------------------
-def _find_file(relpath):
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    for c in (relpath, os.path.join(script_dir, relpath), os.path.join(os.getcwd(), relpath)):
-        if os.path.isfile(c):
-            return c
-    return None
-
-
-def test4_roman_urdu_robustness():
+def test4_roman_urdu_robustness(roman_dict):
     import difflib
 
     print("\n" + "=" * 70)
     print("TEST 4 — ROMAN URDU DICTIONARY ROBUSTNESS")
     print("=" * 70)
 
-    expanded_path = _find_file("models/roman_urdu_dict_expanded.json")
-    if expanded_path is None:
-        print("Could not find models/roman_urdu_dict_expanded.json — skipping this test.")
-        return
-
-    import json
-    expanded = json.load(open(expanded_path, encoding="utf-8"))
-
-    # 4a. Check for regression: words present in the ORIGINAL 40-word dict
-    #     (from 05_roman_urdu.ipynb) that are missing from the "expanded" one
     original_40 = {
         "cricket","match","team","pakistan","india","khan","imran","economy","speech",
         "news","today","aaj","mosam","kaisa","hai","nateeja","ka","ki","ke","pm","bayan",
@@ -312,18 +302,14 @@ def test4_roman_urdu_robustness():
         "price","market","business","technology","mobile","internet","computer","film",
         "drama","actor","election","government","police","court","army",
     }
-    missing = original_40 - set(expanded.keys())
-    print(f"Words lost between the original 40-word dict and the 'expanded' {len(expanded)}-word dict:")
+    missing = original_40 - set(roman_dict.keys())
+    print(f"Words lost between the original 40-word dict and current {len(roman_dict)}-word dict:")
     print(f"  {sorted(missing)}  ({len(missing)} words)")
 
-    merged = {**expanded, **{w: None for w in original_40}}  # just for counting; real merge uses actual urdu values
-    print(f"-> Fix: merge both dictionaries (see models/roman_urdu_dict_merged.json) to avoid regressions.\n")
-
-    # 4b. Spelling-variation coverage: exact-match vs fuzzy-match
     variant_test = [
         ("kiya", ["kia", "keya"]), ("hai", ["hy", "hae", "he"]),
-        ("nahi", ["nahin", "nai", "ni"]) if "nahi" in expanded else None,
-        ("mein", ["mai", "me"]) if "mein" in expanded else None,
+        ("nahi", ["nahin", "nai", "ni"]) if "nahi" in roman_dict else None,
+        ("mein", ["mai", "me"]) if "mein" in roman_dict else None,
         ("acha", ["accha", "achaa"]), ("bhi", ["b"]),
         ("zyada", ["ziada", "zyda", "zaida"]), ("gaya", ["gya"]),
         ("diya", ["dia", "diyaa"]), ("karo", ["kro"]),
@@ -332,38 +318,36 @@ def test4_roman_urdu_robustness():
         ("cricket", ["criket", "crikat"]),
     ]
     variant_test = [v for v in variant_test if v]
-    dict_words = list(expanded.keys())
+    dict_words = list(roman_dict.keys())
 
     exact_hits, fuzzy_hits, total = 0, 0, 0
     for base, variants in variant_test:
         for v in variants:
             total += 1
-            if v in expanded:
+            if v in roman_dict:
                 exact_hits += 1
             match = difflib.get_close_matches(v, dict_words, n=1, cutoff=0.75)
             if match and match[0] == base:
                 fuzzy_hits += 1
 
-    print(f"Spelling-variation coverage (n={total} known-word variants tested):")
-    print(f"  Exact-match lookup (current system): {exact_hits}/{total} = {exact_hits/total:.1%}")
+    print(f"\nSpelling-variation coverage (n={total} known-word variants tested):")
+    print(f"  Exact-match lookup: {exact_hits}/{total} = {exact_hits/total:.1%}")
     print(f"  + difflib fuzzy fallback (cutoff=0.75): {fuzzy_hits}/{total} = {fuzzy_hits/total:.1%}")
-    print("\nInterpretation: the dictionary is exact-match only, so ANY spelling")
-    print("variation of a known word currently fails. A simple fuzzy-match")
-    print("fallback (no new dependency — Python's built-in difflib) recovers")
-    print("most of this at negligible extra cost, and should be added before")
-    print("claiming spelling robustness in the paper.")
 
 
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
     queries = load_original_queries()
+    roman_dict = load_roman_dict()
     print(f"Loaded {len(queries)} original queries from data/training_queries_real.py")
+    print(f"Loaded {len(roman_dict)}-word Roman Urdu dictionary")
 
-    test1_feature_ablation(queries)
-    test2_leave_one_topic_out(queries)
-    test3_dataset_expansion(queries)
-    test4_roman_urdu_robustness()
+    test0_verify_against_deployed_model(queries, roman_dict)
+    test1_feature_ablation(queries, roman_dict)
+    test2_leave_one_topic_out(queries, roman_dict)
+    test3_dataset_expansion(queries, roman_dict)
+    test4_roman_urdu_robustness(roman_dict)
 
     print("\n" + "=" * 70)
-    print("DONE. Copy these results into your validation report / paper.")
+    print("DONE. These numbers now match the ACTUAL deployed model's features.")
     print("=" * 70)
