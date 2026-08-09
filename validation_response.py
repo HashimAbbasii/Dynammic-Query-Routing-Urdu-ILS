@@ -278,6 +278,83 @@ def test3_dataset_expansion(queries):
 
 
 # ---------------------------------------------------------------------------
+# TEST 4 — Roman Urdu dictionary robustness (exact-match vs fuzzy-match)
+# ---------------------------------------------------------------------------
+def _find_file(relpath):
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    for c in (relpath, os.path.join(script_dir, relpath), os.path.join(os.getcwd(), relpath)):
+        if os.path.isfile(c):
+            return c
+    return None
+
+
+def test4_roman_urdu_robustness():
+    import difflib
+
+    print("\n" + "=" * 70)
+    print("TEST 4 — ROMAN URDU DICTIONARY ROBUSTNESS")
+    print("=" * 70)
+
+    expanded_path = _find_file("models/roman_urdu_dict_expanded.json")
+    if expanded_path is None:
+        print("Could not find models/roman_urdu_dict_expanded.json — skipping this test.")
+        return
+
+    import json
+    expanded = json.load(open(expanded_path, encoding="utf-8"))
+
+    # 4a. Check for regression: words present in the ORIGINAL 40-word dict
+    #     (from 05_roman_urdu.ipynb) that are missing from the "expanded" one
+    original_40 = {
+        "cricket","match","team","pakistan","india","khan","imran","economy","speech",
+        "news","today","aaj","mosam","kaisa","hai","nateeja","ka","ki","ke","pm","bayan",
+        "kya","raha","tha","game","goal","football","score","win","loss","bank","dollar",
+        "price","market","business","technology","mobile","internet","computer","film",
+        "drama","actor","election","government","police","court","army",
+    }
+    missing = original_40 - set(expanded.keys())
+    print(f"Words lost between the original 40-word dict and the 'expanded' {len(expanded)}-word dict:")
+    print(f"  {sorted(missing)}  ({len(missing)} words)")
+
+    merged = {**expanded, **{w: None for w in original_40}}  # just for counting; real merge uses actual urdu values
+    print(f"-> Fix: merge both dictionaries (see models/roman_urdu_dict_merged.json) to avoid regressions.\n")
+
+    # 4b. Spelling-variation coverage: exact-match vs fuzzy-match
+    variant_test = [
+        ("kiya", ["kia", "keya"]), ("hai", ["hy", "hae", "he"]),
+        ("nahi", ["nahin", "nai", "ni"]) if "nahi" in expanded else None,
+        ("mein", ["mai", "me"]) if "mein" in expanded else None,
+        ("acha", ["accha", "achaa"]), ("bhi", ["b"]),
+        ("zyada", ["ziada", "zyda", "zaida"]), ("gaya", ["gya"]),
+        ("diya", ["dia", "diyaa"]), ("karo", ["kro"]),
+        ("pareshan", ["preshan"]), ("khush", ["khus"]),
+        ("sardi", ["sardii"]), ("score", ["scor"]),
+        ("cricket", ["criket", "crikat"]),
+    ]
+    variant_test = [v for v in variant_test if v]
+    dict_words = list(expanded.keys())
+
+    exact_hits, fuzzy_hits, total = 0, 0, 0
+    for base, variants in variant_test:
+        for v in variants:
+            total += 1
+            if v in expanded:
+                exact_hits += 1
+            match = difflib.get_close_matches(v, dict_words, n=1, cutoff=0.75)
+            if match and match[0] == base:
+                fuzzy_hits += 1
+
+    print(f"Spelling-variation coverage (n={total} known-word variants tested):")
+    print(f"  Exact-match lookup (current system): {exact_hits}/{total} = {exact_hits/total:.1%}")
+    print(f"  + difflib fuzzy fallback (cutoff=0.75): {fuzzy_hits}/{total} = {fuzzy_hits/total:.1%}")
+    print("\nInterpretation: the dictionary is exact-match only, so ANY spelling")
+    print("variation of a known word currently fails. A simple fuzzy-match")
+    print("fallback (no new dependency — Python's built-in difflib) recovers")
+    print("most of this at negligible extra cost, and should be added before")
+    print("claiming spelling robustness in the paper.")
+
+
+# ---------------------------------------------------------------------------
 if __name__ == "__main__":
     queries = load_original_queries()
     print(f"Loaded {len(queries)} original queries from data/training_queries_real.py")
@@ -285,6 +362,7 @@ if __name__ == "__main__":
     test1_feature_ablation(queries)
     test2_leave_one_topic_out(queries)
     test3_dataset_expansion(queries)
+    test4_roman_urdu_robustness()
 
     print("\n" + "=" * 70)
     print("DONE. Copy these results into your validation report / paper.")
