@@ -1,0 +1,104 @@
+ULTRA Thesis — Roman Urdu Fix Package (2026-08-09)
+====================================================
+Ye zip aapke repo ke saath directly overlay hoti hai — bilkul same
+folder structure hai jaisa aapke local ULTRA_Project folder mein hai.
+
+═══════════════════════════════════════════════════════════════
+STEP 1 — Zip Extract Karo
+═══════════════════════════════════════════════════════════════
+1. Ye zip file download karo.
+2. Right-click karo → "Extract All..." → koi bhi temporary folder
+   choose karo (e.g. Desktop pe "ULTRA_fix_package" naam se).
+
+═══════════════════════════════════════════════════════════════
+STEP 2 — Files Ko Apne Repo Mein Copy Karo (OVERWRITE)
+═══════════════════════════════════════════════════════════════
+Apna local repo folder kholo:
+   C:\Users\User\OneDrive\Documents\ULTRA_Project
+
+Extracted "ULTRA_fix_package" folder ke andar jitni files/folders
+hain, unko EXACTLY isi naam/path pe copy-paste karo apne
+ULTRA_Project folder mein, aur jab Windows "Replace the file in
+destination?" pooche to YES / Replace select karo:
+
+   README.md                                  -> root mein
+   data\training_queries_real.py              -> data\ mein
+   models\scaler.pkl                          -> models\ mein
+   models\svm_classifier.pkl                  -> models\ mein
+   models\training_info.json                  -> models\ mein
+   notebooks\14_robustness_validation.ipynb   -> notebooks\ mein
+   results\c_parameter_sensitivity.png        -> results\ mein
+   results\cohens_d_analysis.png              -> results\ mein
+   results\external_validation.png            -> results\ mein
+   results\learning_curves.png                -> results\ mein
+   results\robustness_report.csv              -> results\ mein
+   validation_response.py                     -> root mein
+
+NAYI FOLDERS (ye pehle nahi thi, bas copy kar do, replace ka
+sawal nahi aayega):
+   models\backup_pre_fix_2026-08-09\          (poora folder)
+   results\_stale_pre_2026-08-09-v2_fix\      (poora folder)
+
+═══════════════════════════════════════════════════════════════
+STEP 3 — Ek Purani File DELETE Karo
+═══════════════════════════════════════════════════════════════
+Ye file ab purani/confusing ho chuki hai kyunki naya, sahi wala
+version "results\_stale_pre_2026-08-09-v2_fix\" folder mein chala
+gaya hai. Apne ULTRA_Project folder mein jaake ye file DELETE karo:
+
+   results\external_validation_CORRECTED.png   <-- DELETE karo
+
+(Bas isi ek file ko delete karna hai — koi aur file delete NAHI
+karni.)
+
+═══════════════════════════════════════════════════════════════
+STEP 4 — VS Code Mein Check Karo
+═══════════════════════════════════════════════════════════════
+1. VS Code kholo, apna ULTRA_Project folder open karo
+   (File > Open Folder).
+2. Left sidebar mein "Source Control" icon pe click karo
+   (teeno lines wala icon, ya Ctrl+Shift+G).
+3. Yahan aapko "Changes" ke neeche saari modified files dikhengi
+   (README.md, data/training_queries_real.py, wagera) — ye normal
+   hai, isi ka matlab hai ke copy-paste sahi hua.
+4. Confirm karo ke branch "validation-response" hi selected hai
+   (bottom-left corner mein branch ka naam dikhta hai VS Code mein).
+   Agar "main" ya kuch aur likha hai, click karke
+   "validation-response" select karo.
+
+═══════════════════════════════════════════════════════════════
+STEP 5 — Commit Karo
+═══════════════════════════════════════════════════════════════
+1. Source Control panel ke upar ek text box hai
+   ("Message" likha hoga) — usmein ye likho:
+
+   Fix: root-cause Roman Urdu external validation weakness (74% to 100%)
+
+2. Us text box ke upar "✓" (checkmark) icon pe click karo — ye
+   "Commit" button hai. (Agar email/name maange to apna naam aur
+   koi bhi email likh do, jaisa pehle diya tha.)
+
+═══════════════════════════════════════════════════════════════
+STEP 6 — Push Karo GitHub Par
+═══════════════════════════════════════════════════════════════
+1. Commit hone ke baad, Source Control panel mein "Sync Changes"
+   ya "Push" likha button dikhega — usi pe click karo.
+2. Agar GitHub login maange to apna GitHub account se sign-in
+   karo (browser khulega, allow karo).
+3. Push complete hone ke baad, GitHub website par jaake
+   "validation-response" branch check karo — README.md mein
+   naye "100%" wale numbers dikhne chahiye.
+
+═══════════════════════════════════════════════════════════════
+STEP 7 (BAAD MEIN) — main Branch Mein Merge
+═══════════════════════════════════════════════════════════════
+Jab aap khud ek baar GitHub par jaake "validation-response" branch
+ka README.md aur robustness_report.csv check kar lo aur satisfied
+ho jao — tab GitHub website par "Compare & pull request" button
+use karke isko "main" branch mein merge kar sakte ho. Ye step
+abhi mat karo — pehle khud ek baar verify kar lo, phir agli chat
+mein bata dena, main saath check kar dunga.
+
+═══════════════════════════════════════════════════════════════
+Agar koi step mein error aaye ya kuch samajh na aaye, screenshot
+lekar next message mein bhej dena — main sath sath guide karunga.

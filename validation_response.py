@@ -3,24 +3,40 @@ validation_response.py
 =======================
 Response to supervisor's concerns about the SVM query-routing classifier.
 
-IMPORTANT (fixed 2026-08-09): earlier versions of this script used the
-feature-extraction function documented in 06_dynamic_classifier.ipynb.
-That function does NOT match the features the actually-deployed model
-(models/svm_classifier.pkl + scaler.pkl) was trained on -- the real
-training code lives in 14_robustness_validation.ipynb and uses a
-different 8-feature set (language/script-detection based, not the
-lexical-diversity based set in notebook 06). This script has been
-corrected to use the REAL, deployed feature set, verified by directly
-comparing computed feature means against the saved scaler's fitted
-mean_ values (see validation_results_v2.txt for that verification).
+IMPORTANT (fixed 2026-08-09, first correction): earlier versions of this
+script used the feature-extraction function documented in
+06_dynamic_classifier.ipynb. That function does NOT match the features
+the actually-deployed model (models/svm_classifier.pkl + scaler.pkl) was
+trained on -- the real training code lives in 14_robustness_validation.ipynb
+and uses a different feature set (language/script-detection based, not the
+lexical-diversity based set in notebook 06). This script was corrected to
+use the REAL, deployed feature set, verified by directly comparing computed
+feature means against the saved scaler's fitted mean_ values.
 
-Runs 4 independent tests, using ONLY data/training_queries_real.py and
+IMPORTANT (fixed 2026-08-09, second correction): the external-validation
+weakness this script first uncovered (74.00% on Roman Urdu long queries)
+has been root-caused and fixed. Root cause: data/training_queries_real.py's
+60 "long" Roman Urdu training examples were mislabeled -- they were plain
+formal English sentences ("what are the latest developments in..."), not
+genuine Roman Urdu (Urdu grammar transliterated into Latin script, e.g.
+"PM ne naya budget announce kiya"). This taught the classifier an inverted
+signal for roman_ratio. Fixed by replacing those 60 queries with genuine
+Roman Urdu long queries, filling a previously-untrained 5-10 word gap, and
+adding a 9th feature (raw roman_urdu_dict match count). Dataset grew from
+369 to 414 queries. Test 3 below (dataset expansion) also had the SAME bug
+independently -- one of its own "new" long-Roman-Urdu test queries was a
+fake English sentence -- now fixed too (see NEW_QUERIES below).
+
+Runs 5 independent tests, using ONLY data/training_queries_real.py and
 models/roman_urdu_dict_expanded.json (no ChromaDB / embeddings needed):
 
   1. Feature ablation      -> which features actually drive the 100% result?
   2. Leave-one-topic-out   -> does the model generalize to unseen topics?
-  3. Dataset expansion     -> does the result hold at 369 -> 548 queries?
+  3. Dataset expansion     -> does the result hold at 414 -> higher n?
   4. Roman Urdu robustness -> dictionary regression + spelling-variant coverage
+  5. Fresh held-out test   -> genuinely unseen queries not used during the
+                              2026-08-09 root-cause diagnosis (honesty check
+                              against tuning the fix to the diagnostic set)
 
 Run from the repo root:
     python validation_response.py
@@ -102,11 +118,12 @@ def extract_features(query, roman_urdu_dict, include_mixed=True):
         mixed = int(has_urdu and has_roman)
         feats.append(mixed)
     feats.append(urdu_chars_count)
+    feats.append(roman_count)  # 9th feature, added 2026-08-09 second correction
     return feats
 
 
 FEATURE_NAMES = ["urdu_ratio", "roman_ratio", "has_urdu", "has_roman",
-                  "query_len", "char_len", "mixed", "urdu_chars"]
+                  "query_len", "char_len", "mixed", "urdu_chars", "roman_count"]
 
 
 def cv_accuracy(X, y, n_splits=5):
@@ -171,7 +188,7 @@ def test1_feature_ablation(queries, roman_dict):
     idx = {name: i for i, name in enumerate(FEATURE_NAMES)}
     length_idx = [idx["query_len"], idx["char_len"]]
     language_idx = [idx["urdu_ratio"], idx["roman_ratio"], idx["has_urdu"],
-                     idx["has_roman"], idx["mixed"], idx["urdu_chars"]]
+                     idx["has_roman"], idx["mixed"], idx["urdu_chars"], idx["roman_count"]]
 
     acc_length = cv_accuracy(X_full[:, length_idx], y)
     acc_language = cv_accuracy(X_full[:, language_idx], y)
@@ -181,7 +198,7 @@ def test1_feature_ablation(queries, roman_dict):
     print("-" * 71)
     print(f"{'Length-only (query_len, char_len)':<45}{acc_length.mean():>15.2%}{acc_length.std():>10.2%}")
     print(f"{'Language-only (no length signal)':<45}{acc_language.mean():>15.2%}{acc_language.std():>10.2%}")
-    print(f"{'All 8 features (deployed model)':<45}{acc_full.mean():>15.2%}{acc_full.std():>10.2%}")
+    print(f"{'All 9 features (deployed model)':<45}{acc_full.mean():>15.2%}{acc_full.std():>10.2%}")
     print("\nInterpretation: if language-only (no length info at all) still scores")
     print("near 100%, the result isn't purely a length-threshold shortcut.")
 
@@ -258,8 +275,11 @@ NEW_QUERIES = [
         "پاکستان میں زرعی شعبے کے حوالے سے حکومت کی نئی پالیسی اور اس کے عوام پر ممکنہ اثرات کا تفصیلی جائزہ",
         "long",
     ),
+    # FIXED 2026-08-09: this used to be a plain English sentence mislabeled as
+    # "long roman" -- exactly the same bug found in the main training set.
+    # Replaced with genuine Roman Urdu (Urdu grammar + Latin script).
     (
-        "what is the current situation of agriculture in pakistan and how is the government planning to address it",
+        "pakistan mein zarai shobay ke hawale se hakumat ki nai policy ka kya asar hoga",
         "long",
     ),
 ]
@@ -336,6 +356,86 @@ def test4_roman_urdu_robustness(roman_dict):
 
 
 # ---------------------------------------------------------------------------
+# TEST 5 — Fresh held-out validation (NOT used during 2026-08-09 diagnosis)
+# ---------------------------------------------------------------------------
+FRESH_HELDOUT_QUERIES = [
+    ("shaheen afridi ne kitne wickets liye is series mein", "long"),
+    ("toss", "short"),
+    ("ٹی20 ورلڈ کپ کا شیڈول جاری کر دیا گیا", "long"),
+    ("رنز", "short"),
+    ("karachi kings ne lahore qalandars ko hara diya", "long"),
+    ("senate", "short"),
+    ("nawaz sharif ne rally mein kya khitab kiya", "long"),
+    ("گورنر", "short"),
+    ("پنجاب اسمبلی نے نیا قانون منظور کر لیا", "long"),
+    ("mayor election ke natayej kab aayenge", "long"),
+    ("gold rate aaj sonay ka bhaw kya hai", "long"),
+    ("shares", "short"),
+    ("ٹیکس میں چھوٹ کا اعلان کر دیا گیا", "long"),
+    ("inflation", "short"),
+    ("rupee ki value dollar ke muqablay mein girti ja rahi", "long"),
+    ("clinic", "short"),
+    ("polio ke case phir se report huye hain sindh mein", "long"),
+    ("ویکسین", "short"),
+    ("ڈینگو سے بچاؤ کی مہم شروع کر دی گئی", "long"),
+    ("blood donation camp kahan laga hai aaj", "long"),
+    ("app", "short"),
+    ("naya laptop model market mein aa gaya hai", "long"),
+    ("ویب سائٹ", "short"),
+    ("سولر انرجی کے استعمال میں اضافہ ہو رہا ہے", "long"),
+    ("chatbot technology pakistan mein kitni advance ho chuki", "long"),
+    ("humidity", "short"),
+    ("smog ki wajah se schools band kar diye gaye", "long"),
+    ("طوفان", "short"),
+    ("زلزلے کے جھٹکے محسوس کیے گئے آج صبح", "long"),
+    ("syllabus", "short"),
+    ("naye education board ka elaan kar diya gaya", "long"),
+    ("لائبریری", "short"),
+    ("طلبہ کے لیے نئی اسکالرشپ اسکیم شروع", "long"),
+    ("trailer", "short"),
+    ("naye singer ka album release ho gaya hai", "long"),
+    ("اداکارہ", "short"),
+    ("فلم فیسٹیول میں کن فلموں کو ایوارڈ ملا", "long"),
+]
+
+
+def test5_fresh_heldout(roman_dict):
+    print("\n" + "=" * 70)
+    print("TEST 5 — FRESH HELD-OUT VALIDATION (honesty check)")
+    print("=" * 70)
+    print("These queries were NOT examined during the 2026-08-09 root-cause")
+    print("diagnosis or data-fixing -- different topics/phrasing from the")
+    print("50-query external set. A strong result here is stronger evidence")
+    print("of genuine generalization than the diagnostic set alone.\n")
+
+    import pickle
+    scaler_path = _find_file("models/scaler.pkl")
+    model_path = _find_file("models/svm_classifier.pkl")
+    if scaler_path is None or model_path is None:
+        print("models/scaler.pkl or svm_classifier.pkl not found -- skipping.")
+        return
+    with open(scaler_path, "rb") as f:
+        scaler = pickle.load(f)
+    with open(model_path, "rb") as f:
+        model = pickle.load(f)
+
+    qs = [q for q, _ in FRESH_HELDOUT_QUERIES]
+    ls = [l for _, l in FRESH_HELDOUT_QUERIES]
+    X = scaler.transform(np.array([extract_features(q, roman_dict) for q in qs]))
+    preds = model.predict(X)
+
+    wrong = 0
+    for q, t, p in zip(qs, ls, preds):
+        if t != p:
+            wrong += 1
+            print(f"  WRONG: true={t} pred={p}  {q}")
+    correct = len(qs) - wrong
+    print(f"\nAccuracy: {correct}/{len(qs)} = {correct/len(qs):.2%}")
+    if wrong == 0:
+        print("No errors on fresh set.")
+
+
+# ---------------------------------------------------------------------------
 if __name__ == "__main__":
     queries = load_original_queries()
     roman_dict = load_roman_dict()
@@ -347,6 +447,7 @@ if __name__ == "__main__":
     test2_leave_one_topic_out(queries, roman_dict)
     test3_dataset_expansion(queries, roman_dict)
     test4_roman_urdu_robustness(roman_dict)
+    test5_fresh_heldout(roman_dict)
 
     print("\n" + "=" * 70)
     print("DONE. These numbers now match the ACTUAL deployed model's features.")

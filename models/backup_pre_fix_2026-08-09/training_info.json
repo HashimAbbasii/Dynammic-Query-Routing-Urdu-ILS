@@ -1,0 +1,18 @@
+{
+  "total_samples": 369,
+  "short_queries": 193,
+  "long_queries": 176,
+  "train_accuracy": 100.0,
+  "test_accuracy": 100.0,
+  "cv_accuracy": 100.0,
+  "features": [
+    "char_length",
+    "word_count",
+    "unique_words",
+    "avg_word_length",
+    "lexical_diversity",
+    "urdu_char_ratio",
+    "has_question_words",
+    "is_long_by_static"
+  ]
+}
