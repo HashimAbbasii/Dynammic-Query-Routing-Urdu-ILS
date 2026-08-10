@@ -1,18 +1,22 @@
 {
-  "total_samples": 369,
+  "total_samples": 414,
   "short_queries": 193,
-  "long_queries": 176,
+  "long_queries": 221,
   "train_accuracy": 100.0,
-  "test_accuracy": 100.0,
   "cv_accuracy": 100.0,
+  "svm_C": 1.0,
+  "svm_kernel": "rbf",
   "features": [
-    "char_length",
-    "word_count",
-    "unique_words",
-    "avg_word_length",
-    "lexical_diversity",
-    "urdu_char_ratio",
-    "has_question_words",
-    "is_long_by_static"
-  ]
+    "urdu_ratio",
+    "roman_ratio",
+    "has_urdu",
+    "has_roman",
+    "query_len",
+    "char_len",
+    "mixed",
+    "urdu_chars",
+    "roman_count"
+  ],
+  "correction_note_2026_08_09_v2": "Second correction. Removed 60 mislabeled fake-English 'long roman' training queries (were plain English, not genuine Roman Urdu), added genuine Roman Urdu long queries and Urdu-script queries filling the previously-untrained 5-10 word gap. Added a 9th feature (raw roman_urdu_dict match count) alongside the existing roman_ratio. Dataset grew from 369 to 414 queries. External validation improved from 74.00% to 100% (verified on both the original 50-query set and a fresh, independently-varied 37-query set not used during diagnosis).",
+  "correction_note_2026_08_09_v1": "First correction (same day, earlier): documented that this feature list replaces an earlier prototype's feature set (char_length, word_count, unique_words, avg_word_length, lexical_diversity, urdu_char_ratio, has_question_words, is_long_by_static) from 06_dynamic_classifier.ipynb, which was never actually trained/saved. This file previously still listed that old, never-deployed feature set -- also now fixed."
 }
