@@ -1,0 +1,1858 @@
+[
+  {
+    "query": "اسٹاک مارکیٹ میں آج تیزی",
+    "true_label": "short",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "نئی کمپنی نے منافع کمایا",
+    "true_label": "short",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 0.8,
+      "P@10": 0.8,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9578464817581717
+    },
+    "semantic": {
+      "P@5": 0.8,
+      "P@10": 0.8,
+      "P@15": 0.8,
+      "MRR": 1.0,
+      "nDCG@15": 0.9599531370041715
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.8,
+      "MRR": 1.0,
+      "nDCG@15": 0.9924636919762981
+    },
+    "best_mode": "hybrid",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "بینک نے نئی شرح سود بڑھائی",
+    "true_label": "short",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9789186785835773
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9883334847867391
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9678015767089574
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "اسٹارٹ اپ کو نئی فنڈنگ ملی",
+    "true_label": "short",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.3,
+      "P@15": 0.4666666666666667,
+      "MRR": 0.125,
+      "nDCG@15": 0.5344710296356618
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 0.4,
+      "P@10": 0.4,
+      "P@15": 0.5333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.7945421853273749
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "stock market mein aaj tezi",
+    "true_label": "short",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "nai company ne munafa kamaya",
+    "true_label": "short",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "bank ne nai shrah sood barhai",
+    "true_label": "short",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "startup ko nai funding mili",
+    "true_label": "short",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9673751987926571
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9673751987926571
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "مہنگائی کیوں کم نہیں ہوتی",
+    "true_label": "long",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 0.8,
+      "P@10": 0.8,
+      "P@15": 0.8666666666666667,
+      "MRR": 0.5,
+      "nDCG@15": 0.8412348742944065
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9321143950248154
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "چھوٹے کاروبار کیوں بند ہوتے",
+    "true_label": "long",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 0.6,
+      "P@10": 0.6,
+      "P@15": 0.6,
+      "MRR": 0.3333333333333333,
+      "nDCG@15": 0.7289406128919612
+    },
+    "semantic": {
+      "P@5": 0.8,
+      "P@10": 0.8,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9204536501436592
+    },
+    "hybrid": {
+      "P@5": 0.6,
+      "P@10": 0.6,
+      "P@15": 0.6666666666666666,
+      "MRR": 1.0,
+      "nDCG@15": 0.8427483508449213
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "معیشت کیوں بہتر نہیں ہو رہی",
+    "true_label": "long",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9756114204139572
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9989382186219917
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "سرمایہ کاری کیوں کم ہو رہی",
+    "true_label": "long",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9756114204139572
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9909059292558501
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "mehngai kyun kam nahi hoti",
+    "true_label": "long",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "chote karobar kyun band hote",
+    "true_label": "long",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "economy kyun behtar nahi ho rahi",
+    "true_label": "long",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "sarmaya kari kyun kam ho rahi",
+    "true_label": "long",
+    "category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "نئی فلم نے ریکارڈ توڑ دیا",
+    "true_label": "short",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.2,
+      "P@10": 0.2,
+      "P@15": 0.2,
+      "MRR": 1.0,
+      "nDCG@15": 0.743024649536031
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 0.6,
+      "P@10": 0.5,
+      "P@15": 0.3333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9277589908435726
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "اداکارہ نے نیا گانا ریلیز کیا",
+    "true_label": "short",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "ڈرامہ کل رات نشر ہوگا",
+    "true_label": "short",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9963933524645979
+    },
+    "semantic": {
+      "P@5": 0.6,
+      "P@10": 0.7,
+      "P@15": 0.7333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9045550743445658
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.7,
+      "P@15": 0.7333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9367494231346722
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "گلوکار نے نیا البم لانچ کیا",
+    "true_label": "short",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "nai film ne record tor diya",
+    "true_label": "short",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "actress ne naya gana release kiya",
+    "true_label": "short",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "drama kal raat nashar hoga",
+    "true_label": "short",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9678015767089574
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9678015767089574
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "singer ne naya album launch kiya",
+    "true_label": "short",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "فلمیں کیوں کامیاب نہیں ہوتیں",
+    "true_label": "long",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9851491418171124
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9930382456529669
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "ڈرامے کا معیار کیوں گر گیا",
+    "true_label": "long",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.6,
+      "P@10": 0.8,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9418209799739916
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9930382456529669
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 0.5,
+      "nDCG@15": 0.8663422763540115
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "نئے اداکار کیوں مقبول نہیں ہوتے",
+    "true_label": "long",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 0.8,
+      "P@15": 0.7333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9809476154368606
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9945955484482087
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "میوزک انڈسٹری کیوں پیچھے ہے",
+    "true_label": "long",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.6,
+      "P@10": 0.4,
+      "P@15": 0.5333333333333333,
+      "MRR": 0.5,
+      "nDCG@15": 0.7519866718239868
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.8,
+      "P@15": 0.7333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9112935473452047
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "filmein kyun kamyab nahi hotin",
+    "true_label": "long",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "drame ka miyar kyun gir gaya",
+    "true_label": "long",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "naye actors kyun maqbool nahi hote",
+    "true_label": "long",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "music industry kyun peeche hai",
+    "true_label": "long",
+    "category": "Entertainment",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "سائنسدانوں نے نیا سیارہ دریافت کیا",
+    "true_label": "short",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "نئی ٹیکنالوجی مارکیٹ میں آ گئی",
+    "true_label": "short",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.6,
+      "P@10": 0.8,
+      "P@15": 0.7333333333333333,
+      "MRR": 0.5,
+      "nDCG@15": 0.8202977205984381
+    },
+    "semantic": {
+      "P@5": 0.6,
+      "P@10": 0.7,
+      "P@15": 0.6,
+      "MRR": 0.5,
+      "nDCG@15": 0.7893473968976655
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.7,
+      "P@15": 0.7333333333333333,
+      "MRR": 0.5,
+      "nDCG@15": 0.8296553917859713
+    },
+    "best_mode": "hybrid",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "کمپیوٹر کمپنی نے نیا چپ بنایا",
+    "true_label": "short",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9987505092512665
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "محقق نے نئی تحقیق شائع کی",
+    "true_label": "short",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.6,
+      "P@10": 0.6,
+      "P@15": 0.4666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.8580034327288721
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9909059292558501
+    },
+    "hybrid": {
+      "P@5": 0.6,
+      "P@10": 0.8,
+      "P@15": 0.8,
+      "MRR": 1.0,
+      "nDCG@15": 0.9276921233550854
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "scientists ne naya sitara dhoond liya",
+    "true_label": "short",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9810727855150643
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9810727855150643
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "nai technology market mein aa gayi",
+    "true_label": "short",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.2,
+      "P@10": 0.4,
+      "P@15": 0.4,
+      "MRR": 0.2,
+      "nDCG@15": 0.5621153124508781
+    },
+    "hybrid": {
+      "P@5": 0.2,
+      "P@10": 0.4,
+      "P@15": 0.4,
+      "MRR": 0.2,
+      "nDCG@15": 0.5621153124508781
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "computer company ne naya chip banaya",
+    "true_label": "short",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "researcher ne nai tehqeeq shaya ki",
+    "true_label": "short",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9987505092512665
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9987505092512665
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "ٹیکنالوجی روزگار کم کیوں کرتی",
+    "true_label": "long",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.8,
+      "P@10": 0.7,
+      "P@15": 0.6666666666666666,
+      "MRR": 0.5,
+      "nDCG@15": 0.8029131308685896
+    },
+    "semantic": {
+      "P@5": 0.6,
+      "P@10": 0.5,
+      "P@15": 0.5333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.8714685135807337
+    },
+    "hybrid": {
+      "P@5": 0.6,
+      "P@10": 0.5,
+      "P@15": 0.6,
+      "MRR": 1.0,
+      "nDCG@15": 0.8749735694281195
+    },
+    "best_mode": "hybrid",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "خلائی تحقیق پر خرچ کیوں ضروری",
+    "true_label": "long",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.4,
+      "P@10": 0.4,
+      "P@15": 0.4666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.8009565316551187
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.8,
+      "P@15": 0.7333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.955811530746415
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "نئی ایجادات سے خطرات کیوں بڑھتے",
+    "true_label": "long",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.4,
+      "P@10": 0.5,
+      "P@15": 0.4666666666666667,
+      "MRR": 0.5,
+      "nDCG@15": 0.6980940000632773
+    },
+    "semantic": {
+      "P@5": 0.8,
+      "P@10": 0.6,
+      "P@15": 0.5333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9378881277260597
+    },
+    "hybrid": {
+      "P@5": 0.6,
+      "P@10": 0.6,
+      "P@15": 0.6,
+      "MRR": 0.5,
+      "nDCG@15": 0.7748873634431285
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "پاکستان سائنس میں پیچھے کیوں ہے",
+    "true_label": "long",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.6,
+      "P@10": 0.3,
+      "P@15": 0.26666666666666666,
+      "MRR": 0.5,
+      "nDCG@15": 0.6924329384857214
+    },
+    "semantic": {
+      "P@5": 0.4,
+      "P@10": 0.2,
+      "P@15": 0.3333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.818670819473115
+    },
+    "hybrid": {
+      "P@5": 0.6,
+      "P@10": 0.5,
+      "P@15": 0.3333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.8659013453423597
+    },
+    "best_mode": "hybrid",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "technology rozgar kam kyun karti",
+    "true_label": "long",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.8,
+      "P@10": 0.8,
+      "P@15": 0.8,
+      "MRR": 1.0,
+      "nDCG@15": 0.9420602768908479
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.8,
+      "P@15": 0.8,
+      "MRR": 1.0,
+      "nDCG@15": 0.9420602768908479
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "khalai tehqeeq par kharch kyun zaroori",
+    "true_label": "long",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "nai ijadat se khatrat kyun barhte",
+    "true_label": "long",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.06666666666666667,
+      "MRR": 0.06666666666666667,
+      "nDCG@15": 0.25
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.06666666666666667,
+      "MRR": 0.06666666666666667,
+      "nDCG@15": 0.25
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "pakistan science mein peeche kyun hai",
+    "true_label": "long",
+    "category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.4,
+      "P@10": 0.2,
+      "P@15": 0.13333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 0.4,
+      "P@10": 0.2,
+      "P@15": 0.13333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "پاکستانی ٹیم نے میچ جیت لیا",
+    "true_label": "short",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9678015767089574
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9948420690248806
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9756114204139572
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "کھلاڑی نے سنچری اسکور کی",
+    "true_label": "short",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "فٹبال ٹیم نے فائنل جیتا",
+    "true_label": "short",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "نیا کھلاڑی ٹیم میں شامل ہوا",
+    "true_label": "short",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "pakistani team ne match jeet liya",
+    "true_label": "short",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "player ne century score ki",
+    "true_label": "short",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "football team ne final jeeta",
+    "true_label": "short",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "naya player team mein shamil hua",
+    "true_label": "short",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9930382456529669
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9930382456529669
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "ٹیم کیوں ہار رہی ہے",
+    "true_label": "long",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.6,
+      "P@10": 0.4,
+      "P@15": 0.4666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.861030469550853
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.7,
+      "P@15": 0.7333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9435517007518831
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "کھلاڑیوں کو مواقع کیوں نہیں ملتے",
+    "true_label": "long",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.6,
+      "P@10": 0.7,
+      "P@15": 0.7333333333333333,
+      "MRR": 0.5,
+      "nDCG@15": 0.8009666850745788
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.8666666666666667,
+      "MRR": 0.5,
+      "nDCG@15": 0.8587046855572555
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "نوجوان کھلاڑی کیوں پیچھے رہ جاتے",
+    "true_label": "long",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.997745722588998
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "کھیلوں میں سرمایہ کاری کیوں کم",
+    "true_label": "long",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 0.4,
+      "P@10": 0.6,
+      "P@15": 0.6,
+      "MRR": 0.5,
+      "nDCG@15": 0.7316177419808435
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "team kyun haar rahi hai",
+    "true_label": "long",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9299823671781446
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9299823671781446
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "players ko mauqe kyun nahi milte",
+    "true_label": "long",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9930382456529669
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9930382456529669
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "naujawan players kyun peeche reh jate",
+    "true_label": "long",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "khelon mein sarmaya kari kyun kam",
+    "true_label": "long",
+    "category": "Sports",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  }
+]

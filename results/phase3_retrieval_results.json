@@ -1,0 +1,408 @@
+[
+  {
+    "query": "ملتان میں ٹریفک حادثہ ہوا",
+    "true_label": "long",
+    "expected_category": "Crime & Incidents",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "کسانوں کو نیا قرض ملے گا",
+    "true_label": "long",
+    "expected_category": "Business & Economics",
+    "keyword": {
+      "P@5": 0.6,
+      "P@10": 0.7,
+      "P@15": 0.7333333333333333,
+      "MRR": 0.3333333333333333,
+      "nDCG@15": 0.7569608241422334
+    },
+    "semantic": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9756114204139572
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.8,
+      "P@15": 0.8666666666666667,
+      "MRR": 0.5,
+      "nDCG@15": 0.8515379879276102
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "پشاور میں چوری کی واردات",
+    "true_label": "long",
+    "expected_category": "Crime & Incidents",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "نیا اسٹارٹ اپ فنڈنگ حاصل کرے",
+    "true_label": "long",
+    "expected_category": "Business & Economics",
+    "keyword": {
+      "P@5": 0.4,
+      "P@10": 0.4,
+      "P@15": 0.4,
+      "MRR": 1.0,
+      "nDCG@15": 0.8431155659011954
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.997745722588998
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.7,
+      "P@15": 0.7333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9597594924099406
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "فیصل آباد میں پانی صاف نہیں",
+    "true_label": "long",
+    "expected_category": "Environment",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "multan mein traffic accident hua",
+    "true_label": "long",
+    "expected_category": "Crime & Incidents",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "kisano ko naya loan milega",
+    "true_label": "long",
+    "expected_category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "peshawar mein chori ki waardaat",
+    "true_label": "long",
+    "expected_category": "Crime & Incidents",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "naya startup funding hasil karega",
+    "true_label": "long",
+    "expected_category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9678015767089574
+    },
+    "hybrid": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9678015767089574
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "faisalabad mein pani saaf nahi",
+    "true_label": "long",
+    "expected_category": "Environment",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "hybrid": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "نئے بینک اکاؤنٹ کھولنے کا طریقہ",
+    "true_label": "long",
+    "expected_category": "Business & Economics",
+    "keyword": {
+      "P@5": 0.6,
+      "P@10": 0.6,
+      "P@15": 0.6,
+      "MRR": 1.0,
+      "nDCG@15": 0.8915874816333382
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 0.8666666666666667,
+      "MRR": 1.0,
+      "nDCG@15": 0.9933460576994753
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  },
+  {
+    "query": "عید سے پہلے بازاروں میں رش",
+    "true_label": "long",
+    "expected_category": "Business & Economics",
+    "keyword": {
+      "P@5": 0.8,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9756114204139572
+    },
+    "semantic": {
+      "P@5": 0.4,
+      "P@10": 0.6,
+      "P@15": 0.6,
+      "MRR": 1.0,
+      "nDCG@15": 0.8049877283593203
+    },
+    "hybrid": {
+      "P@5": 0.4,
+      "P@10": 0.6,
+      "P@15": 0.7333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.8730914060050236
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "naya bank account kholne ka tareeqa",
+    "true_label": "long",
+    "expected_category": "Business & Economics",
+    "keyword": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 1.0,
+      "P@15": 1.0,
+      "MRR": 1.0,
+      "nDCG@15": 1.0
+    },
+    "best_mode": "keyword",
+    "implied_label": "short",
+    "agrees_with_label": "NO"
+  },
+  {
+    "query": "scientists ne naya sitara dhoond liya",
+    "true_label": "long",
+    "expected_category": "Science & Technology",
+    "keyword": {
+      "P@5": 0.0,
+      "P@10": 0.0,
+      "P@15": 0.0,
+      "MRR": 0.0,
+      "nDCG@15": 0.0
+    },
+    "semantic": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9810727855150643
+    },
+    "hybrid": {
+      "P@5": 1.0,
+      "P@10": 0.9,
+      "P@15": 0.9333333333333333,
+      "MRR": 1.0,
+      "nDCG@15": 0.9810727855150643
+    },
+    "best_mode": "semantic",
+    "implied_label": "long",
+    "agrees_with_label": "YES"
+  }
+]
