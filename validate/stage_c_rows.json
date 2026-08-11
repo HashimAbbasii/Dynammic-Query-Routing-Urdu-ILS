@@ -1,0 +1,767 @@
+[
+ {
+  "q": "ٹریفک جام",
+  "true": "short",
+  "wc": 2,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "زرعی قرض",
+  "true": "short",
+  "wc": 2,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "سمندری آلودگی",
+  "true": "short",
+  "wc": 2,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "چوری واردات",
+  "true": "short",
+  "wc": 2,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "خلائی مشن",
+  "true": "short",
+  "wc": 2,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "سیاحتی مقام",
+  "true": "short",
+  "wc": 2,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "بینک قرض",
+  "true": "short",
+  "wc": 2,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "ٹینس ٹورنامنٹ",
+  "true": "short",
+  "wc": 2,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "traffic jam",
+  "true": "short",
+  "wc": 2,
+  "script": "roman",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "agriculture loan",
+  "true": "short",
+  "wc": 2,
+  "script": "roman",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "deforestation crisis",
+  "true": "short",
+  "wc": 2,
+  "script": "roman",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "theft incident",
+  "true": "short",
+  "wc": 2,
+  "script": "roman",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "space mission",
+  "true": "short",
+  "wc": 2,
+  "script": "roman",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "tourist spot",
+  "true": "short",
+  "wc": 2,
+  "script": "roman",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "bank loan",
+  "true": "short",
+  "wc": 2,
+  "script": "roman",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "football match",
+  "true": "short",
+  "wc": 2,
+  "script": "roman",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "ملتان میں ٹریفک حادثہ ہوا",
+  "true": "long",
+  "wc": 5,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "کسانوں کو نیا قرض ملے گا",
+  "true": "long",
+  "wc": 6,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "پشاور میں چوری کی واردات",
+  "true": "long",
+  "wc": 5,
+  "script": "urdu",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "نیا اسٹارٹ اپ فنڈنگ حاصل کرے",
+  "true": "long",
+  "wc": 6,
+  "script": "urdu",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "فیصل آباد میں پانی صاف نہیں",
+  "true": "long",
+  "wc": 6,
+  "script": "urdu",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "multan mein traffic accident hua",
+  "true": "long",
+  "wc": 5,
+  "script": "roman",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "kisano ko naya loan milega",
+  "true": "long",
+  "wc": 5,
+  "script": "roman",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "peshawar mein chori ki waardaat",
+  "true": "long",
+  "wc": 5,
+  "script": "roman",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "naya startup funding hasil karega",
+  "true": "long",
+  "wc": 5,
+  "script": "roman",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "faisalabad mein pani saaf nahi",
+  "true": "long",
+  "wc": 5,
+  "script": "roman",
+  "old": "short",
+  "new": "short",
+  "unseen_vocab": false
+ },
+ {
+  "q": "رمضان میں اشیائے خوردونوش کی قیمتیں بڑھیں",
+  "true": "long",
+  "wc": 7,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "نئے بینک اکاؤنٹ کھولنے کا طریقہ",
+  "true": "long",
+  "wc": 6,
+  "script": "urdu",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "عید سے پہلے بازاروں میں رش",
+  "true": "long",
+  "wc": 6,
+  "script": "urdu",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "خلائی سائنسدانوں نے نیا سیارہ دریافت کیا",
+  "true": "long",
+  "wc": 7,
+  "script": "urdu",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "فٹبال ٹیم نے فائنل میچ جیت لیا",
+  "true": "long",
+  "wc": 7,
+  "script": "urdu",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "ramzan mein cheezon ki qeemat barh gayi",
+  "true": "long",
+  "wc": 7,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "naya bank account kholne ka tareeqa",
+  "true": "long",
+  "wc": 6,
+  "script": "roman",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "eid se pehle bazaron mein rush hai",
+  "true": "long",
+  "wc": 7,
+  "script": "roman",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "scientists ne naya sitara dhoond liya",
+  "true": "long",
+  "wc": 6,
+  "script": "roman",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "football team ne final match jeet liya",
+  "true": "long",
+  "wc": 7,
+  "script": "roman",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "محکمہ ماحولیات نے جنگلات کی کٹائی روکنے کا فیصلہ کیا",
+  "true": "long",
+  "wc": 10,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "سیاحوں کی تعداد میں حالیہ مہینوں کے دوران اضافہ ہوا",
+  "true": "long",
+  "wc": 10,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "نئی ریلوے لائن کی تعمیر کا کام شروع ہو گیا",
+  "true": "long",
+  "wc": 10,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "پولیس نے چوری کے واقعات میں ملوث گروہ پکڑ لیا",
+  "true": "long",
+  "wc": 10,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "badminton championship mein pakistani player ne medal jeeta hai",
+  "true": "long",
+  "wc": 9,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "mahikma-e-maholiyat ne jangalat ki katai rokne ka faisla kiya",
+  "true": "long",
+  "wc": 9,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "sayahon ki tadad mein haleeya mahino ke dauran izafa hua",
+  "true": "long",
+  "wc": 10,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "nai railway line ki tameer ka kaam shuru ho gaya",
+  "true": "long",
+  "wc": 10,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "police ne chori ke waqiat mein mulawas giroh pakar liya",
+  "true": "long",
+  "wc": 10,
+  "script": "roman",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "real estate prices mein is saal kaafi izafa dekha gaya",
+  "true": "long",
+  "wc": 10,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "نئے تعلیمی سال میں داخلوں کی تاریخ کا اعلان ہو گیا",
+  "true": "long",
+  "wc": 11,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "ٹیلی کام کمپنیوں نے موبائل پیکجز کی قیمتیں کم کر دیں",
+  "true": "long",
+  "wc": 11,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "مقامی فنکاروں نے شہر میں نئی نمائش کا اہتمام کیا",
+  "true": "long",
+  "wc": 10,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "زرعی ماہرین نے کسانوں کو نئی فصل کی تربیت دی",
+  "true": "long",
+  "wc": 10,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "naye education year mein admission ki date announce ho gayi",
+  "true": "long",
+  "wc": 10,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "telecom companies ne mobile packages ki qeemat kam kar di",
+  "true": "long",
+  "wc": 10,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "local artists ne shehar mein nai exhibition ka intizam kiya",
+  "true": "long",
+  "wc": 10,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "agriculture experts ne kisano ko nai crop training di",
+  "true": "long",
+  "wc": 9,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "cricket ke ilawa tennis mein bhi pakistan ne acha perform kiya",
+  "true": "long",
+  "wc": 11,
+  "script": "roman",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "bank ne customers ke liye naya digital saving account launch kiya",
+  "true": "long",
+  "wc": 11,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "وفاقی حکومت نے چھوٹے کاروباروں کے لیے نئی سبسڈی اسکیم شروع کی",
+  "true": "long",
+  "wc": 12,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "محکمہ جنگلات نے شہر کے مضافات میں نئے درخت لگانے کا آغاز کیا",
+  "true": "long",
+  "wc": 13,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "نجی ہسپتالوں میں علاج کی قیمتوں پر حکومت نے کنٹرول لگا دیا",
+  "true": "long",
+  "wc": 12,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "wafaqi hakumat ne chote karobaron ke liye nai subsidy scheme shuru ki",
+  "true": "long",
+  "wc": 12,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "mahikma-e-jangalat ne shehar ke muzafat mein naye darakht lagane ka aghaz kiya",
+  "true": "long",
+  "wc": 12,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "private hospitals mein ilaj ki qeemat par hakumat ne control laga diya",
+  "true": "long",
+  "wc": 12,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "real estate sector mein invest karne wale logon ki tadad barh gayi hai",
+  "true": "long",
+  "wc": 13,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "nai startup companies ko government se tax mein chhoot milne wali hai",
+  "true": "long",
+  "wc": 12,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "tourism ministry ne northern areas mein naye resorts banane ka elan kiya",
+  "true": "long",
+  "wc": 12,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "قومی اسمبلی میں آج زرعی اصلاحات کے بل پر بحث ہونے والی ہے",
+  "true": "long",
+  "wc": 13,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "شہر کی سڑکوں پر ٹریفک کا نظام بہتر بنانے کے لیے نیا منصوبہ شروع کیا گیا ہے",
+  "true": "long",
+  "wc": 17,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "national assembly mein aaj agriculture reforms ke bill par behas hone wali hai",
+  "true": "long",
+  "wc": 13,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "shehar ki sarkon par traffic ka nizam behtar banane ke liye naya mansooba shuru kiya gaya hai",
+  "true": "long",
+  "wc": 17,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "مقامی حکومت نے شہریوں کی سہولت کے لیے نیا صحت مرکز تعمیر کرنے کا فیصلہ کیا ہے",
+  "true": "long",
+  "wc": 17,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "local government ne shehriyon ki sahulat ke liye naya health center tameer karne ka faisla kiya hai",
+  "true": "long",
+  "wc": 17,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "خلائی تحقیقاتی ادارے نے نئے سیٹلائٹ کی کامیاب لانچنگ کا اعلان کیا ہے",
+  "true": "long",
+  "wc": 13,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "space research organization ne naye satellite ki kamyab launching ka elan kiya hai",
+  "true": "long",
+  "wc": 13,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "محکمہ تعلیم نے سرکاری اسکولوں میں طلبہ کی حاضری بہتر بنانے کے لیے نیا نظام متعارف کرایا ہے جس کے تحت والدین کو روزانہ اطلاع ملے گی",
+  "true": "long",
+  "wc": 27,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "education department ne sarkari schools mein talba ki hazri behtar banane ke liye naya nizam mutaraf karaya hai jiske tehat walidain ko rozana ittila milegi",
+  "true": "long",
+  "wc": 25,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "زلزلہ پیما آلات نے شدید جھٹکے ریکارڈ کیے",
+  "true": "long",
+  "wc": 8,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": true
+ },
+ {
+  "q": "seismograph instruments ne shadeed jhatke record kiye",
+  "true": "long",
+  "wc": 7,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": true
+ },
+ {
+  "q": "ماہرینِ فلکیات نے دومکیت کی نئی تصاویر جاری کیں",
+  "true": "long",
+  "wc": 9,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": true
+ },
+ {
+  "q": "astronomers ne comet ki nai tasveeren jari ki hain",
+  "true": "long",
+  "wc": 9,
+  "script": "roman",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": true
+ },
+ {
+  "q": "گلیشیئر پگھلنے کی رفتار میں تشویشناک اضافہ دیکھا گیا",
+  "true": "long",
+  "wc": 9,
+  "script": "urdu",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": true
+ },
+ {
+  "q": "glacier pighalne ki raftar mein tashweeshnak izafa dekha gaya",
+  "true": "long",
+  "wc": 9,
+  "script": "roman",
+  "old": "long",
+  "new": "long",
+  "unseen_vocab": true
+ },
+ {
+  "q": "پاکستان کی economy is saal behtar ho rahi hai",
+  "true": "long",
+  "wc": 9,
+  "script": "mixed",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "cricket ٹیم نے آج زبردست performance دیا",
+  "true": "long",
+  "wc": 7,
+  "script": "mixed",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "نیا mobile فون بازار میں آ گیا",
+  "true": "long",
+  "wc": 7,
+  "script": "mixed",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ },
+ {
+  "q": "weather آج بہت اچھا ہے islamabad mein",
+  "true": "long",
+  "wc": 7,
+  "script": "mixed",
+  "old": "short",
+  "new": "long",
+  "unseen_vocab": false
+ }
+]

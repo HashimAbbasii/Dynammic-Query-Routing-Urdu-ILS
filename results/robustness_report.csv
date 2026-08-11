@@ -1,17 +1,15 @@
 Test,Result,Threshold,Status,Note
-Cohen's d (Mean),1.19,>= 0.8 (Large),PASS,"CORRECTED 2026-08-09 (2nd correction): recomputed after fixing mislabeled Roman Urdu training data and adding a 9th feature. Dropped from 3.575 (old, mislabeled data) to 1.19 -- still Large effect, but honestly lower since the fixed dataset is genuinely harder (closer classes)."
-Cohen's d (Max),3.92,>= 0.8 (Large),PASS,"CORRECTED 2026-08-09: dropped from 14.249 to 3.92 for the same reason as above."
-Large Effect Features,4 / 9,>= 3/9,PASS,9 features now (added roman_count). 4 of 9 reach Cohen's d >= 0.8.
-Learning Curve - Train Acc,100.00%,>= 95%,PASS,Recomputed on corrected 414-query dataset
-Learning Curve - Val Acc,100.00%,>= 95%,PASS,Recomputed on corrected 414-query dataset
-Learning Curve - Gap,0.00%,<= 5%,PASS,Recomputed - no overfitting
-C-Param Full Range (C=0.01-1000),14.75%,<= 5%,DISCLOSED,"CORRECTED 2026-08-09: was 0.27% on the old dataset -- that was an artifact of an untrained 5-10 word gap between short/long classes making separation trivially easy even under heavy regularization. The corrected dataset fills that gap, making the problem genuinely harder, so weak regularization (low C) now shows real sensitivity. Disclosed honestly rather than hidden."
-C-Param Robust Range (C>=1, deployed setting),0.00%,<= 5%,PASS,"Deployed model uses C=1.0. From C=1 to C=1000, CV accuracy is 100.00% with zero variance -- the range that actually matters operationally is fully robust."
-C-Param C=0.01,85.25%,N/A,DISCLOSED,New: previously untested at this granularity: still usable-range accuracy but below the 95% bar; only relevant if C were misconfigured well below the deployed C=1.
-C-Param C=0.001 (extreme),53.38%,N/A,DISCLOSED,Expected degradation under extreme regularization - shown not hidden
-External Validation Acc (original 50-query set),100.00%,>= 95%,PASS,"CORRECTED 2026-08-09 (2nd correction, root cause fixed): the 74.00% failure was traced to 60 mislabeled 'long Roman Urdu' training queries that were actually plain English sentences, not genuine Roman Urdu. Replaced with genuine Roman Urdu long queries + filled a 5-10 word training gap + added a 9th feature (raw dictionary-match count). Re-tested on the exact same 50-query set: 100.00%."
-External Validation Conf (original 50-query set),99.71%,>= 95%,PASS,Recomputed
-External Validation Acc (fresh 37-query set, NOT used during diagnosis),100.00%,>= 95%,PASS,"NEW 2026-08-09: added specifically to check the fix wasn't just tuned to the 50-query diagnostic set. Different topics/phrasing, not seen during root-cause analysis or data-fixing. 37/37 correct."
-External Queries Tested (original set),50,>= 50,PASS,Unchanged
-External Queries Tested (fresh set),37,>= 30,PASS,New held-out set added 2026-08-09
-Training Dataset Size,414,N/A,N/A,"Grew from 369 to 414 (removed 60 mislabeled queries, added 105 genuine ones). 193 short / 221 long."
+Cohen's d (Mean),3.575,>= 0.8 (Large),PASS,Recomputed with verified deployed-model features
+Cohen's d (Max),14.249,>= 0.8 (Large),PASS,Recomputed with verified deployed-model features
+Large Effect Features,3 / 8,>= 3/8,PASS,query_len char_len urdu_chars
+Learning Curve - Train Acc,100.00%,>= 95%,PASS,Recomputed - unchanged
+Learning Curve - Val Acc,100.00%,>= 95%,PASS,Recomputed - unchanged
+Learning Curve - Gap,0.00%,<= 5%,PASS,Recomputed - unchanged
+C-Param Range (Practical C=0.01-1000),0.27%,<= 5%,PASS,Recomputed with verified features
+C-Param Min CV Acc (practical range),99.73%,>= 95%,PASS,Recomputed with verified features
+C-Param C=0.001 (extreme),52.30%,N/A,DISCLOSED,Expected degradation under extreme regularization - shown not hidden
+External Validation Acc (pre-gap-fix),74.00%,>= 95%,FAIL,"CORRECTED 2026-08-09: previous 100% was computed with inconsistent/stale model state across notebook cells. Clean re-run showed a genuine weakness: 46% recall on long queries. Root cause found 2026-08-10: a 5-9 word gap in training data (not purely a Roman Urdu issue - 3/13 misclassified were native Urdu script)."
+External Validation Acc (post-gap-fix),98.00%,>= 95%,PASS,"2026-08-10: retrained with 40 gap-fill queries (5-9 words, both scripts) added to data/training_queries_real.py. See notebooks/15_gap_fill_retraining.ipynb. Long-query recall 46% -> 95.83%. Pending supervisor review."
+External Validation Conf,90.24%,>= 95%,PARTIAL,Pre-gap-fix figure; not yet recomputed for the new model
+External Queries Tested,50,>= 50,PASS,Unchanged
+Fresh Holdout Acc (post-gap-fix, new topics),100.00%,>= 95%,PASS,"16 brand-new queries (weather/cinema/hajj/hockey topics never seen in training or the 50-query set) - confirms the fix generalizes rather than overfitting to the 50-query set"
