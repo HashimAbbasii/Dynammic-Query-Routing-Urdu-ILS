@@ -1,0 +1,33 @@
+# PROVENANCE: NOT RECONSTRUCTABLE FROM CURRENT REPOSITORY
+#
+# This file was previously described as containing Stage-C labels
+# re-audited under an ALTERNATE §4 interpretation (bare <=10-word event
+# statement => SHORT), which was reported to move accuracy from 94.12% to
+# 51.76%.
+#
+# IMPORTANT CORRECTION discovered during this reconstruction session:
+# validate/stage_c_rows.json's 'old' and 'new' columns -- which might look
+# like they correspond to this alternate-labeling experiment -- were
+# empirically verified (by running the actual deployed model files) to
+# instead represent PRE_GAPFIX model predictions ('old') vs current
+# deployed model predictions ('new'), NOT two different label-audit
+# policies. See validation/stage_c_reconstructed_from_validate_stage_c_rows.csv
+# for that verification.
+#
+# The actual alternate-§4-labeling assignment (which specific queries were
+# relabeled SHORT under the <=10-word-bare-event rule, and the resulting
+# 51.76% figure) does not exist as a stored artifact anywhere in this
+# repository (verified via `git log --all --diff-filter=A`, zero hits).
+#
+# Reconstructing it now would require re-deciding, query by query, which of
+# the 85 Stage-C queries counts as a "bare event statement," which is
+# exactly the kind of manual/rule judgment call this audit is not permitted
+# to invent post hoc. Doing so risks retroactively manufacturing whichever
+# result looks convenient, which directly violates hard constraint #5
+# (never optimize for a desired headline result) and #13 (never fabricate
+# or simulate results).
+#
+# STATUS: The qualitative claim ("result is sensitive to the §4 definition")
+# should be treated as reported-but-not-independently-re-verified pending a
+# properly designed, pre-registered re-run -- which is precisely the
+# purpose of Phase 2.5.

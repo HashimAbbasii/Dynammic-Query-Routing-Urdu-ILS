@@ -1,0 +1,59 @@
+{
+  "_provenance": "RECONSTRUCTED / NOT ORIGINAL — this file did not exist anywhere in the GitHub repository history (verified via `git log --all --diff-filter=A` across main and validation-response branches, zero hits). It is being created now, on the date below, documenting only facts directly verifiable in the current checked-out working tree.",
+  "audit_timestamp_utc": "2026-08-12T06:05:58.230139Z",
+  "repository_commit_audited": "3277f576a32089a1998f290d789be84ee7dd274c",
+  "repository_branch": "validation-response",
+  "repository_url": "https://github.com/HashimAbbasii/Dynammic-Query-Routing-Urdu-ILS",
+  "model_paths": {
+    "classifier": "models/svm_classifier.pkl",
+    "scaler": "models/scaler.pkl",
+    "backup_classifier_pre_gapfix": "models/svm_classifier_PRE_GAPFIX_backup.pkl",
+    "backup_scaler_pre_gapfix": "models/scaler_PRE_GAPFIX_backup.pkl"
+  },
+  "current_model_hash_md5": "7f3a807edf3b1097d509fbd04073d816",
+  "current_scaler_hash_md5": "abbc8b7229c3d9322615b060b4c9863e",
+  "pre_gapfix_backup_model_hash_md5": "36490570449ba939f393392d34d2a466",
+  "pre_gapfix_backup_scaler_hash_md5": "49db16ba8a1a76cad8a3dbed27c7455a",
+  "hashes_differ_current_vs_backup": true,
+  "training_data_path": "data/training_queries_real.py",
+  "training_data_size_actual": 409,
+  "training_data_size_claimed_in_code_docstring": 414,
+  "training_data_size_discrepancy_note": "validation_response.py docstring claims the dataset 'grew from 369 to 414 queries' as part of a 2026-08-09 fix. The actual current data/training_queries_real.py contains a different count (see training_data_size_actual). This is an unresolved discrepancy between code comments and actual data file contents.",
+  "current_model_metadata_from_training_info_json": {
+    "feature_order": [
+      "urdu_ratio",
+      "roman_ratio",
+      "has_urdu",
+      "has_roman",
+      "query_len",
+      "char_len",
+      "mixed",
+      "urdu_chars"
+    ],
+    "training_queries": 409,
+    "kernel": "rbf",
+    "C": 1.0,
+    "gamma": "scale",
+    "probability": true,
+    "cv_accuracy_mean": 1.0,
+    "cv_accuracy_std": 0.0,
+    "external_validation_50q_accuracy": 0.98,
+    "external_validation_50q_long_recall": 0.9583333333333334,
+    "fresh_holdout_16q_accuracy": 1.0,
+    "fresh_holdout_16q_long_recall": 1.0,
+    "trained_on": "2026-08-10",
+    "notes": "Gap-fill fix: added 40 queries (5-9 word range, both scripts) to close a training-data distribution gap that caused mid-length/Roman-Urdu long queries to be misclassified as short."
+  },
+  "feature_schema_discrepancy": {
+    "description": "validation_response.py's extract_features() (the function its own docstring/comments label as 'THE REAL, DEPLOYED feature extraction') currently returns 9 features (adds 'roman_count' as a 9th feature per an in-code comment 'added 2026-08-09 second correction'). However the CURRENTLY DEPLOYED models/scaler.pkl and models/svm_classifier.pkl both report n_features_in_ = 8, and models/training_info.json's feature_order lists only 8 features (no roman_count). Calling the current extract_features() output directly against the deployed scaler/model would raise a shape-mismatch error.",
+    "extractor_feature_count_current": 9,
+    "deployed_scaler_n_features_in_": 8,
+    "deployed_classifier_n_features_in_": 8,
+    "status": "UNRESOLVED AS OF THIS AUDIT — will be addressed in the 'feature schema repair' step of this same session (isolating the 9-feature version as extract_features_experimental_9(), making the canonical extract_features() return the 8-feature schema). This document records the state BEFORE that repair."
+  },
+  "v2_freeze_claim": "Historical V2 freeze claim cannot be verified from current GitHub repository. Repository evidence (models/training_info.json, distinct MD5 hashes for models/svm_classifier.pkl vs models/svm_classifier_PRE_GAPFIX_backup.pkl, and notebooks/15_gap_fill_retraining.ipynb) shows the deployed V2 model WAS retrained on 2026-08-10 as a 'gap-fill fix' (40 additional 5-9 word queries added, both scripts). This directly contradicts any prior claim that V2 model files were frozen and untouched after the original Phase 0 baseline snapshot. The PRE_GAPFIX backup files appear to represent the actual pre-2026-08-10 state, but there is no earlier baseline_snapshot.json in repo history to confirm exactly what that prior state was declared to be.",
+  "known_backup_directories": [
+    "models/backup_pre_fix_2026-08-09/",
+    "results/_stale_pre_2026-08-09-v2_fix/"
+  ]
+}

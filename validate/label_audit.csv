@@ -1,0 +1,418 @@
+# PROVENANCE: DERIVED / CURRENT-STATE. This is NOT the original historical Phase 2 label audit.
+# It did not exist in repo history. It is a FRESH re-application of Rules 1-4 from
+"# docs/labeling_guidelines.md against the CURRENT data/training_queries_real.py (n=409),"
+# generated in this audit session. The original historical audit's per-query decisions
+"# (which 36 were flagged ambiguous, which 7 were flipped) are NOT recoverable from this"
+# repository -- those were human judgments never committed anywhere. See
+# label_audit_8_manual_review.csv for that gap documented explicitly.
+
+query,actual_label_in_training_data,rule_based_outcome_TODAY,rule_agrees_with_actual_label
+کرکٹ میچ,short,SHORT (Rule2: bare entity/phrase),True
+عالمی بینک,short,SHORT (Rule2: bare entity/phrase),True
+پاکستان ٹیم,short,SHORT (Rule2: bare entity/phrase),True
+ڈالر قیمت,short,SHORT (Rule2: bare entity/phrase),True
+اسٹاک مارکیٹ,short,SHORT (Rule2: bare entity/phrase),True
+وزیراعظم تقریر,short,SHORT (Rule2: bare entity/phrase),True
+فلم اداکار,short,SHORT (Rule2: bare entity/phrase),True
+موبائل فون,short,SHORT (Rule2: bare entity/phrase),True
+کھیل نتیجہ,short,SHORT (Rule2: bare entity/phrase),True
+سیاست خبر,short,SHORT (Rule2: bare entity/phrase),True
+پیٹرول قیمت,short,SHORT (Rule2: bare entity/phrase),True
+بجلی بل,short,SHORT (Rule2: bare entity/phrase),True
+یونیورسٹی داخلہ,short,SHORT (Rule2: bare entity/phrase),True
+ہسپتال علاج,short,SHORT (Rule2: bare entity/phrase),True
+موسم بارش,short,SHORT (Rule2: bare entity/phrase),True
+عدالت فیصلہ,short,SHORT (Rule2: bare entity/phrase),True
+فوج آپریشن,short,SHORT (Rule2: bare entity/phrase),True
+انتخابات نتیجہ,short,SHORT (Rule2: bare entity/phrase),True
+روپیہ گراوٹ,short,SHORT (Rule2: bare entity/phrase),True
+تعلیمی پالیسی,short,SHORT (Rule2: bare entity/phrase),True
+کراچی خبر,short,SHORT (Rule2: bare entity/phrase),True
+لاہور ٹریفک,short,SHORT (Rule2: bare entity/phrase),True
+اسلام آباد موسم,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پشاور دھماکہ,short,SHORT (Rule2: bare entity/phrase),True
+کوئٹہ واقعہ,short,SHORT (Rule2: bare entity/phrase),True
+آئی ایم ایف قرض,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+سینیٹ اجلاس,short,SHORT (Rule2: bare entity/phrase),True
+قومی اسمبلی,short,SHORT (Rule2: bare entity/phrase),True
+صدر پاکستان,short,SHORT (Rule2: bare entity/phrase),True
+چیف جسٹس,short,SHORT (Rule2: bare entity/phrase),True
+آرمی چیف,short,SHORT (Rule2: bare entity/phrase),True
+پی ٹی آئی,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+مسلم لیگ,short,SHORT (Rule2: bare entity/phrase),True
+پیپلز پارٹی,short,SHORT (Rule2: bare entity/phrase),True
+جے یو آئی,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+سونا قیمت,short,SHORT (Rule2: bare entity/phrase),True
+چینی مہنگی,short,SHORT (Rule2: bare entity/phrase),True
+آٹا بحران,short,SHORT (Rule2: bare entity/phrase),True
+گیس لوڈ شیڈنگ,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+انٹرنیٹ بندش,short,SHORT (Rule2: bare entity/phrase),True
+سی پیک منصوبہ,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ایٹمی پروگرام,short,SHORT (Rule2: bare entity/phrase),True
+خارجہ پالیسی,short,SHORT (Rule2: bare entity/phrase),True
+امریکہ تعلقات,short,SHORT (Rule2: bare entity/phrase),True
+چین دوستی,short,SHORT (Rule2: bare entity/phrase),True
+بھارت کشیدگی,short,SHORT (Rule2: bare entity/phrase),True
+افغانستان سرحد,short,SHORT (Rule2: bare entity/phrase),True
+ایران تجارت,short,SHORT (Rule2: bare entity/phrase),True
+سعودی عرب,short,SHORT (Rule2: bare entity/phrase),True
+یورپ ویزہ,short,SHORT (Rule2: bare entity/phrase),True
+ٹیکس محصول,short,SHORT (Rule2: bare entity/phrase),True
+بجٹ خسارہ,short,SHORT (Rule2: bare entity/phrase),True
+مہنگائی شرح,short,SHORT (Rule2: bare entity/phrase),True
+بیروزگاری اعداد,short,SHORT (Rule2: bare entity/phrase),True
+زراعت فصل,short,SHORT (Rule2: bare entity/phrase),True
+کپاس پیداوار,short,SHORT (Rule2: bare entity/phrase),True
+گندم درآمد,short,SHORT (Rule2: bare entity/phrase),True
+چاول برآمد,short,SHORT (Rule2: bare entity/phrase),True
+صنعتی ترقی,short,SHORT (Rule2: bare entity/phrase),True
+بینک سود,short,SHORT (Rule2: bare entity/phrase),True
+سرمایہ کاری,short,SHORT (Rule2: bare entity/phrase),True
+اسمارٹ فون نیا,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+لیپ ٹاپ قیمت,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+سوشل میڈیا بندش,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+یوٹیوب پاکستان,short,SHORT (Rule2: bare entity/phrase),True
+ٹویٹر پابندی,short,SHORT (Rule2: bare entity/phrase),True
+فیس بک خبر,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+واٹس ایپ مسئلہ,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+سائبر کرائم,short,SHORT (Rule2: bare entity/phrase),True
+ڈیجیٹل پاکستان,short,SHORT (Rule2: bare entity/phrase),True
+آن لائن تعلیم,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ای کامرس,short,SHORT (Rule2: bare entity/phrase),True
+اسپتال ڈاکٹر,short,SHORT (Rule2: bare entity/phrase),True
+کورونا ویکسین,short,SHORT (Rule2: bare entity/phrase),True
+ڈینگی بخار,short,SHORT (Rule2: bare entity/phrase),True
+پولیو مہم,short,SHORT (Rule2: bare entity/phrase),True
+صحت بیمہ,short,SHORT (Rule2: bare entity/phrase),True
+میٹرک نتیجہ,short,SHORT (Rule2: bare entity/phrase),True
+انٹر امتحان,short,SHORT (Rule2: bare entity/phrase),True
+ایف ایس سی نتیجہ,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+یونیورسٹی فیس,short,SHORT (Rule2: bare entity/phrase),True
+اسکالرشپ خبر,short,SHORT (Rule2: bare entity/phrase),True
+پی ایس ایل میچ,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+کرکٹ اسکور,short,SHORT (Rule2: bare entity/phrase),True
+باکسنگ چیمپئن,short,SHORT (Rule2: bare entity/phrase),True
+ہاکی ٹیم,short,SHORT (Rule2: bare entity/phrase),True
+فٹبال میچ,short,SHORT (Rule2: bare entity/phrase),True
+اولمپک میڈل,short,SHORT (Rule2: bare entity/phrase),True
+سکواش کھلاڑی,short,SHORT (Rule2: bare entity/phrase),True
+ریسلنگ مقابلہ,short,SHORT (Rule2: bare entity/phrase),True
+تیراکی ریکارڈ,short,SHORT (Rule2: bare entity/phrase),True
+ایتھلیٹکس مقابلہ,short,SHORT (Rule2: bare entity/phrase),True
+پاکستانی فلم,short,SHORT (Rule2: bare entity/phrase),True
+ڈرامہ ریٹنگ,short,SHORT (Rule2: bare entity/phrase),True
+گانا نیا,short,SHORT (Rule2: bare entity/phrase),True
+اداکارہ خبر,short,SHORT (Rule2: bare entity/phrase),True
+ٹی وی چینل,short,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+اخبار خبر,short,SHORT (Rule2: bare entity/phrase),True
+ریڈیو پروگرام,short,SHORT (Rule2: bare entity/phrase),True
+شاعری مشاعرہ,short,SHORT (Rule2: bare entity/phrase),True
+ادب انعام,short,SHORT (Rule2: bare entity/phrase),True
+کتاب نئی,short,SHORT (Rule2: bare entity/phrase),True
+مسجد تعمیر,short,SHORT (Rule2: bare entity/phrase),True
+رمضان چاند,short,SHORT (Rule2: bare entity/phrase),True
+عید نماز,short,SHORT (Rule2: bare entity/phrase),True
+حج انتظام,short,SHORT (Rule2: bare entity/phrase),True
+زکوٰۃ حساب,short,SHORT (Rule2: bare entity/phrase),True
+سیلاب نقصان,short,SHORT (Rule2: bare entity/phrase),True
+زلزلہ خبر,short,SHORT (Rule2: bare entity/phrase),True
+آگ واقعہ,short,SHORT (Rule2: bare entity/phrase),True
+حادثہ سڑک,short,SHORT (Rule2: bare entity/phrase),True
+ٹرین حادثہ,short,SHORT (Rule2: bare entity/phrase),True
+طیارہ خبر,short,SHORT (Rule2: bare entity/phrase),True
+بس حادثہ,short,SHORT (Rule2: bare entity/phrase),True
+پل تعمیر,short,SHORT (Rule2: bare entity/phrase),True
+سڑک منصوبہ,short,SHORT (Rule2: bare entity/phrase),True
+میٹرو بس,short,SHORT (Rule2: bare entity/phrase),True
+اورنج لائن,short,SHORT (Rule2: bare entity/phrase),True
+پانی بحران,short,SHORT (Rule2: bare entity/phrase),True
+ڈیم تعمیر,short,SHORT (Rule2: bare entity/phrase),True
+جنگل کٹائی,short,SHORT (Rule2: bare entity/phrase),True
+موسمیاتی تبدیلی,short,SHORT (Rule2: bare entity/phrase),True
+فضائی آلودگی,short,SHORT (Rule2: bare entity/phrase),True
+کچرہ مسئلہ,short,SHORT (Rule2: bare entity/phrase),True
+شجرکاری مہم,short,SHORT (Rule2: bare entity/phrase),True
+پارک افتتاح,short,SHORT (Rule2: bare entity/phrase),True
+میوزیم نمائش,short,SHORT (Rule2: bare entity/phrase),True
+کھیل میدان,short,SHORT (Rule2: bare entity/phrase),True
+نوکری اشتہار,short,SHORT (Rule2: bare entity/phrase),True
+سرکاری ملازمت,short,SHORT (Rule2: bare entity/phrase),True
+تنخواہ اضافہ,short,SHORT (Rule2: bare entity/phrase),True
+پنشن اصلاح,short,SHORT (Rule2: bare entity/phrase),True
+لیبر قانون,short,SHORT (Rule2: bare entity/phrase),True
+cricket match,short,SHORT (Rule2: bare entity/phrase),True
+dollar rate,short,SHORT (Rule2: bare entity/phrase),True
+pm speech,short,SHORT (Rule2: bare entity/phrase),True
+karachi news,short,SHORT (Rule2: bare entity/phrase),True
+lahore weather,short,SHORT (Rule2: bare entity/phrase),True
+imran khan,short,SHORT (Rule2: bare entity/phrase),True
+pakistan army,short,SHORT (Rule2: bare entity/phrase),True
+stock market,short,SHORT (Rule2: bare entity/phrase),True
+petrol price,short,SHORT (Rule2: bare entity/phrase),True
+bijli bill,short,SHORT (Rule2: bare entity/phrase),True
+mobile phone,short,SHORT (Rule2: bare entity/phrase),True
+new film,short,SHORT (Rule2: bare entity/phrase),True
+psl match,short,SHORT (Rule2: bare entity/phrase),True
+babar azam,short,SHORT (Rule2: bare entity/phrase),True
+shaheen afridi,short,SHORT (Rule2: bare entity/phrase),True
+election result,short,SHORT (Rule2: bare entity/phrase),True
+court decision,short,SHORT (Rule2: bare entity/phrase),True
+gold price,short,SHORT (Rule2: bare entity/phrase),True
+sugar price,short,SHORT (Rule2: bare entity/phrase),True
+flour crisis,short,SHORT (Rule2: bare entity/phrase),True
+internet ban,short,SHORT (Rule2: bare entity/phrase),True
+youtube pakistan,short,SHORT (Rule2: bare entity/phrase),True
+new drama,short,SHORT (Rule2: bare entity/phrase),True
+top singer,short,SHORT (Rule2: bare entity/phrase),True
+university admission,short,SHORT (Rule2: bare entity/phrase),True
+matric result,short,SHORT (Rule2: bare entity/phrase),True
+scholarship news,short,SHORT (Rule2: bare entity/phrase),True
+hospital doctor,short,SHORT (Rule2: bare entity/phrase),True
+dengue fever,short,SHORT (Rule2: bare entity/phrase),True
+polio campaign,short,SHORT (Rule2: bare entity/phrase),True
+flood damage,short,SHORT (Rule2: bare entity/phrase),True
+earthquake news,short,SHORT (Rule2: bare entity/phrase),True
+road accident,short,SHORT (Rule2: bare entity/phrase),True
+train crash,short,SHORT (Rule2: bare entity/phrase),True
+cpec project,short,SHORT (Rule2: bare entity/phrase),True
+china pakistan,short,SHORT (Rule2: bare entity/phrase),True
+india tension,short,SHORT (Rule2: bare entity/phrase),True
+afghanistan border,short,SHORT (Rule2: bare entity/phrase),True
+saudi arabia,short,SHORT (Rule2: bare entity/phrase),True
+europe visa,short,SHORT (Rule2: bare entity/phrase),True
+tax news,short,SHORT (Rule2: bare entity/phrase),True
+budget deficit,short,SHORT (Rule2: bare entity/phrase),True
+inflation rate,short,SHORT (Rule2: bare entity/phrase),True
+unemployment stats,short,SHORT (Rule2: bare entity/phrase),True
+wheat import,short,SHORT (Rule2: bare entity/phrase),True
+cotton crop,short,SHORT (Rule2: bare entity/phrase),True
+bank interest,short,SHORT (Rule2: bare entity/phrase),True
+online shopping,short,SHORT (Rule2: bare entity/phrase),True
+cyber crime,short,SHORT (Rule2: bare entity/phrase),True
+digital pakistan,short,SHORT (Rule2: bare entity/phrase),True
+smog lahore,short,SHORT (Rule2: bare entity/phrase),True
+water crisis,short,SHORT (Rule2: bare entity/phrase),True
+dam construction,short,SHORT (Rule2: bare entity/phrase),True
+tree plantation,short,SHORT (Rule2: bare entity/phrase),True
+metro bus,short,SHORT (Rule2: bare entity/phrase),True
+orange line,short,SHORT (Rule2: bare entity/phrase),True
+govt job,short,SHORT (Rule2: bare entity/phrase),True
+salary increase,short,SHORT (Rule2: bare entity/phrase),True
+eid moon,short,SHORT (Rule2: bare entity/phrase),True
+hajj arrangement,short,SHORT (Rule2: bare entity/phrase),True
+پاکستان میں معاشی بحران کے دوران عالمی بینک کی جانب سے فراہم کردہ امداد کی تفصیلات اور شرائط,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+کرکٹ ورلڈ کپ میں پاکستان ٹیم کی کارکردگی اور آئندہ میچز کا شیڈول اور ممکنہ نتائج,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+حکومت کی جانب سے نئی تعلیمی پالیسی کا اعلان اور اس کے طلبہ پر مضمرات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+عالمی منڈی میں تیل کی قیمتوں میں اضافے کے پاکستانی معیشت اور عوام پر اثرات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں انتخابات کے نتائج اور سیاسی جماعتوں کی کارکردگی کا تفصیلی جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+اسٹاک مارکیٹ میں حالیہ اتار چڑھاؤ اور سرمایہ کاروں پر اس کے قلیل اور طویل مدتی اثرات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں موبائل ٹیکنالوجی کی ترقی اور نئے اسمارٹ فونز کی خصوصیات اور قیمتیں,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان سپر لیگ میں کھلاڑیوں کی کارکردگی اور مختلف ٹیموں کی پوزیشن کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+نئی سائنسی تحقیق کے مطابق موسمیاتی تبدیلی کے پاکستان پر ممکنہ اثرات اور حل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں بڑھتی ہوئی مہنگائی اور عام آدمی کی روزمرہ زندگی پر اس کے سنگین اثرات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+آئی ایم ایف کے ساتھ پاکستان کے معاہدے کی شرائط اور اس سے معیشت پر پڑنے والے اثرات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں بجلی کی لوڈ شیڈنگ کے اسباب اور حکومتی اقدامات کا تفصیلی جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+سی پیک منصوبے کے تحت پاکستان میں ہونے والی ترقیاتی سرگرمیاں اور ان کے فوائد,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان اور بھارت کے درمیان حالیہ کشیدگی کے اسباب اور سفارتی صورتحال کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستانی طلبہ کے لیے بیرون ملک تعلیم کے مواقع اور اسکالرشپ حاصل کرنے کے طریقے,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں ڈینگی بخار کے پھیلاؤ کے اسباب اور احتیاطی تدابیر اور علاج کے طریقے,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں زراعت کے شعبے کو درپیش مسائل اور حکومتی امداد کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+کراچی میں امن وامان کی صورتحال اور قانون نافذ کرنے والے اداروں کی کارکردگی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں صحافت کی آزادی اور میڈیا پر پابندیوں کا تفصیلی جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+افغانستان سے پاکستان آنے والے مہاجرین کی صورتحال اور حکومتی پالیسی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں قابل تجدید توانائی کے منصوبوں کی تفصیلات اور مستقبل کے امکانات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں خواتین کے حقوق کی صورتحال اور قانونی تحفظ کے بارے میں تفصیلی معلومات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں سیاحت کے فروغ کے لیے حکومتی اقدامات اور سیاحتی مقامات کی معلومات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں کاروبار شروع کرنے کے مواقع اور حکومتی سہولیات اور رکاوٹوں کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں پانی کے بحران کے اسباب اور طویل مدتی حل کی تجاویز اور منصوبے,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+صوبہ پنجاب میں تعلیمی اصلاحات اور اسکولوں کی بہتری کے لیے کیے گئے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں نوجوانوں کی بیروزگاری کے اسباب اور روزگار کے مواقع پیدا کرنے کی تجاویز,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+عدلیہ کی آزادی اور پاکستان میں انصاف کی فراہمی کے نظام کا تفصیلی جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں ماحولیاتی آلودگی کے اسباب اور اس سے بچاؤ کے لیے حکومتی اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں غربت کے خاتمے کے لیے حکومتی پروگراموں کی تفصیلات اور ان کی کارکردگی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان کے خارجہ تعلقات میں حالیہ تبدیلیاں اور ان کے ملکی مفادات پر اثرات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+اعلیٰ تعلیم کمیشن کی جانب سے یونیورسٹیوں کی درجہ بندی اور معیار تعلیم کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں سائبر سیکیورٹی کے خطرات اور ڈیجیٹل ڈیٹا کے تحفظ کی تدابیر,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں صنعتی ترقی اور برآمدات بڑھانے کے لیے حکومتی حکمت عملی کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں ذہنی صحت کے مسائل اور علاج کی سہولیات کی دستیابی کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+بلوچستان میں ترقیاتی منصوبوں اور عوامی مسائل کے حل کے لیے اٹھائے گئے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں چھوٹے کاروباروں کو فروغ دینے کے لیے بینکوں کی جانب سے آسان قرضوں کی فراہمی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں موبائل بینکنگ اور ڈیجیٹل ادائیگیوں کے فروغ میں حکومت کا کردار,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں اقلیتوں کے حقوق اور ان کے تحفظ کے لیے قانونی اور حکومتی انتظامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستانی ثقافت اور روایات کے تحفظ کے لیے حکومتی اور نجی اداروں کی کوششیں,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں شہری منصوبہ بندی کے مسائل اور بے ترتیب تعمیرات سے نمٹنے کی تجاویز,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان کی خلائی تحقیق میں پیشرفت اور سپارکو کے منصوبوں کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں صحت کے شعبے کو درپیش مسائل اور سرکاری ہسپتالوں کی بہتری کے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں آن لائن تعلیم کے فروغ میں حائل رکاوٹیں اور ان کے حل کی تجاویز,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+سندھ میں سیلاب سے متاثرہ علاقوں کی بحالی اور حکومتی امداد کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں اسلحہ اور منشیات کی اسمگلنگ کے خلاف کارروائیوں کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں بچوں کی تعلیم اور صحت کے لیے یونیسف کی جانب سے فراہم کردہ امداد,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں برقی گاڑیوں کو فروغ دینے کی حکومتی پالیسی اور اس کے فوائد,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+خیبر پختونخوا میں سیاحت کے فروغ کے لیے اٹھائے گئے اقدامات اور سہولیات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں کاشتکاروں کی مشکلات اور زرعی قرضوں کی معافی کے امکانات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں پرائیویٹ اسکولوں کی فیسوں میں اضافے اور والدین کی مشکلات کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں آبادی میں اضافے کے اسباب اور اس کے معیشت پر پڑنے والے اثرات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں ٹیکس نظام کی اصلاحات اور ٹیکس چوری کے خلاف کارروائیوں کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں غذائی عدم تحفظ کے اسباب اور خوراک کی فراہمی کو یقینی بنانے کے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں کھیلوں کے فروغ کے لیے حکومتی منصوبے اور بین الاقوامی مقابلوں میں شرکت,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان کے میڈیا پر غیر ملکی اثرات اور قومی پالیسی پر اس کے اثرات کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں مہنگے علاج کی وجہ سے عوام کی مشکلات اور سستی دوائیں فراہم کرنے کے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں جنگلات کی کٹائی کے اسباب اور ماحولیاتی نقصانات کو روکنے کے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں بجلی پیدا کرنے کے نئے ذرائع اور توانائی کے شعبے میں سرمایہ کاری کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں سوشل میڈیا کا عوامی رائے پر اثر اور اس کی ریگولیشن کی ضرورت,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں انسانی حقوق کی خلاف ورزیوں کی رپورٹ اور عالمی اداروں کا ردعمل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں اقتصادی اصلاحات کے نتیجے میں غریب طبقے پر پڑنے والے اثرات کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں نشے کی لت کے پھیلاؤ کے اسباب اور اس کی روک تھام کے لیے اٹھائے گئے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں خوراک کی قلت اور مہنگائی کے پیش نظر حکومت کے اقدامات کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں ریلوے نظام کی بہتری کے لیے جاری منصوبوں اور سرمایہ کاری کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان اور چین کے مابین تجارتی تعلقات کی مضبوطی اور آئندہ منصوبوں کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں آرٹیفیشل انٹیلیجنس کے استعمال کے مواقع اور چیلنجز کا تفصیلی جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں کمپیوٹر سائنس اور آئی ٹی کی تعلیم کے فروغ کے لیے اٹھائے گئے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں گھریلو تشدد کے واقعات اور متاثرہ افراد کی مدد کے لیے قانونی اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں صنفی مساوات کے حصول کے لیے حکومتی پروگراموں اور اداروں کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک کی برآمدات بڑھانے اور تجارتی خسارے کو کم کرنے کے لیے حکومتی حکمت عملی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں سرکاری ملازمین کی کارکردگی بہتر بنانے کے لیے اصلاحات کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں نجکاری کے عمل اور اس کے نتیجے میں ملازمتوں پر پڑنے والے اثرات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں کوئلے اور قدرتی گیس کے ذخائر کی تلاش اور استعمال کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں نوجوانوں کو ہنرمند بنانے کے لیے جاری تکنیکی تعلیم کے پروگراموں کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں پولیس اصلاحات اور شہریوں کے ساتھ تعلقات بہتر بنانے کے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں صحافیوں کو درپیش خطرات اور پریس کی آزادی کے تحفظ کی ضرورت,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں حلال فوڈ انڈسٹری کے فروغ کے مواقع اور عالمی مارکیٹ میں حصہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں وقف اداروں کی زمینوں پر قبضے کے مسائل اور ان کے حل کی تجاویز,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں فاٹا کے قبائلی علاقوں میں ترقی اور انضمام کے بعد کی صورتحال,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں عدالتی نظام میں اصلاحات اور مقدمات کے جلد فیصلے کی ضرورت,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں غیر سرکاری تنظیموں کی سرگرمیاں اور ان کے فلاحی کاموں کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں سول سوسائٹی کا کردار اور حکومتی پالیسیوں پر اس کے اثرات کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں زمینی اصلاحات کی ضرورت اور کسانوں کو زمین کی ملکیت دینے کی تجاویز,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں ڈیم بنانے کی ضرورت اور موجودہ آبی ذخائر کی صورتحال کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں فنون لطیفہ اور ثقافت کے فروغ کے لیے حکومتی اور نجی کوششیں,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں بیرون ملک مقیم پاکستانیوں کی ترسیلات زر اور قومی معیشت پر ان کے اثرات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں قدرتی آفات سے نمٹنے کے لیے انتظامی ڈھانچے اور تیاری کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں مدارس کی تعلیم میں اصلاحات اور انہیں قومی دھارے میں لانے کی کوششیں,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں گرمی کی لہر کے اسباب اور عوام کو محفوظ رکھنے کے لیے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں جوہری توانائی کے پلانٹس کی کارکردگی اور مستقبل کے منصوبوں کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں نجی اسپتالوں کی فیسوں میں بے تحاشا اضافے پر قابو پانے کے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں پانی کی تقسیم کے نظام میں اصلاحات اور صوبوں کے درمیان تنازعات کا حل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں خوراک کی ذخیرہ اندوزی کے خلاف کارروائیاں اور عوام کو ریلیف کے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں ماحول دوست تعمیرات کے رجحان اور گرین بلڈنگ کے معیارات کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں ایکسپورٹ زونز کی ترقی اور غیر ملکی سرمایہ کاری کو راغب کرنے کے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں فری لانسنگ کے فروغ اور نوجوانوں کو آن لائن روزگار فراہم کرنے کے منصوبے,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں اقوام متحدہ کے اداروں کی سرگرمیاں اور فلاحی منصوبوں کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں لوکل گورنمنٹ نظام کی بحالی اور اختیارات کی نچلی سطح پر منتقلی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں مصالحتی عدالتوں کے قیام اور متبادل تنازعہ حل کے طریقوں کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں مویشی پروری کی صنعت کو درپیش مسائل اور حکومتی امداد کی تفصیلات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں شمسی توانائی کے منصوبوں کی توسیع اور گھریلو استعمال کے مواقع,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں ہنرمند مزدوروں کی بیرون ملک روزگار کے مواقع اور حکومتی تعاون کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں اسلامی بینکاری کے فروغ اور روایتی بینکنگ سے اس کا موازنہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں اقتصادی راہداری کے تحت توانائی منصوبوں کی پیشرفت اور فوائد کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں بلند عمارتوں کی تعمیر اور شہری منصوبہ بندی پر اس کے اثرات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں کمزور طبقات کے لیے سستی رہائش کی فراہمی کے سرکاری منصوبوں کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں سرحد پار دہشت گردی کے خلاف کارروائیوں اور اتحادیوں کے ساتھ تعاون,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں صوبائی خودمختاری اور مرکز کے ساتھ تعلقات کے حوالے سے تنازعات کا جائزہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں ماہی گیری کی صنعت کے فروغ اور ماہی گیروں کے مسائل کی تفصیل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں کھانے پینے کی اشیاء میں ملاوٹ کے خلاف کارروائیاں اور معیار کی جانچ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں پیداواری صلاحیت بڑھانے اور صنعتی ترقی کے لیے اٹھائے گئے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں طبی سہولیات کی دوردراز علاقوں تک توسیع اور ٹیلی میڈیسن کے مواقع,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں آبی زراعت اور جدید سنچائی طریقوں سے پانی کی بچت کے اقدامات,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں روایتی دستکاری اور ہنر کے فروغ اور بین الاقوامی مارکیٹ تک رسائی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پاکستان میں شہری اور دیہی علاقوں کے درمیان ترقی کے فرق کو کم کرنے کی تجاویز,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+what are the latest developments in pakistan cricket team selection for world cup tournament,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+how has the pakistani economy been affected by global inflation and rising dollar rate,long,LONG (Rule1: reasoning marker),True
+what is the current situation of technology startups in pakistan and their growth prospects,long,LONG (Rule3: conjunction),True
+explain the recent political developments in pakistan and their impact on national economy,long,LONG (Rule3: conjunction),True
+what are the major news stories about pakistan sports achievements in international events,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+how is pakistan dealing with climate change and environmental challenges in recent years,long,LONG (Rule1: reasoning marker),True
+what are the recent supreme court decisions affecting common people in pakistan society,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+describe the performance of pakistan stock exchange in recent months and investment trends,long,LONG (Rule3: conjunction),True
+what new films and dramas have been released in pakistan entertainment industry this year,long,LONG (Rule3: conjunction),True
+how is pakistan performing in international cricket tournaments and bilateral series,long,LONG (Rule1: reasoning marker),True
+what steps has the government taken to reduce unemployment among youth in pakistan,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+how is pakistan managing its relations with india and what are the recent border issues,long,LONG (Rule1: reasoning marker),True
+what are the effects of cpec on pakistan economy and infrastructure development,long,LONG (Rule3: conjunction),True
+explain the current situation of education system in pakistan and needed reforms,long,LONG (Rule3: conjunction),True
+what measures has pakistan taken to control dengue fever and other infectious diseases,long,LONG (Rule3: conjunction),True
+how has the dollar rate affected ordinary people and businesses in pakistan recently,long,LONG (Rule1: reasoning marker),True
+what is the progress of dam construction projects in pakistan and their benefits,long,LONG (Rule3: conjunction),True
+explain the causes of load shedding in pakistan and government plans to fix it,long,LONG (Rule3: conjunction),True
+what are the challenges faced by pakistan in achieving sustainable economic growth,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+how is pakistan addressing the issue of corruption in government institutions,long,LONG (Rule1: reasoning marker),True
+what is the current state of press freedom and media censorship in pakistan,long,LONG (Rule3: conjunction),True
+explain the impact of floods on pakistan agriculture and food security situation,long,LONG (Rule3: conjunction),True
+what are the opportunities for freelancing and it jobs for young people in pakistan,long,LONG (Rule3: conjunction),True
+how is pakistan handling the refugee crisis from afghanistan and border management,long,LONG (Rule1: reasoning marker),True
+what new technology initiatives has the government launched for digital pakistan vision,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+explain the problems faced by farmers in pakistan and government support programs,long,LONG (Rule3: conjunction),True
+what are the causes of rising inflation in pakistan and how is government tackling it,long,LONG (Rule1: reasoning marker),True
+how has pakistan improved its relations with gulf countries and what are the benefits,long,LONG (Rule1: reasoning marker),True
+what is the situation of human rights in pakistan and recent violations reported,long,LONG (Rule3: conjunction),True
+explain the progress of orange line metro train project and its impact on lahore,long,LONG (Rule3: conjunction),True
+what are the main reasons for brain drain from pakistan and how to retain talent,long,LONG (Rule1: reasoning marker),True
+how is pakistan promoting renewable energy and reducing dependence on fossil fuels,long,LONG (Rule1: reasoning marker),True
+what are the challenges faced by small businesses in pakistan and government support,long,LONG (Rule3: conjunction),True
+explain the recent changes in pakistan tax system and their impact on businesses,long,LONG (Rule3: conjunction),True
+what measures has pakistan taken to improve the standard of higher education,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+how is pakistan dealing with the problem of water scarcity and drought in rural areas,long,LONG (Rule1: reasoning marker),True
+what are the latest developments in pakistan nuclear program and regional security,long,LONG (Rule3: conjunction),True
+explain the role of pakistan army in internal security and counter terrorism operations,long,LONG (Rule3: conjunction),True
+what is the current situation of minority rights and religious freedom in pakistan,long,LONG (Rule3: conjunction),True
+how has social media influenced political discourse and elections in pakistan,long,LONG (Rule1: reasoning marker),True
+what are the challenges faced by pakistani women in workforce and business sector,long,LONG (Rule3: conjunction),True
+explain the performance of pakistan team in recent asia cup and world cup matches,long,LONG (Rule3: conjunction),True
+what are the government plans for affordable housing for low income people in pakistan,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+how is pakistan managing its foreign debt and what is the repayment schedule,long,LONG (Rule1: reasoning marker),True
+what steps are being taken to improve law and order situation in karachi city,long,LONG (Rule3: conjunction),True
+explain the impact of global supply chain disruptions on pakistan import export,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+what are the opportunities for pakistan in halal food industry and export markets,long,LONG (Rule3: conjunction),True
+how is pakistan improving its railway system and transport infrastructure,long,LONG (Rule1: reasoning marker),True
+what are the challenges faced by pakistan health system in providing quality care,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+explain the measures taken by pakistan to tackle air pollution and smog problem,long,LONG (Rule3: conjunction),True
+what is the situation of child labor in pakistan and government efforts to end it,long,LONG (Rule3: conjunction),True
+how has pakistan benefited from remittances sent by overseas pakistanis abroad,long,LONG (Rule1: reasoning marker),True
+what are the recent developments in pakistan space program and future missions,long,LONG (Rule3: conjunction),True
+explain the impact of sugar and flour shortage on common people in pakistan,long,LONG (Rule3: conjunction),True
+what measures has pakistan taken to improve its ranking in ease of doing business,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+how is pakistan promoting tourism in northern areas and what facilities are available,long,LONG (Rule1: reasoning marker),True
+what are the problems faced by daily wage workers in pakistan informal economy,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+explain the current status of pak iran gas pipeline project and energy cooperation,long,LONG (Rule3: conjunction),True
+what are the causes of rising poverty in rural pakistan and government relief programs,long,LONG (Rule3: conjunction),True
+how is pakistan working to improve its image internationally and attract foreign investment,long,LONG (Rule1: reasoning marker),True
+سیلاب سے متاثرہ علاقوں میں امدادی کام جاری,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+نئی تعلیمی پالیسی پر والدین کا ردعمل,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+لاہور میں فضائی آلودگی خطرناک حد تک بڑھ گئی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پی ایس ایل کا فائنل کب کھیلا جائے گا,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+سرکاری ملازمین کی تنخواہوں میں اضافے کا مطالبہ,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+کراچی میں پانی کا بحران شدت اختیار کر گیا,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+نوجوانوں میں بے روزگاری کیوں بڑھ رہی ہے,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+موبائل انٹرنیٹ کی قیمتوں میں کمی متوقع,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+زلزلے کے بعد ریسکیو ٹیمیں جائے وقوعہ پر پہنچ گئیں,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+طلبہ کے امتحانات کی تاریخوں کا اعلان ہو گیا,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+نئی گاڑیوں کی قیمتوں میں حالیہ اضافہ کیوں ہوا,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پولیس نے شہر میں سرچ آپریشن شروع کر دیا,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+گرمی کی شدت سے بجلی کی طلب بڑھ گئی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+وفاقی حکومت نے صحت کارڈ پروگرام میں توسیع کی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+نجی اسکولوں کی فیسوں میں اضافے پر احتجاج,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+ملک میں مہنگائی کی شرح کتنی رہ گئی ہے,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+نئے ایئرپورٹ کی تعمیر کب مکمل ہوگی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+سوشل میڈیا پر جعلی خبروں کا پھیلاؤ بڑھ گیا,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+پہاڑی علاقوں میں برفباری کی پیشگوئی جاری,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+نوجوان کھلاڑی نے قومی ٹیم میں جگہ بنا لی,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+selab se mutasira ilaqon mein imdad jaari,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+naye school ki fees kitni barh gayi hai,long,SHORT (Rule4: when/how-much),False
+lahore mein hawa ki quality kharab ho gayi,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+psl ka final kab khela jaye ga,long,SHORT (Rule4: when/how-much),False
+sarkari mulazmeen ki tankhwa mein izafa hoga,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+karachi mein pani ka masla kab hal hoga,long,SHORT (Rule4: when/how-much),False
+naujawano mein berozgari kyun barh rahi hai,long,LONG (Rule1: reasoning marker),True
+mobile net ki qeemat kam hone wali hai,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+zalzale ke baad rescue team mauqe par pohanch gayi,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+talba ke exams ki date announce ho gayi,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+nai gari ki qeemat kyun barh gayi hai,long,LONG (Rule1: reasoning marker),True
+police ne shehar mein search operation shuru kiya,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+garmi ki wajah se bijli ki demand barh gayi,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+wafaqi hakumat ne sehat card mein extension ki,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+private school ki fees pe protest ho raha hai,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+mulk mein mehngai ki rate kitni reh gayi,long,SHORT (Rule4: when/how-much),False
+naye airport ka kaam kab tak mukammal hoga,long,SHORT (Rule4: when/how-much),False
+social media pe jhoothi khabrein phail rahi hain,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+pahari ilaqon mein barfbari ki pesingoi jari hai,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",
+naujawan player ne national team mein jaga bana li,long,"UNRESOLVED (§4 bucket - bare event statement, no rule fires)",

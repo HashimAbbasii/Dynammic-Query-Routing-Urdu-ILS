@@ -1,0 +1,27 @@
+{
+  "_provenance": "DERIVED / CURRENT-STATE. Not the original historical Phase 2 comparison file (none found in repo history). All numbers below were computed LIVE in this audit session by running the actual repository files (models + validate/stage_c_rows.json) -- nothing here is copied from the prior conversation's claims without re-verification.",
+  "audit_timestamp_utc": "2026-08-12T06:07:24.060080+00:00",
+  "evaluation_set": "validate/stage_c_rows.json",
+  "evaluation_set_n": 85,
+  "note_on_evaluation_set": "It could not be proven this file is byte-identical to a historical 'frozen Stage-C original' (no such artifact found in repo history). It is the only n=85-scale evaluation set that currently exists in the repository, and is used as-is, unmodified.",
+  "results": {
+    "baseline_A_wordcount_leq_4": {
+      "description": "Static word-count threshold: query_len<=4 -> short, else long",
+      "accuracy": 1.0
+    },
+    "baseline_B_wordcount_leq_5": {
+      "description": "Static word-count threshold: query_len<=5 -> short, else long (previously called 'train-selected T<=5')",
+      "accuracy": 0.9176
+    },
+    "v2_svm_current_deployed": {
+      "description": "Live prediction using models/svm_classifier.pkl + models/scaler.pkl as currently checked into the repo (post gap-fill retrain, trained_on 2026-08-10 per training_info.json)",
+      "accuracy": 0.9412
+    },
+    "v2_svm_pre_gapfix_backup": {
+      "description": "Live prediction using models/svm_classifier_PRE_GAPFIX_backup.pkl + models/scaler_PRE_GAPFIX_backup.pkl -- included for transparency since the 'V2 frozen' premise could not be verified",
+      "accuracy": 0.7059
+    }
+  },
+  "central_finding": "The CURRENT deployed V2 SVM (94.12%) does not clearly beat the trivial static word-count<=4 baseline (100.00%) on this n=85 evaluation set. This reproduces the previously-reported central finding numerically, now independently re-verified live in this session rather than taken on faith. Note however that the deployed model changed (gap-fill retrain) since whatever prior session first computed this comparison -- the PRE_GAPFIX model performed considerably worse (70.59%), so this 94.12% figure describes the CURRENT model, not necessarily the same model instance the original finding was about.",
+  "caveat": "This is a small (n=85), non-blind evaluation set that has not been proven independent of decisions made about the labeling guidelines. It should not be treated as a definitive final-test result."
+}

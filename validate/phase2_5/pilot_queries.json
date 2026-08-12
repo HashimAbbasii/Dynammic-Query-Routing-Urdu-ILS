@@ -1,0 +1,342 @@
+{
+  "_provenance": "NEW CONSTRUCTION for this audit phase -- NOT a reconstruction of a lost file (no Phase 2.5 pilot dataset ever existed in repo history, verified via git log --all). Distribution matches the design specification already agreed in the prior audit conversation (33 queries: 5w=4,6w=6,7w=9,8w=6,9w=4 plus 4 anchors; 18 Urdu / 15 Roman Urdu; categories limited to those actually present in the corpus).",
+  "instructions_for_pre_registered_hypothesis": "pre_registered_hypothesis is a HYPOTHESIS ONLY, not a gold label. It reflects either the provisional §4 default (LONG) or an already-validated rule (Rule1-4). It MUST NOT be edited after seeing retrieval results. If retrieval contradicts it, report the contradiction -- do not silently correct the hypothesis.",
+  "categories_used": [
+    "Business & Economics",
+    "Entertainment",
+    "Science & Technology",
+    "Sports"
+  ],
+  "queries": [
+    {
+      "query": "اسٹاک مارکیٹ میں تیزی آئی",
+      "script": "urdu",
+      "category": "Business & Economics",
+      "word_count": 5,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "5w",
+      "id": "P25_01"
+    },
+    {
+      "query": "قومی ٹیم نے میچ جیتا",
+      "script": "urdu",
+      "category": "Sports",
+      "word_count": 5,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "5w",
+      "id": "P25_02"
+    },
+    {
+      "query": "naye drame ka trailer aaya",
+      "script": "roman",
+      "category": "Entertainment",
+      "word_count": 5,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "5w",
+      "id": "P25_03"
+    },
+    {
+      "query": "naye phone ka elaan hua",
+      "script": "roman",
+      "category": "Science & Technology",
+      "word_count": 5,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "5w",
+      "id": "P25_04"
+    },
+    {
+      "query": "روپے کی قدر میں کمی ہوئی",
+      "script": "urdu",
+      "category": "Business & Economics",
+      "word_count": 6,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "6w",
+      "id": "P25_05"
+    },
+    {
+      "query": "فٹبال ٹیم نے فائنل میچ جیتا",
+      "script": "urdu",
+      "category": "Sports",
+      "word_count": 6,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "6w",
+      "id": "P25_06"
+    },
+    {
+      "query": "مشہور اداکار نے نئی فلم بنائی",
+      "script": "urdu",
+      "category": "Entertainment",
+      "word_count": 6,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "6w",
+      "id": "P25_07"
+    },
+    {
+      "query": "naye bank account kholne ka tareeqa",
+      "script": "roman",
+      "category": "Business & Economics",
+      "word_count": 6,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "6w",
+      "id": "P25_08"
+    },
+    {
+      "query": "pakistani bowler ne wicket hasil kiya",
+      "script": "roman",
+      "category": "Sports",
+      "word_count": 6,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "6w",
+      "id": "P25_09"
+    },
+    {
+      "query": "naya software update jari kar diya",
+      "script": "roman",
+      "category": "Science & Technology",
+      "word_count": 6,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "6w",
+      "id": "P25_10"
+    },
+    {
+      "query": "بڑی کمپنی نے نیا منصوبہ شروع کیا",
+      "script": "urdu",
+      "category": "Business & Economics",
+      "word_count": 7,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "7w",
+      "id": "P25_11"
+    },
+    {
+      "query": "کرکٹ بورڈ نے نیا کوچ مقرر کیا",
+      "script": "urdu",
+      "category": "Sports",
+      "word_count": 7,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "7w",
+      "id": "P25_12"
+    },
+    {
+      "query": "مقامی گلوکار نے نیا البم ریلیز کیا",
+      "script": "urdu",
+      "category": "Entertainment",
+      "word_count": 7,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "7w",
+      "id": "P25_13"
+    },
+    {
+      "query": "نئی ایپ نے صارفین کی تعداد بڑھائی",
+      "script": "urdu",
+      "category": "Science & Technology",
+      "word_count": 7,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "7w",
+      "id": "P25_14"
+    },
+    {
+      "query": "سرکاری بینک نے شرح سود تبدیل کی",
+      "script": "urdu",
+      "category": "Business & Economics",
+      "word_count": 7,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "7w",
+      "id": "P25_15"
+    },
+    {
+      "query": "pakistan cricket team ne series jeet li",
+      "script": "roman",
+      "category": "Sports",
+      "word_count": 7,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "7w",
+      "id": "P25_16"
+    },
+    {
+      "query": "bollywood actress ne shaadi ki khabar di",
+      "script": "roman",
+      "category": "Entertainment",
+      "word_count": 7,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "7w",
+      "id": "P25_17"
+    },
+    {
+      "query": "naye smartphone mein badi battery lagai gai",
+      "script": "roman",
+      "category": "Science & Technology",
+      "word_count": 7,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "7w",
+      "id": "P25_18"
+    },
+    {
+      "query": "company ne naye shares launch kar diye",
+      "script": "roman",
+      "category": "Business & Economics",
+      "word_count": 7,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "7w",
+      "id": "P25_19"
+    },
+    {
+      "query": "ملکی برآمدات میں نمایاں اضافہ ریکارڈ کیا گیا",
+      "script": "urdu",
+      "category": "Business & Economics",
+      "word_count": 8,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "8w",
+      "id": "P25_20"
+    },
+    {
+      "query": "قومی ہاکی ٹیم نے فائنل میچ آج کھیلا",
+      "script": "urdu",
+      "category": "Sports",
+      "word_count": 8,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "8w",
+      "id": "P25_21"
+    },
+    {
+      "query": "مشہور ہدایتکار کی نئی فلم سنیما میں لگی",
+      "script": "urdu",
+      "category": "Entertainment",
+      "word_count": 8,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "8w",
+      "id": "P25_22"
+    },
+    {
+      "query": "pakistan mein 5G network ki testing shuru hui",
+      "script": "roman",
+      "category": "Science & Technology",
+      "word_count": 8,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "8w",
+      "id": "P25_23"
+    },
+    {
+      "query": "bade bank ne interest rate tabdeel kar di",
+      "script": "roman",
+      "category": "Business & Economics",
+      "word_count": 8,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "8w",
+      "id": "P25_24"
+    },
+    {
+      "query": "young pakistani bowler ne apna pehla match khela",
+      "script": "roman",
+      "category": "Sports",
+      "word_count": 8,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "8w",
+      "id": "P25_25"
+    },
+    {
+      "query": "حکومت نے چھوٹے کاروباروں کے لیے نیا قرضہ دیا",
+      "script": "urdu",
+      "category": "Business & Economics",
+      "word_count": 9,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "9w",
+      "id": "P25_26"
+    },
+    {
+      "query": "قومی خواتین کرکٹ ٹیم نے پہلی بار کپ جیتا",
+      "script": "urdu",
+      "category": "Sports",
+      "word_count": 9,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "9w",
+      "id": "P25_27"
+    },
+    {
+      "query": "مقامی کمپنی نے نیا مصنوعی ذہانت سافٹ ویئر بنایا",
+      "script": "urdu",
+      "category": "Science & Technology",
+      "word_count": 9,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "9w",
+      "id": "P25_28"
+    },
+    {
+      "query": "mashhoor singer ne apna naya gaana release kar diya",
+      "script": "roman",
+      "category": "Entertainment",
+      "word_count": 9,
+      "rule_type": "§4_bare_event",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "9w",
+      "id": "P25_29"
+    },
+    {
+      "query": "پاکستان کرکٹ ٹیم فائنل میں کیوں ہاری",
+      "script": "urdu",
+      "category": "Sports",
+      "word_count": 7,
+      "rule_type": "Rule1_reasoning_marker",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "anchor",
+      "id": "P25_30"
+    },
+    {
+      "query": "cricket score",
+      "script": "roman",
+      "category": "Sports",
+      "word_count": 2,
+      "rule_type": "Rule2_bare_entity",
+      "pre_registered_hypothesis": "SHORT",
+      "tag": "anchor",
+      "id": "P25_31"
+    },
+    {
+      "query": "pakistan aur india ka match",
+      "script": "roman",
+      "category": "Sports",
+      "word_count": 5,
+      "rule_type": "Rule3_conjunction",
+      "pre_registered_hypothesis": "LONG",
+      "tag": "anchor",
+      "id": "P25_32"
+    },
+    {
+      "query": "میچ کب شروع ہوگا",
+      "script": "urdu",
+      "category": "Sports",
+      "word_count": 4,
+      "rule_type": "Rule4_when_howmuch",
+      "pre_registered_hypothesis": "SHORT",
+      "tag": "anchor",
+      "id": "P25_33"
+    }
+  ]
+}

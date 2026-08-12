@@ -1,0 +1,97 @@
+# PROVENANCE: DERIVED / CURRENT-STATE.
+"# Source: validate/stage_c_rows.json (85 rows, unmodified, byte-for-byte as found in repo)."
+# It could NOT be proven that validate/stage_c_rows.json is byte-for-byte equivalent to
+# a historical 'Stage-C original frozen' artifact -- no such artifact exists anywhere in
+# repo history. Therefore this file is explicitly NOT named/labeled as a frozen original.
+# 'v2_current_live_pred' and 'v2_pre_gapfix_live_pred' columns were computed FRESH in this
+# audit session by running the actual deployed model files against these 85 queries
+"# (8-feature schema, matching models/training_info.json). This confirms empirically that"
+# the pre-existing 'old' column in validate/stage_c_rows.json == PRE_GAPFIX model predictions
+# (85/85 match) and 'new' column == current deployed model predictions (85/85 match).
+
+query,true_label,word_count,script,old_col_(=pre_gapfix_model_pred),new_col_(=current_model_pred),unseen_vocab,v2_current_live_pred,v2_pre_gapfix_live_pred
+ٹریفک جام,short,2,urdu,short,short,False,short,short
+زرعی قرض,short,2,urdu,short,short,False,short,short
+سمندری آلودگی,short,2,urdu,short,short,False,short,short
+چوری واردات,short,2,urdu,short,short,False,short,short
+خلائی مشن,short,2,urdu,short,short,False,short,short
+سیاحتی مقام,short,2,urdu,short,short,False,short,short
+بینک قرض,short,2,urdu,short,short,False,short,short
+ٹینس ٹورنامنٹ,short,2,urdu,short,short,False,short,short
+traffic jam,short,2,roman,short,short,False,short,short
+agriculture loan,short,2,roman,short,short,False,short,short
+deforestation crisis,short,2,roman,short,short,False,short,short
+theft incident,short,2,roman,short,short,False,short,short
+space mission,short,2,roman,short,short,False,short,short
+tourist spot,short,2,roman,short,short,False,short,short
+bank loan,short,2,roman,short,short,False,short,short
+football match,short,2,roman,short,short,False,short,short
+ملتان میں ٹریفک حادثہ ہوا,long,5,urdu,short,short,False,short,short
+کسانوں کو نیا قرض ملے گا,long,6,urdu,short,short,False,short,short
+پشاور میں چوری کی واردات,long,5,urdu,short,short,False,short,short
+نیا اسٹارٹ اپ فنڈنگ حاصل کرے,long,6,urdu,short,long,False,long,short
+فیصل آباد میں پانی صاف نہیں,long,6,urdu,short,long,False,long,short
+multan mein traffic accident hua,long,5,roman,short,long,False,long,short
+kisano ko naya loan milega,long,5,roman,short,long,False,long,short
+peshawar mein chori ki waardaat,long,5,roman,short,short,False,short,short
+naya startup funding hasil karega,long,5,roman,short,long,False,long,short
+faisalabad mein pani saaf nahi,long,5,roman,short,short,False,short,short
+رمضان میں اشیائے خوردونوش کی قیمتیں بڑھیں,long,7,urdu,long,long,False,long,long
+نئے بینک اکاؤنٹ کھولنے کا طریقہ,long,6,urdu,short,long,False,long,short
+عید سے پہلے بازاروں میں رش,long,6,urdu,short,long,False,long,short
+خلائی سائنسدانوں نے نیا سیارہ دریافت کیا,long,7,urdu,short,long,False,long,short
+فٹبال ٹیم نے فائنل میچ جیت لیا,long,7,urdu,short,long,False,long,short
+ramzan mein cheezon ki qeemat barh gayi,long,7,roman,long,long,False,long,long
+naya bank account kholne ka tareeqa,long,6,roman,short,long,False,long,short
+eid se pehle bazaron mein rush hai,long,7,roman,short,long,False,long,short
+scientists ne naya sitara dhoond liya,long,6,roman,short,long,False,long,short
+football team ne final match jeet liya,long,7,roman,short,long,False,long,short
+محکمہ ماحولیات نے جنگلات کی کٹائی روکنے کا فیصلہ کیا,long,10,urdu,long,long,False,long,long
+سیاحوں کی تعداد میں حالیہ مہینوں کے دوران اضافہ ہوا,long,10,urdu,long,long,False,long,long
+نئی ریلوے لائن کی تعمیر کا کام شروع ہو گیا,long,10,urdu,long,long,False,long,long
+پولیس نے چوری کے واقعات میں ملوث گروہ پکڑ لیا,long,10,urdu,long,long,False,long,long
+badminton championship mein pakistani player ne medal jeeta hai,long,9,roman,long,long,False,long,long
+mahikma-e-maholiyat ne jangalat ki katai rokne ka faisla kiya,long,9,roman,long,long,False,long,long
+sayahon ki tadad mein haleeya mahino ke dauran izafa hua,long,10,roman,long,long,False,long,long
+nai railway line ki tameer ka kaam shuru ho gaya,long,10,roman,long,long,False,long,long
+police ne chori ke waqiat mein mulawas giroh pakar liya,long,10,roman,short,long,False,long,short
+real estate prices mein is saal kaafi izafa dekha gaya,long,10,roman,long,long,False,long,long
+نئے تعلیمی سال میں داخلوں کی تاریخ کا اعلان ہو گیا,long,11,urdu,long,long,False,long,long
+ٹیلی کام کمپنیوں نے موبائل پیکجز کی قیمتیں کم کر دیں,long,11,urdu,long,long,False,long,long
+مقامی فنکاروں نے شہر میں نئی نمائش کا اہتمام کیا,long,10,urdu,long,long,False,long,long
+زرعی ماہرین نے کسانوں کو نئی فصل کی تربیت دی,long,10,urdu,long,long,False,long,long
+naye education year mein admission ki date announce ho gayi,long,10,roman,long,long,False,long,long
+telecom companies ne mobile packages ki qeemat kam kar di,long,10,roman,long,long,False,long,long
+local artists ne shehar mein nai exhibition ka intizam kiya,long,10,roman,long,long,False,long,long
+agriculture experts ne kisano ko nai crop training di,long,9,roman,long,long,False,long,long
+cricket ke ilawa tennis mein bhi pakistan ne acha perform kiya,long,11,roman,short,long,False,long,short
+bank ne customers ke liye naya digital saving account launch kiya,long,11,roman,long,long,False,long,long
+وفاقی حکومت نے چھوٹے کاروباروں کے لیے نئی سبسڈی اسکیم شروع کی,long,12,urdu,long,long,False,long,long
+محکمہ جنگلات نے شہر کے مضافات میں نئے درخت لگانے کا آغاز کیا,long,13,urdu,long,long,False,long,long
+نجی ہسپتالوں میں علاج کی قیمتوں پر حکومت نے کنٹرول لگا دیا,long,12,urdu,long,long,False,long,long
+wafaqi hakumat ne chote karobaron ke liye nai subsidy scheme shuru ki,long,12,roman,long,long,False,long,long
+mahikma-e-jangalat ne shehar ke muzafat mein naye darakht lagane ka aghaz kiya,long,12,roman,long,long,False,long,long
+private hospitals mein ilaj ki qeemat par hakumat ne control laga diya,long,12,roman,long,long,False,long,long
+real estate sector mein invest karne wale logon ki tadad barh gayi hai,long,13,roman,long,long,False,long,long
+nai startup companies ko government se tax mein chhoot milne wali hai,long,12,roman,long,long,False,long,long
+tourism ministry ne northern areas mein naye resorts banane ka elan kiya,long,12,roman,long,long,False,long,long
+قومی اسمبلی میں آج زرعی اصلاحات کے بل پر بحث ہونے والی ہے,long,13,urdu,long,long,False,long,long
+شہر کی سڑکوں پر ٹریفک کا نظام بہتر بنانے کے لیے نیا منصوبہ شروع کیا گیا ہے,long,17,urdu,long,long,False,long,long
+national assembly mein aaj agriculture reforms ke bill par behas hone wali hai,long,13,roman,long,long,False,long,long
+shehar ki sarkon par traffic ka nizam behtar banane ke liye naya mansooba shuru kiya gaya hai,long,17,roman,long,long,False,long,long
+مقامی حکومت نے شہریوں کی سہولت کے لیے نیا صحت مرکز تعمیر کرنے کا فیصلہ کیا ہے,long,17,urdu,long,long,False,long,long
+local government ne shehriyon ki sahulat ke liye naya health center tameer karne ka faisla kiya hai,long,17,roman,long,long,False,long,long
+خلائی تحقیقاتی ادارے نے نئے سیٹلائٹ کی کامیاب لانچنگ کا اعلان کیا ہے,long,13,urdu,long,long,False,long,long
+space research organization ne naye satellite ki kamyab launching ka elan kiya hai,long,13,roman,long,long,False,long,long
+محکمہ تعلیم نے سرکاری اسکولوں میں طلبہ کی حاضری بہتر بنانے کے لیے نیا نظام متعارف کرایا ہے جس کے تحت والدین کو روزانہ اطلاع ملے گی,long,27,urdu,long,long,False,long,long
+education department ne sarkari schools mein talba ki hazri behtar banane ke liye naya nizam mutaraf karaya hai jiske tehat walidain ko rozana ittila milegi,long,25,roman,long,long,False,long,long
+زلزلہ پیما آلات نے شدید جھٹکے ریکارڈ کیے,long,8,urdu,long,long,True,long,long
+seismograph instruments ne shadeed jhatke record kiye,long,7,roman,long,long,True,long,long
+ماہرینِ فلکیات نے دومکیت کی نئی تصاویر جاری کیں,long,9,urdu,long,long,True,long,long
+astronomers ne comet ki nai tasveeren jari ki hain,long,9,roman,short,long,True,long,short
+گلیشیئر پگھلنے کی رفتار میں تشویشناک اضافہ دیکھا گیا,long,9,urdu,long,long,True,long,long
+glacier pighalne ki raftar mein tashweeshnak izafa dekha gaya,long,9,roman,long,long,True,long,long
+پاکستان کی economy is saal behtar ho rahi hai,long,9,mixed,short,long,False,long,short
+cricket ٹیم نے آج زبردست performance دیا,long,7,mixed,short,long,False,long,short
+نیا mobile فون بازار میں آ گیا,long,7,mixed,short,long,False,long,short
+weather آج بہت اچھا ہے islamabad mein,long,7,mixed,short,long,False,long,short

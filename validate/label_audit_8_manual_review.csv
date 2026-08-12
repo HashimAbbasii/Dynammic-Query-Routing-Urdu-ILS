@@ -1,0 +1,27 @@
+# PROVENANCE: NOT RECONSTRUCTABLE FROM CURRENT REPOSITORY
+#
+# This file is supposed to contain the manual-review outcomes for the
+# queries that a prior audit flagged as ambiguous under §4 (previously
+# described as: 36 flagged ambiguous -> manual review -> 7 confirmed SHORT
+# flips -> 1 left genuinely ambiguous).
+#
+# That manual review was a set of human judgment calls made in a previous
+# session. Those specific per-query decisions (which queries, what was
+# decided, and why) were never committed to this GitHub repository in any
+# form -- verified via `git log --all --diff-filter=A`, zero hits on any
+# branch, and no equivalent data found elsewhere in the repo.
+#
+# It would be fabrication to reconstruct these decisions now, since they
+# depend on human judgment that cannot be re-derived from rules or code.
+#
+# What CAN be reconstructed instead: validation/label_audit.csv contains a
+# FRESH, rule-based (not manual) re-classification of the current 409
+# training queries against Rules 1-4, which independently found 176 queries
+# fall into the unresolved §4 bucket (out of 409). This is a different
+# number from the previously-reported "36 flagged ambiguous" because it is
+# a different, purely rule-based pass over the CURRENT data, not a
+# reconstruction of the prior manual review.
+#
+# No rows are provided below because providing rows here without the
+# underlying human judgment would misrepresent reconstructed content as
+# original historical data.
