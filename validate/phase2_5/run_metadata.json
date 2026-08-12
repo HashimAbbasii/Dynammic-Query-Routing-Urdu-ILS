@@ -1,0 +1,52 @@
+{
+  "run_started_at_utc": "2026-08-12T06:58:33.308556+00:00",
+  "run_finished_at_utc": "2026-08-12T07:09:22.583264+00:00",
+  "python_version": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "device": "cpu",
+  "top_k": 15,
+  "corpus_csv_path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\data\\clean_articles.csv",
+  "corpus_csv_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "corpus_row_count": 111860,
+  "embeddings_npy_shape": [
+    111860,
+    384
+  ],
+  "chromadb_collection": "urdu_news",
+  "chromadb_document_count": 111860,
+  "headline_embeddings_cache_path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\data\\headline_embeddings_phase2_5_cache.npy",
+  "headline_embeddings_shape": [
+    111860,
+    384
+  ],
+  "pilot_queries_path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\validate\\phase2_5\\pilot_queries.json",
+  "pilot_queries_sha256": "c136f979a26d2b9f236c6038b1677c66fb59741464985a1b937de74640032202",
+  "num_pilot_queries": 33,
+  "retrieval_modes_exported": [
+    "HEADLINE",
+    "FULL_CONTENT",
+    "HYBRID",
+    "HEADLINE_KEYWORD_TFIDF"
+  ],
+  "primary_modes_for_short_long_decision": [
+    "HEADLINE",
+    "FULL_CONTENT",
+    "HYBRID"
+  ],
+  "diagnostic_only_modes": [
+    "HEADLINE_KEYWORD_TFIDF"
+  ],
+  "categories_in_corpus": [
+    "Business & Economics",
+    "Entertainment",
+    "Science & Technology",
+    "Sports"
+  ],
+  "categories_used_in_pilot": [
+    "Business & Economics",
+    "Entertainment",
+    "Science & Technology",
+    "Sports"
+  ]
+}
