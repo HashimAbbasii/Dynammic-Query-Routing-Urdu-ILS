@@ -21,36 +21,24 @@ DEFAULT_OUTPUT = os.path.join(PHASE_DIR, "llm_judgments_pilot.csv")
 CORPUS_CSV = os.path.join(REPO_ROOT, "data", "clean_articles.csv")
 ALLOWED = {"relevant":"Relevant", "partially relevant":"Partially relevant", "partial":"Partially relevant", "partially_relevant":"Partially relevant", "not relevant":"Not relevant", "not_relevant":"Not relevant"}
 
-SYSTEM_PROMPT = """Read the USER QUERY and the NEWS ARTICLE.
+SYSTEM_PROMPT = """You are a relevance judge for an information-retrieval research experiment.
+Judge ONLY whether the supplied NEWS ARTICLE satisfies the supplied USER QUERY.
 
-Judge whether the NEWS ARTICLE satisfies the event or information requested by the USER QUERY.
+Labels:
+- Relevant: directly answers or clearly satisfies the information need.
+- Partially relevant: meaningfully related but only partially answers it, misses an important aspect, or is incomplete/indirect.
+- Not relevant: does not meaningfully satisfy the query.
 
-Important:
-- Same topic alone does NOT mean relevant.
-- The article must describe the event asked for by the query.
-- If the article describes the opposite event or outcome, mark it Not relevant.
-- Example: if the query says the market rose, an article mainly saying the market fell is Not relevant.
-- Related background information can be Partially relevant if it does not fully satisfy the query.
-- Do NOT use word count, SHORT, LONG, QUERY-DEPENDENT, or any hypothesis.
-- Judge only the query and article content.
-
-Choose exactly one:
-Relevant
-Partially relevant
-Not relevant
-
-Confidence must be exactly one of:
-high
-medium
-low
-
-Return ONLY valid JSON:
-{"relevance":"Relevant","confidence":"high"}
-
-No explanation.
-No markdown.
-No extra text."""
-
+Rules:
+1. Judge the article against the query, not retrieval score.
+2. Do not infer relevance merely from shared words.
+3. Do not use any SHORT/LONG hypothesis or word-count information; it is intentionally hidden.
+4. Judge the actual article content, not whether it was retrieved by HEADLINE or FULL_CONTENT.
+5. For a bare event query, determine whether the article is actually about that event.
+6. Return ONLY valid JSON with exactly:
+{"relevance":"Relevant|Partially relevant|Not relevant","confidence":"high|medium|low"}
+No markdown or explanation.
+"""
 
 def args():
     p=argparse.ArgumentParser()
@@ -129,19 +117,8 @@ def main():
     print('[3/4] Loading required articles...'); articles=load_articles(CORPUS_CSV,ids); print(f'      Loaded {len(articles)}')
     out=[]
     for n,(source_idx,row) in enumerate(selected,1):
-        doc_id=int(row['doc_id'])
-        raw=call(a.model,row['query'],articles[doc_id]['headline'],articles[doc_id]['news_text'],a.timeout,a.article_chars)
-        label,conf=parse(raw)
-
-        if not label:
-            print(f'      Invalid response for {row["query_id"]}; retrying once...')
-            raw_retry=call(a.model,row['query'],articles[doc_id]['headline'],articles[doc_id]['news_text'],a.timeout,a.article_chars)
-            label,conf=parse(raw_retry)
-            raw=raw + "\n[RETRY RESPONSE]\n" + raw_retry
-
-        if not label:
-            label='LLM_UNPARSEABLE'
-            conf='low'
+        doc_id=int(row['doc_id']); raw=call(a.model,row['query'],articles[doc_id]['headline'],articles[doc_id]['news_text'],a.timeout,a.article_chars); label,conf=parse(raw)
+        if not label: raise RuntimeError(f'Invalid model response for {row["query_id"]}:\n{raw}')
         x=OrderedDict()
         x['source_csv_row']=source_idx+2; x['query_id']=row['query_id']; x['query']=row['query']; x['retrieval_mode']=row['retrieval_mode']; x['rank']=row['rank']; x['doc_id']=row['doc_id']; x['doc_headline']=row['doc_headline']; x['doc_category']=row.get('doc_category',''); x['retrieval_score']=row.get('score',''); x['llm_relevance']=label; x['llm_confidence']=conf; x['llm_model']=a.model; x['raw_llm_response']=raw
         out.append(x); print(f'      [{n}/{len(selected)}] {row["query_id"]} | {row["retrieval_mode"]} | rank {row["rank"]} -> {label} ({conf})')

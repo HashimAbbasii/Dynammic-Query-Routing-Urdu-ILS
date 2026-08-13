@@ -1,0 +1,9 @@
+﻿source_csv_row,query_id,query,retrieval_mode,rank,doc_id,doc_headline,doc_category,retrieval_score,llm_relevance,llm_confidence,llm_model,raw_llm_response
+2,P25_01,اسٹاک مارکیٹ میں تیزی آئی,HEADLINE,1,64778,اسٹاک مارکیٹ میں زبردست تیزی,Business & Economics,0.961288,Not relevant,low,qwen3:0.6b,"{""relevance"":""Not relevant"",""confidence"":""low""}"
+3,P25_01,اسٹاک مارکیٹ میں تیزی آئی,HEADLINE,2,2701,اسٹاک مارکیٹ میں تیزی کا رجحان برقرار,Business & Economics,0.943789,Not relevant,low,qwen3:0.6b,"{""relevance"":""Not relevant"",""confidence"":""low""}"
+4,P25_01,اسٹاک مارکیٹ میں تیزی آئی,HEADLINE,3,969,اسٹاک مارکیٹ میں تیزی کا رجحان جاری,Business & Economics,0.930143,Not relevant,low,qwen3:0.6b,"{""relevance"":""Not relevant"",""confidence"":""low""}"
+5,P25_01,اسٹاک مارکیٹ میں تیزی آئی,HEADLINE,4,39721,سٹاک مارکیٹ میں زبردست تیزی کا رجحان غالب رہا,Business & Economics,0.908331,Not relevant,low,qwen3:0.6b,"{""relevance"":""Not relevant"",""confidence"":""low""}"
+6,P25_01,اسٹاک مارکیٹ میں تیزی آئی,HEADLINE,5,111444,اسٹاک مارکیٹ میں تیزی کے بعد مندی چھا گئی,Business & Economics,0.886898,Not relevant,low,qwen3:0.6b,"{""relevance"":""Not relevant"",""confidence"":""low""}"
+7,P25_01,اسٹاک مارکیٹ میں تیزی آئی,HEADLINE,6,2446,اسٹاک مارکیٹ میں مسلسل دوسرے روز بھی تیزی کا رجحان,Business & Economics,0.87974,Not relevant,low,qwen3:0.6b,"{""relevance"":""Not relevant"",""confidence"":""low""}"
+8,P25_01,اسٹاک مارکیٹ میں تیزی آئی,HEADLINE,7,39614,سٹاک مارکیٹ میں دن بھر تیزی کا رجحان غالب رہا,Business & Economics,0.876895,Not relevant,low,qwen3:0.6b,"{""relevance"":""Not relevant"",""confidence"":""low""}"
+9,P25_01,اسٹاک مارکیٹ میں تیزی آئی,HEADLINE,8,2269,اسٹاک مارکیٹ میں مندی کا رجحان برقرار,Business & Economics,0.872461,Not relevant,low,qwen3:0.6b,"{""relevance"":""Not relevant"",""confidence"":""low""}"

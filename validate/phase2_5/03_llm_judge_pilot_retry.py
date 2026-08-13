@@ -21,36 +21,24 @@ DEFAULT_OUTPUT = os.path.join(PHASE_DIR, "llm_judgments_pilot.csv")
 CORPUS_CSV = os.path.join(REPO_ROOT, "data", "clean_articles.csv")
 ALLOWED = {"relevant":"Relevant", "partially relevant":"Partially relevant", "partial":"Partially relevant", "partially_relevant":"Partially relevant", "not relevant":"Not relevant", "not_relevant":"Not relevant"}
 
-SYSTEM_PROMPT = """Read the USER QUERY and the NEWS ARTICLE.
+SYSTEM_PROMPT = """You are a relevance judge for an information-retrieval research experiment.
+Judge ONLY whether the supplied NEWS ARTICLE satisfies the supplied USER QUERY.
 
-Judge whether the NEWS ARTICLE satisfies the event or information requested by the USER QUERY.
+Labels:
+- Relevant: directly answers or clearly satisfies the information need.
+- Partially relevant: meaningfully related but only partially answers it, misses an important aspect, or is incomplete/indirect.
+- Not relevant: does not meaningfully satisfy the query.
 
-Important:
-- Same topic alone does NOT mean relevant.
-- The article must describe the event asked for by the query.
-- If the article describes the opposite event or outcome, mark it Not relevant.
-- Example: if the query says the market rose, an article mainly saying the market fell is Not relevant.
-- Related background information can be Partially relevant if it does not fully satisfy the query.
-- Do NOT use word count, SHORT, LONG, QUERY-DEPENDENT, or any hypothesis.
-- Judge only the query and article content.
-
-Choose exactly one:
-Relevant
-Partially relevant
-Not relevant
-
-Confidence must be exactly one of:
-high
-medium
-low
-
-Return ONLY valid JSON:
-{"relevance":"Relevant","confidence":"high"}
-
-No explanation.
-No markdown.
-No extra text."""
-
+Rules:
+1. Judge the article against the query, not retrieval score.
+2. Do not infer relevance merely from shared words.
+3. Do not use any SHORT/LONG hypothesis or word-count information; it is intentionally hidden.
+4. Judge the actual article content, not whether it was retrieved by HEADLINE or FULL_CONTENT.
+5. For a bare event query, determine whether the article is actually about that event.
+6. Return ONLY valid JSON with exactly:
+{"relevance":"Relevant|Partially relevant|Not relevant","confidence":"high|medium|low"}
+No markdown or explanation.
+"""
 
 def args():
     p=argparse.ArgumentParser()
