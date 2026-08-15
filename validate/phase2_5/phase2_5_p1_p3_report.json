@@ -1,0 +1,54 @@
+{
+  "judgments_path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\validate\\phase2_5\\human_judgments\\human_judgments.csv",
+  "note": "Companion report to phase2_5_metrics_report.json. Adds P@1 and P@3 only (not computed by 02_compute_metrics_from_judgments.py). Same REL_MAP, same precision_at_k definition, same skip rules (invalid/unjudged excluded).",
+  "num_queries_total": 33,
+  "modes_present_in_data": [
+    "FULL_CONTENT",
+    "HEADLINE"
+  ],
+  "overall_by_mode": {
+    "FULL_CONTENT": {
+      "P@1": {
+        "mean": 0.3181818181818182,
+        "n": 33
+      },
+      "P@3": {
+        "mean": 0.32828282828282823,
+        "n": 33
+      }
+    },
+    "HEADLINE": {
+      "P@1": {
+        "mean": 0.3484848484848485,
+        "n": 33
+      },
+      "P@3": {
+        "mean": 0.3787878787878788,
+        "n": 33
+      }
+    }
+  },
+  "bare_event_5_6w_subset": {
+    "FULL_CONTENT": {
+      "P@1": {
+        "mean": 0.2,
+        "n": 10
+      },
+      "P@3": {
+        "mean": 0.23333333333333334,
+        "n": 10
+      }
+    },
+    "HEADLINE": {
+      "P@1": {
+        "mean": 0.3,
+        "n": 10
+      },
+      "P@3": {
+        "mean": 0.2333333333333333,
+        "n": 10
+      }
+    }
+  },
+  "bare_event_5_6w_subset_n_queries_matched_filter": 10
+}

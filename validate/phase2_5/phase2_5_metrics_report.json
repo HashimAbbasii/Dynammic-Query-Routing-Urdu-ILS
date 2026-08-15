@@ -1,0 +1,975 @@
+{
+  "judgments_path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\validate\\phase2_5\\human_judgments\\human_judgments.csv",
+  "num_queries_total": 33,
+  "num_query_mode_pairs_scored": 66,
+  "num_query_mode_pairs_skipped_unjudged": 0,
+  "num_queries_invalid_no_corpus_match": 0,
+  "primary_modes": [
+    "HEADLINE",
+    "FULL_CONTENT",
+    "HYBRID"
+  ],
+  "diagnostic_modes": [
+    "HEADLINE_KEYWORD_TFIDF"
+  ],
+  "decision_thresholds": {
+    "DECISION_THRESHOLD": 0.05,
+    "DECISION_MAJORITY_FRACTION": 0.7,
+    "MIN_QUERIES_FOR_DECISION": 3
+  },
+  "breakdown": {
+    "overall_by_mode": {
+      "HEADLINE": {
+        "P@5": {
+          "mean": 0.32727272727272727,
+          "n": 33
+        },
+        "P@10": {
+          "mean": 0.32727272727272727,
+          "n": 33
+        },
+        "P@15": {
+          "mean": 0.32727272727272727,
+          "n": 33
+        },
+        "MRR": {
+          "mean": 0.5858585858585859,
+          "n": 33
+        },
+        "nDCG@15": {
+          "mean": 0.5851605799221642,
+          "n": 33
+        }
+      },
+      "FULL_CONTENT": {
+        "P@5": {
+          "mean": 0.3303030303030303,
+          "n": 33
+        },
+        "P@10": {
+          "mean": 0.3303030303030303,
+          "n": 33
+        },
+        "P@15": {
+          "mean": 0.3303030303030303,
+          "n": 33
+        },
+        "MRR": {
+          "mean": 0.5272727272727272,
+          "n": 33
+        },
+        "nDCG@15": {
+          "mean": 0.546058477796006,
+          "n": 33
+        }
+      }
+    },
+    "by_word_count": {
+      "5": {
+        "HEADLINE": {
+          "P@5": {
+            "mean": 0.42000000000000004,
+            "n": 5
+          },
+          "P@10": {
+            "mean": 0.42000000000000004,
+            "n": 5
+          },
+          "P@15": {
+            "mean": 0.42000000000000004,
+            "n": 5
+          },
+          "MRR": {
+            "mean": 0.7,
+            "n": 5
+          },
+          "nDCG@15": {
+            "mean": 0.7521279136471407,
+            "n": 5
+          }
+        },
+        "FULL_CONTENT": {
+          "P@5": {
+            "mean": 0.34,
+            "n": 5
+          },
+          "P@10": {
+            "mean": 0.34,
+            "n": 5
+          },
+          "P@15": {
+            "mean": 0.34,
+            "n": 5
+          },
+          "MRR": {
+            "mean": 0.4,
+            "n": 5
+          },
+          "nDCG@15": {
+            "mean": 0.3790571261738293,
+            "n": 5
+          }
+        }
+      },
+      "6": {
+        "HEADLINE": {
+          "P@5": {
+            "mean": 0.09999999999999999,
+            "n": 6
+          },
+          "P@10": {
+            "mean": 0.09999999999999999,
+            "n": 6
+          },
+          "P@15": {
+            "mean": 0.09999999999999999,
+            "n": 6
+          },
+          "MRR": {
+            "mean": 0.08333333333333333,
+            "n": 6
+          },
+          "nDCG@15": {
+            "mean": 0.11871051108576602,
+            "n": 6
+          }
+        },
+        "FULL_CONTENT": {
+          "P@5": {
+            "mean": 0.26666666666666666,
+            "n": 6
+          },
+          "P@10": {
+            "mean": 0.26666666666666666,
+            "n": 6
+          },
+          "P@15": {
+            "mean": 0.26666666666666666,
+            "n": 6
+          },
+          "MRR": {
+            "mean": 0.25555555555555554,
+            "n": 6
+          },
+          "nDCG@15": {
+            "mean": 0.3262490876983103,
+            "n": 6
+          }
+        }
+      },
+      "7": {
+        "HEADLINE": {
+          "P@5": {
+            "mean": 0.31,
+            "n": 10
+          },
+          "P@10": {
+            "mean": 0.31,
+            "n": 10
+          },
+          "P@15": {
+            "mean": 0.31,
+            "n": 10
+          },
+          "MRR": {
+            "mean": 0.4833333333333333,
+            "n": 10
+          },
+          "nDCG@15": {
+            "mean": 0.5233661308076065,
+            "n": 10
+          }
+        },
+        "FULL_CONTENT": {
+          "P@5": {
+            "mean": 0.32,
+            "n": 10
+          },
+          "P@10": {
+            "mean": 0.32,
+            "n": 10
+          },
+          "P@15": {
+            "mean": 0.32,
+            "n": 10
+          },
+          "MRR": {
+            "mean": 0.4833333333333333,
+            "n": 10
+          },
+          "nDCG@15": {
+            "mean": 0.5298839134145096,
+            "n": 10
+          }
+        }
+      },
+      "8": {
+        "HEADLINE": {
+          "P@5": {
+            "mean": 0.3333333333333333,
+            "n": 6
+          },
+          "P@10": {
+            "mean": 0.3333333333333333,
+            "n": 6
+          },
+          "P@15": {
+            "mean": 0.3333333333333333,
+            "n": 6
+          },
+          "MRR": {
+            "mean": 0.9166666666666666,
+            "n": 6
+          },
+          "nDCG@15": {
+            "mean": 0.8750564769263164,
+            "n": 6
+          }
+        },
+        "FULL_CONTENT": {
+          "P@5": {
+            "mean": 0.25,
+            "n": 6
+          },
+          "P@10": {
+            "mean": 0.25,
+            "n": 6
+          },
+          "P@15": {
+            "mean": 0.25,
+            "n": 6
+          },
+          "MRR": {
+            "mean": 0.5055555555555555,
+            "n": 6
+          },
+          "nDCG@15": {
+            "mean": 0.5762271604892636,
+            "n": 6
+          }
+        }
+      },
+      "9": {
+        "HEADLINE": {
+          "P@5": {
+            "mean": 0.5,
+            "n": 4
+          },
+          "P@10": {
+            "mean": 0.5,
+            "n": 4
+          },
+          "P@15": {
+            "mean": 0.5,
+            "n": 4
+          },
+          "MRR": {
+            "mean": 1.0,
+            "n": 4
+          },
+          "nDCG@15": {
+            "mean": 0.8383490832617888,
+            "n": 4
+          }
+        },
+        "FULL_CONTENT": {
+          "P@5": {
+            "mean": 0.55,
+            "n": 4
+          },
+          "P@10": {
+            "mean": 0.55,
+            "n": 4
+          },
+          "P@15": {
+            "mean": 0.55,
+            "n": 4
+          },
+          "MRR": {
+            "mean": 1.0,
+            "n": 4
+          },
+          "nDCG@15": {
+            "mean": 0.9594797253398608,
+            "n": 4
+          }
+        }
+      }
+    },
+    "by_script": {
+      "urdu": {
+        "HEADLINE": {
+          "P@5": {
+            "mean": 0.44999999999999996,
+            "n": 18
+          },
+          "P@10": {
+            "mean": 0.44999999999999996,
+            "n": 18
+          },
+          "P@15": {
+            "mean": 0.44999999999999996,
+            "n": 18
+          },
+          "MRR": {
+            "mean": 0.75,
+            "n": 18
+          },
+          "nDCG@15": {
+            "mean": 0.7351301975331634,
+            "n": 18
+          }
+        },
+        "FULL_CONTENT": {
+          "P@5": {
+            "mean": 0.3888888888888889,
+            "n": 18
+          },
+          "P@10": {
+            "mean": 0.3888888888888889,
+            "n": 18
+          },
+          "P@15": {
+            "mean": 0.3888888888888889,
+            "n": 18
+          },
+          "MRR": {
+            "mean": 0.6777777777777777,
+            "n": 18
+          },
+          "nDCG@15": {
+            "mean": 0.6939546983930643,
+            "n": 18
+          }
+        }
+      },
+      "roman": {
+        "HEADLINE": {
+          "P@5": {
+            "mean": 0.18000000000000002,
+            "n": 15
+          },
+          "P@10": {
+            "mean": 0.18000000000000002,
+            "n": 15
+          },
+          "P@15": {
+            "mean": 0.18000000000000002,
+            "n": 15
+          },
+          "MRR": {
+            "mean": 0.3888888888888889,
+            "n": 15
+          },
+          "nDCG@15": {
+            "mean": 0.405197038788965,
+            "n": 15
+          }
+        },
+        "FULL_CONTENT": {
+          "P@5": {
+            "mean": 0.26,
+            "n": 15
+          },
+          "P@10": {
+            "mean": 0.26,
+            "n": 15
+          },
+          "P@15": {
+            "mean": 0.26,
+            "n": 15
+          },
+          "MRR": {
+            "mean": 0.3466666666666667,
+            "n": 15
+          },
+          "nDCG@15": {
+            "mean": 0.36858301307953617,
+            "n": 15
+          }
+        }
+      }
+    },
+    "by_query_type": {
+      "bare_event": {
+        "HEADLINE": {
+          "P@5": {
+            "mean": 0.30000000000000004,
+            "n": 29
+          },
+          "P@10": {
+            "mean": 0.30000000000000004,
+            "n": 29
+          },
+          "P@15": {
+            "mean": 0.30000000000000004,
+            "n": 29
+          },
+          "MRR": {
+            "mean": 0.5804597701149425,
+            "n": 29
+          },
+          "nDCG@15": {
+            "mean": 0.5801677196285007,
+            "n": 29
+          }
+        },
+        "FULL_CONTENT": {
+          "P@5": {
+            "mean": 0.3103448275862069,
+            "n": 29
+          },
+          "P@10": {
+            "mean": 0.3103448275862069,
+            "n": 29
+          },
+          "P@15": {
+            "mean": 0.3103448275862069,
+            "n": 29
+          },
+          "MRR": {
+            "mean": 0.4620689655172414,
+            "n": 29
+          },
+          "nDCG@15": {
+            "mean": 0.5102802909728887,
+            "n": 29
+          }
+        }
+      },
+      "anchor": {
+        "HEADLINE": {
+          "P@5": {
+            "mean": 0.525,
+            "n": 4
+          },
+          "P@10": {
+            "mean": 0.525,
+            "n": 4
+          },
+          "P@15": {
+            "mean": 0.525,
+            "n": 4
+          },
+          "MRR": {
+            "mean": 0.625,
+            "n": 4
+          },
+          "nDCG@15": {
+            "mean": 0.6213588170512246,
+            "n": 4
+          }
+        },
+        "FULL_CONTENT": {
+          "P@5": {
+            "mean": 0.47500000000000003,
+            "n": 4
+          },
+          "P@10": {
+            "mean": 0.47500000000000003,
+            "n": 4
+          },
+          "P@15": {
+            "mean": 0.47500000000000003,
+            "n": 4
+          },
+          "MRR": {
+            "mean": 1.0,
+            "n": 4
+          },
+          "nDCG@15": {
+            "mean": 0.8054503322636068,
+            "n": 4
+          }
+        }
+      }
+    }
+  },
+  "decision": {
+    "5w_bare_event_overall": {
+      "verdict": "SHORT",
+      "n_queries": 4,
+      "mean_diff_full_minus_headline": -0.5024,
+      "fraction_favoring_LONG": 0.0,
+      "fraction_favoring_SHORT": 0.75,
+      "raw_diffs": [
+        -0.0094,
+        -1.0,
+        -1.0,
+        0.0
+      ]
+    },
+    "5w_bare_event_urdu": {
+      "verdict": "INSUFFICIENT_DATA",
+      "n_queries": 2,
+      "diffs": [
+        -0.009431598617928416,
+        -1.0
+      ]
+    },
+    "5w_bare_event_roman": {
+      "verdict": "INSUFFICIENT_DATA",
+      "n_queries": 2,
+      "diffs": [
+        -1.0,
+        0.0
+      ]
+    },
+    "6w_bare_event_overall": {
+      "verdict": "QUERY-DEPENDENT / INCONCLUSIVE",
+      "n_queries": 6,
+      "mean_diff_full_minus_headline": 0.2075,
+      "fraction_favoring_LONG": 0.333,
+      "fraction_favoring_SHORT": 0.167,
+      "raw_diffs": [
+        -0.1416,
+        0.0,
+        1.0,
+        0.0,
+        0.3869,
+        0.0
+      ]
+    },
+    "6w_bare_event_urdu": {
+      "verdict": "QUERY-DEPENDENT / INCONCLUSIVE",
+      "n_queries": 3,
+      "mean_diff_full_minus_headline": 0.2861,
+      "fraction_favoring_LONG": 0.333,
+      "fraction_favoring_SHORT": 0.333,
+      "raw_diffs": [
+        -0.1416,
+        0.0,
+        1.0
+      ]
+    },
+    "6w_bare_event_roman": {
+      "verdict": "QUERY-DEPENDENT / INCONCLUSIVE",
+      "n_queries": 3,
+      "mean_diff_full_minus_headline": 0.129,
+      "fraction_favoring_LONG": 0.333,
+      "fraction_favoring_SHORT": 0.0,
+      "raw_diffs": [
+        0.0,
+        0.3869,
+        0.0
+      ]
+    },
+    "5_6w_bare_event_combined": {
+      "verdict": "QUERY-DEPENDENT / INCONCLUSIVE",
+      "n_queries": 10,
+      "mean_diff_full_minus_headline": -0.0764,
+      "fraction_favoring_LONG": 0.2,
+      "fraction_favoring_SHORT": 0.4,
+      "raw_diffs": [
+        -0.0094,
+        -1.0,
+        -1.0,
+        0.0,
+        -0.1416,
+        0.0,
+        1.0,
+        0.0,
+        0.3869,
+        0.0
+      ]
+    }
+  },
+  "crosstab_headline_vs_fullcontent": [
+    {
+      "query_id": "P25_01",
+      "word_count": "5",
+      "script": "urdu",
+      "tag": "5w",
+      "headline_nDCG@15": 1.0,
+      "full_content_nDCG@15": 0.9906,
+      "diff_full_minus_headline": -0.0094,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_02",
+      "word_count": "5",
+      "script": "urdu",
+      "tag": "5w",
+      "headline_nDCG@15": 1.0,
+      "full_content_nDCG@15": 0.0,
+      "diff_full_minus_headline": -1.0,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_03",
+      "word_count": "5",
+      "script": "roman",
+      "tag": "5w",
+      "headline_nDCG@15": 1.0,
+      "full_content_nDCG@15": 0.0,
+      "diff_full_minus_headline": -1.0,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_04",
+      "word_count": "5",
+      "script": "roman",
+      "tag": "5w",
+      "headline_nDCG@15": 0.0,
+      "full_content_nDCG@15": 0.0,
+      "diff_full_minus_headline": 0.0,
+      "implied_by_retrieval": "TIE",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_05",
+      "word_count": "6",
+      "script": "urdu",
+      "tag": "6w",
+      "headline_nDCG@15": 0.7123,
+      "full_content_nDCG@15": 0.5706,
+      "diff_full_minus_headline": -0.1416,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_06",
+      "word_count": "6",
+      "script": "urdu",
+      "tag": "6w",
+      "headline_nDCG@15": 0.0,
+      "full_content_nDCG@15": 0.0,
+      "diff_full_minus_headline": 0.0,
+      "implied_by_retrieval": "TIE",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_07",
+      "word_count": "6",
+      "script": "urdu",
+      "tag": "6w",
+      "headline_nDCG@15": 0.0,
+      "full_content_nDCG@15": 1.0,
+      "diff_full_minus_headline": 1.0,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_08",
+      "word_count": "6",
+      "script": "roman",
+      "tag": "6w",
+      "headline_nDCG@15": 0.0,
+      "full_content_nDCG@15": 0.0,
+      "diff_full_minus_headline": 0.0,
+      "implied_by_retrieval": "TIE",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_09",
+      "word_count": "6",
+      "script": "roman",
+      "tag": "6w",
+      "headline_nDCG@15": 0.0,
+      "full_content_nDCG@15": 0.3869,
+      "diff_full_minus_headline": 0.3869,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_10",
+      "word_count": "6",
+      "script": "roman",
+      "tag": "6w",
+      "headline_nDCG@15": 0.0,
+      "full_content_nDCG@15": 0.0,
+      "diff_full_minus_headline": 0.0,
+      "implied_by_retrieval": "TIE",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_11",
+      "word_count": "7",
+      "script": "urdu",
+      "tag": "7w",
+      "headline_nDCG@15": 0.6934,
+      "full_content_nDCG@15": 0.6934,
+      "diff_full_minus_headline": 0.0,
+      "implied_by_retrieval": "TIE",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_12",
+      "word_count": "7",
+      "script": "urdu",
+      "tag": "7w",
+      "headline_nDCG@15": 0.7606,
+      "full_content_nDCG@15": 0.8772,
+      "diff_full_minus_headline": 0.1166,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_13",
+      "word_count": "7",
+      "script": "urdu",
+      "tag": "7w",
+      "headline_nDCG@15": 0.9829,
+      "full_content_nDCG@15": 1.0,
+      "diff_full_minus_headline": 0.0171,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_14",
+      "word_count": "7",
+      "script": "urdu",
+      "tag": "7w",
+      "headline_nDCG@15": 0.8772,
+      "full_content_nDCG@15": 0.6797,
+      "diff_full_minus_headline": -0.1975,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_15",
+      "word_count": "7",
+      "script": "urdu",
+      "tag": "7w",
+      "headline_nDCG@15": 0.6241,
+      "full_content_nDCG@15": 0.5438,
+      "diff_full_minus_headline": -0.0803,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_16",
+      "word_count": "7",
+      "script": "roman",
+      "tag": "7w",
+      "headline_nDCG@15": 0.0,
+      "full_content_nDCG@15": 0.0,
+      "diff_full_minus_headline": 0.0,
+      "implied_by_retrieval": "TIE",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_17",
+      "word_count": "7",
+      "script": "roman",
+      "tag": "7w",
+      "headline_nDCG@15": 0.0,
+      "full_content_nDCG@15": 0.0,
+      "diff_full_minus_headline": 0.0,
+      "implied_by_retrieval": "TIE",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_18",
+      "word_count": "7",
+      "script": "roman",
+      "tag": "7w",
+      "headline_nDCG@15": 0.5706,
+      "full_content_nDCG@15": 0.7606,
+      "diff_full_minus_headline": 0.19,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_19",
+      "word_count": "7",
+      "script": "roman",
+      "tag": "7w",
+      "headline_nDCG@15": 0.0,
+      "full_content_nDCG@15": 0.0,
+      "diff_full_minus_headline": 0.0,
+      "implied_by_retrieval": "TIE",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_20",
+      "word_count": "8",
+      "script": "urdu",
+      "tag": "8w",
+      "headline_nDCG@15": 0.8005,
+      "full_content_nDCG@15": 1.0,
+      "diff_full_minus_headline": 0.1995,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_21",
+      "word_count": "8",
+      "script": "urdu",
+      "tag": "8w",
+      "headline_nDCG@15": 0.9197,
+      "full_content_nDCG@15": 0.5,
+      "diff_full_minus_headline": -0.4197,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_22",
+      "word_count": "8",
+      "script": "urdu",
+      "tag": "8w",
+      "headline_nDCG@15": 0.6241,
+      "full_content_nDCG@15": 0.3869,
+      "diff_full_minus_headline": -0.2372,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_23",
+      "word_count": "8",
+      "script": "roman",
+      "tag": "8w",
+      "headline_nDCG@15": 1.0,
+      "full_content_nDCG@15": 0.9197,
+      "diff_full_minus_headline": -0.0803,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_24",
+      "word_count": "8",
+      "script": "roman",
+      "tag": "8w",
+      "headline_nDCG@15": 1.0,
+      "full_content_nDCG@15": 0.0,
+      "diff_full_minus_headline": -1.0,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_25",
+      "word_count": "8",
+      "script": "roman",
+      "tag": "8w",
+      "headline_nDCG@15": 0.906,
+      "full_content_nDCG@15": 0.6508,
+      "diff_full_minus_headline": -0.2552,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_26",
+      "word_count": "9",
+      "script": "urdu",
+      "tag": "9w",
+      "headline_nDCG@15": 0.8457,
+      "full_content_nDCG@15": 1.0,
+      "diff_full_minus_headline": 0.1543,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_27",
+      "word_count": "9",
+      "script": "urdu",
+      "tag": "9w",
+      "headline_nDCG@15": 1.0,
+      "full_content_nDCG@15": 1.0,
+      "diff_full_minus_headline": 0.0,
+      "implied_by_retrieval": "TIE",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_28",
+      "word_count": "9",
+      "script": "urdu",
+      "tag": "9w",
+      "headline_nDCG@15": 0.667,
+      "full_content_nDCG@15": 0.8379,
+      "diff_full_minus_headline": 0.1709,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_29",
+      "word_count": "9",
+      "script": "roman",
+      "tag": "9w",
+      "headline_nDCG@15": 0.8406,
+      "full_content_nDCG@15": 1.0,
+      "diff_full_minus_headline": 0.1594,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_30",
+      "word_count": "7",
+      "script": "urdu",
+      "tag": "anchor",
+      "headline_nDCG@15": 0.7248,
+      "full_content_nDCG@15": 0.7441,
+      "diff_full_minus_headline": 0.0193,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_31",
+      "word_count": "2",
+      "script": "roman",
+      "tag": "anchor",
+      "headline_nDCG@15": 0.0,
+      "full_content_nDCG@15": 0.906,
+      "diff_full_minus_headline": 0.906,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "SHORT",
+      "matches_hypothesis": false
+    },
+    {
+      "query_id": "P25_32",
+      "word_count": "5",
+      "script": "roman",
+      "tag": "anchor",
+      "headline_nDCG@15": 0.7606,
+      "full_content_nDCG@15": 0.9047,
+      "diff_full_minus_headline": 0.1441,
+      "implied_by_retrieval": "LONG",
+      "pre_registered_hypothesis": "LONG",
+      "matches_hypothesis": true
+    },
+    {
+      "query_id": "P25_33",
+      "word_count": "4",
+      "script": "urdu",
+      "tag": "anchor",
+      "headline_nDCG@15": 1.0,
+      "full_content_nDCG@15": 0.667,
+      "diff_full_minus_headline": -0.333,
+      "implied_by_retrieval": "SHORT",
+      "pre_registered_hypothesis": "SHORT",
+      "matches_hypothesis": true
+    }
+  ]
+}
