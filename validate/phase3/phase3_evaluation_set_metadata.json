@@ -1,0 +1,49 @@
+{
+  "dataset_filename": "phase3_evaluation_set.csv",
+  "md5_hash": "b442ab2ffbd85a98734d49e62450aaa9",
+  "freeze_timestamp_utc": "2026-08-16T11:42:15.991961+00:00",
+  "total_rows": 60,
+  "primary_n": 50,
+  "secondary_n": 10,
+  "bucket_distribution": {
+    "2-4w": 12,
+    "5-6w": 20,
+    "7-9w": 12,
+    "10-19w": 16
+  },
+  "script_distribution": {
+    "urdu": 30,
+    "roman": 30
+  },
+  "primary_labels": {
+    "SHORT": 16,
+    "LONG": 34
+  },
+  "secondary_labels": "null/blank for all 10 secondary rows (gold_label intentionally unassigned; descriptive analysis only)",
+  "word_count_baseline": {
+    "threshold": 6,
+    "rule": "word_count >= 6 -> LONG; word_count <= 5 -> SHORT",
+    "frozen": true,
+    "note": "Frozen threshold derived from midpoint of training gap (max short=4, min long=7) per Phase 3 handoff. Not modified during Phase 3B construction."
+  },
+  "leakage_audit": {
+    "exact_string_overlap": 0,
+    "normalized_overlap": 0,
+    "reference_sets_checked": {
+      "training_409": 409,
+      "diagnostic_50": 50,
+      "holdout_16": 16,
+      "stage_c_85": 85
+    },
+    "reference_repo_commit": "31b5d0b",
+    "documented_benign_near_duplicate_flags": [
+      "P3_002 (vs diagnostic_50 'ڈالر', Jaccard 0.50, classified BENIGN_OVERLAP)",
+      "P3_007 (vs diagnostic_50 'score', Jaccard 0.50, classified BENIGN_OVERLAP)",
+      "P3_044/P3_048 (within-set policy-template overlap, Jaccard 0.50, classified BENIGN_OVERLAP)"
+    ]
+  },
+  "construction_provenance": {
+    "source_provenance_note": "Recorded per-row in CSV column 'source_provenance'; constructed_date left blank in CSV as original draft timestamps were not established/retained.",
+    "nine_rows_revised_this_session": ["P3_001", "P3_003", "P3_004", "P3_008", "P3_009", "P3_010", "P3_025", "P3_027", "P3_030"]
+  }
+}
