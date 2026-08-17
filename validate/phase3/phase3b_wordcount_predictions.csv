@@ -1,0 +1,61 @@
+query_id,query,word_count,set_type,gold_label,wordcount_prediction
+P3_001,ٹیم اسکواڈ,2,primary,SHORT,SHORT
+P3_002,ڈالر ریٹ,2,primary,SHORT,SHORT
+P3_003,سونے کی قیمت,3,primary,SHORT,SHORT
+P3_004,کل دھوپ ہوگی,3,primary,SHORT,SHORT
+P3_005,وزیراعظم کا نیا بیان,4,primary,SHORT,SHORT
+P3_006,ٹیم کیوں ہاری,3,primary,LONG,SHORT
+P3_007,cricket score,2,primary,SHORT,SHORT
+P3_008,atta price,2,primary,SHORT,SHORT
+P3_009,loan interest rate,3,primary,SHORT,SHORT
+P3_010,voting date kab,3,primary,SHORT,SHORT
+P3_011,naya phone launch hua,4,primary,SHORT,SHORT
+P3_012,team kyun haari,3,primary,LONG,SHORT
+P3_013,آج پاکستان کا اسکور کیا ہے,6,primary,SHORT,LONG
+P3_014,ڈالر کی قیمت کتنی بڑھی,5,primary,SHORT,SHORT
+P3_015,حکومت مہنگائی کیوں کم نہیں کرتی,6,primary,LONG,LONG
+P3_016,دو ٹیموں کا موازنہ کیسا رہا,6,primary,LONG,LONG
+P3_017,زلزلے سے کتنا نقصان ہوا,5,primary,LONG,SHORT
+P3_018,aaj match ka score kya hai,6,primary,SHORT,LONG
+P3_019,dollar rate kitna badh gaya,5,primary,SHORT,SHORT
+P3_020,hukumat mehngai kam kyun nahi karti,6,primary,LONG,LONG
+P3_021,dono teams ka comparison kaisa raha,6,primary,LONG,LONG
+P3_022,zalzale se kitna nuksan hua,5,primary,LONG,SHORT
+P3_023,پاکستان کرکٹ ٹیم نے فائنل میچ کیسے جیتا,8,primary,LONG,LONG
+P3_024,نئے بجٹ میں تعلیم کے لیے کتنی رقم رکھی,9,primary,SHORT,LONG
+P3_025,کراچی میں بارش کے بعد ٹریفک کیسا ہے,8,primary,LONG,LONG
+P3_026,وزیراعظم کا دورہ چین کن معاملات پر مرکوز رہا,9,primary,LONG,LONG
+P3_027,نئی موبائل ٹیکنالوجی صارفین کو کیا فائدہ ہوگا,8,primary,LONG,LONG
+P3_028,ہسپتالوں میں ادویات کی کمی کیوں ہو رہی ہے,9,primary,LONG,LONG
+P3_029,pakistan cricket team ne final match kaise jeeta,8,primary,LONG,LONG
+P3_030,education budget mein kitni raqam rakhi gayi,7,primary,SHORT,LONG
+P3_031,karachi mein barish ke baad traffic kaisa hai,8,primary,LONG,LONG
+P3_032,PM ka china visit kin mamlat par focused raha,9,primary,LONG,LONG
+P3_033,nai mobile technology users ko kya faida degi,8,primary,LONG,LONG
+P3_034,hospitals mein dawaiyon ki kami kyun ho rahi hai,9,primary,LONG,LONG
+P3_035,پاکستان اور بھارت کے درمیان کرکٹ ورلڈ کپ فائنل میں کیا ہوا تھا اور نتیجہ کیا رہا,17,primary,LONG,LONG
+P3_036,حکومت کی نئی تعلیمی پالیسی کے تحت طلبہ کو کیا سہولیات ملیں گی,13,primary,LONG,LONG
+P3_037,اسٹاک مارکیٹ میں حالیہ اتار چڑھاؤ کی وجوہات کیا ہیں اور سرمایہ کار کیا کریں,15,primary,LONG,LONG
+P3_038,پاکستان میں انتخابات کے نتائج پر مختلف سیاسی جماعتوں کا ردعمل کیا رہا,13,primary,LONG,LONG
+P3_039,موسمیاتی تبدیلی پاکستان کی زراعت اور معیشت کو کس طرح متاثر کر رہی ہے,14,primary,LONG,LONG
+P3_040,نئی سرکاری صحت پالیسی کے تحت غریب مریضوں کو کیا مفت سہولیات دستیاب ہوں گی,15,primary,LONG,LONG
+P3_041,پاکستان سپر لیگ میں اس سیزن کھلاڑیوں کی کارکردگی کیسی رہی اور کون سی ٹیم آگے ہے,17,primary,LONG,LONG
+P3_042,ملک میں بڑھتی ہوئی بے روزگاری کی بنیادی وجوہات کیا ہیں اور حکومت کیا اقدامات کر رہی ہے,18,primary,LONG,LONG
+P3_043,pakistan aur india ke darmiyan cricket world cup final mein kya hua tha aur result kya raha,17,primary,LONG,LONG
+P3_044,hukumat ki nayi taleemi policy ke tehat talaba ko kya suhulat milen gi,13,primary,LONG,LONG
+P3_045,stock market mein haaliya utar chadhao ki wajohat kya hain aur sarmaya kaar kya karen,15,primary,LONG,LONG
+P3_046,pakistan mein election results par mukhtalif siyasi jamaaton ka radd e amal kya raha,14,primary,LONG,LONG
+P3_047,climate change pakistan ki zeraat aur economy ko kis tarah mutasir kar rahi hai,14,primary,LONG,LONG
+P3_048,nayi sarkari health policy ke tehat ghareeb mareezon ko kya muft suhulat milen gi,14,primary,LONG,LONG
+P3_049,PSL is season players ki performance kaisi rahi aur kaun si team aage hai,14,primary,LONG,LONG
+P3_050,mulk mein barhti hui berozgari ki bunyadi wajohat kya hain aur hukumat kya iqdamat kar rahi hai,17,primary,LONG,LONG
+P3_051,زلزلہ شمالی علاقہ جات میں آیا,6,secondary,,LONG
+P3_052,وزیراعظم نے قوم سے خطاب کیا,6,secondary,,LONG
+P3_053,بجٹ آج پارلیمنٹ میں پیش ہوا,6,secondary,,LONG
+P3_054,کراچی میں دھماکہ ہو گیا,5,secondary,,SHORT
+P3_055,پاکستان ٹیم میچ ہار گئی,5,secondary,,SHORT
+P3_056,shumali ilaqon mein zalzala aaya,5,secondary,,SHORT
+P3_057,PM ne qaum se khitab kiya,6,secondary,,LONG
+P3_058,budget aaj parliament mein pesh hua,6,secondary,,LONG
+P3_059,karachi mein dhamaka ho gaya,5,secondary,,SHORT
+P3_060,pakistan team match haar gayi,5,secondary,,SHORT
