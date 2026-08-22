@@ -1,0 +1,1628 @@
+{
+  "judgments_path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\validate\\phase2_5\\human_judgments\\human_judgments.csv",
+  "n_queries": 33,
+  "judged_depth": 5,
+  "note": "Reuse Phase 2.5 human judgments. Router only selects HEADLINE vs FULL_CONTENT list. No P@15.",
+  "summary": {
+    "always_headline": {
+      "n_queries": 33,
+      "n_routed_headline": 33,
+      "n_routed_full": 0,
+      "mean_P@5": 0.32727272727272727,
+      "mean_nDCG@5": 0.5851605799221642,
+      "mean_MRR": 0.5858585858585859
+    },
+    "always_full": {
+      "n_queries": 33,
+      "n_routed_headline": 0,
+      "n_routed_full": 33,
+      "mean_P@5": 0.3303030303030303,
+      "mean_nDCG@5": 0.546058477796006,
+      "mean_MRR": 0.5272727272727272
+    },
+    "theta150": {
+      "n_queries": 33,
+      "n_routed_headline": 33,
+      "n_routed_full": 0,
+      "mean_P@5": 0.32727272727272727,
+      "mean_nDCG@5": 0.5851605799221642,
+      "mean_MRR": 0.5858585858585859
+    },
+    "wordcount": {
+      "n_queries": 33,
+      "n_routed_headline": 7,
+      "n_routed_full": 26,
+      "mean_P@5": 0.3515151515151515,
+      "mean_nDCG@5": 0.5852198512989603,
+      "mean_MRR": 0.5424242424242424
+    },
+    "svm_v2": {
+      "n_queries": 33,
+      "n_routed_headline": 6,
+      "n_routed_full": 27,
+      "mean_P@5": 0.3515151515151515,
+      "mean_nDCG@5": 0.5592083769825746,
+      "mean_MRR": 0.5171717171717172
+    }
+  },
+  "paired_P@5": {
+    "svm_v2 vs wordcount P@5": {
+      "left_better": 1,
+      "right_better": 1,
+      "tie": 31
+    },
+    "svm_v2 vs theta150 P@5": {
+      "left_better": 8,
+      "right_better": 8,
+      "tie": 17
+    },
+    "svm_v2 vs always_headline P@5": {
+      "left_better": 8,
+      "right_better": 8,
+      "tie": 17
+    },
+    "svm_v2 vs always_full P@5": {
+      "left_better": 3,
+      "right_better": 1,
+      "tie": 29
+    },
+    "wordcount vs theta150 P@5": {
+      "left_better": 8,
+      "right_better": 8,
+      "tie": 17
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "P25_01",
+      "query": "اسٹاک مارکیٹ میں تیزی آئی",
+      "word_count": 5,
+      "script": "urdu",
+      "tag": "5w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.9,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.9,
+        "nDCG@5": 0.9905684013820716,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.9,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.9,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": 66.47306512335818,
+        "P@5": 0.9,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_02",
+      "query": "قومی ٹیم نے میچ جیتا",
+      "word_count": 5,
+      "script": "urdu",
+      "tag": "5w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": 88.5106587809086,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_03",
+      "query": "naye drame ka trailer aaya",
+      "word_count": 5,
+      "script": "roman",
+      "tag": "5w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 72.95686396125193,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      }
+    },
+    {
+      "query_id": "P25_04",
+      "query": "naye phone ka elaan hua",
+      "word_count": 5,
+      "script": "roman",
+      "tag": "5w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 65.5788888291971,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      }
+    },
+    {
+      "query_id": "P25_05",
+      "query": "روپے کی قدر میں کمی ہوئی",
+      "word_count": 6,
+      "script": "urdu",
+      "tag": "6w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.6,
+        "nDCG@5": 0.7122630665145961,
+        "MRR": 0.5
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.5706417189553201,
+        "MRR": 0.3333333333333333
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.6,
+        "nDCG@5": 0.7122630665145961,
+        "MRR": 0.5
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.5706417189553201,
+        "MRR": 0.3333333333333333
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": 59.84043363581543,
+        "P@5": 0.6,
+        "nDCG@5": 0.7122630665145961,
+        "MRR": 0.5
+      }
+    },
+    {
+      "query_id": "P25_06",
+      "query": "فٹبال ٹیم نے فائنل میچ جیتا",
+      "word_count": 6,
+      "script": "urdu",
+      "tag": "6w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 60.473025402182024,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      }
+    },
+    {
+      "query_id": "P25_07",
+      "query": "مشہور اداکار نے نئی فلم بنائی",
+      "word_count": 6,
+      "script": "urdu",
+      "tag": "6w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 72.59305657392447,
+        "P@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_08",
+      "query": "naye bank account kholne ka tareeqa",
+      "word_count": 6,
+      "script": "roman",
+      "tag": "6w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 93.5414849563828,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      }
+    },
+    {
+      "query_id": "P25_09",
+      "query": "pakistani bowler ne wicket hasil kiya",
+      "word_count": 6,
+      "script": "roman",
+      "tag": "6w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 0.38685280723454163,
+        "MRR": 0.2
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 0.38685280723454163,
+        "MRR": 0.2
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 89.54325794290897,
+        "P@5": 0.2,
+        "nDCG@5": 0.38685280723454163,
+        "MRR": 0.2
+      }
+    },
+    {
+      "query_id": "P25_10",
+      "query": "naya software update jari kar diya",
+      "word_count": 6,
+      "script": "roman",
+      "tag": "6w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 92.7732007124146,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      }
+    },
+    {
+      "query_id": "P25_11",
+      "query": "بڑی کمپنی نے نیا منصوبہ شروع کیا",
+      "word_count": 7,
+      "script": "urdu",
+      "tag": "7w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6934264036172708,
+        "MRR": 0.5
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6934264036172708,
+        "MRR": 0.5
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6934264036172708,
+        "MRR": 0.5
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6934264036172708,
+        "MRR": 0.5
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 91.06394608655997,
+        "P@5": 0.4,
+        "nDCG@5": 0.6934264036172708,
+        "MRR": 0.5
+      }
+    },
+    {
+      "query_id": "P25_12",
+      "query": "کرکٹ بورڈ نے نیا کوچ مقرر کیا",
+      "word_count": 7,
+      "script": "urdu",
+      "tag": "7w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.8,
+        "nDCG@5": 0.7606395682357036,
+        "MRR": 0.5
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.8772153153380493,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.8,
+        "nDCG@5": 0.7606395682357036,
+        "MRR": 0.5
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.8772153153380493,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 82.14964123712872,
+        "P@5": 0.4,
+        "nDCG@5": 0.8772153153380493,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_13",
+      "query": "مقامی گلوکار نے نیا البم ریلیز کیا",
+      "word_count": 7,
+      "script": "urdu",
+      "tag": "7w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.9828920819566879,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.9828920819566879,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 94.20851532316257,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_14",
+      "query": "نئی ایپ نے صارفین کی تعداد بڑھائی",
+      "word_count": 7,
+      "script": "urdu",
+      "tag": "7w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.8772153153380493,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.6,
+        "nDCG@5": 0.6797310500037655,
+        "MRR": 0.5
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.8772153153380493,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.6,
+        "nDCG@5": 0.6797310500037655,
+        "MRR": 0.5
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 92.95426988806783,
+        "P@5": 0.6,
+        "nDCG@5": 0.6797310500037655,
+        "MRR": 0.5
+      }
+    },
+    {
+      "query_id": "P25_15",
+      "query": "سرکاری بینک نے شرح سود تبدیل کی",
+      "word_count": 7,
+      "script": "urdu",
+      "tag": "7w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6240505200038379,
+        "MRR": 0.5
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.5437713091520254,
+        "MRR": 0.3333333333333333
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6240505200038379,
+        "MRR": 0.5
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.5437713091520254,
+        "MRR": 0.3333333333333333
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 88.69043999674614,
+        "P@5": 0.4,
+        "nDCG@5": 0.5437713091520254,
+        "MRR": 0.3333333333333333
+      }
+    },
+    {
+      "query_id": "P25_16",
+      "query": "pakistan cricket team ne series jeet li",
+      "word_count": 7,
+      "script": "roman",
+      "tag": "7w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 82.8813299411607,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      }
+    },
+    {
+      "query_id": "P25_17",
+      "query": "bollywood actress ne shaadi ki khabar di",
+      "word_count": 7,
+      "script": "roman",
+      "tag": "7w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 98.3993549756475,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      }
+    },
+    {
+      "query_id": "P25_18",
+      "query": "naye smartphone mein badi battery lagai gai",
+      "word_count": 7,
+      "script": "roman",
+      "tag": "7w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.5706417189553201,
+        "MRR": 0.3333333333333333
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.8,
+        "nDCG@5": 0.7606395682357036,
+        "MRR": 0.5
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.5706417189553201,
+        "MRR": 0.3333333333333333
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.8,
+        "nDCG@5": 0.7606395682357036,
+        "MRR": 0.5
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 98.2516424102518,
+        "P@5": 0.8,
+        "nDCG@5": 0.7606395682357036,
+        "MRR": 0.5
+      }
+    },
+    {
+      "query_id": "P25_19",
+      "query": "company ne naye shares launch kar diye",
+      "word_count": 7,
+      "script": "roman",
+      "tag": "7w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 97.30349442888271,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      }
+    },
+    {
+      "query_id": "P25_20",
+      "query": "ملکی برآمدات میں نمایاں اضافہ ریکارڈ کیا گیا",
+      "word_count": 8,
+      "script": "urdu",
+      "tag": "8w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.8005421168711908,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.8005421168711908,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 99.58826779496074,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_21",
+      "query": "قومی ہاکی ٹیم نے فائنل میچ آج کھیلا",
+      "word_count": 8,
+      "script": "urdu",
+      "tag": "8w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.9197207891481876,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 0.5,
+        "MRR": 0.3333333333333333
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.9197207891481876,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 0.5,
+        "MRR": 0.3333333333333333
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 97.23406152109717,
+        "P@5": 0.2,
+        "nDCG@5": 0.5,
+        "MRR": 0.3333333333333333
+      }
+    },
+    {
+      "query_id": "P25_22",
+      "query": "مشہور ہدایتکار کی نئی فلم سنیما میں لگی",
+      "word_count": 8,
+      "script": "urdu",
+      "tag": "8w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6240505200038379,
+        "MRR": 0.5
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 0.38685280723454163,
+        "MRR": 0.2
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6240505200038379,
+        "MRR": 0.5
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 0.38685280723454163,
+        "MRR": 0.2
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 98.89470539311043,
+        "P@5": 0.2,
+        "nDCG@5": 0.38685280723454163,
+        "MRR": 0.2
+      }
+    },
+    {
+      "query_id": "P25_23",
+      "query": "pakistan mein 5G network ki testing shuru hui",
+      "word_count": 8,
+      "script": "roman",
+      "tag": "8w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.9197207891481876,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.9197207891481876,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 99.13784851702667,
+        "P@5": 0.4,
+        "nDCG@5": 0.9197207891481876,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_24",
+      "query": "bade bank ne interest rate tabdeel kar di",
+      "word_count": 8,
+      "script": "roman",
+      "tag": "8w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.1,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.1,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 99.27131032480216,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      }
+    },
+    {
+      "query_id": "P25_25",
+      "query": "young pakistani bowler ne apna pehla match khela",
+      "word_count": 8,
+      "script": "roman",
+      "tag": "8w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.3,
+        "nDCG@5": 0.9060254355346823,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.5,
+        "nDCG@5": 0.6507893665528527,
+        "MRR": 0.5
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.3,
+        "nDCG@5": 0.9060254355346823,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.5,
+        "nDCG@5": 0.6507893665528527,
+        "MRR": 0.5
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 99.60210169259615,
+        "P@5": 0.5,
+        "nDCG@5": 0.6507893665528527,
+        "MRR": 0.5
+      }
+    },
+    {
+      "query_id": "P25_26",
+      "query": "حکومت نے چھوٹے کاروباروں کے لیے نیا قرضہ دیا",
+      "word_count": 9,
+      "script": "urdu",
+      "tag": "9w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.6,
+        "nDCG@5": 0.845744297703998,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.6,
+        "nDCG@5": 0.845744297703998,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 99.72383692349834,
+        "P@5": 0.2,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_27",
+      "query": "قومی خواتین کرکٹ ٹیم نے پہلی بار کپ جیتا",
+      "word_count": 9,
+      "script": "urdu",
+      "tag": "9w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.5,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.5,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.5,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.5,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 99.4148017289295,
+        "P@5": 0.5,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_28",
+      "query": "مقامی کمپنی نے نیا مصنوعی ذہانت سافٹ ویئر بنایا",
+      "word_count": 9,
+      "script": "urdu",
+      "tag": "9w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6670031762343883,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.6,
+        "nDCG@5": 0.8379189013594431,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6670031762343883,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.6,
+        "nDCG@5": 0.8379189013594431,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 99.8278224296552,
+        "P@5": 0.6,
+        "nDCG@5": 0.8379189013594431,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_29",
+      "query": "mashhoor singer ne apna naya gaana release kar diya",
+      "word_count": 9,
+      "script": "roman",
+      "tag": "9w",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.5,
+        "nDCG@5": 0.8406488591087692,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.9,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.5,
+        "nDCG@5": 0.8406488591087692,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.9,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 99.84912929126357,
+        "P@5": 0.9,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_30",
+      "query": "پاکستان کرکٹ ٹیم فائنل میں کیوں ہاری",
+      "word_count": 7,
+      "script": "urdu",
+      "tag": "anchor",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.3,
+        "nDCG@5": 0.7247956999691951,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.7440554877982815,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.3,
+        "nDCG@5": 0.7247956999691951,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.7440554877982815,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": 96.4299522213153,
+        "P@5": 0.4,
+        "nDCG@5": 0.7440554877982815,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "P25_31",
+      "query": "cricket score",
+      "word_count": 2,
+      "script": "roman",
+      "tag": "anchor",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.3,
+        "nDCG@5": 0.9060254355346823,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": 98.74746705172211,
+        "P@5": 0.0,
+        "nDCG@5": 0.0,
+        "MRR": 0.0
+      }
+    },
+    {
+      "query_id": "P25_32",
+      "query": "pakistan aur india ka match",
+      "word_count": 5,
+      "script": "roman",
+      "tag": "anchor",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.8,
+        "nDCG@5": 0.7606395682357036,
+        "MRR": 0.5
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.8,
+        "nDCG@5": 0.9047172294870751,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.8,
+        "nDCG@5": 0.7606395682357036,
+        "MRR": 0.5
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 0.8,
+        "nDCG@5": 0.7606395682357036,
+        "MRR": 0.5
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": 90.9721454659656,
+        "P@5": 0.8,
+        "nDCG@5": 0.7606395682357036,
+        "MRR": 0.5
+      }
+    },
+    {
+      "query_id": "P25_33",
+      "query": "میچ کب شروع ہوگا",
+      "word_count": 4,
+      "script": "urdu",
+      "tag": "anchor",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "confidence": null,
+        "P@5": 0.4,
+        "nDCG@5": 0.6670031762343883,
+        "MRR": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": null,
+        "P@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "confidence": 97.3362474600503,
+        "P@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    }
+  ]
+}

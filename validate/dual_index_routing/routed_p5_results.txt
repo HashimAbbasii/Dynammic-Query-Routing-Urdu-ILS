@@ -1,0 +1,16 @@
+DUAL-INDEX ROUTING EVALUATION (Phase 2.5 judgments, depth 5)
+n_queries = 33
+
+system                    P@5   nDCG@5      MRR   ->H   ->F
+always_headline      0.3273 0.5852 0.5859    33     0
+always_full          0.3303 0.5461 0.5273     0    33
+theta150             0.3273 0.5852 0.5859    33     0
+wordcount            0.3515 0.5852 0.5424     7    26
+svm_v2               0.3515 0.5592 0.5172     6    27
+
+Paired P@5 (left better / right better / tie)
+  svm_v2 vs wordcount P@5: 1 / 1 / 31
+  svm_v2 vs theta150 P@5: 8 / 8 / 17
+  svm_v2 vs always_headline P@5: 8 / 8 / 17
+  svm_v2 vs always_full P@5: 3 / 1 / 29
+  wordcount vs theta150 P@5: 8 / 8 / 17
