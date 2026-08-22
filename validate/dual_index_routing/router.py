@@ -23,6 +23,23 @@ WORDCOUNT_LONG_MIN = 6  # frozen Phase 3B rule: >= 6 words -> LONG
 THETA_CHAR = 150  # ULTRA static character threshold
 HEADLINE = "HEADLINE"
 FULL_CONTENT = "FULL_CONTENT"
+HYBRID = "HYBRID"
+
+# Thesis confidence bands (Section 3.5): not fitted on eval data.
+HIGH_MIN = 85.0
+MEDIUM_MIN = 60.0
+
+
+def confidence_tier(confidence) -> str | None:
+    """GREEN / YELLOW / RED lights. None if the system has no confidence."""
+    if confidence is None:
+        return None
+    c = float(confidence)
+    if c >= HIGH_MIN:
+        return "HIGH"
+    if c >= MEDIUM_MIN:
+        return "MEDIUM"
+    return "LOW"
 
 _svm = None
 _scaler = None
@@ -84,11 +101,13 @@ def decide(query: str, system: str) -> dict:
         label, conf = svm_v2_label(query)
     else:
         raise ValueError(f"unknown system: {system}")
+    tier = confidence_tier(conf)
     return {
         "system": system,
         "label": label,
         "mode": label_to_mode(label),
         "confidence": conf,
+        "tier": tier,
         "word_count": len(query.split()),
         "char_len": len(query),
     }

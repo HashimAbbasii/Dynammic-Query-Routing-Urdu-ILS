@@ -1,0 +1,110 @@
+[
+  {
+    "query": "کرکٹ میچ",
+    "plain": "Short cricket query. Sure -> headlines only.",
+    "label": "SHORT",
+    "svm_room": "HEADLINE",
+    "tier": "HIGH",
+    "light": "GREEN",
+    "confidence": 99.99869452359366,
+    "action": "HEADLINE",
+    "search_query": "کرکٹ میچ",
+    "expected_light": "GREEN",
+    "matched_expected_light": true,
+    "top3": [
+      {
+        "rank": 1,
+        "doc_id": 38323,
+        "headline": "کرکٹ کلاسک وقار کی میچ وننگ کارکردگی",
+        "category": "Sports",
+        "score": 0.8365393877029419
+      },
+      {
+        "rank": 2,
+        "doc_id": 97184,
+        "headline": "ئندہ ون ڈے کرکٹ نہیں کھیل پاوں گا رکی پونٹنگ",
+        "category": "Sports",
+        "score": 0.8254239559173584
+      },
+      {
+        "rank": 3,
+        "doc_id": 91514,
+        "headline": "بھارتی کرکٹر یوسف پٹھان نے تماشائی کی پٹائی کر دی",
+        "category": "Sports",
+        "score": 0.8065382838249207
+      }
+    ]
+  },
+  {
+    "query": "ڈالر کی قیمت کتنی بڑھی",
+    "plain": "How much did the dollar rise? Not fully sure -> mix both rooms.",
+    "label": "SHORT",
+    "svm_room": "HEADLINE",
+    "tier": "MEDIUM",
+    "light": "YELLOW",
+    "confidence": 81.8209122865258,
+    "action": "HYBRID",
+    "search_query": "ڈالر کی قیمت کتنی بڑھی",
+    "expected_light": "YELLOW",
+    "matched_expected_light": true,
+    "top3": [
+      {
+        "rank": 1,
+        "doc_id": 64598,
+        "headline": "ڈالر کی قدر میں پھر اضافہ",
+        "category": "Business & Economics",
+        "score": 0.62133047050164
+      },
+      {
+        "rank": 2,
+        "doc_id": 65501,
+        "headline": "ڈالر کی قدر میں چار پیسے کا اضافہ",
+        "category": "Business & Economics",
+        "score": 0.5221342761628204
+      },
+      {
+        "rank": 3,
+        "doc_id": 70630,
+        "headline": "انٹر بینک میں ڈالر مزید مہنگااوپن مارکیٹ میں 157روپے کی سطح پر برقرار",
+        "category": "Business & Economics",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "query": "آج پاکستان کا اسکور کیا ہے",
+    "plain": "Today's score (6 words). Guessing -> expand, then mix both rooms.",
+    "label": "LONG",
+    "svm_room": "FULL_CONTENT",
+    "tier": "LOW",
+    "light": "RED",
+    "confidence": 53.83295490573617,
+    "action": "EXPAND_THEN_HYBRID",
+    "search_query": "آج پاکستان کا اسکور کیا ہے تفصیل وجوہات",
+    "expected_light": "RED",
+    "matched_expected_light": true,
+    "top3": [
+      {
+        "rank": 1,
+        "doc_id": 34690,
+        "headline": "متعدد خراب ریکارڈ اب پاکستان کے نام",
+        "category": "Sports",
+        "score": 0.5
+      },
+      {
+        "rank": 2,
+        "doc_id": 38351,
+        "headline": "سپر اوور سپر کامیابی",
+        "category": "Sports",
+        "score": 0.5
+      },
+      {
+        "rank": 3,
+        "doc_id": 2637,
+        "headline": "پاکستانی درامدات تاریخ کی بلند ترین سطح پر پہنچ گئیں",
+        "category": "Business & Economics",
+        "score": 0.4794634801401624
+      }
+    ]
+  }
+]
