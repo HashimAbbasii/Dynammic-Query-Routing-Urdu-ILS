@@ -1,0 +1,44 @@
+ONE-PAGE LABEL RULE (read this before you label)
+
+What you are deciding
+---------------------
+SHORT or LONG is NOT "is the query short or long?"
+It is: which library ROOM would help a user more?
+
+  Room A = HEADLINES only   -> label SHORT
+  Room B = FULL ARTICLES    -> label LONG
+
+Do NOT count words. Do NOT use 150 letters. Do NOT copy the 6-word rule.
+If you count words, we can never beat that rule in a paper.
+
+How to choose
+-------------
+SHORT  The user wants one clear fact (score, price, date, who won).
+       A good headline could answer it. Extra story is optional.
+
+LONG   The user wants why / how / how much damage / comparison / reasons.
+       A headline like "team lost" is not enough. They need the article.
+
+If you are stuck, leave gold_label BLANK. Do not guess.
+
+Two people (best)
+-----------------
+Person A and Person B label the SAME sheet independently.
+Then we see how often you agree. IEEE likes that number (Cohen's kappa).
+
+Trap types in the sheet (already filled; you do not change these)
+-----------------------------------------------------------------
+SHORT_WORDS_LONG_NEED  Few words, but the need is a STORY (why/how).
+LONG_WORDS_SHORT_NEED  More words, but the need is ONE FACT.
+CONTROL_EASY_SHORT     Obvious headline fact.
+CONTROL_EASY_LONG      Obvious full-article question.
+
+Fill only: gold_label_A  and  gold_label_B  (SHORT or LONG)
+Optional: notes
+
+Person A fills column gold_label_A only.
+Person B fills column gold_label_B only. Do not look at A's answers.
+
+File to fill
+------------
+validate/dual_index_routing/labels/trap_label_sheet.csv
