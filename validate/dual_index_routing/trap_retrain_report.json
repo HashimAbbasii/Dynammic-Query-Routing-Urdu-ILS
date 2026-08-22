@@ -1,39 +1,15 @@
 {
-  "feature_order": [
-    "urdu_ratio",
-    "roman_ratio",
-    "has_urdu",
-    "has_roman",
-    "query_len",
-    "char_len",
-    "mixed",
-    "urdu_chars",
-    "has_causal",
-    "has_manner",
-    "has_synthesis",
-    "has_fact_cue"
-  ],
-  "training_queries": 447,
-  "n_original_409": 409,
-  "n_traps_added": 38,
-  "traps_skipped_already_in_409": [
+  "winner": "v3_12_w4",
+  "n_features": 12,
+  "n_train": 447,
+  "skipped_traps_in_409": [
     "T033",
     "T036"
   ],
-  "short": 211,
-  "long": 236,
-  "kernel": "rbf",
-  "C": 1.0,
-  "gamma": "scale",
-  "probability": true,
-  "random_state": 42,
-  "selected_variant": "v3_12_w4",
-  "cv_accuracy_mean": 0.9820973782771535,
-  "cv_accuracy_std": 0.011356160993706206,
-  "trained_on": "2026-08-22",
-  "notes": "Trap-augmented retrain on feat/dual-index-svm-routing. 409 queries keep their original SHORT/LONG labels (mostly length). 40 trap queries use headline-enough vs need-full-article labels (gold_A/gold_B agreed after correction; not independent raters). Frozen Phase 3B 86% vs 84% is the V2 result and was not overwritten. New Phase 3B numbers below leak on trap queries that also appear in the 50.",
-  "backup_dir": "models/backup_v2_pre_trap_retrain_2026-08-22",
-  "variant_table": [
+  "n_phase3b_primary": 50,
+  "n_phase3b_overlap_with_traps": 10,
+  "n_phase3b_nonoverlap": 40,
+  "variants": [
     {
       "name": "v2_8",
       "n_features": 8,
@@ -127,5 +103,6 @@
       },
       "beats_wordcount_on_traps": true
     }
-  ]
+  ],
+  "backup_dir": "models/backup_v2_pre_trap_retrain_2026-08-22"
 }
