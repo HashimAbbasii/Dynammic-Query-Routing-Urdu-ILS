@@ -1,0 +1,4 @@
+FROZEN held-out set: validate/dual_index_routing/labels/heldout_traps.py
+H001-H040. Do not add to SVM training. Do not overwrite this file to chase accuracy.
+Student labels go in heldout_trap_sheet.csv (gold_label_student only).
+Draft scores use protocol labels in heldout_traps.py.

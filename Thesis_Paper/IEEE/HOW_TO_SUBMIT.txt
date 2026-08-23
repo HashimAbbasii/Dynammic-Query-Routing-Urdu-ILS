@@ -1,0 +1,21 @@
+IEEE conference manuscript (IEEEtran, two-column).
+
+Compile on Overleaf: New project → upload this folder → main.tex.
+
+Or locally:
+  pdflatex main
+  pdflatex main
+
+What you may say at defense
+---------------------------
+YES: "The paper is written in IEEE conference format and is ready to submit
+      to an IEEE venue (e.g. INMIC, ICET, HONET, or IEEE Access after
+      expanding it to journal length)."
+
+YES: "We are preparing / we will submit an IEEE paper on this work."
+
+NO:  "I have published in IEEE" / "it is on IEEE Xplore"
+     until a venue accepts it and IEEE indexes it.
+
+The numbers in main.tex are the frozen ones (86/84, 60/20/50, P@5 33 vs 36.50).
+Do not put development 100% or 96% in the IEEE draft.

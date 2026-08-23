@@ -1,0 +1,401 @@
+query_id,query,script,word_count,trap_type,retrieval_mode,rank,doc_id,doc_headline,doc_category,score,relevance
+H001,پیٹرول کیوں مہنگا,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,1,2612,پیٹرول ڈیزل روپے فی لیٹر مہنگا کردیا گیا,Business & Economics,0.874934,Partially relevant
+H001,پیٹرول کیوں مہنگا,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,2,72469,پٹرول اور ڈیزل سوا2روپے لیٹر مہنگا,Business & Economics,0.850445,Partially relevant
+H001,پیٹرول کیوں مہنگا,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,3,65820,پیٹرول مزید مہنگا ہونے کا امکان اوگرا نے سمری بھجوادی,Business & Economics,0.847595,Partially relevant
+H001,پیٹرول کیوں مہنگا,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,4,71713,نئے سال کی امد پیٹرول روپے پیسے مہنگا,Business & Economics,0.844601,Partially relevant
+H001,پیٹرول کیوں مہنگا,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,5,110207,پیٹرول روپے 15 پیسے اور ڈیزل روپے 65 پیسے فی لیٹر مہنگا,Business & Economics,0.843497,Partially relevant
+H001,پیٹرول کیوں مہنگا,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,60810,حکومت نے نئے سال کی خوشیوں سے پہلے عوام پر پیٹرول بم گرا دیا,Business & Economics,0.793156,Partially relevant
+H001,پیٹرول کیوں مہنگا,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,109642,حکومت نے پیٹرول کی قیمت میں اضافہ کردیا,Business & Economics,0.784747,Partially relevant
+H001,پیٹرول کیوں مہنگا,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,62572,یکم نومبر سے پیٹرولیم مصنوعات میں اضافے کا اعلان,Business & Economics,0.782322,Partially relevant
+H001,پیٹرول کیوں مہنگا,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,70510,حکومت کا پیٹرول کی درمدات پر عائد پابندی ہٹانے کا فیصلہ,Business & Economics,0.776687,Not relevant
+H001,پیٹرول کیوں مہنگا,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,17605,پیٹرول اور سی این جی قیمتیں کم ہونے کا امکان,Entertainment,0.773247,Not relevant
+H002,شکست کی وجہ,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,1,36001,ناکامیاں اور امید,Sports,0.842208,Partially relevant
+H002,شکست کی وجہ,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,2,35833,شکست کے ذمہ دار بالرز,Sports,0.811330,Relevant
+H002,شکست کی وجہ,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,3,35783,منفی سوچ شکست کی وجہ بنی فریدی,Sports,0.805069,Relevant
+H002,شکست کی وجہ,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,4,96309,شکست کی بڑی وجہ ناقص فیلڈنگ ہے مصباح الحق کا اعتراف,Sports,0.778654,Relevant
+H002,شکست کی وجہ,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,5,35018,ایک اور شکست,Sports,0.774084,Partially relevant
+H002,شکست کی وجہ,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,18068,زندگی میں کامیاب اور ناکام افراد کے فرق,Entertainment,0.650186,Not relevant
+H002,شکست کی وجہ,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,87371,عمر اکمل نے انتقال کی خبر پر بہت اچھا کا کمنٹس لکھ دیا,Sports,0.624365,Not relevant
+H002,شکست کی وجہ,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,15563,کامیابی کی راہ میں رکاوٹ بننے والی 11 شخصی عادات,Entertainment,0.624157,Not relevant
+H002,شکست کی وجہ,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,24700,ناکامی کے باوجود عروج پانے والی 12 شخصیات,Science & Technology,0.623498,Not relevant
+H002,شکست کی وجہ,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,24682,زندگی میں کامیابی کے لیے ان 22 چیزوں کو چھوڑ دیں,Science & Technology,0.621570,Not relevant
+H003,فلم کیسے ڈوبی,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,1,6433,فلم انسیپشن کی اینڈنگ کا راز خرکار سامنے گیا,Entertainment,0.741745,Not relevant
+H003,فلم کیسے ڈوبی,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,2,69645,فلم اظہر کی پہلی جھلک جاری,Entertainment,0.738257,Not relevant
+H003,فلم کیسے ڈوبی,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,3,66857,فلم گلی بوائے شائقین کو متاثر کرنے میں کامیاب,Entertainment,0.731844,Not relevant
+H003,فلم کیسے ڈوبی,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,4,8389,ریڑھ کی ہڈی میں سنسناہٹ دوڑا دینے والی ہارر فلم,Entertainment,0.727337,Not relevant
+H003,فلم کیسے ڈوبی,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,5,99076,فلم طیفا ان ٹربل کا جادو چل گیا,Entertainment,0.725945,Not relevant
+H003,فلم کیسے ڈوبی,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,100581,فلم بلیک بٹر فلائی کل نمائش کیلئے پیش ہو گی,Entertainment,0.683771,Not relevant
+H003,فلم کیسے ڈوبی,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,17725,نصیرالدین کا انتظار,Entertainment,0.662782,Not relevant
+H003,فلم کیسے ڈوبی,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,105910,تھرلنگ ہالی وڈ فلم جن کا پہلاٹریلر جاری,Entertainment,0.658517,Not relevant
+H003,فلم کیسے ڈوبی,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,99418,فلم ٹک ٹاک ریویو کہانی کو سمجھنا مشکل ہی نہیں نا ممکن ہے,Entertainment,0.657357,Partially relevant
+H003,فلم کیسے ڈوبی,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,100437,فلم 47میٹرز ڈاون کل سینما گھروں کی زینت بنے گی,Entertainment,0.657071,Not relevant
+H004,سیلاب کا نقصان,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,1,10960,بھارتی ریاست اسام میں سیلابپریانکا چوپڑا پرالزام,Entertainment,0.856172,Partially relevant
+H004,سیلاب کا نقصان,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,2,59899,دریائی نظام میں الودگی اور سیلاب سے خبردار کرنے والا الہ,Science & Technology,0.814665,Partially relevant
+H004,سیلاب کا نقصان,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,3,9378,سنجے کی سوانح حیات میں سونم کا اہم کردار,Entertainment,0.799873,Not relevant
+H004,سیلاب کا نقصان,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,4,18791,سیلاب طوفانی بارشیں,Entertainment,0.794791,Partially relevant
+H004,سیلاب کا نقصان,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,5,24555,سیلاب کی پیشگوئی نظام میں خامیاں,Science & Technology,0.794668,Partially relevant
+H004,سیلاب کا نقصان,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,75478,سیلابی صورتحال پی ٹی سی ایل سروسز بھی معطلی کا شکار,Business & Economics,0.641529,Relevant
+H004,سیلاب کا نقصان,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,49454,گلگت شدید سردی سے خلتی جھیل کا پانی جما تو سیاحوں کا رش لگ گیا,Entertainment,0.628484,Not relevant
+H004,سیلاب کا نقصان,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,76741,پنجاب میں سیلابسبزیوں کی قیمتیں سمان پر پہنچ گئیں,Business & Economics,0.610121,Relevant
+H004,سیلاب کا نقصان,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,19099,موسم کی تباہ کاریاں,Entertainment,0.609260,Partially relevant
+H004,سیلاب کا نقصان,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,103884,دریائے سندھ میں تونسہ کے مقام پر اونچے درجے کا سیلاب,Entertainment,0.603515,Partially relevant
+H005,ٹیم ہار کا تجزیہ,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,1,55351,مشکلات میں گھری قومی ٹیم کی پریکٹس کا دوبارہ غاز,Sports,0.879363,Partially relevant
+H005,ٹیم ہار کا تجزیہ,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,2,56152,قومی ٹیم چیمپئنز ٹرافی جیتنے کی صلاحیت رکھتی ہے انضمام الحق,Sports,0.877724,Not relevant
+H005,ٹیم ہار کا تجزیہ,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,3,58298,قومی ٹیم کی ناقص پرفارمنس پر کوچ وقار یونس برہم,Sports,0.877329,Relevant
+H005,ٹیم ہار کا تجزیہ,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,4,55395,ویسٹ انڈیز سے میچ کے لیے قومی ٹیم کی حکمت عملی کی تشکیل,Sports,0.870850,Partially relevant
+H005,ٹیم ہار کا تجزیہ,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,5,55993,چیمپئنز ٹرافی کی تاریخ میں قومی ٹیم کی کارکردگی,Sports,0.864107,Partially relevant
+H005,ٹیم ہار کا تجزیہ,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,28794,پاکستان سپر لیگ سیزن تھری میں کونسی ٹیم کمزور اور کونسی مضبوط,Sports,0.769460,Not relevant
+H005,ٹیم ہار کا تجزیہ,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,44727,ورلڈ الیون کیخلاف دلچسپ سیریز کے لیے قومی ٹیم کا اعلان کر دیا گیا,Sports,0.763434,Not relevant
+H005,ٹیم ہار کا تجزیہ,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,34415,قومی ٹیم کو متحد کرنا پہلا مقصد,Sports,0.750856,Partially relevant
+H005,ٹیم ہار کا تجزیہ,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,41841,پی ایس ایل فائیوکراچی کنگز کا ٹاس جیت کر کوئٹہ گلیڈی ایٹرز کیخلاف پہلے بیٹنگ کا فیصلہ,Sports,0.745150,Not relevant
+H005,ٹیم ہار کا تجزیہ,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,95989,کامیابی سے ٹیم کامورال بلند ہوا ہے محمدحفیظ,Sports,0.744438,Not relevant
+H006,مہنگائی کے اثرات,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,1,78948,مہنگائی سے عوام پریشان سرکاری اعداد شمار کے مطابق قیمتیں کم ہوئیں,Business & Economics,0.795738,Relevant
+H006,مہنگائی کے اثرات,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,2,39099,ڈالر کی قیمت بڑھنے کے اثرات عام ادمی پر بھی مرتب ہوتے ہیں,Business & Economics,0.776514,Relevant
+H006,مہنگائی کے اثرات,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,3,64782,ڈالر مزید مہنگا ہونے کے باعث اسٹاک مارکیٹ میں مندی,Business & Economics,0.762854,Relevant
+H006,مہنگائی کے اثرات,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,4,63969,ملک بھر میں مہنگائی کی لہر برقرار,Business & Economics,0.745279,Partially relevant
+H006,مہنگائی کے اثرات,urdu,3,SHORT_WORDS_LONG_NEED,HEADLINE,5,771,جب سب کچھ ٹھیک ہے پھر یہ مہنگائی کیوں ہے,Business & Economics,0.728315,Partially relevant
+H006,مہنگائی کے اثرات,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,72755,اوپن مارکیٹ میں ڈالر مزید مہنگا ہوگیا,Business & Economics,0.702064,Partially relevant
+H006,مہنگائی کے اثرات,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,71615,اوپن مارکیٹ میں ڈالر ریال پانڈ اور اماراتی درہم مہنگا ہوگیا,Business & Economics,0.698738,Partially relevant
+H006,مہنگائی کے اثرات,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,39291,انٹربینک مارکیٹ میں امریکی ڈالر 71پیسے مہنگا,Business & Economics,0.692425,Partially relevant
+H006,مہنگائی کے اثرات,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,62178,کراچی چناماشاورمسور کی دال کی قیمتوں میں ہوشربا اضافہ,Business & Economics,0.689348,Relevant
+H006,مہنگائی کے اثرات,urdu,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,64790,ڈالر کی قیمت بڑھتے ہی مہنگائی بھی سمان کو چھونے لگی,Business & Economics,0.687823,Relevant
+H007,فلم فیل کی کہانی,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,1,11855,حریم فاروق کی نئی مزاحیہ فلم پرچی,Entertainment,0.900821,Not relevant
+H007,فلم فیل کی کہانی,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,2,99580,کھیل کھیل میں فلم,Entertainment,0.897493,Not relevant
+H007,فلم فیل کی کہانی,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,3,14600,فلم ریویو جراسک ورلڈ,Entertainment,0.895553,Not relevant
+H007,فلم فیل کی کہانی,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,4,39553,ملک اسرار اعوان ملتان چیمبر اف کامرس کے صدر منتخب,Business & Economics,0.895137,Not relevant
+H007,فلم فیل کی کہانی,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,5,14924,رابرٹ ڈی نیرو تاریخ کا عظیم ترین اداکار,Entertainment,0.889926,Not relevant
+H007,فلم فیل کی کہانی,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,18627,ڈیڑھ عشقیہ کا ٹریلر جاری,Entertainment,0.699965,Not relevant
+H007,فلم فیل کی کہانی,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,10672,بادشاہو کے ہوشیار رہنا کی دھوم,Entertainment,0.637842,Not relevant
+H007,فلم فیل کی کہانی,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,100587,برصغیر کے کامیڈی لیجنڈ رنگیلا کی 12 ویں اج منائی جائیگی,Entertainment,0.631400,Not relevant
+H007,فلم فیل کی کہانی,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,98973,عاطف اسلم کی واز میں چلتے چلتے کے ریمیک پر لتا منگیشکر ناراض,Entertainment,0.629373,Not relevant
+H007,فلم فیل کی کہانی,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,48038,گلوکار عاطف اسلم نے دل نشیں اواز میں اذان دے کر سننے والوں کے دل موہ لیے,Entertainment,0.629148,Not relevant
+H008,روپے گراوٹ کے نتائج,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,1,38763,روپے کی تنزلی اور ڈالر کی ترقی کا سفر جاری,Business & Economics,0.809527,Partially relevant
+H008,روپے گراوٹ کے نتائج,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,2,2758,روپے کی قدر میں کمی سے کیا فائدہ اور نقصان ہوتا ہے,Business & Economics,0.800171,Relevant
+H008,روپے گراوٹ کے نتائج,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,3,71033,روپے کی بے قدری انٹربینک میں ڈالر 164 روپے سے تجاوز کرگیا,Business & Economics,0.795651,Partially relevant
+H008,روپے گراوٹ کے نتائج,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,4,75791,روپیہ مستحکم ہونے سے درمدی دالوں کی قیمتوں میں کمی,Business & Economics,0.794336,Not relevant
+H008,روپے گراوٹ کے نتائج,urdu,4,SHORT_WORDS_LONG_NEED,HEADLINE,5,111187,انٹربینک مارکیٹ میں ڈالر مہنگا قیمت خرید 13878 روپے ہو گئی,Business & Economics,0.790696,Partially relevant
+H008,روپے گراوٹ کے نتائج,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,38718,انٹر بینک میں ڈالر ایک سو چھپن روپے پچاس پیسے کا ہو گیا,Business & Economics,0.775725,Partially relevant
+H008,روپے گراوٹ کے نتائج,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,65341,ڈالرتاریخ کی بلند ترین سطح کو چھو کر 138 روپے 50 پیسے پر گیا,Business & Economics,0.770509,Partially relevant
+H008,روپے گراوٹ کے نتائج,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,72724,ڈالر مہنگاہوکر 107 روپے پر پہنچ گیا,Business & Economics,0.768623,Partially relevant
+H008,روپے گراوٹ کے نتائج,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,78590,انٹر بینک میں ڈالر 94روپے کی بلند ترین سطح پر پہنچ گیا,Business & Economics,0.766661,Partially relevant
+H008,روپے گراوٹ کے نتائج,urdu,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,64591,انٹر بینک میں ڈالر کی قیمت میں گراوٹ کا سلسلہ جاری,Business & Economics,0.764793,Not relevant
+H009,petrol kyun mehnga,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,1,63521,اسلام باد میں بھی پیٹرول نایاب ہوگیا,Business & Economics,0.833975,Partially relevant
+H009,petrol kyun mehnga,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,2,74406,اج سے پیٹرول اورڈیزل 3روپےفی لیٹرسستا ہوگیا,Business & Economics,0.819669,Not relevant
+H009,petrol kyun mehnga,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,3,78838,تاپی گیس منصوبہقیمتفیس کا معاملہ طے ہوگیاوزیرپٹرولیم,Business & Economics,0.777438,Not relevant
+H009,petrol kyun mehnga,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,4,74127,پٹرول کی قیمت برقرار رہے گی اسحاق ڈار,Business & Economics,0.776447,Partially relevant
+H009,petrol kyun mehnga,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,5,16,پیٹرول کی قیمت برقرار ڈیزل روپے فی لیٹر مہنگا,Business & Economics,0.769288,Partially relevant
+H009,petrol kyun mehnga,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,75032,کراچی میں پٹرول کی طلب رسد کی صورتحال معمول پر ارہی ہے,Business & Economics,0.690269,Not relevant
+H009,petrol kyun mehnga,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,70510,حکومت کا پیٹرول کی درمدات پر عائد پابندی ہٹانے کا فیصلہ,Business & Economics,0.688480,Not relevant
+H009,petrol kyun mehnga,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,61122,کراچی میں پیٹرول 100 روپے فی لیٹر فروخت ہونے لگا,Business & Economics,0.674569,Partially relevant
+H009,petrol kyun mehnga,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,60810,حکومت نے نئے سال کی خوشیوں سے پہلے عوام پر پیٹرول بم گرا دیا,Business & Economics,0.669536,Partially relevant
+H009,petrol kyun mehnga,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,63496,کراچی سمیت ملک بھر میں پیٹرول اور ڈیزل کی قلت کا اٹھواں روز,Business & Economics,0.658336,Partially relevant
+H010,shikast ki waja,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,1,35833,شکست کے ذمہ دار بالرز,Sports,0.864145,Relevant
+H010,shikast ki waja,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,2,31335,مرے حیران کن شکست کے ساتھ یو ایس اوپن سے باہر,Sports,0.836477,Partially relevant
+H010,shikast ki waja,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,3,35018,ایک اور شکست,Sports,0.819798,Partially relevant
+H010,shikast ki waja,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,4,38319,جیتی بازی ہار گئے,Sports,0.811750,Partially relevant
+H010,shikast ki waja,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,5,36001,ناکامیاں اور امید,Sports,0.797345,Partially relevant
+H010,shikast ki waja,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,41892,پریمیئر لیگ فٹبال ٹوٹنہم اور ارسنل نے اپنے اپنے میچز جیت لئے,Sports,0.712339,Not relevant
+H010,shikast ki waja,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,55388,ٹاس جیتنے کے علاوہ پورا دن خراب رہا مصباح الحق,Sports,0.698696,Relevant
+H010,shikast ki waja,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,26307,بڑے مقابلے سے پہلے بڑی شکست ذمہ دار کون,Sports,0.687018,Relevant
+H010,shikast ki waja,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,90990,اسٹریلیا کیخلاف جیت کیلئے میدان میں اتریں گےوہاب ریاض,Sports,0.682286,Not relevant
+H010,shikast ki waja,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,94634,ایشین اسنوکر چمپئن شپ میں پاکستانی کیوسٹ کا سفر ختم,Sports,0.666241,Partially relevant
+H011,film kaise doobi,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,1,99571,ریویو فلم پری,Entertainment,0.880354,Not relevant
+H011,film kaise doobi,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,2,14600,فلم ریویو جراسک ورلڈ,Entertainment,0.867094,Not relevant
+H011,film kaise doobi,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,3,19145,کرینہ کپورکی ہیروئن,Entertainment,0.858940,Not relevant
+H011,film kaise doobi,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,4,11855,حریم فاروق کی نئی مزاحیہ فلم پرچی,Entertainment,0.858327,Not relevant
+H011,film kaise doobi,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,5,29080,ویل ڈن پی سی بی ویل ڈن نجم سیٹھی,Sports,0.852209,Not relevant
+H011,film kaise doobi,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,107649,فلم کائی پوچے کانیا گانا میٹھی بولیاں ریلیز کر دیا گیا,Entertainment,0.672443,Not relevant
+H011,film kaise doobi,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,68513,باہو بالی ٹو کے ہیرو پرابھاس کا مومی مجسمہ مادام تسا میوزیم میں سجے گا,Entertainment,0.657066,Not relevant
+H011,film kaise doobi,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,101917,فلم باربار دیکھوکا نیا ڈائیلاگ پرومو جاری,Entertainment,0.655925,Not relevant
+H011,film kaise doobi,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,50552,نامور شاعر اور ادیب احمد ندیم قاسمی کو اپنے مداحوں سے بچھڑے 10برس ہوگئے,Entertainment,0.655025,Not relevant
+H011,film kaise doobi,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,10885,رشک قمر کے بعد بادشاہوکا پیا مورے گانا ریلیز,Entertainment,0.654904,Not relevant
+H012,flood ka nuksan,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,1,10960,بھارتی ریاست اسام میں سیلابپریانکا چوپڑا پرالزام,Entertainment,0.863240,Partially relevant
+H012,flood ka nuksan,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,2,18791,سیلاب طوفانی بارشیں,Entertainment,0.808728,Partially relevant
+H012,flood ka nuksan,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,3,59899,دریائی نظام میں الودگی اور سیلاب سے خبردار کرنے والا الہ,Science & Technology,0.807890,Partially relevant
+H012,flood ka nuksan,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,4,9378,سنجے کی سوانح حیات میں سونم کا اہم کردار,Entertainment,0.788808,Not relevant
+H012,flood ka nuksan,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,5,24555,سیلاب کی پیشگوئی نظام میں خامیاں,Science & Technology,0.787298,Partially relevant
+H012,flood ka nuksan,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,49454,گلگت شدید سردی سے خلتی جھیل کا پانی جما تو سیاحوں کا رش لگ گیا,Entertainment,0.645177,Not relevant
+H012,flood ka nuksan,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,75478,سیلابی صورتحال پی ٹی سی ایل سروسز بھی معطلی کا شکار,Business & Economics,0.625489,Relevant
+H012,flood ka nuksan,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,19099,موسم کی تباہ کاریاں,Entertainment,0.620922,Partially relevant
+H012,flood ka nuksan,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,76741,پنجاب میں سیلابسبزیوں کی قیمتیں سمان پر پہنچ گئیں,Business & Economics,0.612125,Relevant
+H012,flood ka nuksan,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,86673,کراچی کنگز نے اسلام اباد یونائیٹڈ کو اٹھ رنز سے ہرادیا,Sports,0.610752,Not relevant
+H013,team haar ka tajzia,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,1,42291,ٹیم تگڑی ہے کم بیک کریگی محمد رضوان,Sports,0.854076,Partially relevant
+H013,team haar ka tajzia,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,2,87234,ٹیم کو جب تک ضرورت ہے کھیلوں گا مصباح الحق,Sports,0.829233,Not relevant
+H013,team haar ka tajzia,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,3,84720,اپنی پرفارمنس اور فٹنس سے قومی ٹیم جگہ بناں گا محمد عرفان,Sports,0.819792,Not relevant
+H013,team haar ka tajzia,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,4,56131,چیمپئنز ٹرافی عمر اکمل کی جگہ حارث سہیل قومی ٹیم میں شامل,Sports,0.819507,Not relevant
+H013,team haar ka tajzia,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,5,26726,پی ایس ایل میں ٹیموں کی موجودہ پوزیشن,Sports,0.817429,Not relevant
+H013,team haar ka tajzia,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,89007,قومی ہاکی ٹیم وطن واپس پہنچ گئی ایئر پورٹ پر شاندار استقبال,Sports,0.750349,Not relevant
+H013,team haar ka tajzia,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,34415,قومی ٹیم کو متحد کرنا پہلا مقصد,Sports,0.749873,Partially relevant
+H013,team haar ka tajzia,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,26217,ورلڈکپ ویسٹ انڈیز کلاس بھارت 125رنز سے کامیاب,Sports,0.745891,Not relevant
+H013,team haar ka tajzia,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,86851,پاکستان بلائنڈکرکٹ ٹیم بھارت روانہ,Sports,0.745358,Not relevant
+H013,team haar ka tajzia,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,44727,ورلڈ الیون کیخلاف دلچسپ سیریز کے لیے قومی ٹیم کا اعلان کر دیا گیا,Sports,0.739742,Not relevant
+H014,mehngai ke asar,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,1,63969,ملک بھر میں مہنگائی کی لہر برقرار,Business & Economics,0.795018,Partially relevant
+H014,mehngai ke asar,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,2,111843,ڈالر کی نرالی قلابازیاں,Business & Economics,0.768227,Partially relevant
+H014,mehngai ke asar,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,3,64916,ملک بھر میں مہنگائی کا جن بے قابو,Business & Economics,0.764036,Partially relevant
+H014,mehngai ke asar,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,4,78948,مہنگائی سے عوام پریشان سرکاری اعداد شمار کے مطابق قیمتیں کم ہوئیں,Business & Economics,0.761831,Relevant
+H014,mehngai ke asar,roman,3,SHORT_WORDS_LONG_NEED,HEADLINE,5,76417,لو دستی بم بن گیا قیمتیں ریکارڈ سطح پر پہنچ گئیں,Business & Economics,0.759746,Partially relevant
+H014,mehngai ke asar,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,64069,سونا پھر مہنگا ہوگیا,Business & Economics,0.673172,Partially relevant
+H014,mehngai ke asar,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,39291,انٹربینک مارکیٹ میں امریکی ڈالر 71پیسے مہنگا,Business & Economics,0.673114,Partially relevant
+H014,mehngai ke asar,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,60595,اوپن مارکیٹ میں ڈالر مزید مہنگا 118 روپے پیسے کا ہوگیا,Business & Economics,0.667283,Partially relevant
+H014,mehngai ke asar,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,76502,روپے کے مقابلے میں ڈالر 18پیسے مہنگا ہوگیا,Business & Economics,0.658902,Partially relevant
+H014,mehngai ke asar,roman,3,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,60673,انٹربینک مارکیٹ میں ڈالر روپے 93پیسے مہنگا ہوگیا,Business & Economics,0.658328,Partially relevant
+H015,film fail ki kahani,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,1,99580,کھیل کھیل میں فلم,Entertainment,0.908445,Not relevant
+H015,film fail ki kahani,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,2,61946,چودہ اگست سے پی ئی اے ایک نئے روپ میں,Business & Economics,0.900482,Not relevant
+H015,film fail ki kahani,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,3,99605,کترن سے بنی کہانی پیوند لگا کے ہے سنانی,Entertainment,0.897781,Not relevant
+H015,film fail ki kahani,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,4,11914,سے بال سنوارنے والا حجام,Entertainment,0.892492,Not relevant
+H015,film fail ki kahani,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,5,99571,ریویو فلم پری,Entertainment,0.890332,Not relevant
+H015,film fail ki kahani,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,48038,گلوکار عاطف اسلم نے دل نشیں اواز میں اذان دے کر سننے والوں کے دل موہ لیے,Entertainment,0.614755,Not relevant
+H015,film fail ki kahani,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,53013,نوواک جوکووچ پانچویں مرتبہ ومبلڈن چیمپئن بن گئے,Sports,0.604541,Not relevant
+H015,film fail ki kahani,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,50552,نامور شاعر اور ادیب احمد ندیم قاسمی کو اپنے مداحوں سے بچھڑے 10برس ہوگئے,Entertainment,0.599371,Not relevant
+H015,film fail ki kahani,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,66170,عاطف اسلم کی سحر انگیز اذان نے سماں باندھ دیا,Entertainment,0.597020,Not relevant
+H015,film fail ki kahani,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,51618,ملکہ غزل اقبال بانو کو بچھڑے چھے برس بیت گئے ان کی غزلیں اور گیت ہر عمر اور ہر دور میں مقبول رہے,Entertainment,0.595432,Not relevant
+H016,rupay girawut ke nataij,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,1,49326,کلف ڈائیونگ کاکھیل جانوروں میں بھی مقبول,Entertainment,0.628956,Not relevant
+H016,rupay girawut ke nataij,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,2,108810,پا لتو جانور وں کے لیے دنیا کا پہلا سیون اسٹار لگژری ہو ٹل,Entertainment,0.618839,Not relevant
+H016,rupay girawut ke nataij,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,3,16436,گینگ گھوسٹس ریویو,Entertainment,0.589124,Not relevant
+H016,rupay girawut ke nataij,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,4,68355,پاکستانی فلمپنجاب نہیں جاں گیکا افیشل ٹریلر جاری,Entertainment,0.585670,Not relevant
+H016,rupay girawut ke nataij,roman,4,SHORT_WORDS_LONG_NEED,HEADLINE,5,50877,لاہور ایف سی کالج میں پیٹ شوخوبصورت پالتو جانوروں نے دل موہ لیے,Entertainment,0.582907,Not relevant
+H016,rupay girawut ke nataij,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,1,51712,جنوبی سڑیلیا میں پیاسے کینگرو کو پانی پینا مہنگا پڑ گیا,Entertainment,0.552314,Not relevant
+H016,rupay girawut ke nataij,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,2,49350,برف میں مستیاں کرتے خوبصورت جانور سب کو بھا گئے,Entertainment,0.509595,Not relevant
+H016,rupay girawut ke nataij,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,3,50877,لاہور ایف سی کالج میں پیٹ شوخوبصورت پالتو جانوروں نے دل موہ لیے,Entertainment,0.500342,Not relevant
+H016,rupay girawut ke nataij,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,4,49112,لاما اور کتے کی دوڑ سوشل میڈیا پر وائرل,Entertainment,0.495816,Not relevant
+H016,rupay girawut ke nataij,roman,4,SHORT_WORDS_LONG_NEED,FULL_CONTENT,5,69375,دی جنگل بک کا ایڈوینچر سے بھرپور نیا ٹریلر شائقین کی توجہ کا مرکز,Entertainment,0.494290,Not relevant
+H017,آج لاہور کا درجہ حرارت کیا ہے,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,1,106241,دھوم تھری لاہور میں دوسرے روز بھی وہی رش وہی دھوم,Entertainment,0.803763,Not relevant
+H017,آج لاہور کا درجہ حرارت کیا ہے,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,2,44135,لاہور میں روزہ نیشنل یوتھ سمٹ کا غاز,Sports,0.768000,Not relevant
+H017,آج لاہور کا درجہ حرارت کیا ہے,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,3,59436,کراچی لاہور اسلام باد پشاور کوئٹہ میں سورج گرہن,Science & Technology,0.761645,Partially relevant
+H017,آج لاہور کا درجہ حرارت کیا ہے,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,4,50406,لاہور میں سہ روزہ برائیڈل ویک کا غاز ہو گیا,Entertainment,0.753394,Not relevant
+H017,آج لاہور کا درجہ حرارت کیا ہے,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,5,108389,ریما کا ولیمہ لاہور میں دھوم دھام سے ہوگا,Entertainment,0.753193,Not relevant
+H017,آج لاہور کا درجہ حرارت کیا ہے,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,50043,لاہور بہار کا موسم اتے ہی پنجابی کلچرل میلہ سج گیا ڈھول کی تھاپ پربھنگڑے,Entertainment,0.790496,Partially relevant
+H017,آج لاہور کا درجہ حرارت کیا ہے,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,50869,لاہور ہلکی بارش اور گہرے بادلوں سے موسم خوشگوار شہریوں نے پارکوں کی طرف رخ کرلیا,Entertainment,0.785135,Partially relevant
+H017,آج لاہور کا درجہ حرارت کیا ہے,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,48439,لاہور امد کی کہانی کھابوں کے ذکر کے بغیر بے رنگ رہ جائے گی,Entertainment,0.720702,Not relevant
+H017,آج لاہور کا درجہ حرارت کیا ہے,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,106241,دھوم تھری لاہور میں دوسرے روز بھی وہی رش وہی دھوم,Entertainment,0.714628,Not relevant
+H017,آج لاہور کا درجہ حرارت کیا ہے,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,106699,پاکستان ئیڈل کیلئے لاہور میں ڈیشنز کے دوسرے دن بھی لمبی قطاریں,Entertainment,0.713840,Not relevant
+H018,سونے کی فی تولہ قیمت آج کتنی ہے,urdu,8,LONG_WORDS_SHORT_NEED,HEADLINE,1,63003,سونے کی فی تولہ قیمت میں کمی,Business & Economics,0.854530,Relevant
+H018,سونے کی فی تولہ قیمت آج کتنی ہے,urdu,8,LONG_WORDS_SHORT_NEED,HEADLINE,2,61840,سونے کی فی تولہ قیمت میں پھر اضافہ,Business & Economics,0.836971,Relevant
+H018,سونے کی فی تولہ قیمت آج کتنی ہے,urdu,8,LONG_WORDS_SHORT_NEED,HEADLINE,3,72334,سونے کی فی تولہ قیمت میں 150 اروپے کمی,Business & Economics,0.810555,Relevant
+H018,سونے کی فی تولہ قیمت آج کتنی ہے,urdu,8,LONG_WORDS_SHORT_NEED,HEADLINE,4,73178,سونے کی قیمت میں فی تولہ 100روپے کی کمی,Business & Economics,0.809094,Relevant
+H018,سونے کی فی تولہ قیمت آج کتنی ہے,urdu,8,LONG_WORDS_SHORT_NEED,HEADLINE,5,109992,سونے کی فی تولہ قیمت میں ایک ہزارروپے کی کمی,Business & Economics,0.802998,Relevant
+H018,سونے کی فی تولہ قیمت آج کتنی ہے,urdu,8,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,70245,سونا غریب کیلئے خواب بن گیا قیمت نئی تاریخی بلندی پر پہنچ گئی,Business & Economics,0.720079,Relevant
+H018,سونے کی فی تولہ قیمت آج کتنی ہے,urdu,8,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,111560,سونے کے نرخوں میں 400روپےکی کمی تولہ 66900 پر اگیا,Business & Economics,0.707099,Relevant
+H018,سونے کی فی تولہ قیمت آج کتنی ہے,urdu,8,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,60736,فی اونس سونا 10 ڈالر مہنگا ہوگیا,Business & Economics,0.699739,Relevant
+H018,سونے کی فی تولہ قیمت آج کتنی ہے,urdu,8,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,38984,سونے کی قیمت 66ہزار 350روپے تولہ ہو گئی,Business & Economics,0.698520,Relevant
+H018,سونے کی فی تولہ قیمت آج کتنی ہے,urdu,8,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,110949,سونے کی قیمت میں اضافہ,Business & Economics,0.692804,Relevant
+H019,ایشیا کپ فائنل کب کھیلا جائے گا,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,1,59177,تئیس سال بعد ورلڈکپ فائنل ایشیائی ٹیم کے بغیر کھیلا جائے گا,Sports,0.855754,Not relevant
+H019,ایشیا کپ فائنل کب کھیلا جائے گا,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,2,52443,ایشیا کپ ٹی ٹوئنٹی یو اے ای میں ہونے کا امکان,Sports,0.851724,Partially relevant
+H019,ایشیا کپ فائنل کب کھیلا جائے گا,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,3,92912,ایشیا کپ کا فائنل پاکستان اور سری لنکا کے درمیان کھیلا جائے گا,Sports,0.850879,Partially relevant
+H019,ایشیا کپ فائنل کب کھیلا جائے گا,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,4,93967,ایشیا کپ سیمی فائنل میں پاکستان کا مقابلہ کوریا سے ہوگا,Sports,0.847240,Partially relevant
+H019,ایشیا کپ فائنل کب کھیلا جائے گا,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,5,27403,ایشیا کپ کا فائنل کون کھیلے گا پاکستان اور بنگلہ دیش مدمقابل,Sports,0.838792,Partially relevant
+H019,ایشیا کپ فائنل کب کھیلا جائے گا,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,59177,تئیس سال بعد ورلڈکپ فائنل ایشیائی ٹیم کے بغیر کھیلا جائے گا,Sports,0.851773,Not relevant
+H019,ایشیا کپ فائنل کب کھیلا جائے گا,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,54522,ایشیا کپ کا تاج کس کے سر سجے گا فیصلہ اج ہوگا,Sports,0.828709,Relevant
+H019,ایشیا کپ فائنل کب کھیلا جائے گا,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,43456,ایشیا کپ دونوں گروپس کی ٹاپ ٹو ٹیمیں فائنل فور مرحلے کا ٹکٹ کٹوائیں گی,Sports,0.796961,Partially relevant
+H019,ایشیا کپ فائنل کب کھیلا جائے گا,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,46321,ایشیا کپ ٹی ٹوئنٹی فائنل بھارت کا ٹاس جیت کر فیلڈنگ کا فیصلہ,Sports,0.782193,Relevant
+H019,ایشیا کپ فائنل کب کھیلا جائے گا,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,30838,ایشیا کپ کے فائنل میں پاکستان کو شکست,Sports,0.777701,Relevant
+H020,نیا آئی فون پاکستان میں کب آیا,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,1,21872,اوپو کا نیا فون پاکستان میں متعارف,Science & Technology,0.869314,Not relevant
+H020,نیا آئی فون پاکستان میں کب آیا,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,2,2369,فور جی پر کام کرنے والا پہلا فیچر فون پاکستان میں متعارف,Business & Economics,0.823015,Not relevant
+H020,نیا آئی فون پاکستان میں کب آیا,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,3,22083,ہیواوے کے پہلے اے ئی فلیگ شپ فونز پاکستان میں متعارف,Science & Technology,0.822430,Not relevant
+H020,نیا آئی فون پاکستان میں کب آیا,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,4,22985,شیامی اسمارٹ فونز پاکستان میں متعارف,Science & Technology,0.821261,Not relevant
+H020,نیا آئی فون پاکستان میں کب آیا,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,5,21711,پاکستان میں پہلی بار فرنٹ اور بیک ڈسپلے والے فونز متعارف,Science & Technology,0.812592,Not relevant
+H020,نیا آئی فون پاکستان میں کب آیا,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,19418,ویوو کا نیا اسمارٹ فون سب سے پہلے پاکستان میں متعارف,Science & Technology,0.827778,Not relevant
+H020,نیا آئی فون پاکستان میں کب آیا,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,20148,ہواوے کا نیا اسمارٹ فون وائے ایس پاکستان میں متعارف,Science & Technology,0.786149,Not relevant
+H020,نیا آئی فون پاکستان میں کب آیا,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,22882,پاکستان میں نوکیا فونز کی مد کی تاریخ سامنے گئی,Science & Technology,0.770395,Not relevant
+H020,نیا آئی فون پاکستان میں کب آیا,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,19733,ہواوے نووا ئی اسمارٹ فون پاکستان میں دستیاب,Science & Technology,0.746373,Not relevant
+H020,نیا آئی فون پاکستان میں کب آیا,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,2369,فور جی پر کام کرنے والا پہلا فیچر فون پاکستان میں متعارف,Business & Economics,0.740117,Not relevant
+H021,آج کراچی میں زیادہ سے زیادہ حرارت,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,1,39284,کراچی گرمی بڑھتے ہیں روم کولرز کی مانگ بڑھ گئی,Business & Economics,0.823641,Partially relevant
+H021,آج کراچی میں زیادہ سے زیادہ حرارت,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,2,105863,گرمی اور بہار کا استقبال کراچی میں پیش کی گئی نئے سیزن کی نئی کلیکشن,Entertainment,0.813778,Not relevant
+H021,آج کراچی میں زیادہ سے زیادہ حرارت,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,3,74734,کراچی گرمی کی شدت بڑھتے ہی گولا گنڈا کی بکری بڑھ گئی,Business & Economics,0.813378,Partially relevant
+H021,آج کراچی میں زیادہ سے زیادہ حرارت,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,4,40042,پشاور موسم سرما اتے ہی گرم شالوں کا بزنس چمک اٹھا,Business & Economics,0.755711,Not relevant
+H021,آج کراچی میں زیادہ سے زیادہ حرارت,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,5,75248,سندھ گنے کی کرشنگ چینی کی تیاری کیلئے ملوں کے بوائلر گرم,Business & Economics,0.748227,Not relevant
+H021,آج کراچی میں زیادہ سے زیادہ حرارت,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,74734,کراچی گرمی کی شدت بڑھتے ہی گولا گنڈا کی بکری بڑھ گئی,Business & Economics,0.809090,Partially relevant
+H021,آج کراچی میں زیادہ سے زیادہ حرارت,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,49761,زنجیانگ میں برفباری نے موسم کو یک بستہ کردیا,Entertainment,0.721734,Not relevant
+H021,آج کراچی میں زیادہ سے زیادہ حرارت,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,73509,لاہور میں سستے ایئرکنڈیشنڈ رمضان بازار,Business & Economics,0.718322,Not relevant
+H021,آج کراچی میں زیادہ سے زیادہ حرارت,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,23619,بغیر بجلی کے کام کرنے والا ائیرکنڈیشنر,Science & Technology,0.693524,Not relevant
+H021,آج کراچی میں زیادہ سے زیادہ حرارت,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,58863,پاک زمبابوے ون ڈے میچ میں گرمی کا زور رہے گا محکمہ موسمیات,Sports,0.682445,Partially relevant
+H022,پاکستان کا اگلا کرکٹ میچ کس ملک سے,urdu,8,LONG_WORDS_SHORT_NEED,HEADLINE,1,51947,پاکستان اور انگلینڈ کے مابین دوسرا ٹی ٹوئنٹی میچ کل کھیلا جائے گا,Sports,0.865938,Relevant
+H022,پاکستان کا اگلا کرکٹ میچ کس ملک سے,urdu,8,LONG_WORDS_SHORT_NEED,HEADLINE,2,53490,پاکستان اور نارتھمپٹن شائر کے درمیاں ون ڈے میچ اج کھیلا جائے گا,Sports,0.863157,Relevant
+H022,پاکستان کا اگلا کرکٹ میچ کس ملک سے,urdu,8,LONG_WORDS_SHORT_NEED,HEADLINE,3,88275,پاکستان دوسرا اور اخری وارم اپ میچ اج سے کھیلےگا,Sports,0.856901,Partially relevant
+H022,پاکستان کا اگلا کرکٹ میچ کس ملک سے,urdu,8,LONG_WORDS_SHORT_NEED,HEADLINE,4,43001,پاکستان بمقابلہ جنوبی افریقہ دوسرا ون ڈے اج کھیلا جائیگا,Sports,0.856732,Relevant
+H022,پاکستان کا اگلا کرکٹ میچ کس ملک سے,urdu,8,LONG_WORDS_SHORT_NEED,HEADLINE,5,31729,پریکٹس میچ پاکستان انتہائی قریب کر فتح سے محروم,Sports,0.853199,Partially relevant
+H022,پاکستان کا اگلا کرکٹ میچ کس ملک سے,urdu,8,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,95302,پاک اور بھارت کے درمیان دوسرا ٹی ٹوئنٹی احمد باد میں ہوگا,Sports,0.842381,Relevant
+H022,پاکستان کا اگلا کرکٹ میچ کس ملک سے,urdu,8,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,47315,پاکستان اور سری لنکا کل چوتھے ون ڈے میں پنجہ ازما ہونگے,Sports,0.822145,Relevant
+H022,پاکستان کا اگلا کرکٹ میچ کس ملک سے,urdu,8,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,46822,پہلا ٹی ٹونٹی میچ کھیلا جائیگا کرکٹ شائقین کو مقابلے کا شدت سے انتظار,Sports,0.820702,Partially relevant
+H022,پاکستان کا اگلا کرکٹ میچ کس ملک سے,urdu,8,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,58282,شارجہ انگلینڈ اور پاکستان اج اخری ٹی 20 میں مدمقابل,Sports,0.812093,Relevant
+H022,پاکستان کا اگلا کرکٹ میچ کس ملک سے,urdu,8,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,26640,پی ایس ایل کے میچ میرانشاہ خیبر مظفراباد میں بھی کرائیں گے ڈی جی ائی ایس پی ار,Sports,0.808883,Not relevant
+H023,پیٹرول کی موجودہ قیمت فی لیٹر پاکستان,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,1,63501,پشاور میں پیٹرول پمپوں پر پیٹرول نایاب,Business & Economics,0.883365,Partially relevant
+H023,پیٹرول کی موجودہ قیمت فی لیٹر پاکستان,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,2,75056,اسلام اباد لاہور فیصل اباد اور پنجاب کے کئی شہروں میں پیٹرول نایاب,Business & Economics,0.867814,Partially relevant
+H023,پیٹرول کی موجودہ قیمت فی لیٹر پاکستان,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,3,71900,کراچی بیشتر پمپس پر پیٹرول دستیاب بعض پر ختم,Business & Economics,0.862027,Partially relevant
+H023,پیٹرول کی موجودہ قیمت فی لیٹر پاکستان,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,4,73386,پٹرولیم مصنوعات پرسیلز ٹیکس لاہور ہائیکورٹ سے رجوع کرلیا گیا,Business & Economics,0.841856,Partially relevant
+H023,پیٹرول کی موجودہ قیمت فی لیٹر پاکستان,urdu,7,LONG_WORDS_SHORT_NEED,HEADLINE,5,77613,ملک میں پیٹرول کی کوئی قلت نہیں مشیر پیٹرولیم,Business & Economics,0.840747,Partially relevant
+H023,پیٹرول کی موجودہ قیمت فی لیٹر پاکستان,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,61027,لاہور عالمی منڈی میں تیل کی قیمتوں میں اضافہ نجی پیٹرولیم کمپنیوں نے اسٹاک کرلیا,Business & Economics,0.812815,Partially relevant
+H023,پیٹرول کی موجودہ قیمت فی لیٹر پاکستان,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,63518,لاہور میں پیٹرولیم مصنوعات نایاب ہو گئیں,Business & Economics,0.793420,Partially relevant
+H023,پیٹرول کی موجودہ قیمت فی لیٹر پاکستان,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,70415,ملک بھر میں پیٹرول کی دستیابی بہتر نہ بنائی جاسکی,Business & Economics,0.789935,Partially relevant
+H023,پیٹرول کی موجودہ قیمت فی لیٹر پاکستان,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,74843,یکم اپریل سے پیٹرول 440 اور ڈیزل 625روپے مہنگا کرنے کی تیاری,Business & Economics,0.787615,Relevant
+H023,پیٹرول کی موجودہ قیمت فی لیٹر پاکستان,urdu,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,71900,کراچی بیشتر پمپس پر پیٹرول دستیاب بعض پر ختم,Business & Economics,0.786625,Partially relevant
+H024,آج سٹاک ایکسچینج کتنے پوائنٹ پر,urdu,6,LONG_WORDS_SHORT_NEED,HEADLINE,1,40174,سٹاک ایکسچینج میں مندی کا رجحان,Business & Economics,0.795201,Partially relevant
+H024,آج سٹاک ایکسچینج کتنے پوائنٹ پر,urdu,6,LONG_WORDS_SHORT_NEED,HEADLINE,2,39654,سٹاک ایکسچینج کےحصص کی بک بلڈنگ کا عمل جاری,Business & Economics,0.783183,Not relevant
+H024,آج سٹاک ایکسچینج کتنے پوائنٹ پر,urdu,6,LONG_WORDS_SHORT_NEED,HEADLINE,3,72669,اسٹاک ایکسچینج47ہزار پوائنٹس کی سطح عبور,Business & Economics,0.782968,Relevant
+H024,آج سٹاک ایکسچینج کتنے پوائنٹ پر,urdu,6,LONG_WORDS_SHORT_NEED,HEADLINE,4,3393,اسٹاک ایکسچینج 100 انڈیکس بلند ترین سطح پر,Business & Economics,0.764767,Partially relevant
+H024,آج سٹاک ایکسچینج کتنے پوائنٹ پر,urdu,6,LONG_WORDS_SHORT_NEED,HEADLINE,5,63927,اسٹاک ایکسچینج میں اتار چڑھا جاری,Business & Economics,0.762352,Partially relevant
+H024,آج سٹاک ایکسچینج کتنے پوائنٹ پر,urdu,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,70330,اسٹاک ایکسچینج میں کاروبار کا مسلسل 7واں مثبت دن ڈالر اور سونا مہنگا ہوگیا,Business & Economics,0.756154,Partially relevant
+H024,آج سٹاک ایکسچینج کتنے پوائنٹ پر,urdu,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,72653,ڈالر رواں سال کی بلند سطح 109روپے پر پہنچ گیا,Business & Economics,0.720205,Not relevant
+H024,آج سٹاک ایکسچینج کتنے پوائنٹ پر,urdu,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,110651,اسٹاک ایکسچینج میں تیزی ڈالر اپنی قدر کھونے لگا,Business & Economics,0.720096,Partially relevant
+H024,آج سٹاک ایکسچینج کتنے پوائنٹ پر,urdu,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,40372,پاکستان سٹاک ایکسچینج 37426پوائنٹس کی نئی بلند سطح پر بند,Business & Economics,0.711486,Relevant
+H024,آج سٹاک ایکسچینج کتنے پوائنٹ پر,urdu,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,110314,اسٹاک ایکسچینج میں شدید مندی ڈالر بھی بلند ترین سطح پر پہنچ گیا,Business & Economics,0.697886,Partially relevant
+H025,aaj lahore ka temperature kya hai,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,1,106241,دھوم تھری لاہور میں دوسرے روز بھی وہی رش وہی دھوم,Entertainment,0.730804,Not relevant
+H025,aaj lahore ka temperature kya hai,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,2,74608,لاہور ماہ رمضا کی امد امد اتوار بازاروں میں رش,Business & Economics,0.689444,Not relevant
+H025,aaj lahore ka temperature kya hai,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,3,50869,لاہور ہلکی بارش اور گہرے بادلوں سے موسم خوشگوار شہریوں نے پارکوں کی طرف رخ کرلیا,Entertainment,0.680200,Partially relevant
+H025,aaj lahore ka temperature kya hai,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,4,59436,کراچی لاہور اسلام باد پشاور کوئٹہ میں سورج گرہن,Science & Technology,0.679339,Partially relevant
+H025,aaj lahore ka temperature kya hai,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,5,50406,لاہور میں سہ روزہ برائیڈل ویک کا غاز ہو گیا,Entertainment,0.669198,Not relevant
+H025,aaj lahore ka temperature kya hai,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,50869,لاہور ہلکی بارش اور گہرے بادلوں سے موسم خوشگوار شہریوں نے پارکوں کی طرف رخ کرلیا,Entertainment,0.775282,Partially relevant
+H025,aaj lahore ka temperature kya hai,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,50043,لاہور بہار کا موسم اتے ہی پنجابی کلچرل میلہ سج گیا ڈھول کی تھاپ پربھنگڑے,Entertainment,0.727869,Partially relevant
+H025,aaj lahore ka temperature kya hai,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,58863,پاک زمبابوے ون ڈے میچ میں گرمی کا زور رہے گا محکمہ موسمیات,Sports,0.690353,Partially relevant
+H025,aaj lahore ka temperature kya hai,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,88515,کوچ مکی ارتھر کی جون کی صبح لاہور امد متوقع,Sports,0.663342,Not relevant
+H025,aaj lahore ka temperature kya hai,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,49761,زنجیانگ میں برفباری نے موسم کو یک بستہ کردیا,Entertainment,0.660111,Not relevant
+H026,sone ki tola qeemat aaj kitni hai,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,1,108474,جنت ٹو کی شاندار اوپننگپہلے دن9کروڑ کما لئے,Entertainment,0.757130,Not relevant
+H026,sone ki tola qeemat aaj kitni hai,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,2,13411,زادی کا احساس بہترین ہے سنجے دت,Entertainment,0.710961,Not relevant
+H026,sone ki tola qeemat aaj kitni hai,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,3,24268,ٹزم کا عالمی دن,Science & Technology,0.696962,Not relevant
+H026,sone ki tola qeemat aaj kitni hai,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,4,97008,فائنل کیلئے مربوط حکمت عملی تیار کرلیمصباح الحق,Sports,0.695795,Not relevant
+H026,sone ki tola qeemat aaj kitni hai,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,5,38230,اسٹریلین بالرز کیلئے ایک اور کڑا دن,Sports,0.692136,Not relevant
+H026,sone ki tola qeemat aaj kitni hai,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,97328,میانوالی مصباح الحق کے گھر پر بچے اور نوجوان جمع جیت پر جشن,Sports,0.541835,Not relevant
+H026,sone ki tola qeemat aaj kitni hai,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,69640,ورون دھون بھی بن گئے گلوکار,Entertainment,0.527228,Not relevant
+H026,sone ki tola qeemat aaj kitni hai,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,68853,ملکہ ترنم نورجہاں کی 90ویں سالگرہ منائی جارہی ہے,Entertainment,0.510975,Not relevant
+H026,sone ki tola qeemat aaj kitni hai,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,49206,شکاگو کا دریا سبزرنگ میں تبدیل کر دیا گیا,Entertainment,0.501087,Not relevant
+H026,sone ki tola qeemat aaj kitni hai,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,18420,دنیا بھر میں سال نو کی امد کے مناظر,Entertainment,0.495010,Not relevant
+H027,Asia cup final kab khela jayega,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,1,85866,بھارت سے ایجبسٹن میچ چیمپئنز ٹرافی فائنل سے بڑا مقابلہ ہے جنید خان,Sports,0.705881,Not relevant
+H027,Asia cup final kab khela jayega,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,2,88910,ایشیا کپ بنگلا دیش کیخلاف یو اے ای کاٹاس جیت کر فیلڈنگ کا فیصلہ,Sports,0.703790,Partially relevant
+H027,Asia cup final kab khela jayega,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,3,46113,کوئٹہ پہلے شہید طالب غا میموریل فٹبال ٹورنامنٹ کا فائنل میچ پاک ہزارہ اکیڈمی کی دلچسپ مقابلے کے بعد جیت,Sports,0.700575,Not relevant
+H027,Asia cup final kab khela jayega,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,4,85201,ہاکی بھارت سے شکست پاکستان ایشیا کپ فائنل کی دوڑ سے باہر,Sports,0.698113,Partially relevant
+H027,Asia cup final kab khela jayega,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,5,97075,ایشیا کپ میں کامیابی کیلئے غیرمعمولی کرکٹ کھیلنا ہوگی مصباح الحق,Sports,0.695954,Partially relevant
+H027,Asia cup final kab khela jayega,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,46336,ایشیا کپ ٹی ٹوئنٹی پاکستان کا ٹاس جیت کر فیلڈنگ کا فیصلہ,Sports,0.714012,Partially relevant
+H027,Asia cup final kab khela jayega,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,46374,ایشیا کپ ٹی ٹوئنٹی بھارت کا پاکستان کے خلاف ٹاس جیت کر فیلڈنگ کا فیصلہ,Sports,0.701198,Partially relevant
+H027,Asia cup final kab khela jayega,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,88804,ایشیا کپ ٹی ٹوئنٹی فائنل بھارت کی ٹاس جیت کر فیلڈنگ,Sports,0.699317,Relevant
+H027,Asia cup final kab khela jayega,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,57968,ایشیا کپ بھارت نے یواے ای کو9 وکٹوں سے شکست دیدی,Sports,0.698373,Partially relevant
+H027,Asia cup final kab khela jayega,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,46321,ایشیا کپ ٹی ٹوئنٹی فائنل بھارت کا ٹاس جیت کر فیلڈنگ کا فیصلہ,Sports,0.691337,Relevant
+H028,naya iphone pakistan mein kab aaya,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,1,21875,ئی فون کلر فون پاکستان میں دستیاب,Science & Technology,0.716833,Relevant
+H028,naya iphone pakistan mein kab aaya,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,2,21872,اوپو کا نیا فون پاکستان میں متعارف,Science & Technology,0.715562,Not relevant
+H028,naya iphone pakistan mein kab aaya,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,3,19733,ہواوے نووا ئی اسمارٹ فون پاکستان میں دستیاب,Science & Technology,0.703769,Not relevant
+H028,naya iphone pakistan mein kab aaya,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,4,22035,شیامی کا نیا فلیگ شپ فون اب پاکستان میں دستیاب,Science & Technology,0.692543,Not relevant
+H028,naya iphone pakistan mein kab aaya,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,5,24152,ٹرانسپورٹ ایپ اوبر پاکستان نے کیلئے تیار,Science & Technology,0.686393,Not relevant
+H028,naya iphone pakistan mein kab aaya,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,24152,ٹرانسپورٹ ایپ اوبر پاکستان نے کیلئے تیار,Science & Technology,0.656977,Not relevant
+H028,naya iphone pakistan mein kab aaya,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,14758,احمد شہزاد گبر کے روپ میں,Entertainment,0.650365,Not relevant
+H028,naya iphone pakistan mein kab aaya,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,1808,پرانے نظام میں جدت پاکستان پوسٹ نے موبائل ایپ کا افتتاح کردیا,Business & Economics,0.641823,Not relevant
+H028,naya iphone pakistan mein kab aaya,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,79822,گم شدہ بچوں کی بازیابی کے لیے میرا بچہ الرٹ موبائل ایپ متعارف,Science & Technology,0.634900,Not relevant
+H028,naya iphone pakistan mein kab aaya,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,47972,حریم شاہ نے ٹک ٹاک پر پابندی کو افسوسناک قرار دیدیا,Entertainment,0.622714,Not relevant
+H029,aaj karachi max temperature kitna raha,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,1,39284,کراچی گرمی بڑھتے ہیں روم کولرز کی مانگ بڑھ گئی,Business & Economics,0.644456,Partially relevant
+H029,aaj karachi max temperature kitna raha,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,2,75248,سندھ گنے کی کرشنگ چینی کی تیاری کیلئے ملوں کے بوائلر گرم,Business & Economics,0.635292,Not relevant
+H029,aaj karachi max temperature kitna raha,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,3,79831,1000 ڈگری سینٹی گریڈ درجہ حرارت والا سولر اوون تیار,Science & Technology,0.598598,Not relevant
+H029,aaj karachi max temperature kitna raha,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,4,76717,پاکستان اسٹیٹ ئل نے موسم سرما کیلئے درمدی ٹینڈر جاری کردیا,Business & Economics,0.598140,Not relevant
+H029,aaj karachi max temperature kitna raha,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,5,74734,کراچی گرمی کی شدت بڑھتے ہی گولا گنڈا کی بکری بڑھ گئی,Business & Economics,0.597431,Partially relevant
+H029,aaj karachi max temperature kitna raha,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,91846,دبئی ٹیسٹ پاکستان کے کھانے کے وقفے تک 1وکٹ پر 116رنز,Sports,0.538003,Not relevant
+H029,aaj karachi max temperature kitna raha,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,53852,لاہور قلندرز کا پشاور زلمی کو جیت کیلئے 79 رنز کا ہدف,Sports,0.533067,Not relevant
+H029,aaj karachi max temperature kitna raha,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,53767,پی ایس ایل کراچی نے لاہور کو شکست دیدی,Sports,0.520670,Not relevant
+H029,aaj karachi max temperature kitna raha,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,57623,پاکستان کپ فائنل کے پی کے کا پنجاب کو 312رنز کا ہدف,Sports,0.520426,Not relevant
+H029,aaj karachi max temperature kitna raha,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,53768,لاہور قلندرز کا کراچی کنگز کو جیت کیلئے 134 رنز کا ہدف,Sports,0.519547,Not relevant
+H030,pakistan agla cricket match kis mulk se,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,1,96167,انڈر 19 کرکٹ پاکستان نے وارم اپ میچ میں پاپوا نیو گنی کوہرادیا,Sports,0.888787,Partially relevant
+H030,pakistan agla cricket match kis mulk se,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,2,35882,پاکستان کرکٹ میں میچ فکسنگ کی گونج,Sports,0.886285,Not relevant
+H030,pakistan agla cricket match kis mulk se,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,3,53912,ٹی ٹوئنٹی کرکٹ میں پاکستان کی فتوحات کا سلسلہ ختم,Sports,0.872463,Partially relevant
+H030,pakistan agla cricket match kis mulk se,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,4,42237,پاکستان اور کرکٹ سٹریلیا الیون کے درمیان پریکٹس میچ ڈرا,Sports,0.872420,Relevant
+H030,pakistan agla cricket match kis mulk se,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,5,95157,ویمنز کرکٹ ورلڈ کپ وارم اپ میچ میں پاکستان نے اڑیسا الیون کا ہرادیا,Sports,0.872110,Partially relevant
+H030,pakistan agla cricket match kis mulk se,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,47032,پہلاٹی ٹوئنٹی پاکستان کا ٹاس جیت کر بیٹنگ کا فیصلہ,Sports,0.818093,Partially relevant
+H030,pakistan agla cricket match kis mulk se,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,46375,پاکستان ہو یا کوئی اور ٹیم سب کو ایک نظر سے دیکھتے ہیں ویرات کوہلی,Sports,0.812352,Not relevant
+H030,pakistan agla cricket match kis mulk se,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,96167,انڈر 19 کرکٹ پاکستان نے وارم اپ میچ میں پاپوا نیو گنی کوہرادیا,Sports,0.804487,Partially relevant
+H030,pakistan agla cricket match kis mulk se,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,90554,کولمبو میں پاکستان اور سری لنکا کے درمیان دوسرا ٹیسٹ میچ جاری,Sports,0.798070,Relevant
+H030,pakistan agla cricket match kis mulk se,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,46627,پاکستان بمقابلہ نیوزی لینڈ ٹی ٹوینٹی میچوں میں پاکستان کاپلہ بھاری,Sports,0.796996,Relevant
+H031,petrol ki mojooda qeemat per litre pakistan,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,1,75056,اسلام اباد لاہور فیصل اباد اور پنجاب کے کئی شہروں میں پیٹرول نایاب,Business & Economics,0.859077,Partially relevant
+H031,petrol ki mojooda qeemat per litre pakistan,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,2,63501,پشاور میں پیٹرول پمپوں پر پیٹرول نایاب,Business & Economics,0.841732,Partially relevant
+H031,petrol ki mojooda qeemat per litre pakistan,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,3,71900,کراچی بیشتر پمپس پر پیٹرول دستیاب بعض پر ختم,Business & Economics,0.841466,Partially relevant
+H031,petrol ki mojooda qeemat per litre pakistan,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,4,75031,لاہور کو اج 12 لاکھ لٹر پٹرول فراہم کیا جا رہا ہےپی ایس او,Business & Economics,0.820498,Partially relevant
+H031,petrol ki mojooda qeemat per litre pakistan,roman,7,LONG_WORDS_SHORT_NEED,HEADLINE,5,63468,پشاور سمیت خیبرپختونخوا میں پیٹرول کا بحران بدستور جاری,Business & Economics,0.815928,Partially relevant
+H031,petrol ki mojooda qeemat per litre pakistan,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,63495,ملک بھر کی طرح لاہور میں بھی پیٹرول نایاب ہوگیا,Business & Economics,0.790780,Partially relevant
+H031,petrol ki mojooda qeemat per litre pakistan,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,63516,اسلام باد میں پیٹرول بحران شدت اختیار کرگیا,Business & Economics,0.773561,Partially relevant
+H031,petrol ki mojooda qeemat per litre pakistan,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,74843,یکم اپریل سے پیٹرول 440 اور ڈیزل 625روپے مہنگا کرنے کی تیاری,Business & Economics,0.771033,Relevant
+H031,petrol ki mojooda qeemat per litre pakistan,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,76717,پاکستان اسٹیٹ ئل نے موسم سرما کیلئے درمدی ٹینڈر جاری کردیا,Business & Economics,0.767525,Not relevant
+H031,petrol ki mojooda qeemat per litre pakistan,roman,7,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,75031,لاہور کو اج 12 لاکھ لٹر پٹرول فراہم کیا جا رہا ہےپی ایس او,Business & Economics,0.766762,Partially relevant
+H032,aaj stock exchange kitne points par,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,1,72375,اسٹاک مارکیٹ سرمایہ کار محتاط انڈیکس 367 پوائنٹس گرا,Business & Economics,0.608867,Relevant
+H032,aaj stock exchange kitne points par,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,2,40054,سٹاک ایکسچینج میں سرمایہ کاری کا نیا ریکارڈ بن گیا 100 انڈیکس 42133 پوائنٹس پر بند,Business & Economics,0.598300,Relevant
+H032,aaj stock exchange kitne points par,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,3,72178,اسٹاک ایکسچینج انڈیکس میں 965 پوائنٹ کا اضافہ,Business & Economics,0.594136,Relevant
+H032,aaj stock exchange kitne points par,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,4,72669,اسٹاک ایکسچینج47ہزار پوائنٹس کی سطح عبور,Business & Economics,0.567906,Relevant
+H032,aaj stock exchange kitne points par,roman,6,LONG_WORDS_SHORT_NEED,HEADLINE,5,64776,سرمایہ کاروں کا اعتماد بحال اسٹاک ایکسچینج میں زبردست تیزی,Business & Economics,0.555637,Partially relevant
+H032,aaj stock exchange kitne points par,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,1,40372,پاکستان سٹاک ایکسچینج 37426پوائنٹس کی نئی بلند سطح پر بند,Business & Economics,0.591492,Relevant
+H032,aaj stock exchange kitne points par,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,2,40554,پاکستان اسٹاک ایکسچینج میں کاروباری ہفتہ بتیس ہزار 669 پوائنٹس پر بند,Business & Economics,0.578213,Relevant
+H032,aaj stock exchange kitne points par,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,3,65210,اسٹاک ایکسچینج میں مثبت رجحان جاری,Business & Economics,0.563880,Partially relevant
+H032,aaj stock exchange kitne points par,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,4,65175,پاکستان اسٹاک ایکسچینج 155 پوائنٹس کے اضافے کے ساتھ بند,Business & Economics,0.562726,Relevant
+H032,aaj stock exchange kitne points par,roman,6,LONG_WORDS_SHORT_NEED,FULL_CONTENT,5,63631,پی ایس ایکس 76 پوائنٹس کے اضافے پر بند,Business & Economics,0.560321,Relevant
+H033,ڈیزل ریٹ,urdu,2,CONTROL_EASY_SHORT,HEADLINE,1,101708,دی اکاونٹینٹ ائی اورچھاگئی,Entertainment,0.901849,Not relevant
+H033,ڈیزل ریٹ,urdu,2,CONTROL_EASY_SHORT,HEADLINE,2,16681,ہیپی برتھ ڈے ایش,Entertainment,0.901393,Not relevant
+H033,ڈیزل ریٹ,urdu,2,CONTROL_EASY_SHORT,HEADLINE,3,17534,کرے کوئی بھرے کوئی,Entertainment,0.900422,Not relevant
+H033,ڈیزل ریٹ,urdu,2,CONTROL_EASY_SHORT,HEADLINE,4,18757,یو ایس اوپن,Entertainment,0.890519,Not relevant
+H033,ڈیزل ریٹ,urdu,2,CONTROL_EASY_SHORT,HEADLINE,5,18792,عاشق مزاج حسینائیں,Entertainment,0.887748,Not relevant
+H033,ڈیزل ریٹ,urdu,2,CONTROL_EASY_SHORT,FULL_CONTENT,1,53013,نوواک جوکووچ پانچویں مرتبہ ومبلڈن چیمپئن بن گئے,Sports,0.596408,Not relevant
+H033,ڈیزل ریٹ,urdu,2,CONTROL_EASY_SHORT,FULL_CONTENT,2,49837,یوم ازادی پر نیا ملی نغمہ جاری کردیا گیا,Entertainment,0.572054,Not relevant
+H033,ڈیزل ریٹ,urdu,2,CONTROL_EASY_SHORT,FULL_CONTENT,3,50596,شہنشاہ غزل مہدی حسن کو مداحوں سے بچھڑے چار برس بیت گئے,Entertainment,0.556211,Not relevant
+H033,ڈیزل ریٹ,urdu,2,CONTROL_EASY_SHORT,FULL_CONTENT,4,69643,نیہا شرما نظر ئیں گی ہیرا پھیری تھری میں جان ابراہم کے ساتھ,Entertainment,0.555593,Not relevant
+H033,ڈیزل ریٹ,urdu,2,CONTROL_EASY_SHORT,FULL_CONTENT,5,11066,مہر النساء وی لب یو توقعات پر پورا اترنے میں ناکام,Entertainment,0.554713,Not relevant
+H034,سونا ریٹ,urdu,2,CONTROL_EASY_SHORT,HEADLINE,1,18762,ہارر اسٹوری,Entertainment,0.837774,Not relevant
+H034,سونا ریٹ,urdu,2,CONTROL_EASY_SHORT,HEADLINE,2,19074,ڈارک اسکائز,Entertainment,0.815027,Not relevant
+H034,سونا ریٹ,urdu,2,CONTROL_EASY_SHORT,HEADLINE,3,18757,یو ایس اوپن,Entertainment,0.799082,Not relevant
+H034,سونا ریٹ,urdu,2,CONTROL_EASY_SHORT,HEADLINE,4,16436,گینگ گھوسٹس ریویو,Entertainment,0.786673,Not relevant
+H034,سونا ریٹ,urdu,2,CONTROL_EASY_SHORT,HEADLINE,5,19066,نوٹنکی سالا,Entertainment,0.785016,Not relevant
+H034,سونا ریٹ,urdu,2,CONTROL_EASY_SHORT,FULL_CONTENT,1,107079,امرتسراداکارہ ودیابالن کی گولڈن ٹیمپل میں حاضری,Entertainment,0.566253,Not relevant
+H034,سونا ریٹ,urdu,2,CONTROL_EASY_SHORT,FULL_CONTENT,2,53013,نوواک جوکووچ پانچویں مرتبہ ومبلڈن چیمپئن بن گئے,Sports,0.537531,Not relevant
+H034,سونا ریٹ,urdu,2,CONTROL_EASY_SHORT,FULL_CONTENT,3,49115,کلرکہار دل موہ لینے والے نظاروں کا حامل تفریحی مقام,Entertainment,0.514019,Not relevant
+H034,سونا ریٹ,urdu,2,CONTROL_EASY_SHORT,FULL_CONTENT,4,40446,نیویارک 1109قیراط کا سفید ہیرا نیلامی کیلئےپیش,Business & Economics,0.513823,Not relevant
+H034,سونا ریٹ,urdu,2,CONTROL_EASY_SHORT,FULL_CONTENT,5,43256,تیسری تھل ڈیزرٹ جیپ ریلی کے دوسرے مرحلے کا اج سے غاز,Sports,0.512438,Not relevant
+H035,football score,roman,2,CONTROL_EASY_SHORT,HEADLINE,1,44105,ایف اے کپ فٹبال ٹوٹنہم اور روشڈیل کا میچ دو دو گولز سے برابر,Sports,0.788447,Relevant
+H035,football score,roman,2,CONTROL_EASY_SHORT,HEADLINE,2,95936,فٹ بال ورلڈکپ2014کامیسکوٹ سامنے گیا,Sports,0.775211,Not relevant
+H035,football score,roman,2,CONTROL_EASY_SHORT,HEADLINE,3,37871,فٹبال میں میسی اور رونالڈو کی بالادستی کا خاتمہ,Sports,0.755840,Not relevant
+H035,football score,roman,2,CONTROL_EASY_SHORT,HEADLINE,4,44832,سٹار فٹبالر میسی دلہا بنیں گے,Sports,0.751294,Not relevant
+H035,football score,roman,2,CONTROL_EASY_SHORT,HEADLINE,5,36451,لیاری میں فٹبال شائقین پر حملہ شرمناک ہے اے ایف سی,Sports,0.750803,Not relevant
+H035,football score,roman,2,CONTROL_EASY_SHORT,FULL_CONTENT,1,43803,چیلسی ایک بار پھر ایف اے کپ فٹبال کی فاتح بن گئی,Sports,0.707313,Partially relevant
+H035,football score,roman,2,CONTROL_EASY_SHORT,FULL_CONTENT,2,46026,مانچسٹر یونائیٹڈ نے ایف اے کپ فٹ بال 2016ءکا ٹائٹل اپنے نام کر لیا,Sports,0.702215,Partially relevant
+H035,football score,roman,2,CONTROL_EASY_SHORT,FULL_CONTENT,3,44260,ایف اے کپ فٹبال مانچسٹر سٹی نے برنلے کو شکست دیدی,Sports,0.699346,Partially relevant
+H035,football score,roman,2,CONTROL_EASY_SHORT,FULL_CONTENT,4,43447,رونالڈو کا نئے کلب یوونٹس کی جانب سے پہلا گول,Sports,0.693495,Partially relevant
+H035,football score,roman,2,CONTROL_EASY_SHORT,FULL_CONTENT,5,46653,لیور پول چوتھے درجے کی فٹ بال ٹیم سے شکست کھا گئی,Sports,0.685461,Partially relevant
+H036,diesel rate,roman,2,CONTROL_EASY_SHORT,HEADLINE,1,78446,پٹرولیم مصنوعات کی قیمتوں میں 65روپے فی لیٹر تک کمی کا امکان,Business & Economics,0.673495,Partially relevant
+H036,diesel rate,roman,2,CONTROL_EASY_SHORT,HEADLINE,2,76496,پٹرول کی قیمت میں48پیسے فی لٹر کمی کی سفارش,Business & Economics,0.648891,Partially relevant
+H036,diesel rate,roman,2,CONTROL_EASY_SHORT,HEADLINE,3,40672,پٹرولیم مصنوعات کی قیمتوں میں 15روپے فی لٹر تک کمی کا امکان,Business & Economics,0.639854,Partially relevant
+H036,diesel rate,roman,2,CONTROL_EASY_SHORT,HEADLINE,4,71748,پیٹرول کی قیمت میں ایک روپیہ 48پیسے فی لیٹر اضافے کی سفارش,Business & Economics,0.621420,Partially relevant
+H036,diesel rate,roman,2,CONTROL_EASY_SHORT,HEADLINE,5,78100,پٹرول کل سے 6روپے82پیسے فی لیٹر مہنگا ہو جائے گا,Business & Economics,0.617137,Partially relevant
+H036,diesel rate,roman,2,CONTROL_EASY_SHORT,FULL_CONTENT,1,78119,پٹرول 465سستاڈیزل 339مہنگاسی این جی قیمتوں میں کمی اوگرا,Business & Economics,0.621802,Relevant
+H036,diesel rate,roman,2,CONTROL_EASY_SHORT,FULL_CONTENT,2,76953,سے پیٹرول روپے اور ڈیزل روپے 16 پیسے فی لیٹر مہنگا,Business & Economics,0.584242,Relevant
+H036,diesel rate,roman,2,CONTROL_EASY_SHORT,FULL_CONTENT,3,77277,پٹرولیم مصنوعات کی قیمتوں میں معمولی کمی کے بعد فروخت شروع,Business & Economics,0.579314,Partially relevant
+H036,diesel rate,roman,2,CONTROL_EASY_SHORT,FULL_CONTENT,4,77174,پٹرول کی قیمت میں 4روپے 71پیسے فی لیٹرکمیاوگرا نوٹیفکیشن جاری,Business & Economics,0.578897,Partially relevant
+H036,diesel rate,roman,2,CONTROL_EASY_SHORT,FULL_CONTENT,5,76493,پٹرولیم مصنوعات کی قیمتوں میں ردوبدل پٹرول 48 پیسے سستا,Business & Economics,0.567007,Partially relevant
+H037,ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ,urdu,21,CONTROL_EASY_LONG,HEADLINE,1,78693,ملک بھر میں بجلی کے نرخ میں اضافہ,Business & Economics,0.786884,Partially relevant
+H037,ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ,urdu,21,CONTROL_EASY_LONG,HEADLINE,2,72074,بجلی وگیس کے نرخ ہمسایہ ممالک کے برابر کرنے کا مطالبہ,Business & Economics,0.750037,Partially relevant
+H037,ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ,urdu,21,CONTROL_EASY_LONG,HEADLINE,3,76799,بجلی مہنگی ہونے کے بعد سیمنٹ کی قیمتوں اضافے کا خدشہ,Business & Economics,0.742747,Partially relevant
+H037,ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ,urdu,21,CONTROL_EASY_LONG,HEADLINE,4,16878,بجلی کے نرخوں میں اضافے کا امکان,Entertainment,0.721535,Partially relevant
+H037,ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ,urdu,21,CONTROL_EASY_LONG,HEADLINE,5,111811,بجلی کی قیمت میں مزید اضافہ کردیا گیا,Business & Economics,0.716442,Partially relevant
+H037,ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ,urdu,21,CONTROL_EASY_LONG,FULL_CONTENT,1,76799,بجلی مہنگی ہونے کے بعد سیمنٹ کی قیمتوں اضافے کا خدشہ,Business & Economics,0.780423,Partially relevant
+H037,ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ,urdu,21,CONTROL_EASY_LONG,FULL_CONTENT,2,76627,حکومت کی منظوری نہ بھی ملے ٹے کی قیمت میں اضافہ ہوگا فلاور ملز,Business & Economics,0.763919,Partially relevant
+H037,ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ,urdu,21,CONTROL_EASY_LONG,FULL_CONTENT,3,79057,بجلی گھروں کو خام تیل کی فراہمی میں سالانہ 10 ارب روپے کی چوری,Business & Economics,0.751232,Partially relevant
+H037,ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ,urdu,21,CONTROL_EASY_LONG,FULL_CONTENT,4,78451,مئی کیلئے بجلی کے بلوں میں ڈیڑھ روپے فی یونٹ کا اضافہ,Business & Economics,0.743976,Relevant
+H037,ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ,urdu,21,CONTROL_EASY_LONG,FULL_CONTENT,5,61330,اسلام اباد چیمبر اف کامرس نے بجٹ کو عوام دوست قرار دیدیا,Business & Economics,0.743348,Not relevant
+H038,قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر,urdu,20,CONTROL_EASY_LONG,HEADLINE,1,46574,کرکٹرز میں ٹی ٹوینٹی ورلڈ کپ جیتنے کا جذبہ ابھارنے کیلئے نئی حکمت عملی,Sports,0.801656,Partially relevant
+H038,قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر,urdu,20,CONTROL_EASY_LONG,HEADLINE,2,53366,کرکٹ ورلڈکپ وارم اپ میچز کا سے غاز,Sports,0.775506,Not relevant
+H038,قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر,urdu,20,CONTROL_EASY_LONG,HEADLINE,3,82770,ویسٹ انڈیز کے خلاف میچ سے قبل قومی ٹیم کو کرکٹرز کے مشورے,Sports,0.774780,Partially relevant
+H038,قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر,urdu,20,CONTROL_EASY_LONG,HEADLINE,4,96781,گجرات میں قومی کرکٹ ٹیم کے کھلاڑیوں کا دوستانہ میچ ہلڑ بازی کا شکار,Sports,0.761512,Not relevant
+H038,قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر,urdu,20,CONTROL_EASY_LONG,HEADLINE,5,81122,قومی کرکٹرز کی رہنمائی کیلئے لاک ڈان کے دوران لائن سیشنز کا سلسلہ مکمل,Sports,0.757529,Not relevant
+H038,قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر,urdu,20,CONTROL_EASY_LONG,FULL_CONTENT,1,55046,قومی کرکٹ ٹیم نے ہرارے میں پریکٹس کا غاز کردیا,Sports,0.725724,Partially relevant
+H038,قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر,urdu,20,CONTROL_EASY_LONG,FULL_CONTENT,2,44122,کرکٹ کےفروغ کیلئے تمام فارمیٹ کے میچز بہت ضروری ہیں انضمام الحق,Sports,0.725543,Not relevant
+H038,قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر,urdu,20,CONTROL_EASY_LONG,FULL_CONTENT,3,45237,قومی ٹیم کی ناقص کارکردگیپی سی بی نے گول میز کانفرنس طلب کرلی,Sports,0.724268,Relevant
+H038,قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر,urdu,20,CONTROL_EASY_LONG,FULL_CONTENT,4,85915,برمنگھم قومی کرکٹ ٹیم کا اوٹ ڈور پریکٹس سیشن,Sports,0.723089,Partially relevant
+H038,قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر,urdu,20,CONTROL_EASY_LONG,FULL_CONTENT,5,53614,ورلڈکپ کیلئے قومی کرکٹرز نے فٹنس پر توجہ مرکوز کرلی,Sports,0.712985,Partially relevant
+H039,petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza,roman,19,CONTROL_EASY_LONG,HEADLINE,1,63487,کراچی سے خیبر تک پیٹرول کا مصنوعی بحران جاری,Business & Economics,0.698037,Partially relevant
+H039,petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza,roman,19,CONTROL_EASY_LONG,HEADLINE,2,40672,پٹرولیم مصنوعات کی قیمتوں میں 15روپے فی لٹر تک کمی کا امکان,Business & Economics,0.697581,Not relevant
+H039,petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza,roman,19,CONTROL_EASY_LONG,HEADLINE,3,75117,پٹرول سستا ہونے کے با وجود ٹیٹرا ملک کی قیمت میں اضافہ,Business & Economics,0.697094,Partially relevant
+H039,petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza,roman,19,CONTROL_EASY_LONG,HEADLINE,4,70263,پیٹرول کی قیمتیں بڑھاکر حکومت کا عوام کو عید پر مہنگائی کا تحفہ,Business & Economics,0.691747,Relevant
+H039,petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza,roman,19,CONTROL_EASY_LONG,HEADLINE,5,70408,ملک میں پیٹرول اور ڈیزل کی کوئی قلت نہیں,Business & Economics,0.690226,Not relevant
+H039,petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza,roman,19,CONTROL_EASY_LONG,FULL_CONTENT,1,74024,نئے سال سےپیٹرول روپے 17 پیسے مہنگا ہونے کا امکان,Business & Economics,0.677254,Partially relevant
+H039,petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza,roman,19,CONTROL_EASY_LONG,FULL_CONTENT,2,78081,پٹرول مہنگا دیگر مصنوعات سستی ہونے کا امکان,Business & Economics,0.675955,Partially relevant
+H039,petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza,roman,19,CONTROL_EASY_LONG,FULL_CONTENT,3,75223,یکم دسمبر سے پٹرول 9روپے 65پیسے فی لٹر سستا ہونیکا امکان,Business & Economics,0.674344,Not relevant
+H039,petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza,roman,19,CONTROL_EASY_LONG,FULL_CONTENT,4,74988,پٹرول 10روپے ڈیزل ساڑھے 8روپے فی لٹر سستا کرنے کی سمری ارسال,Business & Economics,0.659210,Not relevant
+H039,petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza,roman,19,CONTROL_EASY_LONG,FULL_CONTENT,5,74127,پٹرول کی قیمت برقرار رہے گی اسحاق ڈار,Business & Economics,0.657913,Not relevant
+H040,qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar,roman,21,CONTROL_EASY_LONG,HEADLINE,1,46767,ٹی ٹوئنٹی ٹیم میں شاہد افریدی کی قیادت میں کھیلنے پر کوئی اعتراض نہیں اظہر علی,Sports,0.755947,Partially relevant
+H040,qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar,roman,21,CONTROL_EASY_LONG,HEADLINE,2,59086,ٹیم میں ہر کھلاڑی کا کردار اہم ہے ون ڈے کپتان اظہر علی,Sports,0.737054,Partially relevant
+H040,qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar,roman,21,CONTROL_EASY_LONG,HEADLINE,3,46237,قومی ٹیم میں گروپ بندی یا انجری کا کمال محمد حفیظ اور وہاب ریاض نیوزی لینڈ کیخلاف میچ سے باہر,Sports,0.730248,Partially relevant
+H040,qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar,roman,21,CONTROL_EASY_LONG,HEADLINE,4,85858,قومی ٹیم میں کئی میچ ونر کھلاڑی ہیںاظہر علی,Sports,0.729236,Not relevant
+H040,qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar,roman,21,CONTROL_EASY_LONG,HEADLINE,5,82646,بھارت سے میچ وسیم اکرم کے سرفراز کو مشورے,Sports,0.726984,Partially relevant
+H040,qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar,roman,21,CONTROL_EASY_LONG,FULL_CONTENT,1,85823,پاکستان کا بھارت کیخلاف میچ میں فہیم اشرف کو کھلانے کا فیصلہ,Sports,0.763377,Partially relevant
+H040,qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar,roman,21,CONTROL_EASY_LONG,FULL_CONTENT,2,24821,شاہد افریدی لنکا پریمیئر لیگ کی ٹیم گال گلیڈی ایٹرز میں شامل,Sports,0.735805,Not relevant
+H040,qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar,roman,21,CONTROL_EASY_LONG,FULL_CONTENT,3,89350,بشیر بھولا نے رستم زماں گاما پہلوان کا ٹائٹل جیت لیا,Sports,0.729980,Not relevant
+H040,qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar,roman,21,CONTROL_EASY_LONG,FULL_CONTENT,4,53736,سٹریلیا کیخلاف ون ڈے سیریز کیلئے قومی ٹیم کا اعلان,Sports,0.725810,Partially relevant
+H040,qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar,roman,21,CONTROL_EASY_LONG,FULL_CONTENT,5,90963,ہم نے پوری کوشش کی مگر کامیاب نہ ہوسکےشاہد افریدی,Sports,0.722026,Partially relevant

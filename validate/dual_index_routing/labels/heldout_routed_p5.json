@@ -1,0 +1,1439 @@
+{
+  "n": 40,
+  "gold_room_from_protocol": {
+    "H001": "LONG",
+    "H002": "LONG",
+    "H003": "LONG",
+    "H004": "LONG",
+    "H005": "LONG",
+    "H006": "LONG",
+    "H007": "LONG",
+    "H008": "LONG",
+    "H009": "LONG",
+    "H010": "LONG",
+    "H011": "LONG",
+    "H012": "LONG",
+    "H013": "LONG",
+    "H014": "LONG",
+    "H015": "LONG",
+    "H016": "LONG",
+    "H017": "SHORT",
+    "H018": "SHORT",
+    "H019": "SHORT",
+    "H020": "SHORT",
+    "H021": "SHORT",
+    "H022": "SHORT",
+    "H023": "SHORT",
+    "H024": "SHORT",
+    "H025": "SHORT",
+    "H026": "SHORT",
+    "H027": "SHORT",
+    "H028": "SHORT",
+    "H029": "SHORT",
+    "H030": "SHORT",
+    "H031": "SHORT",
+    "H032": "SHORT",
+    "H033": "SHORT",
+    "H034": "SHORT",
+    "H035": "SHORT",
+    "H036": "SHORT",
+    "H037": "LONG",
+    "H038": "LONG",
+    "H039": "LONG",
+    "H040": "LONG"
+  },
+  "summary": {
+    "always_headline": {
+      "mean_P@5": 0.35,
+      "mean_nDCG@5": 0.6867753149979418,
+      "n_headline": 40,
+      "n_full": 0
+    },
+    "always_full": {
+      "mean_P@5": 0.34249999999999997,
+      "mean_nDCG@5": 0.6019505790693063,
+      "n_headline": 0,
+      "n_full": 40
+    },
+    "theta150": {
+      "mean_P@5": 0.35,
+      "mean_nDCG@5": 0.6867753149979418,
+      "n_headline": 40,
+      "n_full": 0
+    },
+    "wordcount": {
+      "mean_P@5": 0.365,
+      "mean_nDCG@5": 0.6475746426812762,
+      "n_headline": 20,
+      "n_full": 20
+    },
+    "svm_v2": {
+      "mean_P@5": 0.32999999999999996,
+      "mean_nDCG@5": 0.614856298494513,
+      "n_headline": 20,
+      "n_full": 20
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "H001",
+      "query": "پیٹرول کیوں مہنگا",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.3,
+        "nDCG@5": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.3,
+        "nDCG@5": 1.0
+      }
+    },
+    {
+      "query_id": "H002",
+      "query": "شکست کی وجہ",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.8,
+        "nDCG@5": 0.864954992892364
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.8,
+        "nDCG@5": 0.864954992892364
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.8,
+        "nDCG@5": 0.864954992892364
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      }
+    },
+    {
+      "query_id": "H003",
+      "query": "فلم کیسے ڈوبی",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.1,
+        "nDCG@5": 0.43067655807339306
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.1,
+        "nDCG@5": 0.43067655807339306
+      }
+    },
+    {
+      "query_id": "H004",
+      "query": "سیلاب کا نقصان",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.9558295932317545
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.6,
+        "nDCG@5": 0.9118258614161836
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.9558295932317545
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.9558295932317545
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.6,
+        "nDCG@5": 0.9118258614161836
+      }
+    },
+    {
+      "query_id": "H005",
+      "query": "ٹیم ہار کا تجزیہ",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.760757841737382
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.1,
+        "nDCG@5": 0.5
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.760757841737382
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.760757841737382
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.760757841737382
+      }
+    },
+    {
+      "query_id": "H006",
+      "query": "مہنگائی کے اثرات",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.8,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.7,
+        "nDCG@5": 0.7810971386968657
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.8,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.8,
+        "nDCG@5": 1.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.8,
+        "nDCG@5": 1.0
+      }
+    },
+    {
+      "query_id": "H007",
+      "query": "فلم فیل کی کہانی",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      }
+    },
+    {
+      "query_id": "H008",
+      "query": "روپے گراوٹ کے نتائج",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.8576978040419336
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.4,
+        "nDCG@5": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.8576978040419336
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.8576978040419336
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.8576978040419336
+      }
+    },
+    {
+      "query_id": "H009",
+      "query": "petrol kyun mehnga",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.3,
+        "nDCG@5": 0.8529278650606567
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.3,
+        "nDCG@5": 0.6182885020492785
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.3,
+        "nDCG@5": 0.8529278650606567
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.3,
+        "nDCG@5": 0.8529278650606567
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.3,
+        "nDCG@5": 0.6182885020492785
+      }
+    },
+    {
+      "query_id": "H010",
+      "query": "shikast ki waja",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.6,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.7024721263987845
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.6,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.6,
+        "nDCG@5": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.7024721263987845
+      }
+    },
+    {
+      "query_id": "H011",
+      "query": "film kaise doobi",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      }
+    },
+    {
+      "query_id": "H012",
+      "query": "flood ka nuksan",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.9828920819566879
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.690254556337443
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.9828920819566879
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.9828920819566879
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.690254556337443
+      }
+    },
+    {
+      "query_id": "H013",
+      "query": "team haar ka tajzia",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.1,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.1,
+        "nDCG@5": 0.6309297535714574
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.1,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.1,
+        "nDCG@5": 1.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.1,
+        "nDCG@5": 1.0
+      }
+    },
+    {
+      "query_id": "H014",
+      "query": "mehngai ke asar",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.6,
+        "nDCG@5": 0.8154468621014245
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.6,
+        "nDCG@5": 0.8154468621014245
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.6,
+        "nDCG@5": 0.8154468621014245
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.6,
+        "nDCG@5": 0.8154468621014245
+      }
+    },
+    {
+      "query_id": "H015",
+      "query": "film fail ki kahani",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      }
+    },
+    {
+      "query_id": "H016",
+      "query": "rupay girawut ke nataij",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      }
+    },
+    {
+      "query_id": "H017",
+      "query": "آج لاہور کا درجہ حرارت کیا ہے",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.1,
+        "nDCG@5": 0.5
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.1,
+        "nDCG@5": 0.5
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.1,
+        "nDCG@5": 0.5
+      }
+    },
+    {
+      "query_id": "H018",
+      "query": "سونے کی فی تولہ قیمت آج کتنی ہے",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 1.0,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 1.0,
+        "nDCG@5": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 1.0,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 1.0,
+        "nDCG@5": 1.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 1.0,
+        "nDCG@5": 1.0
+      }
+    },
+    {
+      "query_id": "H019",
+      "query": "ایشیا کپ فائنل کب کھیلا جائے گا",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.7606395682357036
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.7,
+        "nDCG@5": 0.7169056656371964
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.7606395682357036
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.7,
+        "nDCG@5": 0.7169056656371964
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.7606395682357036
+      }
+    },
+    {
+      "query_id": "H020",
+      "query": "نیا آئی فون پاکستان میں کب آیا",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      }
+    },
+    {
+      "query_id": "H021",
+      "query": "آج کراچی میں زیادہ سے زیادہ حرارت",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 0.9197207891481877
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.2,
+        "nDCG@5": 0.8503449055347547
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 0.9197207891481877
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.2,
+        "nDCG@5": 0.8503449055347547
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.2,
+        "nDCG@5": 0.8503449055347547
+      }
+    },
+    {
+      "query_id": "H022",
+      "query": "پاکستان کا اگلا کرکٹ میچ کس ملک سے",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.8,
+        "nDCG@5": 0.9835562985496893
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.7,
+        "nDCG@5": 0.9824152997421218
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.8,
+        "nDCG@5": 0.9835562985496893
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.7,
+        "nDCG@5": 0.9824152997421218
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.7,
+        "nDCG@5": 0.9824152997421218
+      }
+    },
+    {
+      "query_id": "H023",
+      "query": "پیٹرول کی موجودہ قیمت فی لیٹر پاکستان",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.6,
+        "nDCG@5": 0.8154468621014245
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.6,
+        "nDCG@5": 0.8154468621014245
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.6,
+        "nDCG@5": 0.8154468621014245
+      }
+    },
+    {
+      "query_id": "H024",
+      "query": "آج سٹاک ایکسچینج کتنے پوائنٹ پر",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.760757841737382
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.7360992417832765
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.760757841737382
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.7360992417832765
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.7360992417832765
+      }
+    },
+    {
+      "query_id": "H025",
+      "query": "aaj lahore ka temperature kya hai",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 0.5706417189553201
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.3,
+        "nDCG@5": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 0.5706417189553201
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.3,
+        "nDCG@5": 1.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 0.5706417189553201
+      }
+    },
+    {
+      "query_id": "H026",
+      "query": "sone ki tola qeemat aaj kitni hai",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      }
+    },
+    {
+      "query_id": "H027",
+      "query": "Asia cup final kab khela jayega",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.3,
+        "nDCG@5": 0.6797310500037654
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.7,
+        "nDCG@5": 0.7997535101617385
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.3,
+        "nDCG@5": 0.6797310500037654
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.7,
+        "nDCG@5": 0.7997535101617385
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.3,
+        "nDCG@5": 0.6797310500037654
+      }
+    },
+    {
+      "query_id": "H028",
+      "query": "naya iphone pakistan mein kab aaya",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      }
+    },
+    {
+      "query_id": "H029",
+      "query": "aaj karachi max temperature kitna raha",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 0.8503449055347547
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 0.8503449055347547
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      }
+    },
+    {
+      "query_id": "H030",
+      "query": "pakistan agla cricket match kis mulk se",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.7360992417832765
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.6,
+        "nDCG@5": 0.7135634281863547
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 0.7360992417832765
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.6,
+        "nDCG@5": 0.7135634281863547
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.6,
+        "nDCG@5": 0.7135634281863547
+      }
+    },
+    {
+      "query_id": "H031",
+      "query": "petrol ki mojooda qeemat per litre pakistan",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.8111256153899871
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.8111256153899871
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.8111256153899871
+      }
+    },
+    {
+      "query_id": "H032",
+      "query": "aaj stock exchange kitne points par",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.9,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.9,
+        "nDCG@5": 0.9756488459686317
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.9,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.9,
+        "nDCG@5": 0.9756488459686317
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.9,
+        "nDCG@5": 0.9756488459686317
+      }
+    },
+    {
+      "query_id": "H033",
+      "query": "ڈیزل ریٹ",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      }
+    },
+    {
+      "query_id": "H034",
+      "query": "سونا ریٹ",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.0,
+        "nDCG@5": 0.0
+      }
+    },
+    {
+      "query_id": "H035",
+      "query": "football score",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      }
+    },
+    {
+      "query_id": "H036",
+      "query": "diesel rate",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.7,
+        "nDCG@5": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "svm_v2": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      }
+    },
+    {
+      "query_id": "H037",
+      "query": "ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.7974895849253194
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.5,
+        "nDCG@5": 1.0
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.7974895849253194
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.7974895849253194
+      }
+    },
+    {
+      "query_id": "H038",
+      "query": "قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 0.9197207891481877
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.760757841737382
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.2,
+        "nDCG@5": 0.9197207891481877
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.760757841737382
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.5,
+        "nDCG@5": 0.760757841737382
+      }
+    },
+    {
+      "query_id": "H039",
+      "query": "petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.7164012738425134
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.7164012738425134
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.2,
+        "nDCG@5": 1.0
+      }
+    },
+    {
+      "query_id": "H040",
+      "query": "qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar",
+      "always_headline": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.9828920819566879
+      },
+      "always_full": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.3,
+        "nDCG@5": 0.8529278650606567
+      },
+      "theta150": {
+        "label": "SHORT",
+        "mode": "HEADLINE",
+        "P@5": 0.4,
+        "nDCG@5": 0.9828920819566879
+      },
+      "wordcount": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.3,
+        "nDCG@5": 0.8529278650606567
+      },
+      "svm_v2": {
+        "label": "LONG",
+        "mode": "FULL_CONTENT",
+        "P@5": 0.3,
+        "nDCG@5": 0.8529278650606567
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "as_of": "2026-08-23",
+  "do_not_mix": true,
+  "dictionary_pairs_on_disk": 198,
+  "deployed_svm_features": 12,
+  "development_cv": {
+    "note": "Learnability only. Not the defense headline.",
+    "svm_some_splits_pct": 100.0,
+    "theta150_pct": 50.0,
+    "roman_urdu_p15_pct": 92.5,
+    "llm_style_routing_match": "development 14-query comparison; SVM ~0.45 ms"
+  },
+  "frozen_phase3b_v2_primary_n50": {
+    "svm_pct": 86.0,
+    "wordcount_pct": 84.0,
+    "svm_correct": 43,
+    "wordcount_correct": 42,
+    "mcnemar_svm_only": 2,
+    "mcnemar_wc_only": 1,
+    "mcnemar_p": 1.0,
+    "note": "Eight-feature V2. Not overwritten by 12-feature retrain."
+  },
+  "frozen_traps_H001_H040": {
+    "svm_pct": 60.0,
+    "wordcount_pct": 20.0,
+    "theta150_pct": 50.0,
+    "mcnemar_16_0_p": "<0.001",
+    "cue_n": 18,
+    "cue_svm_pct": 100.0,
+    "cue_wc_pct": 11.11,
+    "no_cue_n": 22,
+    "no_cue_both_pct": 27.27
+  },
+  "heldout_dual_index_p5_n40_judgments_400": {
+    "wordcount_p5_pct": 36.5,
+    "always_headline_or_theta_p5_pct": 35.0,
+    "always_full_p5_pct": 34.25,
+    "svm_p5_pct": 33.0,
+    "ndcg5_always_headline": 0.6868,
+    "ndcg5_wordcount": 0.6476,
+    "ndcg5_svm": 0.6149,
+    "ndcg5_always_full": 0.602,
+    "note": "Classification win did not transfer to P@5."
+  },
+  "phase25_dual_index_p5_n33_depth5": {
+    "svm_p5_pct": 35.76,
+    "wordcount_p5_pct": 35.15,
+    "theta150_p5_pct": 32.73
+  },
+  "do_not_report": [
+    "96% Phase 3B after trap retrain (leakage)"
+  ],
+  "figures": [
+    "figures/fig_two_rooms_lights.png",
+    "figures/fig_three_evaluation_layers.png",
+    "figures/fig_cue_split.png",
+    "figures/fig_heldout_p5.png"
+  ]
+}

@@ -1,0 +1,14 @@
+CURRENT FROZEN RESULTS (23 Aug 2026)
+Do not mix these tables. Do not report 96%.
+
+Dictionary on disk: 198 pairs. Deployed SVM: 12 features.
+Phase 3B V2 (50 primary): SVM 86% vs word count 84% (McNemar p=1.0).
+Traps H001-H040: SVM 60% vs word count 20% vs theta=150 50% (McNemar 16-0).
+Cue split: 18/18 vs 2/18 with cue words; both 27.27% without (n=22).
+Held-out dual-index P@5: WC 36.50, headline/theta 35.00, full 34.25, SVM 33.00.
+nDCG@5 highest for always-headline (0.6868).
+Phase 2.5 P@5 n=33: SVM 35.76 vs WC 35.15 vs theta 32.73.
+
+Figures: results/figures/
+Archived development/CV 100%-headline files: results/_archive_development_cv/
+Kept as supporting history: roman_urdu_results.json, phase3/4 retrieval json, robustness_report.csv

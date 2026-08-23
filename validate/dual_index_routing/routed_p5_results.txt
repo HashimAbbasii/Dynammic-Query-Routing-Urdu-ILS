@@ -6,11 +6,11 @@ always_headline      0.3273 0.5852 0.5859    33     0
 always_full          0.3303 0.5461 0.5273     0    33
 theta150             0.3273 0.5852 0.5859    33     0
 wordcount            0.3515 0.5852 0.5424     7    26
-svm_v2               0.3515 0.5592 0.5172     6    27
+svm_v2               0.3576 0.5895 0.5475     9    24
 
 Paired P@5 (left better / right better / tie)
-  svm_v2 vs wordcount P@5: 1 / 1 / 31
-  svm_v2 vs theta150 P@5: 8 / 8 / 17
-  svm_v2 vs always_headline P@5: 8 / 8 / 17
-  svm_v2 vs always_full P@5: 3 / 1 / 29
+  svm_v2 vs wordcount P@5: 1 / 0 / 32
+  svm_v2 vs theta150 P@5: 8 / 7 / 18
+  svm_v2 vs always_headline P@5: 8 / 7 / 18
+  svm_v2 vs always_full P@5: 4 / 1 / 28
   wordcount vs theta150 P@5: 8 / 8 / 17

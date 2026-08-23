@@ -3,9 +3,10 @@
 Decision layer that replaces ULTRA's static character threshold (θ=150).
 
 This module only *chooses* HEADLINE vs FULL_CONTENT. It does not search.
-The deployed V2 SVM (models/svm_classifier.pkl + scaler.pkl) is the
-learned router. Word-count and θ=150 are comparison baselines that
-drive the *same* two indexes.
+The deployed pickle (models/svm_classifier.pkl + scaler.pkl) is the
+learned router. Feature width is 8 (V2) or 12 (trap-augmented V3).
+Word-count and θ=150 are comparison baselines that drive the same two
+indexes.
 """
 from __future__ import annotations
 
@@ -15,14 +16,34 @@ import sys
 
 import numpy as np
 
-REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.abspath(os.path.join(_DIR, "..", ".."))
 sys.path.insert(0, os.path.join(REPO_ROOT, "validate", "phase3"))
+sys.path.insert(0, _DIR)
 from phase3a_extractor import extract_features_phase3a, load_roman_dict  # noqa: E402
+from extractor_v3 import extract_features_v3  # noqa: E402
 
 WORDCOUNT_LONG_MIN = 6  # frozen Phase 3B rule: >= 6 words -> LONG
 THETA_CHAR = 150  # ULTRA static character threshold
 HEADLINE = "HEADLINE"
 FULL_CONTENT = "FULL_CONTENT"
+HYBRID = "HYBRID"
+
+# Thesis confidence bands (Section 3.5): not fitted on eval data.
+HIGH_MIN = 85.0
+MEDIUM_MIN = 60.0
+
+
+def confidence_tier(confidence) -> str | None:
+    """GREEN / YELLOW / RED lights. None if the system has no confidence."""
+    if confidence is None:
+        return None
+    c = float(confidence)
+    if c >= HIGH_MIN:
+        return "HIGH"
+    if c >= MEDIUM_MIN:
+        return "MEDIUM"
+    return "LOW"
 
 _svm = None
 _scaler = None
@@ -52,9 +73,18 @@ def theta150_label(query: str) -> str:
     return "LONG" if len(query) >= THETA_CHAR else "SHORT"
 
 
+def _features_for_model(query: str, svm, roman):
+    n = int(getattr(svm, "n_features_in_", 8))
+    if n == 8:
+        return extract_features_phase3a(query, roman)
+    if n == 12:
+        return extract_features_v3(query, roman)
+    raise ValueError(f"SVM n_features_in_={n}; expected 8 (V2) or 12 (V3)")
+
+
 def svm_v2_label(query: str) -> tuple[str, float]:
     svm, scaler, roman = _load_v2()
-    feats = extract_features_phase3a(query, roman)
+    feats = _features_for_model(query, svm, roman)
     Xt = scaler.transform(np.array([feats]))
     pred = str(svm.predict(Xt)[0]).upper()
     if pred not in ("SHORT", "LONG"):
@@ -84,11 +114,13 @@ def decide(query: str, system: str) -> dict:
         label, conf = svm_v2_label(query)
     else:
         raise ValueError(f"unknown system: {system}")
+    tier = confidence_tier(conf)
     return {
         "system": system,
         "label": label,
         "mode": label_to_mode(label),
         "confidence": conf,
+        "tier": tier,
         "word_count": len(query.split()),
         "char_len": len(query),
     }

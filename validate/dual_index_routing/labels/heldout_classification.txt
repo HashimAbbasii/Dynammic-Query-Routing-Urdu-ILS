@@ -1,0 +1,36 @@
+FROZEN HELD-OUT TRAP CLASSIFICATION (do not train on these 40)
+n = 40
+Labels = designer protocol (headline-enough rule). Confirm before IEEE.
+
+  SVM        60.00%
+  word-count 20.00%
+  theta=150  50.00%
+  McNemar SVM vs word-count: SVM-only-right=16 WC-only-right=0 p_exact=0.0000
+
+By trap type
+  SHORT_WORDS_LONG_NEED    n=16  SVM=50.00%  WC=0.00%  θ=0.00%
+  LONG_WORDS_SHORT_NEED    n=16  SVM=50.00%  WC=0.00%  θ=100.00%
+  CONTROL_EASY_SHORT       n= 4  SVM=100.00%  WC=100.00%  θ=100.00%
+  CONTROL_EASY_LONG        n= 4  SVM=100.00%  WC=100.00%  θ=0.00%
+
+By V3 keyword cue (honest split: did has_causal/manner/synthesis/fact fire?)
+  v3_cue       n=18  SVM=100.00%  WC=11.11%
+  no_v3_cue    n=22  SVM=27.27%  WC=27.27%
+
+SVM misses
+  H005 gold=LONG svm=SHORT wc=SHORT  ٹیم ہار کا تجزیہ
+  H006 gold=LONG svm=SHORT wc=SHORT  مہنگائی کے اثرات
+  H007 gold=LONG svm=SHORT wc=SHORT  فلم فیل کی کہانی
+  H008 gold=LONG svm=SHORT wc=SHORT  روپے گراوٹ کے نتائج
+  H013 gold=LONG svm=SHORT wc=SHORT  team haar ka tajzia
+  H014 gold=LONG svm=SHORT wc=SHORT  mehngai ke asar
+  H015 gold=LONG svm=SHORT wc=SHORT  film fail ki kahani
+  H016 gold=LONG svm=SHORT wc=SHORT  rupay girawut ke nataij
+  H021 gold=SHORT svm=LONG wc=LONG  آج کراچی میں زیادہ سے زیادہ حرارت
+  H022 gold=SHORT svm=LONG wc=LONG  پاکستان کا اگلا کرکٹ میچ کس ملک سے
+  H023 gold=SHORT svm=LONG wc=LONG  پیٹرول کی موجودہ قیمت فی لیٹر پاکستان
+  H024 gold=SHORT svm=LONG wc=LONG  آج سٹاک ایکسچینج کتنے پوائنٹ پر
+  H029 gold=SHORT svm=LONG wc=LONG  aaj karachi max temperature kitna raha
+  H030 gold=SHORT svm=LONG wc=LONG  pakistan agla cricket match kis mulk se
+  H031 gold=SHORT svm=LONG wc=LONG  petrol ki mojooda qeemat per litre pakistan
+  H032 gold=SHORT svm=LONG wc=LONG  aaj stock exchange kitne points par

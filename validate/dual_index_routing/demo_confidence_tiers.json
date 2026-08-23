@@ -1,0 +1,110 @@
+[
+  {
+    "query": "کرکٹ میچ",
+    "plain": "Short cricket query. Sure -> headlines only.",
+    "label": "SHORT",
+    "svm_room": "HEADLINE",
+    "tier": "HIGH",
+    "light": "GREEN",
+    "confidence": 99.21258120821493,
+    "action": "HEADLINE",
+    "search_query": "کرکٹ میچ",
+    "expected_light": "GREEN",
+    "matched_expected_light": true,
+    "top3": [
+      {
+        "rank": 1,
+        "doc_id": 38323,
+        "headline": "کرکٹ کلاسک وقار کی میچ وننگ کارکردگی",
+        "category": "Sports",
+        "score": 0.8365393877029419
+      },
+      {
+        "rank": 2,
+        "doc_id": 97184,
+        "headline": "ئندہ ون ڈے کرکٹ نہیں کھیل پاوں گا رکی پونٹنگ",
+        "category": "Sports",
+        "score": 0.8254239559173584
+      },
+      {
+        "rank": 3,
+        "doc_id": 91514,
+        "headline": "بھارتی کرکٹر یوسف پٹھان نے تماشائی کی پٹائی کر دی",
+        "category": "Sports",
+        "score": 0.8065382838249207
+      }
+    ]
+  },
+  {
+    "query": "ڈالر کی قیمت کتنی بڑھی",
+    "plain": "How much did the dollar rise? Not fully sure -> mix both rooms.",
+    "label": "SHORT",
+    "svm_room": "HEADLINE",
+    "tier": "MEDIUM",
+    "light": "YELLOW",
+    "confidence": 82.70878702594125,
+    "action": "HYBRID",
+    "search_query": "ڈالر کی قیمت کتنی بڑھی",
+    "expected_light": "YELLOW",
+    "matched_expected_light": true,
+    "top3": [
+      {
+        "rank": 1,
+        "doc_id": 64598,
+        "headline": "ڈالر کی قدر میں پھر اضافہ",
+        "category": "Business & Economics",
+        "score": 0.62133047050164
+      },
+      {
+        "rank": 2,
+        "doc_id": 65501,
+        "headline": "ڈالر کی قدر میں چار پیسے کا اضافہ",
+        "category": "Business & Economics",
+        "score": 0.5221342761628204
+      },
+      {
+        "rank": 3,
+        "doc_id": 70630,
+        "headline": "انٹر بینک میں ڈالر مزید مہنگااوپن مارکیٹ میں 157روپے کی سطح پر برقرار",
+        "category": "Business & Economics",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "query": "آج سٹاک ایکسچینج کتنے پوائنٹ پر",
+    "plain": "Stock-exchange fact query. Live pickle is YELLOW (~66%), closer to the RED band. RED (<60%) is implemented; this pickle did not emit LOW on the defense set.",
+    "label": "LONG",
+    "svm_room": "FULL_CONTENT",
+    "tier": "MEDIUM",
+    "light": "YELLOW",
+    "confidence": 65.62696648729218,
+    "action": "HYBRID",
+    "search_query": "آج سٹاک ایکسچینج کتنے پوائنٹ پر",
+    "expected_light": "YELLOW",
+    "matched_expected_light": true,
+    "top3": [
+      {
+        "rank": 1,
+        "doc_id": 40174,
+        "headline": "سٹاک ایکسچینج میں مندی کا رجحان",
+        "category": "Business & Economics",
+        "score": 0.6354182013188678
+      },
+      {
+        "rank": 2,
+        "doc_id": 70330,
+        "headline": "اسٹاک ایکسچینج میں کاروبار کا مسلسل 7واں مثبت دن ڈالر اور سونا مہنگا ہوگیا",
+        "category": "Business & Economics",
+        "score": 0.5
+      },
+      {
+        "rank": 3,
+        "doc_id": 39654,
+        "headline": "سٹاک ایکسچینج کےحصص کی بک بلڈنگ کا عمل جاری",
+        "category": "Business & Economics",
+        "score": 0.45571205654067903
+      }
+    ]
+  }
+]
