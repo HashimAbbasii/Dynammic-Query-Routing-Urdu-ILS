@@ -39,6 +39,10 @@ Optional: notes
 Person A fills column gold_label_A only.
 Person B fills column gold_label_B only. Do not look at A's answers.
 
-File to fill
-------------
+File to fill (training traps, already done)
+------------------------------------------
 validate/dual_index_routing/labels/trap_label_sheet.csv
+
+Frozen test (do not train; fill gold_label_student only)
+-------------------------------------------------------
+validate/dual_index_routing/labels/heldout_trap_sheet.csv

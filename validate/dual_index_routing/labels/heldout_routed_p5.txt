@@ -1,0 +1,9 @@
+FROZEN HELD-OUT ROUTED P@5
+n=40
+
+system                    P@5   nDCG@5   ->H   ->F
+always_headline      0.3500 0.6868    40     0
+always_full          0.3425 0.6020     0    40
+theta150             0.3500 0.6868    40     0
+wordcount            0.3650 0.6476    20    20
+svm_v2               0.3300 0.6149    20    20

@@ -31,9 +31,9 @@ DEMOS = [
         "plain": "How much did the dollar rise? Not fully sure -> mix both rooms.",
     },
     {
-        "query": "آج پاکستان کا اسکور کیا ہے",
-        "expect_light": "RED",
-        "plain": "Today's score (6 words). Guessing -> expand, then mix both rooms.",
+        "query": "آج سٹاک ایکسچینج کتنے پوائنٹ پر",
+        "expect_light": "YELLOW",
+        "plain": "Stock-exchange fact query. Live pickle is YELLOW (~66%), closer to the RED band. RED (<60%) is implemented; this pickle did not emit LOW on the defense set.",
     },
 ]
 

@@ -1,0 +1,428 @@
+JOB 2 — JUDGE 400 NEWS ROWS
+
+Judge each row. Pick exactly one label:
+  Relevant            = the article answers what the user asked
+  Partially relevant  = same topic, but does not really answer
+  Not relevant        = wrong topic or opposite event
+
+Judge using ONLY the user QUERY + the HEADLINE.
+Ignore rank, score, trap_type, and whether the row is HEADLINE or FULL_CONTENT.
+
+Examples:
+Query "پیٹرول کیوں مہنگا" (WHY is petrol expensive):
+  "Petrol raised by Rs 2" -> Partially relevant (it went up, not why)
+  "IMF tax: why fuel prices rose" -> Relevant
+  "Pakistan win cricket" -> Not relevant
+Query "ڈیزل ریٹ" (the diesel price):
+  "Diesel Rs 280 per litre" -> Relevant
+  "Wimbledon champion" -> Not relevant
+
+Output EXACTLY 400 lines, one per row, in this format:
+H001	HEADLINE	1	Partially relevant
+H001	HEADLINE	2	Not relevant
+H001	FULL_CONTENT	1	Relevant
+...
+Keep the same order as the rows below. Do not skip any row.
+
+ROWS (query_id | query | mode | rank | headline):
+
+H001	پیٹرول کیوں مہنگا	HEADLINE	1	پیٹرول ڈیزل روپے فی لیٹر مہنگا کردیا گیا
+H001	پیٹرول کیوں مہنگا	HEADLINE	2	پٹرول اور ڈیزل سوا2روپے لیٹر مہنگا
+H001	پیٹرول کیوں مہنگا	HEADLINE	3	پیٹرول مزید مہنگا ہونے کا امکان اوگرا نے سمری بھجوادی
+H001	پیٹرول کیوں مہنگا	HEADLINE	4	نئے سال کی امد پیٹرول روپے پیسے مہنگا
+H001	پیٹرول کیوں مہنگا	HEADLINE	5	پیٹرول روپے 15 پیسے اور ڈیزل روپے 65 پیسے فی لیٹر مہنگا
+H001	پیٹرول کیوں مہنگا	FULL_CONTENT	1	حکومت نے نئے سال کی خوشیوں سے پہلے عوام پر پیٹرول بم گرا دیا
+H001	پیٹرول کیوں مہنگا	FULL_CONTENT	2	حکومت نے پیٹرول کی قیمت میں اضافہ کردیا
+H001	پیٹرول کیوں مہنگا	FULL_CONTENT	3	یکم نومبر سے پیٹرولیم مصنوعات میں اضافے کا اعلان
+H001	پیٹرول کیوں مہنگا	FULL_CONTENT	4	حکومت کا پیٹرول کی درمدات پر عائد پابندی ہٹانے کا فیصلہ
+H001	پیٹرول کیوں مہنگا	FULL_CONTENT	5	پیٹرول اور سی این جی قیمتیں کم ہونے کا امکان
+H002	شکست کی وجہ	HEADLINE	1	ناکامیاں اور امید
+H002	شکست کی وجہ	HEADLINE	2	شکست کے ذمہ دار بالرز
+H002	شکست کی وجہ	HEADLINE	3	منفی سوچ شکست کی وجہ بنی فریدی
+H002	شکست کی وجہ	HEADLINE	4	شکست کی بڑی وجہ ناقص فیلڈنگ ہے مصباح الحق کا اعتراف
+H002	شکست کی وجہ	HEADLINE	5	ایک اور شکست
+H002	شکست کی وجہ	FULL_CONTENT	1	زندگی میں کامیاب اور ناکام افراد کے فرق
+H002	شکست کی وجہ	FULL_CONTENT	2	عمر اکمل نے انتقال کی خبر پر بہت اچھا کا کمنٹس لکھ دیا
+H002	شکست کی وجہ	FULL_CONTENT	3	کامیابی کی راہ میں رکاوٹ بننے والی 11 شخصی عادات
+H002	شکست کی وجہ	FULL_CONTENT	4	ناکامی کے باوجود عروج پانے والی 12 شخصیات
+H002	شکست کی وجہ	FULL_CONTENT	5	زندگی میں کامیابی کے لیے ان 22 چیزوں کو چھوڑ دیں
+H003	فلم کیسے ڈوبی	HEADLINE	1	فلم انسیپشن کی اینڈنگ کا راز خرکار سامنے گیا
+H003	فلم کیسے ڈوبی	HEADLINE	2	فلم اظہر کی پہلی جھلک جاری
+H003	فلم کیسے ڈوبی	HEADLINE	3	فلم گلی بوائے شائقین کو متاثر کرنے میں کامیاب
+H003	فلم کیسے ڈوبی	HEADLINE	4	ریڑھ کی ہڈی میں سنسناہٹ دوڑا دینے والی ہارر فلم
+H003	فلم کیسے ڈوبی	HEADLINE	5	فلم طیفا ان ٹربل کا جادو چل گیا
+H003	فلم کیسے ڈوبی	FULL_CONTENT	1	فلم بلیک بٹر فلائی کل نمائش کیلئے پیش ہو گی
+H003	فلم کیسے ڈوبی	FULL_CONTENT	2	نصیرالدین کا انتظار
+H003	فلم کیسے ڈوبی	FULL_CONTENT	3	تھرلنگ ہالی وڈ فلم جن کا پہلاٹریلر جاری
+H003	فلم کیسے ڈوبی	FULL_CONTENT	4	فلم ٹک ٹاک ریویو کہانی کو سمجھنا مشکل ہی نہیں نا ممکن ہے
+H003	فلم کیسے ڈوبی	FULL_CONTENT	5	فلم 47میٹرز ڈاون کل سینما گھروں کی زینت بنے گی
+H004	سیلاب کا نقصان	HEADLINE	1	بھارتی ریاست اسام میں سیلابپریانکا چوپڑا پرالزام
+H004	سیلاب کا نقصان	HEADLINE	2	دریائی نظام میں الودگی اور سیلاب سے خبردار کرنے والا الہ
+H004	سیلاب کا نقصان	HEADLINE	3	سنجے کی سوانح حیات میں سونم کا اہم کردار
+H004	سیلاب کا نقصان	HEADLINE	4	سیلاب طوفانی بارشیں
+H004	سیلاب کا نقصان	HEADLINE	5	سیلاب کی پیشگوئی نظام میں خامیاں
+H004	سیلاب کا نقصان	FULL_CONTENT	1	سیلابی صورتحال پی ٹی سی ایل سروسز بھی معطلی کا شکار
+H004	سیلاب کا نقصان	FULL_CONTENT	2	گلگت شدید سردی سے خلتی جھیل کا پانی جما تو سیاحوں کا رش لگ گیا
+H004	سیلاب کا نقصان	FULL_CONTENT	3	پنجاب میں سیلابسبزیوں کی قیمتیں سمان پر پہنچ گئیں
+H004	سیلاب کا نقصان	FULL_CONTENT	4	موسم کی تباہ کاریاں
+H004	سیلاب کا نقصان	FULL_CONTENT	5	دریائے سندھ میں تونسہ کے مقام پر اونچے درجے کا سیلاب
+H005	ٹیم ہار کا تجزیہ	HEADLINE	1	مشکلات میں گھری قومی ٹیم کی پریکٹس کا دوبارہ غاز
+H005	ٹیم ہار کا تجزیہ	HEADLINE	2	قومی ٹیم چیمپئنز ٹرافی جیتنے کی صلاحیت رکھتی ہے انضمام الحق
+H005	ٹیم ہار کا تجزیہ	HEADLINE	3	قومی ٹیم کی ناقص پرفارمنس پر کوچ وقار یونس برہم
+H005	ٹیم ہار کا تجزیہ	HEADLINE	4	ویسٹ انڈیز سے میچ کے لیے قومی ٹیم کی حکمت عملی کی تشکیل
+H005	ٹیم ہار کا تجزیہ	HEADLINE	5	چیمپئنز ٹرافی کی تاریخ میں قومی ٹیم کی کارکردگی
+H005	ٹیم ہار کا تجزیہ	FULL_CONTENT	1	پاکستان سپر لیگ سیزن تھری میں کونسی ٹیم کمزور اور کونسی مضبوط
+H005	ٹیم ہار کا تجزیہ	FULL_CONTENT	2	ورلڈ الیون کیخلاف دلچسپ سیریز کے لیے قومی ٹیم کا اعلان کر دیا گیا
+H005	ٹیم ہار کا تجزیہ	FULL_CONTENT	3	قومی ٹیم کو متحد کرنا پہلا مقصد
+H005	ٹیم ہار کا تجزیہ	FULL_CONTENT	4	پی ایس ایل فائیوکراچی کنگز کا ٹاس جیت کر کوئٹہ گلیڈی ایٹرز کیخلاف پہلے بیٹنگ کا فیصلہ
+H005	ٹیم ہار کا تجزیہ	FULL_CONTENT	5	کامیابی سے ٹیم کامورال بلند ہوا ہے محمدحفیظ
+H006	مہنگائی کے اثرات	HEADLINE	1	مہنگائی سے عوام پریشان سرکاری اعداد شمار کے مطابق قیمتیں کم ہوئیں
+H006	مہنگائی کے اثرات	HEADLINE	2	ڈالر کی قیمت بڑھنے کے اثرات عام ادمی پر بھی مرتب ہوتے ہیں
+H006	مہنگائی کے اثرات	HEADLINE	3	ڈالر مزید مہنگا ہونے کے باعث اسٹاک مارکیٹ میں مندی
+H006	مہنگائی کے اثرات	HEADLINE	4	ملک بھر میں مہنگائی کی لہر برقرار
+H006	مہنگائی کے اثرات	HEADLINE	5	جب سب کچھ ٹھیک ہے پھر یہ مہنگائی کیوں ہے
+H006	مہنگائی کے اثرات	FULL_CONTENT	1	اوپن مارکیٹ میں ڈالر مزید مہنگا ہوگیا
+H006	مہنگائی کے اثرات	FULL_CONTENT	2	اوپن مارکیٹ میں ڈالر ریال پانڈ اور اماراتی درہم مہنگا ہوگیا
+H006	مہنگائی کے اثرات	FULL_CONTENT	3	انٹربینک مارکیٹ میں امریکی ڈالر 71پیسے مہنگا
+H006	مہنگائی کے اثرات	FULL_CONTENT	4	کراچی چناماشاورمسور کی دال کی قیمتوں میں ہوشربا اضافہ
+H006	مہنگائی کے اثرات	FULL_CONTENT	5	ڈالر کی قیمت بڑھتے ہی مہنگائی بھی سمان کو چھونے لگی
+H007	فلم فیل کی کہانی	HEADLINE	1	حریم فاروق کی نئی مزاحیہ فلم پرچی
+H007	فلم فیل کی کہانی	HEADLINE	2	کھیل کھیل میں فلم
+H007	فلم فیل کی کہانی	HEADLINE	3	فلم ریویو جراسک ورلڈ
+H007	فلم فیل کی کہانی	HEADLINE	4	ملک اسرار اعوان ملتان چیمبر اف کامرس کے صدر منتخب
+H007	فلم فیل کی کہانی	HEADLINE	5	رابرٹ ڈی نیرو تاریخ کا عظیم ترین اداکار
+H007	فلم فیل کی کہانی	FULL_CONTENT	1	ڈیڑھ عشقیہ کا ٹریلر جاری
+H007	فلم فیل کی کہانی	FULL_CONTENT	2	بادشاہو کے ہوشیار رہنا کی دھوم
+H007	فلم فیل کی کہانی	FULL_CONTENT	3	برصغیر کے کامیڈی لیجنڈ رنگیلا کی 12 ویں اج منائی جائیگی
+H007	فلم فیل کی کہانی	FULL_CONTENT	4	عاطف اسلم کی واز میں چلتے چلتے کے ریمیک پر لتا منگیشکر ناراض
+H007	فلم فیل کی کہانی	FULL_CONTENT	5	گلوکار عاطف اسلم نے دل نشیں اواز میں اذان دے کر سننے والوں کے دل موہ لیے
+H008	روپے گراوٹ کے نتائج	HEADLINE	1	روپے کی تنزلی اور ڈالر کی ترقی کا سفر جاری
+H008	روپے گراوٹ کے نتائج	HEADLINE	2	روپے کی قدر میں کمی سے کیا فائدہ اور نقصان ہوتا ہے
+H008	روپے گراوٹ کے نتائج	HEADLINE	3	روپے کی بے قدری انٹربینک میں ڈالر 164 روپے سے تجاوز کرگیا
+H008	روپے گراوٹ کے نتائج	HEADLINE	4	روپیہ مستحکم ہونے سے درمدی دالوں کی قیمتوں میں کمی
+H008	روپے گراوٹ کے نتائج	HEADLINE	5	انٹربینک مارکیٹ میں ڈالر مہنگا قیمت خرید 13878 روپے ہو گئی
+H008	روپے گراوٹ کے نتائج	FULL_CONTENT	1	انٹر بینک میں ڈالر ایک سو چھپن روپے پچاس پیسے کا ہو گیا
+H008	روپے گراوٹ کے نتائج	FULL_CONTENT	2	ڈالرتاریخ کی بلند ترین سطح کو چھو کر 138 روپے 50 پیسے پر گیا
+H008	روپے گراوٹ کے نتائج	FULL_CONTENT	3	ڈالر مہنگاہوکر 107 روپے پر پہنچ گیا
+H008	روپے گراوٹ کے نتائج	FULL_CONTENT	4	انٹر بینک میں ڈالر 94روپے کی بلند ترین سطح پر پہنچ گیا
+H008	روپے گراوٹ کے نتائج	FULL_CONTENT	5	انٹر بینک میں ڈالر کی قیمت میں گراوٹ کا سلسلہ جاری
+H009	petrol kyun mehnga	HEADLINE	1	اسلام باد میں بھی پیٹرول نایاب ہوگیا
+H009	petrol kyun mehnga	HEADLINE	2	اج سے پیٹرول اورڈیزل 3روپےفی لیٹرسستا ہوگیا
+H009	petrol kyun mehnga	HEADLINE	3	تاپی گیس منصوبہقیمتفیس کا معاملہ طے ہوگیاوزیرپٹرولیم
+H009	petrol kyun mehnga	HEADLINE	4	پٹرول کی قیمت برقرار رہے گی اسحاق ڈار
+H009	petrol kyun mehnga	HEADLINE	5	پیٹرول کی قیمت برقرار ڈیزل روپے فی لیٹر مہنگا
+H009	petrol kyun mehnga	FULL_CONTENT	1	کراچی میں پٹرول کی طلب رسد کی صورتحال معمول پر ارہی ہے
+H009	petrol kyun mehnga	FULL_CONTENT	2	حکومت کا پیٹرول کی درمدات پر عائد پابندی ہٹانے کا فیصلہ
+H009	petrol kyun mehnga	FULL_CONTENT	3	کراچی میں پیٹرول 100 روپے فی لیٹر فروخت ہونے لگا
+H009	petrol kyun mehnga	FULL_CONTENT	4	حکومت نے نئے سال کی خوشیوں سے پہلے عوام پر پیٹرول بم گرا دیا
+H009	petrol kyun mehnga	FULL_CONTENT	5	کراچی سمیت ملک بھر میں پیٹرول اور ڈیزل کی قلت کا اٹھواں روز
+H010	shikast ki waja	HEADLINE	1	شکست کے ذمہ دار بالرز
+H010	shikast ki waja	HEADLINE	2	مرے حیران کن شکست کے ساتھ یو ایس اوپن سے باہر
+H010	shikast ki waja	HEADLINE	3	ایک اور شکست
+H010	shikast ki waja	HEADLINE	4	جیتی بازی ہار گئے
+H010	shikast ki waja	HEADLINE	5	ناکامیاں اور امید
+H010	shikast ki waja	FULL_CONTENT	1	پریمیئر لیگ فٹبال ٹوٹنہم اور ارسنل نے اپنے اپنے میچز جیت لئے
+H010	shikast ki waja	FULL_CONTENT	2	ٹاس جیتنے کے علاوہ پورا دن خراب رہا مصباح الحق
+H010	shikast ki waja	FULL_CONTENT	3	بڑے مقابلے سے پہلے بڑی شکست ذمہ دار کون
+H010	shikast ki waja	FULL_CONTENT	4	اسٹریلیا کیخلاف جیت کیلئے میدان میں اتریں گےوہاب ریاض
+H010	shikast ki waja	FULL_CONTENT	5	ایشین اسنوکر چمپئن شپ میں پاکستانی کیوسٹ کا سفر ختم
+H011	film kaise doobi	HEADLINE	1	ریویو فلم پری
+H011	film kaise doobi	HEADLINE	2	فلم ریویو جراسک ورلڈ
+H011	film kaise doobi	HEADLINE	3	کرینہ کپورکی ہیروئن
+H011	film kaise doobi	HEADLINE	4	حریم فاروق کی نئی مزاحیہ فلم پرچی
+H011	film kaise doobi	HEADLINE	5	ویل ڈن پی سی بی ویل ڈن نجم سیٹھی
+H011	film kaise doobi	FULL_CONTENT	1	فلم کائی پوچے کانیا گانا میٹھی بولیاں ریلیز کر دیا گیا
+H011	film kaise doobi	FULL_CONTENT	2	باہو بالی ٹو کے ہیرو پرابھاس کا مومی مجسمہ مادام تسا میوزیم میں سجے گا
+H011	film kaise doobi	FULL_CONTENT	3	فلم باربار دیکھوکا نیا ڈائیلاگ پرومو جاری
+H011	film kaise doobi	FULL_CONTENT	4	نامور شاعر اور ادیب احمد ندیم قاسمی کو اپنے مداحوں سے بچھڑے 10برس ہوگئے
+H011	film kaise doobi	FULL_CONTENT	5	رشک قمر کے بعد بادشاہوکا پیا مورے گانا ریلیز
+H012	flood ka nuksan	HEADLINE	1	بھارتی ریاست اسام میں سیلابپریانکا چوپڑا پرالزام
+H012	flood ka nuksan	HEADLINE	2	سیلاب طوفانی بارشیں
+H012	flood ka nuksan	HEADLINE	3	دریائی نظام میں الودگی اور سیلاب سے خبردار کرنے والا الہ
+H012	flood ka nuksan	HEADLINE	4	سنجے کی سوانح حیات میں سونم کا اہم کردار
+H012	flood ka nuksan	HEADLINE	5	سیلاب کی پیشگوئی نظام میں خامیاں
+H012	flood ka nuksan	FULL_CONTENT	1	گلگت شدید سردی سے خلتی جھیل کا پانی جما تو سیاحوں کا رش لگ گیا
+H012	flood ka nuksan	FULL_CONTENT	2	سیلابی صورتحال پی ٹی سی ایل سروسز بھی معطلی کا شکار
+H012	flood ka nuksan	FULL_CONTENT	3	موسم کی تباہ کاریاں
+H012	flood ka nuksan	FULL_CONTENT	4	پنجاب میں سیلابسبزیوں کی قیمتیں سمان پر پہنچ گئیں
+H012	flood ka nuksan	FULL_CONTENT	5	کراچی کنگز نے اسلام اباد یونائیٹڈ کو اٹھ رنز سے ہرادیا
+H013	team haar ka tajzia	HEADLINE	1	ٹیم تگڑی ہے کم بیک کریگی محمد رضوان
+H013	team haar ka tajzia	HEADLINE	2	ٹیم کو جب تک ضرورت ہے کھیلوں گا مصباح الحق
+H013	team haar ka tajzia	HEADLINE	3	اپنی پرفارمنس اور فٹنس سے قومی ٹیم جگہ بناں گا محمد عرفان
+H013	team haar ka tajzia	HEADLINE	4	چیمپئنز ٹرافی عمر اکمل کی جگہ حارث سہیل قومی ٹیم میں شامل
+H013	team haar ka tajzia	HEADLINE	5	پی ایس ایل میں ٹیموں کی موجودہ پوزیشن
+H013	team haar ka tajzia	FULL_CONTENT	1	قومی ہاکی ٹیم وطن واپس پہنچ گئی ایئر پورٹ پر شاندار استقبال
+H013	team haar ka tajzia	FULL_CONTENT	2	قومی ٹیم کو متحد کرنا پہلا مقصد
+H013	team haar ka tajzia	FULL_CONTENT	3	ورلڈکپ ویسٹ انڈیز کلاس بھارت 125رنز سے کامیاب
+H013	team haar ka tajzia	FULL_CONTENT	4	پاکستان بلائنڈکرکٹ ٹیم بھارت روانہ
+H013	team haar ka tajzia	FULL_CONTENT	5	ورلڈ الیون کیخلاف دلچسپ سیریز کے لیے قومی ٹیم کا اعلان کر دیا گیا
+H014	mehngai ke asar	HEADLINE	1	ملک بھر میں مہنگائی کی لہر برقرار
+H014	mehngai ke asar	HEADLINE	2	ڈالر کی نرالی قلابازیاں
+H014	mehngai ke asar	HEADLINE	3	ملک بھر میں مہنگائی کا جن بے قابو
+H014	mehngai ke asar	HEADLINE	4	مہنگائی سے عوام پریشان سرکاری اعداد شمار کے مطابق قیمتیں کم ہوئیں
+H014	mehngai ke asar	HEADLINE	5	لو دستی بم بن گیا قیمتیں ریکارڈ سطح پر پہنچ گئیں
+H014	mehngai ke asar	FULL_CONTENT	1	سونا پھر مہنگا ہوگیا
+H014	mehngai ke asar	FULL_CONTENT	2	انٹربینک مارکیٹ میں امریکی ڈالر 71پیسے مہنگا
+H014	mehngai ke asar	FULL_CONTENT	3	اوپن مارکیٹ میں ڈالر مزید مہنگا 118 روپے پیسے کا ہوگیا
+H014	mehngai ke asar	FULL_CONTENT	4	روپے کے مقابلے میں ڈالر 18پیسے مہنگا ہوگیا
+H014	mehngai ke asar	FULL_CONTENT	5	انٹربینک مارکیٹ میں ڈالر روپے 93پیسے مہنگا ہوگیا
+H015	film fail ki kahani	HEADLINE	1	کھیل کھیل میں فلم
+H015	film fail ki kahani	HEADLINE	2	چودہ اگست سے پی ئی اے ایک نئے روپ میں
+H015	film fail ki kahani	HEADLINE	3	کترن سے بنی کہانی پیوند لگا کے ہے سنانی
+H015	film fail ki kahani	HEADLINE	4	سے بال سنوارنے والا حجام
+H015	film fail ki kahani	HEADLINE	5	ریویو فلم پری
+H015	film fail ki kahani	FULL_CONTENT	1	گلوکار عاطف اسلم نے دل نشیں اواز میں اذان دے کر سننے والوں کے دل موہ لیے
+H015	film fail ki kahani	FULL_CONTENT	2	نوواک جوکووچ پانچویں مرتبہ ومبلڈن چیمپئن بن گئے
+H015	film fail ki kahani	FULL_CONTENT	3	نامور شاعر اور ادیب احمد ندیم قاسمی کو اپنے مداحوں سے بچھڑے 10برس ہوگئے
+H015	film fail ki kahani	FULL_CONTENT	4	عاطف اسلم کی سحر انگیز اذان نے سماں باندھ دیا
+H015	film fail ki kahani	FULL_CONTENT	5	ملکہ غزل اقبال بانو کو بچھڑے چھے برس بیت گئے ان کی غزلیں اور گیت ہر عمر اور ہر دور میں مقبول رہے
+H016	rupay girawut ke nataij	HEADLINE	1	کلف ڈائیونگ کاکھیل جانوروں میں بھی مقبول
+H016	rupay girawut ke nataij	HEADLINE	2	پا لتو جانور وں کے لیے دنیا کا پہلا سیون اسٹار لگژری ہو ٹل
+H016	rupay girawut ke nataij	HEADLINE	3	گینگ گھوسٹس ریویو
+H016	rupay girawut ke nataij	HEADLINE	4	پاکستانی فلمپنجاب نہیں جاں گیکا افیشل ٹریلر جاری
+H016	rupay girawut ke nataij	HEADLINE	5	لاہور ایف سی کالج میں پیٹ شوخوبصورت پالتو جانوروں نے دل موہ لیے
+H016	rupay girawut ke nataij	FULL_CONTENT	1	جنوبی سڑیلیا میں پیاسے کینگرو کو پانی پینا مہنگا پڑ گیا
+H016	rupay girawut ke nataij	FULL_CONTENT	2	برف میں مستیاں کرتے خوبصورت جانور سب کو بھا گئے
+H016	rupay girawut ke nataij	FULL_CONTENT	3	لاہور ایف سی کالج میں پیٹ شوخوبصورت پالتو جانوروں نے دل موہ لیے
+H016	rupay girawut ke nataij	FULL_CONTENT	4	لاما اور کتے کی دوڑ سوشل میڈیا پر وائرل
+H016	rupay girawut ke nataij	FULL_CONTENT	5	دی جنگل بک کا ایڈوینچر سے بھرپور نیا ٹریلر شائقین کی توجہ کا مرکز
+H017	آج لاہور کا درجہ حرارت کیا ہے	HEADLINE	1	دھوم تھری لاہور میں دوسرے روز بھی وہی رش وہی دھوم
+H017	آج لاہور کا درجہ حرارت کیا ہے	HEADLINE	2	لاہور میں روزہ نیشنل یوتھ سمٹ کا غاز
+H017	آج لاہور کا درجہ حرارت کیا ہے	HEADLINE	3	کراچی لاہور اسلام باد پشاور کوئٹہ میں سورج گرہن
+H017	آج لاہور کا درجہ حرارت کیا ہے	HEADLINE	4	لاہور میں سہ روزہ برائیڈل ویک کا غاز ہو گیا
+H017	آج لاہور کا درجہ حرارت کیا ہے	HEADLINE	5	ریما کا ولیمہ لاہور میں دھوم دھام سے ہوگا
+H017	آج لاہور کا درجہ حرارت کیا ہے	FULL_CONTENT	1	لاہور بہار کا موسم اتے ہی پنجابی کلچرل میلہ سج گیا ڈھول کی تھاپ پربھنگڑے
+H017	آج لاہور کا درجہ حرارت کیا ہے	FULL_CONTENT	2	لاہور ہلکی بارش اور گہرے بادلوں سے موسم خوشگوار شہریوں نے پارکوں کی طرف رخ کرلیا
+H017	آج لاہور کا درجہ حرارت کیا ہے	FULL_CONTENT	3	لاہور امد کی کہانی کھابوں کے ذکر کے بغیر بے رنگ رہ جائے گی
+H017	آج لاہور کا درجہ حرارت کیا ہے	FULL_CONTENT	4	دھوم تھری لاہور میں دوسرے روز بھی وہی رش وہی دھوم
+H017	آج لاہور کا درجہ حرارت کیا ہے	FULL_CONTENT	5	پاکستان ئیڈل کیلئے لاہور میں ڈیشنز کے دوسرے دن بھی لمبی قطاریں
+H018	سونے کی فی تولہ قیمت آج کتنی ہے	HEADLINE	1	سونے کی فی تولہ قیمت میں کمی
+H018	سونے کی فی تولہ قیمت آج کتنی ہے	HEADLINE	2	سونے کی فی تولہ قیمت میں پھر اضافہ
+H018	سونے کی فی تولہ قیمت آج کتنی ہے	HEADLINE	3	سونے کی فی تولہ قیمت میں 150 اروپے کمی
+H018	سونے کی فی تولہ قیمت آج کتنی ہے	HEADLINE	4	سونے کی قیمت میں فی تولہ 100روپے کی کمی
+H018	سونے کی فی تولہ قیمت آج کتنی ہے	HEADLINE	5	سونے کی فی تولہ قیمت میں ایک ہزارروپے کی کمی
+H018	سونے کی فی تولہ قیمت آج کتنی ہے	FULL_CONTENT	1	سونا غریب کیلئے خواب بن گیا قیمت نئی تاریخی بلندی پر پہنچ گئی
+H018	سونے کی فی تولہ قیمت آج کتنی ہے	FULL_CONTENT	2	سونے کے نرخوں میں 400روپےکی کمی تولہ 66900 پر اگیا
+H018	سونے کی فی تولہ قیمت آج کتنی ہے	FULL_CONTENT	3	فی اونس سونا 10 ڈالر مہنگا ہوگیا
+H018	سونے کی فی تولہ قیمت آج کتنی ہے	FULL_CONTENT	4	سونے کی قیمت 66ہزار 350روپے تولہ ہو گئی
+H018	سونے کی فی تولہ قیمت آج کتنی ہے	FULL_CONTENT	5	سونے کی قیمت میں اضافہ
+H019	ایشیا کپ فائنل کب کھیلا جائے گا	HEADLINE	1	تئیس سال بعد ورلڈکپ فائنل ایشیائی ٹیم کے بغیر کھیلا جائے گا
+H019	ایشیا کپ فائنل کب کھیلا جائے گا	HEADLINE	2	ایشیا کپ ٹی ٹوئنٹی یو اے ای میں ہونے کا امکان
+H019	ایشیا کپ فائنل کب کھیلا جائے گا	HEADLINE	3	ایشیا کپ کا فائنل پاکستان اور سری لنکا کے درمیان کھیلا جائے گا
+H019	ایشیا کپ فائنل کب کھیلا جائے گا	HEADLINE	4	ایشیا کپ سیمی فائنل میں پاکستان کا مقابلہ کوریا سے ہوگا
+H019	ایشیا کپ فائنل کب کھیلا جائے گا	HEADLINE	5	ایشیا کپ کا فائنل کون کھیلے گا پاکستان اور بنگلہ دیش مدمقابل
+H019	ایشیا کپ فائنل کب کھیلا جائے گا	FULL_CONTENT	1	تئیس سال بعد ورلڈکپ فائنل ایشیائی ٹیم کے بغیر کھیلا جائے گا
+H019	ایشیا کپ فائنل کب کھیلا جائے گا	FULL_CONTENT	2	ایشیا کپ کا تاج کس کے سر سجے گا فیصلہ اج ہوگا
+H019	ایشیا کپ فائنل کب کھیلا جائے گا	FULL_CONTENT	3	ایشیا کپ دونوں گروپس کی ٹاپ ٹو ٹیمیں فائنل فور مرحلے کا ٹکٹ کٹوائیں گی
+H019	ایشیا کپ فائنل کب کھیلا جائے گا	FULL_CONTENT	4	ایشیا کپ ٹی ٹوئنٹی فائنل بھارت کا ٹاس جیت کر فیلڈنگ کا فیصلہ
+H019	ایشیا کپ فائنل کب کھیلا جائے گا	FULL_CONTENT	5	ایشیا کپ کے فائنل میں پاکستان کو شکست
+H020	نیا آئی فون پاکستان میں کب آیا	HEADLINE	1	اوپو کا نیا فون پاکستان میں متعارف
+H020	نیا آئی فون پاکستان میں کب آیا	HEADLINE	2	فور جی پر کام کرنے والا پہلا فیچر فون پاکستان میں متعارف
+H020	نیا آئی فون پاکستان میں کب آیا	HEADLINE	3	ہیواوے کے پہلے اے ئی فلیگ شپ فونز پاکستان میں متعارف
+H020	نیا آئی فون پاکستان میں کب آیا	HEADLINE	4	شیامی اسمارٹ فونز پاکستان میں متعارف
+H020	نیا آئی فون پاکستان میں کب آیا	HEADLINE	5	پاکستان میں پہلی بار فرنٹ اور بیک ڈسپلے والے فونز متعارف
+H020	نیا آئی فون پاکستان میں کب آیا	FULL_CONTENT	1	ویوو کا نیا اسمارٹ فون سب سے پہلے پاکستان میں متعارف
+H020	نیا آئی فون پاکستان میں کب آیا	FULL_CONTENT	2	ہواوے کا نیا اسمارٹ فون وائے ایس پاکستان میں متعارف
+H020	نیا آئی فون پاکستان میں کب آیا	FULL_CONTENT	3	پاکستان میں نوکیا فونز کی مد کی تاریخ سامنے گئی
+H020	نیا آئی فون پاکستان میں کب آیا	FULL_CONTENT	4	ہواوے نووا ئی اسمارٹ فون پاکستان میں دستیاب
+H020	نیا آئی فون پاکستان میں کب آیا	FULL_CONTENT	5	فور جی پر کام کرنے والا پہلا فیچر فون پاکستان میں متعارف
+H021	آج کراچی میں زیادہ سے زیادہ حرارت	HEADLINE	1	کراچی گرمی بڑھتے ہیں روم کولرز کی مانگ بڑھ گئی
+H021	آج کراچی میں زیادہ سے زیادہ حرارت	HEADLINE	2	گرمی اور بہار کا استقبال کراچی میں پیش کی گئی نئے سیزن کی نئی کلیکشن
+H021	آج کراچی میں زیادہ سے زیادہ حرارت	HEADLINE	3	کراچی گرمی کی شدت بڑھتے ہی گولا گنڈا کی بکری بڑھ گئی
+H021	آج کراچی میں زیادہ سے زیادہ حرارت	HEADLINE	4	پشاور موسم سرما اتے ہی گرم شالوں کا بزنس چمک اٹھا
+H021	آج کراچی میں زیادہ سے زیادہ حرارت	HEADLINE	5	سندھ گنے کی کرشنگ چینی کی تیاری کیلئے ملوں کے بوائلر گرم
+H021	آج کراچی میں زیادہ سے زیادہ حرارت	FULL_CONTENT	1	کراچی گرمی کی شدت بڑھتے ہی گولا گنڈا کی بکری بڑھ گئی
+H021	آج کراچی میں زیادہ سے زیادہ حرارت	FULL_CONTENT	2	زنجیانگ میں برفباری نے موسم کو یک بستہ کردیا
+H021	آج کراچی میں زیادہ سے زیادہ حرارت	FULL_CONTENT	3	لاہور میں سستے ایئرکنڈیشنڈ رمضان بازار
+H021	آج کراچی میں زیادہ سے زیادہ حرارت	FULL_CONTENT	4	بغیر بجلی کے کام کرنے والا ائیرکنڈیشنر
+H021	آج کراچی میں زیادہ سے زیادہ حرارت	FULL_CONTENT	5	پاک زمبابوے ون ڈے میچ میں گرمی کا زور رہے گا محکمہ موسمیات
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے	HEADLINE	1	پاکستان اور انگلینڈ کے مابین دوسرا ٹی ٹوئنٹی میچ کل کھیلا جائے گا
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے	HEADLINE	2	پاکستان اور نارتھمپٹن شائر کے درمیاں ون ڈے میچ اج کھیلا جائے گا
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے	HEADLINE	3	پاکستان دوسرا اور اخری وارم اپ میچ اج سے کھیلےگا
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے	HEADLINE	4	پاکستان بمقابلہ جنوبی افریقہ دوسرا ون ڈے اج کھیلا جائیگا
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے	HEADLINE	5	پریکٹس میچ پاکستان انتہائی قریب کر فتح سے محروم
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے	FULL_CONTENT	1	پاک اور بھارت کے درمیان دوسرا ٹی ٹوئنٹی احمد باد میں ہوگا
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے	FULL_CONTENT	2	پاکستان اور سری لنکا کل چوتھے ون ڈے میں پنجہ ازما ہونگے
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے	FULL_CONTENT	3	پہلا ٹی ٹونٹی میچ کھیلا جائیگا کرکٹ شائقین کو مقابلے کا شدت سے انتظار
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے	FULL_CONTENT	4	شارجہ انگلینڈ اور پاکستان اج اخری ٹی 20 میں مدمقابل
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے	FULL_CONTENT	5	پی ایس ایل کے میچ میرانشاہ خیبر مظفراباد میں بھی کرائیں گے ڈی جی ائی ایس پی ار
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان	HEADLINE	1	پشاور میں پیٹرول پمپوں پر پیٹرول نایاب
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان	HEADLINE	2	اسلام اباد لاہور فیصل اباد اور پنجاب کے کئی شہروں میں پیٹرول نایاب
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان	HEADLINE	3	کراچی بیشتر پمپس پر پیٹرول دستیاب بعض پر ختم
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان	HEADLINE	4	پٹرولیم مصنوعات پرسیلز ٹیکس لاہور ہائیکورٹ سے رجوع کرلیا گیا
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان	HEADLINE	5	ملک میں پیٹرول کی کوئی قلت نہیں مشیر پیٹرولیم
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان	FULL_CONTENT	1	لاہور عالمی منڈی میں تیل کی قیمتوں میں اضافہ نجی پیٹرولیم کمپنیوں نے اسٹاک کرلیا
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان	FULL_CONTENT	2	لاہور میں پیٹرولیم مصنوعات نایاب ہو گئیں
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان	FULL_CONTENT	3	ملک بھر میں پیٹرول کی دستیابی بہتر نہ بنائی جاسکی
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان	FULL_CONTENT	4	یکم اپریل سے پیٹرول 440 اور ڈیزل 625روپے مہنگا کرنے کی تیاری
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان	FULL_CONTENT	5	کراچی بیشتر پمپس پر پیٹرول دستیاب بعض پر ختم
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر	HEADLINE	1	سٹاک ایکسچینج میں مندی کا رجحان
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر	HEADLINE	2	سٹاک ایکسچینج کےحصص کی بک بلڈنگ کا عمل جاری
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر	HEADLINE	3	اسٹاک ایکسچینج47ہزار پوائنٹس کی سطح عبور
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر	HEADLINE	4	اسٹاک ایکسچینج 100 انڈیکس بلند ترین سطح پر
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر	HEADLINE	5	اسٹاک ایکسچینج میں اتار چڑھا جاری
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر	FULL_CONTENT	1	اسٹاک ایکسچینج میں کاروبار کا مسلسل 7واں مثبت دن ڈالر اور سونا مہنگا ہوگیا
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر	FULL_CONTENT	2	ڈالر رواں سال کی بلند سطح 109روپے پر پہنچ گیا
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر	FULL_CONTENT	3	اسٹاک ایکسچینج میں تیزی ڈالر اپنی قدر کھونے لگا
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر	FULL_CONTENT	4	پاکستان سٹاک ایکسچینج 37426پوائنٹس کی نئی بلند سطح پر بند
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر	FULL_CONTENT	5	اسٹاک ایکسچینج میں شدید مندی ڈالر بھی بلند ترین سطح پر پہنچ گیا
+H025	aaj lahore ka temperature kya hai	HEADLINE	1	دھوم تھری لاہور میں دوسرے روز بھی وہی رش وہی دھوم
+H025	aaj lahore ka temperature kya hai	HEADLINE	2	لاہور ماہ رمضا کی امد امد اتوار بازاروں میں رش
+H025	aaj lahore ka temperature kya hai	HEADLINE	3	لاہور ہلکی بارش اور گہرے بادلوں سے موسم خوشگوار شہریوں نے پارکوں کی طرف رخ کرلیا
+H025	aaj lahore ka temperature kya hai	HEADLINE	4	کراچی لاہور اسلام باد پشاور کوئٹہ میں سورج گرہن
+H025	aaj lahore ka temperature kya hai	HEADLINE	5	لاہور میں سہ روزہ برائیڈل ویک کا غاز ہو گیا
+H025	aaj lahore ka temperature kya hai	FULL_CONTENT	1	لاہور ہلکی بارش اور گہرے بادلوں سے موسم خوشگوار شہریوں نے پارکوں کی طرف رخ کرلیا
+H025	aaj lahore ka temperature kya hai	FULL_CONTENT	2	لاہور بہار کا موسم اتے ہی پنجابی کلچرل میلہ سج گیا ڈھول کی تھاپ پربھنگڑے
+H025	aaj lahore ka temperature kya hai	FULL_CONTENT	3	پاک زمبابوے ون ڈے میچ میں گرمی کا زور رہے گا محکمہ موسمیات
+H025	aaj lahore ka temperature kya hai	FULL_CONTENT	4	کوچ مکی ارتھر کی جون کی صبح لاہور امد متوقع
+H025	aaj lahore ka temperature kya hai	FULL_CONTENT	5	زنجیانگ میں برفباری نے موسم کو یک بستہ کردیا
+H026	sone ki tola qeemat aaj kitni hai	HEADLINE	1	جنت ٹو کی شاندار اوپننگپہلے دن9کروڑ کما لئے
+H026	sone ki tola qeemat aaj kitni hai	HEADLINE	2	زادی کا احساس بہترین ہے سنجے دت
+H026	sone ki tola qeemat aaj kitni hai	HEADLINE	3	ٹزم کا عالمی دن
+H026	sone ki tola qeemat aaj kitni hai	HEADLINE	4	فائنل کیلئے مربوط حکمت عملی تیار کرلیمصباح الحق
+H026	sone ki tola qeemat aaj kitni hai	HEADLINE	5	اسٹریلین بالرز کیلئے ایک اور کڑا دن
+H026	sone ki tola qeemat aaj kitni hai	FULL_CONTENT	1	میانوالی مصباح الحق کے گھر پر بچے اور نوجوان جمع جیت پر جشن
+H026	sone ki tola qeemat aaj kitni hai	FULL_CONTENT	2	ورون دھون بھی بن گئے گلوکار
+H026	sone ki tola qeemat aaj kitni hai	FULL_CONTENT	3	ملکہ ترنم نورجہاں کی 90ویں سالگرہ منائی جارہی ہے
+H026	sone ki tola qeemat aaj kitni hai	FULL_CONTENT	4	شکاگو کا دریا سبزرنگ میں تبدیل کر دیا گیا
+H026	sone ki tola qeemat aaj kitni hai	FULL_CONTENT	5	دنیا بھر میں سال نو کی امد کے مناظر
+H027	Asia cup final kab khela jayega	HEADLINE	1	بھارت سے ایجبسٹن میچ چیمپئنز ٹرافی فائنل سے بڑا مقابلہ ہے جنید خان
+H027	Asia cup final kab khela jayega	HEADLINE	2	ایشیا کپ بنگلا دیش کیخلاف یو اے ای کاٹاس جیت کر فیلڈنگ کا فیصلہ
+H027	Asia cup final kab khela jayega	HEADLINE	3	کوئٹہ پہلے شہید طالب غا میموریل فٹبال ٹورنامنٹ کا فائنل میچ پاک ہزارہ اکیڈمی کی دلچسپ مقابلے کے بعد جیت
+H027	Asia cup final kab khela jayega	HEADLINE	4	ہاکی بھارت سے شکست پاکستان ایشیا کپ فائنل کی دوڑ سے باہر
+H027	Asia cup final kab khela jayega	HEADLINE	5	ایشیا کپ میں کامیابی کیلئے غیرمعمولی کرکٹ کھیلنا ہوگی مصباح الحق
+H027	Asia cup final kab khela jayega	FULL_CONTENT	1	ایشیا کپ ٹی ٹوئنٹی پاکستان کا ٹاس جیت کر فیلڈنگ کا فیصلہ
+H027	Asia cup final kab khela jayega	FULL_CONTENT	2	ایشیا کپ ٹی ٹوئنٹی بھارت کا پاکستان کے خلاف ٹاس جیت کر فیلڈنگ کا فیصلہ
+H027	Asia cup final kab khela jayega	FULL_CONTENT	3	ایشیا کپ ٹی ٹوئنٹی فائنل بھارت کی ٹاس جیت کر فیلڈنگ
+H027	Asia cup final kab khela jayega	FULL_CONTENT	4	ایشیا کپ بھارت نے یواے ای کو9 وکٹوں سے شکست دیدی
+H027	Asia cup final kab khela jayega	FULL_CONTENT	5	ایشیا کپ ٹی ٹوئنٹی فائنل بھارت کا ٹاس جیت کر فیلڈنگ کا فیصلہ
+H028	naya iphone pakistan mein kab aaya	HEADLINE	1	ئی فون کلر فون پاکستان میں دستیاب
+H028	naya iphone pakistan mein kab aaya	HEADLINE	2	اوپو کا نیا فون پاکستان میں متعارف
+H028	naya iphone pakistan mein kab aaya	HEADLINE	3	ہواوے نووا ئی اسمارٹ فون پاکستان میں دستیاب
+H028	naya iphone pakistan mein kab aaya	HEADLINE	4	شیامی کا نیا فلیگ شپ فون اب پاکستان میں دستیاب
+H028	naya iphone pakistan mein kab aaya	HEADLINE	5	ٹرانسپورٹ ایپ اوبر پاکستان نے کیلئے تیار
+H028	naya iphone pakistan mein kab aaya	FULL_CONTENT	1	ٹرانسپورٹ ایپ اوبر پاکستان نے کیلئے تیار
+H028	naya iphone pakistan mein kab aaya	FULL_CONTENT	2	احمد شہزاد گبر کے روپ میں
+H028	naya iphone pakistan mein kab aaya	FULL_CONTENT	3	پرانے نظام میں جدت پاکستان پوسٹ نے موبائل ایپ کا افتتاح کردیا
+H028	naya iphone pakistan mein kab aaya	FULL_CONTENT	4	گم شدہ بچوں کی بازیابی کے لیے میرا بچہ الرٹ موبائل ایپ متعارف
+H028	naya iphone pakistan mein kab aaya	FULL_CONTENT	5	حریم شاہ نے ٹک ٹاک پر پابندی کو افسوسناک قرار دیدیا
+H029	aaj karachi max temperature kitna raha	HEADLINE	1	کراچی گرمی بڑھتے ہیں روم کولرز کی مانگ بڑھ گئی
+H029	aaj karachi max temperature kitna raha	HEADLINE	2	سندھ گنے کی کرشنگ چینی کی تیاری کیلئے ملوں کے بوائلر گرم
+H029	aaj karachi max temperature kitna raha	HEADLINE	3	1000 ڈگری سینٹی گریڈ درجہ حرارت والا سولر اوون تیار
+H029	aaj karachi max temperature kitna raha	HEADLINE	4	پاکستان اسٹیٹ ئل نے موسم سرما کیلئے درمدی ٹینڈر جاری کردیا
+H029	aaj karachi max temperature kitna raha	HEADLINE	5	کراچی گرمی کی شدت بڑھتے ہی گولا گنڈا کی بکری بڑھ گئی
+H029	aaj karachi max temperature kitna raha	FULL_CONTENT	1	دبئی ٹیسٹ پاکستان کے کھانے کے وقفے تک 1وکٹ پر 116رنز
+H029	aaj karachi max temperature kitna raha	FULL_CONTENT	2	لاہور قلندرز کا پشاور زلمی کو جیت کیلئے 79 رنز کا ہدف
+H029	aaj karachi max temperature kitna raha	FULL_CONTENT	3	پی ایس ایل کراچی نے لاہور کو شکست دیدی
+H029	aaj karachi max temperature kitna raha	FULL_CONTENT	4	پاکستان کپ فائنل کے پی کے کا پنجاب کو 312رنز کا ہدف
+H029	aaj karachi max temperature kitna raha	FULL_CONTENT	5	لاہور قلندرز کا کراچی کنگز کو جیت کیلئے 134 رنز کا ہدف
+H030	pakistan agla cricket match kis mulk se	HEADLINE	1	انڈر 19 کرکٹ پاکستان نے وارم اپ میچ میں پاپوا نیو گنی کوہرادیا
+H030	pakistan agla cricket match kis mulk se	HEADLINE	2	پاکستان کرکٹ میں میچ فکسنگ کی گونج
+H030	pakistan agla cricket match kis mulk se	HEADLINE	3	ٹی ٹوئنٹی کرکٹ میں پاکستان کی فتوحات کا سلسلہ ختم
+H030	pakistan agla cricket match kis mulk se	HEADLINE	4	پاکستان اور کرکٹ سٹریلیا الیون کے درمیان پریکٹس میچ ڈرا
+H030	pakistan agla cricket match kis mulk se	HEADLINE	5	ویمنز کرکٹ ورلڈ کپ وارم اپ میچ میں پاکستان نے اڑیسا الیون کا ہرادیا
+H030	pakistan agla cricket match kis mulk se	FULL_CONTENT	1	پہلاٹی ٹوئنٹی پاکستان کا ٹاس جیت کر بیٹنگ کا فیصلہ
+H030	pakistan agla cricket match kis mulk se	FULL_CONTENT	2	پاکستان ہو یا کوئی اور ٹیم سب کو ایک نظر سے دیکھتے ہیں ویرات کوہلی
+H030	pakistan agla cricket match kis mulk se	FULL_CONTENT	3	انڈر 19 کرکٹ پاکستان نے وارم اپ میچ میں پاپوا نیو گنی کوہرادیا
+H030	pakistan agla cricket match kis mulk se	FULL_CONTENT	4	کولمبو میں پاکستان اور سری لنکا کے درمیان دوسرا ٹیسٹ میچ جاری
+H030	pakistan agla cricket match kis mulk se	FULL_CONTENT	5	پاکستان بمقابلہ نیوزی لینڈ ٹی ٹوینٹی میچوں میں پاکستان کاپلہ بھاری
+H031	petrol ki mojooda qeemat per litre pakistan	HEADLINE	1	اسلام اباد لاہور فیصل اباد اور پنجاب کے کئی شہروں میں پیٹرول نایاب
+H031	petrol ki mojooda qeemat per litre pakistan	HEADLINE	2	پشاور میں پیٹرول پمپوں پر پیٹرول نایاب
+H031	petrol ki mojooda qeemat per litre pakistan	HEADLINE	3	کراچی بیشتر پمپس پر پیٹرول دستیاب بعض پر ختم
+H031	petrol ki mojooda qeemat per litre pakistan	HEADLINE	4	لاہور کو اج 12 لاکھ لٹر پٹرول فراہم کیا جا رہا ہےپی ایس او
+H031	petrol ki mojooda qeemat per litre pakistan	HEADLINE	5	پشاور سمیت خیبرپختونخوا میں پیٹرول کا بحران بدستور جاری
+H031	petrol ki mojooda qeemat per litre pakistan	FULL_CONTENT	1	ملک بھر کی طرح لاہور میں بھی پیٹرول نایاب ہوگیا
+H031	petrol ki mojooda qeemat per litre pakistan	FULL_CONTENT	2	اسلام باد میں پیٹرول بحران شدت اختیار کرگیا
+H031	petrol ki mojooda qeemat per litre pakistan	FULL_CONTENT	3	یکم اپریل سے پیٹرول 440 اور ڈیزل 625روپے مہنگا کرنے کی تیاری
+H031	petrol ki mojooda qeemat per litre pakistan	FULL_CONTENT	4	پاکستان اسٹیٹ ئل نے موسم سرما کیلئے درمدی ٹینڈر جاری کردیا
+H031	petrol ki mojooda qeemat per litre pakistan	FULL_CONTENT	5	لاہور کو اج 12 لاکھ لٹر پٹرول فراہم کیا جا رہا ہےپی ایس او
+H032	aaj stock exchange kitne points par	HEADLINE	1	اسٹاک مارکیٹ سرمایہ کار محتاط انڈیکس 367 پوائنٹس گرا
+H032	aaj stock exchange kitne points par	HEADLINE	2	سٹاک ایکسچینج میں سرمایہ کاری کا نیا ریکارڈ بن گیا 100 انڈیکس 42133 پوائنٹس پر بند
+H032	aaj stock exchange kitne points par	HEADLINE	3	اسٹاک ایکسچینج انڈیکس میں 965 پوائنٹ کا اضافہ
+H032	aaj stock exchange kitne points par	HEADLINE	4	اسٹاک ایکسچینج47ہزار پوائنٹس کی سطح عبور
+H032	aaj stock exchange kitne points par	HEADLINE	5	سرمایہ کاروں کا اعتماد بحال اسٹاک ایکسچینج میں زبردست تیزی
+H032	aaj stock exchange kitne points par	FULL_CONTENT	1	پاکستان سٹاک ایکسچینج 37426پوائنٹس کی نئی بلند سطح پر بند
+H032	aaj stock exchange kitne points par	FULL_CONTENT	2	پاکستان اسٹاک ایکسچینج میں کاروباری ہفتہ بتیس ہزار 669 پوائنٹس پر بند
+H032	aaj stock exchange kitne points par	FULL_CONTENT	3	اسٹاک ایکسچینج میں مثبت رجحان جاری
+H032	aaj stock exchange kitne points par	FULL_CONTENT	4	پاکستان اسٹاک ایکسچینج 155 پوائنٹس کے اضافے کے ساتھ بند
+H032	aaj stock exchange kitne points par	FULL_CONTENT	5	پی ایس ایکس 76 پوائنٹس کے اضافے پر بند
+H033	ڈیزل ریٹ	HEADLINE	1	دی اکاونٹینٹ ائی اورچھاگئی
+H033	ڈیزل ریٹ	HEADLINE	2	ہیپی برتھ ڈے ایش
+H033	ڈیزل ریٹ	HEADLINE	3	کرے کوئی بھرے کوئی
+H033	ڈیزل ریٹ	HEADLINE	4	یو ایس اوپن
+H033	ڈیزل ریٹ	HEADLINE	5	عاشق مزاج حسینائیں
+H033	ڈیزل ریٹ	FULL_CONTENT	1	نوواک جوکووچ پانچویں مرتبہ ومبلڈن چیمپئن بن گئے
+H033	ڈیزل ریٹ	FULL_CONTENT	2	یوم ازادی پر نیا ملی نغمہ جاری کردیا گیا
+H033	ڈیزل ریٹ	FULL_CONTENT	3	شہنشاہ غزل مہدی حسن کو مداحوں سے بچھڑے چار برس بیت گئے
+H033	ڈیزل ریٹ	FULL_CONTENT	4	نیہا شرما نظر ئیں گی ہیرا پھیری تھری میں جان ابراہم کے ساتھ
+H033	ڈیزل ریٹ	FULL_CONTENT	5	مہر النساء وی لب یو توقعات پر پورا اترنے میں ناکام
+H034	سونا ریٹ	HEADLINE	1	ہارر اسٹوری
+H034	سونا ریٹ	HEADLINE	2	ڈارک اسکائز
+H034	سونا ریٹ	HEADLINE	3	یو ایس اوپن
+H034	سونا ریٹ	HEADLINE	4	گینگ گھوسٹس ریویو
+H034	سونا ریٹ	HEADLINE	5	نوٹنکی سالا
+H034	سونا ریٹ	FULL_CONTENT	1	امرتسراداکارہ ودیابالن کی گولڈن ٹیمپل میں حاضری
+H034	سونا ریٹ	FULL_CONTENT	2	نوواک جوکووچ پانچویں مرتبہ ومبلڈن چیمپئن بن گئے
+H034	سونا ریٹ	FULL_CONTENT	3	کلرکہار دل موہ لینے والے نظاروں کا حامل تفریحی مقام
+H034	سونا ریٹ	FULL_CONTENT	4	نیویارک 1109قیراط کا سفید ہیرا نیلامی کیلئےپیش
+H034	سونا ریٹ	FULL_CONTENT	5	تیسری تھل ڈیزرٹ جیپ ریلی کے دوسرے مرحلے کا اج سے غاز
+H035	football score	HEADLINE	1	ایف اے کپ فٹبال ٹوٹنہم اور روشڈیل کا میچ دو دو گولز سے برابر
+H035	football score	HEADLINE	2	فٹ بال ورلڈکپ2014کامیسکوٹ سامنے گیا
+H035	football score	HEADLINE	3	فٹبال میں میسی اور رونالڈو کی بالادستی کا خاتمہ
+H035	football score	HEADLINE	4	سٹار فٹبالر میسی دلہا بنیں گے
+H035	football score	HEADLINE	5	لیاری میں فٹبال شائقین پر حملہ شرمناک ہے اے ایف سی
+H035	football score	FULL_CONTENT	1	چیلسی ایک بار پھر ایف اے کپ فٹبال کی فاتح بن گئی
+H035	football score	FULL_CONTENT	2	مانچسٹر یونائیٹڈ نے ایف اے کپ فٹ بال 2016ءکا ٹائٹل اپنے نام کر لیا
+H035	football score	FULL_CONTENT	3	ایف اے کپ فٹبال مانچسٹر سٹی نے برنلے کو شکست دیدی
+H035	football score	FULL_CONTENT	4	رونالڈو کا نئے کلب یوونٹس کی جانب سے پہلا گول
+H035	football score	FULL_CONTENT	5	لیور پول چوتھے درجے کی فٹ بال ٹیم سے شکست کھا گئی
+H036	diesel rate	HEADLINE	1	پٹرولیم مصنوعات کی قیمتوں میں 65روپے فی لیٹر تک کمی کا امکان
+H036	diesel rate	HEADLINE	2	پٹرول کی قیمت میں48پیسے فی لٹر کمی کی سفارش
+H036	diesel rate	HEADLINE	3	پٹرولیم مصنوعات کی قیمتوں میں 15روپے فی لٹر تک کمی کا امکان
+H036	diesel rate	HEADLINE	4	پیٹرول کی قیمت میں ایک روپیہ 48پیسے فی لیٹر اضافے کی سفارش
+H036	diesel rate	HEADLINE	5	پٹرول کل سے 6روپے82پیسے فی لیٹر مہنگا ہو جائے گا
+H036	diesel rate	FULL_CONTENT	1	پٹرول 465سستاڈیزل 339مہنگاسی این جی قیمتوں میں کمی اوگرا
+H036	diesel rate	FULL_CONTENT	2	سے پیٹرول روپے اور ڈیزل روپے 16 پیسے فی لیٹر مہنگا
+H036	diesel rate	FULL_CONTENT	3	پٹرولیم مصنوعات کی قیمتوں میں معمولی کمی کے بعد فروخت شروع
+H036	diesel rate	FULL_CONTENT	4	پٹرول کی قیمت میں 4روپے 71پیسے فی لیٹرکمیاوگرا نوٹیفکیشن جاری
+H036	diesel rate	FULL_CONTENT	5	پٹرولیم مصنوعات کی قیمتوں میں ردوبدل پٹرول 48 پیسے سستا
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ	HEADLINE	1	ملک بھر میں بجلی کے نرخ میں اضافہ
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ	HEADLINE	2	بجلی وگیس کے نرخ ہمسایہ ممالک کے برابر کرنے کا مطالبہ
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ	HEADLINE	3	بجلی مہنگی ہونے کے بعد سیمنٹ کی قیمتوں اضافے کا خدشہ
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ	HEADLINE	4	بجلی کے نرخوں میں اضافے کا امکان
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ	HEADLINE	5	بجلی کی قیمت میں مزید اضافہ کردیا گیا
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ	FULL_CONTENT	1	بجلی مہنگی ہونے کے بعد سیمنٹ کی قیمتوں اضافے کا خدشہ
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ	FULL_CONTENT	2	حکومت کی منظوری نہ بھی ملے ٹے کی قیمت میں اضافہ ہوگا فلاور ملز
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ	FULL_CONTENT	3	بجلی گھروں کو خام تیل کی فراہمی میں سالانہ 10 ارب روپے کی چوری
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ	FULL_CONTENT	4	مئی کیلئے بجلی کے بلوں میں ڈیڑھ روپے فی یونٹ کا اضافہ
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ	FULL_CONTENT	5	اسلام اباد چیمبر اف کامرس نے بجٹ کو عوام دوست قرار دیدیا
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر	HEADLINE	1	کرکٹرز میں ٹی ٹوینٹی ورلڈ کپ جیتنے کا جذبہ ابھارنے کیلئے نئی حکمت عملی
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر	HEADLINE	2	کرکٹ ورلڈکپ وارم اپ میچز کا سے غاز
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر	HEADLINE	3	ویسٹ انڈیز کے خلاف میچ سے قبل قومی ٹیم کو کرکٹرز کے مشورے
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر	HEADLINE	4	گجرات میں قومی کرکٹ ٹیم کے کھلاڑیوں کا دوستانہ میچ ہلڑ بازی کا شکار
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر	HEADLINE	5	قومی کرکٹرز کی رہنمائی کیلئے لاک ڈان کے دوران لائن سیشنز کا سلسلہ مکمل
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر	FULL_CONTENT	1	قومی کرکٹ ٹیم نے ہرارے میں پریکٹس کا غاز کردیا
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر	FULL_CONTENT	2	کرکٹ کےفروغ کیلئے تمام فارمیٹ کے میچز بہت ضروری ہیں انضمام الحق
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر	FULL_CONTENT	3	قومی ٹیم کی ناقص کارکردگیپی سی بی نے گول میز کانفرنس طلب کرلی
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر	FULL_CONTENT	4	برمنگھم قومی کرکٹ ٹیم کا اوٹ ڈور پریکٹس سیشن
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر	FULL_CONTENT	5	ورلڈکپ کیلئے قومی کرکٹرز نے فٹنس پر توجہ مرکوز کرلی
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza	HEADLINE	1	کراچی سے خیبر تک پیٹرول کا مصنوعی بحران جاری
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza	HEADLINE	2	پٹرولیم مصنوعات کی قیمتوں میں 15روپے فی لٹر تک کمی کا امکان
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza	HEADLINE	3	پٹرول سستا ہونے کے با وجود ٹیٹرا ملک کی قیمت میں اضافہ
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza	HEADLINE	4	پیٹرول کی قیمتیں بڑھاکر حکومت کا عوام کو عید پر مہنگائی کا تحفہ
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza	HEADLINE	5	ملک میں پیٹرول اور ڈیزل کی کوئی قلت نہیں
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza	FULL_CONTENT	1	نئے سال سےپیٹرول روپے 17 پیسے مہنگا ہونے کا امکان
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza	FULL_CONTENT	2	پٹرول مہنگا دیگر مصنوعات سستی ہونے کا امکان
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza	FULL_CONTENT	3	یکم دسمبر سے پٹرول 9روپے 65پیسے فی لٹر سستا ہونیکا امکان
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza	FULL_CONTENT	4	پٹرول 10روپے ڈیزل ساڑھے 8روپے فی لٹر سستا کرنے کی سمری ارسال
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza	FULL_CONTENT	5	پٹرول کی قیمت برقرار رہے گی اسحاق ڈار
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar	HEADLINE	1	ٹی ٹوئنٹی ٹیم میں شاہد افریدی کی قیادت میں کھیلنے پر کوئی اعتراض نہیں اظہر علی
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar	HEADLINE	2	ٹیم میں ہر کھلاڑی کا کردار اہم ہے ون ڈے کپتان اظہر علی
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar	HEADLINE	3	قومی ٹیم میں گروپ بندی یا انجری کا کمال محمد حفیظ اور وہاب ریاض نیوزی لینڈ کیخلاف میچ سے باہر
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar	HEADLINE	4	قومی ٹیم میں کئی میچ ونر کھلاڑی ہیںاظہر علی
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar	HEADLINE	5	بھارت سے میچ وسیم اکرم کے سرفراز کو مشورے
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar	FULL_CONTENT	1	پاکستان کا بھارت کیخلاف میچ میں فہیم اشرف کو کھلانے کا فیصلہ
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar	FULL_CONTENT	2	شاہد افریدی لنکا پریمیئر لیگ کی ٹیم گال گلیڈی ایٹرز میں شامل
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar	FULL_CONTENT	3	بشیر بھولا نے رستم زماں گاما پہلوان کا ٹائٹل جیت لیا
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar	FULL_CONTENT	4	سٹریلیا کیخلاف ون ڈے سیریز کیلئے قومی ٹیم کا اعلان
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar	FULL_CONTENT	5	ہم نے پوری کوشش کی مگر کامیاب نہ ہوسکےشاہد افریدی

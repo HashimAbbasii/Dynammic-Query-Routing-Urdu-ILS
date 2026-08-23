@@ -1,0 +1,62 @@
+JOB 1 — LABEL 40 QUERIES SHORT or LONG
+
+You are labeling Urdu / Roman Urdu news-search queries.
+
+Rule:
+SHORT or LONG is NOT "is the sentence short or long?"
+It is: which library ROOM would help the user more?
+
+SHORT = headlines only are enough. The user wants ONE fact (price, score, date, who won, temperature). A good headline could answer it.
+LONG  = they need the full article. The user wants why / how / damage / effects / comparison / review. A headline like "team lost" is not enough.
+
+Do NOT count words. Do NOT use 150 characters. Do NOT use the 6-word rule.
+If a 3-word query asks WHY, it is LONG.
+If a 7-word query asks today's temperature, it is SHORT.
+If unsure, write UNSURE and a one-line reason.
+
+Output ONLY 40 lines in this exact format. No extra commentary:
+H001	LONG
+H002	LONG
+...
+
+Queries:
+H001	پیٹرول کیوں مہنگا
+H002	شکست کی وجہ
+H003	فلم کیسے ڈوبی
+H004	سیلاب کا نقصان
+H005	ٹیم ہار کا تجزیہ
+H006	مہنگائی کے اثرات
+H007	فلم فیل کی کہانی
+H008	روپے گراوٹ کے نتائج
+H009	petrol kyun mehnga
+H010	shikast ki waja
+H011	film kaise doobi
+H012	flood ka nuksan
+H013	team haar ka tajzia
+H014	mehngai ke asar
+H015	film fail ki kahani
+H016	rupay girawut ke nataij
+H017	آج لاہور کا درجہ حرارت کیا ہے
+H018	سونے کی فی تولہ قیمت آج کتنی ہے
+H019	ایشیا کپ فائنل کب کھیلا جائے گا
+H020	نیا آئی فون پاکستان میں کب آیا
+H021	آج کراچی میں زیادہ سے زیادہ حرارت
+H022	پاکستان کا اگلا کرکٹ میچ کس ملک سے
+H023	پیٹرول کی موجودہ قیمت فی لیٹر پاکستان
+H024	آج سٹاک ایکسچینج کتنے پوائنٹ پر
+H025	aaj lahore ka temperature kya hai
+H026	sone ki tola qeemat aaj kitni hai
+H027	Asia cup final kab khela jayega
+H028	naya iphone pakistan mein kab aaya
+H029	aaj karachi max temperature kitna raha
+H030	pakistan agla cricket match kis mulk se
+H031	petrol ki mojooda qeemat per litre pakistan
+H032	aaj stock exchange kitne points par
+H033	ڈیزل ریٹ
+H034	سونا ریٹ
+H035	football score
+H036	diesel rate
+H037	ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ
+H038	قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر
+H039	petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza
+H040	qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar
