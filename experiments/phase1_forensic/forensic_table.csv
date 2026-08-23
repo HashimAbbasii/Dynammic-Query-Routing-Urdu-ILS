@@ -1,0 +1,41 @@
+query_id,query,gold_protocol,svm,wordcount,headline_p5,full_p5,headline_ndcg5,full_ndcg5,best_actual,svm_p5,wc_p5,svm_vs_gold,svm_vs_oracle,wc_vs_oracle,gold_vs_oracle,primary,v3_cue_hit,trap_type
+H001,"پیٹرول کیوں مہنگا",LONG,LONG,SHORT,0.5,0.3,1.0,1.0,HEADLINE,0.3,0.5,agree,disagree,agree,disagree,E_gold_vs_oracle,1,SHORT_WORDS_LONG_NEED
+H002,"شکست کی وجہ",LONG,LONG,SHORT,0.8,0.0,0.865,0.0,HEADLINE,0.0,0.8,agree,disagree,agree,disagree,E_gold_vs_oracle,1,SHORT_WORDS_LONG_NEED
+H003,"فلم کیسے ڈوبی",LONG,LONG,SHORT,0.0,0.1,0.0,0.4307,FULL,0.1,0.0,agree,agree,disagree,agree,C_gold_correct_retrieval_poor,1,SHORT_WORDS_LONG_NEED
+H004,"سیلاب کا نقصان",LONG,LONG,SHORT,0.4,0.6,0.9558,0.9118,FULL,0.6,0.4,agree,agree,disagree,agree,OK_svm_matches_oracle,1,SHORT_WORDS_LONG_NEED
+H005,"ٹیم ہار کا تجزیہ",LONG,SHORT,SHORT,0.5,0.1,0.7608,0.5,HEADLINE,0.5,0.5,disagree,agree,agree,disagree,E_gold_vs_oracle,0,SHORT_WORDS_LONG_NEED
+H006,"مہنگائی کے اثرات",LONG,SHORT,SHORT,0.8,0.7,1.0,0.7811,HEADLINE,0.8,0.8,disagree,agree,agree,disagree,E_gold_vs_oracle,0,SHORT_WORDS_LONG_NEED
+H007,"فلم فیل کی کہانی",LONG,SHORT,SHORT,0.0,0.0,0.0,0.0,TIE,0.0,0.0,disagree,tie,tie,tie,D_indexes_tied_p5,0,SHORT_WORDS_LONG_NEED
+H008,"روپے گراوٹ کے نتائج",LONG,SHORT,SHORT,0.5,0.4,0.8577,1.0,HEADLINE,0.5,0.5,disagree,agree,agree,disagree,E_gold_vs_oracle,0,SHORT_WORDS_LONG_NEED
+H009,"petrol kyun mehnga",LONG,LONG,SHORT,0.3,0.3,0.8529,0.6183,HEADLINE,0.3,0.3,agree,disagree,agree,disagree,E_gold_vs_oracle,1,SHORT_WORDS_LONG_NEED
+H010,"shikast ki waja",LONG,LONG,SHORT,0.6,0.5,1.0,0.7025,HEADLINE,0.5,0.6,agree,disagree,agree,disagree,E_gold_vs_oracle,1,SHORT_WORDS_LONG_NEED
+H011,"film kaise doobi",LONG,LONG,SHORT,0.0,0.0,0.0,0.0,TIE,0.0,0.0,agree,tie,tie,tie,C_gold_correct_retrieval_poor,1,SHORT_WORDS_LONG_NEED
+H012,"flood ka nuksan",LONG,LONG,SHORT,0.4,0.5,0.9829,0.6903,FULL,0.5,0.4,agree,agree,disagree,agree,OK_svm_matches_oracle,1,SHORT_WORDS_LONG_NEED
+H013,"team haar ka tajzia",LONG,SHORT,SHORT,0.1,0.1,1.0,0.6309,HEADLINE,0.1,0.1,disagree,agree,agree,disagree,E_gold_vs_oracle,0,SHORT_WORDS_LONG_NEED
+H014,"mehngai ke asar",LONG,SHORT,SHORT,0.6,0.5,0.8154,1.0,HEADLINE,0.6,0.6,disagree,agree,agree,disagree,E_gold_vs_oracle,0,SHORT_WORDS_LONG_NEED
+H015,"film fail ki kahani",LONG,SHORT,SHORT,0.0,0.0,0.0,0.0,TIE,0.0,0.0,disagree,tie,tie,tie,D_indexes_tied_p5,0,SHORT_WORDS_LONG_NEED
+H016,"rupay girawut ke nataij",LONG,SHORT,SHORT,0.0,0.0,0.0,0.0,TIE,0.0,0.0,disagree,tie,tie,tie,D_indexes_tied_p5,0,SHORT_WORDS_LONG_NEED
+H017,"آج لاہور کا درجہ حرارت کیا ہے",SHORT,SHORT,LONG,0.1,0.2,0.5,1.0,FULL,0.1,0.2,agree,disagree,agree,disagree,E_gold_vs_oracle,1,LONG_WORDS_SHORT_NEED
+H018,"سونے کی فی تولہ قیمت آج کتنی ہے",SHORT,SHORT,LONG,1.0,1.0,1.0,1.0,TIE,1.0,1.0,agree,tie,tie,tie,D_indexes_tied_p5,1,LONG_WORDS_SHORT_NEED
+H019,"ایشیا کپ فائنل کب کھیلا جائے گا",SHORT,SHORT,LONG,0.4,0.7,0.7606,0.7169,FULL,0.4,0.7,agree,disagree,agree,disagree,E_gold_vs_oracle,1,LONG_WORDS_SHORT_NEED
+H020,"نیا آئی فون پاکستان میں کب آیا",SHORT,SHORT,LONG,0.0,0.0,0.0,0.0,TIE,0.0,0.0,agree,tie,tie,tie,C_gold_correct_retrieval_poor,1,LONG_WORDS_SHORT_NEED
+H021,"آج کراچی میں زیادہ سے زیادہ حرارت",SHORT,LONG,LONG,0.2,0.2,0.9197,0.8503,HEADLINE,0.2,0.2,disagree,disagree,disagree,agree,A_svm_misses_oracle,0,LONG_WORDS_SHORT_NEED
+H022,"پاکستان کا اگلا کرکٹ میچ کس ملک سے",SHORT,LONG,LONG,0.8,0.7,0.9836,0.9824,HEADLINE,0.7,0.7,disagree,disagree,disagree,agree,A_svm_misses_oracle,0,LONG_WORDS_SHORT_NEED
+H023,"پیٹرول کی موجودہ قیمت فی لیٹر پاکستان",SHORT,LONG,LONG,0.5,0.6,1.0,0.8154,FULL,0.6,0.6,disagree,agree,agree,disagree,E_gold_vs_oracle,0,LONG_WORDS_SHORT_NEED
+H024,"آج سٹاک ایکسچینج کتنے پوائنٹ پر",SHORT,LONG,LONG,0.5,0.5,0.7608,0.7361,HEADLINE,0.5,0.5,disagree,disagree,disagree,agree,A_svm_misses_oracle,0,LONG_WORDS_SHORT_NEED
+H025,"aaj lahore ka temperature kya hai",SHORT,SHORT,LONG,0.2,0.3,0.5706,1.0,FULL,0.2,0.3,agree,disagree,agree,disagree,E_gold_vs_oracle,1,LONG_WORDS_SHORT_NEED
+H026,"sone ki tola qeemat aaj kitni hai",SHORT,SHORT,LONG,0.0,0.0,0.0,0.0,TIE,0.0,0.0,agree,tie,tie,tie,C_gold_correct_retrieval_poor,1,LONG_WORDS_SHORT_NEED
+H027,"Asia cup final kab khela jayega",SHORT,SHORT,LONG,0.3,0.7,0.6797,0.7998,FULL,0.3,0.7,agree,disagree,agree,disagree,E_gold_vs_oracle,1,LONG_WORDS_SHORT_NEED
+H028,"naya iphone pakistan mein kab aaya",SHORT,SHORT,LONG,0.2,0.0,1.0,0.0,HEADLINE,0.2,0.0,agree,agree,disagree,agree,C_gold_correct_retrieval_poor,1,LONG_WORDS_SHORT_NEED
+H029,"aaj karachi max temperature kitna raha",SHORT,LONG,LONG,0.2,0.0,0.8503,0.0,HEADLINE,0.0,0.0,disagree,disagree,disagree,agree,A_svm_misses_oracle,0,LONG_WORDS_SHORT_NEED
+H030,"pakistan agla cricket match kis mulk se",SHORT,LONG,LONG,0.5,0.6,0.7361,0.7136,FULL,0.6,0.6,disagree,agree,agree,disagree,E_gold_vs_oracle,0,LONG_WORDS_SHORT_NEED
+H031,"petrol ki mojooda qeemat per litre pakistan",SHORT,LONG,LONG,0.5,0.5,1.0,0.8111,HEADLINE,0.5,0.5,disagree,disagree,disagree,agree,A_svm_misses_oracle,0,LONG_WORDS_SHORT_NEED
+H032,"aaj stock exchange kitne points par",SHORT,LONG,LONG,0.9,0.9,1.0,0.9756,HEADLINE,0.9,0.9,disagree,disagree,disagree,agree,A_svm_misses_oracle,0,LONG_WORDS_SHORT_NEED
+H033,"ڈیزل ریٹ",SHORT,SHORT,SHORT,0.0,0.0,0.0,0.0,TIE,0.0,0.0,agree,tie,tie,tie,C_gold_correct_retrieval_poor,0,CONTROL_EASY_SHORT
+H034,"سونا ریٹ",SHORT,SHORT,SHORT,0.0,0.0,0.0,0.0,TIE,0.0,0.0,agree,tie,tie,tie,C_gold_correct_retrieval_poor,0,CONTROL_EASY_SHORT
+H035,"football score",SHORT,SHORT,SHORT,0.2,0.5,1.0,1.0,FULL,0.2,0.2,agree,disagree,disagree,disagree,E_gold_vs_oracle,0,CONTROL_EASY_SHORT
+H036,"diesel rate",SHORT,SHORT,SHORT,0.5,0.7,1.0,1.0,FULL,0.5,0.5,agree,disagree,disagree,disagree,E_gold_vs_oracle,0,CONTROL_EASY_SHORT
+H037,"ملک میں پٹرول ڈیزل اور بجلی کے نرخ بڑھنے سے ٹرانسپورٹ اور گھریلو بجٹ پر پڑنے والے بوجھ کا تفصیلی جائزہ",LONG,LONG,LONG,0.5,0.5,1.0,0.7975,HEADLINE,0.5,0.5,agree,disagree,disagree,disagree,E_gold_vs_oracle,1,CONTROL_EASY_LONG
+H038,"قومی کرکٹ ٹیم کی حالیہ شکست کے بعد سلیکٹرز کی حکمت عملی اور کھلاڑیوں کی فارم پر ایک گہری نظر",LONG,LONG,LONG,0.2,0.5,0.9197,0.7608,FULL,0.5,0.5,agree,agree,agree,agree,OK_svm_matches_oracle,0,CONTROL_EASY_LONG
+H039,"petrol diesel aur bijli ke rates barhne se transport aur gharailu budget par parne wale bojh ka tafseeli jaiza",LONG,LONG,LONG,0.4,0.2,0.7164,1.0,HEADLINE,0.2,0.2,agree,disagree,disagree,disagree,E_gold_vs_oracle,1,CONTROL_EASY_LONG
+H040,"qaumi cricket team ki haaliya shikast ke baad selectors ki hikmat e amli aur players ki form par ek gehri nazar",LONG,LONG,LONG,0.4,0.3,0.9829,0.8529,HEADLINE,0.3,0.3,agree,disagree,disagree,disagree,E_gold_vs_oracle,0,CONTROL_EASY_LONG
