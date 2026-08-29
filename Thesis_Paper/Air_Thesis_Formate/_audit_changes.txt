@@ -1,0 +1,43 @@
+- Safety copy: Hashim_Shazad_243259_AU_Thesis_ULTRA.pre_consistency_audit.bak.docx
+- MOVED §§5.18–5.24 from TOC region (old paras 153-173) to immediately before Chapter 6 body
+- Cleaned TOC-field prefixes from §§5.18–5.24 headings and body
+- Renamed official result tables Table 3–8 → Table 22–27 to avoid clashing with existing tables
+- M0 block paragraphs processed: 21
+- Figure 1 caption: labeled historical Layer A, not M0
+- Figure 4 caption: labeled Layer A, not M0
+- Figure 15 caption: SVM diagnostic, not official M0 / not unseen IR usefulness
+- Figure 18 caption: Layer A only, not official M0
+- Table 16 caption: development-only / not M0
+- §4.11 heading: labeled Layer A SVM
+- §5.2 heading: Layer A development experiment
+- §5.10 heading: Layer A, not official M0
+- §5.13 heading: SVM classification Layer A, not official IR
+- §5.17 heading: Layer A MiniLM, not official M0
+- §3.6 heading: Layer A MiniLM cosine, not official BM25
+- Ch.3 opening: labeled Layer A; official M0 is BM25, not cosine MiniLM
+- Ch.4 opening: Layer A history vs official M0
+- §2.8: official contribution is M0, not two-room SVM as the IR headline
+- §2.6: thesis does not replace ULTRA only with dual-index SVM; official path is M0 BM25
+- §2.7: official gap-fill is M0, not SVM-plus-lights as the IR system
+- §4.11 body: Phase 3B is SVM freeze, not M0 IR freeze
+- §4.2: MiniLM two-room backend labeled Layer A, not official M0
+- §3.6 body: cosine MiniLM labeled Layer A
+- §3.8: complexity analysis labeled Layer A, not official M0 BM25
+- §5.2 remaining P@15 paragraph: labeled development-only / not M0
+- §5.10 body: Layer A, not official M0
+- §5.11: implications labeled Layer A; official IR is M0
+- §6.2: lights listed as Layer A, not official M0
+- §6.6: official system is M0 BM25, not MiniLM dual-index
+- §6.5 closing: live deployment points to M0, not MiniLM
+- Added §4.13 official M0 evaluation protocol pointer (no new results)
+- Converted 20 figure captions and 21 table captions to Word SEQ fields
+- Replaced typed Table of Contents, List of Figures, and List of Tables with Word TOC/SEQ fields; set updateFields on open
+- Saved Hashim_Shazad_243259_AU_Thesis_ULTRA.docx
+- Wiped TOC hyperlink/field leftovers from 21 M0 paragraphs (434-454)
+- Restored clean Heading 2 / Caption / Normal styles for §§5.18–5.24
+- ORDER 5.17=429 5.18=434 Ch6=455 OK=True
+- TOC_MASH_COUNT=0
+- Saved Hashim_Shazad_243259_AU_Thesis_ULTRA.docx
+- Forced Heading 2 on 7 official M0 section headings so TOC can pick up 5.18-5.24
+- Saved live docx
+- Ch.1 contributions prose: official system is M0; SVM rooms/lights are Layer A

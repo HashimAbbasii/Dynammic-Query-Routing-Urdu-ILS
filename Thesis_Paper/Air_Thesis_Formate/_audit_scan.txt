@@ -1,0 +1,86 @@
+HEADINGS
+[81|Heading 1] Chapter 1: Introduction
+[129|Heading 1] Chapter 2: Literature Survey
+[183|Heading 1] Chapter 3: Mathematical Formulation
+[253|Heading 1] Chapter 4: Methods Developed
+[313|Heading 2] 4.11 Independent Frozen Evaluation Protocol (Phases 3A–3B, Layer A SVM)
+[315|Heading 3] 4.11.1 Phase 3A — Canonical feature extractor verification
+[317|Heading 3] 4.11.2 Phase 3B — Frozen 60-query evaluation set
+[319|Heading 2] 4.12 Human Retrieval Validation (Phase 2.5)
+[321|Heading 2] 4.13 Official M0 evaluation protocol (Phases 8–12)
+[323|Heading 1] Chapter 5: Results and Discussion
+[325|Heading 2] 5.1 Routing Accuracy: Static vs. Dynamic
+[336|Heading 2] 5.2 Retrieval Precision (P@15, Layer A development experiment)
+[403|Heading 2] 5.10 Strengths and Weaknesses of Layer A (SVM / MiniLM)
+[414|Heading 2] 5.13 Frozen Phase 3B SVM classification results (Layer A)
+[429|Heading 2] 5.17 Frozen held-out dual-index P@5 (400 judgments, Layer A MiniLM; not official M0)
+[434|Heading 2] 5.18 Official frozen retrieval system (M0)
+[437|Heading 2] 5.19 Phase 2 development/validation known-item (n = 78)
+[440|Heading 2] 5.20 Phase 11 ablation: M0 remains official
+[442|Heading 2] 5.21 Phase 12 new known-item evaluation (K001–K040)
+[445|Heading 2] 5.22 Phase 12 naturalistic human evaluation (U001–U040)
+[449|Heading 2] 5.23 Final comparison of evaluation settings
+[451|Heading 2] 5.24 Discussion of the official IR results
+[455|Heading 1] Chapter 6: Conclusions and Recommendations
+[456|Heading 2] 6.1 Conclusions
+[460|Heading 2] 6.2 Summary of Contributions
+
+FLAGS 6
+[69|Normal] average the three :: Urdu information retrieval is difficult because users may type native Perso-Arabic script, informal Roman Urdu, or mixed forms, while many systems still apply o
+[324|Normal] average the three :: This chapter contains two layers that must not be mixed. Sections 5.1–5.17 report historical SVM SHORT/LONG routing and MiniLM dual-index pilots (Layer A). Thos
+[439|Normal] 87.18 as unseen :: The frozen ULTRA system achieved an ExactSource Hit@5 of 87.18% (68/78) on the Phase 2 development/validation known-item evaluation set. This result is genuine 
+[450|Caption] average the three :: Table 1. Do not average rows. Phase 2 n=78 known-item ExactSource Hit@5 = 68/78 = 87.18% (development/validation). Phase 12 K n=40 known-item ExactSource Hit@5 
+[458|Normal] average the three :: The frozen M0 system achieved strong performance on the development/validation known-item evaluation (68/78 = 87.18% ExactSource Hit@5). However, evaluation on 
+[482|Normal] average the three :: Keep ExactSource Hit@5 and human Success@5 separate. Do not average 87.18%, 67.50%, and 57.50%. Layer A SVM classification (86/84) is not official M0 retrieval 
+
+CAPTIONS 50
+Table 1. Comparative summary of retrieval/routing paradigms across cost and capability dimensions.
+Table 1. Comparative summary of Urdu and multilingual IR-relevant datasets.
+Table 1. Comparative gap analysis of related work in Urdu IR and query routing.
+Table 1. Eight-dimensional query feature vector.
+Algorithm 3.1. Dynamic Query Routing (end-to-end).
+Table 1. Computational complexity of each pipeline stage.
+Table 1. Summary of mathematical design decisions and alternatives considered.
+Figure 1. Historical Layer A architecture: Roman Urdu dictionary, SVM room choice (headline vs full article), and HIGH/MEDIUM/LOW lights. No
+Table 1. Software components and technology stack.
+Table 1. Corpus category breakdown (111,860 articles).
+Figure 1. Query length distribution and short/long split (development query set; later expanded to 409 by gap-fill)..
+Table 1. Corpus and query dataset summary.
+Algorithm 4.1. Roman Urdu detection and dictionary transliteration.
+Algorithm 4.2. Eight-feature extraction.
+Table 1. SVM hyperparameter configuration and rationale.
+Table 1. Confidence-based three-tier routing strategy.
+Table 1. Baseline and comparison system implementation summary.
+Table 1. Experimental environment summary.
+Table 1. Twelve-stage implementation pipeline.
+Table 1. Routing accuracy: static baseline vs. dynamic classifiers.
+Figure 1. Confusion matrix of the dynamic SVM classifier on the development 74-query test split (39 short + 35 long, 0 misclassifications). 
+Figure 1. Layer A performance comparison: SVM router vs. static and LLM-style baselines (not official M0).
+Table 1. Development-only retrieval precision at rank 15 (P@15). Not official M0.
+Figure 1. Roman Urdu query results: individual per-query P@15 breakdown (8 test queries).
+Table 1. Individual Roman Urdu query P@15 results.
+Table 1. Comparison with LLM-based routing baselines (14-query test set).
+Figure 1. Query routing accuracy across all six compared methods (green = proposed SVM, blue = LLM-style routers, red = failed/static method
+Figure 1. Routing accuracy and per-query latency (log scale): static threshold vs. proposed SVM vs. GPT-4-style routing.
+Figure 1. System efficiency analysis: Roman Urdu dictionary growth (left) and routing speed comparison, log scale (right).
+Figure 1. Permutation feature importance for the dynamic SVM classifier.
+Table 1. Ablation study: accuracy with each feature individually removed.
+Figure 1. Ablation study: routing accuracy with each feature individually removed.
+Table 1. Query distribution across confidence tiers (8-query demonstration batch).
+Figure 1. Development 8-query confidence batch (all HIGH). A later live demo exercises GREEN (one room), YELLOW (both rooms), and RED (expan
+Table 1. Robustness validation summary (12 checks, all passed).
+Figure 1. Cohen's d effect-size analysis per feature.
+Figure 1. Learning curves: training vs. cross-validation accuracy.
+Figure 1. SVM regularization (C) sensitivity analysis: full range including extreme under-regularization (left) and practical operating rang
+Figure 1. Layer A diagnostic: 50 native-Urdu queries, V2 routing accuracy 98.00%. This is SVM classification, not official M0 ExactSource Hi
+Figure 1. ROC curve of the dynamic SVM classifier (AUC = 1.000).
+Figure 1. Consolidated robustness validation report: scorecard and all four supporting analyses.
+Figure 1. Layer A evaluation layers that must not be mixed with official M0: development/CV, frozen Phase 3B SVM (86/84), and frozen traps (
+Figure 1. Held-out trap cue split (n = 40): SVM 18/18 when why/how/fact words fire; 27.27% for both systems otherwise.
+Figure 1. Held-out dual-index graded P@5 (400 judgments): word count 36.50%, always-headline 35.00%, SVM 33.00%.
+Table 1. Phase 2 n=78 ExactSource results (official M0). Evaluation type: known-item, development/validation. M0 ExactSource Hit@5 = 68/78 =
+Table 1. Phase 11 M0–M4 ablation on the same n=78 known-item pool. M0, M1, M2, M3, and M4 all scored 68/78 = 87.18% ExactSource Hit@5. Roman
+Table 1. Phase 12 K ExactSource results, frozen M0, sealed before retrieval. ExactSource Hit@1 = 20/40 = 50.00%; Hit@5 = 27/40 = 67.50% (pri
+Table 1. Phase 12 U human results, frozen M0 Top-5. Primary usefulness metric: Success@5 = 23/40 = 57.50%. Conservative P@5 = 0.2050. nDCG@5
+Table 1. Script-wise U Success@5 (descriptive only). URDU 17/18 = 94.44%; ROMAN 6/18 = 33.33%; MIXED 0/4 = 0%. These findings describe this 
+Table 1. Do not average rows. Phase 2 n=78 known-item ExactSource Hit@5 = 68/78 = 87.18% (development/validation). Phase 12 K n=40 known-ite

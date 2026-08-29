@@ -5,7 +5,7 @@ M.S. Artificial Intelligence, Air University, Islamabad
 Supervisor: Dr. Adnan Aslam  
 2026
 
-**Status:** Submission-ready *scientific content* for the Air University thesis. Paste into `Hashim_Shazad_243259_AU_Thesis_ULTRA.docx` (certificates, TOC fields, and AU front-matter stay in Word). Do not run new experiments. Do not quote Clause-1 PLOS 100% routing or ~90% P@15 as frozen M0 retrieval results.
+**Status:** Scientific content aligned with frozen M0. The live Word file `Hashim_Shazad_243259_AU_Thesis_ULTRA.docx` was updated (Abstract, Ch. 1, Ch. 5 opening, §§5.18–5.24, Ch. 6). Historical SVM/P@15 sections remain labeled Layer A. Update the Word TOC/captions before printing. Do not quote Clause-1 PLOS 100% routing or ~90% P@15 as frozen M0 retrieval results.
 
 **Official frozen retrieval system:** M0 (Unicode script detector; URDU/MIXED → Urdu BM25; ROMAN → Method D romanized-document BM25). Corpus: 111,860 articles. Dictionary: 198 keys.
 
@@ -31,13 +31,11 @@ Layer B (official IR): frozen M0 ExactSource Hit@5 and human Success@5.
 
 ## Abstract
 
-Urdu news search is difficult because users type both Perso-Arabic Urdu and informal Roman Urdu, while many systems still apply one retrieval path to every query. This thesis extends the ULTRA news-retrieval setting with *adaptive dynamic query routing*: a script-aware switch that sends native-script and mixed-script queries to an Urdu BM25 index and Roman queries to a Method D romanized-document BM25 index. The official frozen system is called M0. It was not changed after the freeze, and query-side variants M1–M4 did not improve the primary known-item score.
+Urdu information retrieval is difficult because users may type native Perso-Arabic script, informal Roman Urdu, or mixed forms, while many systems still apply one retrieval path to every query. This thesis proposes adaptive dynamic query routing for the ULTRA news-search setting. The official frozen system, M0, uses a Unicode script detector over a corpus of 111,860 cleaned Urdu news articles: URDU and MIXED queries search an Urdu BM25 index, and ROMAN queries search a Method D romanized-document BM25 index. Query-side variants M1–M4 did not improve the primary known-item score, so M0 was not replaced.
 
-The frozen ULTRA system achieved an ExactSource Hit@5 of **87.18% (68/78)** on the Phase 2 development/validation known-item evaluation set. That figure is genuine for title-derived known-item search on that pool. It is not real-world accuracy, not human usefulness, and not unseen natural-query performance.
+On the Phase 2 development/validation known-item set, ExactSource Hit@5 is **68/78 = 87.18%**. That figure is genuine for title-derived known-item search on that pool; it is not unseen usefulness and not overall system accuracy. Independent Phase 12 evaluation of the same freeze produced two further, separate results: ExactSource Hit@5 = **27/40 = 67.50%** on new known-item queries (K001–K040), and human Success@5 = **23/40 = 57.50%** on naturalistic queries (U001–U040; conservative P@5 = 0.2050, nDCG@5 = 0.6460, MRR = 0.4542). Success@5 is human relevance, not ExactSource Hit@5.
 
-Independent Phase 12 evaluation of the same frozen system produced two further results that must be reported separately. On a new sealed known-item set (K001–K040), ExactSource Hit@5 was **67.50% (27/40)**. On a new sealed naturalistic set (U001–U040), human Success@5 was **57.50% (23/40)**, with conservative P@5 = 0.2050, nDCG@5 = 0.6460, and MRR = 0.4542. Success@5 is a human-relevance metric, not ExactSource Hit@5.
-
-These three numbers must not be averaged. They show strong controlled known-item retrieval, a drop on independently sampled known-item queries, and a further gap on realistic user needs. In the U sample, Urdu-script queries succeeded in 17/18 cases, Roman queries in 6/18, and mixed-script queries in 0/4. The contribution is therefore a frozen, reproducible Urdu IR framework with an explicitly measured Roman/mixed limitation—not a claim of 87% or 80% unseen usefulness.
+These three percentages must not be averaged. They show strong controlled known-item retrieval, lower performance on independently sampled known-item queries, and a further gap on realistic user needs. In the U sample, Urdu-script queries succeeded in 17/18 cases versus 6/18 Roman and 0/4 mixed. The contribution is a frozen, reproducible script-aware retriever with an explicitly measured Roman Urdu limitation—not a claim of 87% real-world accuracy.
 
 ---
 
@@ -404,6 +402,8 @@ Known-item evaluation alone is insufficient for a usefulness claim. Human evalua
 Query distribution matters: a 50/50 Urdu/Roman U design will look worse overall than an Urdu-only test, even if the Urdu component is strong. That is a property of the sample, not a reason to drop Roman queries from the thesis.
 
 ## 5.11 Discussion (scientific story)
+
+The frozen M0 system achieved strong performance on the development/validation known-item evaluation (68/78 = 87.18% ExactSource Hit@5). However, evaluation on newly constructed queries produced lower performance: 67.50% ExactSource Hit@5 on new known-item queries and 57.50% human Success@5 on naturalistic queries. This indicates that the development/validation score should not be interpreted as a direct estimate of naturalistic user-level retrieval usefulness. ExactSource Hit@5 and Success@5 measure different properties and must not be averaged.
 
 The final scientific story is:
 
