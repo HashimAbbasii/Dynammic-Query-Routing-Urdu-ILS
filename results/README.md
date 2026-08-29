@@ -1,12 +1,10 @@
-# results/
+# Official M0 result summaries
 
-**Current numbers:** `CURRENT.txt` and `CURRENT.json` (frozen dual-index story).
+| File | Contents |
+| --- | --- |
+| `FINAL_RESULTS.md` | Three headlines kept separate |
+| `DEVELOPMENT_VALIDATION.md` | 68/78 = 87.18% ExactSource Hit@5 |
+| `PHASE12_RESULTS.md` | K ExactSource and U Success@5 |
+| `PHASE11_ABLATION.md` | M0–M4 all 68/78; M0 stays official |
 
-**Current figures:** `figures/` (two rooms, three layers, cue split, held-out P@5).
-
-**Archive:** `_archive_development_cv/` — old JSON/TXT that treated development 100% as the headline, plus leftover development PNG charts. Do not cite them in defense.
-
-**Still here as supporting history (not headline):**
-- `roman_urdu_results.json` — development Roman Urdu P@15 (92.5% vs 0%)
-- `phase3_retrieval_results.json` / `phase4_retrieval_results.json` — earlier retrieval checks
-- `robustness_report.csv` — development robustness (includes 100% CV; not Phase 3B)
+Underlying CSVs and reports remain under `experiments/`. Layer A SVM/MiniLM charts are in `archive/historical_figures/`.

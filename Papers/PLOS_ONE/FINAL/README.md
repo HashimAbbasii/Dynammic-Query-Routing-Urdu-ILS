@@ -4,7 +4,7 @@ Live source: `main.tex`
 
 This manuscript reports **frozen script-aware BM25 (M0)**. It does not headline the historical SVM / MiniLM dual-index study.
 
-Compile (from this directory):
+Compile (from `Papers/PLOS_ONE/FINAL`):
 ```
 pdflatex main.tex
 bibtex main
