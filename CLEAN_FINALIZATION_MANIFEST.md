@@ -86,14 +86,17 @@
 ### Thesis / paper
 - `Thesis_Paper/Air_Thesis_Formate/Hashim_Shazad_243259_AU_Thesis_ULTRA.docx`
 - `Thesis_Paper/Air_Thesis_Formate/ULTRA_THESIS_SUBMISSION_DRAFT.md`
-- `Thesis_Paper/IEEE_M0/main.tex`
+- `Thesis_Paper/IEEE_M0/main.tex` (official IEEE-style M0 paper)
+- `Thesis_Paper/Clause_1_Formate/PLOS_ULTRA_paper/main.tex` (official PLOS ONE M0 paper)
+- `Thesis_Paper/ULTRA_IEEE_M0_FINAL_SUBMISSION.zip`
+- `Thesis_Paper/ULTRA_PLOS_ONE_FINAL_SUBMISSION.zip`
 - `Thesis_Paper/IEEE/main.tex` (historical MiniLM paper; not M0 headline)
 
 ---
 
 ## Misleading / outdated if quoted as M0 (retained, labeled)
 
-See `Thesis_Paper/OUTDATED_DRAFTS.md`. Clause-1 PLOS and the Word thesis body still contain SVM/P@15 Layer A text until the Word paste is done.
+See `Thesis_Paper/OUTDATED_DRAFTS.md`. Live PLOS LaTeX and IEEE_M0 are frozen M0. The AU Word thesis still contains historical SVM/P@15 Layer A in §§5.1–5.17 (labeled). `Thesis_Paper/PLOS_ONE/*.docx` and `Thesis_Paper/IEEE/main.tex` are historical, not M0. Older PLOS zips under `Clause_1_Formate/` predate the M0 rewrite.
 
 ---
 

@@ -1,67 +1,108 @@
-# Adaptive Dynamic Query Routing for Urdu IR
+# ULTRA
 
-MS thesis (Air University). Student: **Hashim Shazad** · Supervisor: **Dr. Adnan Aslam**.
+**Adaptive Script-Aware Information Retrieval for Urdu and Roman Urdu**
 
-**Official frozen retrieval system: M0**  
-URDU/MIXED → Urdu BM25 · ROMAN → Method D · Unicode script detector · \(k_1=1.5\), \(b=0.75\) · 111,860 documents · dictionary 198 keys.
-
-Do **not** run new retrieval, BM25, MiniLM, annotation, or H041+. Do **not** tune M0.
+Frozen lexical retrieval for Urdu news search. Queries are routed by script: native-script and mixed queries search an Urdu BM25 index; Roman Urdu queries search a Method D romanized-document BM25 index.
 
 ---
 
-## Official final metrics (do not average)
+## Overview
 
-| Evaluation | Type | Metric | Result |
-| --- | --- | --- | --- |
-| Phase 2 n=78 | Known-item, development/validation | ExactSource Hit@5 | **68/78 = 87.18%** |
-| Phase 12 K001–K040 | Known-item, new sealed | ExactSource Hit@5 | **27/40 = 67.50%** |
-| Phase 12 K (secondary) | Same | Hit@1 / Hit@10 / Hit@50 | 50.00% / 70.00% / 75.00% |
-| Phase 12 U001–U040 | Human usefulness, new sealed | Success@5 | **23/40 = 57.50%** |
-| Phase 12 U (secondary) | Same | P@5 / nDCG@5 / MRR | 0.2050 / 0.6460 / 0.4542 |
-| Phase 12 U script (descriptive) | Success@5 | URDU / ROMAN / MIXED | 17/18 / 6/18 / 0/4 |
-| Phase 11 | Ablation | n=78 Hit@5 | M0–M4 all 68/78; **M0 stays official** |
-| H001–H040 | Diagnostic only | Success@5 | 25/40 = 62.5% (not primary unseen) |
+Urdu users type Perso-Arabic script, informal Roman Urdu, or both. A single native-script index misses Roman queries even when the article exists. ULTRA (this repository) freezes a **script-aware BM25** pipeline over 111,860 news articles and evaluates it under three protocols that must not be mixed: development/validation known-item recovery, new known-item recovery, and naturalistic human usefulness.
 
-87.18% is **not** real-world accuracy. 57.50% is **not** ExactSource Hit@5. There is **no** 80% unseen usefulness claim.
+The official frozen system is **M0**. It is not an SVM router and not a MiniLM dual-index retriever. Those earlier studies remain in the repository as historical evidence.
 
-Full interpretation: `experiments/FINAL_EXPERIMENTAL_RESULTS_ANALYSIS.md`
+## Key contribution
 
----
+- Unicode script detection (Urdu vs Latin letter counts)
+- Urdu BM25 for URDU, MIXED, and OTHER queries
+- Method D romanized-document BM25 for ROMAN queries
+- One frozen routing rule, one hashed corpus, one hashed dictionary
+- Reproducible evaluation: ExactSource Hit@5 for known-item search, human Success@5 for naturalistic queries
 
-## Submission drafts (content)
+## Final frozen system (M0)
 
-| Document | Path |
+| Component | Specification |
 | --- | --- |
-| Thesis scientific draft (AU chapters) | `Thesis_Paper/Air_Thesis_Formate/ULTRA_THESIS_SUBMISSION_DRAFT.md` |
-| How to paste into the Word file | `Thesis_Paper/Air_Thesis_Formate/HOW_TO_UPDATE_WORD_THESIS.md` |
-| AU Word shell (formatting) | `Thesis_Paper/Air_Thesis_Formate/Hashim_Shazad_243259_AU_Thesis_ULTRA.docx` |
-| IEEE-style **M0** paper | `Thesis_Paper/IEEE_M0/main.tex` |
-| Older IEEE **MiniLM routing** paper (different study) | `Thesis_Paper/IEEE/main.tex` |
-| Finalization manifest | `CLEAN_FINALIZATION_MANIFEST.md` |
+| Detector | Unicode Urdu vs Latin counts (`detect_script`) |
+| URDU / MIXED / OTHER | Urdu BM25 over article text |
+| ROMAN | Method D BM25 over romanized documents |
+| BM25 | \(k_1 = 1.5\), \(b = 0.75\) |
+| Retrieval depth | Top-50 internally; official cutoff Top-5 |
+| Corpus | `data/clean_articles.csv` · **n = 111,860** |
+| Dictionary | `models/roman_urdu_dict_expanded.json` · **198 keys** |
 
----
+Query-side expansions **M1–M4** were tested on the development/validation pool. All scored 68/78 ExactSource Hit@5. **M0 was not replaced.**
 
-## Historical Layer A (not official M0 retrieval)
+## Evaluation
 
-Earlier work trained an SVM SHORT/LONG router and a MiniLM dual-index. Frozen Phase 3B classification is 86% vs 84% word-count. Dual-index P@5 on H001–H040 did **not** improve over word count. Do not mix those P@5 numbers with M0 Success@5.
+These three results answer different questions. They are not interchangeable and must not be averaged.
 
----
+| Evaluation | Dataset | Metric | Result |
+| --- | --- | --- | --- |
+| Development / validation known-item | Phase 2, n = 78 | ExactSource Hit@5 | **68/78 (87.18%)** |
+| New known-item | K001–K040 | ExactSource Hit@5 | **27/40 (67.50%)** |
+| New naturalistic (human) | U001–U040 | Human Success@5 | **23/40 (57.50%)** |
 
-## Reproducibility-critical paths (do not archive)
+- **87.18%** is title-derived known-item recovery on the freeze pool. It is not human relevance and not unseen naturalistic performance.
+- **67.50%** is ExactSource Hit@5 on independently sealed known-item queries (Hit@1 / @10 / @50 = 50.00% / 70.00% / 75.00%).
+- **57.50%** is human Success@5: at least one A (relevant) or B (partially relevant) document in the Top-5. Secondary U metrics: conservative P@5 = 0.2050, nDCG@5 = 0.6460, MRR = 0.4542. This is **not** ExactSource Hit@5.
 
-- `data/clean_articles.csv`
-- `models/roman_urdu_dict_expanded.json`
-- `experiments/phase5_roman_urdu/run_phase5.py`
-- `experiments/phase8_final_freeze/`
-- `experiments/phase9_heldout_evaluation/`
-- `experiments/phase11_improvement/`
-- `experiments/phase12_new_unseen_evaluation/` (sealed queries + retrieval dumps)
-- `experiments/phase12_human_relevance/` (U qrels)
+## Human evaluation
 
-Obsolete backups live in `experiments/archive/` (moved, not deleted).
+U001–U040 are naturalistic information needs with no gold article. Annotators labeled Top-5 documents. Success@5 = 23/40. In this sealed sample, Urdu-script queries succeeded in 17/18 cases, Roman in 6/18, and mixed in 0/4 (n = 4 is descriptive only).
 
----
+## Repository structure
 
-## Contact
+```
+data/                 Corpus (clean_articles.csv)
+models/               Frozen Roman Urdu dictionary
+experiments/
+  phase5_roman_urdu/  Detector, BM25, Method D (M0 implementation)
+  phase8_final_freeze/ Frozen configuration and hashes
+  phase9_heldout_evaluation/
+  phase11_improvement/ M0–M4 ablation (M0 remains official)
+  phase12_new_unseen_evaluation/  Sealed K/U queries and retrieval dumps
+  phase12_human_relevance/        U qrels and Success@5
+Thesis_Paper/
+  IEEE_M0/            Official IEEE-style M0 manuscript
+  Clause_1_Formate/PLOS_ULTRA_paper/  Official PLOS ONE M0 manuscript
+```
 
-Hashim Shazad · MS Artificial Intelligence · Air University
+Historical SVM / MiniLM (Layer A) code and reports remain under `validate/` and earlier experiment folders. They are not the official retriever.
+
+## Reproducibility
+
+| Artifact | Value |
+| --- | --- |
+| Corpus SHA-256 | `8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231` |
+| Dictionary SHA-256 | `30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3` |
+| Freeze manifest | `experiments/phase8_final_freeze/FINAL_SYSTEM_MANIFEST.json` |
+| Detector / BM25 | `experiments/phase5_roman_urdu/run_phase5.py` |
+| Phase 12 protocol | `experiments/phase12_new_unseen_evaluation/PHASE12_SEALED_PROTOCOL.md` |
+| Official interpretation | `experiments/FINAL_EXPERIMENTAL_RESULTS_ANALYSIS.md` |
+
+The scientific freeze is closed. Do not retune M0, the dictionary, routing, or Method D on K, U, or H001–H040.
+
+## Papers
+
+- **PLOS ONE (M0):** `Thesis_Paper/Clause_1_Formate/PLOS_ULTRA_paper/` · package `Thesis_Paper/ULTRA_PLOS_ONE_FINAL_SUBMISSION.zip`
+- **IEEE-style (M0):** `Thesis_Paper/IEEE_M0/` · package `Thesis_Paper/ULTRA_IEEE_M0_FINAL_SUBMISSION.zip`
+
+`Thesis_Paper/IEEE/` is a **different** historical study (SVM + MiniLM dual-index). Do not quote it as M0.
+
+## Thesis
+
+Extended documentation of the same freeze, including labeled historical Layer A chapters, is in `Thesis_Paper/Air_Thesis_Formate/`.
+
+## Limitations
+
+- Roman Urdu is weaker than native-script Urdu on sealed tests (U Success@5: 6/18 vs 17/18).
+- Unseen naturalistic human Success@5 is **57.50%**, not 87.18%.
+- M0 is lexical BM25. It does not rewrite queries.
+- 87.18% is development/validation known-item ExactSource Hit@5 only.
+- K and U each have n = 40; mixed-script n = 4; one annotator on U.
+
+## Citation
+
+If you use this freeze, cite the manuscripts in `Thesis_Paper/` and report the three official metrics separately.

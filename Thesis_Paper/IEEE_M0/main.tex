@@ -30,7 +30,7 @@ Islamabad, Pakistan}
 \maketitle
 
 \begin{abstract}
-Urdu news users type both Perso-Arabic script and informal Roman Urdu. We freeze a script-aware lexical retriever (M0): Unicode routing, Urdu BM25 for URDU/MIXED queries, and Method~D romanized-document BM25 for ROMAN queries. On a Phase~2 development/validation known-item set the frozen system achieves ExactSource Hit@5 of 87.18\% (68/78). That score is genuine for title-derived known-item search on that pool; it is not real-world accuracy and not human usefulness. Independently sealed Phase~12 tests of the same freeze yield ExactSource Hit@5 of 67.50\% (27/40) on new known-item queries and human Success@5 of 57.50\% (23/40) on naturalistic queries (P@5 $=0.2050$, nDCG@5 $=0.6460$, MRR $=0.4542$). Query-side expansions M1--M4 do not improve 68/78; M0 stays official. Urdu-script U queries succeed in 17/18 cases versus 6/18 Roman and 0/4 mixed. We do not average these metrics and do not claim 80\% unseen usefulness.
+Urdu news users type both Perso-Arabic script and informal Roman Urdu. We freeze a script-aware lexical retriever (M0): Unicode routing, Urdu BM25 for URDU/MIXED/OTHER queries, and Method~D romanized-document BM25 for ROMAN queries. On a Phase~2 development/validation known-item set the frozen system achieves ExactSource Hit@5 of 87.18\% (68/78). That score is genuine for title-derived known-item search on that pool; it is not real-world accuracy and not human usefulness. Independently sealed Phase~12 tests of the same freeze yield ExactSource Hit@5 of 67.50\% (27/40) on new known-item queries and human Success@5 of 57.50\% (23/40) on naturalistic queries (P@5 $=0.2050$, nDCG@5 $=0.6460$, MRR $=0.4542$). Query-side expansions M1--M4 do not improve 68/78; M0 stays official. Urdu-script U queries succeed in 17/18 cases versus 6/18 Roman and 0/4 mixed. We do not average these metrics and do not claim 80\% unseen usefulness.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -51,11 +51,11 @@ Daud et al.~\cite{daud2017urdu} map Urdu NLP obstacles. CURE~\cite{iqbal2021cure
 
 \section{Problem Formulation}
 
-Let $\mathcal{C}$ be 111{,}860 news documents. A query $q$ is URDU, ROMAN, or MIXED by Unicode letter counts. Known-item queries carry a pre-assigned source id $s$. ExactSource Hit@5 is $1$ iff $s$ is in the Top-5. Naturalistic queries have no $s$; Success@5 is $1$ iff at least one Top-5 document is labeled A (relevant) or B (partially relevant). These indicators are not interchangeable and are not averaged.
+Let $\mathcal{C}$ be 111{,}860 news documents. A query $q$ is URDU, ROMAN, MIXED, or OTHER by Unicode letter counts. Known-item queries carry a pre-assigned source id $s$. ExactSource Hit@5 is $1$ iff $s$ is in the Top-5. Naturalistic queries have no $s$; Success@5 is $1$ iff at least one Top-5 document is labeled A (relevant) or B (partially relevant). These indicators are not interchangeable and are not averaged.
 
 \section{Proposed ULTRA Framework (M0)}
 
-M0 routes URDU/MIXED to Urdu BM25 and ROMAN to Method~D BM25 over romanized documents (Phase~2 character table plus a 198-key reverse dictionary). Queries are not rewritten. BM25 uses $k_1=1.5$, $b=0.75$. The detector is not an SVM. MIXED uses the Urdu index by freeze rule. Method~D was selected on development \texttt{title\_roman} strings, not on chat Roman Urdu~\cite{robertson2009bm25}.
+M0 routes URDU, MIXED, and OTHER queries to Urdu BM25 and ROMAN queries to Method~D BM25 over romanized documents (Phase~2 character table plus a 198-key reverse dictionary). Queries are not rewritten. BM25 uses $k_1=1.5$, $b=0.75$; internally Top-50, official cutoff Top-5. The detector is not an SVM. MIXED and OTHER use the Urdu index by freeze rule. Method~D was selected on development \texttt{title\_roman} strings, not on chat Roman Urdu~\cite{robertson2009bm25}. This paper is the official M0 manuscript; a separate IEEE draft reports historical MiniLM dual-index routing and is not this system.
 
 \section{Experimental Setup}
 

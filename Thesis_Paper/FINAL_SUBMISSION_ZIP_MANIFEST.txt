@@ -1,0 +1,19 @@
+PLOS ZIP: C:\Users\User\OneDrive\Documents\ULTRA_Project\Thesis_Paper\ULTRA_PLOS_ONE_FINAL_SUBMISSION.zip
+size_bytes: 129463
+  ULTRA_PLOS_ONE_M0/main.tex
+  ULTRA_PLOS_ONE_M0/references.bib
+  ULTRA_PLOS_ONE_M0/plos2025.bst
+  ULTRA_PLOS_ONE_M0/README.md
+  ULTRA_PLOS_ONE_M0/figures/Fig1_m0_routing.png
+  ULTRA_PLOS_ONE_M0/figures/Fig2_u_script_split.png
+  ULTRA_PLOS_ONE_M0/SUBMISSION_CONTENTS.txt
+
+IEEE ZIP: C:\Users\User\OneDrive\Documents\ULTRA_Project\Thesis_Paper\ULTRA_IEEE_M0_FINAL_SUBMISSION.zip
+size_bytes: 74151
+  ULTRA_IEEE_M0/main.tex
+  ULTRA_IEEE_M0/IEEEtran.cls
+  ULTRA_IEEE_M0/README.md
+  ULTRA_IEEE_M0/SUBMISSION_CONTENTS.txt
+
+Excluded from both: .bak, old SVM/MiniLM sources, corpus, embeddings, Chroma, Git, experiment scratch.
+Scientific results unchanged.

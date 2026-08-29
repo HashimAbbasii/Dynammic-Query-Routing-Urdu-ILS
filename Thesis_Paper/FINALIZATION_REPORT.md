@@ -11,7 +11,8 @@
 
 ## 2. Research paper file created
 
-- **Official M0 IEEE-style paper:** `Thesis_Paper/IEEE_M0/main.tex`
+- **Official M0 IEEE-style paper:** `Thesis_Paper/IEEE_M0/main.tex` · ZIP `Thesis_Paper/ULTRA_IEEE_M0_FINAL_SUBMISSION.zip`
+- **Official M0 PLOS ONE paper:** `Thesis_Paper/Clause_1_Formate/PLOS_ULTRA_paper/main.tex` · ZIP `Thesis_Paper/ULTRA_PLOS_ONE_FINAL_SUBMISSION.zip`
 - **Historical MiniLM routing paper (unchanged):** `Thesis_Paper/IEEE/main.tex` — labeled in `Thesis_Paper/IEEE/README.md` as a different study.
 
 ## 3. Files archived (moved, not deleted)
