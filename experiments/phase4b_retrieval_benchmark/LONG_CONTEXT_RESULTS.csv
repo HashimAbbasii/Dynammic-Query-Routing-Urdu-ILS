@@ -1,0 +1,2 @@
+subset,n,hit@5,P@5,nDCG@5,MRR,mean_latency_sec,status
+all,78,,,,,,"not_indexed: CPU e5-small at 2.3 docs/s would take 13.5h; 4h gate failed"

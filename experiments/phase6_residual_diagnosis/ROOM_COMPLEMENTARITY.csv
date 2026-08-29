@@ -1,0 +1,17 @@
+query_id,split,query_type,script_aware_rank,headline_rank,class
+QTRN_010,internal_val,urdu,9,1,HEADLINE_RECOVERS
+QTRN_031,internal_val,roman_urdu,9,999,BOTH_MISS
+QTRN_099,internal_val,mixed,9,999,BOTH_MISS
+QTRN_108,internal_val,mixed,999,999,BOTH_MISS
+QTRN_168,dev,urdu,7,1,HEADLINE_RECOVERS
+QTRN_170,dev,urdu,37,4,HEADLINE_RECOVERS
+QTRN_189,dev,mixed,999,999,BOTH_MISS
+QTRN_216,internal_val,mixed,999,999,BOTH_MISS
+QTRN_225,dev,mixed,999,999,BOTH_MISS
+QTRN_258,internal_val,urdu,23,7,BOTH_MISS
+_SUMMARY_n78,,,68,35,sa_hits / hl_hits
+_SUMMARY_headline_only,,,3,,HEADLINE_RECOVERS among 78
+_SUMMARY_script_aware_only,,,36,,SCRIPT_AWARE_RECOVERS among 78
+_SUMMARY_overlap,,,32,,both Hit@5
+_SUMMARY_union_oracle,,,71,0.9103,NOT a deployed system
+_SUMMARY_both_miss,,,7,,both miss Top-5

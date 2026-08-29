@@ -1,0 +1,12 @@
+split,query_type,n_misses,miss_ids
+dev,urdu,2,"QTRN_168,QTRN_170"
+dev,mixed,2,"QTRN_189,QTRN_225"
+internal_val,urdu,2,"QTRN_010,QTRN_258"
+internal_val,roman_urdu,1,QTRN_031
+internal_val,mixed,3,"QTRN_099,QTRN_108,QTRN_216"
+dev,ALL,4,"QTRN_168,QTRN_170,QTRN_189,QTRN_225"
+internal_val,ALL,6,"QTRN_010,QTRN_031,QTRN_099,QTRN_108,QTRN_216,QTRN_258"
+all,urdu,4,"QTRN_010,QTRN_168,QTRN_170,QTRN_258"
+all,roman_urdu,1,QTRN_031
+all,mixed,5,"QTRN_099,QTRN_108,QTRN_189,QTRN_216,QTRN_225"
+all,ALL,10,"QTRN_010,QTRN_031,QTRN_099,QTRN_108,QTRN_168,QTRN_170,QTRN_189,QTRN_216,QTRN_225,QTRN_258"

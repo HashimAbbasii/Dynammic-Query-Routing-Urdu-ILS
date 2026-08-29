@@ -1,0 +1,13 @@
+system,subset,k,source_hit_rate,P@k_known_item,nDCG@k,MRR,mean_latency_sec
+headline_index,dev+internal_val,5,0.4487,0.0897,0.4009,0.3885,0.7703
+headline_index,dev+internal_val,10,0.4744,0.0474,0.4092,0.3885,0.7703
+headline_index,dev+internal_val,15,0.4744,0.0316,0.4092,0.3885,0.7703
+full_index_current,dev+internal_val,5,0.2564,0.0513,0.2203,0.2103,0.168
+full_index_current,dev+internal_val,10,0.2564,0.0256,0.2203,0.2103,0.168
+full_index_current,dev+internal_val,15,0.2821,0.0188,0.227,0.2103,0.168
+full_chunk_rerank_top15,dev+internal_val,5,0.2821,0.0564,0.2203,0.1998,4.5218
+full_chunk_rerank_top15,dev+internal_val,10,0.2821,0.0282,0.2203,0.1998,4.5218
+full_chunk_rerank_top15,dev+internal_val,15,0.2821,0.0188,0.2203,0.1998,4.5218
+headline_index,urdu_only,5,0.7174,0.1435,0.6487,0.6315,
+full_index_current,urdu_only,5,0.413,0.0826,0.3518,0.3348,
+full_chunk_rerank_top15,urdu_only,5,0.4565,0.0913,0.3518,0.317,

@@ -1,0 +1,5 @@
+system,k,source_hit_rate,P@k_known_item,nDCG@k,MRR,mean_latency_sec,index_bytes
+headline_index,5,0.4487,0.0897,0.4009,0.3885,0.8327,171817088
+full_index_current,5,0.2564,0.0513,0.2203,0.2103,0.0936,3748918676
+full_index_current,10,0.2564,0.0256,0.2203,0.2103,0.0936,3748918676
+full_index_current,15,0.2821,0.0188,0.227,0.2103,0.0936,3748918676

@@ -1,0 +1,36 @@
+{
+  "experiment_id": "phase12_new_unseen_evaluation",
+  "status": "SEALED_BEFORE_RETRIEVAL",
+  "retrieval_run": false,
+  "m0_modified": false,
+  "h001_h040_used": false,
+  "phase10c_qrels_used": false,
+  "heldout_template_used": false,
+  "phase11_h_failure_mining_used": false,
+  "random_seed": 120260827,
+  "eligible_population_definition": "All rows in data/clean_articles.csv whose Index (0-based corpus row id) has a non-empty Headline after strip with length >= 12 characters, AND whose Index is not in the source_doc_id set of experiments/phase2_oracle/oracle_all.csv (QTRN_001 through QTRN_260). Eligible n=111574 after excluding 260 QTRN source ids and short/empty headlines. Sampling: Python random.Random(120260827), stratified by Category bucket (sports / business / entertainment / science/tech / general) with quota 8 per bucket. The corpus Category column has only Sports, Business & Economics, Entertainment, and Science & Technology (no General), so the general quota was 0; the remaining 8 slots were filled from the leftover eligible pool shuffled with the same RNG. All 40 sampled source_doc_id values are unique. Among sampled headlines that contain Urdu letters and no Latin letters, the same RNG shuffled indices and assigned the first 12 to ordinary Roman Urdu title-like queries; the rest remain Urdu-script title-like queries. MIXED was not forced. Source selection did not use BM25, MiniLM, or any ranker. Subset U was written from naturalistic information-need quotas without corpus search and without source_doc_id.",
+  "queries_k_file": "queries_k.csv",
+  "queries_k_sha256": "124e452693f98baedf510618240c154df68d56b6b7a37ed085a6512c13d13ff6",
+  "queries_u_file": "queries_u.csv",
+  "queries_u_sha256": "684fd1e19eddb717f5897d869ef0ca0ed586316c5a7e1d2d23006e0748fc53b9",
+  "k_count": 40,
+  "u_count": 40,
+  "total_queries": 80,
+  "detector_counts_k": {
+    "URDU": 28,
+    "ROMAN": 12
+  },
+  "detector_counts_u": {
+    "URDU": 18,
+    "ROMAN": 18,
+    "MIXED": 4
+  },
+  "temporal_u_factoids": 4,
+  "k_unique_source_doc_ids": 40,
+  "qtrn_source_ids_excluded": 260,
+  "eligible_n": 111574,
+  "k_script_assignment": "12 ordinary Roman Urdu; remainder Urdu script; MIXED not forced",
+  "detector_function": "Unicode script-count detector identical to experiments/phase5_roman_urdu/run_phase5.py detect_script; counts only, no ranking",
+  "corpus_file": "data/clean_articles.csv",
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231"
+}

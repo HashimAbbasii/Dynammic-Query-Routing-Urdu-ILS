@@ -1,0 +1,4 @@
+system,hit@5,nDCG@5,P@5_known_item,MRR,hit@10,hit@15,mean_latency_sec
+headline_index,0.4487,0.4009,0.0897,0.3885,0.4744,0.4744,
+full_one_vector_chroma,0.2564,0.2203,0.0513,0.2103,0.2564,0.2821,
+chunk_ann_96_32_max,0.2821,0.2362,0.0564,0.2309,0.3462,0.3718,0.2726

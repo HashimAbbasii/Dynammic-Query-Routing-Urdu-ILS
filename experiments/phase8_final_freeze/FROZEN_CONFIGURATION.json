@@ -1,0 +1,60 @@
+{
+  "frozen": true,
+  "freeze_timestamp": "2026-08-27T12:36:10Z",
+  "do_not_change": [
+    "k1",
+    "b",
+    "tokenizer",
+    "script_detector",
+    "method_D_romanizer",
+    "routing_table",
+    "corpus",
+    "dictionary_keys",
+    "primary_metric"
+  ],
+  "bm25": {
+    "variant": "Okapi",
+    "k1": 1.5,
+    "b": 0.75,
+    "idf": "log((N - n + 0.5) / (n + 0.5) + 1.0)",
+    "implementation": "experiments/phase5_roman_urdu/run_phase5.py::BM25"
+  },
+  "tokenizer": {
+    "pattern": "[\\u0600-\\u06FF]+|[A-Za-z0-9]+",
+    "lowercase": true,
+    "stemming": false,
+    "stopwords": false
+  },
+  "script_detector": {
+    "urdu_block": "U+0600..U+06FF",
+    "latin": "ASCII A-Za-z",
+    "mixed_if_both_nonzero": true,
+    "not_svm": true
+  },
+  "method_D": {
+    "index_all_documents": true,
+    "reverse_dict_setdefault_first_key": true,
+    "fallback": "naive_roman_word",
+    "query": "tokenize original roman string"
+  },
+  "method_C_not_deployed": true,
+  "dictionary_transliteration_not_on_official_roman_path": true,
+  "dense_rooms_not_on_official_path": [
+    "headline_minilm",
+    "chroma_urdu_news",
+    "chunk_ann_urdu_news_chunks_p4a"
+  ],
+  "fusion": {
+    "rrf": false,
+    "score_interpolation": false,
+    "svm_router": false,
+    "reranker": false
+  },
+  "top_k_retrieve": 50,
+  "metrics_k": [5, 10, 15],
+  "gold": "source_doc_id == corpus_row_index",
+  "reference_runners": [
+    "experiments/phase5_roman_urdu/run_phase5.py",
+    "experiments/phase6_residual_diagnosis/run_phase6.py"
+  ]
+}

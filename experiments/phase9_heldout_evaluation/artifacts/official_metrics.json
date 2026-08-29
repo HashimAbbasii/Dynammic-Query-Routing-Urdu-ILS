@@ -1,0 +1,33 @@
+{
+  "n_queries": 40,
+  "n_scored": 0,
+  "n_excluded": 40,
+  "exclude_reason": "no_source_doc_id",
+  "exact_source_hit@5": null,
+  "P@5": null,
+  "nDCG@5": null,
+  "MRR": null,
+  "Hit@10": null,
+  "Hit@15": null,
+  "development_hit@5": 0.8718,
+  "difference_final_minus_dev": null,
+  "note": "H001-H040 have no source_doc_id gold. Protocol \u00a713: do not guess; exclude from official Hit@5.",
+  "single_run": true,
+  "test_tuning": false,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "top_k": 50,
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "dict_keys": 198,
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "pandas": "2.3.3",
+  "detector_counts": {
+    "URDU": 20,
+    "ROMAN": 20
+  },
+  "path_counts": {
+    "urdu_bm25": 20,
+    "roman_bm25_method_D": 20
+  }
+}

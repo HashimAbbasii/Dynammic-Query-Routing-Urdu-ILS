@@ -1,0 +1,16 @@
+{
+  "miss_n": 10,
+  "hit_n": 68,
+  "miss_mean_q_len": 8.9,
+  "hit_mean_q_len": 10.75,
+  "miss_mean_headline_coverage": 0.619,
+  "hit_mean_headline_coverage": 0.4645,
+  "miss_mean_body_coverage": 0.644,
+  "hit_mean_body_coverage": 0.5924,
+  "miss_mean_content_headline_coverage": 0.7597,
+  "hit_mean_content_headline_coverage": 0.5211,
+  "miss_mean_content_body_coverage": 0.7597,
+  "hit_mean_content_body_coverage": 0.6239,
+  "miss_mean_headline_jaccard": 0.3993,
+  "hit_mean_headline_jaccard": 0.3613
+}

@@ -1,0 +1,137 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{url}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{Script-Aware BM25 for Urdu News Search:\\
+Known-Item Recovery, Sealed Generalization, and Human Usefulness}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Hashim Shazad}
+\IEEEauthorblockA{\textit{Dept.\ of Creative Technologies} \\
+\textit{Air University}\\
+Islamabad, Pakistan \\
+abbasihashim30@gmail.com}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Adnan Aslam}
+\IEEEauthorblockA{\textit{Dept.\ of Creative Technologies} \\
+\textit{Air University}\\
+Islamabad, Pakistan}
+}
+
+\maketitle
+
+\begin{abstract}
+Urdu news users type both Perso-Arabic script and informal Roman Urdu. We freeze a script-aware lexical retriever (M0): Unicode routing, Urdu BM25 for URDU/MIXED queries, and Method~D romanized-document BM25 for ROMAN queries. On a Phase~2 development/validation known-item set the frozen system achieves ExactSource Hit@5 of 87.18\% (68/78). That score is genuine for title-derived known-item search on that pool; it is not real-world accuracy and not human usefulness. Independently sealed Phase~12 tests of the same freeze yield ExactSource Hit@5 of 67.50\% (27/40) on new known-item queries and human Success@5 of 57.50\% (23/40) on naturalistic queries (P@5 $=0.2050$, nDCG@5 $=0.6460$, MRR $=0.4542$). Query-side expansions M1--M4 do not improve 68/78; M0 stays official. Urdu-script U queries succeed in 17/18 cases versus 6/18 Roman and 0/4 mixed. We do not average these metrics and do not claim 80\% unseen usefulness.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Urdu information retrieval, Roman Urdu, BM25, query routing, known-item search, human relevance
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Urdu search is not English search with another font~\cite{daud2017urdu}. Users mix native script with Roman Urdu~\cite{hussain2025qlora,mehmood2020xtreme,sitaram2019codeswitch}. ULTRA~\cite{bashir2026ultra} is a dual-embedding news architecture whose original switch is a 150-character cutoff. Length does not decide which \emph{script index} to open.
+
+We ask a smaller, measurable question. Freeze a lexical system. How often does it recover a known article on the development/validation pool? How often on a new sealed known-item sample? How often is the Top-5 useful when there is no gold article? English routing work selects sparse versus dense retrieval~\cite{arabzadeh2021predicting} or RAG depth~\cite{jeong2024adaptiverag}. Urdu collections exist~\cite{iqbal2021cure,butt2024urdumsmarco}, but they do not report this freeze protocol.
+
+This paper is not a MiniLM dual-index study. A companion IEEE draft records a \emph{negative} dense P@5 result for SHORT/LONG SVM routing. Official retrieval numbers here are BM25 (M0) only.
+
+\section{Related Work}
+
+Daud et al.~\cite{daud2017urdu} map Urdu NLP obstacles. CURE~\cite{iqbal2021cure} and Urdu MS MARCO~\cite{butt2024urdumsmarco} supply evaluation resources; the latter reports MRR@10 of 0.247 for a fine-tuned configuration under a different protocol than ours. Roman Urdu work is mostly classification~\cite{hussain2025qlora,mehmood2020xtreme}. Multilingual dense retrieval can sag off the pretraining head~\cite{wu2024crosslingual,conneau2020xlmr}. BM25 remains a strong lexical baseline~\cite{robertson2009bm25}. We do not claim state of the art against MS MARCO or CURE.
+
+\section{Problem Formulation}
+
+Let $\mathcal{C}$ be 111{,}860 news documents. A query $q$ is URDU, ROMAN, or MIXED by Unicode letter counts. Known-item queries carry a pre-assigned source id $s$. ExactSource Hit@5 is $1$ iff $s$ is in the Top-5. Naturalistic queries have no $s$; Success@5 is $1$ iff at least one Top-5 document is labeled A (relevant) or B (partially relevant). These indicators are not interchangeable and are not averaged.
+
+\section{Proposed ULTRA Framework (M0)}
+
+M0 routes URDU/MIXED to Urdu BM25 and ROMAN to Method~D BM25 over romanized documents (Phase~2 character table plus a 198-key reverse dictionary). Queries are not rewritten. BM25 uses $k_1=1.5$, $b=0.75$. The detector is not an SVM. MIXED uses the Urdu index by freeze rule. Method~D was selected on development \texttt{title\_roman} strings, not on chat Roman Urdu~\cite{robertson2009bm25}.
+
+\section{Experimental Setup}
+
+Corpus SHA-256 \texttt{8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231}. Dictionary SHA-256 \texttt{30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3}. Development/validation known-item: Phase~2 \texttt{dev}+\texttt{internal\_val}, $n=78$. Phase~11 compares query-side Roman expansions M1--M4 on that pool only. Phase~12 seals K001--K040 and U001--U040 before retrieval (seed 120260827). H001--H040 have no source id; their human Success@5 $=62.5\%$ is diagnostic and is not the official unseen result.
+
+\section{Evaluation Protocol}
+
+Primary known-item metric: ExactSource Hit@5. Secondary K: Hit@1/10/50. Primary U metric: Success@5. Secondary U: conservative P@5 (A-count/5), nDCG@5 with gains A$=3$, B$=2$, C$=1$, D$=$E$=0$, and MRR of the first A/B. nDCG is not usefulness: C-gain can yield nDCG@5 $=1.0$ with no A/B. No test-set tuning. No second retrieval after seeing labels.
+
+\section{Results}
+
+\subsection{Development/validation known-item}
+
+ExactSource Hit@5 $=68/78=87.18\%$. Urdu-only BM25 on the same pool is $0.5897$. Roman subset Method~A is $0/23$; Method~D is $22/23$. The 87.18\% figure is genuine for this protocol and is not unseen human usefulness.
+
+\subsection{Phase~11 ablation}
+
+All of M0--M4 score $68/78$. Roman-train Hit@5 stays $61/64=95.31\%$. M1--M4 nDCG@5 is slightly below M0. M0 remains official. M1 is a gate-pass, not an improvement.
+
+\subsection{New known-item K001--K040}
+
+ExactSource Hit@1 $=20/40=50.00\%$; Hit@5 $=27/40=67.50\%$; Hit@10 $=28/40=70.00\%$; Hit@50 $=30/40=75.00\%$. Detector split (descriptive): URDU $26/28$, ROMAN $1/12$.
+
+\subsection{Naturalistic U001--U040}
+
+Success@5 $=23/40=57.50\%$. P@5 $=0.2050$. nDCG@5 $=0.6460$. MRR $=0.4542$. Script split (descriptive): URDU $17/18=94.44\%$, ROMAN $6/18=33.33\%$, MIXED $0/4$. Mixed $n=4$ is too small for a population rate; it is reported because all four failed.
+
+\begin{table}[t]
+\caption{Official M0 metrics. Do not average rows.}
+\label{tab:official}
+\centering
+\begin{tabular}{llcc}
+\toprule
+\textbf{Set} & \textbf{Type} & \textbf{Metric} & \textbf{Result} \\
+\midrule
+Phase 2 $n{=}78$ & Known-item (dev/val) & ExactSource Hit@5 & 68/78 \\
+K001--K040 & Known-item (new) & ExactSource Hit@5 & 27/40 \\
+U001--U040 & Human usefulness & Success@5 & 23/40 \\
+H001--H040 & Diagnostic human & Success@5 & 25/40 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Error Analysis}
+
+Urdu-script titles and U queries are usually recovered or useful on this news collection. Ordinary Roman titles (K) and chat Roman (U) are not. These results suggest a query-form mismatch between Method~D document romanization and user spelling, not a proof of a single linguistic cause. Temporal ``today'' queries were judged as archive type-of-fact, not live QA. We do not retune on U/K misses.
+
+\section{Discussion}
+
+87.18\% shows strong freeze-set known-item recovery. 67.50\% shows that score is not perfectly stable on new titles, especially Roman ones. 57.50\% shows a further gap to naturalistic usefulness. Query mix matters: a Roman-heavy sample will look worse than an Urdu-only test even if the Urdu component is strong. Known-item evaluation alone cannot support a usefulness claim. We do not claim SOTA.
+
+\section{Limitations}
+
+$n=40$ for K and U; one annotator; news domain only; no IAA; Roman spelling is open-ended; mixed $n=4$; nDCG inflated by C; H001--H040 are not official unseen ExactSource (undefined) or official unseen Success@5; K/U are burned if M0 changes. We do not claim 80\% or 87.18\% unseen usefulness.
+
+\section{Conclusion}
+
+M0 is a frozen script-aware BM25 news retriever with 87.18\% ExactSource Hit@5 on the development/validation known-item protocol, 67.50\% ExactSource Hit@5 on new known-item queries, and 57.50\% human Success@5 on naturalistic queries. The contribution is that measured framework and its Roman/mixed limitation---not 87\% real-world accuracy.
+
+\section*{Acknowledgment}
+
+MS thesis work at Air University, Islamabad, under Dr.\ Adnan Aslam. Not an IEEE Xplore publication.
+
+\begin{thebibliography}{00}
+\bibitem{daud2017urdu} A.\ Daud, W.\ Khan, and D.\ Che, ``Urdu language processing: a survey,'' \emph{Artif.\ Intell.\ Rev.}, vol.\ 47, pp.\ 279--311, 2017.
+\bibitem{hussain2025qlora} N.\ Hussain \emph{et al.}, ``Fine-tuning large language models with QLoRA for offensive language detection in Roman Urdu-English code-mixed text,'' arXiv:2510.03683, 2025.
+\bibitem{sitaram2019codeswitch} S.\ Sitaram, K.\ R.\ Chandu, S.\ K.\ Rallabandi, and A.\ W.\ Black, ``A survey of code-switched speech and language processing,'' arXiv:1904.00784, 2019.
+\bibitem{mehmood2020xtreme} F.\ Mehmood \emph{et al.}, ``A precisely Xtreme-multi channel hybrid approach for Roman Urdu sentiment analysis,'' arXiv:2003.05443, 2020.
+\bibitem{bashir2026ultra} A.\ Bashir, F.\ Qaiser, and I.\ Hussain, ``ULTRA: Urdu language transformer-based recommendation architecture,'' arXiv:2602.11836, 2026.
+\bibitem{arabzadeh2021predicting} N.\ Arabzadeh, X.\ Yan, and C.\ L.\ A.\ Clarke, ``Predicting efficiency/effectiveness trade-offs for dense vs.\ sparse retrieval strategy selection,'' in \emph{Proc.\ CIKM}, 2021, pp.\ 2862--2866.
+\bibitem{jeong2024adaptiverag} S.\ Jeong \emph{et al.}, ``Adaptive-RAG: learning to adapt retrieval-augmented large language models through question complexity,'' in \emph{Proc.\ NAACL}, 2024, pp.\ 7036--7050.
+\bibitem{iqbal2021cure} M.\ Iqbal, B.\ Tahir, and M.\ A.\ Mehmood, ``CURE: collection for Urdu information retrieval evaluation and ranking,'' arXiv:2011.00565, 2021.
+\bibitem{butt2024urdumsmarco} U.\ Butt, S.\ Varanasi, and G.\ Neumann, ``Enabling low-resource language retrieval: establishing baselines for Urdu MS MARCO,'' arXiv:2412.12997, 2024.
+\bibitem{wu2024crosslingual} J.\ Wu, Z.\ Ren, and S.\ Verberne, ``What are the limits of cross-lingual dense passage retrieval for low-resource languages?'' arXiv:2408.11942, 2024.
+\bibitem{conneau2020xlmr} A.\ Conneau \emph{et al.}, ``Unsupervised cross-lingual representation learning at scale,'' in \emph{Proc.\ ACL}, 2020, pp.\ 8440--8451.
+\bibitem{robertson2009bm25} S.\ Robertson and H.\ Zaragoza, ``The probabilistic relevance framework: BM25 and beyond,'' \emph{Found.\ Trends Inf.\ Retr.}, vol.\ 3, no.\ 4, pp.\ 333--389, 2009.
+\end{thebibliography}
+
+\end{document}

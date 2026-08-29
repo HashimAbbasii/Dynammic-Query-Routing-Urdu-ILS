@@ -1,0 +1,41 @@
+query_id,query_text,source_doc_id,article_category,notes
+K001,کراچی کے قریب سمندر سے تیل گیس کے ذخائر,1508,business,title-like shorten of headline; source assigned at creation
+K002,نئے نوٹوں کے حصول کے لیے ایس ایم ایس سروس,2815,business,title-like from headline; source assigned at creation
+K003,سی پیک سے پاکستان پر قرضوں کا بوجھ آئی ایم ایف,3296,business,title-like; lead used only to resolve headline آئی ایم ایف; source assigned at creation
+K004,joker film ki numayish ke dauran cinema mein bhagdar,5849,entertainment,ordinary Roman Urdu of headline; light shorten; source assigned at creation
+K005,jhanvi kapoor mujh se aisa sawal kyun ke main larki hun,8704,entertainment,ordinary Roman Urdu; name taken from lead of same article; source assigned at creation
+K006,perfume ki khushboo tadeer barqarar rakhna chahte hain,9281,entertainment,ordinary Roman Urdu of headline; source assigned at creation
+K007,amitabh bachchan shooting ke dauran bimar par gaye,9511,entertainment,ordinary Roman Urdu of headline; source assigned at creation
+K008,فواد خان کا بولڈ اشتہار,11480,entertainment,title-like from headline; source assigned at creation
+K009,آئندہ برس کے 10 سرفہرست ٹیکنالوجی ٹرینڈ,15825,entertainment,title-like from headline; source assigned at creation
+K010,پرینیتی چوپڑا کی محبت میں گرفتار,15846,entertainment,title-like shorten of headline; source assigned at creation
+K011,ویوو کا نیا مڈرینج فون وی 20 ایس ای,19383,science/tech,title-like shorten of headline; source assigned at creation
+K012,زمین پر سیارے کے ٹکرانے سے روکنے کیلئے انسان,21756,science/tech,title-like shorten of headline; source assigned at creation
+K013,bharat ka hyperloop system ki tameer ka elaan,21831,science/tech,ordinary Roman Urdu of headline; source assigned at creation
+K014,برازر کی یہ سیٹنگ فوری ٹرن کردیں,23022,science/tech,title-like shorten of headline; source assigned at creation
+K015,سام سنگ پر چائلڈ لیبر کا الزام,24538,science/tech,title-like from headline; source assigned at creation
+K016,psl matches ke liye shane watson ne pakistan aane ki haami bhar li,26705,sports,ordinary Roman Urdu of headline; source assigned at creation
+K017,بروشیا ڈورٹمنڈ کی بس کے قریب تین دھماکے,29887,sports,title-like shorten of headline; source assigned at creation
+K018,afridi aur ajmal naye central contract se drop,31070,sports,ordinary Roman Urdu of headline; source assigned at creation
+K019,چیمپیئنز ٹرافی کیلس جنوبی افریقی اسکواڈ سے دستبردار,36767,sports,title-like from headline; source assigned at creation
+K020,karachi chamber of commerce ne axle load qanoon ki mukhalifat kar di,38678,business,ordinary Roman Urdu of headline; source assigned at creation
+K021,پی ائی اے لاہور سے کوالالمپور پروازیں شروع,38961,business,title-like shorten of headline; source assigned at creation
+K022,پی ئی اے اور اتحاد ایئر کے درمیان کوڈ شیئرنگ,41072,business,title-like shorten of headline; source assigned at creation
+K023,قومی کرکٹرز کے لائن لیکچرز مکمل,41669,sports,title-like from headline; source assigned at creation
+K024,اسٹریلیا بار ورلڈ کپ جیت کر سر فہرست,42765,sports,title-like shorten of headline; source assigned at creation
+K025,madonna musical show ke dauran paris waqia par badida ho gain,51108,entertainment,ordinary Roman Urdu of headline; source assigned at creation
+K026,ہوائی لباس جو 300 کلومیٹر فی گھنٹہ سے اڑا سکتا ہے,59249,science/tech,title-like shorten of headline; source assigned at creation
+K027,پاکستان اسٹاک مارکیٹ 827 پوائنٹس اضافے کے ساتھ بند,64255,business,title-like shorten of headline; source assigned at creation
+K028,حفیظ شیخ حکومت کا کام روزگار فراہم کرنا نہیں,70845,business,title-like shorten of headline; source assigned at creation
+K029,ای ٹی او محکمہ ایکسائز اسسٹنٹ فوڈ کنٹرولر کیخلاف مقدمہ,72267,business,title-like shorten of headline; source assigned at creation
+K030,عالمی ادارے پاکستان کی معاشی بہتری کے معترف اسحاق ڈار,74034,business,title-like shorten of headline; source assigned at creation
+K031,teen mah se mehroom steel mills mulazimeen ko tankhwah 15 may ko milne ki tawaqqa,75789,business,ordinary Roman Urdu of headline; source assigned at creation
+K032,کھیتوں سے پرندے بھگانے کیلئے لیزر لائٹس کا تجربہ,80149,science/tech,title-like shorten of headline; source assigned at creation
+K033,saal e nau par google calendar ka design tabdeel,80336,science/tech,ordinary Roman Urdu of headline; source assigned at creation
+K034,ندا ڈار تیز ترین نصف سنچری پہلی ایشین کرکٹر,82804,sports,title-like shorten of headline; source assigned at creation
+K035,ثانیہ مرزا ہندو انتہا پسندی کا شکار,83115,sports,title-like shorten of headline; source assigned at creation
+K036,سرینا ولیمز امریکی اوپن فائنل شکست امپائر,83850,sports,title-like shorten of headline; source assigned at creation
+K037,afghanistan ke khilaf team ki karkardagi achi thi saeed ajmal,93401,sports,ordinary Roman Urdu of headline; source assigned at creation
+K038,بھارت میں پاکستانی اداکاروں پر پابندی,99509,entertainment,title-like shorten of headline; source assigned at creation
+K039,بالی ووڈ ہاوس فل 3 نیا ڈائیلاگ پرومو,102279,entertainment,title-like shorten of headline; source assigned at creation
+K040,ڈینیئل کریگ سے پھر جیمز بانڈ بننے کی فرمائش,103265,entertainment,title-like shorten of headline; source assigned at creation

@@ -1,0 +1,110 @@
+{
+  "experiment_id": "phase4a-corpus-chunk-ann-v1",
+  "frozen_test_used": false,
+  "svm_retrained": false,
+  "eval_n": 78,
+  "chunk_tokens": 96,
+  "overlap": 32,
+  "n_chunk_candidates": 80,
+  "aggregation": "max",
+  "headline_k5": {
+    "n": 78,
+    "source_hit_rate": 0.4487,
+    "p_at_k": 0.0897,
+    "ndcg_at_k": 0.4009,
+    "recall_at_k": 0.4487,
+    "mrr": 0.3885
+  },
+  "full_k5": {
+    "n": 78,
+    "source_hit_rate": 0.2564,
+    "p_at_k": 0.0513,
+    "ndcg_at_k": 0.2203,
+    "recall_at_k": 0.2564,
+    "mrr": 0.2103
+  },
+  "chunkann_k5": {
+    "n": 78,
+    "source_hit_rate": 0.2821,
+    "p_at_k": 0.0564,
+    "ndcg_at_k": 0.2362,
+    "recall_at_k": 0.2821,
+    "mrr": 0.2309
+  },
+  "chunkann_k10": {
+    "n": 78,
+    "source_hit_rate": 0.3462,
+    "p_at_k": 0.0346,
+    "ndcg_at_k": 0.2557,
+    "recall_at_k": 0.3462,
+    "mrr": 0.2309
+  },
+  "chunkann_k15": {
+    "n": 78,
+    "source_hit_rate": 0.3718,
+    "p_at_k": 0.0248,
+    "ndcg_at_k": 0.2629,
+    "recall_at_k": 0.3718,
+    "mrr": 0.2309
+  },
+  "urdu_only": {
+    "n": 46,
+    "headline_k5": {
+      "n": 46,
+      "source_hit_rate": 0.7174,
+      "p_at_k": 0.1435,
+      "ndcg_at_k": 0.6487,
+      "recall_at_k": 0.7174,
+      "mrr": 0.6315
+    },
+    "full_k5": {
+      "n": 46,
+      "source_hit_rate": 0.413,
+      "p_at_k": 0.0826,
+      "ndcg_at_k": 0.3518,
+      "recall_at_k": 0.413,
+      "mrr": 0.3348
+    },
+    "chunkann_k5": {
+      "n": 46,
+      "source_hit_rate": 0.413,
+      "p_at_k": 0.0826,
+      "ndcg_at_k": 0.3477,
+      "recall_at_k": 0.413,
+      "mrr": 0.3426
+    }
+  },
+  "latency_sec": {
+    "embed_mean": 0.1294,
+    "ann_mean": 0.1429,
+    "agg_mean": 0.0002,
+    "total_mean": 0.2726
+  },
+  "recovery": {
+    "full_miss_top5": 58,
+    "chunkann_recovers_among_full_miss": 5,
+    "full_hit_chunkann_miss": 3
+  },
+  "dominance_top20_chunks": {
+    "mean_unique_articles": 18.385,
+    "mean_max_chunks_from_one_article": 1.872
+  },
+  "oracle_ceiling_eval78": {
+    "current_mean_max_ndcg5": 0.4327,
+    "chunkann_as_full_mean_max_ndcg5": 0.4375,
+    "headline_full_chunk_mean_max_ndcg5": 0.4503,
+    "delta": 0.0047,
+    "old_route_counts": {
+      "HEADLINE": 22,
+      "FULL": 4,
+      "MIXED": 52
+    },
+    "new_route_counts": {
+      "HEADLINE": 19,
+      "FULL": 5,
+      "MIXED": 54
+    }
+  },
+  "selected_full_method": "full_one_vector_chroma_111k",
+  "selection_rule": "Adopt chunk ANN only if nDCG@5 improves on n=78 and Urdu-only nDCG@5 does not fall."
+}

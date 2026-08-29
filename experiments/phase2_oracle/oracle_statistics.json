@@ -1,0 +1,207 @@
+{
+  "experiment_id": "phase2-known-item-oracle-v1",
+  "seed": 42,
+  "n_new_queries": 260,
+  "n_train": 182,
+  "n_dev": 39,
+  "n_internal_val": 39,
+  "n_frozen_test": 40,
+  "frozen_test_ids": [
+    "H001",
+    "H002",
+    "H003",
+    "H004",
+    "H005",
+    "H006",
+    "H007",
+    "H008",
+    "H009",
+    "H010",
+    "H011",
+    "H012",
+    "H013",
+    "H014",
+    "H015",
+    "H016",
+    "H017",
+    "H018",
+    "H019",
+    "H020",
+    "H021",
+    "H022",
+    "H023",
+    "H024",
+    "H025",
+    "H026",
+    "H027",
+    "H028",
+    "H029",
+    "H030",
+    "H031",
+    "H032",
+    "H033",
+    "H034",
+    "H035",
+    "H036",
+    "H037",
+    "H038",
+    "H039",
+    "H040"
+  ],
+  "mixed_delta_ndcg5": 0.05,
+  "mixed_delta_selected_on": "pre_registered_not_tuned",
+  "oracle_counts": {
+    "HEADLINE": 74,
+    "MIXED": 174,
+    "FULL": 12
+  },
+  "oracle_pct": {
+    "HEADLINE": 28.46,
+    "FULL": 4.62,
+    "MIXED": 66.92
+  },
+  "mean_oracle_margin": 0.254,
+  "median_oracle_margin": 0.0,
+  "mean_headline_ndcg5": 0.3477,
+  "mean_full_ndcg5": 0.1541,
+  "mean_headline_p5": 0.0769,
+  "mean_full_p5": 0.0385,
+  "known_item_hit5": {
+    "headline": 100,
+    "full": 50,
+    "headline_only": 58,
+    "full_only": 8,
+    "both_miss_top5": 152
+  },
+  "protocol_vs_oracle_nonmixed": {
+    "n_comparable": 86,
+    "agree": 30,
+    "disagree": 56,
+    "agreement_pct": 34.88
+  },
+  "wordcount_vs_oracle_nonmixed": {
+    "n_comparable": 86,
+    "agree": 12,
+    "disagree": 74,
+    "agreement_pct": 13.95
+  },
+  "confusion_protocol_vs_oracle": {
+    "HEADLINE": {
+      "HEADLINE": 22,
+      "FULL": 4,
+      "MIXED": 118
+    },
+    "FULL": {
+      "HEADLINE": 52,
+      "FULL": 8,
+      "MIXED": 56
+    },
+    "MIXED": {
+      "HEADLINE": 0,
+      "FULL": 0,
+      "MIXED": 0
+    }
+  },
+  "confusion_wordcount_vs_oracle": {
+    "HEADLINE": {
+      "HEADLINE": 0,
+      "FULL": 0,
+      "MIXED": 2
+    },
+    "FULL": {
+      "HEADLINE": 74,
+      "FULL": 12,
+      "MIXED": 172
+    },
+    "MIXED": {
+      "HEADLINE": 0,
+      "FULL": 0,
+      "MIXED": 0
+    }
+  },
+  "by_language": {
+    "urdu": {
+      "HEADLINE": 69,
+      "MIXED": 67,
+      "FULL": 9
+    },
+    "roman_urdu": {
+      "MIXED": 84,
+      "HEADLINE": 3
+    },
+    "mixed": {
+      "MIXED": 23,
+      "FULL": 3,
+      "HEADLINE": 2
+    }
+  },
+  "by_query_category": {
+    "short": {
+      "HEADLINE": 20,
+      "MIXED": 95,
+      "FULL": 1
+    },
+    "contextual": {
+      "HEADLINE": 48,
+      "MIXED": 35,
+      "FULL": 4
+    },
+    "detailed": {
+      "MIXED": 21,
+      "HEADLINE": 4,
+      "FULL": 4
+    },
+    "ambiguous": {
+      "MIXED": 23,
+      "FULL": 3,
+      "HEADLINE": 2
+    }
+  },
+  "by_length_all": {
+    "6-12": {
+      "HEADLINE": 70,
+      "MIXED": 151,
+      "FULL": 8
+    },
+    "13+": {
+      "MIXED": 21,
+      "HEADLINE": 4,
+      "FULL": 4
+    },
+    "1-5": {
+      "MIXED": 2
+    }
+  },
+  "by_length_train_only": {
+    "6-12": {
+      "HEADLINE": 50,
+      "MIXED": 104,
+      "FULL": 6
+    },
+    "13+": {
+      "MIXED": 16,
+      "FULL": 2,
+      "HEADLINE": 2
+    },
+    "1-5": {
+      "MIXED": 2
+    }
+  },
+  "language_n": {
+    "urdu": 145,
+    "roman_urdu": 87,
+    "mixed": 28
+  },
+  "category_n": {
+    "short": 116,
+    "contextual": 87,
+    "detailed": 29,
+    "ambiguous": 28
+  },
+  "limitations": [
+    "Labels are known-item (source article), not human graded P@5 over all retrieved news.",
+    "Known-item P@5 is 0 or 0.2 because only one document is treated as relevant.",
+    "Queries are derived from corpus titles/leads, not independent user logs.",
+    "Protocol labels are template-based (creation_method), not a new human annotation pass."
+  ]
+}

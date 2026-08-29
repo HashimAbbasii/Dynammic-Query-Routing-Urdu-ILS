@@ -1,0 +1,68 @@
+{
+  "experiment_id": "phase12_new_unseen_evaluation",
+  "official_system": "M0",
+  "replaces_phase9": false,
+  "timestamp_utc": "2026-08-27T17:11:44Z",
+  "git_commit": "b54ffeb805483aa1419095e28c16e3e38e37d1db",
+  "preflight_pass": true,
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "dict_sha256": "30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3",
+  "dict_keys": 198,
+  "n_docs": 111860,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "top_k": 50,
+  "m0_modified": false,
+  "m1_m4_applied": false,
+  "h001_h040_used": false,
+  "phase10c_qrels_used": false,
+  "heldout_template_used": false,
+  "queries_k_sha256": "124e452693f98baedf510618240c154df68d56b6b7a37ed085a6512c13d13ff6",
+  "queries_u_sha256": "684fd1e19eddb717f5897d869ef0ca0ed586316c5a7e1d2d23006e0748fc53b9",
+  "tokenize_seconds": 141.65,
+  "search_seconds": 1.82,
+  "k_exactsource_hit@1": {
+    "hits": 20,
+    "n": 40,
+    "rate": 0.5
+  },
+  "k_exactsource_hit@5": {
+    "hits": 27,
+    "n": 40,
+    "rate": 0.675
+  },
+  "k_exactsource_hit@10": {
+    "hits": 28,
+    "n": 40,
+    "rate": 0.7
+  },
+  "k_exactsource_hit@50": {
+    "hits": 30,
+    "n": 40,
+    "rate": 0.75
+  },
+  "k_detector_counts": {
+    "URDU": 28,
+    "ROMAN": 12
+  },
+  "k_path_counts": {
+    "urdu_bm25": 28,
+    "roman_bm25_method_D": 12
+  },
+  "u_detector_counts": {
+    "URDU": 18,
+    "ROMAN": 18,
+    "MIXED": 4
+  },
+  "u_path_counts": {
+    "urdu_bm25": 22,
+    "roman_bm25_method_D": 18
+  },
+  "u_n_top50_rows": 1978,
+  "u_n_top5_rows": 200,
+  "u_n_short_lists": 0,
+  "u_relevance_labels_written": false,
+  "phase9_dev_val_hit@5_unchanged": "68/78=0.8718",
+  "stopped_after_retrieval": true,
+  "annotation_started": false
+}

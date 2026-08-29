@@ -1,0 +1,3 @@
+system,hit@5,nDCG@5,hit@10,hit@15,mean_latency_sec,index_scope
+full_one_vector_chroma_111k,0.2564,0.2203,0.2564,0.2821,0.168,full_corpus ANN
+chunk96_overlap24_maxsim_rerank_top15,0.2821,0.2203,0.2821,0.2821,4.5218,re-rank chroma top-15 only; source not injected

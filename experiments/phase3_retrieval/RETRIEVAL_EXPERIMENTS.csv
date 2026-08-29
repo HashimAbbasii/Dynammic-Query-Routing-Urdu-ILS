@@ -1,0 +1,7 @@
+experiment_id,hypothesis,change,dataset,metric,baseline,treatment,delta,used_for_selection,result
+E0_baseline,Record current indexes before any change,none,dev+internal_val,full_nDCG@5,0.2203,0.2203,0.0,yes_as_baseline,recorded
+E0_baseline,Record current indexes before any change,none,dev+internal_val,headline_nDCG@5,0.4009,0.4009,0.0,yes_as_baseline,recorded
+E1_truncation_selfsim,Long articles lose query-relevant tail under 128-token encode,"cos(q, headline/full/best-chunk)",eval sources,mean_cos_best_chunk_minus_full,0.5458,0.5855,0.0397,diagnostic,see self_similarity
+E2_chunk_rerank,Max-sim chunking of the same top-15 improves known-item ranking,chunk 96 / overlap 24 / max sim,dev+internal_val,nDCG@5,0.2203,0.2203,0.0,yes,full_one_vector_chroma_111k
+E2_chunk_rerank,Max-sim chunking of the same top-15 improves known-item ranking,chunk 96 / overlap 24 / max sim,dev+internal_val,source_hit@5,0.2564,0.2821,0.0257,yes,full_one_vector_chroma_111k
+E3_roman_dict,Letter-map transliteration helps Roman queries against Urdu docs,dict on vs raw Latin query,eval roman_urdu only,full_hit@5_count,0,1,1,no,diagnosis only

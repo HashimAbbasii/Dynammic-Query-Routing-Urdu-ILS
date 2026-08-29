@@ -1,0 +1,62 @@
+{
+  "m0_reproduced_68_78": true,
+  "winner_m1_m4": "M1",
+  "comparison": [
+    {
+      "model": "M0",
+      "n78_hits": 68,
+      "n78_hit@5": 0.8718,
+      "train_hit@5": 0.9531,
+      "train_ndcg@5": 0.896,
+      "train_mrr": 0.8807,
+      "gate": true,
+      "train_ge_m0": true,
+      "decision": "CONTROL"
+    },
+    {
+      "model": "M1",
+      "n78_hits": 68,
+      "n78_hit@5": 0.8718,
+      "train_hit@5": 0.9531,
+      "train_ndcg@5": 0.894,
+      "train_mrr": 0.8781,
+      "gate": true,
+      "train_ge_m0": true,
+      "decision": "PASS"
+    },
+    {
+      "model": "M2",
+      "n78_hits": 68,
+      "n78_hit@5": 0.8718,
+      "train_hit@5": 0.9531,
+      "train_ndcg@5": 0.894,
+      "train_mrr": 0.8781,
+      "gate": true,
+      "train_ge_m0": true,
+      "decision": "PASS"
+    },
+    {
+      "model": "M3",
+      "n78_hits": 68,
+      "n78_hit@5": 0.8718,
+      "train_hit@5": 0.9531,
+      "train_ndcg@5": 0.894,
+      "train_mrr": 0.8781,
+      "gate": true,
+      "train_ge_m0": true,
+      "decision": "PASS"
+    },
+    {
+      "model": "M4",
+      "n78_hits": 68,
+      "n78_hit@5": 0.8718,
+      "train_hit@5": 0.9531,
+      "train_ndcg@5": 0.894,
+      "train_mrr": 0.8781,
+      "gate": true,
+      "train_ge_m0": true,
+      "decision": "PASS"
+    }
+  ],
+  "note": "Winner is a development candidate only. Not an unseen H score. Phase 9 unchanged."
+}

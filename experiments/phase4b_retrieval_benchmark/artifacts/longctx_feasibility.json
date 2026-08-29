@@ -1,0 +1,13 @@
+{
+  "model": "intfloat/multilingual-e5-small",
+  "device": "cpu",
+  "proto_n": 400,
+  "proto_sec": 174.0,
+  "docs_per_sec": 2.3,
+  "extrapolated_full_hours": 13.51,
+  "max_seq_length": 512,
+  "embedding_dim": 384,
+  "raw_embedding_gb": 0.172,
+  "feasible": false,
+  "gate_hours": 4.0
+}

@@ -1,0 +1,16 @@
+{
+  "n_docs": 111860,
+  "tokenize_romanize_sec": 66.32,
+  "urdu_bm25_build_sec": 36.88,
+  "roman_bm25_build_sec": 34.32,
+  "roman_index_build_sec": 100.64,
+  "urdu_index_bytes": 122084016,
+  "roman_index_bytes": 121778136,
+  "estimated_romanized_text_bytes": 154829556,
+  "urdu_avgdl": 279.24,
+  "roman_avgdl": 279.19,
+  "urdu_terms": 371368,
+  "roman_terms": 358497,
+  "k1": 1.5,
+  "b": 0.75
+}

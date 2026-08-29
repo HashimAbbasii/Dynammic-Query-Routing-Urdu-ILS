@@ -1,0 +1,24 @@
+query_id,split,query,source_doc_id,rank_A,rank_B,rank_C,rank_D,any_ABC_or_D_hit5,union_C_D_hit5
+QTRN_016,internal_val,nishnl ds aibld ti20 pntgolr kp cricket tornamnt sndh ne jeet liya,93737,999,11,3,1,1,1
+QTRN_031,internal_val,pakistan orld asnokr chimpin shp ke fainl mein phnch gaya,93764,999,999,32,9,0,0
+QTRN_034,dev,rthr ko osim aur miandad se astfadh krne ka mshorh,31976,999,999,1,1,1,1
+QTRN_038,dev,astrilin aopn aasam aur rajrz dosre mrhle mein,37088,999,999,3,1,1,1
+QTRN_056,dev,askaip ka prane fonz par sport khtm krne ka aalan,23505,999,999,5,1,1,1
+QTRN_067,internal_val,hfiz strilia ke khlaf aik rozh team mein shaml,30586,999,999,46,1,1,1
+QTRN_070,internal_val,snje dt film ki shotng ke doran zkhmi,11616,999,999,1,1,1,1
+QTRN_088,internal_val,mobi lnk ne flig shp karporit rspansbiliti ke tor par mik ior,41124,999,999,1,1,1,1
+QTRN_094,internal_val,shbr zidi aazazi chiirmin aif bi tainat noti fkishn jari,1547,999,999,2,2,1,1
+QTRN_106,dev,askr aioard iafth holi od actor jif lion brjz kinsr ka shkar,3917,999,999,1,1,1,1
+QTRN_128,internal_val,sjad ali ke nie gane mein an ke bite glokar ki joani,5277,999,999,2,1,1,1
+QTRN_133,dev,pakistan airan mnsobon ko tizi se mkml krne ka fislh krlia nor,74418,999,999,1,1,1,1
+QTRN_139,dev,aif bi ar internet srosz par aaid tiks ki osoli kilie rolz,111194,999,999,1,1,1,1
+QTRN_155,internal_val,gptl ki jarhanh batting pakistan ko dosre on de mein loss,28551,999,999,999,3,1,1
+QTRN_175,internal_val,babraazm tist mein bhtrin karkrdgi kilie praatmad,31152,999,999,999,1,1,1
+QTRN_191,dev,aipl aur koalkom ke drmian qanoni jng shroa,23059,999,999,1,1,1,1
+QTRN_196,dev,dfaai chimpin peshawar zlmi ke kamran akml team ko tap for mein,84574,999,999,1,1,1,1
+QTRN_205,internal_val,orld joniir skoash mein pakistan ka nam roshn krnioali team otn oaps,45751,999,999,1,1,1,1
+QTRN_211,dev,haroi oainstn ne rip kisz khtm kroane kilie asraiil ki khfih aijnsi,5337,999,999,1,1,1,1
+QTRN_214,dev,shin hiz qomi cricket team ke fzio thrapst mqrr,31956,999,999,3,3,1,1
+QTRN_220,dev,tisra on dezmbaboe ka tas jeet kr phle fielding ka fislh,93962,999,999,5,1,1,1
+QTRN_229,dev,pakistan mein dollar mzid mhnga hogia,70430,999,999,2,2,1,1
+QTRN_232,dev,bridpt ki nii film alaiid 23 nombr ko sinma ghron mein thlkh,50290,999,999,1,1,1,1

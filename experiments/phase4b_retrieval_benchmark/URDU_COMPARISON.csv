@@ -1,0 +1,5 @@
+language_type,system,n,hit@5,P@5,nDCG@5,MRR
+urdu,headline,46,0.7174,0.1435,0.6487,0.6315
+urdu,old_full,46,0.413,0.0826,0.3518,0.3348
+urdu,chunk_ann,46,0.413,0.0826,0.3477,0.3426
+urdu,bm25,46,0.913,0.1826,0.8676,0.8577

@@ -1,0 +1,5 @@
+language_type,system,n,hit@5,P@5,nDCG@5,MRR
+roman_urdu,headline,23,0.0435,0.0087,0.0435,0.0435
+roman_urdu,old_full,23,0.0435,0.0087,0.0435,0.0435
+roman_urdu,chunk_ann,23,0.0435,0.0087,0.0435,0.0435
+roman_urdu,bm25,23,0.0,0.0,0.0,0.0

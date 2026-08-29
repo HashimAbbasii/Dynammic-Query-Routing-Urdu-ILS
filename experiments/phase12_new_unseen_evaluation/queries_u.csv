@@ -1,0 +1,41 @@
+query_id,query_text,need_type,length_bin,script_intended,category,notes
+U001,آج قومی اسمبلی کا اجلاس ہے کیا,factoid,medium,URDU,general,temporal factoid using آج; naturalistic; no source_doc_id
+U002,aaj pakistan ka cricket match kis se hai,factoid,medium,ROMAN,sports,temporal factoid using aaj; naturalistic; no source_doc_id
+U003,موجودہ وزیراعظم پاکستان کون ہیں,factoid,short,URDU,general,temporal factoid using موجودہ; naturalistic; no source_doc_id
+U004,mojooda dollar rate pakistan mein kya hai,factoid,medium,ROMAN,business,temporal factoid using mojooda; naturalistic; no source_doc_id
+U005,سونے کی قیمت کتنی ہے,factoid,short,URDU,business,naturalistic; no source_doc_id
+U006,psl points table,factoid,short,ROMAN,sports,naturalistic; no source_doc_id
+U007,کراچی میں رات بجلی کٹے گی,factoid,medium,URDU,business,naturalistic; no source_doc_id
+U008,lahore se islamabad train ticket price,factoid,medium,ROMAN,general,naturalistic; no source_doc_id
+U009,عالمی کپ کرکٹ شیڈول پاکستان,factoid,short,URDU,sports,naturalistic; no source_doc_id
+U010,netflix pakistan subscription charges,factoid,short,ROMAN,entertainment,naturalistic; no source_doc_id
+U011,وفاقی بجٹ کب پیش ہوگا,factoid,short,URDU,business,naturalistic; no source_doc_id
+U012,karachi stock market closing,factoid,short,ROMAN,business,naturalistic; no source_doc_id
+U013,چاند گرہن کب لگے گا,factoid,short,URDU,science/tech,naturalistic; no source_doc_id
+U014,5G kab aye ga pakistan,factoid,short,ROMAN,science/tech,naturalistic; no source_doc_id
+U015,پاکستان میں مہنگائی کیوں بڑھ رہی ہے,explanatory,medium,URDU,business,naturalistic; no source_doc_id
+U016,pakistan mein berozgari kyun barh rahi hai,explanatory,medium,ROMAN,business,naturalistic; no source_doc_id
+U017,پاکستان کی کرکٹ ٹیم عالمی مقابلوں میں بار بار خراب کارکردگی کیوں دکھاتی ہے,explanatory,long,URDU,sports,naturalistic; no source_doc_id
+U018,pakistan mein har saal flood ke baad faslon ka nuqsan itna zyada kyun hota hai,explanatory,long,ROMAN,general,naturalistic; no source_doc_id
+U019,سوشل میڈیا کے غلط استعمال سے نوجوانوں کی ذہنی صحت پر کیا فرق پڑتا ہے,explanatory,long,URDU,general,naturalistic; no source_doc_id
+U020,mobile apps phone ki battery kyun jaldi khatam karti hain aur iska hall kya hai,explanatory,long,ROMAN,science/tech,naturalistic; no source_doc_id
+U021,پاکستان کی یونیورسٹیوں میں سائنس کی تحقیق دوسرے ممالک سے کیوں پیچھے رہ گئی ہے,explanatory,long,URDU,science/tech,naturalistic; no source_doc_id
+U022,internet speed pakistan mein slow kyun rehti hai aur isko kaise behtar kiya ja sakta hai,explanatory,long,ROMAN,science/tech,naturalistic; no source_doc_id
+U023,فلم انڈسٹری پاکستان میں کیوں ترقی نہیں کر پا رہی اور اس کی کیا وجہ ہے,explanatory,long,URDU,entertainment,naturalistic; no source_doc_id
+U024,drama industry mein original stories kam kyun banti hain aur audience kya chahti hai,explanatory,long,ROMAN,entertainment,naturalistic; no source_doc_id
+U025,کراچی میں روزانہ ٹریفک جام کم کرنے کے لیے کیا اقدامات کیے جا سکتے ہیں,explanatory,long,URDU,general,naturalistic; no source_doc_id
+U026,larkion ki higher education ke liye ghar walon ka support kyun zaroori hota hai,explanatory,long,ROMAN,general,naturalistic; no source_doc_id
+U027,بجلی کے بحران کی وجہ سے چھوٹی صنعتوں کو کیا نقصان ہو رہا ہے,explanatory,long,URDU,business,naturalistic; no source_doc_id
+U028,foreign students pakistan ke universities mein admission kyun kam lete hain aur iski wajah kya hai,explanatory,long,ROMAN,science/tech,naturalistic; no source_doc_id
+U029,محمد رضوان,named_entity,short,URDU,sports,naturalistic; no source_doc_id
+U030,virat kohli,named_entity,short,ROMAN,sports,naturalistic; no source_doc_id
+U031,شاہ رخ خان نئی فلم,named_entity,short,URDU,entertainment,naturalistic; no source_doc_id
+U032,mahira khan ka naya drama kab aa raha hai,named_entity,medium,ROMAN,entertainment,naturalistic; no source_doc_id
+U033,عمران خان کے تازہ سیاسی بیانات,named_entity,medium,URDU,general,naturalistic; no source_doc_id
+U034,wasim akram ki commentary kab start hogi,named_entity,medium,ROMAN,sports,naturalistic; no source_doc_id
+U035,نادیہ خان کے شو میں کون آیا,named_entity,medium,URDU,entertainment,naturalistic; no source_doc_id
+U036,nasa mars mission kab launch hoga,named_entity,medium,ROMAN,science/tech,naturalistic; no source_doc_id
+U037,بابر اعظم کی PSL میں کارکردگی کیسی رہی,named_entity,medium,MIXED,sports,natural mixed script; naturalistic; no source_doc_id
+U038,نرگس فخری کی Hollywood فلم کون سی ہے,named_entity,medium,MIXED,entertainment,natural mixed script; naturalistic; no source_doc_id
+U039,حریم شاہ کی YouTube ویڈیو کہاں دیکھی جائے,named_entity,medium,MIXED,entertainment,natural mixed script; naturalistic; no source_doc_id
+U040,قائد اعظم University میں داخلے کب شروع ہیں,named_entity,medium,MIXED,science/tech,natural mixed script; naturalistic; no source_doc_id

@@ -1,0 +1,3 @@
+setting,eval_n,mean_oracle_nDCG@5,HEADLINE,FULL,MIXED,note
+current_indexes,78,0.4327,22,4,52,headline cache vs chroma full
+full_replaced_by_chunk_rerank,78,0.4319,22,5,51,chunk cannot recover source outside chroma top-15

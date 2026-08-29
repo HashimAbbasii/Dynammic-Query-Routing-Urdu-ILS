@@ -1,0 +1,24 @@
+query_id,query,source_doc_id,split,query_type,raw_bm25_rank,headline_rank,old_full_rank,chunk_rank
+QTRN_016,nishnl ds aibld ti20 pntgolr kp cricket tornamnt sndh ne jeet liya,93737,internal_val,roman_urdu,999,999,999,999
+QTRN_031,pakistan orld asnokr chimpin shp ke fainl mein phnch gaya,93764,internal_val,roman_urdu,999,999,999,999
+QTRN_034,rthr ko osim aur miandad se astfadh krne ka mshorh,31976,dev,roman_urdu,999,999,999,999
+QTRN_038,astrilin aopn aasam aur rajrz dosre mrhle mein,37088,dev,roman_urdu,999,999,999,999
+QTRN_056,askaip ka prane fonz par sport khtm krne ka aalan,23505,dev,roman_urdu,999,999,999,999
+QTRN_067,hfiz strilia ke khlaf aik rozh team mein shaml,30586,internal_val,roman_urdu,999,999,999,999
+QTRN_070,snje dt film ki shotng ke doran zkhmi,11616,internal_val,roman_urdu,999,999,999,999
+QTRN_088,mobi lnk ne flig shp karporit rspansbiliti ke tor par mik ior,41124,internal_val,roman_urdu,999,999,999,999
+QTRN_094,shbr zidi aazazi chiirmin aif bi tainat noti fkishn jari,1547,internal_val,roman_urdu,999,999,999,999
+QTRN_106,askr aioard iafth holi od actor jif lion brjz kinsr ka shkar,3917,dev,roman_urdu,999,999,999,999
+QTRN_128,sjad ali ke nie gane mein an ke bite glokar ki joani,5277,internal_val,roman_urdu,999,999,999,999
+QTRN_133,pakistan airan mnsobon ko tizi se mkml krne ka fislh krlia nor,74418,dev,roman_urdu,999,999,999,999
+QTRN_139,aif bi ar internet srosz par aaid tiks ki osoli kilie rolz,111194,dev,roman_urdu,999,999,999,999
+QTRN_155,gptl ki jarhanh batting pakistan ko dosre on de mein loss,28551,internal_val,roman_urdu,999,1,1,1
+QTRN_175,babraazm tist mein bhtrin karkrdgi kilie praatmad,31152,internal_val,roman_urdu,999,999,999,999
+QTRN_191,aipl aur koalkom ke drmian qanoni jng shroa,23059,dev,roman_urdu,999,999,999,999
+QTRN_196,dfaai chimpin peshawar zlmi ke kamran akml team ko tap for mein,84574,dev,roman_urdu,999,999,999,999
+QTRN_205,orld joniir skoash mein pakistan ka nam roshn krnioali team otn oaps,45751,internal_val,roman_urdu,999,999,999,999
+QTRN_211,haroi oainstn ne rip kisz khtm kroane kilie asraiil ki khfih aijnsi,5337,dev,roman_urdu,999,999,999,999
+QTRN_214,shin hiz qomi cricket team ke fzio thrapst mqrr,31956,dev,roman_urdu,999,999,999,999
+QTRN_220,tisra on dezmbaboe ka tas jeet kr phle fielding ka fislh,93962,dev,roman_urdu,999,999,999,999
+QTRN_229,pakistan mein dollar mzid mhnga hogia,70430,dev,roman_urdu,999,999,999,999
+QTRN_232,bridpt ki nii film alaiid 23 nombr ko sinma ghron mein thlkh,50290,dev,roman_urdu,999,999,999,999

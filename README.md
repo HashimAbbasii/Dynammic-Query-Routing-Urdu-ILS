@@ -1,135 +1,64 @@
 # Adaptive Dynamic Query Routing for Urdu IR
 
-MS thesis project (Air University). Extends **ULTRA** (Bashir, Qaiser, Hussain, 2026).
+MS thesis (Air University). Student: **Hashim Shazad** · Supervisor: **Dr. Adnan Aslam**.
 
-**One sentence:** ULTRA’s θ = 150 character rule is the wrong switch; this system learns SHORT vs LONG as *headline is enough* vs *need the article*, then searches **two rooms** (headline index vs full-article index), with confidence **lights**.
+**Official frozen retrieval system: M0**  
+URDU/MIXED → Urdu BM25 · ROMAN → Method D · Unicode script detector · \(k_1=1.5\), \(b=0.75\) · 111,860 documents · dictionary 198 keys.
 
-Student: **Hashim Shazad** · Supervisor: **Dr. Adnan Aslam** · Branch for this work: `feat/dual-index-svm-routing`
+Do **not** run new retrieval, BM25, MiniLM, annotation, or H041+. Do **not** tune M0.
 
 ---
 
-## Verified numbers (do not mix)
+## Official final metrics (do not average)
 
-Recomputed from frozen files on 23 Aug 2026. Deployed pickle is **12 features**. Phase 3B **86/84** is the frozen **V2 (8-feature)** result and was not overwritten. Dictionary on disk: **198** pairs.
-
-| Layer | What it is | SVM | Word count ≥ 6 | θ = 150 |
-| --- | --- | --- | --- | --- |
-| Development / CV | Learnability only. **Not** the paper headline. | 100% on some splits | — | 50% |
-| Frozen Phase 3B (V2, 50 primary) | Independent generalization vs a fair tape | **86%** (43/50) | **84%** (42/50) | — |
-| Frozen traps H001–H040 | Need labels; **never trained on** | **60%** | **20%** | **50%** |
-
-McNemar Phase 3B: 2 SVM-only-correct, 1 word-count-only, p = 1.0.  
-McNemar traps: 16–0, p < 0.001.
-
-**Cue split on the same 40 (the scientific limit):**
-
-| Slice | n | SVM | Word count |
+| Evaluation | Type | Metric | Result |
 | --- | --- | --- | --- |
-| V3 cue fires (why/how/fact phrasing) | 18 | **100%** (18/18) | 11.11% (2/18) |
-| No cue | 22 | **27.27%** | **27.27%** |
+| Phase 2 n=78 | Known-item, development/validation | ExactSource Hit@5 | **68/78 = 87.18%** |
+| Phase 12 K001–K040 | Known-item, new sealed | ExactSource Hit@5 | **27/40 = 67.50%** |
+| Phase 12 K (secondary) | Same | Hit@1 / Hit@10 / Hit@50 | 50.00% / 70.00% / 75.00% |
+| Phase 12 U001–U040 | Human usefulness, new sealed | Success@5 | **23/40 = 57.50%** |
+| Phase 12 U (secondary) | Same | P@5 / nDCG@5 / MRR | 0.2050 / 0.6460 / 0.4542 |
+| Phase 12 U script (descriptive) | Success@5 | URDU / ROMAN / MIXED | 17/18 / 6/18 / 0/4 |
+| Phase 11 | Ablation | n=78 Hit@5 | M0–M4 all 68/78; **M0 stays official** |
+| H001–H040 | Diagnostic only | Success@5 | 25/40 = 62.5% (not primary unseen) |
 
-**Dual-index graded P@5 (same 40 queries, 400 judgments):** word count **36.50%**, always-headline / θ=150 **35.00%**, always-full **34.25%**, SVM **33.00%**.  
-nDCG@5 is **highest for always-headline (0.6868)**, then word count 0.6476, SVM 0.6149, always-full 0.6020.
+87.18% is **not** real-world accuracy. 57.50% is **not** ExactSource Hit@5. There is **no** 80% unseen usefulness claim.
 
-**Phase 2.5 dual-index P@5 (33 judged queries, depth 5):** SVM **35.76%**, word count **35.15%**, θ=150 **32.73%**. Tiny SVM edge. Judgments stop at rank 5.
-
-**Do not report 96%.** That number leaks trap overlap into Phase 3B after the 12-feature retrain.
-
----
-
-## What the system actually does
-
-```
-Query (Urdu or Roman Urdu)
-        │
-        ▼
-Roman Urdu dictionary (198 pairs on disk) if Latin script
-        │
-        ▼
-SVM: SHORT = headline enough | LONG = need the article
-        │
-        ▼
-HIGH ≥ 85%  → search only the chosen room
-MED  60–85% → mix headline room + full-article room
-LOW  < 60%  → expand query, then mix both rooms
-```
-
-Rooms:
-
-- **Headline room** — semantic search on titles (`data/headline_embeddings_phase2_5_cache.npy`)
-- **Full-article room** — Chroma collection `urdu_news` (~111,860 articles)
-
-Code: `validate/dual_index_routing/router.py`, `retrieve.py`.
+Full interpretation: `experiments/FINAL_EXPERIMENTAL_RESULTS_ANALYSIS.md`
 
 ---
 
-## How to run the defense demo
+## Submission drafts (content)
 
-From repo root, with `ultra_env` (or any env that has the project packages):
-
-```text
-python validate/dual_index_routing/demo_confidence_tiers.py
-```
-
-Expected live behaviour (already captured in `demo_confidence_tiers.json`):
-
-| Light | Query | Conf. | Action | Top-1 (live, 23 Aug 2026) |
-| --- | --- | --- | --- | --- |
-| GREEN | کرکٹ میچ | 99.2% | headlines only | کرکٹ کلاسک وقار کی میچ وننگ کارکردگی |
-| YELLOW | ڈالر کی قیمت کتنی بڑھی | 82.7% | mix both rooms | ڈالر کی قدر میں پھر اضافہ |
-| YELLOW (near RED) | آج سٹاک ایکسچینج کتنے پوائنٹ پر | 65.6% | mix both rooms | سٹاک ایکسچینج میں مندی کا رجحان |
-
-RED (<60%) is coded but did not fire on the 23 Aug 2026 probe of demo + trap queries. Do not use the stale JSON that showed 53.8% on the score query (that query is GREEN ~97% on the deployed pickle).
-
-Spoken script: `DEFENSE_DEMO.md`.
-
-Thesis figures (regenerate anytime):
-
-```text
-python validate/dual_index_routing/make_defense_figures.py
-```
+| Document | Path |
+| --- | --- |
+| Thesis scientific draft (AU chapters) | `Thesis_Paper/Air_Thesis_Formate/ULTRA_THESIS_SUBMISSION_DRAFT.md` |
+| How to paste into the Word file | `Thesis_Paper/Air_Thesis_Formate/HOW_TO_UPDATE_WORD_THESIS.md` |
+| AU Word shell (formatting) | `Thesis_Paper/Air_Thesis_Formate/Hashim_Shazad_243259_AU_Thesis_ULTRA.docx` |
+| IEEE-style **M0** paper | `Thesis_Paper/IEEE_M0/main.tex` |
+| Older IEEE **MiniLM routing** paper (different study) | `Thesis_Paper/IEEE/main.tex` |
+| Finalization manifest | `CLEAN_FINALIZATION_MANIFEST.md` |
 
 ---
 
-## Project layout (current)
+## Historical Layer A (not official M0 retrieval)
 
-```
-models/svm_classifier.pkl          # deployed 12-feature SVM
-models/scaler.pkl
-models/training_info.json
-models/roman_urdu_dict_expanded.json
-models/backup_v2_pre_trap_retrain_2026-08-22/   # frozen V2 86/84
-validate/phase3/                   # Phase 3A extractor + frozen 3B CSVs
-validate/phase2_5/                 # 33-query human P@5 pilot
-validate/dual_index_routing/       # two rooms, lights, held-out traps
-Thesis_Paper/Air_Thesis_Formate/Hashim_Shazad_243259_AU_Thesis_ULTRA.docx
-Thesis_Paper/Clause_1_Formate/PLOS_ULTRA_paper/   # supervisor PLOS LaTeX
-Thesis_Paper/IEEE/main.tex                        # IEEE conference draft (not yet Xplore)
-
-```
+Earlier work trained an SVM SHORT/LONG router and a MiniLM dual-index. Frozen Phase 3B classification is 86% vs 84% word-count. Dual-index P@5 on H001–H040 did **not** improve over word count. Do not mix those P@5 numbers with M0 Success@5.
 
 ---
 
-## Setup
+## Reproducibility-critical paths (do not archive)
 
-```text
-conda activate ultra_env
-pip install sentence-transformers chromadb scikit-learn pandas numpy matplotlib
-```
+- `data/clean_articles.csv`
+- `models/roman_urdu_dict_expanded.json`
+- `experiments/phase5_roman_urdu/run_phase5.py`
+- `experiments/phase8_final_freeze/`
+- `experiments/phase9_heldout_evaluation/`
+- `experiments/phase11_improvement/`
+- `experiments/phase12_new_unseen_evaluation/` (sealed queries + retrieval dumps)
+- `experiments/phase12_human_relevance/` (U qrels)
 
-Large artifacts (not all on GitHub): `data/clean_articles.csv`, `data/chromadb/`, headline embedding cache.
-
----
-
-## Examiner FAQ (short)
-
-**100% vs 86% vs 60%?** Three tables. CV = learnable. 86/84 = frozen V2 vs word count. 60/20 = frozen need-traps. Never substitute one for another.
-
-**Did routing improve retrieval?** On the 40 traps, no. Word count has the best graded P@5. That is in the thesis on purpose.
-
-**Two independent annotators?** No. Protocol labels, first pass assisted, then saved. 40/40 with the written rule.
-
-**Is θ=150 a fair baseline?** No, for this query set it almost never fires LONG. Word count ≥ 6 is the fair simple rule.
+Obsolete backups live in `experiments/archive/` (moved, not deleted).
 
 ---
 

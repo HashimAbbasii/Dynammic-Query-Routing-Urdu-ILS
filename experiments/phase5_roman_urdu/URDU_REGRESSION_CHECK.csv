@@ -1,0 +1,3 @@
+condition,n,hit@5,ndcg@5,mrr,note
+urdu_bm25_baseline,46,0.913,0.8676,0.8592,"Urdu queries, Urdu BM25"
+script_aware_urdu_path,46,0.913,0.8676,0.8592,detector URDU -> Urdu BM25 (identical by design)

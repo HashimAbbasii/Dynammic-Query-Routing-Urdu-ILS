@@ -1,0 +1,18 @@
+{
+  "timestamp_utc": "2026-08-27T13:58:44Z",
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "corpus_hash_ok": true,
+  "n_docs": 111860,
+  "dict_keys": 198,
+  "dict_sha256": "30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3",
+  "dict_sha_ok": true,
+  "k1": 1.5,
+  "b": 0.75,
+  "routing_unchanged": true,
+  "method_d_index_query_side_only": true,
+  "h001_h040_loaded": false,
+  "h041_created": false,
+  "transformations_match_inventory": true,
+  "failed": [],
+  "preflight_pass": true
+}

@@ -1,0 +1,55 @@
+{
+  "selected": "D",
+  "rule": "primary Hit@5, secondary nDCG@5, tie-break lower latency",
+  "dev_n_roman": 13,
+  "dev": {
+    "A": {
+      "n": 13,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "p@5": 0.0,
+      "ndcg@5": 0.0,
+      "mrr": 0.0,
+      "latency": 0.0009,
+      "hit5_raw": 0.0,
+      "ndcg5_raw": 0.0,
+      "_mean_lat_all_roman": 0.0011
+    },
+    "B": {
+      "n": 13,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "p@5": 0.0,
+      "ndcg@5": 0.0,
+      "mrr": 0.0,
+      "latency": 0.0073,
+      "hit5_raw": 0.0,
+      "ndcg5_raw": 0.0,
+      "_mean_lat_all_roman": 0.0068
+    },
+    "C": {
+      "n": 13,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "p@5": 0.2,
+      "ndcg@5": 0.8004,
+      "mrr": 0.7359,
+      "latency": 0.0052,
+      "hit5_raw": 1.0,
+      "ndcg5_raw": 0.8003565667723493,
+      "_mean_lat_all_roman": 0.0083
+    },
+    "D": {
+      "n": 13,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "p@5": 0.2,
+      "ndcg@5": 0.9331,
+      "mrr": 0.9103,
+      "latency": 0.0065,
+      "hit5_raw": 1.0,
+      "ndcg5_raw": 0.9331484425824198,
+      "_mean_lat_all_roman": 0.0119
+    }
+  }
+}

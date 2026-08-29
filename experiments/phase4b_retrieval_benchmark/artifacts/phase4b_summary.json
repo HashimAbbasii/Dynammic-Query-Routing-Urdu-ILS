@@ -1,0 +1,64 @@
+{
+  "eval_n": 78,
+  "frozen_test_used": false,
+  "svm_retrained": false,
+  "metrics": {
+    "headline": {
+      "n": 78,
+      "source_hit_rate": 0.4487,
+      "p_at_k": 0.0897,
+      "ndcg_at_k": 0.4009,
+      "recall_at_k": 0.4487,
+      "mrr": 0.3885
+    },
+    "old_full": {
+      "n": 78,
+      "source_hit_rate": 0.2564,
+      "p_at_k": 0.0513,
+      "ndcg_at_k": 0.2203,
+      "recall_at_k": 0.2564,
+      "mrr": 0.2103
+    },
+    "chunk_ann": {
+      "n": 78,
+      "source_hit_rate": 0.2821,
+      "p_at_k": 0.0564,
+      "ndcg_at_k": 0.2362,
+      "recall_at_k": 0.2821,
+      "mrr": 0.2309
+    },
+    "bm25": {
+      "n": 78,
+      "source_hit_rate": 0.5897,
+      "p_at_k": 0.1179,
+      "ndcg_at_k": 0.5509,
+      "recall_at_k": 0.5897,
+      "mrr": 0.5425
+    }
+  },
+  "latency_sec": {
+    "headline": 1.1341,
+    "old_full": 0.1803,
+    "chunk_ann": 0.3194,
+    "bm25": 0.014
+  },
+  "oracle_ndcg5": {
+    "headline+old_full": 0.4327,
+    "headline+chunk_ann": 0.4375,
+    "headline+bm25": 0.617,
+    "all_rooms": 0.617
+  },
+  "unique_hit5_when_headline_misses": {
+    "bm25": 15,
+    "chunk_ann": 1,
+    "old_full": 1,
+    "long_context": null
+  },
+  "longctx_ran": false,
+  "hardware": {
+    "cuda": false,
+    "gpu": "cpu",
+    "cpu_count": 12,
+    "torch": "2.13.0+cpu"
+  }
+}

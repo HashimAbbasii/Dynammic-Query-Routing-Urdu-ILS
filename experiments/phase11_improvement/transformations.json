@@ -1,0 +1,30 @@
+{
+  "experiment_id": "phase11_ablation",
+  "dictionary_file_modified": false,
+  "original_tokens_preserved": true,
+  "optional_hai_bhi": false,
+  "h001_h040_loaded": false,
+  "m1_expand": {
+    "kya": ["kiya"],
+    "kia": ["kiya"],
+    "nahin": ["nahi"],
+    "nai": ["nahi"],
+    "mai": ["mein"],
+    "aj": ["aaj"],
+    "today": ["aaj"],
+    "sy": ["se"],
+    "ny": ["ne"],
+    "geya": ["gaya"],
+    "pakstani": ["pakistan"],
+    "fridi": ["afridi"],
+    "krne": ["karna"]
+  },
+  "m2_expand": {
+    "win": ["jeet"],
+    "shikast": ["loss"],
+    "hukumat": ["government"],
+    "court": ["adalat"]
+  },
+  "m3_stoplist": ["ka", "ki", "ke", "ko", "se", "mein", "ne", "par", "aur"],
+  "forbidden_new_keys": ["diesel", "temperature", "iphone", "football", "petrol"]
+}

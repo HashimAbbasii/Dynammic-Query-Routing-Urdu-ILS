@@ -1,0 +1,5 @@
+ceiling,n,hit@5,ndcg@5,mrr,note
+urdu_bm25_plus_selected_roman,78,0.8718,0.8107,0.797,deployable routing (mixed uses Urdu BM25)
+headline_plus_script_aware,78,0.9103,0.8703,0.8615,oracle min-rank; not deployable
+headline_urdu_bm25_selected_mixedpath,78,0.9103,0.8712,0.8626,includes mixed roman path; not deployable
+method_E_union_C_D_roman_only,23,0.9565,,,roman queries only

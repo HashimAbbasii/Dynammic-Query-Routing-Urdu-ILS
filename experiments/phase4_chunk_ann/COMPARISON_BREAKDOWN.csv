@@ -1,0 +1,10 @@
+comparison,count,ids
+chunk_better_rank_than_full,10,
+full_better_rank_than_chunk,6,
+rank_tie_chunk_vs_full,62,
+chunk_hit5_full_miss5,5,"QTRN_003,QTRN_014,QTRN_054,QTRN_117,QTRN_168"
+full_hit5_chunk_miss5,3,"QTRN_046,QTRN_140,QTRN_255"
+chunk_hit5_both_headline_and_full_miss5,1,QTRN_054
+chunk_better_rank_than_headline,7,
+headline_better_rank_than_chunk,21,
+rank_tie_chunk_vs_headline,50,

@@ -1,0 +1,11 @@
+{
+  "expected_hit@5": 0.8718,
+  "observed_hit@5": 0.8718,
+  "expected_misses": 10,
+  "observed_misses": 10,
+  "headline_expected_hit@5": 0.4487,
+  "headline_observed_hit@5": 0.4487,
+  "ndcg@5": 0.8107,
+  "mrr": 0.797,
+  "reproduced": true
+}
