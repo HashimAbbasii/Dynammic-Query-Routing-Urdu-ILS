@@ -1,0 +1,75 @@
+{
+  "reproduction": {
+    "expected_hit@5": 0.8718,
+    "observed_hit@5": 0.8718,
+    "expected_misses": 10,
+    "observed_misses": 10,
+    "headline_expected_hit@5": 0.4487,
+    "headline_observed_hit@5": 0.4487,
+    "ndcg@5": 0.8107,
+    "mrr": 0.797,
+    "reproduced": true
+  },
+  "lexical": {
+    "miss_n": 10,
+    "hit_n": 68,
+    "miss_mean_q_len": 8.9,
+    "hit_mean_q_len": 10.75,
+    "miss_mean_headline_coverage": 0.619,
+    "hit_mean_headline_coverage": 0.4645,
+    "miss_mean_body_coverage": 0.644,
+    "hit_mean_body_coverage": 0.5924,
+    "miss_mean_content_headline_coverage": 0.7597,
+    "hit_mean_content_headline_coverage": 0.5211,
+    "miss_mean_content_body_coverage": 0.7597,
+    "hit_mean_content_body_coverage": 0.6239,
+    "miss_mean_headline_jaccard": 0.3993,
+    "hit_mean_headline_jaccard": 0.3613
+  },
+  "complementarity": {
+    "sa_hit": 68,
+    "hl_hit": 35,
+    "both": 32,
+    "union": 71,
+    "union_hit@5": 0.9103,
+    "headline_only": 3,
+    "script_aware_only": 36,
+    "both_miss": 7
+  },
+  "sa_buckets": {
+    "RANK_6_10": 4,
+    "MISS_50": 4,
+    "RANK_21_50": 2
+  },
+  "hl_buckets_on_misses": {
+    "TOP_5": 3,
+    "MISS_50": 6,
+    "RANK_6_10": 1
+  },
+  "miss_ids": [
+    "QTRN_010",
+    "QTRN_031",
+    "QTRN_099",
+    "QTRN_108",
+    "QTRN_168",
+    "QTRN_170",
+    "QTRN_189",
+    "QTRN_216",
+    "QTRN_225",
+    "QTRN_258"
+  ],
+  "dev_misses": [
+    "QTRN_168",
+    "QTRN_170",
+    "QTRN_189",
+    "QTRN_225"
+  ],
+  "val_misses": [
+    "QTRN_010",
+    "QTRN_031",
+    "QTRN_099",
+    "QTRN_108",
+    "QTRN_216",
+    "QTRN_258"
+  ]
+}

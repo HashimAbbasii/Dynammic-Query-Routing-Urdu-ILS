@@ -1,0 +1,5 @@
+setting,n,mean_oracle_nDCG@5,rooms
+headline+old_full,78,0.4327,"headline,old_full"
+headline+chunk_ann,78,0.4375,"headline,chunk_ann"
+headline+bm25,78,0.617,"headline,bm25"
+all_rooms,78,0.617,"headline,old_full,chunk_ann,bm25"

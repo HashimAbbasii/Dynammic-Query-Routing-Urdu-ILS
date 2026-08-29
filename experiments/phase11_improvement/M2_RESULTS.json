@@ -1,0 +1,32 @@
+{
+  "model": "M2",
+  "experiment_id": "phase11_ablation",
+  "h001_h040_used": false,
+  "dictionary_modified": false,
+  "n78": {
+    "n": 78,
+    "n_hit@5": 68,
+    "hit@5": 0.8718,
+    "ndcg@5": 0.8107,
+    "mrr": 0.797,
+    "n_roman": 23,
+    "n_affected_roman": 3,
+    "n_empty_after_transform": 0,
+    "detector_used": "unicode_detect_script_on_raw_query"
+  },
+  "train_roman": {
+    "n": 64,
+    "n_hit@5": 61,
+    "hit@5": 0.9531,
+    "ndcg@5": 0.894,
+    "mrr": 0.8781,
+    "n_roman": 64,
+    "n_affected_roman": 9,
+    "n_empty_after_transform": 0,
+    "detector_used": "unicode_detect_script_on_raw_query"
+  },
+  "n78_gate_pass": true,
+  "gate": true,
+  "decision": "PASS",
+  "winner": "M1"
+}

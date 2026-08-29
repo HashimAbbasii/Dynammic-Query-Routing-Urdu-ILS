@@ -1,0 +1,5 @@
+split,method,n,hit@5,hit@10,ndcg@5,mrr,latency_sec
+dev,D,13,1.0,1.0,0.9331,0.9103,0.0065
+internal_val,D,10,0.9,1.0,0.8131,0.7944,0.007
+dev,A_baseline,13,0.0,0.0,0.0,0.0,0.0009
+internal_val,A_baseline,10,0.0,0.0,0.0,0.0,0.0009

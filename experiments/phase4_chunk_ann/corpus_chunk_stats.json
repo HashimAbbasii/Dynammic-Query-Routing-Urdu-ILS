@@ -1,0 +1,41 @@
+{
+  "n_articles": 111860,
+  "model_name": "paraphrase-multilingual-MiniLM-L12-v2",
+  "max_seq_length": 128,
+  "user_suggested_chunk_tokens": 192,
+  "user_suggested_overlap": 32,
+  "primary_chunk_tokens": 96,
+  "primary_overlap": 32,
+  "stride": 64,
+  "justification": "Encoder max_seq_length is 128 including special tokens. A 192-token chunk would be silently truncated to 128, so 192/32 does not test chunking vs one truncated vector. Content window 96 + CLS/SEP fits in 128. Overlap 32 is taken from the protocol. Set from the tokenizer limit before indexing; not tuned on H001-H040 or on eval nDCG.",
+  "token_length_combined": {
+    "n": 111860,
+    "min": 41.0,
+    "max": 9769.0,
+    "mean": 368.99293760057213,
+    "median": 291.0,
+    "p75": 442.0,
+    "p90": 661.0,
+    "p95": 838.0,
+    "p99": 1456.0
+  },
+  "pct_articles_exceeding_128": 94.42,
+  "pct_articles_exceeding_96": 98.3,
+  "chunks_per_article": {
+    "n": 111860,
+    "min": 1.0,
+    "max": 153.0,
+    "mean": 5.758090470230646,
+    "median": 5.0,
+    "p75": 7.0,
+    "p90": 10.0,
+    "p95": 13.0,
+    "p99": 23.0
+  },
+  "total_chunks_estimate": 644100,
+  "embedding_dim": 384,
+  "raw_embedding_bytes_estimate": 989337600,
+  "raw_embedding_gb_estimate": 0.989,
+  "n_chunk_candidates_preregistered": 80,
+  "aggregation": "max_chunk_similarity"
+}

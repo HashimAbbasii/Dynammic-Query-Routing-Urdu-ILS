@@ -1,0 +1,4 @@
+setting,eval_n,mean_oracle_nDCG@5,HEADLINE,FULL,MIXED,note
+current_indexes,78,0.4327,22,4,52,headline vs one-vector full
+full_replaced_by_chunk_ann,78,0.4375,19,5,54,headline vs corpus chunk ANN
+headline_full_and_chunk_ann,78,0.4503,,,,max nDCG@5 of three rooms

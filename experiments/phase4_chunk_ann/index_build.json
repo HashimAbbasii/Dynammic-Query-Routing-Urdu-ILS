@@ -1,0 +1,15 @@
+{
+  "n_articles": 111860,
+  "n_chunks": 644100,
+  "chroma_count": 644100,
+  "chunk_tokens": 96,
+  "overlap": 32,
+  "ann": "chromadb HNSW",
+  "space": "cosine",
+  "hnsw_params": "Chroma default HNSW, hnsw:space=cosine; M/ef not overridden",
+  "embedding_dim": 384,
+  "device": "Tesla T4",
+  "build_sec": 6546.3,
+  "chroma_bytes": 1374168192,
+  "embedding_memmap_bytes": 989337600
+}

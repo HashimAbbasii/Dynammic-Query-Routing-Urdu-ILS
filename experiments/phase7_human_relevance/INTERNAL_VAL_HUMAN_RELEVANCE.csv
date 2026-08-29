@@ -1,0 +1,31 @@
+query_id,rank,retrieved_doc_id,retrieved_headline,relevance_label,reason,gold_source_id,gold_source_rank
+QTRN_010,1,97025,نیوزی لینڈ اور جنوبی افریقہ کا خری کرکٹ ٹیسٹ 23 سے مارچ کوہو گا,TOPICALLY_RELATED,Fixture/preview of an SA-NZ test; query is a truncated series-result fragment.,30141,9
+QTRN_010,2,97115,جنوبی افریقہ نے نیوزی لینڈ کو ون ڈے میں شکست دے کر سیریز جیت لی,RELEVANT,SA vs NZ series win report; query has no date/format slot (same recurring-wire rule as QTRN_168).,30141,9
+QTRN_010,3,95185,جنوبی افریقا اور نیوزی لینڈکے درمیان تیسراون ڈے کل ہوگا,TOPICALLY_RELATED,Tomorrow's ODI preview; not a series outcome.,30141,9
+QTRN_010,4,29970,پاکستان کی ٹیسٹ رینکنگ میں ایک درجہ ترقی,NOT_RELEVANT,Pakistan ranking sidebar; does not answer an SA-NZ series need.,30141,9
+QTRN_010,5,87916,سنچورین ٹیسٹ نیوزی لینڈ کیخلاف جنوبی افریقہ3 وکٹ پر283رنز,PARTIALLY_RELEVANT,In-play SA-NZ test scorecard in a series; not a completed series result.,30141,9
+QTRN_031,1,93773,پاکستان ورلڈ ٹیم اسنوکر چیمپئن شپ کے سیمی فائنل میں پہنچ گیا,PARTIALLY_RELEVANT,Same tournament; query specifies final (fainl) not semi-final.,93764,9
+QTRN_031,2,95479,عالمی اسنوکر چیمپئن شپ پاکستان کے محمد صف فائنل میں پہنچ گئے,PARTIALLY_RELEVANT,A Pakistani player reached a world snooker final; not the team-final fact in the query.,93764,9
+QTRN_031,3,92319,ورلڈ ٹیم اسنوکر چیمپئن پاکستان سیمی فائنل میں پہنچ گیا,PARTIALLY_RELEVANT,Team event but semi-final in Egypt; query asks for reaching the final.,93764,9
+QTRN_031,4,42254,ورلڈ اسنوکر چیمپئن شپ جیتنے کے بعد محمد اصف وطن پہنچ گئے,TOPICALLY_RELATED,Homecoming after a title; not reaching a final.,93764,9
+QTRN_031,5,91656,ورلڈ اسنوکر چیمپئن شپ محمد سجاد فائنل میں پہنچ گئے,PARTIALLY_RELEVANT,Individual final appearance; query is team Pakistan reaching the final.,93764,9
+QTRN_099,1,52902,بنگلہ دیش ویمن کرکٹ ٹیم کا دورہ پاکستان کا شیڈول جاری,TOPICALLY_RELATED,Tour schedule; query is a women's cricket match involving Pakistan.,42982,9
+QTRN_099,2,82070,وسیم خان کا ویمنز ٹیم کے میچ کے دوران انتظامات اور کھلاڑیوں کی کارکردگی کا جائزہ,PARTIALLY_RELEVANT,During a Pakistan women's match but the article is an official's review not a match report.,42982,9
+QTRN_099,3,53932,پاکستان ویمن بمقابلہ ویسٹ انڈین ویمن پاکستان کا ٹاس جیت کے بیٹنگ کا فیصلہ,PARTIALLY_RELEVANT,Pakistan women's match occasion (toss); query has no opponent/date so instance not unique RELEVANT.,42982,9
+QTRN_099,4,88745,پاکستان ویمن ٹیم کل چنئی کے لئے روانہ ہوگی,TOPICALLY_RELATED,Team travel; not a match.,42982,9
+QTRN_099,5,25931,بنگلہ دیش ویمن کرکٹ ٹیم کے دورہ پاکستان کے شیڈول کا اعلان,TOPICALLY_RELATED,Another schedule announcement.,42982,9
+QTRN_108,1,26215,انگلینڈ کی تنزلی بھارت ون ڈے کی عالمی نمبر1 ٹیم بن گئی,PARTIALLY_RELEVANT,Genre/status query عالمی نمبر ایک ٹیم; India ODI No.1 is an instance (DEV QTRN_225 rule).,87824,999
+QTRN_108,2,28847,پاکستان پہلی مرتبہ ٹی20 کا عالمی نمبر ایک بن گیا,PARTIALLY_RELEVANT,A world-number-one-team instance (Pakistan T20).,87824,999
+QTRN_108,3,29015,نئی ون ڈے رینکنگ میں بھارت عالمی نمبر ایک,PARTIALLY_RELEVANT,Another No.1 ranking instance; format/team not in the query.,87824,999
+QTRN_108,4,25443,پاکستان کو ٹی20 میں عالمی نمبر1 پوزیشن بچانے کا چیلنج درپیش,PARTIALLY_RELEVANT,Same status category; defending No.1 not a unique answer.,87824,999
+QTRN_108,5,87654,بھارت نے پاکستان کو نمبر ون ٹیسٹ ٹیم سے محروم کردیا,PARTIALLY_RELEVANT,Number-one team news; not the ICC Test mace ceremony in the gold title.,87824,999
+QTRN_216,1,72433,ایس ای سی پی کا فراڈ کرنیوالے بروکروں کیخلاف کارروائی کا اعلان,TOPICALLY_RELATED,Entity-only query (SECP); fraud-broker action is org overlap not a specified need (DEV QTRN_189).,2824,999
+QTRN_216,2,892,افسران کی ڈیپوٹیشن کا تنازع نیب اور ایس ای سی پی میں ڈیڈ لاک برقرار,TOPICALLY_RELATED,SECP vs NAB dispute; entity overlap only.,2824,999
+QTRN_216,3,39963,ایس ای سی پی نے تمام لسٹڈ کمپنیوں کو اپنے سہ ماہی مالیاتی گوشوارے ای میل کے ذریعے بھیجنے کا پابند بنادیا,TOPICALLY_RELATED,SECP filing rule; not a specified information need.,2824,999
+QTRN_216,4,61262,ایس ای سی پی کیجانب سے کمپنیز ایکٹ 2017 کا نیا مسودہ جاری,TOPICALLY_RELATED,SECP draft regulations; entity-only.,2824,999
+QTRN_216,5,3034,اسٹاک مارکیٹ میں گزشتہ چند ماہ میں نے والی تیزی مصنوعی تھی,TOPICALLY_RELATED,Senate/SECP mention in a stock-market debate; still not a specified SECP need.,2824,999
+QTRN_258,1,75926,سندھ بھر کے تمام سی این جی اسٹیشنز صبح 8بجے کھل جائینگے,RELEVANT,Same CNG-open-after-load-management wire; query has no date (DEV QTRN_168 recurring-wire rule).,75838,23
+QTRN_258,2,77374,سندھ بھر میں سی این جی اسٹیشنز صبح 8بجے کھل جائینگے,RELEVANT,Same wire type (Friday 24h closure then 8am open).,75838,23
+QTRN_258,3,77321,سندھ بھر کے سی این جی اسٹیشنز صبح 8بجے کھل جائینگے,RELEVANT,Same event class; weekday slot not in the query.,75838,23
+QTRN_258,4,76150,سندھ بھر کے سی این جی اسٹیشنز صبح 8بجے کھل جائینگے,RELEVANT,Monday closure variant of the same wire.,75838,23
+QTRN_258,5,77287,سندھ بھر میں سی این جی اسٹیشنز صبح بجے کھل جائینگے,RELEVANT,Wednesday-Thursday variant; still answers the underspecified need.,75838,23

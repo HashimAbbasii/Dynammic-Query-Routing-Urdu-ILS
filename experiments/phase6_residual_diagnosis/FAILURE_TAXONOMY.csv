@@ -1,0 +1,11 @@
+query_id,split,query_type,primary_failure,secondary_failure,script_aware_rank,headline_rank,source_in_top50,evidence_summary
+QTRN_010,internal_val,urdu,WRONG_ROOM,TOPICAL_NEIGHBOUR,9,1,1,Headline rank 1. BM25 rank 9 among other SA-NZ cricket wires. Query = headline minus شکست.
+QTRN_031,internal_val,roman_urdu,TOPICAL_NEIGHBOUR,RANKING_FAILURE,9,999,1,Source at 9. Top-5 are other Pakistan snooker championship reports (semi vs final). Headline miss-50.
+QTRN_099,internal_val,mixed,QUERY_AMBIGUITY,TOPICAL_NEIGHBOUR,9,999,1,mixed_short plus Pakistan news update. Rank 9 among women's cricket Pakistan articles.
+QTRN_108,internal_val,mixed,QUERY_AMBIGUITY,TOPICAL_NEIGHBOUR,999,999,0,Generic عالمی نمبر ایک ٹیم. Many ranking stories. Source ICC test mace not in top-50.
+QTRN_168,dev,urdu,WRONG_ROOM,TEMPORAL_CONFUSION,7,1,1,Headline rank 1. BM25 rank 7 among same-template PSX third-day stories with different point moves.
+QTRN_170,dev,urdu,WRONG_ROOM,TOPICAL_NEIGHBOUR,37,4,1,Headline rank 4. BM25 rank 37 among PAK-WI T20 articles. Query has generation suffix کے اثرات کیا ہیں.
+QTRN_189,dev,mixed,QUERY_AMBIGUITY,LEXICAL_MISMATCH,999,999,0,Title clipped to ئی سی سی کا. Distinctive interpol/corruption terms absent. Not in top-50.
+QTRN_216,internal_val,mixed,ENTITY_COLLISION,QUERY_AMBIGUITY,999,999,0,Query is SECP name plus template. Many SECP articles. Source not in top-50.
+QTRN_225,dev,mixed,QUERY_AMBIGUITY,LEXICAL_MISMATCH,999,999,0,Genre phrase only; Ant-Man / انٹ مین dropped from title. Other sci-fi films in top-5.
+QTRN_258,internal_val,urdu,KNOWN_ITEM_AMBIGUITY,TOPICAL_NEIGHBOUR,23,7,1,Near-duplicate Sindh CNG opening wires. Source in top-50 (23) and headline rank 7. Exact id is weakly identified.

@@ -1,0 +1,27 @@
+{
+  "n_train": 182,
+  "language_type": {
+    "urdu": 99,
+    "mixed": 19,
+    "roman_urdu": 64
+  },
+  "creation_method": {
+    "how": 20,
+    "title_short": 19,
+    "mixed_short": 19,
+    "title_roman": 64,
+    "lead": 20,
+    "why": 21,
+    "effects": 19
+  },
+  "n_roman_urdu": 64,
+  "n_mixed": 19,
+  "n_urdu": 99,
+  "n_roman_query_tokens": 639,
+  "n_roman_unique_tokens": 417,
+  "n_roman_tokens_in_dict": 211,
+  "n_roman_tokens_not_in_dict": 428,
+  "heldout_h_ids_in_train": false,
+  "bm25_run": false,
+  "dictionary_modified": false
+}

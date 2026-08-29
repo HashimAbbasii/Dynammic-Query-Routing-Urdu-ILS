@@ -1,0 +1,79 @@
+query_id,split,language_type,source_doc_id,query_text,headline_rank,full_rank,chunk_rank,bm25_rank,best_room,headline_miss5,bm25_hit_headline_miss,chunk_hit_headline_miss,longctx_hit_headline_miss
+QTRN_003,dev,urdu,106021,بالی ووڈ اداکارہ ارمیلا مٹونڈکر کی 40 ویں سالگرہ کیوں ہوا,1,999,1,1,headline,0,0,0,0
+QTRN_010,internal_val,urdu,30141,جنوبی افریقہ کی نیوزی لینڈ کو سیریز میں,1,999,999,9,headline,0,0,0,0
+QTRN_012,internal_val,urdu,63190,نیپرا نے کراچی کے صارفین پر پھر بجلی گرادی کیوں ہوا,1,999,9,1,headline,0,0,0,0
+QTRN_014,dev,urdu,10488,یہ بھی پڑھیں حکومتی دبا پر بھارتی ٹی وی نے متنازع ڈرامہ بند کردیامزید,2,999,1,1,chunk_ann,0,0,0,0
+QTRN_016,internal_val,roman_urdu,93737,nishnl ds aibld ti20 pntgolr kp cricket tornamnt sndh ne jeet liya,999,999,999,999,none,1,0,0,0
+QTRN_024,dev,urdu,6732,میرے کردار اور ساکھ پر سوالات اٹھانا حد سے باہر کیسے ہوا,1,1,1,1,headline,0,0,0,0
+QTRN_026,internal_val,urdu,79325,حقیقت سے قریب تر تھری ڈی چہروں کی کے اثرات کیا ہیں,999,999,999,1,bm25,1,1,0,0
+QTRN_028,internal_val,urdu,21852,جے 20 اسٹیلتھ لڑاکا طیارہ پریشنل کردیا گیا,1,1,1,1,headline,0,0,0,0
+QTRN_031,internal_val,roman_urdu,93764,pakistan orld asnokr chimpin shp ke fainl mein phnch gaya,999,999,999,999,none,1,0,0,0
+QTRN_033,dev,urdu,47463,کوپا امریکہ فٹ بال ٹورنامنٹ چلی نے بولیویا کو05 سے کیسے ہوا,1,1,1,1,headline,0,0,0,0
+QTRN_034,dev,roman_urdu,31976,rthr ko osim aur miandad se astfadh krne ka mshorh,999,999,999,999,none,1,0,0,0
+QTRN_037,internal_val,urdu,56572,میلبورن پہلے ٹی ٹوئنٹی میں سری لنکا نے,1,999,11,1,headline,0,0,0,0
+QTRN_038,dev,roman_urdu,37088,astrilin aopn aasam aur rajrz dosre mrhle mein,999,999,999,999,none,1,0,0,0
+QTRN_039,dev,urdu,16464,کاجول کیلئے رنبیر نمبر ون ہیرو کیوں ہوا,1,999,999,1,headline,0,0,0,0
+QTRN_044,dev,urdu,38843,ایکس سی ایم جی گروپ کا پاکستانی ہاسنگ کے اثرات کیا ہیں,999,999,999,1,bm25,1,1,0,0
+QTRN_046,internal_val,urdu,76791,وزارت خزانہ کی پاکستان میں غیر ملکی بینکوں,1,2,9,1,headline,0,0,0,0
+QTRN_051,internal_val,urdu,15797,ہمایوں سعید ٹریفک حادثے میں زخمی کیسے ہوا,1,2,3,1,headline,0,0,0,0
+QTRN_054,dev,mixed,73502,سندھ کے بجٹ کیلئےتجاویز Pakistan news update,999,999,1,1,chunk_ann,1,1,1,0
+QTRN_056,dev,roman_urdu,23505,askaip ka prane fonz par sport khtm krne ka aalan,999,999,999,999,none,1,0,0,0
+QTRN_059,internal_val,urdu,49045,نیو یارک 92 نیوز امریکہ سے تعلق رکھنے والی خاتون ایتھلیٹ دنیا کی معمر,1,999,999,1,headline,0,0,0,0
+QTRN_067,internal_val,roman_urdu,30586,hfiz strilia ke khlaf aik rozh team mein shaml,999,999,999,999,none,1,0,0,0
+QTRN_070,internal_val,roman_urdu,11616,snje dt film ki shotng ke doran zkhmi,999,999,999,999,none,1,0,0,0
+QTRN_086,internal_val,urdu,67997,نئی دہلی 18جنوری2018بھارتی سپریم کورٹ نےسنجے لیلا بھنسالی کی فلم پدماوت پر 4ریاستوں میں,999,12,7,1,bm25,1,1,0,0
+QTRN_088,internal_val,roman_urdu,41124,mobi lnk ne flig shp karporit rspansbiliti ke tor par mik ior,999,999,999,999,none,1,0,0,0
+QTRN_089,internal_val,urdu,105342,مورٹل کومبیٹ ایکس ویڈیو گیم کا نیا ٹریلر کے اثرات کیا ہیں,1,4,4,1,headline,0,0,0,0
+QTRN_091,internal_val,urdu,26205,ورلڈ کپ عماد نے بازی پلٹ دی افغانستان,1,1,3,5,headline,0,0,0,0
+QTRN_094,internal_val,roman_urdu,1547,shbr zidi aazazi chiirmin aif bi tainat noti fkishn jari,999,999,999,999,none,1,0,0,0
+QTRN_099,internal_val,mixed,42982,ویمن کرکٹ میچ پاکستان Pakistan news update,999,999,999,9,none,1,0,0,0
+QTRN_100,dev,urdu,70677,پی ٹی ائی حکومت کے ڈیڑھ سال میں,999,999,999,1,bm25,1,1,0,0
+QTRN_102,internal_val,urdu,5494,رابی پیرزادہ کا مذہبی تعلیمات کے مطابق زندگی گزارنے کا کیوں ہوا,1,999,999,2,headline,0,0,0,0
+QTRN_105,dev,urdu,95,کورونا کیسز میں اضافہ اور لاک ڈان کا خدشہ پاکستان کیسے ہوا,1,999,999,2,headline,0,0,0,0
+QTRN_106,dev,roman_urdu,3917,askr aioard iafth holi od actor jif lion brjz kinsr ka shkar,999,999,999,999,none,1,0,0,0
+QTRN_107,internal_val,urdu,87080,باسط علی کے جھگڑےکی تحقیقات کریں گے شہریار کے اثرات کیا ہیں,1,1,1,1,headline,0,0,0,0
+QTRN_108,internal_val,mixed,87824,عالمی نمبر ایک ٹیم Pakistan news update,999,999,999,999,none,1,0,0,0
+QTRN_117,internal_val,mixed,47026,زمبابوے کو وائٹ واش Pakistan news update,4,999,4,4,headline,0,0,0,0
+QTRN_123,dev,urdu,45783,ائرلینڈاور انگلینڈ کےخلاف ون ڈے سیریز کیلئے قومی ٹیم کا کیسے ہوا,2,999,999,1,bm25,0,0,0,0
+QTRN_125,internal_val,urdu,46118,ریو اولمپکس کانٹ ڈان شروع یونان میں اولمپکس کے اثرات کیا ہیں,1,1,1,1,headline,0,0,0,0
+QTRN_128,internal_val,roman_urdu,5277,sjad ali ke nie gane mein an ke bite glokar ki joani,999,999,999,999,none,1,0,0,0
+QTRN_133,dev,roman_urdu,74418,pakistan airan mnsobon ko tizi se mkml krne ka fislh krlia nor,999,999,999,999,none,1,0,0,0
+QTRN_139,dev,roman_urdu,111194,aif bi ar internet srosz par aaid tiks ki osoli kilie rolz,999,999,999,999,none,1,0,0,0
+QTRN_140,dev,urdu,109534,عالمی بازار میں سونا ڈالر مہنگا ہوکر 1467 ڈالر فی اونس کا ہوگیا فوٹوفائل,999,1,10,1,old_full,1,1,0,0
+QTRN_143,internal_val,urdu,23162,اب فیس بک میں فوٹو فریم خود بنائیں کے اثرات کیا ہیں,3,1,1,1,old_full,0,0,0,0
+QTRN_147,internal_val,urdu,6149,بولڈ گلوکاری کے بعد وینا ملک کے وطن کی محبت کیوں ہوا,999,999,999,1,bm25,1,1,0,0
+QTRN_150,dev,urdu,64562,کمشنر کراچی کا دودھ کی قیمتیں برقرار رکھنے کا فیصلہ کیسے ہوا,1,2,3,1,headline,0,0,0,0
+QTRN_153,dev,mixed,21069,ہواوے 2018 میں ریکارڈ Pakistan news update,999,999,999,2,bm25,1,1,0,0
+QTRN_155,internal_val,roman_urdu,28551,gptl ki jarhanh batting pakistan ko dosre on de mein loss,1,1,1,999,headline,0,0,0,0
+QTRN_163,dev,urdu,9911,یو یو ہنی سنگھ کی دل چوری ساڈا,8,999,999,1,bm25,1,1,0,0
+QTRN_168,dev,urdu,63522,کاروباری ہفتے کا تیسرا روز پاکستان اسٹاک مارکیٹ پوائنٹس کی کیسے ہوا,1,15,4,7,headline,0,0,0,0
+QTRN_170,dev,urdu,84418,پاکستان نے ویسٹ انڈیز کو دوسرے ٹی ٹوئنٹی کے اثرات کیا ہیں,4,999,999,999,headline,0,0,0,0
+QTRN_174,dev,urdu,109004,ایف بی کا ڈاکٹرز کے بعد فیشن ڈیزائنرز کے گرد کیوں ہوا,1,1,1,1,headline,0,0,0,0
+QTRN_175,internal_val,roman_urdu,31152,babraazm tist mein bhtrin karkrdgi kilie praatmad,999,999,999,999,none,1,0,0,0
+QTRN_189,dev,mixed,26594,ئی سی سی کا Pakistan news update,999,999,999,999,none,1,0,0,0
+QTRN_191,dev,roman_urdu,23059,aipl aur koalkom ke drmian qanoni jng shroa,999,999,999,999,none,1,0,0,0
+QTRN_195,internal_val,urdu,38380,ڈیزل کی قیمت میں 4روپے ضافہ نئی قیمت 10543 روپے کیسے ہوا,1,999,999,1,headline,0,0,0,0
+QTRN_196,dev,roman_urdu,84574,dfaai chimpin peshawar zlmi ke kamran akml team ko tap for mein,999,999,999,999,none,1,0,0,0
+QTRN_205,internal_val,roman_urdu,45751,orld joniir skoash mein pakistan ka nam roshn krnioali team otn oaps,999,999,999,999,none,1,0,0,0
+QTRN_207,dev,mixed,80209,فیس بک سگریٹ نوشی Pakistan news update,999,999,999,1,bm25,1,1,0,0
+QTRN_211,dev,roman_urdu,5337,haroi oainstn ne rip kisz khtm kroane kilie asraiil ki khfih aijnsi,999,999,999,999,none,1,0,0,0
+QTRN_212,internal_val,urdu,79928,صدیوں سے یہی سنتے ائے تھے کہ جو سوتا ہے وہ کھوتا ہے لیکن,2,1,1,1,old_full,0,0,0,0
+QTRN_214,dev,roman_urdu,31956,shin hiz qomi cricket team ke fzio thrapst mqrr,999,999,999,999,none,1,0,0,0
+QTRN_215,dev,urdu,110788,نئی حکومت کے نے سے مہنگائی میں فیصد کے اثرات کیا ہیں,5,1,1,1,old_full,0,0,0,0
+QTRN_216,internal_val,mixed,2824,ایس ای سی پی Pakistan news update,999,999,999,999,none,1,0,0,0
+QTRN_220,dev,roman_urdu,93962,tisra on dezmbaboe ka tas jeet kr phle fielding ka fislh,999,999,999,999,none,1,0,0,0
+QTRN_221,internal_val,urdu,88802,اسلام اباد کھیل کو کھیل سمجھو اسے سیاست کا کھیل نہ بناوپاک بھارت ورلڈ,999,999,999,1,bm25,1,1,0,0
+QTRN_225,dev,mixed,104334,سائنس فکشن ایکشن فلم Pakistan news update,999,999,999,999,none,1,0,0,0
+QTRN_229,dev,roman_urdu,70430,pakistan mein dollar mzid mhnga hogia,999,999,999,999,none,1,0,0,0
+QTRN_232,dev,roman_urdu,50290,bridpt ki nii film alaiid 23 nombr ko sinma ghron mein thlkh,999,999,999,999,none,1,0,0,0
+QTRN_233,dev,urdu,31433,اسرائیلی پولیس کا میچ کےدوران فلسطینی پرچم لہرانے کے اثرات کیا ہیں,1,1,1,1,headline,0,0,0,0
+QTRN_235,internal_val,urdu,55299,سٹریلیا نے افغانستان کو ورلڈکپ کی تاریخ کا,999,999,999,1,bm25,1,1,0,0
+QTRN_237,dev,urdu,8544,سونالی میری ہیرو ہیں کیوں ہوا,1,999,999,2,headline,0,0,0,0
+QTRN_239,dev,urdu,22845,سام سنگ کے نئے فلیگ شپ اسمارٹ فون گلیکسی ایس کو 29 مارچ کو,999,999,999,2,bm25,1,1,0,0
+QTRN_244,internal_val,urdu,19220,پابندیوں کے باوجود کوالکوم کو جی چپس ہواوے,999,999,999,1,bm25,1,1,0,0
+QTRN_248,internal_val,urdu,32688,انڈیا کرکٹ ٹیم کےایک سابق مینیجر نے دعوی کیا ہے کہ 2014 میں انڈیا,999,999,999,1,bm25,1,1,0,0
+QTRN_253,dev,urdu,7060,والد نے کم عمری سے جنسی طور پر,2,4,2,1,bm25,0,0,0,0
+QTRN_255,internal_val,urdu,98560,پاکستان سے متاثر ہو کر بنائی جانے والی بالی وڈ کیوں ہوا,1,4,11,1,headline,0,0,0,0
+QTRN_257,internal_val,urdu,17459,برے دوستوں سے ناطہ ختم کرلیا ہے لنڈسے لوہن اے ایف پی فائل فوٹولاس,1,1,1,1,headline,0,0,0,0
+QTRN_258,internal_val,urdu,75838,سندھ بھر میں سی این جی اسٹیشنز صبح بجے کھل کیسے ہوا,7,999,999,999,none,1,0,0,0
+QTRN_260,dev,urdu,45512,انگلش پریمیر لیگ چیلسی نے ساتھمپٹن کو ہرا کے اثرات کیا ہیں,1,999,9,1,headline,0,0,0,0

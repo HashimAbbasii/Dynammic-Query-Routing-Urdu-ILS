@@ -1,0 +1,11 @@
+query_id,split,query_type,script_aware_rank,script_aware_bucket,headline_rank,headline_bucket,source_in_sa_top50,source_in_hl_top50
+QTRN_010,internal_val,urdu,9,RANK_6_10,1,TOP_5,1,1
+QTRN_031,internal_val,roman_urdu,9,RANK_6_10,999,MISS_50,1,0
+QTRN_099,internal_val,mixed,9,RANK_6_10,999,MISS_50,1,0
+QTRN_108,internal_val,mixed,999,MISS_50,999,MISS_50,0,0
+QTRN_168,dev,urdu,7,RANK_6_10,1,TOP_5,1,1
+QTRN_170,dev,urdu,37,RANK_21_50,4,TOP_5,1,1
+QTRN_189,dev,mixed,999,MISS_50,999,MISS_50,0,0
+QTRN_216,internal_val,mixed,999,MISS_50,999,MISS_50,0,0
+QTRN_225,dev,mixed,999,MISS_50,999,MISS_50,0,0
+QTRN_258,internal_val,urdu,23,RANK_21_50,7,RANK_6_10,1,1

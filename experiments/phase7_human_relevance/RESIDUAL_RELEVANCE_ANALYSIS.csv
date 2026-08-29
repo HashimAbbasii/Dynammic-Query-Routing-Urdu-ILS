@@ -1,0 +1,11 @@
+query_id,split,exact_source_hit,relevant_in_top5,partially_relevant_in_top5,topically_related_in_top5,not_relevant_in_top5,query_ambiguous,evaluation_mismatch,notes
+QTRN_168,dev,0,1,0,0,0,1,1,All five Top-5 hits are other-date PSX third-day closes. Official miss; human RELEVANT.
+QTRN_170,dev,0,0,1,1,0,0,1,Toss reports are PARTIALLY_RELEVANT; no result article in Top-5. Gold rank 37.
+QTRN_189,dev,0,0,0,1,0,1,0,Entity-only ICC fragment. Top-5 topical only. Not an evaluation mismatch under the frozen rubric.
+QTRN_225,dev,0,0,1,0,0,1,1,Genre-only; all five are other sci-fi action teasers (PARTIALLY_RELEVANT).
+QTRN_010,internal_val,0,1,1,1,1,1,1,Rank 2 is an SA-NZ series-win report (RELEVANT). Gold rank 9. Rank 4 not relevant.
+QTRN_031,internal_val,0,0,1,1,0,0,1,Query specifies final; Top-5 are semi-final/other-player finals. Gold rank 9.
+QTRN_099,internal_val,0,0,1,1,0,1,1,Women's cricket Pakistan beat without match identity; toss/review PARTIAL; schedules topical.
+QTRN_108,internal_val,0,0,1,0,0,1,1,Status/genre query; Top-5 are other world-No.1 ranking stories. Gold miss-50.
+QTRN_216,internal_val,0,0,0,1,0,1,0,SECP entity-only; same rule as QTRN_189. Not an evaluation mismatch.
+QTRN_258,internal_val,0,1,0,0,0,1,1,Near-duplicate Sindh CNG opening wires; all five RELEVANT under recurring-wire rule. Gold rank 23.

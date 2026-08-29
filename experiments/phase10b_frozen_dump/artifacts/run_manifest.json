@@ -1,0 +1,41 @@
+{
+  "experiment_id": "phase10b_frozen_dump",
+  "replaces_phase9": false,
+  "purpose": "frozen_system_retrieval_dump",
+  "timestamp_utc": "2026-08-27T13:24:24Z",
+  "git_commit": "b54ffeb805483aa1419095e28c16e3e38e37d1db",
+  "corpus_path": "data/clean_articles.csv",
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "n_docs": 111860,
+  "dict_keys": 198,
+  "dict_sha256": "30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3",
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "top_k": 50,
+  "code_entry_bm25": "experiments/phase5_roman_urdu/run_phase5.py::BM25",
+  "code_entry_detector": "experiments/phase5_roman_urdu/run_phase5.py::detect_script",
+  "code_entry_romanizer": "experiments/phase5_roman_urdu/run_phase5.py::romanize_token",
+  "query_source": "validate/dual_index_routing/labels/heldout_traps.py::HELDOUT_TRAPS.query",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "pandas": "2.3.3",
+  "tokenize_seconds": 168.474,
+  "search_seconds": 0.217,
+  "n_queries": 40,
+  "n_top50_rows": 1909,
+  "n_top5_rows": 196,
+  "detector_counts": {
+    "URDU": 20,
+    "ROMAN": 20
+  },
+  "path_counts": {
+    "urdu_bm25": 20,
+    "roman_bm25_method_D": 20
+  },
+  "n_rank1_match_vs_phase9": 40,
+  "n_rank1_mismatch_vs_phase9": 0,
+  "ir_quality_metrics_computed": false,
+  "relevance_labels_assigned": false,
+  "phase9_files_modified": false,
+  "phase10a_file_modified": false
+}

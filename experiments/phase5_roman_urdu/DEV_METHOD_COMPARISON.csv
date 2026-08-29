@@ -1,0 +1,7 @@
+method,n,hit@5,hit@10,ndcg@5,mrr,latency_sec,note
+A_raw_bm25,13,0.0,0.0,0.0,0.0,0.0009,baseline
+B_existing_dict,13,0.0,0.0,0.0,0.0,0.0073,existing transliterate_roman
+C_rule_based,13,1.0,1.0,0.8004,0.7359,0.0052,pre-registered rules
+D_romanized_docs,13,1.0,1.0,0.9331,0.9103,0.0065,full-corpus roman BM25
+E_union_C_D,13,1.0,,,,,analysis only; not selectable
+SELECTED,13,1.0,1.0,0.9331,0.9103,0.0065,Method D frozen after DEV (Hit@5 tie with C; D won on nDCG@5)

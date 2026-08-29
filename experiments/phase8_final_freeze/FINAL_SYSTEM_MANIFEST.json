@@ -1,0 +1,60 @@
+{
+  "system_name": "ULTRA script-aware lexical retrieval",
+  "system_version": "phase8-freeze-2026-08-27",
+  "freeze_timestamp": "2026-08-27T12:36:10Z",
+  "corpus_version": {
+    "path": "data/clean_articles.csv",
+    "n_docs": 111860,
+    "bytes": 540050203,
+    "sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+    "source_doc_id": "row_index",
+    "field": "combined_text"
+  },
+  "corpus_size": 111860,
+  "urdu_index": {
+    "type": "okapi_bm25",
+    "field": "combined_text",
+    "terms": 371368,
+    "avgdl": 279.24,
+    "build_reference": "experiments/phase5_roman_urdu/run_phase5.py::BM25"
+  },
+  "roman_index": {
+    "type": "okapi_bm25",
+    "field": "combined_text_romanized_method_D",
+    "terms": 358497,
+    "avgdl": 279.19,
+    "romanizer": "phase2_naive_char_plus_reverse_dict",
+    "full_corpus": true
+  },
+  "script_detector": {
+    "name": "unicode_urdu_latin_counts",
+    "svm": false,
+    "code": "experiments/phase5_roman_urdu/run_phase5.py::detect_script",
+    "dev_agreement_n78": "78/78"
+  },
+  "romanizer": {
+    "method": "D",
+    "char_table": "experiments/phase2_oracle/run_phase2_pipeline.py::_CHAR_ROMAN",
+    "reverse_dict": "models/roman_urdu_dict_expanded.json",
+    "dict_keys": 198,
+    "query_side": "raw_tokenize_on_roman_index"
+  },
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "top_k": 50,
+  "official_cutoff_k": 5,
+  "primary_metric": "exact_source_hit@5",
+  "secondary_metrics": ["P@5", "nDCG@5", "MRR", "Hit@10", "Hit@15"],
+  "test_set": "H001-H040",
+  "test_set_status": "sealed",
+  "development_eval": {
+    "pool": "phase2_dev_plus_internal_val",
+    "n": 78,
+    "exact_source_hit@5": 0.8718
+  },
+  "routing": {
+    "URDU": "urdu_bm25",
+    "ROMAN": "roman_bm25_method_D",
+    "MIXED": "urdu_bm25"
+  }
+}

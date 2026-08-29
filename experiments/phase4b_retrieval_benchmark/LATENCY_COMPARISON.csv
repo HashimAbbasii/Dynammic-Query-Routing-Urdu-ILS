@@ -1,0 +1,5 @@
+system,mean_query_latency_sec
+headline,1.1341
+old_full,0.1803
+chunk_ann,0.3194
+bm25,0.014

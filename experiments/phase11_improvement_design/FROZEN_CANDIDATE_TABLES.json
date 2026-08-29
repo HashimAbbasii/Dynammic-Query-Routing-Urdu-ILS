@@ -1,0 +1,29 @@
+{
+  "status": "candidates_only_not_applied",
+  "dictionary_file_unchanged": true,
+  "h001_h040_used": false,
+  "m1_expand_keep_original": {
+    "kya": ["kiya"],
+    "kia": ["kiya"],
+    "nahin": ["nahi"],
+    "nai": ["nahi"],
+    "mai": ["mein"],
+    "aj": ["aaj"],
+    "today": ["aaj"],
+    "sy": ["se"],
+    "ny": ["ne"],
+    "geya": ["gaya"],
+    "pakstani": ["pakistan"],
+    "fridi": ["afridi"],
+    "krne": ["karna"]
+  },
+  "m2_expand_keep_original": {
+    "win": ["jeet"],
+    "shikast": ["loss"],
+    "hukumat": ["government"],
+    "court": ["adalat"]
+  },
+  "m3_stoplist": ["ka", "ki", "ke", "ko", "se", "mein", "ne", "par", "aur"],
+  "m3_optional_off_by_default": ["hai", "bhi"],
+  "rejected_examples": ["diesel", "temperature", "iphone", "kilie", "qomi", "update", "aaj_as_stop", "kab_as_stop", "nahi_as_stop"]
+}

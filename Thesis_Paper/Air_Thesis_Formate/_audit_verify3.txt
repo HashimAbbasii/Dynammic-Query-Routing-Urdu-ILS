@@ -1,0 +1,14 @@
+Forced Heading 2 on 7 official M0 section headings so TOC can pick up 5.18-5.24
+Saved live docx
+Caption | Table 1. Development-only retrieval precision at rank 15 (P@15). Not official M0.
+Heading 2 | 5.18 Official frozen retrieval system (M0)
+Heading 2 | 5.19 Phase 2 development/validation known-item (n = 78)
+Caption | Table 1. Phase 2 n=78 ExactSource results (official M0). Evaluation type: known-item, deve
+Heading 2 | 5.20 Phase 11 ablation: M0 remains official
+Heading 2 | 5.21 Phase 12 new known-item evaluation (K001–K040)
+Heading 2 | 5.22 Phase 12 naturalistic human evaluation (U001–U040)
+Caption | Table 1. Script-wise U Success@5 (descriptive only). URDU 17/18 = 94.44%; ROMAN 6/18 = 33.
+Normal | H001–H040 human Success@5 = 25/40 = 62.5% is a diagnostic on earlier trap queries. ExactSo
+Heading 2 | 5.23 Final comparison of evaluation settings
+Caption | Table 1. Do not average rows. Phase 2 n=78 known-item ExactSource Hit@5 = 68/78 = 87.18% (
+Heading 2 | 5.24 Discussion of the official IR results

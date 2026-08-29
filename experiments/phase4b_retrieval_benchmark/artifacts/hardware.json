@@ -1,0 +1,6 @@
+{
+  "cuda": false,
+  "gpu": "cpu",
+  "cpu_count": 12,
+  "torch": "2.13.0+cpu"
+}

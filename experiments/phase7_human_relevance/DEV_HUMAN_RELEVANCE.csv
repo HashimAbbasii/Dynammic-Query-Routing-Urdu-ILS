@@ -1,0 +1,21 @@
+query_id,rank,retrieved_doc_id,retrieved_headline,relevance_label,reason,gold_source_id,gold_source_rank
+QTRN_168,1,63758,کاروباری ہفتے کا تیسرا روز پاکستان اسٹاک مارکیٹ 260 پوائنٹس کی کمی کے ساتھ بند,RELEVANT,Same third-day PSX close wire; query has no date. 8 Apr 2020 −260 pts.,63522,7
+QTRN_168,2,63054,کاروباری ہفتے کا تیسرا روز پاکستان اسٹاک مارکیٹ 102 پوائنٹس کے اضافے کے ساتھ بند,RELEVANT,Same wire type; 9 Dec 2020 +102 pts. Distinguishing date absent from query.,63522,7
+QTRN_168,3,64376,کاروباری ہفتے کا تیسرا روز پاکستان اسٹاک ایکسچینج 109 پوائنٹس کے اضافے کے ساتھ بند,RELEVANT,Same wire type; 2 Oct 2019 +109 pts.,63522,7
+QTRN_168,4,63721,کاروباری ہفتے کا تیسرا روز پاکستان اسٹاک مارکیٹ 19 پوائنٹس کے اضافے کے ساتھ بند,RELEVANT,Same wire type; 15 Apr 2020 +19 pts.,63522,7
+QTRN_168,5,63624,کاروباری ہفتے کا تیسرا روز پاکستان اسٹاک مارکیٹ 264 پوائنٹس کی کمی کے ساتھ بند,RELEVANT,Same wire type; 6 May 2020 −264 pts.,63522,7
+QTRN_170,1,87735,دوسرا ٹی ٹوئنٹی ویسٹ انڈیز کا ٹاس جیت کر فیلڈنگ کا فیصلہ,PARTIALLY_RELEVANT,PAK vs WI second T20 occasion but toss only; query asks result/effects.,84418,37
+QTRN_170,2,56380,دوسرا ٹی ٹوئنٹی ویسٹ انڈیز کا ٹاس جیت کر فیلڈنگ کا فیصلہ,PARTIALLY_RELEVANT,Men's second T20 toss in Trinidad; not the match result.,84418,37
+QTRN_170,3,83195,دوسرا ٹی ٹوئنٹی ویسٹ انڈیز ویمن ٹیم نے پاکستان کو سپر اوور میں شکست دے دی,TOPICALLY_RELATED,Women's T20; different team and opposite result.,84418,37
+QTRN_170,4,56498,پاکستان کے دورہ ویسٹ انڈیز میں ٹی ٹوئنٹی میچز کا اضافہ,TOPICALLY_RELATED,Tour schedule; not a second-T20 result.,84418,37
+QTRN_170,5,45041,دوسرا ٹی ٹوئنٹی ویسٹ انڈیزکا ٹاس جیت کر فیلڈنگ کا فیصلہ,PARTIALLY_RELEVANT,Another men's second T20 toss (Port of Spain); not the result.,84418,37
+QTRN_189,1,33264,سری نواسن ئی سی سی چیئرمین کے عہدے سے فارغ,TOPICALLY_RELATED,ICC entity only; chairman sacking is not a specified need.,26594,999
+QTRN_189,2,33163,ئی سی سی میں بگ تھریبدمعاش ششانک منوہر,TOPICALLY_RELATED,ICC governance commentary; query is an incomplete genitive.,26594,999
+QTRN_189,3,30071,ششانک منوہر ئی سی سی چیئرمین کے عہدے سے مستعفی,TOPICALLY_RELATED,Same org; different event from any identifiable need.,26594,999
+QTRN_189,4,57572,انیل کمبلے ایک بار پھر ئی سی سی کرکٹ کمیٹی کے چیئرمین منتخب,TOPICALLY_RELATED,ICC committee personnel; entity overlap only.,26594,999
+QTRN_189,5,46020,بھارت گیا تو ئی پی ایل میں پاکستانی کھلاڑیوں کو شامل کرنے کی بات کروں گا ظہیر عباس,TOPICALLY_RELATED,ICC president comments on IPL; still entity-only overlap.,26594,999
+QTRN_225,1,101005,ہالی ووڈ سائنس فکشن فلم ایلیئن کوونینٹ کا ٹریلر جاری,PARTIALLY_RELEVANT,Genre-only query; Alien is an instance of sci-fi action film news not a unique answer.,104334,999
+QTRN_225,2,100663,فکشن فلم ٹرانسفارمرز دی لاسٹ نائٹ کا نیا ٹریلر جاری,PARTIALLY_RELEVANT,Sci-fi action instance (Transformers teaser).,104334,999
+QTRN_225,3,100633,نئی تھری ڈی فلم ٹرانسفارمرزدی لاسٹ نائٹ کا نیا ٹریلر,PARTIALLY_RELEVANT,Same Transformers teaser family; still a genre instance.,104334,999
+QTRN_225,4,104738,ایکشن تھرلر سائنس فکشن فلم چیپیکا نیا ٹریلر جاری,PARTIALLY_RELEVANT,Chappie is sci-fi action; title انٹ مین was never in the query.,104334,999
+QTRN_225,5,68629,ہالی ووڈ سائنس فکشن فلم ایلیئن کوونینٹ کا ٹریلر جاری,PARTIALLY_RELEVANT,Duplicate Alien teaser; genre instance.,104334,999

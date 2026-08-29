@@ -135,16 +135,45 @@ models/paraphrase*/
 # ===== PERSONAL / MISPLACED FOLDERS =====
 HashimAbbasii/
 
+# ===== IDE / OFFICE LOCK FILES =====
+.vscode/
+~$*
+
+# ===== RAW EMBEDDING DUMPS & VECTOR INDEX BINARIES =====
+# Keep *.pkl in models/ (small SVM/scaler). Do not ignore models/*.json.
+*.f32
+*.faiss
+*.ckpt
+index_metadata.pickle
+
+# Chroma HNSW collections outside data/chromadb/ (that tree is already ignored)
+**/chroma_chunks/
+
+# ===== GENERATED INDEX ARCHIVES (targeted; do not ignore all zips) =====
+# 1.8 GB Phase 4 chunk ANN dump. Reports/CSVs in this folder stay trackable.
+experiments/phase4_chunk_ann/phase4a_chunk_index.zip
+experiments/phase4_chunk_ann/artifacts/_cpu_partial_backup/
+results.zip
+
+# Obsolete duplicates moved during finalization (live Phase 8–12 reports stay)
+experiments/archive/
+
 # ===== DO NOT IGNORE — THESE MUST GO TO GITHUB =====
 # (Git tracks these automatically, listed here just as a reminder)
 #
-# data/training_queries_real.py        ✅ your query generator script
-# models/svm_classifier.pkl            ✅ trained SVM model
-# models/scaler.pkl                    ✅ feature scaler
-# models/training_info.json            ✅ training metadata
-# models/roman_urdu_dict_expanded.json ✅ Roman Urdu dictionary
-# results/*.json                       ✅ evaluation results
-# results/*.png                        ✅ charts and plots
-# results/*.txt                        ✅ result logs
-# notebooks/*.ipynb                    ✅ all your notebooks
-# scripts/*.py                         ✅ utility scripts
+# data/training_queries_real.py
+# models/svm_classifier.pkl
+# models/scaler.pkl
+# models/training_info.json
+# models/roman_urdu_dict_expanded.json
+# experiments/**/*.py
+# experiments/**/*.md
+# experiments/**/*.csv   (result tables, qrels, sealed queries — not corpus)
+# experiments/**/*.json  (manifests, hashes, preflight)
+# Thesis_Paper/**/*.md
+# Thesis_Paper/**/*.tex
+# Thesis_Paper/**/*.docx (live thesis; not Word lock ~$ files)
+# results/*.json
+# results/*.png
+# notebooks/*.ipynb
+# scripts/*.py

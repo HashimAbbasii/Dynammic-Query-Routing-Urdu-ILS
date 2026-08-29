@@ -1,0 +1,7 @@
+system,n,hit@5,ndcg@5,mrr,note
+headline,78,0.4487,0.4009,0.3885,Phase 4B ranks reused
+raw_bm25,78,0.5897,0.5509,0.5434,Urdu/mixed: Urdu BM25; Roman: Method A
+script_aware,78,0.8718,0.8107,0.797,URDU/MIXED->Urdu BM25; ROMAN->Method D
+mixed_urdu_bm25,9,0.4444,0.3402,0.3179,mixed path 1
+mixed_selected_roman_method,9,0.4444,0.3479,0.3249,mixed path 2 analysis
+mixed_union_oracle,9,0.4444,,,analysis only; not a fusion system

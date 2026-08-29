@@ -1,0 +1,50 @@
+original_form,proposed_variant_or_canonical,freq_train_roman_queries,evidence_source,decision,reason
+kya,kiya,0,roman_urdu_dict_expanded.json duplicate value کیا (keys kiya then kya); Method D reverse uses first key kiya,INCLUDE,Query-side expand aliases so kya also matches Method D canonical kiya. Not taken from H queries.
+kiya,kiya,1,train roman token + same dict group,INCLUDE,Keep original; already canonical for Method D.
+kia,kiya,0,run_phase5.py _VARIANT_TO_DICT_KEY kia→kya; remap to Method D canonical kiya,INCLUDE,Existing Phase 5 variant map; 0 train title_roman hits expected.
+nahin,nahi,0,_VARIANT_TO_DICT_KEY nahin→nahi; nahi is dict key,INCLUDE,Existing project variant map.
+nai,nahi,0,_VARIANT_TO_DICT_KEY nai→nahi,INCLUDE,Existing project variant map.
+mai,mein,0,_VARIANT_TO_DICT_KEY mai→mein; mein freq 26 in train roman,INCLUDE,Existing project variant map; mein is common in train.
+aj,aaj,1,dict duplicate آج keys aaj/aj/today; reverse canonical aaj; train aj=1,INCLUDE,Train evidence plus existing dict aliases.
+today,aaj,0,same dict group آج,INCLUDE,English alias already in frozen dict; expand to canonical aaj.
+aaj,aaj,0,dict key; Method D canonical,INCLUDE,Keep original if present.
+sy,se,0,dict duplicate سے se/sy; canonical se; train se=15,INCLUDE,Existing dict alias.
+ny,ne,0,dict duplicate نے ne/ny; canonical ne; train ne=7,INCLUDE,Existing dict alias.
+geya,gaya,0,dict duplicate گیا gaya/geya; canonical gaya,INCLUDE,Existing dict alias.
+win,jeet,0,dict duplicate جیت jeet/win; canonical jeet,INCLUDE,M2 loanword pair already in frozen dict.
+jeet,jeet,4,train roman freq 4,INCLUDE,Keep canonical.
+loss,loss,1,dict duplicate شکست loss/shikast; reverse canonical is loss; train loss=1,INCLUDE,Keep canonical; do not drop loss.
+shikast,loss,0,same dict group,INCLUDE,Roman alias of the same dict value; expand to Method D canonical loss.
+government,government,0,dict duplicate حکومت government/hukumat; canonical government,INCLUDE,Keep canonical.
+hukumat,government,0,same dict group,INCLUDE,Roman alias → English/dict canonical used by Method D.
+court,adalat,0,dict duplicate عدالت adalat/court; canonical adalat,INCLUDE,Expand English alias to Method D canonical.
+adalat,adalat,0,dict key,INCLUDE,Keep canonical.
+pakstani,pakistan,2,train roman nondict token freq 2; edit-distance 2 to dict key pakistan (freq 7),INCLUDE,Train spelling of a frozen dict key. Keep original token too.
+fridi,afridi,2,train roman freq 2; edit-distance 1 to dict key afridi,INCLUDE,Train spelling of a frozen dict key. Keep original token too.
+krne,karna,4,train roman freq 4; edit-distance 2 to dict key karna; Phase 5 TRANSLITERATION_AUDIT also listed krne as stripped-vowel form,INCLUDE,Expand only; never replace krne (Method D documents use naive krne).
+kilie,(none),3,train roman freq 3; no dict key within edit-distance 2 that is the same lemma,REJECT,No closed dict target. Do not invent ke-liye.
+qomi,qaum,3,train qomi=3; qaum is dict key but not a close edit match (inventory near-key was roti — noise),REJECT,Different stems (قومی vs قوم) and no safe automatic link.
+bad,bada,3,edit-distance 1 to dict bada,REJECT,False friend (after vs big).
+shah,khan,3,edit-distance 2,REJECT,Name collision; not a spelling variant.
+update,(none),0 roman / 19 mixed,All 19 train mixed queries are template 'Pakistan news update',REJECT,Mixed path uses Urdu BM25; not a Roman Method D rule. Do not import the mixed template into Roman normalization.
+news,(none),1 roman / 19 mixed,dict key news; mixed template,REJECT_as_new_rule,Already a frozen dict key. No extra mapping. Mixed-template frequency is not Roman-path evidence.
+ka,STOP,13,train roman function-word freq,INCLUDE_M3,High-df function word in train title_roman.
+ki,STOP,27,train roman,INCLUDE_M3,Highest-df train roman token.
+ke,STOP,22,train roman,INCLUDE_M3,High-df function word.
+ko,STOP,11,train roman,INCLUDE_M3,High-df function word.
+se,STOP,15,train roman,INCLUDE_M3,High-df function word.
+mein,STOP,26,train roman,INCLUDE_M3,High-df function word.
+ne,STOP,7,train roman,INCLUDE_M3,Function word; dict alias ny.
+par,STOP,7,train roman,INCLUDE_M3,Function word.
+aur,STOP,7,train roman,INCLUDE_M3,Function word.
+hai,STOP,3,train roman,INCLUDE_M3_optional,Lower freq; include in M3 trial only if listed freeze set stays small.
+bhi,STOP,3,train roman,INCLUDE_M3_optional,Lower freq.
+nahi,(do not stop),5,train roman; negation,REJECT_stop,Contentful negation; dropping it can flip meaning.
+aaj,(do not stop),0,dict key; train roman aaj=0,REJECT_stop,Not justified as a train high-df stop. Do not add because of later diagnostic queries.
+kab,(do not stop),0,not in train roman inventory,REJECT_stop,Zero train roman frequency. Would be test contamination if added from diagnostic Kaaba collisions.
+diesel,(none),0,not in train roman queries; not a dict key,REJECT,Absent from allowed train evidence. Do not add from H036.
+temperature,(none),0,not in train roman queries; not a dict key,REJECT,Absent from allowed train evidence.
+iphone,(none),0,not in train roman queries; not a dict key,REJECT,Absent from allowed train evidence.
+football,(none),0,dict key football but 0 train roman query hits,REJECT_as_new_rule,Already in frozen 198-key dict. Do not add a new entry. Identity mapping already exists if the query token is football.
+score,(none),0,dict key; 0 train roman,REJECT_as_new_rule,Same as football: frozen dict already handles exact key.
+petrol,(none),0,dict key; 0 train roman,REJECT_as_new_rule,Same: no new dictionary row.

@@ -1,0 +1,45 @@
+{
+  "k1": 1.5,
+  "b": 0.75,
+  "doc_field": "combined_text (Headline + News Text)",
+  "tokenizer": "Urdu unicode letters + [A-Za-z0-9], lowercased, no stemming, no transliteration",
+  "n_docs": 111860,
+  "avgdl": 279.24,
+  "build_sec": 127.2,
+  "metrics_k5": {
+    "n": 78,
+    "source_hit_rate": 0.5897,
+    "p_at_k": 0.1179,
+    "ndcg_at_k": 0.5509,
+    "recall_at_k": 0.5897,
+    "mrr": 0.5425
+  },
+  "mean_latency_sec": 0.014,
+  "by_language": {
+    "urdu": {
+      "n": 46,
+      "source_hit_rate": 0.913,
+      "p_at_k": 0.1826,
+      "ndcg_at_k": 0.8676,
+      "recall_at_k": 0.913,
+      "mrr": 0.8577
+    },
+    "roman_urdu": {
+      "n": 23,
+      "source_hit_rate": 0.0,
+      "p_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "mrr": 0.0
+    },
+    "mixed": {
+      "n": 9,
+      "source_hit_rate": 0.4444,
+      "p_at_k": 0.0889,
+      "ndcg_at_k": 0.3402,
+      "recall_at_k": 0.4444,
+      "mrr": 0.3179
+    }
+  },
+  "tuned_on_eval": false
+}
