@@ -1,0 +1,676 @@
+% Template for PLoS
+% Version 3.8 Apr 2026
+%
+% Adaptive dynamic query routing for Urdu information retrieval
+% Official frozen system: M0 (script-aware BM25). Not SVM/MiniLM.
+%
+% PORTAL FIELDS --- fill these in PLOS Editorial Manager, not in this .tex file:
+%   Funding: The authors received no specific funding for this work.
+%   Competing interests: The authors have declared that no competing interests exist.
+%   Author contributions (CRediT):
+%     Conceptualization, Methodology, Software, Formal analysis,
+%     Writing -- original draft: Hashim Shazad.
+%     Writing -- review & editing: Hashim Shazad, Adnan Aslam.
+%     Supervision: Adnan Aslam.
+%   Data availability: news corpus data/clean_articles.csv (n=111860),
+%     Roman dictionary models/roman_urdu_dict_expanded.json (198 keys),
+%     and M0 code at https://github.com/HashimAbbasii/Dynammic-Query-Routing-Urdu-ILS
+%     with no redistribution restrictions. SHA-256 hashes in the Corpus subsection
+%     identify the exact artifacts. Official metrics were copied from sealed
+%     Phase 8--12 reports and were not recomputed for this manuscript.
+%   Ethics: relevance labels on public news headlines/snippets (U001--U040);
+%     no personal/identifiable participant data; IRB/ethics committee approval
+%     not required; no Air University ethics-board review is recorded.
+%   ORCID: enter in the submission system (not invented in this file).
+%   Short title: Adaptive query routing for Urdu information retrieval
+%
+% Figure image files are uploaded separately (no \includegraphics in this file):
+%   Fig1_m0_routing.png
+%   Fig2_development_comparators.png
+%   Fig3_script_splits.png
+%   Fig4_k_miss_analysis.png
+%   Fig5_u_label_distribution.png
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% -- IMPORTANT NOTE
+%
+% This template contains comments intended
+% to minimize problems and delays during our production
+% process. Please follow the template instructions
+% whenever possible.
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% Once your paper is accepted for publication,
+% PLEASE REMOVE ALL TRACKED CHANGES in this file
+% and leave only the final text of your manuscript.
+% PLOS recommends the use of latexdiff to track changes during review, as this will help to maintain a clean tex file.
+% Visit https://www.ctan.org/pkg/latexdiff?lang=en for info.
+%
+%
+% IMPORTANT
+% Below are a few tips to help format manuscript according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://journals.plos.org/plosone/s/latex
+%
+% There are no restrictions on package use within the LaTeX files except that no packages listed in the template may be deleted.
+%
+% Please do not include colors or graphics in the text.
+%
+% The manuscript LaTeX source should be contained within a single file (do not use \input, \externaldocument, or similar commands).
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- FIGURES AND TABLES
+%
+% Please include tables/figure captions directly after the paragraph where they are first cited in the text.
+%
+% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
+% - Figures should be uploaded separately from your manuscript file.
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission.
+% - Figures containing multiple panels/subfigures must be combined into one image file before submission.
+% For figure citations, please use "Fig" instead of "Figure".
+% See http://journals.plos.org/plosone/s/figures for PLOS figure guidelines.
+%
+% Tables should be cell-based and may not contain:
+% - spacing/line breaks within cells to alter layout or alignment
+% - do not nest tabular environments (no tabular environments within tabular environments)
+% - no graphics or colored text (cell background color/shading OK)
+% See http://journals.plos.org/plosone/s/tables for table guidelines.
+%
+% For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- EQUATIONS, MATH SYMBOLS, OTHER SPECIAL FORMATTING
+%
+% - For bold symbols, use the \boldsymbol command and not \mathbf.
+% - For inline equations, please be sure to include all portions of an equation in the math environment.  For example, x$^2$ is incorrect; this should be formatted as $x^2$ (or $\mathrm{x}^2$ if the romanized font is desired).
+% - Do not include text that is not math in the math environment. For example, CO2 should be written as CO\textsubscript{2} instead of CO$_2$.
+% - Avoid capturing simple text as equations, for example $<$.
+% - For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
+% - When adding superscript or subscripts outside of brackets/braces, please group using {}.  For example, change "[U(D,E,\gamma)]^2" to "{[U(D,E,\gamma)]}^2".
+% - Do not use \cal for caligraphic font.  Instead, use \mathcal{}.
+% - Avoid splitting for fragmenting a single equation into multiple objects/environments, for example $f(x)$ = $g(x)$ + $h(x)$.
+% - Use math environment for all equations, do not mimic using text.
+% - Avoid using single letters in math mode where possible.
+% - Always use matching parentheses and delimiters, avoid mixing math and text brackets.
+% - Insert spaces around inline equations to ensure proper display after conversion.
+% - Do not use forced numbers for display equation labeling or suppress numbering with \nonumber.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% Please contact customercare@plos.org with any questions.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage[nopatch=eqnum]{microtype}
+% PLOS template command; pdftex-only. Tectonic (XeTeX) cannot DisableLigatures.
+\ifdefined\pdftexversion
+\DisableLigatures[f]{encoding = *, family = * }
+\fi
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+% Remove comment for double spacing
+%\usepackage{setspace}
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Please use the included `plos2025.bst` as your BibTeX style
+\bibliographystyle{plos2025}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+%\setlength{\headheight}{27.023pt}
+%\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+%% Include all user-defined macros below
+
+%% END MACROS SECTION
+
+
+\begin{document}
+\vspace*{0.2in}
+
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf{Adaptive dynamic query routing for Urdu information retrieval} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+}
+\newline
+\\
+Short title: Adaptive query routing for Urdu information retrieval
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+Hashim Shazad\textsuperscript{1*},
+Adnan Aslam\textsuperscript{1}
+\\
+\bigskip
+\textbf{1} Department of Creative Technologies, Air University, Islamabad, Pakistan
+\\
+\bigskip
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+%
+% Remove or comment out the symbols in the byline and the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+% \Yinyang These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+% Also use this double-dagger symbol for special authorship notes, such as senior authorship.
+% \ddag These authors also contributed equally to this work.
+
+% Current address notes
+% \textcurrency Current Address: Dept/Program/Center, Institution Name, City, State, Country % change symbol to "\textcurrency a" if more than one current address note
+% \textcurrency b Insert second current address
+% \textcurrency c Insert third current address
+
+% Deceased author note
+% \dag Deceased
+
+% Group/Consortium Author Note
+% \textpilcrow Membership list can be found in the Acknowledgments section.
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+* abbasihashim30@gmail.com
+
+\end{flushleft}
+% Please keep the abstract below 300 words
+
+% For PLOS Medicine research article authors, please structure your abstract
+% with "Background", "Method and Findings" and "Conclusion" sections per
+% journal requirements.
+
+% For PLOS Neglected Tropical Diseases research article authors, please
+% structure your abstract with "Background", "Methodology", "Findings", and
+% "Conclusion" sections per journal requirements.
+%
+\section*{Abstract}
+Urdu news users often type native Perso-Arabic script, informal Roman Urdu, or a mixture of both, while many retrieval systems still apply one index to every query. This paper reports the official frozen retriever from an adaptive dynamic query-routing project for Urdu news search. The frozen system, M0, uses a Unicode detector over 111,860 news articles. Urdu, mixed, and other queries search an Urdu Okapi BM25 index. Roman queries search a second BM25 index whose documents were romanized with a closed character table and a 198-key reverse dictionary (Method D). Queries are not rewritten. BM25 uses~$k_1 = 1.5$ and~$b = 0.75$; lists are retrieved to depth 50 and scored at a Top-5 cutoff.
+
+On a development/validation known-item pool of title-derived queries, ExactSource Hit@5 was 68/78 (87.18\%; Clopper--Pearson 95\% interval 77.68--93.68\%). On a newly sealed known-item sample the same frozen system achieved 27/40 (67.50\%; 50.87--81.43\%). On a separate sealed naturalistic set with no gold article, a single annotator judged the Top-5 useful (at least one relevant or partially relevant document) for 23/40 queries (57.50\%; 40.89--72.96\%). Query-side Roman expansions did not raise the 68/78 development score, so the freeze was not replaced. In the naturalistic sample, Urdu-script queries succeeded in 17/18 cases and Roman queries in 6/18; all four mixed queries failed.
+
+These three percentages answer different questions and must not be averaged. Native-script Urdu news search under this freeze is strong on the tested collection. Ordinary Roman Urdu remains the main limitation.
+
+% Please keep the Author Summary between 150 and 200 words. Use first person.
+% PLOS ONE, PLOS Biology, PLOS Global Public Health, PLOS Mental Health, and PLOS Water authors please skip this step. Author Summary is not valid for submissions to these journals.
+
+
+\clearpage
+\newgeometry{top=0.85in,left=1in,right=1in,footskip=0.75in}
+\linenumbers
+
+% Use "Eq" instead of "Equation" for equation citations.
+\section*{Introduction}
+Urdu is written in a cursive Perso-Arabic script, but that is not how everyone searches. A large share of users type Roman Urdu: Urdu words in Latin letters, with spelling that is informal and inconsistent~\cite{bib1,bib2,bib3}. A news collection indexed only in native script will not match those queries even when the article is sitting in the index. That mismatch is a retrieval failure, not a missing document.
+
+Urdu remains thinner in shared information retrieval (IR) evaluation than English~\cite{bib4}. Collections exist. CURE provides an Urdu ranking resource~\cite{bib5}. An Urdu MS MARCO baseline reports MRR@10 of 0.247 in the abstract (0.248 in the results table) for a fine-tuned Urdu mT5-mMARCO configuration, under a passage-ranking protocol that is not the one used here~\cite{bib6}. Those resources do not freeze a script-conditional lexical system and then keep known-item recovery separate from human usefulness. Roman Urdu research is still mostly classification---sentiment, offensive language---rather than news search~\cite{bib1,bib2}. Multilingual dense retrievers can lose effectiveness on languages that sit outside the pretraining head~\cite{bib7}, even when scaled multilingual encoders help related tasks such as Urdu natural language inference~\cite{bib8}. Users of lower-resource varieties are also often pushed toward high-resource query forms~\cite{bib9}. Typing Roman Urdu into an Urdu-script index is a concrete instance of that pressure.
+
+The ULTRA framework of Bashir, Qaiser, and Hussain supplies a dual-embedding Urdu news architecture and a large news corpus~\cite{bib10}. Its original switch is a static character-length threshold. Length is easy to implement and easy to fool: a short ``why'' question may need the article body, and a long factoid may be answered by a headline. Length also does not decide which \emph{script index} to open. English work on query routing chooses among sparse and dense retrievers~\cite{bib11} or varies retrieval depth in retrieval-augmented generation~\cite{bib12}. Those systems were not designed for Roman Urdu.
+
+This paper asks a narrower question that can be answered with a freeze and a protocol. Specify a lexical retriever. Hash the corpus and the Roman dictionary. Then measure three things that are easy to mix and should not be mixed. First, how often does the system recover a designated source article from title-derived queries on the development/validation pool used to select the Roman path? Second, does that known-item score hold on a newly sealed sample of title-like queries written after the freeze? Third, how often is the Top-5 useful when there is no gold article and a person judges the hits?
+
+Official retrieval here is Okapi BM25~\cite{bib13} with Unicode script routing. We call that frozen configuration M0. In this project, adaptive dynamic query routing is that script-conditional index choice, not a learned SHORT/LONG classifier. Earlier work in the same project trained a SHORT/LONG support vector machine and a MiniLM dual-index~\cite{bib14}. Those experiments are not the official retriever. We mention them only where they were actual development comparators, so that older classification or dense-index numbers are not mistaken for M0.
+
+The contribution is the frozen system, the separated evaluations, and a measured Roman Urdu limitation. We do not claim that M0 is the first Urdu retriever, and we do not claim state of the art against CURE or Urdu MS MARCO.
+
+\subsection*{Research questions}
+
+\begin{itemize}
+\item \textbf{RQ1.} Can a script-aware lexical pipeline (Urdu BM25 plus Method D) recover known news articles from title-derived queries on a development/validation pool?
+\item \textbf{RQ2.} Does that known-item score transfer to a newly sealed known-item sample written independently of the freeze set?
+\item \textbf{RQ3.} How often is frozen M0 useful---at least one relevant or partially relevant document in the Top-5---on new naturalistic queries with no gold article?
+\item \textbf{RQ4.} Do query-side Roman expansions improve development/validation ExactSource Hit@5 enough to replace M0?
+\end{itemize}
+
+\section*{Materials and methods}
+\subsection*{Research design}
+
+The study is an offline IR evaluation of one frozen lexical system. Method selection used a pre-registered development split. The official unseen tests were sealed before retrieval. No test query was used to choose BM25 parameters, routing, the Roman method, or the dictionary. After the freeze, later query-side expansions were accepted only if they improved the development known-item score; they did not, and M0 was left in place.
+
+Two tasks are reported. Known-item search asks whether a pre-assigned source document appears in the Top-5. Naturalistic search has no source identifier; a human labels the retrieved Top-5. Those tasks are not averaged.
+
+\subsection*{Corpus}
+
+The collection is \texttt{data/clean\_articles.csv}: 111,860 news articles. The precursor dump is \texttt{data/urdu\_news.csv}, used in the ULTRA news-search setting~\cite{bib10}. Cleaning was limited to dropping rows with null fields and concatenating headline and body:
+
+\texttt{combined\_text = Headline + ' ' + News Text}
+
+There was no Unicode NFKC folding, no ye/he/kaf canonicalization, no diacritic stripping, no stemming, and no stopword removal at indexing. HTML, punctuation, English tokens, and near-duplicate articles were left as in the source dump. Document identifiers equal the corpus row index after that cleaning step. Article categories in the dump are Sports, Business \& Economics, Entertainment, and Science \& Technology.
+
+Corpus SHA-256: \texttt{8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231} (540,050,203 bytes). The Roman dictionary is \texttt{models/roman\_urdu\_dict\_expanded.json} (198 keys; SHA-256 \texttt{30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3}).
+
+\subsection*{Official frozen system (M0)}
+
+% For figure citations, please use "Fig" instead of "Figure".
+Fig~\ref{fig1} summarizes M0. Internally the system retrieves 50 documents; the official cutoff is 5. Queries are not rewritten on the official path.
+
+% Place figure captions after the first paragraph in which they are cited.
+\begin{figure}[!h]
+\caption{\textbf{Official frozen retriever M0.} A Unicode script detector routes URDU, MIXED, and OTHER queries to Urdu BM25 and ROMAN queries to Method D romanized-document BM25. Queries are not rewritten. This is not an SVM SHORT/LONG router and not a MiniLM dual-index pipeline.}
+\label{fig1}
+\end{figure}
+
+The detector counts characters in the Arabic/Urdu block U+0600--U+06FF and ASCII letters A--Z/a--z. If both counts are zero the label is OTHER. If both are positive the label is MIXED. If only the Urdu count is positive the label is URDU. Otherwise the label is ROMAN. URDU, MIXED, and OTHER search Urdu BM25 over \texttt{combined\_text}. ROMAN searches Method D BM25 over romanized documents. The detector is not a classifier. On the Phase 2 development/validation pool it agreed with the oracle script tags on 78/78 queries. The nine MIXED items in that pool were mixed by construction (an English template suffix), not detector errors.
+
+Tokenization is the same on both indexes: the regular expression \texttt{[\textbackslash u0600-\textbackslash u06FF]+|[A-Za-z0-9]+}, lowercase, no stemming, no stopword list. BM25 is Okapi with frozen $k_1 = 1.5$ and $b = 0.75$. Inverse document frequency for term $t$ with document frequency $n$ in a collection of $N$ documents is
+\begin{eqnarray}
+\label{eq:idf}
+\mathrm{idf}(t) = \log\left(\frac{N - n + 0.5}{n + 0.5} + 1\right).
+\end{eqnarray}
+
+The implementation is the custom \texttt{BM25} class in \texttt{experiments/phase5\_roman\_urdu/run\_phase5.py}. The Urdu index has 371,368 terms and mean document length 279.24 tokens. The Method D index has 358,497 terms and mean document length 279.19 tokens.
+
+\subsection*{Method D}
+
+Method D keeps the typed Roman query and indexes romanized documents. Every article in the 111,860-document collection is romanized; the index is not restricted to evaluation source documents. After tokenization, each token is handled as follows. If it contains Urdu letters and that exact token is a value in the 198-key dictionary, emit the first reverse-mapped Latin key (\texttt{setdefault}; first key wins). Otherwise emit a character-table romanization (\texttt{\_CHAR\_ROMAN} from the Phase 2 pipeline). Tokens that are already Latin or alphanumeric are lowercased and kept. The character table maps, among other pairs, madda alif to \texttt{aa} and che to \texttt{ch}, and collapses several Urdu letters onto the same Latin letter (for example te and tte both map to \texttt{t}). That collision is intentional and lossy.
+
+Method D is the document-side counterpart of Phase 2 \texttt{title\_roman} generation. It is not a mapping fitted to evaluation query strings.
+
+\subsection*{Roman-method selection (Phase 5)}
+
+Four Roman strategies were pre-registered and compared on development Roman known-item queries only ($n = 13$), before internal-validation scores were interpreted. Selection used ExactSource Hit@5, then nDCG@5, then lower mean query latency. BM25 hyperparameters were not retuned. Method comparison counts are in \nameref{S3_Table}.
+
+Method A sends the raw Roman query to the Urdu-script BM25 index. Method B transliterates with the existing 198-key dictionary and then searches that same Urdu index; unmapped tokens stay Latin. Method C applies a closed spelling-variant table, dictionary lookup, and a greedy inverse of the Phase 2 character table, then searches Urdu BM25. Method D is the romanized-document index described above. A fifth analysis, Method E, reported the union of C and D; it was not a selectable system, and reciprocal rank fusion was not built~\cite{bib15}.
+
+The selected method was frozen in \texttt{artifacts/selected\_method.json} before internal validation ($n = 10$ Roman queries) was read. Mixed queries in the deployable router go to Urdu BM25. Urdu queries always use Urdu BM25.
+
+\subsection*{Development/validation known-item pool}
+
+Phase 2 built 260 title-derived known-item queries from corpus articles that were not used in earlier routing-trap sets. Each query has one \texttt{source\_doc\_id}. Templates include short title, romanized title, why/how/effects, lead excerpt, and mixed Urdu+English. Roman strings in this pool are \texttt{title\_roman}: dictionary reverse lookup plus the character table applied to headlines. They are not chat-style Roman Urdu. The split (seed 42) is train $n = 182$, development $n = 39$, internal validation $n = 39$. Official M0 development/validation reporting uses development plus internal validation ($n = 78$). The train split was not used to select Method D; it was later used only as a diagnostic pool for query-side expansions.
+
+\subsection*{Query-side expansions (Phase 11)}
+
+After M0 was frozen, four query-side Roman transforms were scored on the same $n = 78$ pool. The hard gate was ExactSource Hit@5 not below 68/78. A train-Roman diagnostic ($n = 64$) was used only among candidates that passed the gate. H001--H040 and the later sealed sets were not loaded.
+
+M0 applies no query transform. M1 appends a closed alias list while keeping original tokens. M2 adds four further aliases. M3 applies M1 then drops a nine-token query stoplist. M4 combines M1, M2, and the stoplist. The 198-key dictionary file was not edited. Terms such as \texttt{diesel} and \texttt{iphone} were explicitly forbidden as new keys. The official Phase 12 run did not apply M1--M4.
+
+\subsection*{Sealed evaluation (Phase 12)}
+
+K001--K040 (known-item) and U001--U040 (naturalistic) were written and checksum-sealed before retrieval (seed 120260827). Query-file SHA-256 values are \texttt{124e452693f98baedf510618240c154df68d56b6b7a37ed085a6512c13d13ff6} (K) and \texttt{684fd1e19eddb717f5897d869ef0ca0ed586316c5a7e1d2d23006e0748fc53b9} (U). One retrieval pass of frozen M0 produced Top-50 lists. Queries were not edited after ranks were seen. M1--M4 were not applied.
+
+K queries are shortened or lightly paraphrased headlines from articles that were not Phase 2 QTRN sources (260 source identifiers excluded; eligible population 111,574 headlines of length at least 12 after stripping). The creator could see the source article in order to assign \texttt{source\_doc\_id} and did not run BM25 while writing. The 12 Roman K queries are ordinary Roman Urdu of the selected headline, not \texttt{title\_roman} character-table strings. No mixed-script K query occurred naturally; mixed script was not forced.
+
+U queries follow pre-registered naturalistic quotas: 18 Urdu, 18 Roman, 4 mixed; 12 short ($\leq 5$ whitespace tokens), 16 medium (6--12), 12 long (13+); 14 factoid, 14 explanatory, 12 named-entity. Four temporal factoids use \emph{aaj} / \texttt{aaj} / \texttt{mojooda} forms. U has no \texttt{source\_doc\_id}. Queries were not copied from H001--H040. After retrieval, detector counts were 18 URDU, 18 ROMAN, and 4 MIXED; retrieval-path counts were 22 Urdu BM25 (URDU plus MIXED) and 18 Method D. Thirty-nine queries returned 50 hits; U006 returned 28. No query returned fewer than five hits.
+
+\subsection*{Human relevance protocol (U only)}
+
+After the sealed Top-5 dump existed, the first author labeled 200 documents (40 queries $\times$ 5) from headline and snippet only. The same author had written the sealed U queries under the Phase 12 protocol. Labels follow a five-way rubric: A, relevant (the reader could stop); B, partially relevant (same event or occasion, incomplete answer); C, topically related (same topic or entity, not the asked need); D, not relevant; E, ambiguous if A--D cannot be decided. The annotator preferred B over A unless the need was clearly satisfied, and preferred C over B unless the article helped answer the asked need. Temporal queries were judged as archive type-of-fact for a dated occasion in the article, not against the annotator's calendar day. Recurring wires with no date in the query (gold price, budget date, eclipse, stock close) could be A even if dates differed. Named-entity lookups were A if the article's main subject was that person. There was no second annotator. ExactSource Hit@5 was not computed on U. Label definitions are in \nameref{S1_Text}.
+
+\subsection*{Metrics}
+
+For a known-item query with source identifier $s$, ExactSource Hit@$k$ is 1 if and only if $s$ appears in the retrieved top $k$. The official cutoff is $k = 5$. Secondary K cutoffs are 1, 10, and 50. Known-item nDCG@5 on the development pool uses gain $1/\log_2(\mathrm{rank}+1)$ when the source is in the Top-5, else 0. Known-item P@5 equals 0.2 times Hit@5 because there is a single relevant document.
+
+For naturalistic queries, Success@5 is 1 if and only if at least one Top-5 document is A or B. Conservative P@5 is the mean of (count of A labels)/5. nDCG@5 uses gains A $= 3$, B $= 2$, C $= 1$, D $=$ E $= 0$. MRR is the reciprocal rank of the first A or B, or 0 if none. nDCG@5 is secondary: a Top-5 of only topical C documents can score nDCG@5 $= 1$ with no A or B.
+
+Clopper--Pearson 95\% intervals were computed from the reported binomial counts using SciPy's \texttt{binomtest} (SciPy 1.16.3). They were not part of method selection. No hypothesis test comparing systems on K or U was pre-registered; we do not report $p$-values for those splits.
+
+\subsection*{Rejected alternatives}
+
+Development comparators on the same $n = 78$ pool include headline MiniLM, a truncated full-article Chroma index, a 96/32 chunk approximate nearest-neighbour index, and Urdu-only BM25. A pre-registered long-context \texttt{intfloat/multilingual-e5-small} index was not built: a CPU prototype ran at 2.3 documents/s (about 13.5 hours extrapolated for 111,860 articles) and failed a 4-hour gate. The encoder was not swapped after that failure. Fusion of headline and script-aware lists was not deployed: an oracle union added three known-item hits, which was judged insufficient. A reranker was not built. Historical SHORT/LONG SVM routing and MiniLM dual-index graded P@5 on H001--H040 are a separate study. They are not official M0 metrics.
+
+\subsection*{Diagnostic set H001--H040}
+
+H001--H040 are routing-trap strings with no source identifier. ExactSource Hit@5 is undefined on that set. A later human pass (Phase 10C) labeled 196 retrieved rows (38 queries $\times$ 5, plus H027 $\times$ 5 and H036 $\times$ 1; H036 returned a single document). Success@5 was 25/40; conservative P@5 was 0.1250; 10/40 lists were all D. On that sample, Success@5 was 14/20 for Urdu-script queries and 11/20 for Roman; eight of the ten all-D lists were Roman. Labels were assigned from headline plus a 500-character snippet. Query text, rank-1, and labels are now known. The set is treated as a historical diagnostic and is not the official unseen usefulness result. It is not combined with U.
+
+\subsection*{Software environment and reproducibility}
+
+M0 retrieval uses Python 3.13.9 (Anaconda, 64-bit Windows). Dense-index pilots in the same project ran on CPU (12 cores reported for the e5-small prototype). Method D index construction on the full corpus took 100.6 s (66.3 s tokenize and romanize, 34.3 s BM25 postings) and occupied 116.1 MB of in-memory postings. Entry points were not relocated: detector and BM25 in \texttt{experiments/phase5\_roman\_urdu/run\_phase5.py}, character table in \texttt{experiments/phase2\_oracle/run\_phase2\_pipeline.py}, sealed runner in \texttt{experiments/phase12\_new\_unseen\_evaluation/run\_phase12.py}. The freeze manifest is \texttt{experiments/phase8\_final\_freeze/FINAL\_SYSTEM\_MANIFEST.json} (\nameref{S1_File}).
+
+\subsection*{Data availability}
+
+The news corpus (\texttt{data/clean\_articles.csv}; 111,860 articles), the Roman Urdu dictionary (\texttt{models/roman\_urdu\_dict\_expanded.json}; 198 keys), and the M0 retrieval code are publicly available at \url{https://github.com/HashimAbbasii/Dynammic-Query-Routing-Urdu-ILS} with no redistribution restrictions. SHA-256 hashes reported in the Corpus subsection identify the exact artifacts used for the scores in this paper. Official metrics were copied from sealed Phase 8--12 reports and were not recomputed for this manuscript.
+
+% Results and Discussion can be combined.
+\section*{Results}
+Table~\ref{table1} reports the three official headlines. The rows are different tasks. They are not a single accuracy trajectory.
+
+% Place tables after the first paragraph in which they are cited.
+\begin{adjustwidth}{-2.25in}{0in}
+\begin{table}[!ht]
+\centering
+\caption{\textbf{Official M0 results.} ExactSource Hit@5 and human Success@5 answer different questions. Intervals are Clopper--Pearson 95\% intervals computed from the reported counts. Do not average rows. Do not treat 87.18\% as unseen or as human usefulness.}
+\begin{tabular}{|p{4.2cm}|p{3.0cm}|p{3.2cm}|p{5.2cm}|}
+\hline
+\textbf{Evaluation} & \textbf{Dataset} & \textbf{Metric} & \textbf{Result} \\
+\hline
+Development/validation known-item & Phase 2, $n = 78$ & ExactSource Hit@5 & 68/78 (87.18\%; 77.68--93.68\%) \\
+\hline
+New known-item & K001--K040 & ExactSource Hit@5 & 27/40 (67.50\%; 50.87--81.43\%) \\
+\hline
+New naturalistic (human) & U001--U040 & Success@5 & 23/40 (57.50\%; 40.89--72.96\%) \\
+\hline
+\end{tabular}
+\label{table1}
+\end{table}
+\end{adjustwidth}
+
+\subsection*{Development/validation known-item}
+
+ExactSource Hit@5 on development plus internal validation was 68/78. Secondary known-item metrics on that pool were nDCG@5 $= 0.8107$ and MRR $= 0.797$. An independent rebuild in a later phase reproduced Hit@5 $= 0.8718$.
+
+Table~\ref{table2} and Fig~\ref{fig2} place M0 against the development comparators that were actually run. Urdu-only BM25 (no Roman path) scored 0.5897. Headline MiniLM scored 0.4487. The truncated full-article dense index scored 0.2564, worse than headlines, consistent with truncation at 128 tokens. Chunk ANN scored 0.2821. Those dense numbers are development evidence that a full MiniLM index was not a substitute for a Roman lexical path. They are not Phase 12 results.
+
+\begin{adjustwidth}{-2.25in}{0in}
+\begin{table}[!ht]
+\centering
+\caption{\textbf{Development/validation comparators on the same $n = 78$ known-item pool.} Official M0 is the script-aware row. Oracle unions were not deployed.}
+\begin{tabular}{|l|r|r|r|}
+\hline
+\textbf{System} & \textbf{Hit@5} & \textbf{nDCG@5} & \textbf{MRR} \\
+\hline
+Truncated full MiniLM (Chroma) & 0.2564 & 0.2203 & 0.2103 \\
+\hline
+Chunk ANN (96/32) & 0.2821 & 0.2362 & 0.2309 \\
+\hline
+Headline MiniLM & 0.4487 & 0.4009 & 0.3885 \\
+\hline
+Urdu BM25, no Roman path & 0.5897 & 0.5509 & 0.5425 \\
+\hline
+Script-aware M0 & 0.8718 & 0.8107 & 0.797 \\
+\hline
+Headline + M0 oracle (not deployed) & 0.9103 & 0.8703 & 0.8615 \\
+\hline
+\end{tabular}
+\label{table2}
+\end{table}
+\end{adjustwidth}
+
+\begin{figure}[!h]
+\caption{\textbf{ExactSource Hit@5 on the Phase 2 development/validation pool ($n = 78$).} Values are the frozen development comparators in Table~\ref{table2}. Script-aware M0 is the official system. This figure is not a Phase 12 result.}
+\label{fig2}
+\end{figure}
+
+On the 46 Urdu-script queries in that pool, Urdu BM25 Hit@5 was 0.913; script-aware routing left that number unchanged because the Urdu path is the same index. On the 23 Roman queries, Method A was 0/23 and headline MiniLM was 1/23. Method D recovered 22/23 (development 13/13, internal validation 9/10). The remaining miss, QTRN\_031, was rank 9 with 10 overlapping tokens against the romanized source: Hit@10 succeeded, so the residual was ranking competition rather than a remaining script mismatch. Method B remained 0/13 on development Roman queries: 22 of 23 Roman strings were still mostly Latin after dictionary lookup. Method C tied Method D on development Hit@5 (13/13) but lost on nDCG@5 (0.8004 versus 0.9331) and would have scored 6/10 on internal validation in a post-hoc diagnostic that was not used for selection. Mixed queries ($n = 9$) scored Hit@5 $= 0.4444$ on the Urdu path; a mixed-path union did not raise that figure.
+
+A later rebuild (Phase 6) reproduced 68/78 and listed the ten residual misses: four URDU, one ROMAN (QTRN\_031), and five MIXED. Four of those ten sat in ranks 6--10. Mixed-script items in this pool were generated with an English template suffix, so those misses are not a census of naturally mixed user queries.
+
+The 87.18\% result is genuine for title-derived known-item search on this pool, including Roman queries that resemble Method D's own romanization. It is not a forecast of chat-style Roman performance.
+
+\subsection*{Phase 11 ablation}
+
+Table~\ref{table3} reports the query-side expansions. M0 through M4 all scored 68/78. Train-Roman Hit@5 stayed 61/64 (95.31\%). M1--M4 nDCG@5 and MRR on that diagnostic were slightly below M0 (0.8940 and 0.8781 versus 0.8960 and 0.8807). No candidate beat 68/78. M1 passed the gate as the simplest non-destructive candidate and was not installed as the official system.
+
+\begin{adjustwidth}{-2.25in}{0in}
+\begin{table}[!ht]
+\centering
+\caption{\textbf{Phase 11 query-side Roman expansions.} The official system remains M0. Train Roman $n = 64$ is a selection diagnostic, not an unseen test.}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Model} & \textbf{$n = 78$ Hit@5} & \textbf{Train Roman Hit@5} & \textbf{Train nDCG@5} & \textbf{Train MRR} \\
+\hline
+M0 (official) & 68/78 & 0.9531 & 0.8960 & 0.8807 \\
+\hline
+M1 & 68/78 & 0.9531 & 0.8940 & 0.8781 \\
+\hline
+M2 & 68/78 & 0.9531 & 0.8940 & 0.8781 \\
+\hline
+M3 & 68/78 & 0.9531 & 0.8940 & 0.8781 \\
+\hline
+M4 & 68/78 & 0.9531 & 0.8940 & 0.8781 \\
+\hline
+\end{tabular}
+\label{table3}
+\end{table}
+\end{adjustwidth}
+
+\subsection*{New known-item (K001--K040)}
+
+Preflight passed: corpus and dictionary hashes matched the freeze, BM25 parameters were unchanged, and M1--M4 were off. Every query returned 50 hits. Detector counts were 28 URDU and 12 ROMAN, matching the retrieval-path counts.
+
+Table~\ref{table4} reports ExactSource Hit at four cutoffs. The primary metric is Hit@5 $= 27/40$. Hit@1 is 20/40. Two further sources appear between ranks 6 and 50 (Hit@10 $= 28/40$, Hit@50 $= 30/40$). Ten of the 13 Hit@5 misses are absent from the entire Top-50; three are in the list but below rank 5 (K002 rank 6, K010 rank 49, K031 rank 17). Per-query source ranks are in \nameref{S1_Table}.
+
+\begin{table}[!ht]
+\centering
+\caption{\textbf{Phase 12 K ExactSource results, frozen M0.} Primary metric is Hit@5. This evaluation does not replace 68/78 and is not human Success@5.}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Metric} & \textbf{Result} \\
+\hline
+ExactSource Hit@1 & 20/40 (50.00\%) \\
+\hline
+ExactSource Hit@5 & 27/40 (67.50\%; 50.87--81.43\%) \\
+\hline
+ExactSource Hit@10 & 28/40 (70.00\%) \\
+\hline
+ExactSource Hit@50 & 30/40 (75.00\%) \\
+\hline
+\end{tabular}
+\label{table4}
+\end{table}
+
+The detector split was not used for tuning. Urdu-script K titles scored 26/28 ExactSource Hit@5 (92.86\%; 76.50--99.12\%). Ordinary Roman titles scored 1/12 (8.33\%; 0.21--38.48\%). Fig~\ref{fig3} shows that split beside the naturalistic script split. Fig~\ref{fig4} separates Hit@5 from ``source present but below rank 5'' and ``source absent from the Top-50.'' Both Urdu misses (K002 rank 6, K010 rank 49) are still in the list. Ten of eleven Roman misses never enter the Top-50; the remaining Roman miss (K031) is rank 17. The drop from 87.18\% to 67.50\% is concentrated on ordinary Roman title queries, and on matching rather than near-miss ranking, not on native-script Urdu BM25.
+
+\begin{figure}[!h]
+\caption{\textbf{Descriptive script splits of frozen M0, not used for tuning.} Left: ExactSource Hit@5 on K001--K040. Right: human Success@5 on U001--U040. Mixed $n = 4$ is descriptive only. The two panels are different metrics and must not be averaged.}
+\label{fig3}
+\end{figure}
+
+\begin{figure}[!h]
+\caption{\textbf{Where sealed known-item misses sit.} Counts from the K001--K040 per-query source ranks. Urdu misses remain inside the Top-50. Most Roman misses never appear in the retrieved 50.}
+\label{fig4}
+\end{figure}
+
+\subsection*{Naturalistic human evaluation (U001--U040)}
+
+Success@5 was 23/40. Conservative P@5 was 0.2050 (variable-denominator P@5 was identical because every query had at least five hits). nDCG@5 was 0.6460. MRR was 0.4542. Among 200 labeled documents the counts were A 41, B 26, C 53, D 80, E 0 (Table~\ref{table5}; Fig~\ref{fig5}). Forty-one fully answering documents across 40 queries is consistent with conservative P@5 $= 0.2050$: many Top-5 lists contain at most one A.
+
+\begin{table}[!ht]
+\centering
+\caption{\textbf{Phase 12 U human metrics, frozen M0 Top-5.} Success@5 is the usefulness headline. nDCG@5 includes gain 1 for topical C and is not a usefulness claim.}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Metric} & \textbf{Result} \\
+\hline
+Success@5 (any A or B) & 23/40 (57.50\%; 40.89--72.96\%) \\
+\hline
+Conservative P@5 (A-count/5) & 0.2050 \\
+\hline
+nDCG@5 (A=3, B=2, C=1) & 0.6460 \\
+\hline
+MRR (first A or B) & 0.4542 \\
+\hline
+Label counts (200 documents) & A 41, B 26, C 53, D 80, E 0 \\
+\hline
+All-D queries & 12/40 \\
+\hline
+\end{tabular}
+\label{table5}
+\end{table}
+
+\begin{figure}[!h]
+\caption{\textbf{Label mass on the 200 judged U Top-5 documents.} A = relevant, B = partially relevant, C = topically related, D = not relevant, E = ambiguous. E did not occur. D is the modal label.}
+\label{fig5}
+\end{figure}
+
+The gap between Success@5 and conservative P@5 is the shape of many successes: one useful document rather than a Top-5 packed with full answers. nDCG@5 overstates usefulness for the same reason the gain table is generous to C.
+
+Fig~\ref{fig3} and Table~\ref{table6} show descriptive slices. Urdu-script queries succeeded in 17/18 cases (94.44\%; 72.71--99.86\%). Roman queries succeeded in 6/18 (33.33\%; 13.34--59.01\%). Mixed queries were 0/4 (0--60.24\%). Mixed $n = 4$ is too small for a population rate; it is reported because all four failed. These slices describe this sealed sample. They are not a licence to retune Method D on U failures.
+
+\begin{table}[!ht]
+\centering
+\caption{\textbf{Descriptive U Success@5 slices.} Script uses the detector label at retrieval time. Need type and length follow the sealed query file.}
+\begin{tabular}{|l|r|r|r|}
+\hline
+\textbf{Slice} & \textbf{Successes} & \textbf{$n$} & \textbf{Rate} \\
+\hline
+URDU & 17 & 18 & 0.9444 \\
+\hline
+ROMAN & 6 & 18 & 0.3333 \\
+\hline
+MIXED & 0 & 4 & 0.0000 \\
+\hline
+Factoid & 9 & 14 & 0.6429 \\
+\hline
+Explanatory & 9 & 14 & 0.6429 \\
+\hline
+Named entity & 5 & 12 & 0.4167 \\
+\hline
+Short ($\leq 5$ tokens) & 9 & 12 & 0.7500 \\
+\hline
+Medium (6--12) & 6 & 16 & 0.3750 \\
+\hline
+Long (13+) & 8 & 12 & 0.6667 \\
+\hline
+Temporal & 3 & 4 & 0.7500 \\
+\hline
+Non-temporal & 20 & 36 & 0.5556 \\
+\hline
+\end{tabular}
+\label{table6}
+\end{table}
+
+Complete Success@5 failures were U004, U006, U008, U010, U014, U016, U018, U020, U026, U028, U032, U034, U035, U037, U038, U039, and U040. Twelve of those lists were all D, including several English-loan or service queries (\texttt{psl points table}, train-ticket price, Netflix charges, 5G, dollar rate) and several chat-style Roman strings. Per-query labels are in \nameref{S2_Table}.
+
+\subsection*{Diagnostic H001--H040}
+
+Phase 10C human Success@5 on H001--H040 was 25/40 (62.50\%; 45.80--77.27\%), with conservative P@5 $= 0.1250$ and 10/40 all-D lists. Urdu-script traps succeeded in 14/20 cases and Roman traps in 11/20; eight of the ten all-D lists were Roman. H036 returned one document, labeled D. The queries are routing traps, not the Phase 12 naturalistic sample. The number is recorded so it is not silently dropped; it is not the official unseen usefulness result.
+
+\section*{Discussion}
+The three headline percentages look like a system falling apart. They are three measurements.
+
+On the freeze pool, M0 often recovers a known article from a shortened headline, including Roman queries built as \texttt{title\_roman}. Method D was selected on that construction. High Hit@5 is what one should expect when the query is a title fragment and, for Roman, when the spelling family matches the index. RQ1 is answered in that setting: 68 of 78 sources reached the Top-5, well above Urdu-only BM25 on the same pool, because the Roman path repaired a script mismatch that Method A could not (0/23).
+
+K keeps the known-item question and changes the sample. Roman K queries were written as ordinary Roman Urdu of the headline, not as character-table \texttt{title\_roman}. Urdu K stayed high (26/28), and both Urdu misses were still in the Top-50. Roman K did not (1/12), and ten of those misses never entered the Top-50. That pattern is a matching failure, not a near-miss ranking problem. The 19.7 point drop from 87.18\% to 67.50\% is therefore largely a Roman query-form shift, plus ordinary binomial variation on $n = 40$. It is not evidence that Urdu BM25 broke. RQ2 is answered in the negative if ``transfer'' means the 87\% figure itself; the honest unseen known-item figure on this sealed K set is 27/40.
+
+U asks a different question. There is no single right article. Factoids, explanations, named entities, underspecified strings, and chat Roman are harder than ``find this headline.'' Success@5 only requires one A or B, and still lands at 23/40. Conservative P@5 of 0.205, with 41 A labels in 200 documents, shows that the Top-5 is rarely full of complete answers; D is the most common label. Named-entity queries in this sample were weaker (5/12) than factoid or explanatory queries (each 9/14). Urdu-script needs were usually met (17/18). Roman needs often were not (6/18). RQ3 is therefore a usefulness rate near 58\% overall, and near 94\% when the user types Urdu script, on this $n = 40$ set with one annotator.
+
+Query mix will move any headline number. A Roman-heavy sample will look worse than an Urdu-only test even if the Urdu component is unchanged. Averaging 87.18\% with 57.50\% answers no scientific question: it mixes development with new test, known-item with graded usefulness, and \texttt{title\_roman} with chat Roman.
+
+RQ4 is straightforward. Allowed query-side expansions did not move 68/78. A small spelling table is not a demonstrated fix for the Roman gap on K and U, and those sets were not used to invent a larger table.
+
+The pattern is consistent with how Method D was built. Document romanization plus a 198-key reverse dictionary can match pipeline-romanized titles. It does not enumerate WhatsApp-style spelling, English loanwords that users type in Latin while the article uses Urdu, or mixed-script strings that the freeze sends to the Urdu index. Method B already showed that dictionary lookup on the query is too sparse for naive romanizations. The freeze kept the document-side index. That decision was justified for \texttt{title\_roman}. It was not a solution to open-vocabulary Roman IR.
+
+Relative to prior Urdu resources, these numbers are not a CURE or MS MARCO leaderboard entry~\cite{bib5,bib6}. The protocol is different, the collection is news, and the Roman path is the scientific point. Relative to English routers that choose sparse versus dense retrieval~\cite{bib11}, M0 chooses which script index to open. That is a smaller, more local form of adaptivity, and it is the one the Unicode detector can actually implement without a learned classifier.
+
+What remains strong is inspectable. Native-script Urdu BM25 on this news collection recovers title-like known items and, in this U sample, usually puts something useful in the Top-5. The contribution is that measurement, under a hashed freeze, with the Roman failure left in view.
+
+\subsection*{Limitations}
+
+K and U each have $n = 40$. The intervals in Table~\ref{table1} are wide. Point estimates should not be read as a precise ``58\% in the wild.''
+
+U labels are from one annotator, the first author, who had also written the sealed U queries under the Phase 12 protocol. There is no inter-annotator agreement. Preferring B over A reduces over-claiming of full answers; it does not remove subjectivity. The dual role is a bias risk even though labels were assigned after retrieval, from headline and snippet only, and without searching for a better document.
+
+Development Roman queries are \texttt{title\_roman}. K Roman queries are ordinary Roman titles. U Roman queries are chat-style. Those are three related but distinct input families. Success on the first does not contradict failure on the other two.
+
+The nine MIXED items in the $n = 78$ pool were generated with an English suffix. Phase 12 mixed queries ($n = 4$) are too few to estimate a rate. Both facts limit what can be said about mixed-script search.
+
+The corpus is news only. Cleaning was a null drop. M0 does not rewrite queries, does not use dates, and does not generate answers. Temporal ``today'' items were judged as archive type-of-fact.
+
+nDCG@5 with C-gain $= 1$ can look high when Success@5 fails. H001--H040 are diagnostic only. K, U, and H001--H040 are burned if M0 is changed. Post-freeze development work exists in the repository; it is not part of these official scores.
+
+We do not claim 80\% unseen usefulness, 87.18\% real-world accuracy, or state-of-the-art ranking against CURE or Urdu MS MARCO.
+
+\section*{Conclusions}
+
+M0 is a frozen script-aware BM25 news retriever developed as the official system of an adaptive dynamic query-routing project. On the development/validation known-item set it recovered the source article in the Top-5 for 68 of 78 queries. On a newly sealed known-item set it did so for 27 of 40. On a separate naturalistic set, a human found at least one useful document in the Top-5 for 23 of 40 queries. Native-script Urdu search is strong on this collection. Ordinary Roman Urdu is not. The contribution is that measured freeze and that limitation, not a single high percentage.
+
+\section*{Supporting information}
+
+% Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
+\paragraph*{S1 Table.}
+\label{S1_Table}
+\textbf{Per-query ExactSource ranks for K001--K040.} Detector label, retrieval path, source document identifier, source rank, and Hit@5 for each sealed known-item query. Source: \texttt{experiments/phase12\_new\_unseen\_evaluation/K\_RESULTS.md}.
+
+\paragraph*{S2 Table.}
+\label{S2_Table}
+\textbf{Per-query human labels for U001--U040.} Raw query text, five Top-5 labels (A--E), Success@5, and rank of first A/B. Source: \texttt{experiments/phase12\_human\_relevance/PHASE12\_HUMAN\_RESULTS.md}.
+
+\paragraph*{S3 Table.}
+\label{S3_Table}
+\textbf{Phase 5 development Roman method comparison.} Methods A--D on DEV Roman queries ($n = 13$) with Hit@5, nDCG@5, MRR, and latency, plus internal-validation confirmation of Method D. Source: \texttt{experiments/phase5\_roman\_urdu/PHASE5\_RESULTS.md}.
+
+\paragraph*{S1 File.}
+\label{S1_File}
+\textbf{Freeze manifest.} Hashes, BM25 parameters, index statistics, and routing table. Source: \texttt{experiments/phase8\_final\_freeze/FINAL\_SYSTEM\_MANIFEST.json}.
+
+\paragraph*{S1 Text.}
+\label{S1_Text}
+\textbf{U annotation protocol.} Label definitions, temporal type-of-fact rule, and metric formulae. Source: \texttt{experiments/phase12\_human\_relevance/ANNOTATION\_PROTOCOL.md}.
+
+\section*{Acknowledgments}
+
+This work was completed as part of an M.S.\ thesis at Air University, Islamabad.
+
+\nolinenumbers
+
+% Please compile your BiBTeX database using the "plos2025.bst" BibTeX style.
+% This file is part of the current package.
+% A sample BibTeX file is also included as "plos_bibtex_sample.bib".
+
+\bibliography{plos_bibtex_sample}
+
+\end{document}

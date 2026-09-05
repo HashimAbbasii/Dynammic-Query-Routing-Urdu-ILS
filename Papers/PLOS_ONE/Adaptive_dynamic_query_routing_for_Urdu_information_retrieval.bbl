@@ -1,0 +1,116 @@
+\begin{thebibliography}{10}
+
+\bibitem{bib1}
+Hussain N, Qasim A, Mehak G, Usman M, Zain M, Hafeez M, et~al.
+\newblock Fine-tuning large language models with {QLoRA} for offensive language
+  detection in {Roman} {Urdu}-{English} code-mixed text.
+\newblock arXiv. 2025.
+\newblock Preprint. arXiv:2510.03683.
+
+\bibitem{bib2}
+Mehmood F, Ghani MU, Ibrahim MA, Shehzadi R, Asim MN.
+\newblock A precisely {Xtreme}-multi channel hybrid approach for {Roman} {Urdu}
+  sentiment analysis.
+\newblock arXiv. 2020.
+\newblock Preprint. arXiv:2003.05443.
+
+\bibitem{bib3}
+Sitaram S, Chandu KR, Rallabandi SK, Black AW.
+\newblock A survey of code-switched speech and language processing.
+\newblock arXiv. 2019.
+\newblock Preprint. arXiv:1904.00784.
+
+\bibitem{bib4}
+Daud A, Khan W, Che D.
+\newblock Urdu language processing: a survey.
+\newblock Artif Intell Rev. 2017;47:279-311.
+
+\bibitem{bib5}
+Iqbal M, Tahir B, Mehmood MA.
+\newblock {CURE}: Collection for {Urdu} Information Retrieval Evaluation and
+  Ranking.
+\newblock arXiv. 2021.
+\newblock Preprint. arXiv:2011.00565.
+
+\bibitem{bib6}
+Butt U, Varanasi S, Neumann G.
+\newblock Enabling low-resource language retrieval: establishing baselines for
+  {Urdu} {MS} {MARCO}.
+\newblock arXiv. 2024.
+\newblock Preprint. arXiv:2412.12997.
+
+\bibitem{bib7}
+Wu J, Ren Z, Verberne S.
+\newblock What are the limits of cross-lingual dense passage retrieval for
+  low-resource languages?
+\newblock arXiv. 2024.
+\newblock Preprint. arXiv:2408.11942.
+
+\bibitem{bib8}
+Conneau A, Khandelwal K, Goyal N, Chaudhary V, Wenzek G, Guzm{\'a}n F, et~al.
+\newblock Unsupervised cross-lingual representation learning at scale.
+\newblock In: Proceedings of the 58th Annual Meeting of the Association for
+  Computational Linguistics; 2020. p. 8440-51.
+\newblock \href {http://dx.doi.org/10.18653/v1/2020.acl-main.747}
+  {doi:10.18653/v1/2020.acl-main.747}.
+
+\bibitem{bib9}
+Chari A, MacAvaney S, Ounis I.
+\newblock Improving low-resource retrieval effectiveness using zero-shot
+  linguistic similarity transfer.
+\newblock In: Advances in Information Retrieval: 47th European Conference on
+  Information Retrieval ({ECIR} 2025). vol. 15575 of Lecture Notes in Computer
+  Science. Springer, Cham; 2025. p. 290-306.
+\newblock \href {http://dx.doi.org/10.1007/978-3-031-88717-8{\_}22}
+  {doi:10.1007/978-3-031-88717-8{\_}22}.
+
+\bibitem{bib10}
+Bashir A, Qaiser F, Hussain I.
+\newblock {ULTRA}: {Urdu} Language Transformer-based Recommendation
+  Architecture.
+\newblock arXiv. 2026.
+\newblock Preprint. arXiv:2602.11836.
+
+\bibitem{bib11}
+Arabzadeh N, Yan X, Clarke CLA.
+\newblock Predicting efficiency/effectiveness trade-offs for dense vs.\ sparse
+  retrieval strategy selection.
+\newblock In: Proceedings of the 30th {ACM} International Conference on
+  Information and Knowledge Management ({CIKM} '21); 2021. p. 2862-6.
+\newblock \href {http://dx.doi.org/10.1145/3459637.3482159}
+  {doi:10.1145/3459637.3482159}.
+
+\bibitem{bib12}
+Jeong S, Baek J, Cho S, Hwang SJ, Park JC.
+\newblock Adaptive-{RAG}: learning to adapt retrieval-augmented large language
+  models through question complexity.
+\newblock In: Proceedings of the 2024 Conference of the North {American}
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies; 2024. p. 7036-50.
+
+\bibitem{bib13}
+Robertson S, Zaragoza H.
+\newblock The probabilistic relevance framework: {BM25} and beyond.
+\newblock Found Trends Inf Retr. 2009;3(4):333-89.
+\newblock \href {http://dx.doi.org/10.1561/1500000019}
+  {doi:10.1561/1500000019}.
+
+\bibitem{bib14}
+Reimers N, Gurevych I.
+\newblock Sentence-{BERT}: sentence embeddings using {S}iamese {BERT}-networks.
+\newblock In: Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing and the 9th International Joint Conference on
+  Natural Language Processing; 2019. p. 3982-92.
+\newblock \href {http://dx.doi.org/10.18653/v1/D19-1410}
+  {doi:10.18653/v1/D19-1410}.
+
+\bibitem{bib15}
+Cormack GV, Clarke CLA, B{\"u}ttcher S.
+\newblock Reciprocal rank fusion outperforms {Condorcet} and individual rank
+  learning methods.
+\newblock In: Proceedings of the 32nd International {ACM} {SIGIR} Conference on
+  Research and Development in Information Retrieval; 2009. p. 758-9.
+\newblock \href {http://dx.doi.org/10.1145/1571941.1572114}
+  {doi:10.1145/1571941.1572114}.
+
+\end{thebibliography}
