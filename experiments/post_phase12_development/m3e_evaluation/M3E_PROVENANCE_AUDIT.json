@@ -1,0 +1,45 @@
+{
+  "protocol_version": "1.0",
+  "pool_materialized_utc": "2026-09-05T07:43:08Z",
+  "annotation_completed_utc": "2026-09-05T07:51:43Z",
+  "calibration_overrides_logged": [
+    {
+      "query_id": "R051",
+      "doc_id": 88241,
+      "from": "A",
+      "to": "D"
+    },
+    {
+      "query_id": "R051",
+      "doc_id": 45571,
+      "from": "A",
+      "to": "C"
+    },
+    {
+      "query_id": "R052",
+      "doc_id": 38964,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "query_id": "R052",
+      "doc_id": 65861,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "query_id": "R096",
+      "doc_id": 20605,
+      "from": "B",
+      "to": "C"
+    },
+    {
+      "query_id": "R096",
+      "doc_id": 20665,
+      "from": "B",
+      "to": "C"
+    }
+  ],
+  "metric_driven_pool_edits": false,
+  "retrieval_rerun": false
+}

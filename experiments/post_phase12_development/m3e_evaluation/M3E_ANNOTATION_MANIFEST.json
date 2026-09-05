@@ -1,0 +1,93 @@
+{
+  "stage": "m3e_annotation",
+  "timestamp_utc": "2026-09-05T07:51:43Z",
+  "annotator_mode": "thesis_author_single",
+  "annotator": "thesis_author_single",
+  "annotation_date": "2026-09-05",
+  "rubric": "experiments/phase12_human_relevance/ANNOTATION_PROTOCOL.md (A–E)",
+  "blinding": {
+    "system_ids_hidden": true,
+    "scores_hidden": true,
+    "rank_hidden": true,
+    "within_query_shuffle_seed": 20260905,
+    "annotator_saw_only": [
+      "query_id",
+      "query_text",
+      "doc_id",
+      "headline",
+      "snippet"
+    ]
+  },
+  "n_new_pairs": 312,
+  "n_carried_m0": 245,
+  "n_union": 557,
+  "label_histogram_new": {
+    "C": 56,
+    "A": 21,
+    "D": 229,
+    "B": 6
+  },
+  "label_histogram_union": {
+    "A": 37,
+    "D": 417,
+    "C": 84,
+    "B": 19
+  },
+  "calibration_overrides": [
+    {
+      "query_id": "R051",
+      "doc_id": 88241,
+      "from": "A",
+      "to": "D"
+    },
+    {
+      "query_id": "R051",
+      "doc_id": 45571,
+      "from": "A",
+      "to": "C"
+    },
+    {
+      "query_id": "R052",
+      "doc_id": 38964,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "query_id": "R052",
+      "doc_id": 65861,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "query_id": "R096",
+      "doc_id": 20605,
+      "from": "B",
+      "to": "C"
+    },
+    {
+      "query_id": "R096",
+      "doc_id": 20665,
+      "from": "B",
+      "to": "C"
+    }
+  ],
+  "agreement_subsample": null,
+  "cohens_kappa": null,
+  "r080_handling": "kept in denominator; M0/M2-B zero-hit → Success=0; M2-A Top-5 labeled",
+  "stop_after_annotation": true,
+  "artifact_sha256": {
+    "M3E_NEW_JUDGMENTS.csv": "20b173cdc964355c5fd5afdf8534df754e8a0054601e363683a8312a8a9d613c",
+    "M3E_QRELS_UNION.csv": "12b6ce5cec58d87c288ddf1891d8fdf39d0566d2eecb1825a0c461f652a6dad8",
+    "M3E_ANNOTATION_SHEET.csv": "295e78312e574c1b8b55588cbef4010d8453bf378f1bf2222144142d5744dbcf",
+    "M3E_POOL_MANIFEST.json": "19791d2d5a8025b30a3b7e4b3e0a0ddb4df8a1bdc7ca6e35abf014ab5c0b86cd"
+  },
+  "frozen_input_sha256": {
+    "queries_r_dev.csv": "1603b37eeee41fa6270f4e13d185c8eebd4512d025cd5fc67e8a81de9407e75f",
+    "R_TOP50_RETRIEVAL.csv": "927a14a25b6f1de2a5c28aabdc2d8cbc0d4336e0b2b437490691a7bff63a2aa2",
+    "R_TOP5_FOR_ANNOTATION.csv": "042006bc3232719514a6ca4b638f4e6348415d168294271fe366ff95704b23c5",
+    "qrels_r_dev.csv": "506305b5401102a3659d21b69c7a937bcdcde78b21a1409a6a6132255ff37bcb",
+    "M2-A_TOP50_RETRIEVAL.csv": "b9d4c77ef4cf2a7ba7442031a79c7cb1c78eaf00b88bcdabc4627d084d3d801e",
+    "M2-B_TOP50_RETRIEVAL.csv": "9a16855977fa43fe8766d325065f621009182094d60f999e080051d50e45630a"
+  },
+  "qrels_r_dev_csv_unchanged": true
+}

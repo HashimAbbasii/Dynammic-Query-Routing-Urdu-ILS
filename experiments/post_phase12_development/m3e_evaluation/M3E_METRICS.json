@@ -1,0 +1,327 @@
+{
+  "stage": "m3e_paired_evaluation",
+  "timestamp_utc": "2026-09-05T07:51:43Z",
+  "legacy_m0_pool_success_at_5": {
+    "hits": 12,
+    "n": 50,
+    "rate": 0.24,
+    "success_queries": [
+      "R051",
+      "R052",
+      "R053",
+      "R054",
+      "R056",
+      "R058",
+      "R061",
+      "R064",
+      "R074",
+      "R086",
+      "R087",
+      "R096"
+    ]
+  },
+  "union_pool_success_at_5": {
+    "M0": {
+      "hits": 12,
+      "n": 50,
+      "rate": 0.24
+    },
+    "M2-A": {
+      "hits": 11,
+      "n": 50,
+      "rate": 0.22,
+      "delta_vs_m0_hits": -1
+    },
+    "M2-B": {
+      "hits": 11,
+      "n": 50,
+      "rate": 0.22,
+      "delta_vs_m0_hits": -1
+    }
+  },
+  "legacy_pool_restricted_success_at_5": {
+    "M0": 12,
+    "M2-A": 8,
+    "M2-B": 8,
+    "note": "Historical Module 2 figures under M0-only qrels; unlabeled cand docs score as non-success"
+  },
+  "paired_vs_m0": {
+    "M2-A": {
+      "improved": 1,
+      "worsened": 2,
+      "unchanged": 47
+    },
+    "M2-B": {
+      "improved": 1,
+      "worsened": 2,
+      "unchanged": 47
+    }
+  },
+  "script_strata_union": {
+    "M0": {
+      "URDU": {
+        "hits": 1,
+        "n": 1,
+        "rate": 1.0
+      },
+      "ROMAN": {
+        "hits": 7,
+        "n": 36,
+        "rate": 0.19444444444444445
+      },
+      "MIXED": {
+        "hits": 4,
+        "n": 12,
+        "rate": 0.3333333333333333
+      }
+    },
+    "M2-A": {
+      "URDU": {
+        "hits": 1,
+        "n": 1,
+        "rate": 1.0
+      },
+      "ROMAN": {
+        "hits": 5,
+        "n": 36,
+        "rate": 0.1388888888888889
+      },
+      "MIXED": {
+        "hits": 4,
+        "n": 12,
+        "rate": 0.3333333333333333
+      }
+    },
+    "M2-B": {
+      "URDU": {
+        "hits": 1,
+        "n": 1,
+        "rate": 1.0
+      },
+      "ROMAN": {
+        "hits": 7,
+        "n": 36,
+        "rate": 0.19444444444444445
+      },
+      "MIXED": {
+        "hits": 3,
+        "n": 12,
+        "rate": 0.25
+      }
+    }
+  },
+  "per_query_success": {
+    "M0": {
+      "R051": 1,
+      "R052": 1,
+      "R053": 1,
+      "R054": 1,
+      "R055": 0,
+      "R056": 1,
+      "R057": 0,
+      "R058": 1,
+      "R059": 0,
+      "R060": 0,
+      "R061": 1,
+      "R062": 0,
+      "R063": 0,
+      "R064": 1,
+      "R065": 0,
+      "R066": 0,
+      "R067": 0,
+      "R068": 0,
+      "R069": 0,
+      "R070": 0,
+      "R071": 0,
+      "R072": 0,
+      "R073": 0,
+      "R074": 1,
+      "R075": 0,
+      "R076": 0,
+      "R077": 0,
+      "R078": 0,
+      "R079": 0,
+      "R080": 0,
+      "R081": 0,
+      "R082": 0,
+      "R083": 0,
+      "R084": 0,
+      "R085": 0,
+      "R086": 1,
+      "R087": 1,
+      "R088": 0,
+      "R089": 0,
+      "R090": 0,
+      "R091": 0,
+      "R092": 0,
+      "R093": 0,
+      "R094": 0,
+      "R095": 0,
+      "R096": 1,
+      "R097": 0,
+      "R098": 0,
+      "R099": 0,
+      "R100": 0
+    },
+    "M2-A": {
+      "R051": 1,
+      "R052": 1,
+      "R053": 1,
+      "R054": 1,
+      "R055": 0,
+      "R056": 1,
+      "R057": 0,
+      "R058": 1,
+      "R059": 0,
+      "R060": 0,
+      "R061": 1,
+      "R062": 0,
+      "R063": 0,
+      "R064": 1,
+      "R065": 0,
+      "R066": 0,
+      "R067": 0,
+      "R068": 0,
+      "R069": 0,
+      "R070": 0,
+      "R071": 0,
+      "R072": 0,
+      "R073": 0,
+      "R074": 1,
+      "R075": 0,
+      "R076": 0,
+      "R077": 0,
+      "R078": 0,
+      "R079": 0,
+      "R080": 1,
+      "R081": 0,
+      "R082": 0,
+      "R083": 0,
+      "R084": 0,
+      "R085": 0,
+      "R086": 1,
+      "R087": 0,
+      "R088": 0,
+      "R089": 0,
+      "R090": 0,
+      "R091": 0,
+      "R092": 0,
+      "R093": 0,
+      "R094": 0,
+      "R095": 0,
+      "R096": 0,
+      "R097": 0,
+      "R098": 0,
+      "R099": 0,
+      "R100": 0
+    },
+    "M2-B": {
+      "R051": 1,
+      "R052": 1,
+      "R053": 0,
+      "R054": 1,
+      "R055": 0,
+      "R056": 1,
+      "R057": 0,
+      "R058": 1,
+      "R059": 0,
+      "R060": 0,
+      "R061": 1,
+      "R062": 0,
+      "R063": 0,
+      "R064": 1,
+      "R065": 1,
+      "R066": 0,
+      "R067": 0,
+      "R068": 0,
+      "R069": 0,
+      "R070": 0,
+      "R071": 0,
+      "R072": 0,
+      "R073": 0,
+      "R074": 0,
+      "R075": 0,
+      "R076": 0,
+      "R077": 0,
+      "R078": 0,
+      "R079": 0,
+      "R080": 0,
+      "R081": 0,
+      "R082": 0,
+      "R083": 0,
+      "R084": 0,
+      "R085": 0,
+      "R086": 1,
+      "R087": 1,
+      "R088": 0,
+      "R089": 0,
+      "R090": 0,
+      "R091": 0,
+      "R092": 0,
+      "R093": 0,
+      "R094": 0,
+      "R095": 0,
+      "R096": 1,
+      "R097": 0,
+      "R098": 0,
+      "R099": 0,
+      "R100": 0
+    }
+  },
+  "candidate_only_top5_ab": [
+    {
+      "system": "M2-A",
+      "n_candidate_only_top5_docs": 183,
+      "n_ab": 16,
+      "frac_ab": 0.08743169398907104
+    },
+    {
+      "system": "M2-B",
+      "n_candidate_only_top5_docs": 133,
+      "n_ab": 12,
+      "frac_ab": 0.09022556390977443
+    }
+  ],
+  "r080": {
+    "query_id": "R080",
+    "m0_top5_n": 0,
+    "m2a_top5_n": 5,
+    "m2b_top5_n": 0,
+    "in_denominator": true,
+    "m0_success": false,
+    "m2a_success": true,
+    "m2b_success": false,
+    "m0_zero_hit_success": 0
+  },
+  "label_histogram_union": {
+    "A": 37,
+    "D": 417,
+    "C": 84,
+    "B": 19
+  },
+  "label_histogram_new": {
+    "C": 56,
+    "A": 21,
+    "D": 229,
+    "B": 6
+  },
+  "label_histogram_carried": {
+    "A": 16,
+    "D": 188,
+    "C": 28,
+    "B": 13
+  },
+  "sanity": {
+    "legacy_m0_reproduced_12_50": true,
+    "union_m0_equals_12_50": true,
+    "qrels_r_dev_not_overwritten": true
+  },
+  "frozen_input_sha256_postflight": {
+    "queries_r_dev.csv": "1603b37eeee41fa6270f4e13d185c8eebd4512d025cd5fc67e8a81de9407e75f",
+    "R_TOP50_RETRIEVAL.csv": "927a14a25b6f1de2a5c28aabdc2d8cbc0d4336e0b2b437490691a7bff63a2aa2",
+    "R_TOP5_FOR_ANNOTATION.csv": "042006bc3232719514a6ca4b638f4e6348415d168294271fe366ff95704b23c5",
+    "qrels_r_dev.csv": "506305b5401102a3659d21b69c7a937bcdcde78b21a1409a6a6132255ff37bcb",
+    "M2-A_TOP50_RETRIEVAL.csv": "b9d4c77ef4cf2a7ba7442031a79c7cb1c78eaf00b88bcdabc4627d084d3d801e",
+    "M2-B_TOP50_RETRIEVAL.csv": "9a16855977fa43fe8766d325065f621009182094d60f999e080051d50e45630a"
+  }
+}

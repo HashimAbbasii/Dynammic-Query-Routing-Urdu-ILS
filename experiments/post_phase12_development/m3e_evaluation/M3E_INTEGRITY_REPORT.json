@@ -1,0 +1,39 @@
+{
+  "stage": "m3e_integrity_reverify",
+  "timestamp_note": "read-only re-verification; evaluation artifacts not overwritten",
+  "frozen_input_sha256": {
+    "queries_r_dev.csv": "1603b37eeee41fa6270f4e13d185c8eebd4512d025cd5fc67e8a81de9407e75f",
+    "R_TOP50_RETRIEVAL.csv": "927a14a25b6f1de2a5c28aabdc2d8cbc0d4336e0b2b437490691a7bff63a2aa2",
+    "R_TOP5_FOR_ANNOTATION.csv": "042006bc3232719514a6ca4b638f4e6348415d168294271fe366ff95704b23c5",
+    "qrels_r_dev.csv": "506305b5401102a3659d21b69c7a937bcdcde78b21a1409a6a6132255ff37bcb",
+    "M2-A_TOP50_RETRIEVAL.csv": "b9d4c77ef4cf2a7ba7442031a79c7cb1c78eaf00b88bcdabc4627d084d3d801e",
+    "M2-B_TOP50_RETRIEVAL.csv": "9a16855977fa43fe8766d325065f621009182094d60f999e080051d50e45630a"
+  },
+  "frozen_match_expected": true,
+  "additional_sha256": {
+    "M3E_UNION_POOL_NAT_PROTOCOL.md": "1641ee5ee3c8b0a2c31ae9b1e3bca7d7e4b2ffe613a8c8fd7afa3c9066d7cab5",
+    "MODULE2_PROTOCOL.md": "23045d812b03a665958721ea782d23af0e4fbd577ff752e7a8683b9a79ed73e7",
+    "MODULE2_RESULTS.md": "5aa49edd1c97973f35b7fa1e8ee9bf2da6634f2503fb23c5291e954712e7e81f",
+    "corpus": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+    "dictionary": "30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3"
+  },
+  "reproduced": {
+    "legacy_m0_success_at_5": "12/50",
+    "union_m0_success_at_5": "12/50",
+    "union_m2a_success_at_5": "11/50",
+    "union_m2b_success_at_5": "11/50"
+  },
+  "annotation_sheet_blind_ok": true,
+  "annotation_sheet_columns": [
+    "annotation_row_id",
+    "query_id",
+    "query_text",
+    "doc_id",
+    "headline",
+    "snippet",
+    "shuffle_position"
+  ],
+  "missing_top5_labels": 0,
+  "qrels_r_dev_not_overwritten": true,
+  "verdict": "M3-E VALID"
+}

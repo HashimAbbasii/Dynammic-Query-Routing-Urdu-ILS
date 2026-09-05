@@ -1,0 +1,78 @@
+{
+  "experiment_id": "post_phase12_r_dev",
+  "stage": "M0_retrieval_only",
+  "official_system": "M0",
+  "m0_code_path": "experiments/phase5_roman_urdu/run_phase5.py",
+  "timestamp_utc": "2026-09-01T07:25:27Z",
+  "git_commit": "d37bbf0d6ca900d384e6a41e7ba74d72f6459ff7",
+  "preflight_pass": true,
+  "retrieval_pass_count": 1,
+  "exactly_one_retrieval_pass": true,
+  "queries_r_dev_sha256": "1603b37eeee41fa6270f4e13d185c8eebd4512d025cd5fc67e8a81de9407e75f",
+  "queries_r_dev_sha256_expected": "1603b37eeee41fa6270f4e13d185c8eebd4512d025cd5fc67e8a81de9407e75f",
+  "queries_r_dev_hash_ok": true,
+  "n_queries_requested": 100,
+  "n_queries_retrieved": 100,
+  "corpus_path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\data\\clean_articles.csv",
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "corpus_n_docs": 111860,
+  "dict_path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\models\\roman_urdu_dict_expanded.json",
+  "dict_sha256": "30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3",
+  "dict_keys": 198,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "top_k_internal": 50,
+  "top5_extracted": true,
+  "routing": {
+    "URDU": "urdu_bm25",
+    "ROMAN": "roman_bm25_method_D",
+    "MIXED": "urdu_bm25"
+  },
+  "detect_script_function": "experiments/phase5_roman_urdu/run_phase5.py::detect_script",
+  "m0_modified": false,
+  "module1_applied": false,
+  "module2_applied": false,
+  "embeddings_used": false,
+  "semantic_retrieval_used": false,
+  "chroma_used": false,
+  "minilm_used": false,
+  "metrics_computed": false,
+  "qrels_created": false,
+  "annotation_started": false,
+  "track_counts": {
+    "KI": 50,
+    "NAT": 50
+  },
+  "detector_counts": {
+    "URDU": 18,
+    "MIXED": 40,
+    "ROMAN": 42
+  },
+  "path_counts": {
+    "urdu_bm25": 58,
+    "roman_bm25_method_D": 42
+  },
+  "n_hits_distribution": {
+    "50": 96,
+    "8": 1,
+    "29": 2,
+    "0": 1
+  },
+  "n_top50_rows": 4866,
+  "n_top5_rows": 495,
+  "output_files": {
+    "R_TOP50_RETRIEVAL.csv": {
+      "path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\experiments\\post_phase12_development\\R_TOP50_RETRIEVAL.csv",
+      "sha256": "927a14a25b6f1de2a5c28aabdc2d8cbc0d4336e0b2b437490691a7bff63a2aa2",
+      "rows": 4866
+    },
+    "R_TOP5_FOR_ANNOTATION.csv": {
+      "path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\experiments\\post_phase12_development\\R_TOP5_FOR_ANNOTATION.csv",
+      "sha256": "042006bc3232719514a6ca4b638f4e6348415d168294271fe366ff95704b23c5",
+      "rows": 495
+    }
+  },
+  "tokenize_seconds": 152.3,
+  "search_seconds": 2.86,
+  "stopped_after_retrieval": true
+}

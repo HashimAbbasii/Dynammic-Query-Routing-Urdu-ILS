@@ -1,0 +1,41 @@
+{
+  "stage": "m3e_pool_materialization",
+  "timestamp_utc": "2026-09-05T07:43:08Z",
+  "protocol_file": "M3E_UNION_POOL_NAT_PROTOCOL.md",
+  "protocol_sha256": "1641ee5ee3c8b0a2c31ae9b1e3bca7d7e4b2ffe613a8c8fd7afa3c9066d7cab5",
+  "frozen_input_sha256": {
+    "queries_r_dev.csv": "1603b37eeee41fa6270f4e13d185c8eebd4512d025cd5fc67e8a81de9407e75f",
+    "R_TOP50_RETRIEVAL.csv": "927a14a25b6f1de2a5c28aabdc2d8cbc0d4336e0b2b437490691a7bff63a2aa2",
+    "R_TOP5_FOR_ANNOTATION.csv": "042006bc3232719514a6ca4b638f4e6348415d168294271fe366ff95704b23c5",
+    "qrels_r_dev.csv": "506305b5401102a3659d21b69c7a937bcdcde78b21a1409a6a6132255ff37bcb",
+    "M2-A_TOP50_RETRIEVAL.csv": "b9d4c77ef4cf2a7ba7442031a79c7cb1c78eaf00b88bcdabc4627d084d3d801e",
+    "M2-B_TOP50_RETRIEVAL.csv": "9a16855977fa43fe8766d325065f621009182094d60f999e080051d50e45630a",
+    "M3E_UNION_POOL_NAT_PROTOCOL.md": "1641ee5ee3c8b0a2c31ae9b1e3bca7d7e4b2ffe613a8c8fd7afa3c9066d7cab5"
+  },
+  "legacy_m0_success_at_5": "12/50",
+  "nat_query_count": 50,
+  "systems_in_union": [
+    "M0",
+    "M2-A",
+    "M2-B"
+  ],
+  "depth": 5,
+  "shuffle_seed": 20260905,
+  "unique_pool_pairs": 557,
+  "carried_m0_pairs": 245,
+  "new_pairs_to_annotate": 312,
+  "pool_size_per_query": {
+    "min": 5,
+    "median": 12,
+    "max": 15,
+    "mean": 11.14
+  },
+  "r080": {
+    "in_m0_top5": 0,
+    "in_m2a_top5": 5,
+    "in_m2b_top5": 0,
+    "denominator": true
+  },
+  "qrels_r_dev_csv_overwrite": false,
+  "retrieval_rerun": false
+}

@@ -1,0 +1,70 @@
+{
+  "experiment_id": "post_phase12_r_dev",
+  "protocol_version": "2.0",
+  "protocol_doc": "docs/POST_PHASE12_DEVELOPMENT_SET_PROTOCOL.md",
+  "author_date": "2026-09-01",
+  "author_ki": "thesis author (corpus-read for KI tiers only)",
+  "author_nat": "thesis author under document-blind NAT protocol (fallback; independent author preferred)",
+  "authorship_firewall": {
+    "phase12_queries_accessed": false,
+    "phase12_failure_reports_accessed": false,
+    "retrieval_used_during_authoring": false,
+    "corpus_accessed_for_nat": false,
+    "corpus_accessed_for_ki_only": true,
+    "supervisor_oversight_documented": "fallback author; supervisor sign-off pending"
+  },
+  "final_n": 100,
+  "ki_nat_split": {
+    "KI": 50,
+    "NAT": 50
+  },
+  "ki_tier_counts": {
+    "T1": 15,
+    "T2": 20,
+    "T3": 15
+  },
+  "random_seed_ki_sampling": 202609011200,
+  "ki_source_sampling": {
+    "method": "stratified equal across 4 corpus categories; 13+13+12+12=50",
+    "eligible_rule": "Index not in QTRN∪K sources; headline length>=12; non-empty headline",
+    "excluded_source_ids_qtrn": 260,
+    "excluded_source_ids_k": 40
+  },
+  "script_counts": {
+    "URDU": 18,
+    "MIXED": 40,
+    "ROMAN": 42
+  },
+  "roman_share_percent": 42.0,
+  "prospective_minimum_floors_met": {
+    "URDU": true,
+    "ROMAN": true,
+    "MIXED": true
+  },
+  "roman_cap_45_percent_exceeded": false,
+  "category_counts": {
+    "business": 25,
+    "sports": 23,
+    "science/tech": 19,
+    "entertainment": 19,
+    "general": 14
+  },
+  "need_type_counts": {
+    "factoid": 77,
+    "explanatory": 15,
+    "named_entity": 8
+  },
+  "temporal_query_count": 12,
+  "phenomenon_notes": {
+    "nat_temporal_intended_min": 4,
+    "informal_spelling_nat": 1
+  },
+  "deviations_from_prospective_targets": [
+    "Initial draft had 101 rows (51 NAT); corrected to 50 NAT before seal.",
+    "R055/R056 NAT strings revised after overlap checker flagged near-duplicate/exact match (not retrieval-guided)."
+  ],
+  "retrieval_before_seal": false,
+  "overlap_check_passed": true,
+  "overlap_check_tool": "experiments/post_phase12_development/overlap_check.py",
+  "detect_script_function": "experiments/phase5_roman_urdu/run_phase5.py::detect_script (logic mirrored at authoring time)"
+}

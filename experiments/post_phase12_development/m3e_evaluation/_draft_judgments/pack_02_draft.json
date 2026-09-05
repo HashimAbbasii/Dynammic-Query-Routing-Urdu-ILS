@@ -1,0 +1,352 @@
+[
+  {
+    "query_id": "R071",
+    "doc_id": 24433,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R071",
+    "doc_id": 24810,
+    "relevance_label": "C"
+  },
+  {
+    "query_id": "R071",
+    "doc_id": 31760,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R071",
+    "doc_id": 41326,
+    "relevance_label": "C"
+  },
+  {
+    "query_id": "R071",
+    "doc_id": 28828,
+    "relevance_label": "C"
+  },
+  {
+    "query_id": "R071",
+    "doc_id": 66936,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R071",
+    "doc_id": 106804,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R071",
+    "doc_id": 106955,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R072",
+    "doc_id": 30560,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R072",
+    "doc_id": 80899,
+    "relevance_label": "C"
+  },
+  {
+    "query_id": "R072",
+    "doc_id": 33113,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R073",
+    "doc_id": 70251,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R073",
+    "doc_id": 63949,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R073",
+    "doc_id": 63867,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R073",
+    "doc_id": 63328,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R073",
+    "doc_id": 27820,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R073",
+    "doc_id": 72822,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R074",
+    "doc_id": 104776,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R074",
+    "doc_id": 14847,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R074",
+    "doc_id": 9272,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R074",
+    "doc_id": 9054,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R074",
+    "doc_id": 66699,
+    "relevance_label": "B"
+  },
+  {
+    "query_id": "R074",
+    "doc_id": 9160,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R074",
+    "doc_id": 100688,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R074",
+    "doc_id": 8691,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R075",
+    "doc_id": 87859,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R075",
+    "doc_id": 83075,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R075",
+    "doc_id": 20932,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R075",
+    "doc_id": 28814,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R075",
+    "doc_id": 57219,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R075",
+    "doc_id": 25638,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R075",
+    "doc_id": 25472,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R075",
+    "doc_id": 55062,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R075",
+    "doc_id": 109409,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R076",
+    "doc_id": 37449,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R076",
+    "doc_id": 48667,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R076",
+    "doc_id": 48452,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R076",
+    "doc_id": 60837,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R077",
+    "doc_id": 2759,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R077",
+    "doc_id": 78316,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R077",
+    "doc_id": 61956,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R077",
+    "doc_id": 61954,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R077",
+    "doc_id": 31823,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R077",
+    "doc_id": 75719,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R077",
+    "doc_id": 111198,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R077",
+    "doc_id": 82431,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R077",
+    "doc_id": 62329,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R077",
+    "doc_id": 107665,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R078",
+    "doc_id": 39443,
+    "relevance_label": "C"
+  },
+  {
+    "query_id": "R078",
+    "doc_id": 70429,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R078",
+    "doc_id": 96968,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R078",
+    "doc_id": 73571,
+    "relevance_label": "C"
+  },
+  {
+    "query_id": "R078",
+    "doc_id": 73492,
+    "relevance_label": "C"
+  },
+  {
+    "query_id": "R078",
+    "doc_id": 77397,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R078",
+    "doc_id": 57688,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R078",
+    "doc_id": 2347,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R078",
+    "doc_id": 41861,
+    "relevance_label": "C"
+  },
+  {
+    "query_id": "R079",
+    "doc_id": 72069,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R079",
+    "doc_id": 73278,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R079",
+    "doc_id": 64674,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R079",
+    "doc_id": 110517,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R079",
+    "doc_id": 1154,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R079",
+    "doc_id": 44556,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R079",
+    "doc_id": 50786,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R079",
+    "doc_id": 36893,
+    "relevance_label": "D"
+  },
+  {
+    "query_id": "R080",
+    "doc_id": 85387,
+    "relevance_label": "A"
+  },
+  {
+    "query_id": "R080",
+    "doc_id": 82362,
+    "relevance_label": "A"
+  },
+  {
+    "query_id": "R080",
+    "doc_id": 86375,
+    "relevance_label": "A"
+  },
+  {
+    "query_id": "R080",
+    "doc_id": 85419,
+    "relevance_label": "A"
+  },
+  {
+    "query_id": "R080",
+    "doc_id": 82636,
+    "relevance_label": "A"
+  }
+]
