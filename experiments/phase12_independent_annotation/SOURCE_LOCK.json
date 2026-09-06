@@ -1,0 +1,17 @@
+{
+  "package": "phase12_independent_annotation",
+  "purpose": "Independent human annotation of the frozen Phase 12 U Top-5 dump. No retrieval. No system change.",
+  "source_file": "experiments/phase12_new_unseen_evaluation/U_TOP5_FOR_ANNOTATION.csv",
+  "source_bytes": 224408,
+  "source_sha256": "3ecbc0abba8b8f204aa8e1c86464e2ed7d3df8c2f873a944a3f45496d2ca1a95",
+  "n_header_rows": 1,
+  "n_data_rows": 200,
+  "n_queries": 40,
+  "n_ranks_per_query": 5,
+  "query_id_range": "U001-U040",
+  "copy_file": "experiments/phase12_independent_annotation/U_TOP5_FOR_INDEPENDENT_ANNOTATION.csv",
+  "copy_sha256": "3ecbc0abba8b8f204aa8e1c86464e2ed7d3df8c2f873a944a3f45496d2ca1a95",
+  "copy_identical_to_source": true,
+  "relevance_label_in_source_and_copy": "empty",
+  "annotator1_labels_included": false
+}
