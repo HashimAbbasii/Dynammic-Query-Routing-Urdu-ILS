@@ -1,0 +1,181 @@
+set,query_id,script,path,ki_bucket,nat_bucket,source_rank,hit5,success5,labels,n_labels,query_text
+K,K001,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K002,URDU,urdu_bm25,RANK,,6,False,,,,
+K,K003,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K004,ROMAN,roman_bm25_method_D,ABSENT,,not_in_top50,False,,,,
+K,K005,ROMAN,roman_bm25_method_D,ABSENT,,not_in_top50,False,,,,
+K,K006,ROMAN,roman_bm25_method_D,ABSENT,,not_in_top50,False,,,,
+K,K007,ROMAN,roman_bm25_method_D,HIT,,4,True,,,,
+K,K008,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K009,URDU,urdu_bm25,HIT,,4,True,,,,
+K,K010,URDU,urdu_bm25,RANK,,49,False,,,,
+K,K011,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K012,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K013,ROMAN,roman_bm25_method_D,ABSENT,,not_in_top50,False,,,,
+K,K014,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K015,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K016,ROMAN,roman_bm25_method_D,ABSENT,,not_in_top50,False,,,,
+K,K017,URDU,urdu_bm25,HIT,,2,True,,,,
+K,K018,ROMAN,roman_bm25_method_D,ABSENT,,not_in_top50,False,,,,
+K,K019,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K020,ROMAN,roman_bm25_method_D,ABSENT,,not_in_top50,False,,,,
+K,K021,URDU,urdu_bm25,HIT,,2,True,,,,
+K,K022,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K023,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K024,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K025,ROMAN,roman_bm25_method_D,ABSENT,,not_in_top50,False,,,,
+K,K026,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K027,URDU,urdu_bm25,HIT,,2,True,,,,
+K,K028,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K029,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K030,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K031,ROMAN,roman_bm25_method_D,RANK,,17,False,,,,
+K,K032,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K033,ROMAN,roman_bm25_method_D,ABSENT,,not_in_top50,False,,,,
+K,K034,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K035,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K036,URDU,urdu_bm25,HIT,,2,True,,,,
+K,K037,ROMAN,roman_bm25_method_D,ABSENT,,not_in_top50,False,,,,
+K,K038,URDU,urdu_bm25,HIT,,3,True,,,,
+K,K039,URDU,urdu_bm25,HIT,,1,True,,,,
+K,K040,URDU,urdu_bm25,HIT,,1,True,,,,
+U,U001,URDU,urdu_bm25,,NAT_OK,,,True,ABBBC,,آج قومی اسمبلی کا اجلاس ہے کیا
+U,U002,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,ADDDD,,aaj pakistan ka cricket match kis se hai
+U,U003,URDU,urdu_bm25,,NAT_OK,,,True,AAACB,,موجودہ وزیراعظم پاکستان کون ہیں
+U,U004,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,mojooda dollar rate pakistan mein kya hai
+U,U005,URDU,urdu_bm25,,NAT_OK,,,True,AAAAA,,سونے کی قیمت کتنی ہے
+U,U006,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,psl points table
+U,U007,URDU,urdu_bm25,,NAT_OK,,,True,DBCCC,,کراچی میں رات بجلی کٹے گی
+U,U008,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,lahore se islamabad train ticket price
+U,U009,URDU,urdu_bm25,,NAT_OK,,,True,CBCCB,,عالمی کپ کرکٹ شیڈول پاکستان
+U,U010,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,netflix pakistan subscription charges
+U,U011,URDU,urdu_bm25,,NAT_OK,,,True,AAAAA,,وفاقی بجٹ کب پیش ہوگا
+U,U012,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,ADDCA,,karachi stock market closing
+U,U013,URDU,urdu_bm25,,NAT_OK,,,True,AAAAA,,چاند گرہن کب لگے گا
+U,U014,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,5G kab aye ga pakistan
+U,U015,URDU,urdu_bm25,,NAT_OK,,,True,CCBDB,,پاکستان میں مہنگائی کیوں بڑھ رہی ہے
+U,U016,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,pakistan mein berozgari kyun barh rahi hai
+U,U017,URDU,urdu_bm25,,NAT_OK,,,True,BCBCD,,پاکستان کی کرکٹ ٹیم عالمی مقابلوں میں بار بار خراب کارکردگی کیوں دکھاتی ہے
+U,U018,ROMAN,roman_bm25_method_D,,NAT_FAIL_NO_AB,,,False,CCCDD,,pakistan mein har saal flood ke baad faslon ka nuqsan itna zyada kyun hota hai
+U,U019,URDU,urdu_bm25,,NAT_OK,,,True,BAABA,,سوشل میڈیا کے غلط استعمال سے نوجوانوں کی ذہنی صحت پر کیا فرق پڑتا ہے
+U,U020,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,mobile apps phone ki battery kyun jaldi khatam karti hain aur iska hall kya hai
+U,U021,URDU,urdu_bm25,,NAT_OK,,,True,CCCBC,,پاکستان کی یونیورسٹیوں میں سائنس کی تحقیق دوسرے ممالک سے کیوں پیچھے رہ گئی ہے
+U,U022,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,DCCBB,,internet speed pakistan mein slow kyun rehti hai aur isko kaise behtar kiya ja sakta hai
+U,U023,URDU,urdu_bm25,,NAT_OK,,,True,BDBDD,,فلم انڈسٹری پاکستان میں کیوں ترقی نہیں کر پا رہی اور اس کی کیا وجہ ہے
+U,U024,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,DBCCC,,drama industry mein original stories kam kyun banti hain aur audience kya chahti hai
+U,U025,URDU,urdu_bm25,,NAT_OK,,,True,CCBCC,,کراچی میں روزانہ ٹریفک جام کم کرنے کے لیے کیا اقدامات کیے جا سکتے ہیں
+U,U026,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,larkion ki higher education ke liye ghar walon ka support kyun zaroori hota hai
+U,U027,URDU,urdu_bm25,,NAT_OK,,,True,BBBBC,,بجلی کے بحران کی وجہ سے چھوٹی صنعتوں کو کیا نقصان ہو رہا ہے
+U,U028,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,foreign students pakistan ke universities mein admission kyun kam lete hain aur iski wajah kya hai
+U,U029,URDU,urdu_bm25,,NAT_OK,,,True,AAAAA,,محمد رضوان
+U,U030,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,AAAAA,,virat kohli
+U,U031,URDU,urdu_bm25,,NAT_OK,,,True,ACCAA,,شاہ رخ خان نئی فلم
+U,U032,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,mahira khan ka naya drama kab aa raha hai
+U,U033,URDU,urdu_bm25,,NAT_OK,,,True,ABDDC,,عمران خان کے تازہ سیاسی بیانات
+U,U034,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,DDDDD,,wasim akram ki commentary kab start hogi
+U,U035,URDU,urdu_bm25,,NAT_FAIL_NO_AB,,,False,CCCCD,,نادیہ خان کے شو میں کون آیا
+U,U036,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,CBADA,,nasa mars mission kab launch hoga
+U,U037,MIXED,urdu_bm25,,NAT_FAIL_ALL_C,,,False,CCCCC,,بابر اعظم کی PSL میں کارکردگی کیسی رہی
+U,U038,MIXED,urdu_bm25,,NAT_FAIL_ALL_C,,,False,CCCCC,,نرگس فخری کی Hollywood فلم کون سی ہے
+U,U039,MIXED,urdu_bm25,,NAT_FAIL_ALL_C,,,False,CCCCC,,حریم شاہ کی YouTube ویڈیو کہاں دیکھی جائے
+U,U040,MIXED,urdu_bm25,,NAT_FAIL_ALL_D,,,False,DDDDD,,قائد اعظم University میں داخلے کب شروع ہیں
+R-KI,R001,URDU,urdu_bm25,RANK,,9,False,,,,ایشیائی مارکیٹوں میں کورونا کے بعد تیزی سے بحالی
+R-KI,R002,URDU,urdu_bm25,HIT,,1,True,,,,مارشل آرٹ کی تربیت میں حملہ کرنے والا روبوٹ
+R-KI,R003,URDU,urdu_bm25,ABSENT,,,False,,,,سافٹ ویئر کیریئر کے لیے کون سی کوڈنگ زبانیں سیکھنی چاہئیں
+R-KI,R004,URDU,urdu_bm25,RANK,,27,False,,,,اسٹیٹ بینک کے ذخائر میں ہفتے کے دوران کتنی کمی ہوئی
+R-KI,R005,URDU,urdu_bm25,ABSENT,,,False,,,,بالی ووڈ اداکارہ کا پاکستانی فنکاروں کے کام پر کیا کہنا تھا
+R-KI,R006,MIXED,urdu_bm25,HIT,,1,True,,,,پریمیئر لیگ میں سٹی نے بورنemouth کو کتنے گولوں سے ہرایا
+R-KI,R007,URDU,urdu_bm25,HIT,,1,True,,,,جدید گیجٹس کی وجہ سے وقت تیزی سے گزرنے کا احساس کیوں
+R-KI,R008,URDU,urdu_bm25,HIT,,1,True,,,,ایک عام گوگل تلاش سے ٹرمپ خاندان کی مالی تاریخ سامنے کیسے آئی
+R-KI,R009,URDU,urdu_bm25,HIT,,2,True,,,,سیالکوٹ ایئرپورٹ پر بین الاقوامی فلائٹس کا اعتماد کیوں بڑھ رہا ہے
+R-KI,R010,URDU,urdu_bm25,HIT,,1,True,,,,پنجاب کے سی این جی اسٹیشن مالکان ایل این جی درآمد کے لیے کیا کر رہے ہیں
+R-KI,R011,MIXED,urdu_bm25,RANK,,25,False,,,,رجنی کانت والی فلم نے ریلیز سے پہلے کتna کاروبار کیا
+R-KI,R012,MIXED,urdu_bm25,HIT,,1,True,,,,عید پر مٹھائی کی جگہ لوگ ab کya تحفہ dena pasand karte hain
+R-KI,R013,URDU,urdu_bm25,HIT,,1,True,,,,ہاکی ورلڈ کپ کا فائنل کن دو ٹیموں کے درمیان ہے
+R-KI,R014,URDU,urdu_bm25,HIT,,5,True,,,,پی سی بی قائم مقام چیئرمین کے لیے کن ناموں پر غور ہے
+R-KI,R015,URDU,urdu_bm25,HIT,,1,True,,,,صوبوں نے وفاق کو ترقیاتی فنڈز کیوں واپس کیے
+R-KI,R016,MIXED,urdu_bm25,ABSENT,,,False,,,,سام سنگ اپنے نئے فلیگ شپ فون کی رونمائی کب San Francisco میں کرے گا
+R-KI,R017,URDU,urdu_bm25,HIT,,1,True,,,,عراق نے طلبہ کی نقل روکنے کے لیے امتحانات کے دوران کیا بند کیا
+R-KI,R018,URDU,urdu_bm25,RANK,,14,False,,,,کراچی میں پاک فوج کے نام پر سائیکل ریس کا مقصد کیا تھا
+R-KI,R019,MIXED,urdu_bm25,HIT,,1,True,,,,اپریل 2019 میں کراچی اسٹاک مارکیٹ کتne پوائنٹس نیچے بند ہوئی
+R-KI,R020,URDU,urdu_bm25,HIT,,1,True,,,,قائداعظم ون ڈے کپ کے دوسرے سیمی فائنل میں کس بینک نے جیت حاصل کی
+R-KI,R021,MIXED,urdu_bm25,ABSENT,,,False,,,,کے الیکٹرک صارفین کے لیے بجلی یونٹ کتna مہnga hua manzoor
+R-KI,R022,MIXED,urdu_bm25,ABSENT,,,False,,,,ملک میں سونے ki فی تولہ qeemat mein kitna izafa hua
+R-KI,R023,MIXED,urdu_bm25,HIT,,4,True,,,,فواد چوہدری ne pehla science fair kab aur kahan karne ka elaan kiya
+R-KI,R024,MIXED,urdu_bm25,RANK,,39,False,,,,گوگل کی خودکار udan taxi ne New Zealand mein pehli test parwaz kab ki
+R-KI,R025,MIXED,urdu_bm25,ABSENT,,,False,,,,تیسرے ون ڈے میں ویسٹ انڈیز ne Pakistan ko jeet ke liye kitna target diya
+R-KI,R026,MIXED,urdu_bm25,HIT,,1,True,,,,اقصی علی ne Meesha Shafi aur Ali Zafar jhagra par kya inkshaaf kiya
+R-KI,R027,MIXED,urdu_bm25,HIT,,4,True,,,,کلینڈ میں نیوزی لینڈ ne West Indies ko pehle T20 mein kitne runs se haraaya
+R-KI,R028,MIXED,urdu_bm25,ABSENT,,,False,,,,فیس بک comments mein animated GIF bhejne ka naya button kab aaya
+R-KI,R029,MIXED,urdu_bm25,ABSENT,,,False,,,,سوشل میڈia ki khabron ke baad Imad Wasim ne shadi ke bare mein kya kaha
+R-KI,R030,ROMAN,roman_bm25_method_D,ABSENT,,,False,,,,2018 ke pehle ODI mein Pakistan ko New Zealand se kitni runs ki shikast hui
+R-KI,R031,ROMAN,roman_bm25_method_D,ABSENT,,,False,,,,open market mein dollar ki qeemat 20 paisay kam hokar kitni reh gayi
+R-KI,R032,MIXED,urdu_bm25,ABSENT,,,False,,,,ارطغرل ڈرامے ki Halima Sultan Pakistan aane ki khwahish kyun zahir ki
+R-KI,R033,MIXED,urdu_bm25,ABSENT,,,False,,,,ٹرمپ ke pehle tees dinon mein Dow Jones ka century record kyun toota
+R-KI,R034,MIXED,urdu_bm25,RANK,,33,False,,,,شعیب ملک Champions Trophy mein kitni martaba shamil ho chuke hain
+R-KI,R035,MIXED,urdu_bm25,RANK,,6,False,,,,راکھی ساونت Ludhiana court mein giraftari se kaise bach gayi
+R-KI,R036,URDU,urdu_bm25,RANK,,7,False,,,,اسٹار وارز ساتویں فلم کا نیا ٹریلر کب جاری ہوا
+R-KI,R037,URDU,urdu_bm25,HIT,,1,True,,,,ڈھاکہ میں فیشن ویک کس شہر میں جاری ہے
+R-KI,R038,MIXED,urdu_bm25,ABSENT,,,False,,,,نیویارک میں خاتoon ke purse mein Galaxy Note jalne ka waqia kya tha
+R-KI,R039,MIXED,urdu_bm25,ABSENT,,,False,,,,برسبن ٹیسٹ میں پاکستان ko innings shikast se bachne ke liye kitne runs chahiye
+R-KI,R040,MIXED,urdu_bm25,ABSENT,,,False,,,,موٹورولا ne apna pehla foldable phone confirm karte hue kya bataya
+R-KI,R041,MIXED,urdu_bm25,RANK,,6,False,,,,کمار سانو ke khilaf school function mein raat bhar gaana gaane par kya case bana
+R-KI,R042,ROMAN,roman_bm25_method_D,ABSENT,,,False,,,,Iran ne 100 meter door se corona mareez pehchanne wala kya device mutaarif karaya
+R-KI,R043,MIXED,urdu_bm25,HIT,,4,True,,,,نرگس فخری ne hamla hone ki afwahon par kya jawab diya
+R-KI,R044,MIXED,urdu_bm25,ABSENT,,,False,,,,اسحاق ڈار ne SECP ki karکردagi par kya raay di
+R-KI,R045,ROMAN,roman_bm25_method_D,ABSENT,,,False,,,,Galaxy S10 ke kitne alag versions leak hokar samne aaye hain
+R-KI,R046,MIXED,urdu_bm25,ABSENT,,,False,,,,میرا ke jhoothi shadi ke case mein Atiq ur Rehman ko adalat ne kyun bulaya
+R-KI,R047,MIXED,urdu_bm25,RANK,,43,False,,,,فرانس ne Chitral aur Dargai hydropower plants ke liye kitna euro qarz diya
+R-KI,R048,MIXED,urdu_bm25,RANK,,19,False,,,,جراسک ورلڈ ne doosre hafte bhi US box office par kya position barqarar rakhi
+R-KI,R049,ROMAN,roman_bm25_method_D,HIT,,3,True,,,,Anne Hathaway ki film Song One ka pehla trailer kab release hua
+R-KI,R050,MIXED,urdu_bm25,RANK,,17,False,,,,انڈر 19 ایشیا کپ فائنل Pakistan aur Bharat ka match kis natije par khatam hua
+R-NAT,R051,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,,5,aaj Pakistan ka cricket match kahan khela ja raha hai
+R-NAT,R052,URDU,urdu_bm25,,NAT_OK,,,True,,5,موجودہ ڈالر کی اوپن مارکیٹ قیمت کیا ہے
+R-NAT,R053,MIXED,urdu_bm25,,NAT_OK,,,True,,5,پٹرول ki qeemat mein kal kya tabdeeli hui
+R-NAT,R054,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,,5,Pakistan mein mehngai kam kyun nahi ho rahi aur aam admi par asar kya hai
+R-NAT,R055,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,psl 2026 playoff schedule kab announce hoga
+R-NAT,R056,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,,5,shaheen shah afridi ki bowling form ka kya haal hai
+R-NAT,R057,ROMAN,roman_bm25_method_D,,NAT_FAIL_NO_AB,,,False,,5,lahore se rawalpindi train ka kiraya kitna hai
+R-NAT,R058,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,,5,Pakistan mein mobile internet speed slow kyun rehti hai
+R-NAT,R059,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,netflix Pakistan subscription price
+R-NAT,R060,MIXED,urdu_bm25,,NAT_FAIL_ALL_D,,,False,,5,کراچی mein aaj raat load shedding ka schedule
+R-NAT,R061,MIXED,urdu_bm25,,NAT_OK,,,True,,5,آئی ایم ایف program se awam par kya asraat par rahe hain
+R-NAT,R062,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,5G Pakistan mein kab available hogi
+R-NAT,R063,MIXED,urdu_bm25,,NAT_FAIL_ALL_D,,,False,,5,شہbaz sharif
+R-NAT,R064,MIXED,urdu_bm25,,NAT_OK,,,True,,5,سونے ki aaj ki qeemat
+R-NAT,R065,ROMAN,roman_bm25_method_D,,NAT_FAIL_NO_AB,,,False,,5,Pakistan cricket team recent tours par performance kyun inconsistent hai
+R-NAT,R066,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,LUMS undergraduate admission deadline 2026
+R-NAT,R067,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,Pakistani dramas ki stories pehle se kam strong kyun lagti hain
+R-NAT,R068,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,iphone 16 Pakistan price
+R-NAT,R069,ROMAN,roman_bm25_method_D,,NAT_FAIL_NO_AB,,,False,,5,cristiano ronaldo al nassr news
+R-NAT,R070,MIXED,urdu_bm25,,NAT_FAIL_ALL_D,,,False,,5,کراچی stock exchange aaj close par kitne points par band hua
+R-NAT,R071,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,Lahore mein smog season mein schools band kyun hoti hain aur hukumat kya kar rahi hai
+R-NAT,R072,MIXED,urdu_bm25,,NAT_FAIL_ALL_D,,,False,,5,ایشیا کپ 2026 schedule Pakistan
+R-NAT,R073,MIXED,urdu_bm25,,NAT_FAIL_ALL_D,,,False,,5,وفاقی budget 2026 kab present hoga
+R-NAT,R074,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,,5,mahira khan new film
+R-NAT,R075,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,AI tools ki wajah se Pakistan mein naujawan developers ke liye opportunities ka kya hoga
+R-NAT,R076,MIXED,urdu_bm25,,NAT_FAIL_NO_AB,,,False,,5,Islamabad ka موسم aaj kaisa hai
+R-NAT,R077,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,ghar ke liye solar panel price in Pakistan
+R-NAT,R078,MIXED,urdu_bm25,,NAT_FAIL_ALL_D,,,False,,5,کراچی میں شاہراہِ فیصل پر روزانہ jam kyun lagta hai
+R-NAT,R079,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,youtube premium family plan Pakistan
+R-NAT,R080,ROMAN,,,NAT_ZERO_HITS,,,False,,0,mickey arthur
+R-NAT,R081,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,SUPARCO ne haal hi mein kya satellite mission announce kiya
+R-NAT,R082,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,Pakistan ki textile exports kam kyun ho rahi hain
+R-NAT,R083,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,Pakistani passport fees 2026
+R-NAT,R084,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,HBL PSL 2026 final date and venue
+R-NAT,R085,ROMAN,roman_bm25_method_D,,NAT_FAIL_NO_AB,,,False,,5,Pakistan mein khawateen ke liye public transport safe kyun nahi samjhi jati
+R-NAT,R086,MIXED,urdu_bm25,,NAT_OK,,,True,,5,روپے ki value ke baray mein latest update
+R-NAT,R087,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,,5,gwadar port news
+R-NAT,R088,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,Pakistani film box office Eid 2026
+R-NAT,R089,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,online banking fraud se bachne ke liye users ko kya karna chahiye
+R-NAT,R090,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,matric result 2026 kab aye ga punjab
+R-NAT,R091,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,CPEC projects se Pakistan par qarz ka bojh barhne ki baat kyun hoti hai
+R-NAT,R092,ROMAN,roman_bm25_method_D,,NAT_FAIL_NO_AB,,,False,,5,Pakistan hockey team ranking
+R-NAT,R093,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,UK visit visa processing time from Pakistan
+R-NAT,R094,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,atif aslam concert Pakistan
+R-NAT,R095,MIXED,urdu_bm25,,NAT_FAIL_NO_AB,,,False,,5,سیلاب ke baad kisanon ko fasal ke nuqsan ka muawza kyun late milta hai
+R-NAT,R096,ROMAN,roman_bm25_method_D,,NAT_OK,,,True,,5,Eid ka chand kab nazar aayega Pakistan
+R-NAT,R097,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,Karachi property tax online payment ka tareeqa
+R-NAT,R098,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,Turkish dramas Pakistan mein itne popular kyun ho gaye hain
+R-NAT,R099,ROMAN,roman_bm25_method_D,,NAT_FAIL_ALL_D,,,False,,5,Pakistan mein COVID cases ka latest data
+R-NAT,R100,ROMAN,roman_bm25_method_D,,NAT_FAIL_NO_AB,,,False,,5,lahore qalandars squad

@@ -1,0 +1,63 @@
+{
+  "note": "Mechanical buckets from frozen dumps. Not a new official metric. Do not tune M0.",
+  "K": {
+    "official_hit5": "27/40",
+    "n": 40,
+    "by_script_bucket": {
+      "ROMAN|ABSENT": 10,
+      "ROMAN|HIT": 1,
+      "ROMAN|RANK": 1,
+      "URDU|HIT": 26,
+      "URDU|RANK": 2
+    },
+    "roman_absent": 10,
+    "roman_rank": 1,
+    "roman_hit": 1,
+    "urdu_absent": 0,
+    "urdu_rank": 2,
+    "urdu_hit": 26
+  },
+  "U": {
+    "official_success5": "23/40",
+    "n": 40,
+    "by_script_bucket": {
+      "MIXED|NAT_FAIL_ALL_C": 3,
+      "MIXED|NAT_FAIL_ALL_D": 1,
+      "ROMAN|NAT_FAIL_ALL_D": 11,
+      "ROMAN|NAT_FAIL_NO_AB": 1,
+      "ROMAN|NAT_OK": 6,
+      "URDU|NAT_FAIL_NO_AB": 1,
+      "URDU|NAT_OK": 17
+    }
+  },
+  "R_KI": {
+    "m0_hit5_expected": "19/50",
+    "hit5": 19,
+    "n": 50,
+    "by_script_bucket": {
+      "MIXED|ABSENT": 13,
+      "MIXED|HIT": 7,
+      "MIXED|RANK": 8,
+      "ROMAN|ABSENT": 4,
+      "ROMAN|HIT": 1,
+      "URDU|ABSENT": 2,
+      "URDU|HIT": 11,
+      "URDU|RANK": 4
+    }
+  },
+  "R_NAT": {
+    "m0_success5_expected": "12/50",
+    "success5": 12,
+    "n": 50,
+    "by_script_bucket": {
+      "MIXED|NAT_FAIL_ALL_D": 6,
+      "MIXED|NAT_FAIL_NO_AB": 2,
+      "MIXED|NAT_OK": 4,
+      "ROMAN|NAT_FAIL_ALL_D": 23,
+      "ROMAN|NAT_FAIL_NO_AB": 6,
+      "ROMAN|NAT_OK": 7,
+      "ROMAN|NAT_ZERO_HITS": 1,
+      "URDU|NAT_OK": 1
+    }
+  }
+}
