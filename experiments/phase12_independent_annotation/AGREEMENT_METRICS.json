@@ -1,0 +1,299 @@
+{
+  "a1_source": "experiments/phase12_human_relevance/U_QRELS.csv",
+  "a2_file": "experiments/phase12_independent_annotation/U_TOP5_FOR_INDEPENDENT_ANNOTATION_LABELED.csv",
+  "frozen_dump": "experiments/phase12_new_unseen_evaluation/U_TOP5_FOR_ANNOTATION.csv",
+  "n_judgments": 200,
+  "n_queries": 40,
+  "validation": {
+    "n_rows": 200,
+    "n_queries": 40,
+    "label_counts": {
+      "A": 60,
+      "B": 32,
+      "D": 80,
+      "C": 28
+    },
+    "empty_labels": 0,
+    "issues": [],
+    "field_mismatches": {
+      "bm25_score": 42
+    },
+    "field_mismatch_examples": {
+      "bm25_score": [
+        {
+          "key": [
+            "U001",
+            "2",
+            "72816"
+          ],
+          "frozen": "20.594186782836914",
+          "a2": "20.59418678283692"
+        },
+        {
+          "key": [
+            "U001",
+            "3",
+            "38842"
+          ],
+          "frozen": "20.283884048461914",
+          "a2": "20.28388404846192"
+        },
+        {
+          "key": [
+            "U001",
+            "4",
+            "17486"
+          ],
+          "frozen": "20.275344848632812",
+          "a2": "20.27534484863281"
+        }
+      ]
+    },
+    "structurally_valid": true,
+    "same_200_documents": true,
+    "a2_label_only_ok": true,
+    "a1_source": "experiments/phase12_human_relevance/U_QRELS.csv",
+    "a1_n_rows": 200,
+    "a1_labels_valid": true,
+    "a1_success@5_from_qrels": 23,
+    "a1_official_success@5": "23/40 = 57.50%",
+    "a1_a2_frozen_same_keys": true
+  },
+  "a1_label_counts": {
+    "A": 41,
+    "B": 26,
+    "C": 53,
+    "D": 80
+  },
+  "a2_label_counts": {
+    "A": 60,
+    "B": 32,
+    "D": 80,
+    "C": 28
+  },
+  "five_way": {
+    "agreements": 135,
+    "disagreements": 65,
+    "raw_agreement": 0.675,
+    "cohens_kappa": 0.5489869553150153,
+    "implementation": "sklearn.metrics.cohen_kappa_score (sklearn 1.7.2)",
+    "confusion_matrix_A1_rows_A2_cols": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "confusion_counts": [
+      {
+        "A1": "A",
+        "A2": "A",
+        "count": 37
+      },
+      {
+        "A1": "A",
+        "A2": "B",
+        "count": 3
+      },
+      {
+        "A1": "A",
+        "A2": "C",
+        "count": 0
+      },
+      {
+        "A1": "A",
+        "A2": "D",
+        "count": 1
+      },
+      {
+        "A1": "A",
+        "A2": "E",
+        "count": 0
+      },
+      {
+        "A1": "B",
+        "A2": "A",
+        "count": 16
+      },
+      {
+        "A1": "B",
+        "A2": "B",
+        "count": 8
+      },
+      {
+        "A1": "B",
+        "A2": "C",
+        "count": 2
+      },
+      {
+        "A1": "B",
+        "A2": "D",
+        "count": 0
+      },
+      {
+        "A1": "B",
+        "A2": "E",
+        "count": 0
+      },
+      {
+        "A1": "C",
+        "A2": "A",
+        "count": 7
+      },
+      {
+        "A1": "C",
+        "A2": "B",
+        "count": 21
+      },
+      {
+        "A1": "C",
+        "A2": "C",
+        "count": 18
+      },
+      {
+        "A1": "C",
+        "A2": "D",
+        "count": 7
+      },
+      {
+        "A1": "C",
+        "A2": "E",
+        "count": 0
+      },
+      {
+        "A1": "D",
+        "A2": "A",
+        "count": 0
+      },
+      {
+        "A1": "D",
+        "A2": "B",
+        "count": 0
+      },
+      {
+        "A1": "D",
+        "A2": "C",
+        "count": 8
+      },
+      {
+        "A1": "D",
+        "A2": "D",
+        "count": 72
+      },
+      {
+        "A1": "D",
+        "A2": "E",
+        "count": 0
+      },
+      {
+        "A1": "E",
+        "A2": "A",
+        "count": 0
+      },
+      {
+        "A1": "E",
+        "A2": "B",
+        "count": 0
+      },
+      {
+        "A1": "E",
+        "A2": "C",
+        "count": 0
+      },
+      {
+        "A1": "E",
+        "A2": "D",
+        "count": 0
+      },
+      {
+        "A1": "E",
+        "A2": "E",
+        "count": 0
+      }
+    ],
+    "pair_counts": {
+      "A/A": 37,
+      "A/B": 3,
+      "A/D": 1,
+      "B/A": 16,
+      "B/B": 8,
+      "B/C": 2,
+      "C/A": 7,
+      "C/B": 21,
+      "C/C": 18,
+      "C/D": 7,
+      "D/C": 8,
+      "D/D": 72
+    }
+  },
+  "binary_A_or_B_vs_other": {
+    "note": "secondary sensitivity analysis; does not replace 5-way labels",
+    "relevant": "A or B",
+    "not_relevant": "C, D, or E",
+    "agreements": 169,
+    "disagreements": 31,
+    "raw_agreement": 0.845,
+    "cohens_kappa": 0.6815940838126541,
+    "implementation": "sklearn.metrics.cohen_kappa_score (sklearn 1.7.2)",
+    "labels": [
+      "relevant",
+      "not_relevant"
+    ],
+    "confusion_counts": [
+      {
+        "A1": "relevant",
+        "A2": "relevant",
+        "count": 64
+      },
+      {
+        "A1": "relevant",
+        "A2": "not_relevant",
+        "count": 3
+      },
+      {
+        "A1": "not_relevant",
+        "A2": "relevant",
+        "count": 28
+      },
+      {
+        "A1": "not_relevant",
+        "A2": "not_relevant",
+        "count": 105
+      }
+    ]
+  },
+  "success@5": {
+    "definition": "query succeeds if at least one Top-5 document is A or B (same as Annotator 1 / ANNOTATION_PROTOCOL.md)",
+    "A1_official": {
+      "hits": 23,
+      "n": 40,
+      "rate": 0.575,
+      "percent": "57.50%"
+    },
+    "A1_recomputed_from_U_QRELS": {
+      "hits": 23,
+      "n": 40,
+      "rate": 0.575
+    },
+    "A2": {
+      "hits": 26,
+      "n": 40,
+      "rate": 0.65,
+      "percent": "65.00%"
+    },
+    "queries_where_success_differs": [
+      "U018",
+      "U024",
+      "U035",
+      "U037",
+      "U039"
+    ],
+    "official_headline_unchanged": "23/40 = 57.50% remains Annotator-1 official"
+  },
+  "disagreement_shape": {
+    "n": 65,
+    "A_B_boundary_only": 19,
+    "useful_A_or_B_vs_not": 31,
+    "adjacent_A-B_B-C_C-D": 57
+  }
+}
