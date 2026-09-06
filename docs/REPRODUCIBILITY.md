@@ -2,11 +2,13 @@
 
 Official retrieval is **M0**. Implementation paths were not relocated.
 
-## Hashes
+Independent reproduction steps, environment pins, and data-access limits: **`REPRODUCE.md`** at the repository root.
+
+The article-text corpus is **not** in git. SHA-256 of the frozen local file:
 
 | Artifact | Path | SHA-256 |
 | --- | --- | --- |
-| Corpus | `data/clean_articles.csv` | `8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231` |
+| Corpus | `data/clean_articles.csv` (gitignored) | `8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231` |
 | Dictionary | `models/roman_urdu_dict_expanded.json` | `30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3` |
 
 ## Code

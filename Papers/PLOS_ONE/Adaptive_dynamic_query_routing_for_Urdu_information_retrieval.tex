@@ -4,27 +4,34 @@
 % Adaptive dynamic query routing for Urdu information retrieval
 % Official frozen system: M0 (script-aware BM25). Not SVM/MiniLM.
 %
-% PORTAL FIELDS --- fill these in PLOS Editorial Manager, not in this .tex file:
-%   Funding: The authors received no specific funding for this work.
+% PORTAL FIELDS --- fill these in PLOS Editorial Manager (confirmed 6 Sep 2026).
+%   Funding: No specific funding was received for this work.
 %   Competing interests: The authors have declared that no competing interests exist.
 %   Author contributions (CRediT):
 %     Conceptualization, Methodology, Software, Formal analysis,
 %     Writing -- original draft: Hashim Shazad.
 %     Writing -- review & editing: Hashim Shazad, Adnan Aslam.
 %     Supervision: Adnan Aslam.
-%   Data availability: news corpus data/clean_articles.csv (n=111860),
-%     Roman dictionary models/roman_urdu_dict_expanded.json (198 keys),
-%     and M0 code at https://github.com/HashimAbbasii/Dynammic-Query-Routing-Urdu-ILS
-%     with no redistribution restrictions. SHA-256 hashes in the Corpus subsection
-%     identify the exact artifacts. Official metrics were copied from sealed
-%     Phase 8--12 reports and were not recomputed for this manuscript.
-%   Ethics: relevance labels on public news headlines/snippets (U001--U040);
-%     no personal/identifiable participant data; IRB/ethics committee approval
-%     not required; no Air University ethics-board review is recorded.
+%     Validation (independent A2 relevance annotation / reliability check only):
+%     Areena Rahman. A2 does not replace official A1 Success@5 = 23/40.
+%   Data availability: third-party Urdu news compilation (Mendeley
+%     10.17632/834vsxnb99.3; Kaggle Shahane Version 1). Frozen file
+%     data/clean_articles.csv n=111860 SHA-256 8992a6ac... is NOT in GitHub.
+%     Authors do not redistribute the article-text CSV. Redistribution
+%     permission for underlying news text has not been independently verified.
+%     Obtain the source from Kaggle/Mendeley; verify reconstructions against
+%     the Corpus SHA-256. Dictionary, M0 code, queries, qrels, and REPRODUCE.md
+%     are in https://github.com/HashimAbbasii/Dynammic-Query-Routing-Urdu-ILS
+%     Official metrics were copied from sealed Phase 8--12 reports.
+%   Ethics: conservative statement in the manuscript body. Do NOT enter IRB
+%     approval, exemption, consent, or human-subjects approval.
 %   ORCID: enter in the submission system (not invented in this file).
 %   Short title: Adaptive query routing for Urdu information retrieval
 %
-% Figure image files are uploaded separately (no \includegraphics in this file):
+% Figure image files are uploaded separately (no \includegraphics in this file).
+% PLOS Editorial Manager upload names (TIFF derivatives):
+%   Fig1.tif  Fig2.tif  Fig3.tif  Fig4.tif  Fig5.tif
+% PNG sources retained in Papers/PLOS_ONE/figures/ (not overwritten):
 %   Fig1_m0_routing.png
 %   Fig2_development_comparators.png
 %   Fig3_script_splits.png
@@ -215,7 +222,8 @@ Short title: Adaptive query routing for Urdu information retrieval
 % Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
 \\
 Hashim Shazad\textsuperscript{1*},
-Adnan Aslam\textsuperscript{1}
+Adnan Aslam\textsuperscript{1},
+Areena Rahman\textsuperscript{1}
 \\
 \bigskip
 \textbf{1} Department of Creative Technologies, Air University, Islamabad, Pakistan
@@ -261,7 +269,7 @@ Adnan Aslam\textsuperscript{1}
 \section*{Abstract}
 Urdu news users often type native Perso-Arabic script, informal Roman Urdu, or a mixture of both, while many retrieval systems still apply one index to every query. This paper reports the official frozen retriever from an adaptive dynamic query-routing project for Urdu news search. The frozen system, M0, uses a Unicode detector over 111,860 news articles. Urdu, mixed, and other queries search an Urdu Okapi BM25 index. Roman queries search a second BM25 index whose documents were romanized with a closed character table and a 198-key reverse dictionary (Method D). Queries are not rewritten. BM25 uses~$k_1 = 1.5$ and~$b = 0.75$; lists are retrieved to depth 50 and scored at a Top-5 cutoff.
 
-On a development/validation known-item pool of title-derived queries, ExactSource Hit@5 was 68/78 (87.18\%; Clopper--Pearson 95\% interval 77.68--93.68\%). On a newly sealed known-item sample the same frozen system achieved 27/40 (67.50\%; 50.87--81.43\%). On a separate sealed naturalistic set with no gold article, a single annotator judged the Top-5 useful (at least one relevant or partially relevant document) for 23/40 queries (57.50\%; 40.89--72.96\%). Query-side Roman expansions did not raise the 68/78 development score, so the freeze was not replaced. In the naturalistic sample, Urdu-script queries succeeded in 17/18 cases and Roman queries in 6/18; all four mixed queries failed.
+On a development/validation known-item pool of title-derived queries, ExactSource Hit@5 was 68/78 (87.18\%; Clopper--Pearson 95\% interval 77.68--93.68\%). On a newly sealed known-item sample the same frozen system achieved 27/40 (67.50\%; 50.87--81.43\%). On a separate sealed naturalistic set with no gold article, official human labels (A1) judged the Top-5 useful (at least one relevant or partially relevant document) for 23/40 queries (57.50\%; 40.89--72.96\%). Query-side Roman expansions did not raise the 68/78 development score, so the freeze was not replaced. In the naturalistic sample, Urdu-script queries succeeded in 17/18 cases and Roman queries in 6/18; all four mixed queries failed.
 
 These three percentages answer different questions and must not be averaged. Native-script Urdu news search under this freeze is strong on the tested collection. Ordinary Roman Urdu remains the main limitation.
 
@@ -279,11 +287,11 @@ Urdu is written in a cursive Perso-Arabic script, but that is not how everyone s
 
 Urdu remains thinner in shared information retrieval (IR) evaluation than English~\cite{bib4}. Collections exist. CURE provides an Urdu ranking resource~\cite{bib5}. An Urdu MS MARCO baseline reports MRR@10 of 0.247 in the abstract (0.248 in the results table) for a fine-tuned Urdu mT5-mMARCO configuration, under a passage-ranking protocol that is not the one used here~\cite{bib6}. Those resources do not freeze a script-conditional lexical system and then keep known-item recovery separate from human usefulness. Roman Urdu research is still mostly classification---sentiment, offensive language---rather than news search~\cite{bib1,bib2}. Multilingual dense retrievers can lose effectiveness on languages that sit outside the pretraining head~\cite{bib7}, even when scaled multilingual encoders help related tasks such as Urdu natural language inference~\cite{bib8}. Users of lower-resource varieties are also often pushed toward high-resource query forms~\cite{bib9}. Typing Roman Urdu into an Urdu-script index is a concrete instance of that pressure.
 
-The ULTRA framework of Bashir, Qaiser, and Hussain supplies a dual-embedding Urdu news architecture and a large news corpus~\cite{bib10}. Its original switch is a static character-length threshold. Length is easy to implement and easy to fool: a short ``why'' question may need the article body, and a long factoid may be answered by a headline. Length also does not decide which \emph{script index} to open. English work on query routing chooses among sparse and dense retrievers~\cite{bib11} or varies retrieval depth in retrieval-augmented generation~\cite{bib12}. Those systems were not designed for Roman Urdu.
+The ULTRA framework of Bashir, Qaiser, and Hussain supplies a dual-embedding Urdu news architecture~\cite{bib10}. Its original switch is a static character-length threshold. Length is easy to implement and easy to fool: a short ``why'' question may need the article body, and a long factoid may be answered by a headline. Length also does not decide which \emph{script index} to open. English work on query routing chooses among sparse and dense retrievers~\cite{bib11} or varies retrieval depth in retrieval-augmented generation~\cite{bib12}. Those systems were not designed for Roman Urdu.
 
 This paper asks a narrower question that can be answered with a freeze and a protocol. Specify a lexical retriever. Hash the corpus and the Roman dictionary. Then measure three things that are easy to mix and should not be mixed. First, how often does the system recover a designated source article from title-derived queries on the development/validation pool used to select the Roman path? Second, does that known-item score hold on a newly sealed sample of title-like queries written after the freeze? Third, how often is the Top-5 useful when there is no gold article and a person judges the hits?
 
-Official retrieval here is Okapi BM25~\cite{bib13} with Unicode script routing. We call that frozen configuration M0. In this project, adaptive dynamic query routing is that script-conditional index choice, not a learned SHORT/LONG classifier. Earlier work in the same project trained a SHORT/LONG support vector machine and a MiniLM dual-index~\cite{bib14}. Those experiments are not the official retriever. We mention them only where they were actual development comparators, so that older classification or dense-index numbers are not mistaken for M0.
+Official retrieval here is Okapi BM25~\cite{bib13} with Unicode script routing. We call that frozen configuration M0. In this project, adaptive dynamic query routing is that script-conditional index choice, not a learned SHORT/LONG classifier. Earlier work in the same project trained a SHORT/LONG support vector machine and a MiniLM dual-index using a Sentence-{BERT} encoder~\cite{bib14}. Those experiments are not the official retriever. We mention them only where they were actual development comparators, so that older classification or dense-index numbers are not mistaken for M0.
 
 The contribution is the frozen system, the separated evaluations, and a measured Roman Urdu limitation. We do not claim that M0 is the first Urdu retriever, and we do not claim state of the art against CURE or Urdu MS MARCO.
 
@@ -305,13 +313,15 @@ Two tasks are reported. Known-item search asks whether a pre-assigned source doc
 
 \subsection*{Corpus}
 
-The collection is \texttt{data/clean\_articles.csv}: 111,860 news articles. The precursor dump is \texttt{data/urdu\_news.csv}, used in the ULTRA news-search setting~\cite{bib10}. Cleaning was limited to dropping rows with null fields and concatenating headline and body:
+The official collection is \texttt{data/clean\_articles.csv}: 111,860 news articles (540,050,203 bytes). The local precursor is \texttt{data/urdu\_news.csv} (111,861 CSV records). That precursor is schema- and size-consistent with Version 1 of the Kaggle listing ``Urdu News Dataset'' compiled by Shahane (file \texttt{urdu-news-dataset-1M.csv}; displayed size 276.79~MB)~\cite{bib17}. The Kaggle page cites Hussain, Mughal, Ali, Hassan, and Daudpota, ``Urdu News Dataset 1M'', Mendeley Data, V3, doi:10.17632/834vsxnb99.3~\cite{bib16}. A SHA-256 comparison of a fresh Kaggle or Mendeley download to the local precursor was not completed. The compilation title uses ``1M''; the Kaggle Version 1 explorer and the local precursor contain 111,861 records, not one million. Whether that Kaggle file is the complete Mendeley dump was not verified.
+
+The last precursor record is truncated (three CSV fields instead of eight; \texttt{Index} 111860; no trailing newline). \texttt{pandas.DataFrame.dropna()} dropped that incomplete row, leaving 111,860 articles. Headline and body were then concatenated:
 
 \texttt{combined\_text = Headline + ' ' + News Text}
 
-There was no Unicode NFKC folding, no ye/he/kaf canonicalization, no diacritic stripping, no stemming, and no stopword removal at indexing. HTML, punctuation, English tokens, and near-duplicate articles were left as in the source dump. Document identifiers equal the corpus row index after that cleaning step. Article categories in the dump are Sports, Business \& Economics, Entertainment, and Science \& Technology.
+There was no Unicode NFKC folding, no ye/he/kaf canonicalization, no diacritic stripping, no stemming, no stopword removal, and no deduplication at indexing. HTML, punctuation, English tokens, and near-duplicate articles were left as in the source dump. Document identifiers equal the corpus row index after that cleaning step. Article categories in the dump are Sports, Business \& Economics, Entertainment, and Science \& Technology.
 
-Corpus SHA-256: \texttt{8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231} (540,050,203 bytes). The Roman dictionary is \texttt{models/roman\_urdu\_dict\_expanded.json} (198 keys; SHA-256 \texttt{30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3}).
+Corpus SHA-256: \texttt{8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231} (540,050,203 bytes). The Roman dictionary is \texttt{models/roman\_urdu\_dict\_expanded.json} (198 keys; SHA-256 \texttt{30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3}). Preprocessing cells are in \texttt{archive/historical\_experiments/notebooks/01\_preprocessing.ipynb}. Reconstruction notes are in \texttt{experiments/publication\_audit/}.
 
 \subsection*{Official frozen system (M0)}
 
@@ -368,7 +378,11 @@ U queries follow pre-registered naturalistic quotas: 18 Urdu, 18 Roman, 4 mixed;
 
 \subsection*{Human relevance protocol (U only)}
 
-After the sealed Top-5 dump existed, the first author labeled 200 documents (40 queries $\times$ 5) from headline and snippet only. The same author had written the sealed U queries under the Phase 12 protocol. Labels follow a five-way rubric: A, relevant (the reader could stop); B, partially relevant (same event or occasion, incomplete answer); C, topically related (same topic or entity, not the asked need); D, not relevant; E, ambiguous if A--D cannot be decided. The annotator preferred B over A unless the need was clearly satisfied, and preferred C over B unless the article helped answer the asked need. Temporal queries were judged as archive type-of-fact for a dated occasion in the article, not against the annotator's calendar day. Recurring wires with no date in the query (gold price, budget date, eclipse, stock close) could be A even if dates differed. Named-entity lookups were A if the article's main subject was that person. There was no second annotator. ExactSource Hit@5 was not computed on U. Label definitions are in \nameref{S1_Text}.
+After the sealed Top-5 dump existed, the first author labeled 200 documents (40 queries $\times$ 5) from headline and snippet only. The same author had written the sealed U queries under the Phase 12 protocol. Labels follow a five-way rubric: A, relevant (the reader could stop); B, partially relevant (same event or occasion, incomplete answer); C, topically related (same topic or entity, not the asked need); D, not relevant; E, ambiguous if A--D cannot be decided. The annotator preferred B over A unless the need was clearly satisfied, and preferred C over B unless the article helped answer the asked need. Temporal queries were judged as archive type-of-fact for a dated occasion in the article, not against the annotator's calendar day. Recurring wires with no date in the query (gold price, budget date, eclipse, stock close) could be A even if dates differed. Named-entity lookups were A if the article's main subject was that person. The original evaluation labels (A1) were retained as the official evaluation labels. An independent second annotation (A2) was subsequently conducted by Areena Rahman on the same 200 query-document judgments as a reliability check; A2 was not used to replace or recompute the reported A1 results (\nameref{S2_File}; per-query labels in \nameref{S4_Table}). Official Success@5 remains Annotator 1 (23/40). ExactSource Hit@5 was not computed on U. Label definitions are in \nameref{S1_Text}.
+
+\subsection*{Ethics}
+
+Relevance labels for U001--U040 were assigned by annotators to retrieved public news headlines and snippets. No search-user logs, interviews, or other identifiable participant records were collected for this evaluation. No institutional ethics-board determination is recorded in the project repository.
 
 \subsection*{Metrics}
 
@@ -388,11 +402,13 @@ H001--H040 are routing-trap strings with no source identifier. ExactSource Hit@5
 
 \subsection*{Software environment and reproducibility}
 
-M0 retrieval uses Python 3.13.9 (Anaconda, 64-bit Windows). Dense-index pilots in the same project ran on CPU (12 cores reported for the e5-small prototype). Method D index construction on the full corpus took 100.6 s (66.3 s tokenize and romanize, 34.3 s BM25 postings) and occupied 116.1 MB of in-memory postings. Entry points were not relocated: detector and BM25 in \texttt{experiments/phase5\_roman\_urdu/run\_phase5.py}, character table in \texttt{experiments/phase2\_oracle/run\_phase2\_pipeline.py}, sealed runner in \texttt{experiments/phase12\_new\_unseen\_evaluation/run\_phase12.py}. The freeze manifest is \texttt{experiments/phase8\_final\_freeze/FINAL\_SYSTEM\_MANIFEST.json} (\nameref{S1_File}).
+M0 retrieval uses Python 3.13.9 (Anaconda, 64-bit Windows). Dense-index pilots in the same project ran on CPU (12 cores reported for the e5-small prototype). Method D index construction on the full corpus took 100.6 s (66.3 s tokenize and romanize, 34.3 s BM25 postings) and occupied 116.1 MB of in-memory postings. Entry points were not relocated: detector and BM25 in \texttt{experiments/phase5\_roman\_urdu/run\_phase5.py}, character table in \texttt{experiments/phase2\_oracle/run\_phase2\_pipeline.py}, sealed runner in \texttt{experiments/phase12\_new\_unseen\_evaluation/run\_phase12.py}. The freeze manifest is \texttt{experiments/phase8\_final\_freeze/FINAL\_SYSTEM\_MANIFEST.json} (\nameref{S1_File}). A SHA-256 check for a local copy of the frozen corpus is \texttt{experiments/publication\_audit/verify\_corpus\_hash.py}. Reproduction steps, environment pins, and data-access limits are in the repository file \texttt{REPRODUCE.md}. A git clone does not contain the article-text corpus. This manuscript does not claim that a clean-clone full-corpus rerun was completed for publication.
 
 \subsection*{Data availability}
 
-The news corpus (\texttt{data/clean\_articles.csv}; 111,860 articles), the Roman Urdu dictionary (\texttt{models/roman\_urdu\_dict\_expanded.json}; 198 keys), and the M0 retrieval code are publicly available at \url{https://github.com/HashimAbbasii/Dynammic-Query-Routing-Urdu-ILS} with no redistribution restrictions. SHA-256 hashes reported in the Corpus subsection identify the exact artifacts used for the scores in this paper. Official metrics were copied from sealed Phase 8--12 reports and were not recomputed for this manuscript.
+The retrieval collection is a locally processed copy of a third-party Urdu news compilation titled Urdu News Dataset 1M~\cite{bib16}. The local precursor \texttt{data/urdu\_news.csv} (111,861 records) is schema- and size-consistent with Shahane, Urdu News Dataset, Kaggle Version 1, file \texttt{urdu-news-dataset-1M.csv}~\cite{bib17}. That Kaggle listing cites Hussain, Mughal, Ali, Hassan, and Daudpota, Mendeley Data, V3, doi:10.17632/834vsxnb99.3~\cite{bib16}. A SHA-256 identity check between a fresh provider download and the local precursor was not completed. The compilation title uses ``1M''; the file used here has 111,861 precursor records and 111,860 frozen articles.
+
+The frozen file used for all official M0 scores is \texttt{data/clean\_articles.csv} (111,860 articles; 540,050,203 bytes; SHA-256 \texttt{8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231}). Preprocessing dropped one truncated precursor record with \texttt{dropna()} and concatenated headline and body as described in the Corpus subsection. The authors do not redistribute the full article-text CSV in the project GitHub repository or in Supporting Information. Redistribution permission for the underlying news article text has not been independently verified. Researchers should obtain the source dataset from Kaggle and/or Mendeley under those providers' terms, then verify any reconstructed file against that SHA-256. Reconstruction notes without article text are in \nameref{S3_File}. The Roman Urdu dictionary (\texttt{models/roman\_urdu\_dict\_expanded.json}; 198 keys), M0 code, sealed query files, human qrels, and reconstruction notes are at \url{https://github.com/HashimAbbasii/Dynammic-Query-Routing-Urdu-ILS} (\texttt{REPRODUCE.md}). A git clone does not contain the article-text corpus. Official metrics were copied from sealed Phase 8--12 reports and were not recomputed for this manuscript.
 
 % Results and Discussion can be combined.
 \section*{Results}
@@ -606,7 +622,7 @@ On the freeze pool, M0 often recovers a known article from a shortened headline,
 
 K keeps the known-item question and changes the sample. Roman K queries were written as ordinary Roman Urdu of the headline, not as character-table \texttt{title\_roman}. Urdu K stayed high (26/28), and both Urdu misses were still in the Top-50. Roman K did not (1/12), and ten of those misses never entered the Top-50. That pattern is a matching failure, not a near-miss ranking problem. The 19.7 point drop from 87.18\% to 67.50\% is therefore largely a Roman query-form shift, plus ordinary binomial variation on $n = 40$. It is not evidence that Urdu BM25 broke. RQ2 is answered in the negative if ``transfer'' means the 87\% figure itself; the honest unseen known-item figure on this sealed K set is 27/40.
 
-U asks a different question. There is no single right article. Factoids, explanations, named entities, underspecified strings, and chat Roman are harder than ``find this headline.'' Success@5 only requires one A or B, and still lands at 23/40. Conservative P@5 of 0.205, with 41 A labels in 200 documents, shows that the Top-5 is rarely full of complete answers; D is the most common label. Named-entity queries in this sample were weaker (5/12) than factoid or explanatory queries (each 9/14). Urdu-script needs were usually met (17/18). Roman needs often were not (6/18). RQ3 is therefore a usefulness rate near 58\% overall, and near 94\% when the user types Urdu script, on this $n = 40$ set with one annotator.
+U asks a different question. There is no single right article. Factoids, explanations, named entities, underspecified strings, and chat Roman are harder than ``find this headline.'' Success@5 only requires one A or B, and still lands at 23/40. Conservative P@5 of 0.205, with 41 A labels in 200 documents, shows that the Top-5 is rarely full of complete answers; D is the most common label. Named-entity queries in this sample were weaker (5/12) than factoid or explanatory queries (each 9/14). Urdu-script needs were usually met (17/18). Roman needs often were not (6/18). RQ3 is therefore a usefulness rate near 58\% overall, and near 94\% when the user types Urdu script, on this $n = 40$ set with official Annotator-1 labels. Independent second-annotator Success@5 is a reliability statistic (\nameref{S2_File}) and does not replace 23/40.
 
 Query mix will move any headline number. A Roman-heavy sample will look worse than an Urdu-only test even if the Urdu component is unchanged. Averaging 87.18\% with 57.50\% answers no scientific question: it mixes development with new test, known-item with graded usefulness, and \texttt{title\_roman} with chat Roman.
 
@@ -622,7 +638,7 @@ What remains strong is inspectable. Native-script Urdu BM25 on this news collect
 
 K and U each have $n = 40$. The intervals in Table~\ref{table1} are wide. Point estimates should not be read as a precise ``58\% in the wild.''
 
-U labels are from one annotator, the first author, who had also written the sealed U queries under the Phase 12 protocol. There is no inter-annotator agreement. Preferring B over A reduces over-claiming of full answers; it does not remove subjectivity. The dual role is a bias risk even though labels were assigned after retrieval, from headline and snippet only, and without searching for a better document.
+Official U labels (A1) were assigned by the first author, who had also written the sealed U queries under the Phase 12 protocol. An independent second annotation (A2) was later conducted by Areena Rahman on the same 200 judgments as a reliability check (\nameref{S2_File}); five-way Cohen's $\kappa = 0.5490$. A2 was not used to replace or recompute 23/40 and does not remove the dual-role bias risk. Preferring B over A reduces over-claiming of full answers; it does not remove subjectivity. Labels were assigned after retrieval, from headline and snippet only, and without searching for a better document.
 
 Development Roman queries are \texttt{title\_roman}. K Roman queries are ordinary Roman titles. U Roman queries are chat-style. Those are three related but distinct input families. Success on the first does not contradict failure on the other two.
 
@@ -641,29 +657,58 @@ M0 is a frozen script-aware BM25 news retriever developed as the official system
 \section*{Supporting information}
 
 % Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
+% Packaged files: Papers/PLOS_ONE/supporting_information/ (upload S1_table.csv, \ldots).
 \paragraph*{S1 Table.}
 \label{S1_Table}
-\textbf{Per-query ExactSource ranks for K001--K040.} Detector label, retrieval path, source document identifier, source rank, and Hit@5 for each sealed known-item query. Source: \texttt{experiments/phase12\_new\_unseen\_evaluation/K\_RESULTS.md}.
+\textbf{Per-query ExactSource ranks for K001--K040.} Query text, detector label, retrieval path, source document identifier, source rank, and Hit@5 for each sealed known-item query. File: \texttt{S1\_table.csv}.
 
 \paragraph*{S2 Table.}
 \label{S2_Table}
-\textbf{Per-query human labels for U001--U040.} Raw query text, five Top-5 labels (A--E), Success@5, and rank of first A/B. Source: \texttt{experiments/phase12\_human\_relevance/PHASE12\_HUMAN\_RESULTS.md}.
+\textbf{Per-query official human labels for U001--U040 (Annotator 1).} Raw query text, five Top-5 labels (A--E), Success@5, rank of first A/B, conservative P@5, nDCG@5, and MRR. Official Success@5 is 23/40. File: \texttt{S2\_table.csv}.
 
 \paragraph*{S3 Table.}
 \label{S3_Table}
-\textbf{Phase 5 development Roman method comparison.} Methods A--D on DEV Roman queries ($n = 13$) with Hit@5, nDCG@5, MRR, and latency, plus internal-validation confirmation of Method D. Source: \texttt{experiments/phase5\_roman\_urdu/PHASE5\_RESULTS.md}.
+\textbf{Phase 5 development Roman method comparison.} Methods A--D on DEV Roman queries ($n = 13$) with Hit@5, Hit@10, nDCG@5, MRR, and mean latency, plus internal-validation confirmation of Method D ($n = 10$). File: \texttt{S3\_table.csv}.
+
+\paragraph*{S4 Table.}
+\label{S4_Table}
+\textbf{Annotator 1 versus Annotator 2 per-query labels for U001--U040.} Five A1 labels, five A2 labels, Success@5 for each annotator, and document-level agreement counts. A2 Success@5 is reliability only and does not replace 23/40. File: \texttt{S4\_table.csv}.
 
 \paragraph*{S1 File.}
 \label{S1_File}
-\textbf{Freeze manifest.} Hashes, BM25 parameters, index statistics, and routing table. Source: \texttt{experiments/phase8\_final\_freeze/FINAL\_SYSTEM\_MANIFEST.json}.
+\textbf{Freeze manifest.} Corpus SHA-256, document count, BM25 parameters ($k_1 = 1.5$, $b = 0.75$), index statistics, dictionary size, and routing table. Historical freeze JSON; the \texttt{test\_set} field still names H001--H040. Official unseen evaluations are K001--K040 and U001--U040. File: \texttt{S1\_file.json}.
+
+\paragraph*{S2 File.}
+\label{S2_File}
+\textbf{Independent second annotation (reliability analysis).} A2 was conducted by Areena Rahman. Five-way and binary agreement, Cohen's $\kappa$ (0.5490 and 0.6816), confusion matrices, and the statement that A2 Success@5 $= 26/40$ does not replace official A1 Success@5 $= 23/40$. No article text. File: \texttt{S2\_file.md}.
+
+\paragraph*{S3 File.}
+\label{S3_File}
+\textbf{Dataset provenance and reconstruction notes.} Third-party Kaggle/Mendeley source, 111,861$\to$111,860 truncated-row drop, frozen SHA-256, and instructions to verify a reconstructed corpus. Does not contain \texttt{clean\_articles.csv} or any full article collection. File: \texttt{S3\_file.md}.
 
 \paragraph*{S1 Text.}
 \label{S1_Text}
-\textbf{U annotation protocol.} Label definitions, temporal type-of-fact rule, and metric formulae. Source: \texttt{experiments/phase12\_human\_relevance/ANNOTATION\_PROTOCOL.md}.
+\textbf{U annotation protocol (Annotator 1).} Label definitions A--E, temporal type-of-fact rule, named-entity rule, and metric formulae for Success@5, P@5, nDCG@5, and MRR. File: \texttt{S1\_text.md}.
 
 \section*{Acknowledgments}
 
-This work was completed as part of an M.S.\ thesis at Air University, Islamabad.
+We thank Adnan Aslam for supervision. This work was completed as part of an M.S.\ thesis at Air University, Islamabad.
+
+\section*{Funding}
+
+No specific funding was received for this work.
+
+\section*{Competing interests}
+
+The authors have declared that no competing interests exist.
+
+\section*{Author contributions}
+
+\textbf{Hashim Shazad:} Conceptualization, Methodology, Software, Formal analysis, Writing -- original draft, Writing -- review \& editing.
+
+\textbf{Adnan Aslam:} Supervision, Writing -- review \& editing.
+
+\textbf{Areena Rahman:} Validation (independent A2 relevance annotation as a reliability check only; A2 does not replace official A1 Success@5 of 23/40).
 
 \nolinenumbers
 

@@ -8,7 +8,9 @@ Frozen lexical retrieval for Urdu news search. A Unicode detector routes each qu
 
 ## Overview
 
-Urdu users type Perso-Arabic script, informal Roman Urdu, or both. A single native-script index misses Roman queries even when the article exists. This repository freezes a **script-aware BM25** pipeline (**M0**) over 111,860 news articles and reports three evaluations that must not be mixed.
+Urdu users type Perso-Arabic script, informal Roman Urdu, or both. A single native-script index misses Roman queries even when the article exists. This repository freezes a **script-aware BM25** pipeline (**M0**) evaluated on 111,860 news articles and reports three evaluations that must not be mixed.
+
+The article-text CSV is **not** in git. Obtain the third-party source and reconstruct, or use a local frozen copy; see `REPRODUCE.md`.
 
 M0 is not an SVM router and not a MiniLM dual-index retriever. Earlier SVM/MiniLM work is in `archive/`.
 
@@ -21,7 +23,7 @@ M0 is not an SVM router and not a MiniLM dual-index retriever. Earlier SVM/MiniL
 | ROMAN | Method D BM25 over romanized documents |
 | BM25 | \(k_1 = 1.5\), \(b = 0.75\) |
 | Depth | Top-50 retrieved; official cutoff Top-5 |
-| Corpus | `data/clean_articles.csv` · n = 111,860 |
+| Corpus | Local `data/clean_articles.csv` (gitignored; n = 111,860; not shipped on GitHub) |
 | Dictionary | `models/roman_urdu_dict_expanded.json` · 198 keys |
 
 Query-side expansions M1–M4 did not improve n=78 ExactSource Hit@5. **M0 remains official.**
@@ -45,14 +47,13 @@ Full write-up: `results/FINAL_RESULTS.md`.
 ## Repository structure
 
 ```
-data/            Official corpus (clean_articles.csv)
+data/            Local corpus location (CSV gitignored; see data/README.md)
 models/          Frozen Roman Urdu dictionary
 src/             Map to M0 Python entry points (code not relocated)
 experiments/     M0 implementation + Phase 8–12 evidence
 results/         Official result summaries
-Thesis/FINAL/    Final AU thesis (DOCX + markdown)
-Papers/PLOS_ONE/ Final M0 PLOS source and submission ZIP
-Papers/IEEE/     Final M0 IEEE source and submission ZIP
+Papers/PLOS_ONE/ Canonical PLOS manuscript + Supporting Information
+Papers/IEEE/     IEEE source (historical packaging)
 docs/            Freeze status, reproducibility, interpretation
 archive/         Historical SVM/MiniLM papers, backups, notebooks
 ```
@@ -60,12 +61,14 @@ archive/         Historical SVM/MiniLM papers, backups, notebooks
 ## Papers and thesis
 
 - Thesis: `Thesis/FINAL/Hashim_Shazad_243259_AU_Thesis_ULTRA.docx`
-- PLOS ONE (M0): `Papers/PLOS_ONE/FINAL/` · ZIP `Papers/PLOS_ONE/SUBMISSION_PACKAGE/ULTRA_PLOS_ONE_FINAL_SUBMISSION.zip`
-- IEEE (M0): `Papers/IEEE/FINAL/` · ZIP `Papers/IEEE/SUBMISSION_PACKAGE/ULTRA_IEEE_M0_FINAL_SUBMISSION.zip`
+- PLOS ONE (M0): `Papers/PLOS_ONE/Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.tex`
+- IEEE (M0): `Papers/IEEE/`
 
 The MiniLM dual-index IEEE paper is historical: `archive/historical_papers/IEEE_MiniLM/`.
 
 ## Reproducibility
+
+Independent researchers should start at **`REPRODUCE.md`**. The news corpus is not in this clone.
 
 | Artifact | Location |
 | --- | --- |
@@ -75,8 +78,10 @@ The MiniLM dual-index IEEE paper is historical: `archive/historical_papers/IEEE_
 | Detector / BM25 | `experiments/phase5_roman_urdu/run_phase5.py` |
 | Method D char table | `experiments/phase2_oracle/run_phase2_pipeline.py` |
 | Sealed K/U | `experiments/phase12_new_unseen_evaluation/` |
-| U qrels | `experiments/phase12_human_relevance/` |
-| Notes | `docs/REPRODUCIBILITY.md` |
+| U qrels (Annotator 1) | `experiments/phase12_human_relevance/` |
+| A2 agreement (reliability only) | `experiments/phase12_independent_annotation/` |
+| Environment pin | `requirements.txt` |
+| Hash check | `experiments/publication_audit/verify_corpus_hash.py` |
 
 Do not retune M0, the dictionary, routing, or Method D on K, U, or H001–H040.
 
@@ -85,8 +90,14 @@ Do not retune M0, the dictionary, routing, or Method D on K, U, or H001–H040.
 - Roman Urdu is weaker than native-script Urdu (U Success@5: 6/18 vs 17/18).
 - Naturalistic human Success@5 is **57.50%**, not 87.18%.
 - M0 is lexical BM25 and does not rewrite queries.
-- K and U each have n = 40; mixed n = 4; one U annotator.
+- K and U each have n = 40; mixed n = 4. Official U Success@5 uses Annotator 1. Annotator 2 is a reliability analysis and does not replace 23/40.
 
 ## Archive
 
 `archive/` holds Layer A SVM/MiniLM material, old paper zips, thesis backups, and notebooks. Do not quote it as official M0 retrieval.
+
+## License
+
+Original ULTRA code and documentation are released under the MIT License. See `LICENSE`.
+
+The third-party Urdu news corpus and other third-party materials are not included under this software license. The full article-text corpus is not redistributed in this repository. See the Data Availability Statement and dataset provenance documentation for source and access information. `plos2025.bst` remains under the LaTeX Project Public License. PyPI dependencies retain their own licenses.

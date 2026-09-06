@@ -1,0 +1,6 @@
+method,split,n,Hit_at_5,Hit_at_10,nDCG_at_5,MRR,mean_latency_s,notes
+A. Raw BM25,DEV_roman,13,0.0,0.0,0.0,0.0,0.0009,Baseline; not selected
+B. Existing dictionary transliteration,DEV_roman,13,0.0,0.0,0.0,0.0,0.0073,198-key dictionary on query; not selected
+C. Rule-based transliteration,DEV_roman,13,1.0,1.0,0.8004,0.7359,0.0052,Tied Hit@5 with D; weaker nDCG@5; not selected
+D. Romanized-document BM25,DEV_roman,13,1.0,1.0,0.9331,0.9103,0.0065,Selected on DEV before internal_val was interpreted
+D. Romanized-document BM25,INTERNAL_VAL_roman,10,0.9,1.0,0.8131,0.7944,,Confirmation after freeze; the miss is rank 9 so Hit@10=1.0

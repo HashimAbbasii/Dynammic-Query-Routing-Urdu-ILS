@@ -22,6 +22,18 @@ H001–H040 are **not** reused. n=78 ExactSource **0.8718** stays the developmen
 - `queries_u.csv`
 - `SEAL.json`
 
+## Reproduce retrieval (optional verification)
+
+From the repository root, after `data/clean_articles.csv` matches the frozen SHA-256 (see `REPRODUCE.md`):
+
+```
+python experiments/phase12_new_unseen_evaluation/run_phase12.py
+```
+
+This writes Top-50 dumps in this folder. Compare K counts to `K_RESULTS.md`. Do not treat a new run as a replacement official table. Do not start annotation in this step.
+
+Official U Success@5 remains Annotator 1 **23/40**. Independent A2 is reliability only.
+
 ## After retrieval (do not annotate yet)
 
 - `K_TOP50_RETRIEVAL.csv`

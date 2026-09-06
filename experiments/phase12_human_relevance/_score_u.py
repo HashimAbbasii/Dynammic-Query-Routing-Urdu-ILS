@@ -8,7 +8,7 @@ import math
 from collections import Counter, defaultdict
 from pathlib import Path
 
-ROOT = Path(r"c:\Users\User\OneDrive\Documents\ULTRA_Project")
+ROOT = Path(__file__).resolve().parents[2]
 TOP5 = ROOT / "experiments/phase12_new_unseen_evaluation/U_TOP5_FOR_ANNOTATION.csv"
 QUERIES = ROOT / "experiments/phase12_new_unseen_evaluation/queries_u.csv"
 OUT = ROOT / "experiments/phase12_human_relevance"

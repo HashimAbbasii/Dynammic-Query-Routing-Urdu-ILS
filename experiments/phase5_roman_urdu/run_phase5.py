@@ -13,7 +13,6 @@ import json
 import math
 import os
 import re
-import sys
 import time
 import unicodedata
 from collections import defaultdict
@@ -29,8 +28,13 @@ import pandas as pd
 
 _DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(_DIR, "..", ".."))
-sys.path.insert(0, os.path.join(ROOT, "validate", "dual_index_routing"))
-from retrieve import transliterate_roman  # noqa: E402
+
+# Method B (query-side dictionary) used the historical helper
+# validate/dual_index_routing/retrieve.py::transliterate_roman.
+# That package was archived under archive/historical_experiments/validate/
+# and importing it also loads the MiniLM/SVM router. Official M0 routing
+# (Phase 12) does not call Method B. The function below keeps the same
+# Method B contract so this module can be imported on a clean clone.
 
 SEED = 42
 EVAL_SPLITS = {"dev", "internal_val"}
@@ -146,6 +150,25 @@ def naive_roman_word(word: str) -> str:
 def load_roman_dict():
     with open(DICT_PATH, encoding="utf-8") as f:
         return json.load(f)
+
+
+def transliterate_roman(query: str) -> tuple[str, bool]:
+    """Method B query-side dictionary lookup (not used by official M0 routing).
+
+    Same contract as the archived ``retrieve.transliterate_roman``: if the
+    Urdu-character ratio is >= 0.3, leave the query unchanged; otherwise
+    whitespace-split, lowercase, and replace tokens present in
+    ``models/roman_urdu_dict_expanded.json``.
+    """
+    urdu = sum(1 for c in query if "\u0600" <= c <= "\u06FF")
+    latin = sum(1 for c in query if ("a" <= c.lower() <= "z"))
+    if urdu / max(1, urdu + latin) >= 0.3:
+        return query, False
+    fwd = load_roman_dict()
+    toks = query.split()
+    out = [fwd.get(t.lower(), t) for t in toks]
+    new = " ".join(out)
+    return new, new != query
 
 
 def load_reverse_roman(fwd: dict) -> dict:

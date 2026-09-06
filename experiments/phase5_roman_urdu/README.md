@@ -23,7 +23,9 @@ From the repository root:
 python experiments/phase5_roman_urdu/run_phase5.py
 ```
 
-Requires `data/clean_articles.csv`, `models/roman_urdu_dict_expanded.json`, Phase 2 oracle CSVs, and Phase 4B `QUERY_LEVEL_COMPARISON.csv` (dense ranks reused, not recomputed).
+Requires a local `data/clean_articles.csv` (not in git; see `REPRODUCE.md`), `models/roman_urdu_dict_expanded.json`, and Phase 2 oracle CSVs. The dense-rank file `QUERY_LEVEL_COMPARISON.csv` used for the Phase 4B comparison rows now lives under `archive/historical_experiments/phase4b_retrieval_benchmark/`. Official PLOS scores do not require re-running this full Phase 5 script.
+
+Method B originally imported `validate/dual_index_routing/retrieve.py`. That path was archived. Query-side dictionary lookup for Method B is now in `run_phase5.py` so Phase 12 can import M0 on a clean clone. Official M0 routing does not call Method B.
 
 ## Outputs
 

@@ -1,0 +1,41 @@
+query_id,query_text,A1_r1,A1_r2,A1_r3,A1_r4,A1_r5,A2_r1,A2_r2,A2_r3,A2_r4,A2_r5,A1_success@5,A2_success@5,success_match,n_doc_agreements,n_doc_disagreements,A1_first_AB_rank,A2_first_AB_rank,script_from_a1_per_query
+U001,آج قومی اسمبلی کا اجلاس ہے کیا,A,B,B,B,C,A,B,B,B,D,1,1,1,4,1,1,1,URDU
+U002,aaj pakistan ka cricket match kis se hai,A,D,D,D,D,A,C,D,D,C,1,1,1,3,2,1,1,ROMAN
+U003,موجودہ وزیراعظم پاکستان کون ہیں,A,A,A,C,B,B,D,B,C,C,1,1,1,1,4,1,1,URDU
+U004,mojooda dollar rate pakistan mein kya hai,D,D,D,D,D,D,C,C,C,C,0,0,1,1,4,,,ROMAN
+U005,سونے کی قیمت کتنی ہے,A,A,A,A,A,A,A,A,A,A,1,1,1,5,0,1,1,URDU
+U006,psl points table,D,D,D,D,D,D,D,D,D,D,0,0,1,5,0,,,ROMAN
+U007,کراچی میں رات بجلی کٹے گی,D,B,C,C,C,D,A,C,C,C,1,1,1,4,1,2,2,URDU
+U008,lahore se islamabad train ticket price,D,D,D,D,D,D,D,D,D,D,0,0,1,5,0,,,ROMAN
+U009,عالمی کپ کرکٹ شیڈول پاکستان,C,B,C,C,B,B,A,C,C,B,1,1,1,3,2,2,1,URDU
+U010,netflix pakistan subscription charges,D,D,D,D,D,D,D,D,D,D,0,0,1,5,0,,,ROMAN
+U011,وفاقی بجٹ کب پیش ہوگا,A,A,A,A,A,A,A,A,A,A,1,1,1,5,0,1,1,URDU
+U012,karachi stock market closing,A,D,D,C,A,A,D,D,C,A,1,1,1,5,0,1,1,ROMAN
+U013,چاند گرہن کب لگے گا,A,A,A,A,A,A,A,A,A,A,1,1,1,5,0,1,1,URDU
+U014,5G kab aye ga pakistan,D,D,D,D,D,D,D,D,D,D,0,0,1,5,0,,,ROMAN
+U015,پاکستان میں مہنگائی کیوں بڑھ رہی ہے,C,C,B,D,B,A,C,A,D,A,1,1,1,2,3,3,1,URDU
+U016,pakistan mein berozgari kyun barh rahi hai,D,D,D,D,D,D,D,D,D,D,0,0,1,5,0,,,ROMAN
+U017,پاکستان کی کرکٹ ٹیم عالمی مقابلوں میں بار بار خراب کارکردگی کیوں دکھاتی ہے,B,C,B,C,D,A,A,B,B,D,1,1,1,2,3,1,1,URDU
+U018,pakistan mein har saal flood ke baad faslon ka nuqsan itna zyada kyun hota hai,C,C,C,D,D,A,A,A,C,D,0,1,0,1,4,,1,ROMAN
+U019,سوشل میڈیا کے غلط استعمال سے نوجوانوں کی ذہنی صحت پر کیا فرق پڑتا ہے,B,A,A,B,A,A,A,A,A,A,1,1,1,3,2,1,1,URDU
+U020,mobile apps phone ki battery kyun jaldi khatam karti hain aur iska hall kya hai,D,D,D,D,D,D,D,D,D,C,0,0,1,4,1,,,ROMAN
+U021,پاکستان کی یونیورسٹیوں میں سائنس کی تحقیق دوسرے ممالک سے کیوں پیچھے رہ گئی ہے,C,C,C,B,C,B,B,B,B,C,1,1,1,2,3,4,1,URDU
+U022,internet speed pakistan mein slow kyun rehti hai aur isko kaise behtar kiya ja sakta hai,D,C,C,B,B,D,B,B,A,B,1,1,1,2,3,4,2,ROMAN
+U023,فلم انڈسٹری پاکستان میں کیوں ترقی نہیں کر پا رہی اور اس کی کیا وجہ ہے,B,D,B,D,D,A,D,A,D,D,1,1,1,3,2,1,1,URDU
+U024,drama industry mein original stories kam kyun banti hain aur audience kya chahti hai,D,B,C,C,C,D,C,C,D,D,1,0,0,2,3,2,,ROMAN
+U025,کراچی میں روزانہ ٹریفک جام کم کرنے کے لیے کیا اقدامات کیے جا سکتے ہیں,C,C,B,C,C,B,B,B,B,A,1,1,1,1,4,3,1,URDU
+U026,larkion ki higher education ke liye ghar walon ka support kyun zaroori hota hai,D,D,D,D,D,D,D,D,D,D,0,0,1,5,0,,,ROMAN
+U027,بجلی کے بحران کی وجہ سے چھوٹی صنعتوں کو کیا نقصان ہو رہا ہے,B,B,B,B,C,A,A,A,A,A,1,1,1,0,5,1,1,URDU
+U028,foreign students pakistan ke universities mein admission kyun kam lete hain aur iski wajah kya hai,D,D,D,D,D,D,D,D,D,D,0,0,1,5,0,,,ROMAN
+U029,محمد رضوان,A,A,A,A,A,A,A,A,A,A,1,1,1,5,0,1,1,URDU
+U030,virat kohli,A,A,A,A,A,A,A,A,A,A,1,1,1,5,0,1,1,ROMAN
+U031,شاہ رخ خان نئی فلم,A,C,C,A,A,A,C,D,A,A,1,1,1,4,1,1,1,URDU
+U032,mahira khan ka naya drama kab aa raha hai,D,D,D,D,D,D,D,D,D,D,0,0,1,5,0,,,ROMAN
+U033,عمران خان کے تازہ سیاسی بیانات,A,B,D,D,C,A,A,D,D,C,1,1,1,4,1,1,1,URDU
+U034,wasim akram ki commentary kab start hogi,D,D,D,D,D,D,D,D,D,D,0,0,1,5,0,,,ROMAN
+U035,نادیہ خان کے شو میں کون آیا,C,C,C,C,D,B,B,B,C,D,0,1,0,2,3,,1,URDU
+U036,nasa mars mission kab launch hoga,C,B,A,D,A,B,A,A,D,B,1,1,1,2,3,2,1,ROMAN
+U037,بابر اعظم کی PSL میں کارکردگی کیسی رہی,C,C,C,C,C,C,C,C,B,B,0,1,0,3,2,,4,MIXED
+U038,نرگس فخری کی Hollywood فلم کون سی ہے,C,C,C,C,C,D,D,D,C,C,0,0,1,2,3,,,MIXED
+U039,حریم شاہ کی YouTube ویڈیو کہاں دیکھی جائے,C,C,C,C,C,B,B,B,B,B,0,1,0,0,5,,1,MIXED
+U040,قائد اعظم University میں داخلے کب شروع ہیں,D,D,D,D,D,D,D,D,D,D,0,0,1,5,0,,,MIXED

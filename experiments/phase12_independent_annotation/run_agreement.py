@@ -9,7 +9,7 @@ from pathlib import Path
 
 from sklearn.metrics import cohen_kappa_score, confusion_matrix
 
-ROOT = Path(r"c:\Users\User\OneDrive\Documents\ULTRA_Project")
+ROOT = Path(__file__).resolve().parents[2]
 FROZEN = ROOT / "experiments/phase12_new_unseen_evaluation/U_TOP5_FOR_ANNOTATION.csv"
 A1_QRELS = ROOT / "experiments/phase12_human_relevance/U_QRELS.csv"
 A1_PER = ROOT / "experiments/phase12_human_relevance/U_PER_QUERY.csv"

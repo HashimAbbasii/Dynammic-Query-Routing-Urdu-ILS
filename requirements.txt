@@ -1,0 +1,18 @@
+# Official M0 / Phase 12 retrieval
+# Versions recorded in experiments/phase12_new_unseen_evaluation/artifacts/preflight.json
+# (Python 3.13.9 | packaged by Anaconda, Inc. | 64-bit Windows)
+numpy==2.3.5
+pandas==2.3.3
+
+# Required to import experiments/phase5_roman_urdu/run_phase5.py.
+# Version was not written into Phase 12 preflight.json. It was read from the
+# same Anaconda Python 3.13.9 interpreter that recorded numpy 2.3.5 / pandas 2.3.3.
+matplotlib==3.10.6
+
+# Optional: independent-annotation Cohen's kappa only (not M0 retrieval).
+# Version recorded in experiments/phase12_independent_annotation/AGREEMENT.md
+# scikit-learn==1.7.2
+
+# Optional: Clopper-Pearson intervals in the manuscript (not M0 retrieval).
+# Version stated in Papers/PLOS_ONE/Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.tex
+# scipy==1.16.3

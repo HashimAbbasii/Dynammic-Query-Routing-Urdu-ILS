@@ -110,7 +110,7 @@ data/chromadb/
 data/chromadb/**
 chroma_db/
 
-# Raw datasets (hundreds of MBs)
+# Raw datasets (hundreds of MBs). Third-party news text is not shipped.
 data/*.csv
 data/*.txt
 data/*.parquet

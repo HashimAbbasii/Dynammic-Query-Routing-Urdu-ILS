@@ -58,7 +58,7 @@ The drop from 87.18% to 67.50% is concentrated on **ordinary Roman Urdu title qu
 
 ### 1.3 Phase 12 U001–U040 — 23/40 = 57.50% human Success@5
 
-**What was measured.** New sealed **naturalistic** queries with **no** `source_doc_id`. Frozen M0 Top-5, then Phase 7 A/B/C/D/E labels (one annotator). Success@5 = at least one **A or B** in the retrieved Top-5.
+**What was measured.** New sealed **naturalistic** queries with **no** `source_doc_id`. Frozen M0 Top-5, then Phase 7 A/B/C/D/E labels (**A1**, official). Success@5 = at least one **A or B** in the retrieved Top-5. Official Success@5 remains **23/40**. An independent second annotation (A2) is a reliability check only and does not replace A1.
 
 Also: conservative P@5 = 0.2050 (mean of A-count/5); nDCG@5 = 0.6460 (gains A=3, B=2, C=1, D=E=0); MRR = 0.4542 (first A or B).
 
@@ -202,7 +202,7 @@ The three headline percentages look like a collapse of one system. They are **th
 
 **Sample size.** K and U have \(n=40\). A binomial 95% interval around 23/40 is wide (roughly the mid-40s to low-70s for Success@5). Point estimates must be reported with n. Do not claim a precise “58% in the wild.”
 
-**One annotator.** U labels are a single judge using Phase 7 plus the temporal type-of-fact rule. There is no second-annotator agreement. Conservative A vs B (prefer B) reduces over-claiming full answers; it does not remove subjectivity.
+**Official labels are A1.** U official labels are Annotator 1 (first author; also wrote the U queries). An independent second annotation (A2) was later run on the same 200 judgments as a reliability check (five-way κ = 0.5490). A2 does not replace 23/40 and does not remove dual-role bias. Conservative A vs B (prefer B) reduces over-claiming full answers; it does not remove subjectivity.
 
 **Known-item vs naturalistic.** ExactSource and Success@5 are not interchangeable. The thesis must keep two evaluation chapters or two clearly separated tables.
 

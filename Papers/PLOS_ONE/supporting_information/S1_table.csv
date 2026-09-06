@@ -1,0 +1,41 @@
+query_id,query_text,detector,retrieval_path,n_hits,source_doc_id,source_rank,Hit@5
+K001,کراچی کے قریب سمندر سے تیل گیس کے ذخائر,URDU,urdu_bm25,50,1508,1,yes
+K002,نئے نوٹوں کے حصول کے لیے ایس ایم ایس سروس,URDU,urdu_bm25,50,2815,6,no
+K003,سی پیک سے پاکستان پر قرضوں کا بوجھ آئی ایم ایف,URDU,urdu_bm25,50,3296,1,yes
+K004,joker film ki numayish ke dauran cinema mein bhagdar,ROMAN,roman_bm25_method_D,50,5849,not_in_top50,no
+K005,jhanvi kapoor mujh se aisa sawal kyun ke main larki hun,ROMAN,roman_bm25_method_D,50,8704,not_in_top50,no
+K006,perfume ki khushboo tadeer barqarar rakhna chahte hain,ROMAN,roman_bm25_method_D,50,9281,not_in_top50,no
+K007,amitabh bachchan shooting ke dauran bimar par gaye,ROMAN,roman_bm25_method_D,50,9511,4,yes
+K008,فواد خان کا بولڈ اشتہار,URDU,urdu_bm25,50,11480,1,yes
+K009,آئندہ برس کے 10 سرفہرست ٹیکنالوجی ٹرینڈ,URDU,urdu_bm25,50,15825,4,yes
+K010,پرینیتی چوپڑا کی محبت میں گرفتار,URDU,urdu_bm25,50,15846,49,no
+K011,ویوو کا نیا مڈرینج فون وی 20 ایس ای,URDU,urdu_bm25,50,19383,1,yes
+K012,زمین پر سیارے کے ٹکرانے سے روکنے کیلئے انسان,URDU,urdu_bm25,50,21756,1,yes
+K013,bharat ka hyperloop system ki tameer ka elaan,ROMAN,roman_bm25_method_D,50,21831,not_in_top50,no
+K014,برازر کی یہ سیٹنگ فوری ٹرن کردیں,URDU,urdu_bm25,50,23022,1,yes
+K015,سام سنگ پر چائلڈ لیبر کا الزام,URDU,urdu_bm25,50,24538,1,yes
+K016,psl matches ke liye shane watson ne pakistan aane ki haami bhar li,ROMAN,roman_bm25_method_D,50,26705,not_in_top50,no
+K017,بروشیا ڈورٹمنڈ کی بس کے قریب تین دھماکے,URDU,urdu_bm25,50,29887,2,yes
+K018,afridi aur ajmal naye central contract se drop,ROMAN,roman_bm25_method_D,50,31070,not_in_top50,no
+K019,چیمپیئنز ٹرافی کیلس جنوبی افریقی اسکواڈ سے دستبردار,URDU,urdu_bm25,50,36767,1,yes
+K020,karachi chamber of commerce ne axle load qanoon ki mukhalifat kar di,ROMAN,roman_bm25_method_D,50,38678,not_in_top50,no
+K021,پی ائی اے لاہور سے کوالالمپور پروازیں شروع,URDU,urdu_bm25,50,38961,2,yes
+K022,پی ئی اے اور اتحاد ایئر کے درمیان کوڈ شیئرنگ,URDU,urdu_bm25,50,41072,1,yes
+K023,قومی کرکٹرز کے لائن لیکچرز مکمل,URDU,urdu_bm25,50,41669,1,yes
+K024,اسٹریلیا بار ورلڈ کپ جیت کر سر فہرست,URDU,urdu_bm25,50,42765,1,yes
+K025,madonna musical show ke dauran paris waqia par badida ho gain,ROMAN,roman_bm25_method_D,50,51108,not_in_top50,no
+K026,ہوائی لباس جو 300 کلومیٹر فی گھنٹہ سے اڑا سکتا ہے,URDU,urdu_bm25,50,59249,1,yes
+K027,پاکستان اسٹاک مارکیٹ 827 پوائنٹس اضافے کے ساتھ بند,URDU,urdu_bm25,50,64255,2,yes
+K028,حفیظ شیخ حکومت کا کام روزگار فراہم کرنا نہیں,URDU,urdu_bm25,50,70845,1,yes
+K029,ای ٹی او محکمہ ایکسائز اسسٹنٹ فوڈ کنٹرولر کیخلاف مقدمہ,URDU,urdu_bm25,50,72267,1,yes
+K030,عالمی ادارے پاکستان کی معاشی بہتری کے معترف اسحاق ڈار,URDU,urdu_bm25,50,74034,1,yes
+K031,teen mah se mehroom steel mills mulazimeen ko tankhwah 15 may ko milne ki tawaqqa,ROMAN,roman_bm25_method_D,50,75789,17,no
+K032,کھیتوں سے پرندے بھگانے کیلئے لیزر لائٹس کا تجربہ,URDU,urdu_bm25,50,80149,1,yes
+K033,saal e nau par google calendar ka design tabdeel,ROMAN,roman_bm25_method_D,50,80336,not_in_top50,no
+K034,ندا ڈار تیز ترین نصف سنچری پہلی ایشین کرکٹر,URDU,urdu_bm25,50,82804,1,yes
+K035,ثانیہ مرزا ہندو انتہا پسندی کا شکار,URDU,urdu_bm25,50,83115,1,yes
+K036,سرینا ولیمز امریکی اوپن فائنل شکست امپائر,URDU,urdu_bm25,50,83850,2,yes
+K037,afghanistan ke khilaf team ki karkardagi achi thi saeed ajmal,ROMAN,roman_bm25_method_D,50,93401,not_in_top50,no
+K038,بھارت میں پاکستانی اداکاروں پر پابندی,URDU,urdu_bm25,50,99509,3,yes
+K039,بالی ووڈ ہاوس فل 3 نیا ڈائیلاگ پرومو,URDU,urdu_bm25,50,102279,1,yes
+K040,ڈینیئل کریگ سے پھر جیمز بانڈ بننے کی فرمائش,URDU,urdu_bm25,50,103265,1,yes
