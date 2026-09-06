@@ -30,32 +30,36 @@
 \citation{bib12}
 \citation{bib13}
 \citation{bib14}
-\citation{bib10}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Official frozen retriever M0.} A Unicode script detector routes URDU, MIXED, and OTHER queries to Urdu BM25 and ROMAN queries to Method D romanized-document BM25. Queries are not rewritten. This is not an SVM SHORT/LONG router and not a MiniLM dual-index pipeline.\relax }}{3}{figure.caption.8}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig1}{{1}{3}{\textbf {Official frozen retriever M0.} A Unicode script detector routes URDU, MIXED, and OTHER queries to Urdu BM25 and ROMAN queries to Method D romanized-document BM25. Queries are not rewritten. This is not an SVM SHORT/LONG router and not a MiniLM dual-index pipeline.\relax }{figure.caption.8}{}}
-\newlabel{eq:idf}{{1}{3}{Official frozen system (M0)}{equation.0.1}{}}
+\citation{bib17}
+\citation{bib16}
 \citation{bib15}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textbf  {Official M0 results.} ExactSource Hit@5 and human Success@5 answer different questions. Intervals are Clopper--Pearson 95\% intervals computed from the reported counts. Do not average rows. Do not treat 87.18\% as unseen or as human usefulness.\relax }}{6}{table.caption.21}\protected@file@percent }
-\newlabel{table1}{{1}{6}{\textbf {Official M0 results.} ExactSource Hit@5 and human Success@5 answer different questions. Intervals are Clopper--Pearson 95\% intervals computed from the reported counts. Do not average rows. Do not treat 87.18\% as unseen or as human usefulness.\relax }{table.caption.21}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \textbf  {Development/validation comparators on the same $n = 78$ known-item pool.} Official M0 is the script-aware row. Oracle unions were not deployed.\relax }}{7}{table.caption.23}\protected@file@percent }
-\newlabel{table2}{{2}{7}{\textbf {Development/validation comparators on the same $n = 78$ known-item pool.} Official M0 is the script-aware row. Oracle unions were not deployed.\relax }{table.caption.23}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {ExactSource Hit@5 on the Phase 2 development/validation pool ($n = 78$).} Values are the frozen development comparators in Table\nobreakspace  {}\ref  {table2}. Script-aware M0 is the official system. This figure is not a Phase 12 result.\relax }}{7}{figure.caption.24}\protected@file@percent }
-\newlabel{fig2}{{2}{7}{\textbf {ExactSource Hit@5 on the Phase 2 development/validation pool ($n = 78$).} Values are the frozen development comparators in Table~\ref {table2}. Script-aware M0 is the official system. This figure is not a Phase 12 result.\relax }{figure.caption.24}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \textbf  {Phase 11 query-side Roman expansions.} The official system remains M0. Train Roman $n = 64$ is a selection diagnostic, not an unseen test.\relax }}{7}{table.caption.26}\protected@file@percent }
-\newlabel{table3}{{3}{7}{\textbf {Phase 11 query-side Roman expansions.} The official system remains M0. Train Roman $n = 64$ is a selection diagnostic, not an unseen test.\relax }{table.caption.26}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \textbf  {Phase 12 K ExactSource results, frozen M0.} Primary metric is Hit@5. This evaluation does not replace 68/78 and is not human Success@5.\relax }}{8}{table.caption.28}\protected@file@percent }
-\newlabel{table4}{{4}{8}{\textbf {Phase 12 K ExactSource results, frozen M0.} Primary metric is Hit@5. This evaluation does not replace 68/78 and is not human Success@5.\relax }{table.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Descriptive script splits of frozen M0, not used for tuning.} Left: ExactSource Hit@5 on K001--K040. Right: human Success@5 on U001--U040. Mixed $n = 4$ is descriptive only. The two panels are different metrics and must not be averaged.\relax }}{8}{figure.caption.29}\protected@file@percent }
-\newlabel{fig3}{{3}{8}{\textbf {Descriptive script splits of frozen M0, not used for tuning.} Left: ExactSource Hit@5 on K001--K040. Right: human Success@5 on U001--U040. Mixed $n = 4$ is descriptive only. The two panels are different metrics and must not be averaged.\relax }{figure.caption.29}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Where sealed known-item misses sit.} Counts from the K001--K040 per-query source ranks. Urdu misses remain inside the Top-50. Most Roman misses never appear in the retrieved 50.\relax }}{8}{figure.caption.30}\protected@file@percent }
-\newlabel{fig4}{{4}{8}{\textbf {Where sealed known-item misses sit.} Counts from the K001--K040 per-query source ranks. Urdu misses remain inside the Top-50. Most Roman misses never appear in the retrieved 50.\relax }{figure.caption.30}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces \textbf  {Phase 12 U human metrics, frozen M0 Top-5.} Success@5 is the usefulness headline. nDCG@5 includes gain 1 for topical C and is not a usefulness claim.\relax }}{8}{table.caption.32}\protected@file@percent }
-\newlabel{table5}{{5}{8}{\textbf {Phase 12 U human metrics, frozen M0 Top-5.} Success@5 is the usefulness headline. nDCG@5 includes gain 1 for topical C and is not a usefulness claim.\relax }{table.caption.32}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Label mass on the 200 judged U Top-5 documents.} A = relevant, B = partially relevant, C = topically related, D = not relevant, E = ambiguous. E did not occur. D is the modal label.\relax }}{9}{figure.caption.33}\protected@file@percent }
-\newlabel{fig5}{{5}{9}{\textbf {Label mass on the 200 judged U Top-5 documents.} A = relevant, B = partially relevant, C = topically related, D = not relevant, E = ambiguous. E did not occur. D is the modal label.\relax }{figure.caption.33}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \textbf  {Descriptive U Success@5 slices.} Script uses the detector label at retrieval time. Need type and length follow the sealed query file.\relax }}{9}{table.caption.34}\protected@file@percent }
-\newlabel{table6}{{6}{9}{\textbf {Descriptive U Success@5 slices.} Script uses the detector label at retrieval time. Need type and length follow the sealed query file.\relax }{table.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Official frozen retriever M0.} A deterministic Unicode script detector sends URDU, MIXED, and OTHER queries to Urdu BM25 and ROMAN queries to Method D romanized-document BM25. Queries are not rewritten. This is not an SVM SHORT/LONG classifier and not a MiniLM dual-index pipeline.\relax }}{4}{figure.caption.9}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig1}{{1}{4}{\textbf {Official frozen retriever M0.} A deterministic Unicode script detector sends URDU, MIXED, and OTHER queries to Urdu BM25 and ROMAN queries to Method D romanized-document BM25. Queries are not rewritten. This is not an SVM SHORT/LONG classifier and not a MiniLM dual-index pipeline.\relax }{figure.caption.9}{}}
+\newlabel{eq:idf}{{1}{4}{Official frozen system (M0)}{equation.0.1}{}}
+\citation{bib16}
+\citation{bib17}
+\citation{bib16}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textbf  {Official M0 results.} ExactSource Hit@5 and human Success@5 answer different questions. Intervals are Clopper--Pearson 95\% intervals computed from the reported counts. Do not average rows. Do not treat 87.18\% as unseen or as human usefulness.\relax }}{8}{table.caption.23}\protected@file@percent }
+\newlabel{table1}{{1}{8}{\textbf {Official M0 results.} ExactSource Hit@5 and human Success@5 answer different questions. Intervals are Clopper--Pearson 95\% intervals computed from the reported counts. Do not average rows. Do not treat 87.18\% as unseen or as human usefulness.\relax }{table.caption.23}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \textbf  {Development/validation comparators on the same $n = 78$ known-item pool.} Official M0 is the script-aware row. Oracle unions were not deployed.\relax }}{8}{table.caption.25}\protected@file@percent }
+\newlabel{table2}{{2}{8}{\textbf {Development/validation comparators on the same $n = 78$ known-item pool.} Official M0 is the script-aware row. Oracle unions were not deployed.\relax }{table.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {ExactSource Hit@5 on the Phase 2 development/validation pool ($n = 78$).} Values are the frozen development comparators in Table\nobreakspace  {}\ref  {table2}. Script-aware M0 is the official system. This figure is not a Phase 12 result.\relax }}{8}{figure.caption.26}\protected@file@percent }
+\newlabel{fig2}{{2}{8}{\textbf {ExactSource Hit@5 on the Phase 2 development/validation pool ($n = 78$).} Values are the frozen development comparators in Table~\ref {table2}. Script-aware M0 is the official system. This figure is not a Phase 12 result.\relax }{figure.caption.26}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \textbf  {Phase 11 query-side Roman expansions.} The official system remains M0. Train Roman $n = 64$ is a selection diagnostic, not an unseen test.\relax }}{9}{table.caption.28}\protected@file@percent }
+\newlabel{table3}{{3}{9}{\textbf {Phase 11 query-side Roman expansions.} The official system remains M0. Train Roman $n = 64$ is a selection diagnostic, not an unseen test.\relax }{table.caption.28}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \textbf  {Phase 12 K ExactSource results, frozen M0.} Primary metric is Hit@5. This evaluation does not replace 68/78 and is not human Success@5.\relax }}{9}{table.caption.30}\protected@file@percent }
+\newlabel{table4}{{4}{9}{\textbf {Phase 12 K ExactSource results, frozen M0.} Primary metric is Hit@5. This evaluation does not replace 68/78 and is not human Success@5.\relax }{table.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Descriptive script splits of frozen M0, not used for tuning.} Left: ExactSource Hit@5 on K001--K040. Right: human Success@5 on U001--U040. Mixed $n = 4$ is descriptive only. The two panels are different metrics and must not be averaged.\relax }}{9}{figure.caption.31}\protected@file@percent }
+\newlabel{fig3}{{3}{9}{\textbf {Descriptive script splits of frozen M0, not used for tuning.} Left: ExactSource Hit@5 on K001--K040. Right: human Success@5 on U001--U040. Mixed $n = 4$ is descriptive only. The two panels are different metrics and must not be averaged.\relax }{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Where sealed known-item misses sit.} Counts from the K001--K040 per-query source ranks. Urdu misses remain inside the Top-50. Most Roman misses never appear in the retrieved 50.\relax }}{9}{figure.caption.32}\protected@file@percent }
+\newlabel{fig4}{{4}{9}{\textbf {Where sealed known-item misses sit.} Counts from the K001--K040 per-query source ranks. Urdu misses remain inside the Top-50. Most Roman misses never appear in the retrieved 50.\relax }{figure.caption.32}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces \textbf  {Phase 12 U human metrics, frozen M0 Top-5.} Success@5 is the usefulness headline. nDCG@5 includes gain 1 for topical C and is not a usefulness claim.\relax }}{10}{table.caption.34}\protected@file@percent }
+\newlabel{table5}{{5}{10}{\textbf {Phase 12 U human metrics, frozen M0 Top-5.} Success@5 is the usefulness headline. nDCG@5 includes gain 1 for topical C and is not a usefulness claim.\relax }{table.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Label mass on the 200 judged U Top-5 documents.} A = relevant, B = partially relevant, C = topically related, D = not relevant, E = ambiguous. E did not occur. D is the modal label.\relax }}{10}{figure.caption.35}\protected@file@percent }
+\newlabel{fig5}{{5}{10}{\textbf {Label mass on the 200 judged U Top-5 documents.} A = relevant, B = partially relevant, C = topically related, D = not relevant, E = ambiguous. E did not occur. D is the modal label.\relax }{figure.caption.35}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \textbf  {Descriptive U Success@5 slices.} Script uses the detector label at retrieval time. Need type and length follow the sealed query file.\relax }}{10}{table.caption.36}\protected@file@percent }
+\newlabel{table6}{{6}{10}{\textbf {Descriptive U Success@5 slices.} Script uses the detector label at retrieval time. Need type and length follow the sealed query file.\relax }{table.caption.36}{}}
 \citation{bib5,bib6}
 \citation{bib11}
 \bibdata{plos_bibtex_sample}
@@ -63,14 +67,17 @@
 \bibcite{bib2}{2}
 \bibcite{bib3}{3}
 \bibcite{bib4}{4}
+\newlabel{S1_Table}{{}{13}{S1 Table}{section*.42}{}}
+\newlabel{S2_Table}{{}{13}{S2 Table}{section*.43}{}}
+\newlabel{S3_Table}{{}{13}{S3 Table}{section*.44}{}}
+\newlabel{S4_Table}{{}{13}{S4 Table}{section*.45}{}}
+\newlabel{S1_File}{{}{13}{S1 File}{section*.46}{}}
+\newlabel{S2_File}{{}{13}{S2 File}{section*.47}{}}
+\newlabel{S3_File}{{}{13}{S3 File}{section*.48}{}}
+\newlabel{S1_Text}{{}{13}{S1 Text}{section*.49}{}}
 \bibcite{bib5}{5}
 \bibcite{bib6}{6}
 \bibcite{bib7}{7}
-\newlabel{S1_Table}{{}{11}{S1 Table}{section*.40}{}}
-\newlabel{S2_Table}{{}{11}{S2 Table}{section*.41}{}}
-\newlabel{S3_Table}{{}{11}{S3 Table}{section*.42}{}}
-\newlabel{S1_File}{{}{11}{S1 File}{section*.43}{}}
-\newlabel{S1_Text}{{}{11}{S1 Text}{section*.44}{}}
 \bibcite{bib8}{8}
 \bibcite{bib9}{9}
 \bibcite{bib10}{10}
@@ -78,8 +85,10 @@
 \bibcite{bib12}{12}
 \bibcite{bib13}{13}
 \bibcite{bib14}{14}
-\bibcite{bib15}{15}
-\newlabel{LastPage}{{}{12}{}{page.12}{}}
-\xdef\lastpage@lastpage{12}
-\xdef\lastpage@lastpageHy{12}
-\gdef \@abspage@last{12}
+\bibcite{bib17}{15}
+\bibcite{bib16}{16}
+\bibcite{bib15}{17}
+\newlabel{LastPage}{{}{14}{}{page.14}{}}
+\xdef\lastpage@lastpage{14}
+\xdef\lastpage@lastpageHy{14}
+\gdef \@abspage@last{14}

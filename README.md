@@ -1,8 +1,10 @@
 # ULTRA
 
-**Adaptive Script-Aware Information Retrieval for Urdu and Roman Urdu**
+**Script-aware BM25 for Urdu and Roman Urdu news search**
 
-Frozen lexical retrieval for Urdu news search. A Unicode detector routes each query to an Urdu BM25 index or a Method D romanized-document BM25 index.
+Frozen lexical retrieval for Urdu news search. A deterministic Unicode detector selects an Urdu BM25 index or a Method D romanized-document BM25 index.
+
+**PLOS ONE submission branch:** `publication/plos-one-final` (not the GitHub default `main`). Later exploratory development on `research/post-phase12` is not part of the official Table 1 scores.
 
 ---
 
@@ -61,7 +63,7 @@ archive/         Historical SVM/MiniLM papers, backups, notebooks
 ## Papers and thesis
 
 - Thesis: `Thesis/FINAL/Hashim_Shazad_243259_AU_Thesis_ULTRA.docx`
-- PLOS ONE (M0): `Papers/PLOS_ONE/Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.tex`
+- PLOS ONE (M0): `Papers/PLOS_ONE/Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.tex` (printed title: Script-aware BM25 retrieval for Urdu and Roman Urdu news search)
 - IEEE (M0): `Papers/IEEE/`
 
 The MiniLM dual-index IEEE paper is historical: `archive/historical_papers/IEEE_MiniLM/`.
@@ -90,7 +92,8 @@ Do not retune M0, the dictionary, routing, or Method D on K, U, or H001–H040.
 - Roman Urdu is weaker than native-script Urdu (U Success@5: 6/18 vs 17/18).
 - Naturalistic human Success@5 is **57.50%**, not 87.18%.
 - M0 is lexical BM25 and does not rewrite queries.
-- K and U each have n = 40; mixed n = 4. Official U Success@5 uses Annotator 1. Annotator 2 is a reliability analysis and does not replace 23/40.
+- K and U each have n = 40; mixed n = 4. Official U Success@5 uses Annotator 1 (query author). Annotator 2 is a reliability analysis and does not replace 23/40.
+- Clone `publication/plos-one-final` for the submission snapshot. Do not treat `research/post-phase12` scores as official.
 
 ## Archive
 

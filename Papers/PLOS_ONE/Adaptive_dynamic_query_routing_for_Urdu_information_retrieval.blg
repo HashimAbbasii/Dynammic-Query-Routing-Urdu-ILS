@@ -3,3 +3,8 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.aux
 The style file: plos2025.bst
 Database file #1: plos_bibtex_sample.bib
+Warning--empty author and editor in bib17
+Warning--missing publisher in bib17
+Warning--empty author and editor in bib16
+Warning--missing publisher in bib16
+(There were 4 warnings)

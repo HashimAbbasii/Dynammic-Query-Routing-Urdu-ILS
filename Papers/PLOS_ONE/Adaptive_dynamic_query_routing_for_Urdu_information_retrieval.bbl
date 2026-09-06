@@ -6,6 +6,8 @@ Hussain N, Qasim A, Mehak G, Usman M, Zain M, Hafeez M, et~al.
   detection in {Roman} {Urdu}-{English} code-mixed text.
 \newblock arXiv. 2025.
 \newblock Preprint. arXiv:2510.03683.
+\newblock \href {http://dx.doi.org/10.48550/arXiv.2510.03683}
+  {doi:10.48550/arXiv.2510.03683}.
 
 \bibitem{bib2}
 Mehmood F, Ghani MU, Ibrahim MA, Shehzadi R, Asim MN.
@@ -13,24 +15,33 @@ Mehmood F, Ghani MU, Ibrahim MA, Shehzadi R, Asim MN.
   sentiment analysis.
 \newblock arXiv. 2020.
 \newblock Preprint. arXiv:2003.05443.
+\newblock \href {http://dx.doi.org/10.48550/arXiv.2003.05443}
+  {doi:10.48550/arXiv.2003.05443}.
 
 \bibitem{bib3}
 Sitaram S, Chandu KR, Rallabandi SK, Black AW.
 \newblock A survey of code-switched speech and language processing.
 \newblock arXiv. 2019.
-\newblock Preprint. arXiv:1904.00784.
+\newblock Preprint. arXiv:1904.00784. Header marks submission to Computer
+  Speech and Language; no journal volume or pages found.
+\newblock \href {http://dx.doi.org/10.48550/arXiv.1904.00784}
+  {doi:10.48550/arXiv.1904.00784}.
 
 \bibitem{bib4}
 Daud A, Khan W, Che D.
 \newblock Urdu language processing: a survey.
-\newblock Artif Intell Rev. 2017;47:279-311.
+\newblock Artif Intell Rev. 2017;47(3):279-311.
+\newblock \href {http://dx.doi.org/10.1007/s10462-016-9482-x}
+  {doi:10.1007/s10462-016-9482-x}.
 
 \bibitem{bib5}
 Iqbal M, Tahir B, Mehmood MA.
 \newblock {CURE}: Collection for {Urdu} Information Retrieval Evaluation and
   Ranking.
-\newblock arXiv. 2021.
-\newblock Preprint. arXiv:2011.00565.
+\newblock In: 2021 International Conference on Digital Futures and
+  Transformative Technologies ({ICoDT2}); 2021. p. 1-6.
+\newblock \href {http://dx.doi.org/10.1109/ICoDT252288.2021.9441510}
+  {doi:10.1109/ICoDT252288.2021.9441510}.
 
 \bibitem{bib6}
 Butt U, Varanasi S, Neumann G.
@@ -38,6 +49,8 @@ Butt U, Varanasi S, Neumann G.
   {Urdu} {MS} {MARCO}.
 \newblock arXiv. 2024.
 \newblock Preprint. arXiv:2412.12997.
+\newblock \href {http://dx.doi.org/10.48550/arXiv.2412.12997}
+  {doi:10.48550/arXiv.2412.12997}.
 
 \bibitem{bib7}
 Wu J, Ren Z, Verberne S.
@@ -45,6 +58,8 @@ Wu J, Ren Z, Verberne S.
   low-resource languages?
 \newblock arXiv. 2024.
 \newblock Preprint. arXiv:2408.11942.
+\newblock \href {http://dx.doi.org/10.48550/arXiv.2408.11942}
+  {doi:10.48550/arXiv.2408.11942}.
 
 \bibitem{bib8}
 Conneau A, Khandelwal K, Goyal N, Chaudhary V, Wenzek G, Guzm{\'a}n F, et~al.
@@ -70,6 +85,8 @@ Bashir A, Qaiser F, Hussain I.
   Architecture.
 \newblock arXiv. 2026.
 \newblock Preprint. arXiv:2602.11836.
+\newblock \href {http://dx.doi.org/10.48550/arXiv.2602.11836}
+  {doi:10.48550/arXiv.2602.11836}.
 
 \bibitem{bib11}
 Arabzadeh N, Yan X, Clarke CLA.
@@ -87,6 +104,8 @@ Jeong S, Baek J, Cho S, Hwang SJ, Park JC.
 \newblock In: Proceedings of the 2024 Conference of the North {American}
   Chapter of the Association for Computational Linguistics: Human Language
   Technologies; 2024. p. 7036-50.
+\newblock \href {http://dx.doi.org/10.18653/v1/2024.naacl-long.389}
+  {doi:10.18653/v1/2024.naacl-long.389}.
 
 \bibitem{bib13}
 Robertson S, Zaragoza H.
@@ -103,6 +122,18 @@ Reimers N, Gurevych I.
   Natural Language Processing; 2019. p. 3982-92.
 \newblock \href {http://dx.doi.org/10.18653/v1/D19-1410}
   {doi:10.18653/v1/D19-1410}.
+
+\bibitem{bib17}
+Shahane S. {Urdu News Dataset}; 2021.
+\newblock Version 1. Kaggle.
+  https://www.kaggle.com/datasets/saurabhshahane/urdu-news-dataset.
+
+\bibitem{bib16}
+Hussain K, Mughal N, Ali I, Hassan S, Daudpota SM. {Urdu News Dataset 1M};
+  2021.
+\newblock Mendeley Data, V3.
+\newblock \href {http://dx.doi.org/10.17632/834vsxnb99.3}
+  {doi:10.17632/834vsxnb99.3}.
 
 \bibitem{bib15}
 Cormack GV, Clarke CLA, B{\"u}ttcher S.

@@ -2,9 +2,9 @@
 
 Official retrieval is **M0**. Implementation paths were not relocated.
 
-Independent reproduction steps, environment pins, and data-access limits: **`REPRODUCE.md`** at the repository root.
+Independent reproduction steps, environment pins, and data-access limits: **`REPRODUCE.md`** at the repository root (PLOS ONE snapshot: branch `publication/plos-one-final`).
 
-The article-text corpus is **not** in git. SHA-256 of the frozen local file:
+The article-text corpus is **not** in git. A clone does not make official retrieval scores fully reproducible without a local third-party corpus copy.
 
 | Artifact | Path | SHA-256 |
 | --- | --- | --- |

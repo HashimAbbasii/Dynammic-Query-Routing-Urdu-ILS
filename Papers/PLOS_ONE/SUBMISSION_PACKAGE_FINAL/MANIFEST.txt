@@ -1,0 +1,175 @@
+ULTRA PLOS ONE submission package manifest
+Branch: publication/plos-one-final
+Printed title: Script-aware BM25 retrieval for Urdu and Roman Urdu news search
+Date: 6 September 2026
+
+Third-party Urdu news corpus is NOT included in this package.
+NOT included: data/urdu_news.csv, data/clean_articles.csv, Chroma/embeddings,
+Tectonic binaries, .git, aux/log files, research/post-phase12, R-dev, old ZIPs.
+
+PLOS initial submission: upload the PDF as the manuscript; upload Fig1.tif-Fig5.tif
+and the eight Supporting Information files separately. TeX/bib/bst are for later source upload.
+
+[MAIN MANUSCRIPT] Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.pdf
+  purpose: Compiled 14-page PDF for initial EM upload
+  format: PDF
+  required: required
+  source: Papers\PLOS_ONE\Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.pdf
+  bytes: 113777
+  sha256: 4a1fe11481c0409e66db1537957910306df1e307ca19599c6cf311f2c7aa0824
+  verification: verified
+
+[MAIN MANUSCRIPT] Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.tex
+  purpose: LaTeX source (PLOS template 3.8); after-acceptance upload
+  format: TeX
+  required: required-after-acceptance
+  source: Papers\PLOS_ONE\Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.tex
+  bytes: 61629
+  sha256: 21611d5bfa1c355103c329003edee5f8cbe9e4343b5fd1ef0e0297d9e9ecfd6e
+  verification: verified
+
+[BIBLIOGRAPHY] plos_bibtex_sample.bib
+  purpose: Audited BibTeX database
+  format: BibTeX
+  required: required-with-source
+  source: Papers\PLOS_ONE\plos_bibtex_sample.bib
+  bytes: 6550
+  sha256: b8dc0ca16744075c79131adec30f59a547fec9cbd84a5a2d7d733cc201e034a7
+  verification: verified
+
+[BIBLIOGRAPHY] plos2025.bst
+  purpose: PLOS Vancouver BST; do not edit
+  format: BST
+  required: required-with-source
+  source: Papers\PLOS_ONE\plos2025.bst
+  bytes: 42854
+  sha256: a7237f36fd1364814d5cf58c6ec09a09cc2f7b83be4084efad62e124e390fcc3
+  verification: verified
+
+[FIGURES] Fig1.tif
+  purpose: PLOS figure upload Fig 1
+  format: TIFF
+  required: required
+  source: Papers\PLOS_ONE\figures\Fig1.tif
+  bytes: 96322
+  sha256: 5e589e98f8737166178f82b1502058ec4fd07cdf88d38d353813729d4538ac05
+  verification: verified
+
+[FIGURES] Fig2.tif
+  purpose: PLOS figure upload Fig 2
+  format: TIFF
+  required: required
+  source: Papers\PLOS_ONE\figures\Fig2.tif
+  bytes: 149236
+  sha256: 5ddf6fc12fd5d8ae2e8ea905c4cbf5deaac485e19aa00ea158f8c1b6912de0cf
+  verification: verified
+
+[FIGURES] Fig3.tif
+  purpose: PLOS figure upload Fig 3
+  format: TIFF
+  required: required
+  source: Papers\PLOS_ONE\figures\Fig3.tif
+  bytes: 225263
+  sha256: 7520fda03dd8e9f0b5f1bafb30939372806ae547ae2ff2285fff57524a736d84
+  verification: verified
+
+[FIGURES] Fig4.tif
+  purpose: PLOS figure upload Fig 4
+  format: TIFF
+  required: required
+  source: Papers\PLOS_ONE\figures\Fig4.tif
+  bytes: 137081
+  sha256: 2e6864f4905f673b627074180e77881305eb23f5b52867a4d5ad7b9d86d912fb
+  verification: verified
+
+[FIGURES] Fig5.tif
+  purpose: PLOS figure upload Fig 5
+  format: TIFF
+  required: required
+  source: Papers\PLOS_ONE\figures\Fig5.tif
+  bytes: 129671
+  sha256: 6872a220b7f46d9581fbd54f2d3317a7dbf129bce6c2d5b81728a6f8e50c6638
+  verification: verified
+
+[SUPPORTING INFORMATION] S1_table.csv
+  purpose: S1 Table: K001-K040 ExactSource ranks
+  format: CSV
+  required: required
+  source: Papers\PLOS_ONE\supporting_information\S1_table.csv
+  bytes: 4536
+  sha256: 3c4bb591e36e5dbcbb5ec6cb91c88cc7a15cb9768e240f837ff481bb27bf1ea6
+  verification: verified
+
+[SUPPORTING INFORMATION] S2_table.csv
+  purpose: S2 Table: U official A1 labels
+  format: CSV
+  required: required
+  source: Papers\PLOS_ONE\supporting_information\S2_table.csv
+  bytes: 6176
+  sha256: e06d360ebf3ac0fdab8c3ed5ca1cf2b5cc6b3d0cd6a1f872182452829e0679e0
+  verification: verified
+
+[SUPPORTING INFORMATION] S3_table.csv
+  purpose: S3 Table: Phase 5 Roman method comparison
+  format: CSV
+  required: required
+  source: Papers\PLOS_ONE\supporting_information\S3_table.csv
+  bytes: 635
+  sha256: f3743a02a9a5dcbcfee06b3fb66d681fcbb66b8c46d9ff316e72312671bf00fb
+  verification: verified
+
+[SUPPORTING INFORMATION] S4_table.csv
+  purpose: S4 Table: A1 vs A2 labels (A2 reliability only)
+  format: CSV
+  required: required
+  source: Papers\PLOS_ONE\supporting_information\S4_table.csv
+  bytes: 4482
+  sha256: ed31a3f0fd0113201f87974dd6bfcdec25fa6823050da4dee779104b9cd13966
+  verification: verified
+
+[SUPPORTING INFORMATION] S1_file.json
+  purpose: S1 File: freeze manifest
+  format: JSON
+  required: required
+  source: Papers\PLOS_ONE\supporting_information\S1_file.json
+  bytes: 1832
+  sha256: e3cde5df71bebca1d999f95a48b71249379a5f9fc8d020e749709c4eeed04c91
+  verification: verified
+
+[SUPPORTING INFORMATION] S1_text.md
+  purpose: S1 Text: A1 annotation protocol
+  format: MD
+  required: required
+  source: Papers\PLOS_ONE\supporting_information\S1_text.md
+  bytes: 2558
+  sha256: 81ed43ef34d90c76fdcc4cafbd0629e72c6e9fc623fcfacd1175b2554f9f7d27
+  verification: verified
+
+[SUPPORTING INFORMATION] S2_file.md
+  purpose: S2 File: A2 reliability analysis
+  format: MD
+  required: required
+  source: Papers\PLOS_ONE\supporting_information\S2_file.md
+  bytes: 4932
+  sha256: 16613c6beaac0be1b1872fdac537a682c616c0c8f24f796d2746e5f2bfefd93c
+  verification: verified
+
+[SUPPORTING INFORMATION] S3_file.md
+  purpose: S3 File: dataset provenance (no article text)
+  format: MD
+  required: required
+  source: Papers\PLOS_ONE\supporting_information\S3_file.md
+  bytes: 4192
+  sha256: b8d02a0648a0d39b48e21eab2c2a9fd292621e85c919c66ea10bb7eb29a001d0
+  verification: verified
+
+[OPTIONAL REPRODUCIBILITY MATERIAL] EDITORIAL_MANAGER_CHECKLIST.md
+  purpose: Portal fields and upload map; not a PLOS SI item
+  format: Markdown
+  required: package-only
+  source: Papers\PLOS_ONE\SUBMISSION_PACKAGE_FINAL\EDITORIAL_MANAGER_CHECKLIST.md
+  bytes: 5568
+  sha256: e37cb580bdf676f3ec2609836a46b2be5466993a9d766e4f7d1c0b5908cc14f5
+  verification: verified
+
+Official frozen headlines (unchanged): 68/78, 27/40, 23/40 A1; A2 26/40 reliability only.

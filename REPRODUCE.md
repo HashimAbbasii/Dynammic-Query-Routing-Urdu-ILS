@@ -5,7 +5,10 @@ This guide is for an independent researcher. It describes how the frozen M0 stud
 It does **not** change official scores. Official metrics were copied from sealed Phase 8–12 reports.
 
 Repository: https://github.com/HashimAbbasii/Dynammic-Query-Routing-Urdu-ILS  
-Canonical manuscript: `Papers/PLOS_ONE/Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.tex`
+**Submission branch:** `publication/plos-one-final`  
+Canonical manuscript: `Papers/PLOS_ONE/Adaptive_dynamic_query_routing_for_Urdu_information_retrieval.tex` (printed title: Script-aware BM25 retrieval for Urdu and Roman Urdu news search)
+
+Later exploratory work on `research/post-phase12` is **not** part of the official scores in this guide.
 
 ---
 
@@ -28,7 +31,7 @@ It does **not** cover retraining SVM routers, MiniLM/Chroma indexes, or other ma
 **Official retriever: M0**
 
 - Unicode script detector (not an SVM).
-- URDU and MIXED queries → Urdu-script Okapi BM25.
+- URDU, MIXED, and OTHER queries → Urdu-script Okapi BM25.
 - ROMAN queries → Method D (BM25 over romanized documents).
 - BM25 \(k_1 = 1.5\), \(b = 0.75\).
 - Retrieve 50 documents; official cutoff is 5.
