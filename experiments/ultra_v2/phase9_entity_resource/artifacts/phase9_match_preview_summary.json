@@ -1,0 +1,569 @@
+{
+  "summary": {
+    "n_queries": 51,
+    "n_queries_with_ge1_hit": 22,
+    "n_queries_zero_hit": 29,
+    "max_en_hits_on_a_query": 2,
+    "max_ur_expansions_on_a_query": 8,
+    "csv_sha256_checked": "7686f02d5bb2110eb4cccc7cdbd326324e4f7fa5e4dd34d7125a76d7795cf55d",
+    "retrieval_run": false,
+    "match_rule_version": "v2_nogo_correction",
+    "n_wordlist": 9894,
+    "n_dotted_initialism_aliases": 354
+  },
+  "per_query": [
+    {
+      "query_id": "KN001",
+      "split": "train",
+      "n_tokens": 10,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN002",
+      "split": "train",
+      "n_tokens": 11,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN004",
+      "split": "train",
+      "n_tokens": 11,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN005",
+      "split": "train",
+      "n_tokens": 12,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN006",
+      "split": "train",
+      "n_tokens": 11,
+      "n_en_hits": 1,
+      "n_ur_expansions": 4,
+      "spans": [
+        "ipl"
+      ],
+      "en_titles": [
+        "Indian Premier League"
+      ]
+    },
+    {
+      "query_id": "KN008",
+      "split": "train",
+      "n_tokens": 9,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN010",
+      "split": "train",
+      "n_tokens": 12,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN011",
+      "split": "train",
+      "n_tokens": 11,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN012",
+      "split": "train",
+      "n_tokens": 10,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN013",
+      "split": "train",
+      "n_tokens": 13,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN014",
+      "split": "train",
+      "n_tokens": 12,
+      "n_en_hits": 1,
+      "n_ur_expansions": 2,
+      "spans": [
+        "ghalti"
+      ],
+      "en_titles": [
+        "Ghalti"
+      ]
+    },
+    {
+      "query_id": "KN015",
+      "split": "train",
+      "n_tokens": 10,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN016",
+      "split": "train",
+      "n_tokens": 12,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN017",
+      "split": "train",
+      "n_tokens": 7,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN018",
+      "split": "train",
+      "n_tokens": 12,
+      "n_en_hits": 2,
+      "n_ur_expansions": 5,
+      "spans": [
+        "mabni",
+        "fable"
+      ],
+      "en_titles": [
+        "Mabni",
+        "Fable"
+      ]
+    },
+    {
+      "query_id": "KN019",
+      "split": "train",
+      "n_tokens": 11,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN020",
+      "split": "train",
+      "n_tokens": 12,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN021",
+      "split": "train",
+      "n_tokens": 12,
+      "n_en_hits": 1,
+      "n_ur_expansions": 1,
+      "spans": [
+        "live action"
+      ],
+      "en_titles": [
+        "Live action"
+      ]
+    },
+    {
+      "query_id": "KN022",
+      "split": "train",
+      "n_tokens": 11,
+      "n_en_hits": 1,
+      "n_ur_expansions": 4,
+      "spans": [
+        "shahid"
+      ],
+      "en_titles": [
+        "Shahid"
+      ]
+    },
+    {
+      "query_id": "KN023",
+      "split": "train",
+      "n_tokens": 11,
+      "n_en_hits": 1,
+      "n_ur_expansions": 4,
+      "spans": [
+        "aziz mian"
+      ],
+      "en_titles": [
+        "Aziz Mian"
+      ]
+    },
+    {
+      "query_id": "KN024",
+      "split": "train",
+      "n_tokens": 14,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN025",
+      "split": "train",
+      "n_tokens": 14,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN026",
+      "split": "train",
+      "n_tokens": 13,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN027",
+      "split": "train",
+      "n_tokens": 11,
+      "n_en_hits": 1,
+      "n_ur_expansions": 1,
+      "spans": [
+        "chameleon"
+      ],
+      "en_titles": [
+        "Chameleon"
+      ]
+    },
+    {
+      "query_id": "KN028",
+      "split": "train",
+      "n_tokens": 12,
+      "n_en_hits": 1,
+      "n_ur_expansions": 4,
+      "spans": [
+        "external debt"
+      ],
+      "en_titles": [
+        "External debt"
+      ]
+    },
+    {
+      "query_id": "KN029",
+      "split": "train",
+      "n_tokens": 13,
+      "n_en_hits": 1,
+      "n_ur_expansions": 2,
+      "spans": [
+        "kumar sanu"
+      ],
+      "en_titles": [
+        "Kumar Sanu"
+      ]
+    },
+    {
+      "query_id": "KN030",
+      "split": "train",
+      "n_tokens": 10,
+      "n_en_hits": 1,
+      "n_ur_expansions": 2,
+      "spans": [
+        "imran tahir"
+      ],
+      "en_titles": [
+        "Imran Tahir"
+      ]
+    },
+    {
+      "query_id": "KN031",
+      "split": "train",
+      "n_tokens": 13,
+      "n_en_hits": 1,
+      "n_ur_expansions": 4,
+      "spans": [
+        "fifa"
+      ],
+      "en_titles": [
+        "FIFA"
+      ]
+    },
+    {
+      "query_id": "KN032",
+      "split": "train",
+      "n_tokens": 11,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN033",
+      "split": "train",
+      "n_tokens": 12,
+      "n_en_hits": 1,
+      "n_ur_expansions": 2,
+      "spans": [
+        "shane warne"
+      ],
+      "en_titles": [
+        "Shane Warne"
+      ]
+    },
+    {
+      "query_id": "KN034",
+      "split": "train",
+      "n_tokens": 10,
+      "n_en_hits": 1,
+      "n_ur_expansions": 1,
+      "spans": [
+        "dobara"
+      ],
+      "en_titles": [
+        "Dobara"
+      ]
+    },
+    {
+      "query_id": "KN035",
+      "split": "train",
+      "n_tokens": 10,
+      "n_en_hits": 2,
+      "n_ur_expansions": 8,
+      "spans": [
+        "zaheer khan",
+        "sagarika"
+      ],
+      "en_titles": [
+        "Zaheer Khan",
+        "Sagarika"
+      ]
+    },
+    {
+      "query_id": "KN036",
+      "split": "train",
+      "n_tokens": 13,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN037",
+      "split": "dev",
+      "n_tokens": 11,
+      "n_en_hits": 1,
+      "n_ur_expansions": 2,
+      "spans": [
+        "chehre"
+      ],
+      "en_titles": [
+        "Chehre"
+      ]
+    },
+    {
+      "query_id": "KN038",
+      "split": "dev",
+      "n_tokens": 12,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN039",
+      "split": "dev",
+      "n_tokens": 13,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN040",
+      "split": "dev",
+      "n_tokens": 13,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN041",
+      "split": "dev",
+      "n_tokens": 12,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN042",
+      "split": "dev",
+      "n_tokens": 11,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN043",
+      "split": "dev",
+      "n_tokens": 11,
+      "n_en_hits": 1,
+      "n_ur_expansions": 4,
+      "spans": [
+        "flagship"
+      ],
+      "en_titles": [
+        "Flagship"
+      ]
+    },
+    {
+      "query_id": "KN044",
+      "split": "dev",
+      "n_tokens": 11,
+      "n_en_hits": 1,
+      "n_ur_expansions": 4,
+      "spans": [
+        "facebook"
+      ],
+      "en_titles": [
+        "Facebook"
+      ]
+    },
+    {
+      "query_id": "KN045",
+      "split": "dev",
+      "n_tokens": 11,
+      "n_en_hits": 1,
+      "n_ur_expansions": 4,
+      "spans": [
+        "facebook"
+      ],
+      "en_titles": [
+        "Facebook"
+      ]
+    },
+    {
+      "query_id": "KN046",
+      "split": "dev",
+      "n_tokens": 14,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN047",
+      "split": "dev",
+      "n_tokens": 13,
+      "n_en_hits": 2,
+      "n_ur_expansions": 5,
+      "spans": [
+        "sindh",
+        "sales tax"
+      ],
+      "en_titles": [
+        "Sindh",
+        "Sales tax"
+      ]
+    },
+    {
+      "query_id": "KN048",
+      "split": "dev",
+      "n_tokens": 14,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN049",
+      "split": "dev",
+      "n_tokens": 12,
+      "n_en_hits": 1,
+      "n_ur_expansions": 4,
+      "spans": [
+        "lahore"
+      ],
+      "en_titles": [
+        "Lahore"
+      ]
+    },
+    {
+      "query_id": "KN050",
+      "split": "dev",
+      "n_tokens": 11,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN051",
+      "split": "dev",
+      "n_tokens": 13,
+      "n_en_hits": 1,
+      "n_ur_expansions": 2,
+      "spans": [
+        "gmail"
+      ],
+      "en_titles": [
+        "Gmail"
+      ]
+    },
+    {
+      "query_id": "KN052",
+      "split": "dev",
+      "n_tokens": 10,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    },
+    {
+      "query_id": "KN053",
+      "split": "dev",
+      "n_tokens": 13,
+      "n_en_hits": 1,
+      "n_ur_expansions": 4,
+      "spans": [
+        "huawei"
+      ],
+      "en_titles": [
+        "Huawei"
+      ]
+    },
+    {
+      "query_id": "KN054",
+      "split": "dev",
+      "n_tokens": 10,
+      "n_en_hits": 0,
+      "n_ur_expansions": 0,
+      "spans": [],
+      "en_titles": []
+    }
+  ]
+}

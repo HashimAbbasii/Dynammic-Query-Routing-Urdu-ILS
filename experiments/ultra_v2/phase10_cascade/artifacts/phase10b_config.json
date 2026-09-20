@@ -1,0 +1,22 @@
+{
+  "experiment_id": "PHASE10B-TAIL-PRESERVE",
+  "timestamp_utc": "2026-09-20T11:49:58Z",
+  "branch": "research/ultra-v2-strengthening",
+  "commit": "fd54ac9b65c2db93e7e16fbf0c5a40b6a6025be1",
+  "preregistration_sha256": "60f691c38e4b3d8a6f26f9c435cf4c0fa55ddafaa73dd7da1093bddfaa49e60e",
+  "parent_phase10_frozen": true,
+  "hybrid_keep": 40,
+  "cascade_slots": 10,
+  "rrf_k": 60,
+  "fusion": "option_b10b_hybrid_tail_preserve",
+  "trigger": "phase9_v2_title_hit_ge1",
+  "test_accessed": false,
+  "gates": {
+    "bm25": "PASS",
+    "dense": "PASS",
+    "hybrid": "PASS",
+    "ng3": "PASS",
+    "trigger_set": "PASS",
+    "option_b10b_repeat": "PASS"
+  }
+}

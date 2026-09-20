@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ultra.local/ultra_v2/kn_query.schema.json",
+  "title": "ULTRA v2 KN query row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "query_id",
+    "track",
+    "script",
+    "intent_type",
+    "length_bin",
+    "ambiguous",
+    "query_text",
+    "source_doc_id",
+    "source_article_hash_or_identifier",
+    "headline_overlap",
+    "writer_id",
+    "creation_timestamp",
+    "split",
+    "status"
+  ],
+  "properties": {
+    "query_id": { "type": "string", "pattern": "^KN[0-9]{3,}$" },
+    "track": { "const": "KN" },
+    "script": { "enum": ["URDU", "ROMAN", "MIXED", "OTHER"] },
+    "intent_type": {
+      "enum": ["factoid", "explanatory", "entity_person", "location", "event", "topical"]
+    },
+    "length_bin": { "enum": ["short", "medium", "long"] },
+    "ambiguous": { "type": "integer", "enum": [0, 1] },
+    "query_text": { "type": "string", "minLength": 1 },
+    "source_doc_id": { "type": "integer", "minimum": 0, "maximum": 111859 },
+    "source_article_hash_or_identifier": { "type": "string", "minLength": 1 },
+    "headline_overlap": { "type": "number", "minimum": 0, "maximum": 1 },
+    "writer_id": { "type": "string", "minLength": 1 },
+    "creation_timestamp": { "type": "string", "minLength": 1 },
+    "split": { "enum": ["train", "dev", "test"] },
+    "status": { "enum": ["draft", "accepted", "sealed", "contaminated"] },
+    "notes": { "type": "string" },
+    "interpretation_notes": { "type": "string" }
+  }
+}

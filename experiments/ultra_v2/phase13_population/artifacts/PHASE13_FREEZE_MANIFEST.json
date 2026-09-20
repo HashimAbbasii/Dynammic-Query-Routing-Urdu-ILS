@@ -1,0 +1,73 @@
+{
+  "kind": "ultra_v2_phase13_roman_kn_freeze",
+  "frozen_utc": "2026-09-20T13:51:32Z",
+  "method_disclosure": "Phase 13 queries KN091-KN119 are LLM-drafted (writer_id=LLM1), human naturalness-reviewed; distinct from original human-written Roman KN (W1).",
+  "retrieval_during_phase13_collection": false,
+  "scoring_during_phase13_collection": false,
+  "n_roman_kn_train_dev": 80,
+  "n_all_kn_train_dev": 83,
+  "n_phase13_new": 29,
+  "n_prior_roman": 51,
+  "phase13_ids": [
+    "KN091",
+    "KN092",
+    "KN093",
+    "KN094",
+    "KN095",
+    "KN096",
+    "KN097",
+    "KN098",
+    "KN099",
+    "KN100",
+    "KN101",
+    "KN102",
+    "KN103",
+    "KN104",
+    "KN105",
+    "KN106",
+    "KN107",
+    "KN108",
+    "KN109",
+    "KN110",
+    "KN111",
+    "KN112",
+    "KN113",
+    "KN114",
+    "KN115",
+    "KN116",
+    "KN117",
+    "KN118",
+    "KN119"
+  ],
+  "phase13_split": {
+    "train": 19,
+    "dev": 10
+  },
+  "phase13_intent_type": {
+    "event": 10,
+    "topical": 3,
+    "explanatory": 3,
+    "factoid": 8,
+    "entity_person": 5
+  },
+  "roman_kn_split": {
+    "train": 52,
+    "dev": 28
+  },
+  "revised_naturalness_ids": [
+    "KN096",
+    "KN103",
+    "KN104",
+    "KN108",
+    "KN112",
+    "KN115"
+  ],
+  "sha256": {
+    "benchmark/train/queries_kn.csv": "d2b8b225d08a56279e9419da3c4b89a27f401d7fbd04acde5104d70368369849",
+    "benchmark/dev/queries_kn.csv": "d708e251cdd1bfbef0f0258acee154034626b840035526f6fdbbdcd04f190ea8",
+    "phase13_population/artifacts/phase13_kn_drafts.csv": "11837748e48b3bbc866c7ba5a4ef56bbc28aeef8346c60206ba79626b1fccaa5"
+  },
+  "validate_benchmark_root": "experiments/ultra_v2/phase13_population/validation_bench",
+  "validate_status": "PASS",
+  "test_touched": false
+}

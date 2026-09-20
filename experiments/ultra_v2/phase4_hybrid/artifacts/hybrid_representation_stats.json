@@ -1,0 +1,11 @@
+{
+  "n_queries": 51,
+  "union_size_mean": 98.50980392156863,
+  "union_size_min": 51,
+  "union_size_max": 100,
+  "overlap_mean": 0.5294117647058824,
+  "overlap_min": 0,
+  "overlap_max": 12,
+  "rrf_k": 60,
+  "note": "Union of Method-D Top-50 and dense Top-50; overlap is |A\u2229B|."
+}

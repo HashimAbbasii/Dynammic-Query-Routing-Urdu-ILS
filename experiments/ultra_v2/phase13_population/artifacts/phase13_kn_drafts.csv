@@ -1,0 +1,30 @@
+﻿query_id,track,script,intent_type,length_bin,ambiguous,query_text,source_doc_id,source_article_hash_or_identifier,headline_overlap,writer_id,creation_timestamp,split,status
+KN091,KN,ROMAN,event,long,0,world t20 group b mein zimbabwe aur afghanistan ne dusri jeet kis venue par hasil ki,38098,index:38098,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN092,KN,ROMAN,topical,long,0,ankhon ki sehat ke liye age ke sath kaunse foods helpful bataye gaye hain,16031,index:16031,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN093,KN,ROMAN,explanatory,medium,0,imf pakistan representative ne exchange rate flexibility kyun zaroori qaraar di,71914,index:71914,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN094,KN,ROMAN,factoid,medium,0,whatsapp par youtube video bina app switch kiye kaise chalegi,22449,index:22449,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN095,KN,ROMAN,factoid,long,0,sri lanka ne india ke khilaf test series ke liye kitne players naamzad kiye,90343,index:90343,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN096,KN,ROMAN,topical,long,0,is sadi ki behtareen science fiction films ki list kis tarah ke viewers ke liye banayi gayi,17825,index:17825,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN097,KN,ROMAN,event,medium,0,chhote dukandaron ke liye sarkari fixed tax scheme kab announce hui,1296,index:1296,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN098,KN,ROMAN,entity_person,long,0,ufone newspaper ad campaign mein kis Pakistani actor ko phone ke sath dikhaya gaya,24064,index:24064,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN099,KN,ROMAN,event,medium,0,sharapova ki olympics appeal ka faisla kis date tak lataya gaya,88253,index:88253,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN100,KN,ROMAN,entity_person,medium,0,hania aamir ki doosri film mein leading pair kaun hai,11931,index:11931,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN101,KN,ROMAN,factoid,long,0,saudi arab mein doodh chini jaisi items ki qeemat mein kitni percent kami hui,73679,index:73679,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN102,KN,ROMAN,explanatory,long,0,ek hafte facebook band rakhne se mood aur sleep par kya asar bataya gaya,23448,index:23448,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN103,KN,ROMAN,event,long,0,kolkata knight riders ne peshawar zalmi exhibition match ki khabar ko kyun jhoot qaraar diya,45096,index:45096,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN104,KN,ROMAN,event,long,0,priyanka chopra ki sports film mary kom ke adhoore gaane ki video kab release hui,105214,index:105214,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN105,KN,ROMAN,factoid,long,0,petrol aur diesel ki qeemat mein ek rupay ka izafa kis wazir ne announce kiya,72411,index:72411,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN106,KN,ROMAN,factoid,long,0,australia ne great barrier reef bachane ke liye kaunsa starfish killing robot launch kiya,21365,index:21365,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN107,KN,ROMAN,event,medium,0,psl eliminator mein lahore qalandars ne peshawar zalmi ko kaise haraaya,51809,index:51809,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN108,KN,ROMAN,topical,medium,0,sri lanka mein haathi ne bus rok kar khana kaise maanga,48848,index:48848,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN109,KN,ROMAN,factoid,long,0,state bank ne agle do mahine ki monetary policy mein policy rate kitna kam kiya,62668,index:62668,0.000000,LLM1,2026-09-20T13:34:38Z,train,accepted
+KN110,KN,ROMAN,factoid,long,0,pakistan ne facebook se user data maangne ki requests mein kitna izafa dekha,20610,index:20610,0.000000,LLM1,2026-09-20T13:34:38Z,dev,accepted
+KN111,KN,ROMAN,event,long,0,england ke khilaf teesre test mein pakistan pehli innings mein follow-on kyun khela,80742,index:80742,0.000000,LLM1,2026-09-20T13:34:38Z,dev,accepted
+KN112,KN,ROMAN,entity_person,long,0,meera ne khud ko apna husband batane wale atiq ur rehman par kya ilzam lagaya,51022,index:51022,0.000000,LLM1,2026-09-20T13:34:38Z,dev,accepted
+KN113,KN,ROMAN,event,medium,0,samsung ne pakistan mein smart phone qeematon mein kami kab announce ki,2296,index:2296,0.000000,LLM1,2026-09-20T13:34:38Z,dev,accepted
+KN114,KN,ROMAN,factoid,medium,0,microsoft ne internet explorer support kab permanently band ki,19493,index:19493,0.000000,LLM1,2026-09-20T13:34:38Z,dev,accepted
+KN115,KN,ROMAN,entity_person,long,0,najam sethi ne rashid latif ko selector banane par ecb ka pressure kyun man liya,35735,index:35735,0.000000,LLM1,2026-09-20T13:34:38Z,dev,accepted
+KN116,KN,ROMAN,event,long,0,nobel laureate women ne gates foundation ko modi award par kya letter likha,6103,index:6103,0.000000,LLM1,2026-09-20T13:34:38Z,dev,accepted
+KN117,KN,ROMAN,event,long,0,sbp spokesman ne naye currency notes wali social media afwahen kyun kharij keen,64127,index:64127,0.000000,LLM1,2026-09-20T13:34:38Z,dev,accepted
+KN118,KN,ROMAN,explanatory,long,0,facebook rumour wale posts ko asal news samajhne se pehle kya check karna chahiye,21680,index:21680,0.000000,LLM1,2026-09-20T13:34:38Z,dev,accepted
+KN119,KN,ROMAN,entity_person,long,0,sarfaraz ahmed ne shoib akhtar ki tanqeed ko personal attack kyun qaraar diya,26893,index:26893,0.000000,LLM1,2026-09-20T13:34:38Z,dev,accepted

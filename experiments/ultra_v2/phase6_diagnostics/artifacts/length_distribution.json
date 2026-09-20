@@ -1,0 +1,38 @@
+{
+  "timestamp_utc": "2026-09-13T06:48:35Z",
+  "corpus_path": "data/clean_articles.csv",
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "n_docs": 111860,
+  "text_column": "combined_text",
+  "n_empty": 0,
+  "char_len": {
+    "mean": 1320.0307348471304,
+    "min": 171,
+    "max": 36265,
+    "p10": 532.0,
+    "p25": 711.0,
+    "p50": 1034.0,
+    "p75": 1581.0,
+    "p90": 2386.0,
+    "p95": 3036.0,
+    "p99": 5276.4100000000035
+  },
+  "whitespace_tokens": {
+    "mean": 277.75102807080276,
+    "min": 24,
+    "max": 7766,
+    "p10": 109.0,
+    "p25": 147.0,
+    "p50": 216.0,
+    "p75": 334.0,
+    "p90": 506.0,
+    "p95": 643.0,
+    "p99": 1130.0
+  },
+  "exceed_512_whitespace_tokens": {
+    "n": 10768,
+    "pct": 9.6263
+  },
+  "phase3_note": "Phase 3 DENSE-BASELINE did not chunk or average long documents. It truncated at the encoder max_seq_length=512 (model/subword tokens, not whitespace tokens). The 512-whitespace-token count is a proxy for how many articles are long enough that truncation is likely, not an exact count of XLM-R tokens discarded.",
+  "phase4_chunk_npy_used": false
+}

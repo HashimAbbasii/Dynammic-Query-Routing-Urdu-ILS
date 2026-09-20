@@ -1,0 +1,21 @@
+{
+  "kind": "ultra_v2_test_seal",
+  "benchmark_version": "ultra-v2-benchmark-v0",
+  "sealed_at_utc": "2026-09-09T11:50:32Z",
+  "created_by": "W1",
+  "input_path": "C:\\Users\\User\\OneDrive\\Documents\\ULTRA_Project\\experiments\\ultra_v2\\benchmark\\test",
+  "notes": "Phase 1 collection wave; TEST sealed after validate_benchmark.py PASS. No retrieval.",
+  "files": [
+    {
+      "relative_path": "queries_kn.csv",
+      "bytes": 6572,
+      "sha256": "d53ca290eba6cee36974e632f0b507d2236990f1109fab24a9d992bb50f3bf10"
+    },
+    {
+      "relative_path": "queries_nl.csv",
+      "bytes": 7209,
+      "sha256": "3b8617f57e9b046984d5b53a8c3d524c406dd10ffe80e142bac8085a913987dd"
+    }
+  ],
+  "aggregate_sha256": "48610601209c3723a7252bb9a197d8fbbece18640e0bf7aef972884816ab46c4"
+}

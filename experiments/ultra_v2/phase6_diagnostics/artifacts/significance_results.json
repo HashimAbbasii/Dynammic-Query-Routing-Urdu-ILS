@@ -1,0 +1,436 @@
+{
+  "timestamp_utc": "2026-09-13T06:48:04Z",
+  "n": 51,
+  "mcnemar_source": "exact_mcnemar copied verbatim from phase2_roman/run_r2_1_experiment.py",
+  "note_n_small": "n=51 is small. Non-significant results are underpowered to detect a difference, not proof of no difference.",
+  "pairs": [
+    {
+      "pair": "BM25 vs Dense",
+      "hit@5": {
+        "control": "BM25",
+        "treatment": "Dense",
+        "n": 51,
+        "hit_hit": 0,
+        "miss_miss": 32,
+        "control_miss_treatment_hit": 15,
+        "control_hit_treatment_miss": 4,
+        "treatment_unique_hit_ids": [
+          "KN011",
+          "KN013",
+          "KN016",
+          "KN017",
+          "KN019",
+          "KN029",
+          "KN031",
+          "KN033",
+          "KN034",
+          "KN039",
+          "KN046",
+          "KN048",
+          "KN049",
+          "KN052",
+          "KN053"
+        ],
+        "control_unique_hit_ids": [
+          "KN004",
+          "KN012",
+          "KN023",
+          "KN038"
+        ],
+        "mcnemar": {
+          "n_discordant": 19,
+          "n_control_miss_treatment_hit": 15,
+          "n_control_hit_treatment_miss": 4,
+          "p_two_sided": 0.019211,
+          "note": "exact McNemar (binomial, two-sided)"
+        },
+        "test_statistic": {
+          "discordant_pairs": 19,
+          "b_control_hit_treatment_miss": 4,
+          "c_control_miss_treatment_hit": 15
+        },
+        "p_two_sided": 0.019211,
+        "significant_at_0.05": true,
+        "verdict": "Dense has more unique hits than BM25 (15 vs 4 discordant). The difference IS statistically significant at p<0.05."
+      },
+      "hit@50": {
+        "control": "BM25",
+        "treatment": "Dense",
+        "n": 51,
+        "hit_hit": 2,
+        "miss_miss": 25,
+        "control_miss_treatment_hit": 20,
+        "control_hit_treatment_miss": 4,
+        "treatment_unique_hit_ids": [
+          "KN001",
+          "KN011",
+          "KN013",
+          "KN015",
+          "KN016",
+          "KN017",
+          "KN019",
+          "KN029",
+          "KN030",
+          "KN031",
+          "KN033",
+          "KN034",
+          "KN039",
+          "KN040",
+          "KN043",
+          "KN045",
+          "KN046",
+          "KN049",
+          "KN052",
+          "KN053"
+        ],
+        "control_unique_hit_ids": [
+          "KN004",
+          "KN012",
+          "KN023",
+          "KN038"
+        ],
+        "mcnemar": {
+          "n_discordant": 24,
+          "n_control_miss_treatment_hit": 20,
+          "n_control_hit_treatment_miss": 4,
+          "p_two_sided": 0.001544,
+          "note": "exact McNemar (binomial, two-sided)"
+        },
+        "test_statistic": {
+          "discordant_pairs": 24,
+          "b_control_hit_treatment_miss": 4,
+          "c_control_miss_treatment_hit": 20
+        },
+        "p_two_sided": 0.001544,
+        "significant_at_0.05": true,
+        "verdict": "Dense has more unique hits than BM25 (20 vs 4 discordant). The difference IS statistically significant at p<0.05."
+      }
+    },
+    {
+      "pair": "Dense vs Hybrid",
+      "hit@5": {
+        "control": "Dense",
+        "treatment": "Hybrid",
+        "n": 51,
+        "hit_hit": 8,
+        "miss_miss": 33,
+        "control_miss_treatment_hit": 3,
+        "control_hit_treatment_miss": 7,
+        "treatment_unique_hit_ids": [
+          "KN004",
+          "KN014",
+          "KN023"
+        ],
+        "control_unique_hit_ids": [
+          "KN013",
+          "KN019",
+          "KN031",
+          "KN033",
+          "KN039",
+          "KN052",
+          "KN053"
+        ],
+        "mcnemar": {
+          "n_discordant": 10,
+          "n_control_miss_treatment_hit": 3,
+          "n_control_hit_treatment_miss": 7,
+          "p_two_sided": 0.34375,
+          "note": "exact McNemar (binomial, two-sided)"
+        },
+        "test_statistic": {
+          "discordant_pairs": 10,
+          "b_control_hit_treatment_miss": 7,
+          "c_control_miss_treatment_hit": 3
+        },
+        "p_two_sided": 0.34375,
+        "significant_at_0.05": false,
+        "verdict": "Dense has more unique hits than Hybrid (7 vs 3 discordant). The difference is NOT statistically significant at p<0.05. n=51 is small, so treat this as underpowered to detect a difference, not as proof of no difference."
+      },
+      "hit@50": {
+        "control": "Dense",
+        "treatment": "Hybrid",
+        "n": 51,
+        "hit_hit": 21,
+        "miss_miss": 25,
+        "control_miss_treatment_hit": 4,
+        "control_hit_treatment_miss": 1,
+        "treatment_unique_hit_ids": [
+          "KN004",
+          "KN012",
+          "KN023",
+          "KN038"
+        ],
+        "control_unique_hit_ids": [
+          "KN040"
+        ],
+        "mcnemar": {
+          "n_discordant": 5,
+          "n_control_miss_treatment_hit": 4,
+          "n_control_hit_treatment_miss": 1,
+          "p_two_sided": 0.375,
+          "note": "exact McNemar (binomial, two-sided)"
+        },
+        "test_statistic": {
+          "discordant_pairs": 5,
+          "b_control_hit_treatment_miss": 1,
+          "c_control_miss_treatment_hit": 4
+        },
+        "p_two_sided": 0.375,
+        "significant_at_0.05": false,
+        "verdict": "Hybrid has more unique hits than Dense (4 vs 1 discordant). The difference is NOT statistically significant at p<0.05. n=51 is small, so treat this as underpowered to detect a difference, not as proof of no difference."
+      }
+    },
+    {
+      "pair": "BM25 vs Hybrid",
+      "hit@5": {
+        "control": "BM25",
+        "treatment": "Hybrid",
+        "n": 51,
+        "hit_hit": 2,
+        "miss_miss": 38,
+        "control_miss_treatment_hit": 9,
+        "control_hit_treatment_miss": 2,
+        "treatment_unique_hit_ids": [
+          "KN011",
+          "KN014",
+          "KN016",
+          "KN017",
+          "KN029",
+          "KN034",
+          "KN046",
+          "KN048",
+          "KN049"
+        ],
+        "control_unique_hit_ids": [
+          "KN012",
+          "KN038"
+        ],
+        "mcnemar": {
+          "n_discordant": 11,
+          "n_control_miss_treatment_hit": 9,
+          "n_control_hit_treatment_miss": 2,
+          "p_two_sided": 0.06543,
+          "note": "exact McNemar (binomial, two-sided)"
+        },
+        "test_statistic": {
+          "discordant_pairs": 11,
+          "b_control_hit_treatment_miss": 2,
+          "c_control_miss_treatment_hit": 9
+        },
+        "p_two_sided": 0.06543,
+        "significant_at_0.05": false,
+        "verdict": "Hybrid has more unique hits than BM25 (9 vs 2 discordant). The difference is NOT statistically significant at p<0.05. n=51 is small, so treat this as underpowered to detect a difference, not as proof of no difference."
+      },
+      "hit@50": {
+        "control": "BM25",
+        "treatment": "Hybrid",
+        "n": 51,
+        "hit_hit": 6,
+        "miss_miss": 26,
+        "control_miss_treatment_hit": 19,
+        "control_hit_treatment_miss": 0,
+        "treatment_unique_hit_ids": [
+          "KN001",
+          "KN011",
+          "KN013",
+          "KN015",
+          "KN016",
+          "KN017",
+          "KN019",
+          "KN029",
+          "KN030",
+          "KN031",
+          "KN033",
+          "KN034",
+          "KN039",
+          "KN043",
+          "KN045",
+          "KN046",
+          "KN049",
+          "KN052",
+          "KN053"
+        ],
+        "control_unique_hit_ids": [],
+        "mcnemar": {
+          "n_discordant": 19,
+          "n_control_miss_treatment_hit": 19,
+          "n_control_hit_treatment_miss": 0,
+          "p_two_sided": 4e-06,
+          "note": "exact McNemar (binomial, two-sided)"
+        },
+        "test_statistic": {
+          "discordant_pairs": 19,
+          "b_control_hit_treatment_miss": 0,
+          "c_control_miss_treatment_hit": 19
+        },
+        "p_two_sided": 4e-06,
+        "significant_at_0.05": true,
+        "verdict": "Hybrid has more unique hits than BM25 (19 vs 0 discordant). The difference IS statistically significant at p<0.05."
+      }
+    },
+    {
+      "pair": "Hybrid vs NG3",
+      "hit@5": {
+        "control": "Hybrid",
+        "treatment": "NG3",
+        "n": 51,
+        "hit_hit": 3,
+        "miss_miss": 37,
+        "control_miss_treatment_hit": 3,
+        "control_hit_treatment_miss": 8,
+        "treatment_unique_hit_ids": [
+          "KN035",
+          "KN038",
+          "KN050"
+        ],
+        "control_unique_hit_ids": [
+          "KN011",
+          "KN014",
+          "KN016",
+          "KN029",
+          "KN034",
+          "KN046",
+          "KN048",
+          "KN049"
+        ],
+        "mcnemar": {
+          "n_discordant": 11,
+          "n_control_miss_treatment_hit": 3,
+          "n_control_hit_treatment_miss": 8,
+          "p_two_sided": 0.226562,
+          "note": "exact McNemar (binomial, two-sided)"
+        },
+        "test_statistic": {
+          "discordant_pairs": 11,
+          "b_control_hit_treatment_miss": 8,
+          "c_control_miss_treatment_hit": 3
+        },
+        "p_two_sided": 0.226562,
+        "significant_at_0.05": false,
+        "verdict": "Hybrid has more unique hits than NG3 (8 vs 3 discordant). The difference is NOT statistically significant at p<0.05. n=51 is small, so treat this as underpowered to detect a difference, not as proof of no difference."
+      },
+      "hit@50": {
+        "control": "Hybrid",
+        "treatment": "NG3",
+        "n": 51,
+        "hit_hit": 6,
+        "miss_miss": 24,
+        "control_miss_treatment_hit": 2,
+        "control_hit_treatment_miss": 19,
+        "treatment_unique_hit_ids": [
+          "KN035",
+          "KN050"
+        ],
+        "control_unique_hit_ids": [
+          "KN001",
+          "KN011",
+          "KN012",
+          "KN013",
+          "KN014",
+          "KN015",
+          "KN016",
+          "KN019",
+          "KN029",
+          "KN030",
+          "KN031",
+          "KN033",
+          "KN034",
+          "KN043",
+          "KN045",
+          "KN046",
+          "KN049",
+          "KN052",
+          "KN053"
+        ],
+        "mcnemar": {
+          "n_discordant": 21,
+          "n_control_miss_treatment_hit": 2,
+          "n_control_hit_treatment_miss": 19,
+          "p_two_sided": 0.000221,
+          "note": "exact McNemar (binomial, two-sided)"
+        },
+        "test_statistic": {
+          "discordant_pairs": 21,
+          "b_control_hit_treatment_miss": 19,
+          "c_control_miss_treatment_hit": 2
+        },
+        "p_two_sided": 0.000221,
+        "significant_at_0.05": true,
+        "verdict": "Hybrid has more unique hits than NG3 (19 vs 2 discordant). The difference IS statistically significant at p<0.05."
+      }
+    },
+    {
+      "pair": "Hybrid vs BM25∪Dense∪NG3",
+      "hit@5": {
+        "control": "Hybrid",
+        "treatment": "BM25∪Dense∪NG3",
+        "n": 51,
+        "hit_hit": 10,
+        "miss_miss": 29,
+        "control_miss_treatment_hit": 11,
+        "control_hit_treatment_miss": 1,
+        "treatment_unique_hit_ids": [
+          "KN012",
+          "KN013",
+          "KN019",
+          "KN031",
+          "KN033",
+          "KN035",
+          "KN038",
+          "KN039",
+          "KN050",
+          "KN052",
+          "KN053"
+        ],
+        "control_unique_hit_ids": [
+          "KN014"
+        ],
+        "mcnemar": {
+          "n_discordant": 12,
+          "n_control_miss_treatment_hit": 11,
+          "n_control_hit_treatment_miss": 1,
+          "p_two_sided": 0.006348,
+          "note": "exact McNemar (binomial, two-sided)"
+        },
+        "test_statistic": {
+          "discordant_pairs": 12,
+          "b_control_hit_treatment_miss": 1,
+          "c_control_miss_treatment_hit": 11
+        },
+        "p_two_sided": 0.006348,
+        "significant_at_0.05": true,
+        "verdict": "BM25∪Dense∪NG3 has more unique hits than Hybrid (11 vs 1 discordant). The difference IS statistically significant at p<0.05."
+      },
+      "hit@50": {
+        "control": "Hybrid",
+        "treatment": "BM25∪Dense∪NG3",
+        "n": 51,
+        "hit_hit": 25,
+        "miss_miss": 23,
+        "control_miss_treatment_hit": 3,
+        "control_hit_treatment_miss": 0,
+        "treatment_unique_hit_ids": [
+          "KN035",
+          "KN040",
+          "KN050"
+        ],
+        "control_unique_hit_ids": [],
+        "mcnemar": {
+          "n_discordant": 3,
+          "n_control_miss_treatment_hit": 3,
+          "n_control_hit_treatment_miss": 0,
+          "p_two_sided": 0.25,
+          "note": "exact McNemar (binomial, two-sided)"
+        },
+        "test_statistic": {
+          "discordant_pairs": 3,
+          "b_control_hit_treatment_miss": 0,
+          "c_control_miss_treatment_hit": 3
+        },
+        "p_two_sided": 0.25,
+        "significant_at_0.05": false,
+        "verdict": "BM25∪Dense∪NG3 has more unique hits than Hybrid (3 vs 0 discordant). The difference is NOT statistically significant at p<0.05. n=51 is small, so treat this as underpowered to detect a difference, not as proof of no difference."
+      }
+    }
+  ]
+}

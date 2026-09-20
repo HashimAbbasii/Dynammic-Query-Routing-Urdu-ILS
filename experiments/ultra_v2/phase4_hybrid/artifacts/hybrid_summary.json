@@ -1,0 +1,211 @@
+{
+  "experiment_id": "HYBRID-RRF",
+  "timestamp_utc": "2026-09-12T13:18:32Z",
+  "decision": "HYBRID RRF PARTIALLY SUPPORTED",
+  "test_accessed": false,
+  "gates": {
+    "bm25_gold_rank": "PASS",
+    "dense_gold_rank_and_rank1": "PASS",
+    "rrf_second_pass": "PASS"
+  },
+  "frozen_bm25": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@5_n": 4,
+    "hit@10_n": 4,
+    "hit@50_n": 6,
+    "mrr": 0.0375
+  },
+  "frozen_dense": {
+    "n": 51,
+    "hit@1_n": 5,
+    "hit@5_n": 15,
+    "hit@10_n": 16,
+    "hit@50_n": 22,
+    "mrr": 0.1726
+  },
+  "reproduced_bm25": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@1": 0.0196,
+    "hit@5_n": 4,
+    "hit@5": 0.0784,
+    "hit@10_n": 4,
+    "hit@10": 0.0784,
+    "hit@50_n": 6,
+    "hit@50": 0.1176,
+    "mrr": 0.0375
+  },
+  "reproduced_dense": {
+    "n": 51,
+    "hit@1_n": 5,
+    "hit@1": 0.098,
+    "hit@5_n": 15,
+    "hit@5": 0.2941,
+    "hit@10_n": 16,
+    "hit@10": 0.3137,
+    "hit@50_n": 22,
+    "hit@50": 0.4314,
+    "mrr": 0.1726
+  },
+  "hybrid_rrf": {
+    "n": 51,
+    "hit@1_n": 3,
+    "hit@1": 0.0588,
+    "hit@5_n": 11,
+    "hit@5": 0.2157,
+    "hit@10_n": 19,
+    "hit@10": 0.3725,
+    "hit@50_n": 25,
+    "hit@50": 0.4902,
+    "mrr": 0.1422
+  },
+  "transition_vs_bm25_top5": {
+    "hit_hit": 2,
+    "hit_miss": 2,
+    "miss_hit": 9,
+    "miss_miss": 38,
+    "recovered": 9,
+    "regressed": 2,
+    "n": 51,
+    "mcnemar_exact": {
+      "n_discordant": 11,
+      "regressed": 2,
+      "recovered": 9,
+      "p_two_sided_exact": 0.06543
+    }
+  },
+  "transition_vs_bm25_top50": {
+    "hit_hit": 6,
+    "hit_miss": 0,
+    "miss_hit": 19,
+    "miss_miss": 26,
+    "recovered": 19,
+    "regressed": 0,
+    "n": 51,
+    "mcnemar_exact": {
+      "n_discordant": 19,
+      "regressed": 0,
+      "recovered": 19,
+      "p_two_sided_exact": 4e-06
+    }
+  },
+  "transition_vs_dense_top5": {
+    "hit_hit": 8,
+    "hit_miss": 7,
+    "miss_hit": 3,
+    "miss_miss": 33,
+    "recovered": 3,
+    "regressed": 7,
+    "n": 51,
+    "mcnemar_exact": {
+      "n_discordant": 10,
+      "regressed": 7,
+      "recovered": 3,
+      "p_two_sided_exact": 0.34375
+    }
+  },
+  "transition_vs_dense_top50": {
+    "hit_hit": 21,
+    "hit_miss": 1,
+    "miss_hit": 4,
+    "miss_miss": 25,
+    "recovered": 4,
+    "regressed": 1,
+    "n": 51,
+    "mcnemar_exact": {
+      "n_discordant": 5,
+      "regressed": 1,
+      "recovered": 4,
+      "p_two_sided_exact": 0.375
+    }
+  },
+  "case_counts": {
+    "A_bm25_success_retained@50": 6,
+    "B_dense_success_retained@50": 21,
+    "C_bm25_miss_recovered@50": 19,
+    "D_dense_miss_recovered@50": 4,
+    "E_both_miss@50": 25,
+    "F_lost_single_system_success@50": 1,
+    "C_bm25_miss_recovered@5": 9,
+    "D_dense_miss_recovered@5": 3,
+    "F_lost_bm25_hit5": 2,
+    "F_lost_dense_hit5": 7,
+    "F_lost_bm25_hit50": 0,
+    "F_lost_dense_hit50": 1
+  },
+  "room_cat1": {
+    "ids": [
+      "KN001",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN011",
+      "KN018",
+      "KN037",
+      "KN045",
+      "KN047",
+      "KN050",
+      "KN051"
+    ],
+    "n": 11,
+    "bm25_hit@50": 0,
+    "dense_hit@50": 3,
+    "hybrid_hit@50": 3,
+    "bm25_hit@5": 0,
+    "dense_hit@5": 1,
+    "hybrid_hit@5": 1
+  },
+  "vocab_controls": {
+    "ids": [
+      "KN017",
+      "KN020",
+      "KN041"
+    ],
+    "n": 3,
+    "bm25_hit@50": 0,
+    "dense_hit@50": 1,
+    "hybrid_hit@50": 1,
+    "bm25_hit@5": 0,
+    "dense_hit@5": 1,
+    "hybrid_hit@5": 1
+  },
+  "runtime": {
+    "bm25_cache_load_seconds": 24.284,
+    "bm25_search_seconds": 0.755,
+    "dense_npy_load_seconds": 0.702,
+    "encoder_load_seconds": 69.963,
+    "query_embed_seconds": 2.191,
+    "dense_search_seconds": 1.856,
+    "device": "cpu",
+    "cuda": false,
+    "document_embeddings_regenerated": false,
+    "wall_seconds": 99.911,
+    "hardware": {
+      "device": "cpu",
+      "cuda": false,
+      "platform": "Windows-11-10.0.26100-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+      "cpu_count": 12,
+      "python": "3.13.9",
+      "packages": {
+        "numpy": "2.3.5",
+        "torch": "2.13.0+cpu",
+        "sentence_transformers": "5.7.0"
+      }
+    }
+  },
+  "safety": {
+    "test_accessed": false,
+    "frozen_m0_modified": false,
+    "plos_modified": false,
+    "phase3_modified": false,
+    "r2_modified": false,
+    "query_tuning": false,
+    "model_shopping": false,
+    "parameter_tuning": false,
+    "reranking": false,
+    "gold_injection": false,
+    "document_embeddings_regenerated": false
+  }
+}

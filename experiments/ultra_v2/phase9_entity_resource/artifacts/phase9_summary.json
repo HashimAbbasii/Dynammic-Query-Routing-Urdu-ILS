@@ -1,0 +1,299 @@
+{
+  "experiment_id": "PHASE9-WPTITLES",
+  "timestamp_utc": "2026-09-17T12:34:24Z",
+  "decision": "PHASE9 PARTIALLY SUPPORTED",
+  "test_accessed": false,
+  "gates": {
+    "corpus_sha": "PASS",
+    "dict_sha": "PASS",
+    "title_csv_sha": "PASS",
+    "prereg_sha": "PASS",
+    "wordlist_sha": "PASS",
+    "query_gold_vs_phase2_5": "PASS",
+    "bm25_vs_r2_b0": "PASS",
+    "search_repeat": "PASS"
+  },
+  "frozen_bm25": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@5_n": 4,
+    "hit@10_n": 4,
+    "hit@50_n": 6,
+    "mrr": 0.0375
+  },
+  "reproduced_bm25": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@1": 0.0196,
+    "hit@5_n": 4,
+    "hit@5": 0.0784,
+    "hit@10_n": 4,
+    "hit@10": 0.0784,
+    "hit@50_n": 6,
+    "hit@50": 0.1176,
+    "mrr": 0.0375
+  },
+  "phase9_wptitles": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@1": 0.0196,
+    "hit@5_n": 5,
+    "hit@5": 0.098,
+    "hit@10_n": 6,
+    "hit@10": 0.1176,
+    "hit@50_n": 10,
+    "hit@50": 0.1961,
+    "mrr": 0.0478
+  },
+  "dense_from_frozen_csv": {
+    "hit@1_n": 5,
+    "hit@5_n": 15,
+    "hit@10_n": 16,
+    "hit@50_n": 22,
+    "mrr": 0.1726
+  },
+  "hybrid_from_frozen_csv": {
+    "hit@1_n": 3,
+    "hit@5_n": 11,
+    "hit@10_n": 19,
+    "hit@50_n": 25,
+    "mrr": 0.1422
+  },
+  "ng3_from_frozen_csv": {
+    "hit@1_n": 3,
+    "hit@5_n": 6,
+    "hit@10_n": 6,
+    "hit@50_n": 8,
+    "mrr": 0.075
+  },
+  "n_queries_with_ge1_title_hit": 22,
+  "overlap_hit50": {
+    "p9_vs_bm25": {
+      "hit_hit": 5,
+      "a_hit_b_miss": 5,
+      "a_miss_b_hit": 1,
+      "miss_miss": 40,
+      "n": 51
+    },
+    "p9_vs_dense": {
+      "hit_hit": 4,
+      "a_hit_b_miss": 6,
+      "a_miss_b_hit": 18,
+      "miss_miss": 23,
+      "n": 51
+    },
+    "p9_vs_ng3": {
+      "hit_hit": 4,
+      "a_hit_b_miss": 6,
+      "a_miss_b_hit": 4,
+      "miss_miss": 37,
+      "n": 51
+    },
+    "p9_vs_hybrid": {
+      "hit_hit": 8,
+      "a_hit_b_miss": 2,
+      "a_miss_b_hit": 17,
+      "miss_miss": 24,
+      "n": 51
+    }
+  },
+  "quad23": {
+    "n": 23,
+    "ids": [
+      "KN002",
+      "KN005",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN018",
+      "KN020",
+      "KN021",
+      "KN022",
+      "KN024",
+      "KN025",
+      "KN026",
+      "KN027",
+      "KN028",
+      "KN032",
+      "KN036",
+      "KN037",
+      "KN041",
+      "KN042",
+      "KN044",
+      "KN047",
+      "KN051",
+      "KN054"
+    ],
+    "p9_recovered": [
+      "KN027",
+      "KN051"
+    ],
+    "p9_recovered_n": 2,
+    "p9_remaining": [
+      "KN002",
+      "KN005",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN018",
+      "KN020",
+      "KN021",
+      "KN022",
+      "KN024",
+      "KN025",
+      "KN026",
+      "KN028",
+      "KN032",
+      "KN036",
+      "KN037",
+      "KN041",
+      "KN042",
+      "KN044",
+      "KN047",
+      "KN054"
+    ]
+  },
+  "room_cat1": {
+    "ids": [
+      "KN001",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN011",
+      "KN018",
+      "KN037",
+      "KN045",
+      "KN047",
+      "KN050",
+      "KN051"
+    ],
+    "bm25_hit@50": 0,
+    "bm25_ids": [],
+    "dense_hit@50": 3,
+    "dense_ids": [
+      "KN001",
+      "KN011",
+      "KN045"
+    ],
+    "hybrid_hit@50": 3,
+    "hybrid_ids": [
+      "KN001",
+      "KN011",
+      "KN045"
+    ],
+    "ng3_hit@50": 1,
+    "ng3_ids": [
+      "KN050"
+    ],
+    "p9_hit@50": 1,
+    "p9_ids": [
+      "KN051"
+    ]
+  },
+  "vs_bm25": {
+    "recovered_hit50": [
+      "KN027",
+      "KN029",
+      "KN030",
+      "KN033",
+      "KN051"
+    ],
+    "regressed_hit50": [
+      "KN014"
+    ],
+    "recovered_hit5": [
+      "KN027",
+      "KN029"
+    ],
+    "regressed_hit5": [
+      "KN023"
+    ],
+    "bm25_successes_kept": 5
+  },
+  "focus_legitimate_expansions": {
+    "KN006": {
+      "n_en_hits": 1,
+      "spans": "ipl",
+      "en_titles": "Indian Premier League",
+      "bm25_rank": null,
+      "p9_rank": null,
+      "p9_hit@50": 0,
+      "status": "MISS"
+    },
+    "KN018": {
+      "n_en_hits": 2,
+      "spans": "mabni | fable",
+      "en_titles": "Mabni | Fable",
+      "bm25_rank": null,
+      "p9_rank": null,
+      "p9_hit@50": 0,
+      "status": "MISS"
+    },
+    "KN037": {
+      "n_en_hits": 1,
+      "spans": "chehre",
+      "en_titles": "Chehre",
+      "bm25_rank": null,
+      "p9_rank": null,
+      "p9_hit@50": 0,
+      "status": "MISS"
+    },
+    "KN044": {
+      "n_en_hits": 1,
+      "spans": "facebook",
+      "en_titles": "Facebook",
+      "bm25_rank": null,
+      "p9_rank": null,
+      "p9_hit@50": 0,
+      "status": "MISS"
+    },
+    "KN045": {
+      "n_en_hits": 1,
+      "spans": "facebook",
+      "en_titles": "Facebook",
+      "bm25_rank": null,
+      "p9_rank": null,
+      "p9_hit@50": 0,
+      "status": "MISS"
+    },
+    "KN047": {
+      "n_en_hits": 2,
+      "spans": "sindh | sales tax",
+      "en_titles": "Sindh | Sales tax",
+      "bm25_rank": null,
+      "p9_rank": null,
+      "p9_hit@50": 0,
+      "status": "MISS"
+    },
+    "KN051": {
+      "n_en_hits": 1,
+      "spans": "gmail",
+      "en_titles": "Gmail",
+      "bm25_rank": null,
+      "p9_rank": 12,
+      "p9_hit@50": 1,
+      "status": "RANK"
+    }
+  },
+  "runtime": {
+    "search_seconds": 0.812,
+    "wall_seconds": 21.16,
+    "device": "cpu",
+    "cuda": false,
+    "hardware": {
+      "platform": "Windows-11-10.0.26100-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+      "cpu_count": 12,
+      "python": "3.13.9"
+    }
+  },
+  "safety": {
+    "test_accessed": false,
+    "table_subset_by_queries": false,
+    "document_reprocessed": false,
+    "fusion": false,
+    "reranking": false,
+    "parameter_tuning": false,
+    "phase2_8_modified": false
+  }
+}

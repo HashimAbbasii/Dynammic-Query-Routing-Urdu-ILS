@@ -1,0 +1,52 @@
+experiment_id,query_id,split,script,source_doc_id,query_tokens,gold_rank,in_top50,hit@5,category
+R2-B0,KN001,train,ROMAN,92506,malaysia air race world championship third round kab shuru hua,,0,0,VOCAB/MISS
+R2-B0,KN002,train,ROMAN,90691,zim t20 mein hosts ko chase ke liye kitna target mila,,0,0,VOCAB/MISS
+R2-B0,KN004,train,ROMAN,14991,desi ghee sehat ke liye faida mand hai ya nuqsan deh,1,1,1,SUCCESS
+R2-B0,KN005,train,ROMAN,64084,iran amreeka tension ke baad local equities opening par kyun rebound hua,,0,0,VOCAB/MISS
+R2-B0,KN006,train,ROMAN,29860,kolkata ne delhi ko ipl thriller mein kis margin se haraaya,,0,0,VOCAB/MISS
+R2-B0,KN008,train,ROMAN,47197,teen tennis sensation ne kaunsa canadian hardcourt title jeeta,,0,0,VOCAB/MISS
+R2-B0,KN010,train,ROMAN,1674,benami accounts walo ke khilaf revenue board ne kya saza tajweez ki,,0,0,VOCAB/MISS
+R2-B0,KN011,train,ROMAN,60226,france ki hydrogen solar wind powered boat ka naam kya hai,,0,0,VOCAB/MISS
+R2-B0,KN012,train,ROMAN,13580,comedy nights wali dadi wapas kyun nahi ban na chahte,5,1,1,SUCCESS
+R2-B0,KN013,train,ROMAN,82652,world cup mein pakistan india fixture ke tickets black mein kyun bik rahe,,0,0,VOCAB/MISS
+R2-B0,KN014,train,ROMAN,79754,mobile slow charge hone ki user side ghalti kya ho sakti hai,44,1,0,RANK
+R2-B0,KN015,train,ROMAN,22450,viral maths puzzle ne internet users ko kyun confuse kiya,,0,0,VOCAB/MISS
+R2-B0,KN016,train,ROMAN,100673,priyanka ke african kids se hair compliment exchange kis tour par hua,,0,0,VOCAB/MISS
+R2-B0,KN017,train,ROMAN,19341,boom supersonic passenger prototype kab unveil hua,,0,0,VOCAB/MISS
+R2-B0,KN018,train,ROMAN,17943,aladdin kahani kisi haqeeqi shakhs par mabni hai ya sirf fable hai,,0,0,VOCAB/MISS
+R2-B0,KN019,train,ROMAN,5092,jlo ne 50 saal ki umar mein fitness kaise maintain ki,,0,0,VOCAB/MISS
+R2-B0,KN020,train,ROMAN,60895,cpec joint cooperation committee ka session kis shehar mein chal raha tha,,0,0,VOCAB/MISS
+R2-B0,KN021,train,ROMAN,13065,jungle book live action ne india box office par kya record banaya,,0,0,VOCAB/MISS
+R2-B0,KN022,train,ROMAN,14664,shahid mira sangeet se pehle shaadi ki tayyariyan kab khatam huin,,0,0,VOCAB/MISS
+R2-B0,KN023,train,ROMAN,12128,qawwal aziz mian ki barsi kis tarah yaad ki jati hai,3,1,1,SUCCESS
+R2-B0,KN024,train,ROMAN,31154,west indies ke khilaf dubai day night series pakistan ka kaunsa milestone test hai,,0,0,VOCAB/MISS
+R2-B0,KN025,train,ROMAN,60831,adb country director ne pm se mil kar investment ke bare mein kya kaha,,0,0,VOCAB/MISS
+R2-B0,KN026,train,ROMAN,102664,salman ki wrestler film ka pehla poster kis director ki movie ka hai,,0,0,VOCAB/MISS
+R2-B0,KN027,train,ROMAN,59279,chameleon satellite minutes mein naya mission kyun assume kar sakte hain,,0,0,VOCAB/MISS
+R2-B0,KN028,train,ROMAN,76785,state bank ke mutabiq external debt burden mein kitni percent kami hui,,0,0,VOCAB/MISS
+R2-B0,KN029,train,ROMAN,101347,houston new year show mein kumar sanu kis community event ka hissa bane,,0,0,VOCAB/MISS
+R2-B0,KN030,train,ROMAN,47083,imran tahir odi bowling ranking mein number one kab bane,,0,0,VOCAB/MISS
+R2-B0,KN031,train,ROMAN,29423,fifa ranking mein germany top par hai to pakistan ka number kya hai,,0,0,VOCAB/MISS
+R2-B0,KN032,train,ROMAN,41695,umar akmal par fixing case mein kitne saal ki pabandi lagi,,0,0,VOCAB/MISS
+R2-B0,KN033,train,ROMAN,81673,shane warne test cap auction se bushfire fund ko kitni raqam mili,,0,0,VOCAB/MISS
+R2-B0,KN034,train,ROMAN,13398,sharmeen obaid oscar short documentary category mein dobara kab jeeti,,0,0,VOCAB/MISS
+R2-B0,KN035,train,ROMAN,10546,zaheer khan ne sagarika se shaadi ka elaan kab kiya,,0,0,VOCAB/MISS
+R2-B0,KN036,train,ROMAN,76509,aglay das mahine mein local oil gas output mein kya izafa verqai hai,,0,0,VOCAB/MISS
+R2-B0,KN037,dev,ROMAN,22739,nayi photo app chehre tabdeel karne ke ilawa kya karti hai,,0,0,VOCAB/MISS
+R2-B0,KN038,dev,ROMAN,40057,peshawar used car mela mein logon ki dilchaspi kis cheez par thi,3,1,1,SUCCESS
+R2-B0,KN039,dev,ROMAN,23062,nokia android handset china launch par ek minute mein kyun sold out hua,,0,0,VOCAB/MISS
+R2-B0,KN040,dev,ROMAN,24596,samsung ne galaxy s7 active ko galti se kis app mein leak kiya,,0,0,VOCAB/MISS
+R2-B0,KN041,dev,ROMAN,65903,caretaker finance minister ne cpec projects mukammal karne ka kya wazheh kiya,,0,0,VOCAB/MISS
+R2-B0,KN042,dev,ROMAN,111652,current account deficit ki raftaar slow kyun hui sbp ke mutabiq,,0,0,VOCAB/MISS
+R2-B0,KN043,dev,ROMAN,21399,moto p30 front design kis apple flagship se milta julta hai,,0,0,VOCAB/MISS
+R2-B0,KN044,dev,ROMAN,23544,twitter ka naya feature facebook snapchat se muqabla kyun karta hai,,0,0,VOCAB/MISS
+R2-B0,KN045,dev,ROMAN,19783,messenger rooms jaisa group video chat facebook ne kab add kiya,,0,0,VOCAB/MISS
+R2-B0,KN046,dev,ROMAN,109714,ml1 railway upgrade ko deadline se pehle track par lanay ki tayyari kya hai,,0,0,VOCAB/MISS
+R2-B0,KN047,dev,ROMAN,61862,fbr aur sindh revenue board ne sales tax input par kya deal ki,,0,0,VOCAB/MISS
+R2-B0,KN048,dev,ROMAN,20073,samsung s10 lite aur note 10 lite 2020 lineup kab launch honay walay thay,42,1,0,RANK
+R2-B0,KN049,dev,ROMAN,86593,lahore psl final ke liye stadium ke gird kitne personnel deploy honge,,0,0,VOCAB/MISS
+R2-B0,KN050,dev,ROMAN,34762,afghanistan world cup jeetne ki peshgoi kis foundation par ki gai,,0,0,VOCAB/MISS
+R2-B0,KN051,dev,ROMAN,21160,gmail ke naye interface ko purane layout jaisa kaise banaya ja sakta hai,,0,0,VOCAB/MISS
+R2-B0,KN052,dev,ROMAN,59426,samsung ne vegas ces par human like robots kyun dikhaye,,0,0,VOCAB/MISS
+R2-B0,KN053,dev,ROMAN,22115,huawei mate 10 lite pakistan mein pehli baar kitne cameras ke sath aaya,,0,0,VOCAB/MISS
+R2-B0,KN054,dev,ROMAN,4400,kangana ke bayan par momina iram ne kya jawab diya,,0,0,VOCAB/MISS

@@ -1,0 +1,244 @@
+{
+  "experiment_id": "R2-1",
+  "timestamp_utc": "2026-09-11T07:25:48Z",
+  "test_accessed": false,
+  "baseline_reproduction": "PASS",
+  "decision": "R2-1 NOT SUPPORTED — CLOSE FALLBACK REPRESENTATION DIRECTION",
+  "hypothesis": "Replacing only the current document-side fallback romanization with a deterministic principled Latin/Roman representation will increase gold-document candidate inclusion for Roman Urdu KN queries, especially ROOM Category 1 failures, without changing query representation, routing, BM25 parameters, dictionary behavior, or benchmark data.",
+  "control_metrics": {
+    "train": {
+      "n": 33,
+      "hit@1_n": 1,
+      "hit@1": 0.0303,
+      "hit@5_n": 3,
+      "hit@5": 0.0909,
+      "hit@10_n": 3,
+      "hit@10": 0.0909,
+      "hit@50_n": 4,
+      "hit@50": 0.1212,
+      "mrr": 0.0472
+    },
+    "dev": {
+      "n": 18,
+      "hit@1_n": 0,
+      "hit@1": 0.0,
+      "hit@5_n": 1,
+      "hit@5": 0.0556,
+      "hit@10_n": 1,
+      "hit@10": 0.0556,
+      "hit@50_n": 2,
+      "hit@50": 0.1111,
+      "mrr": 0.0198
+    },
+    "train+dev": {
+      "n": 51,
+      "hit@1_n": 1,
+      "hit@1": 0.0196,
+      "hit@5_n": 4,
+      "hit@5": 0.0784,
+      "hit@10_n": 4,
+      "hit@10": 0.0784,
+      "hit@50_n": 6,
+      "hit@50": 0.1176,
+      "mrr": 0.0375
+    }
+  },
+  "treatment_metrics": {
+    "train": {
+      "n": 33,
+      "hit@1_n": 1,
+      "hit@1": 0.0303,
+      "hit@5_n": 2,
+      "hit@5": 0.0606,
+      "hit@10_n": 3,
+      "hit@10": 0.0909,
+      "hit@50_n": 4,
+      "hit@50": 0.1212,
+      "mrr": 0.0445
+    },
+    "dev": {
+      "n": 18,
+      "hit@1_n": 0,
+      "hit@1": 0.0,
+      "hit@5_n": 1,
+      "hit@5": 0.0556,
+      "hit@10_n": 1,
+      "hit@10": 0.0556,
+      "hit@50_n": 2,
+      "hit@50": 0.1111,
+      "mrr": 0.0198
+    },
+    "train+dev": {
+      "n": 51,
+      "hit@1_n": 1,
+      "hit@1": 0.0196,
+      "hit@5_n": 3,
+      "hit@5": 0.0588,
+      "hit@10_n": 4,
+      "hit@10": 0.0784,
+      "hit@50_n": 6,
+      "hit@50": 0.1176,
+      "mrr": 0.0358
+    }
+  },
+  "primary": {
+    "metric": "Hit@50 on R2-C0 ROOM Category 1",
+    "room_category_1_ids": [
+      "KN001",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN011",
+      "KN018",
+      "KN037",
+      "KN045",
+      "KN047",
+      "KN050",
+      "KN051"
+    ],
+    "baseline": {
+      "n": 11,
+      "hit@50_n": 0,
+      "hit@50": 0.0
+    },
+    "treatment": {
+      "n": 11,
+      "hit@50_n": 0,
+      "hit@50": 0.0
+    },
+    "absolute_change_n": 0,
+    "absolute_change_pp": 0.0,
+    "newly_recovered": [],
+    "regressions": [],
+    "remaining_failures": [
+      "KN001",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN011",
+      "KN018",
+      "KN037",
+      "KN045",
+      "KN047",
+      "KN050",
+      "KN051"
+    ]
+  },
+  "category_analysis": {
+    "ROOM": {
+      "n": 19,
+      "b_hit50": 0,
+      "t_hit50": 0,
+      "b_hit5": 0,
+      "t_hit5": 0,
+      "recovered": 0,
+      "regressed": 0
+    },
+    "ENT": {
+      "n": 16,
+      "b_hit50": 0,
+      "t_hit50": 0,
+      "b_hit5": 0,
+      "t_hit5": 0,
+      "recovered": 0,
+      "regressed": 0
+    },
+    "SUCCESS": {
+      "n": 4,
+      "b_hit50": 4,
+      "t_hit50": 4,
+      "b_hit5": 4,
+      "t_hit5": 3,
+      "recovered": 0,
+      "regressed": 0
+    },
+    "NEIGH": {
+      "n": 1,
+      "b_hit50": 0,
+      "t_hit50": 0,
+      "b_hit5": 0,
+      "t_hit5": 0,
+      "recovered": 0,
+      "regressed": 0
+    },
+    "RANK": {
+      "n": 2,
+      "b_hit50": 2,
+      "t_hit50": 2,
+      "b_hit5": 0,
+      "t_hit5": 0,
+      "recovered": 0,
+      "regressed": 0
+    },
+    "VOCAB": {
+      "n": 9,
+      "b_hit50": 0,
+      "t_hit50": 0,
+      "b_hit5": 0,
+      "t_hit5": 0,
+      "recovered": 0,
+      "regressed": 0
+    }
+  },
+  "negative_controls": {
+    "KN017": {
+      "category": "VOCAB",
+      "baseline_rank": "",
+      "treatment_rank": "",
+      "baseline_hit50": 0,
+      "treatment_hit50": 0,
+      "overlap_delta": 0
+    },
+    "KN020": {
+      "category": "VOCAB",
+      "baseline_rank": "",
+      "treatment_rank": "",
+      "baseline_hit50": 0,
+      "treatment_hit50": 0,
+      "overlap_delta": 0
+    },
+    "KN041": {
+      "category": "VOCAB",
+      "baseline_rank": "",
+      "treatment_rank": "",
+      "baseline_hit50": 0,
+      "treatment_hit50": 0,
+      "overlap_delta": 0
+    }
+  },
+  "candidate_generation": {
+    "recovered": [],
+    "regressed": [],
+    "hit50_improved": 0,
+    "hit50_unchanged": 51,
+    "hit50_regressed": 0,
+    "net_hit50_n": 0
+  },
+  "mcnemar_hit50_all": {
+    "n_discordant": 0,
+    "p_two_sided": 1.0,
+    "note": "no discordant pairs"
+  },
+  "mcnemar_hit50_room_cat1": {
+    "n_discordant": 0,
+    "p_two_sided": 1.0,
+    "note": "no discordant pairs"
+  },
+  "representation_attribution": {
+    "total_tokens": 31236340,
+    "dictionary_first_key_tokens": 10115123,
+    "fallback_tokens": 20524326,
+    "latin_tokens": 596891,
+    "pct_fallback": 65.7066,
+    "pct_dictionary": 32.3825,
+    "fallback_changed_vs_control": 1109393,
+    "unique_fallback_outputs_control": 345883,
+    "unique_fallback_outputs_treatment": 345888,
+    "treatment_empty_fallback": 6573,
+    "avg_fallback_len_control": 4.416,
+    "avg_fallback_len_treatment": 4.416,
+    "reverse_dict_mismatches": 0
+  },
+  "tokenize_sec": 323.74,
+  "n_docs": 111860
+}

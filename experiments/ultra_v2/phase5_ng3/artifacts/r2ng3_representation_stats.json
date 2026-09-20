@@ -1,0 +1,15 @@
+{
+  "n_docs": 111860,
+  "method_d_tokens": 31229767,
+  "ng3_features": 68929325,
+  "short_passthrough_tokens": 7761213,
+  "ng3_vocabulary_terms": 9140,
+  "method_d_token_stream_sha256": "323a07b46e2377b5ec807006c2efd06f9b1ae19a65f1389d22f32b435ca0c3fb",
+  "ng3_feature_stream_sha256": "1ab004bb26e9231827137020808ca008981648d62a834755af5779454d8c553d",
+  "bm25_ng3_candidate_overlap_mean": 4.470588235294118,
+  "bm25_ng3_candidate_overlap_min": 0,
+  "bm25_ng3_candidate_overlap_max": 31,
+  "bm25_ng3_union_mean": 94.56862745098039,
+  "n_gram": 3,
+  "hunterian_used": false
+}

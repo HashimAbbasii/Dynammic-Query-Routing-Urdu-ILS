@@ -1,0 +1,8 @@
+{
+  "path": "experiments\\ultra_v2\\phase9_entity_resource\\artifacts\\phase9_scored_results.csv",
+  "bytes": 16716,
+  "sha256": "c8f7033724e4ad81f380f5b1ec8f3ac59ba295b87212c605a5e80e047a93f405",
+  "n_rows": 51,
+  "experiment_id": "PHASE9-WPTITLES",
+  "match_rule_version": "v2_nogo_correction"
+}

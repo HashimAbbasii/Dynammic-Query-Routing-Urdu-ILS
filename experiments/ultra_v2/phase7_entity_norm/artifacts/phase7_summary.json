@@ -1,0 +1,183 @@
+{
+  "experiment_id": "PHASE7-LETTERNAME",
+  "timestamp_utc": "2026-09-12T14:12:33Z",
+  "test_accessed": false,
+  "gates": {
+    "corpus_sha": "PASS",
+    "query_gold_vs_phase3_4_5": "PASS",
+    "bm25_vs_r2_b0": "PASS",
+    "search_repeat": "PASS"
+  },
+  "frozen_bm25": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@5_n": 4,
+    "hit@10_n": 4,
+    "hit@50_n": 6,
+    "mrr": 0.0375
+  },
+  "reproduced_bm25": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@1": 0.0196,
+    "hit@5_n": 4,
+    "hit@5": 0.0784,
+    "hit@10_n": 4,
+    "hit@10": 0.0784,
+    "hit@50_n": 6,
+    "hit@50": 0.1176,
+    "mrr": 0.0375
+  },
+  "phase7_lettername": {
+    "n": 51,
+    "hit@1_n": 0,
+    "hit@1": 0.0,
+    "hit@5_n": 0,
+    "hit@5": 0.0,
+    "hit@10_n": 0,
+    "hit@10": 0.0,
+    "hit@50_n": 1,
+    "hit@50": 0.0196,
+    "mrr": 0.0007
+  },
+  "dense_from_frozen_csv": {
+    "hit@50_n": 22,
+    "hit@5_n": 15,
+    "mrr": 0.1726
+  },
+  "ng3_from_frozen_csv": {
+    "hit@50_n": 8,
+    "mrr": 0.075
+  },
+  "n_queries_with_expansion": 49,
+  "overlap_hit50": {
+    "p7_vs_bm25": {
+      "hit_hit": 1,
+      "a_hit_b_miss": 0,
+      "a_miss_b_hit": 5,
+      "miss_miss": 45,
+      "n": 51
+    },
+    "p7_vs_dense": {
+      "hit_hit": 0,
+      "a_hit_b_miss": 1,
+      "a_miss_b_hit": 22,
+      "miss_miss": 28,
+      "n": 51
+    },
+    "p7_vs_ng3": {
+      "hit_hit": 1,
+      "a_hit_b_miss": 0,
+      "a_miss_b_hit": 7,
+      "miss_miss": 43,
+      "n": 51
+    }
+  },
+  "quad23": {
+    "n": 23,
+    "ids": [
+      "KN002",
+      "KN005",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN018",
+      "KN020",
+      "KN021",
+      "KN022",
+      "KN024",
+      "KN025",
+      "KN026",
+      "KN027",
+      "KN028",
+      "KN032",
+      "KN036",
+      "KN037",
+      "KN041",
+      "KN042",
+      "KN044",
+      "KN047",
+      "KN051",
+      "KN054"
+    ],
+    "p7_recovered": [],
+    "p7_recovered_n": 0,
+    "p7_remaining": [
+      "KN002",
+      "KN005",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN018",
+      "KN020",
+      "KN021",
+      "KN022",
+      "KN024",
+      "KN025",
+      "KN026",
+      "KN027",
+      "KN028",
+      "KN032",
+      "KN036",
+      "KN037",
+      "KN041",
+      "KN042",
+      "KN044",
+      "KN047",
+      "KN051",
+      "KN054"
+    ]
+  },
+  "room_cat1": {
+    "ids": [
+      "KN001",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN011",
+      "KN018",
+      "KN037",
+      "KN045",
+      "KN047",
+      "KN050",
+      "KN051"
+    ],
+    "bm25_hit@50": 0,
+    "dense_hit@50": 3,
+    "hybrid_hit@50": 3,
+    "ng3_hit@50": 1,
+    "p7_hit@50": 0,
+    "p7_ids": []
+  },
+  "vs_bm25": {
+    "recovered": [],
+    "regressed": [
+      "KN012",
+      "KN014",
+      "KN023",
+      "KN038",
+      "KN048"
+    ]
+  },
+  "runtime": {
+    "search_seconds": 1.104,
+    "wall_seconds": 12.723,
+    "device": "cpu",
+    "cuda": false,
+    "hardware": {
+      "platform": "Windows-11-10.0.26100-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+      "cpu_count": 12,
+      "python": "3.13.9"
+    }
+  },
+  "safety": {
+    "test_accessed": false,
+    "gazetteer_from_benchmark": false,
+    "wikidata": false,
+    "phase3_4_5_modified": false,
+    "fusion": false,
+    "reranking": false,
+    "parameter_tuning": false
+  }
+}

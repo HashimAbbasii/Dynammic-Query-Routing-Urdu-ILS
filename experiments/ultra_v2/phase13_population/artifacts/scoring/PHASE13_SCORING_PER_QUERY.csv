@@ -1,0 +1,81 @@
+﻿query_id,split,cohort,source_doc_id,query_text,triggered,bm25_rank,dense_rank,ng3_rank,hybrid_rank,phase9_rank,phase10_rank,phase10b_rank,bm25_hit@1,bm25_hit@5,bm25_hit@10,bm25_hit@50,dense_hit@1,dense_hit@5,dense_hit@10,dense_hit@50,ng3_hit@1,ng3_hit@5,ng3_hit@10,ng3_hit@50,hybrid_hit@1,hybrid_hit@5,hybrid_hit@10,hybrid_hit@50,phase9_hit@1,phase9_hit@5,phase9_hit@10,phase9_hit@50,phase10_hit@1,phase10_hit@5,phase10_hit@10,phase10_hit@50,phase10b_hit@1,phase10b_hit@5,phase10b_hit@10,phase10b_hit@50
+KN001,train,original,92506,malaysia air race world championship third round kab shuru hua,0,,16,,32,,32,32,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+KN002,train,original,90691,zim t20 mein hosts ko chase ke liye kitna target mila,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN004,train,original,14991,desi ghee sehat ke liye faida mand hai ya nuqsan deh,0,1,107,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+KN005,train,original,64084,iran amreeka tension ke baad local equities opening par kyun rebound hua,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN006,train,original,29860,kolkata ne delhi ko ipl thriller mein kis margin se haraaya,1,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN008,train,original,47197,teen tennis sensation ne kaunsa canadian hardcourt title jeeta,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN010,train,original,1674,benami accounts walo ke khilaf revenue board ne kya saza tajweez ki,0,,466,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN011,train,original,60226,france ki hydrogen solar wind powered boat ka naam kya hai,0,,1,,2,,2,2,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1
+KN012,train,original,13580,comedy nights wali dadi wapas kyun nahi ban na chahte,0,5,59,,10,5,10,10,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,0,1,1,0,0,1,1
+KN013,train,original,82652,world cup mein pakistan india fixture ke tickets black mein kyun bik rahe,0,,4,,8,,8,8,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,1
+KN014,train,original,79754,mobile slow charge hone ki user side ghalti kya ho sakti hai,1,44,16,,3,,3,3,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1
+KN015,train,original,22450,viral maths puzzle ne internet users ko kyun confuse kiya,0,,9,,18,,18,18,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+KN016,train,original,100673,priyanka ke african kids se hair compliment exchange kis tour par hua,0,,1,,1,,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1
+KN017,train,original,19341,boom supersonic passenger prototype kab unveil hua,0,,1,5,2,,2,2,0,0,0,0,1,1,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1
+KN018,train,original,17943,aladdin kahani kisi haqeeqi shakhs par mabni hai ya sirf fable hai,1,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN019,train,original,5092,jlo ne 50 saal ki umar mein fitness kaise maintain ki,0,,5,,9,,9,9,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,1
+KN020,train,original,60895,cpec joint cooperation committee ka session kis shehar mein chal raha tha,0,,110,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN021,train,original,13065,jungle book live action ne india box office par kya record banaya,1,,167,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN022,train,original,14664,shahid mira sangeet se pehle shaadi ki tayyariyan kab khatam huin,1,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN023,train,original,12128,qawwal aziz mian ki barsi kis tarah yaad ki jati hai,1,3,,3,5,6,5,5,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1,0,0,1,1,0,1,1,1,0,1,1,1
+KN024,train,original,31154,west indies ke khilaf dubai day night series pakistan ka kaunsa milestone test hai,0,,204,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN025,train,original,60831,adb country director ne pm se mil kar investment ke bare mein kya kaha,0,,301,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN026,train,original,102664,salman ki wrestler film ka pehla poster kis director ki movie ka hai,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN027,train,original,59279,chameleon satellite minutes mein naya mission kyun assume kar sakte hain,1,,196,,,3,45,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0
+KN028,train,original,76785,state bank ke mutabiq external debt burden mein kitni percent kami hui,1,,523,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN029,train,original,101347,houston new year show mein kumar sanu kis community event ka hissa bane,1,,1,,2,4,2,2,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1
+KN030,train,original,47083,imran tahir odi bowling ranking mein number one kab bane,1,,24,,47,46,,47,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1
+KN031,train,original,29423,fifa ranking mein germany top par hai to pakistan ka number kya hai,1,,4,,8,,8,8,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,1
+KN032,train,original,41695,umar akmal par fixing case mein kitne saal ki pabandi lagi,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN033,train,original,81673,shane warne test cap auction se bushfire fund ko kitni raqam mili,1,,3,,6,37,6,6,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,1,0,0,1,1
+KN034,train,original,13398,sharmeen obaid oscar short documentary category mein dobara kab jeeti,1,,3,,5,,5,5,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1
+KN035,train,original,10546,zaheer khan ne sagarika se shaadi ka elaan kab kiya,1,,623,5,,,42,,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+KN036,train,original,76509,aglay das mahine mein local oil gas output mein kya izafa verqai hai,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN091,train,phase13,38098,world t20 group b mein zimbabwe aur afghanistan ne dusri jeet kis venue par hasil ki,1,,187,11,,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN092,train,phase13,16031,ankhon ki sehat ke liye age ke sath kaunse foods helpful bataye gaye hain,0,,978,9,,,,,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN093,train,phase13,71914,imf pakistan representative ne exchange rate flexibility kyun zaroori qaraar di,1,,87,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN094,train,phase13,22449,whatsapp par youtube video bina app switch kiye kaise chalegi,1,,19,,38,,38,38,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+KN095,train,phase13,90343,sri lanka ne india ke khilaf test series ke liye kitne players naamzad kiye,1,,162,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN096,train,phase13,17825,is sadi ki behtareen science fiction films ki list kis tarah ke viewers ke liye banayi gayi,1,,7,,13,,13,13,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+KN097,train,phase13,1296,chhote dukandaron ke liye sarkari fixed tax scheme kab announce hui,0,33,281,16,,33,,,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+KN098,train,phase13,24064,ufone newspaper ad campaign mein kis Pakistani actor ko phone ke sath dikhaya gaya,0,,1,,2,,2,2,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1
+KN099,train,phase13,88253,sharapova ki olympics appeal ka faisla kis date tak lataya gaya,1,,9,4,18,,18,18,0,0,0,0,0,0,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+KN100,train,phase13,11931,hania aamir ki doosri film mein leading pair kaun hai,1,,35,,,2,44,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0
+KN101,train,phase13,73679,saudi arab mein doodh chini jaisi items ki qeemat mein kitni percent kami hui,1,22,197,,44,23,,44,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1
+KN102,train,phase13,23448,ek hafte facebook band rakhne se mood aur sleep par kya asar bataya gaya,1,,135,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN103,train,phase13,45096,kolkata knight riders ne peshawar zalmi exhibition match ki khabar ko kyun jhoot qaraar diya,0,,12,6,24,,24,24,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+KN104,train,phase13,105214,priyanka chopra ki sports film mary kom ke adhoore gaane ki video kab release hui,1,2,1,1,1,3,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+KN105,train,phase13,72411,petrol aur diesel ki qeemat mein ek rupay ka izafa kis wazir ne announce kiya,0,23,144,27,45,23,45,45,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+KN106,train,phase13,21365,australia ne great barrier reef bachane ke liye kaunsa starfish killing robot launch kiya,1,,1,5,5,,5,5,0,0,0,0,1,1,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1
+KN107,train,phase13,51809,psl eliminator mein lahore qalandars ne peshawar zalmi ko kaise haraaya,1,11,101,7,23,5,23,23,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,0,0,1
+KN108,train,phase13,48848,sri lanka mein haathi ne bus rok kar khana kaise maanga,1,,13,,26,,26,26,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+KN109,train,phase13,62668,state bank ne agle do mahine ki monetary policy mein policy rate kitna kam kiya,1,,465,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN037,dev,original,22739,nayi photo app chehre tabdeel karne ke ilawa kya karti hai,1,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN038,dev,original,40057,peshawar used car mela mein logon ki dilchaspi kis cheez par thi,0,3,,1,6,3,6,6,0,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,0,1,1,1,0,0,1,1,0,0,1,1
+KN039,dev,original,23062,nokia android handset china launch par ek minute mein kyun sold out hua,0,,2,17,15,,15,15,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+KN040,dev,original,24596,samsung ne galaxy s7 active ko galti se kis app mein leak kiya,0,,27,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN041,dev,original,65903,caretaker finance minister ne cpec projects mukammal karne ka kya wazheh kiya,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN042,dev,original,111652,current account deficit ki raftaar slow kyun hui SBP ke mutabiq,0,,469,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN043,dev,original,21399,moto p30 front design kis apple flagship se milta julta hai,1,,23,,44,,,44,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+KN044,dev,original,23544,twitter ka naya feature facebook snapchat se muqabla kyun karta hai,1,,454,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN045,dev,original,19783,messenger rooms jaisa group video chat facebook ne kab add kiya,1,,23,,45,,,45,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+KN046,dev,original,109714,ml1 railway upgrade ko deadline se pehle track par lanay ki tayyari kya hai,0,,2,,4,,4,4,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1
+KN047,dev,original,61862,fbr aur sindh revenue board ne sales tax input par kya deal ki,1,,59,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN048,dev,original,20073,samsung s10 lite aur note 10 lite 2020 lineup kab launch honay walay thay,0,42,3,31,1,42,1,1,0,0,0,1,0,1,1,1,0,0,0,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1
+KN049,dev,original,86593,lahore psl final ke liye stadium ke gird kitne personnel deploy honge,1,,1,,2,,2,2,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1
+KN050,dev,original,34762,afghanistan world cup jeetne ki peshgoi kis foundation par ki gai,0,,,1,,,,,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN051,dev,original,21160,gmail ke naye interface ko purane layout jaisa kaise banaya ja sakta hai,1,,616,,,12,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+KN052,dev,original,59426,samsung ne vegas ces par human-like robots kyun dikhaye,0,,2,,7,,7,7,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,1
+KN053,dev,original,22115,huawei mate 10 lite pakistan mein pehli baar kitne cameras ke sath aaya,1,,5,,9,,9,9,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,1
+KN054,dev,original,4400,kangana ke bayan par momina iram ne kya jawab diya,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN110,dev,phase13,20610,pakistan ne facebook se user data maangne ki requests mein kitna izafa dekha,1,,18,,35,,35,35,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+KN111,dev,phase13,80742,england ke khilaf teesre test mein pakistan pehli innings mein follow-on kyun khela,0,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN112,dev,phase13,51022,meera ne khud ko apna husband batane wale atiq ur rehman par kya ilzam lagaya,0,41,29,,2,41,2,2,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1
+KN113,dev,phase13,2296,samsung ne pakistan mein smart phone qeematon mein kami kab announce ki,0,,71,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN114,dev,phase13,19493,microsoft ne internet explorer support kab permanently band ki,0,,161,5,,,,,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN115,dev,phase13,35735,najam sethi ne rashid latif ko selector banane par ecb ka pressure kyun man liya,1,,3,,5,2,5,5,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1
+KN116,dev,phase13,6103,nobel laureate women ne gates foundation ko modi award par kya letter likha,0,23,1,24,1,23,1,1,0,0,0,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1
+KN117,dev,phase13,64127,sbp spokesman ne naye currency notes wali social media afwahen kyun kharij keen,1,,294,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN118,dev,phase13,21680,facebook rumour wale posts ko asal news samajhne se pehle kya check karna chahiye,1,,75,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KN119,dev,phase13,26893,sarfaraz ahmed ne shoib akhtar ki tanqeed ko personal attack kyun qaraar diya,1,,46,,,,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

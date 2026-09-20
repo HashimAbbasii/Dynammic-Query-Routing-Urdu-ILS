@@ -1,0 +1,99 @@
+{
+  "experiment_id": "R2-PHASE2-DECISION-AUDIT",
+  "timestamp_utc": "2026-09-11T09:25:00Z",
+  "test_accessed": false,
+  "test_query_csvs_opened": false,
+  "frozen_m0_modified": false,
+  "plos_modified": false,
+  "r2_b0_modified": false,
+  "r2_c0_modified": false,
+  "r2_1_modified": false,
+  "repository": {
+    "branch": "research/ultra-v2-strengthening",
+    "commit": "fd54ac9b65c2db93e7e16fbf0c5a40b6a6025be1",
+    "plos_branch_exists": "publication/plos-one-final",
+    "git_status_note": "M .gitignore; untracked experiments/ultra_v2/; no frozen-path diffs"
+  },
+  "safety": {
+    "seal_kind": "ultra_v2_test_seal",
+    "seal_aggregate_sha256": "48610601209c3723a7252bb9a197d8fbbece18640e0bf7aef972884816ab46c4",
+    "seal_files_listed_not_read": ["queries_kn.csv", "queries_nl.csv"],
+    "train_dev_only": true
+  },
+  "r2_b0": {
+    "n_roman_kn_traindev": 51,
+    "hit@1_n": 1,
+    "hit@5_n": 4,
+    "hit@10_n": 4,
+    "hit@50_n": 6,
+    "mrr": 0.0375,
+    "hit5_failures": 47,
+    "miss_side": 45,
+    "rank_side": 2,
+    "taxonomy": {
+      "ROOM": 19,
+      "ENT": 16,
+      "VOCAB": 9,
+      "NEIGH": 1,
+      "RANK": 2,
+      "NORM": 0,
+      "TEMP": 0,
+      "QAMB": 0
+    }
+  },
+  "r2_c0": {
+    "gold_docs_urdu_script": true,
+    "avg_frac_fallback": 0.6649,
+    "avg_frac_dict": 0.3133,
+    "zero_content_overlap": 28,
+    "cand_cat_1_no_content_path": 27,
+    "mean_content_overlap_fail": 0.4255,
+    "mean_content_overlap_success": 2.0,
+    "english_hint_tokens": 190,
+    "english_exact_method_d": 4,
+    "room_category_1_n": 11,
+    "norm_primary": 0,
+    "decision": "VALID HYPOTHESIS FOR CONTROLLED EXPERIMENT (document fallback romanization)"
+  },
+  "r2_1": {
+    "treatment": "hunterian_ascii_positional_v1",
+    "room_cat1_hit50_baseline": 0,
+    "room_cat1_hit50_treatment": 0,
+    "recovered": 0,
+    "hit50_all": [6, 6],
+    "hit5_all": [4, 3],
+    "mrr": [0.0375, 0.0358],
+    "decision": "R2-1 NOT SUPPORTED — CLOSE FALLBACK REPRESENTATION DIRECTION"
+  },
+  "dominant_remaining_mechanism": "Exact-token BM25 cannot bridge user Latin query strings to Method D (or R2-1) document strings for ROOM/ENT; candidate generation fails. This is matching granularity / lexical identity, not Top-5 ranking and not kya/kiya normalization.",
+  "rejected_directions": [
+    "simple_fallback_table_replacement (R2-1)",
+    "multi_variant_romanizer_fusion",
+    "query_side_kya_kiya_normalization",
+    "dictionary_expansion",
+    "entity_specific_manual_rules",
+    "tokenizer_change",
+    "fuzzy_edit_distance_retrieval",
+    "query_rewriting",
+    "reranking",
+    "dense_or_hybrid_as_next_Roman_step",
+    "BM25_k1_b_or_TopK_tuning"
+  ],
+  "selected_next_hypothesis": {
+    "id": "R2-NG3",
+    "name": "Character 3-gram matching on frozen Method D tokens",
+    "hypothesis": "If exact token identity is the dominant remaining cause of ROOM/ENT candidate-generation failure, then representing frozen Method D tokens (and the unchanged query tokens) as pre-registered character 3-grams, scored with the same BM25 k1/b and Top-50, will increase ExactSource Hit@50 on R2-C0 ROOM Category 1 without changing the Method D romanizer, dictionary, tokenizer, routing, or gold labels.",
+    "eligible_population": "All Roman KN TRAIN+DEV queries (n=51). Primary slice = R2-C0 ROOM Category 1 (n=11 IDs frozen from r2_c0 cand_cat==1).",
+    "primary_endpoint": "ExactSource Hit@50 on the 11 ROOM Category 1 queries",
+    "mandatory_confirmatory_reporting": "Hit@1/5/10/50 and MRR on all 51 Roman KN TRAIN+DEV; do not headline the slice alone",
+    "negative_controls": {
+      "vocab_paraphrase": ["KN017", "KN020", "KN041"],
+      "split_or_acronym_room_cat1_not_expected_to_be_sufficient": ["KN006", "KN047", "KN051"]
+    },
+    "stop_criterion": "If ROOM Category 1 Hit@50 remains 0/11, declare R2-NG3 unsupported and close remaining Roman lexical-matching work (do not add fuzzy, dense, or dictionary expansion in the same experiment).",
+    "n_gram": 3,
+    "n_gram_search_forbidden": true,
+    "uses_r2_1_romanizer": false
+  },
+  "final_decision": "NEXT EXPERIMENT JUSTIFIED — R2-NG3 CHARACTER 3-GRAM MATCHING"
+}

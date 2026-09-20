@@ -1,0 +1,50 @@
+{
+  "experiment_id": "R2-1",
+  "experiment_name": "Controlled document-side fallback Roman representation",
+  "git_branch": "research/ultra-v2-strengthening",
+  "git_commit": "fd54ac9b65c2db93e7e16fbf0c5a40b6a6025be1",
+  "dataset_split": "TRAIN+DEV Roman KN only",
+  "benchmark_version": "ultra-v2-benchmark-v0",
+  "test_status": "NOT ACCESSED",
+  "dictionary_path": "models/roman_urdu_dict_expanded.json",
+  "dictionary_sha256": "30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3",
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "candidate_depth": 50,
+  "official_cutoff": 5,
+  "query_representation": "tokenize(query) as typed; unchanged",
+  "document_representation_control": "romanize_token: reverse-dict first key else naive_roman_word",
+  "document_representation_treatment": "reverse-dict first key else hunterian_ascii_positional_v1",
+  "fallback_romanizer": {
+    "name": "hunterian_ascii_positional_v1",
+    "version": "1.0.0",
+    "scheme": "Hunterian/ASCII positional matres lectionis",
+    "waw_initial": "w",
+    "waw_non_initial": "o",
+    "ye_initial": "y",
+    "ye_non_initial": "i",
+    "short_vowel_insertion": false,
+    "diacritics": false,
+    "lexicon": false,
+    "query_dependent": false
+  },
+  "random_seed": null,
+  "primary_metric": "Hit@50 on R2-C0 ROOM Category 1 (n=11)",
+  "negative_controls": [
+    "KN017",
+    "KN020",
+    "KN041"
+  ],
+  "code_hashes": {
+    "run_r2_1_experiment.py": "f6f92523b8f28b0af0bc3e3ed2ae251273b7e4f5c021be638e0a886c0fdca1bf",
+    "fallback_roman_v1.py": "8ca3829435bf768cd1728d3cea0eadcb7fc9807b9f33b189dfdad64ed48369e7"
+  },
+  "representation_artifact": "experiments/ultra_v2/phase2_roman/artifacts/r2_1_representation_manifest.json",
+  "representation_artifact_sha256": "ee1166787b0f0028bcaae64594d46f56f88142060c324407be1dcca72e9e6c9d",
+  "test_accessed": false,
+  "m0_edited": false,
+  "dictionary_edited": false,
+  "r2_b0_outputs_written": false,
+  "r2_c0_outputs_written": false
+}

@@ -1,0 +1,178 @@
+{
+  "experiment_id": "PHASE8-3WAY-RRF",
+  "timestamp_utc": "2026-09-13T07:10:43Z",
+  "test_accessed": false,
+  "gates": {
+    "csv_sha_vs_phase6": "PASS",
+    "corpus_sha": "PASS",
+    "query_gold": "PASS",
+    "bm25_vs_r2_b0": "PASS",
+    "dense_vs_DENSE_PER_QUERY": "PASS",
+    "ng3_vs_R2NG3_PER_QUERY": "PASS",
+    "ng3_stream_sha": "PASS",
+    "hybrid2_vs_HYBRID_PER_QUERY": "PASS",
+    "rrf3_repeat": "PASS"
+  },
+  "frozen": {
+    "bm25": {
+      "n": 51,
+      "hit@1_n": 1,
+      "hit@5_n": 4,
+      "hit@10_n": 4,
+      "hit@50_n": 6,
+      "mrr": 0.0375
+    },
+    "dense": {
+      "n": 51,
+      "hit@1_n": 5,
+      "hit@5_n": 15,
+      "hit@10_n": 16,
+      "hit@50_n": 22,
+      "mrr": 0.1726
+    },
+    "hybrid2": {
+      "n": 51,
+      "hit@1_n": 3,
+      "hit@5_n": 11,
+      "hit@10_n": 19,
+      "hit@50_n": 25,
+      "mrr": 0.1422
+    },
+    "ng3": {
+      "n": 51,
+      "hit@1_n": 3,
+      "hit@5_n": 6,
+      "hit@10_n": 6,
+      "hit@50_n": 8,
+      "mrr": 0.075
+    }
+  },
+  "phase8_3way_rrf": {
+    "n": 51,
+    "hit@1_n": 4,
+    "hit@1": 0.0784,
+    "hit@5_n": 8,
+    "hit@5": 0.1569,
+    "hit@10_n": 14,
+    "hit@10": 0.2745,
+    "hit@50_n": 24,
+    "hit@50": 0.4706,
+    "mrr": 0.131
+  },
+  "mcnemar_vs_hybrid2": {
+    "hit@5": {
+      "n01_control_miss_treatment_hit": 1,
+      "n10_control_hit_treatment_miss": 4,
+      "recovered_ids": [
+        "KN038"
+      ],
+      "regressed_ids": [
+        "KN014",
+        "KN034",
+        "KN046",
+        "KN049"
+      ],
+      "mcnemar": {
+        "n_discordant": 5,
+        "n_control_miss_treatment_hit": 1,
+        "n_control_hit_treatment_miss": 4,
+        "p_two_sided": 0.375,
+        "note": "exact McNemar (binomial, two-sided)"
+      },
+      "p_two_sided": 0.375,
+      "significant_at_0.05": false
+    },
+    "hit@50": {
+      "n01_control_miss_treatment_hit": 2,
+      "n10_control_hit_treatment_miss": 3,
+      "recovered_ids": [
+        "KN035",
+        "KN050"
+      ],
+      "regressed_ids": [
+        "KN030",
+        "KN043",
+        "KN045"
+      ],
+      "mcnemar": {
+        "n_discordant": 5,
+        "n_control_miss_treatment_hit": 2,
+        "n_control_hit_treatment_miss": 3,
+        "p_two_sided": 1.0,
+        "note": "exact McNemar (binomial, two-sided)"
+      },
+      "p_two_sided": 1.0,
+      "significant_at_0.05": false
+    }
+  },
+  "vs_hybrid2": {
+    "hit@5_recovered": [
+      "KN038"
+    ],
+    "hit@5_regressed": [
+      "KN014",
+      "KN034",
+      "KN046",
+      "KN049"
+    ],
+    "hit@50_recovered": [
+      "KN035",
+      "KN050"
+    ],
+    "hit@50_regressed": [
+      "KN030",
+      "KN043",
+      "KN045"
+    ]
+  },
+  "quad23": {
+    "n": 23,
+    "p8_recovered": [],
+    "p8_recovered_n": 0
+  },
+  "room_cat1": {
+    "bm25": 0,
+    "dense": 3,
+    "hybrid2": 3,
+    "ng3": 1,
+    "p8": 3,
+    "p8_ids": [
+      "KN001",
+      "KN011",
+      "KN050"
+    ]
+  },
+  "union3_only_phase6_ranks": {
+    "KN035": 11,
+    "KN040": 81,
+    "KN050": 9
+  },
+  "runtime": {
+    "bm25_cache_load_seconds": 22.517,
+    "bm25_search_seconds": 0.722,
+    "dense_npy_load_seconds": 0.599,
+    "encoder_load_seconds": 71.892,
+    "query_encode_seconds": 2.258,
+    "dense_search_seconds": 1.832,
+    "ng3_tokenize_seconds": 245.515,
+    "ng3_bm25_build_seconds": 131.387,
+    "ng3_search_seconds": 2.324,
+    "wall_seconds": 511.022,
+    "device": "cpu",
+    "cuda": false,
+    "hardware": {
+      "platform": "Windows-11-10.0.26100-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+      "cpu_count": 12,
+      "python": "3.13.9",
+      "numpy": "2.3.5"
+    }
+  },
+  "safety": {
+    "test_accessed": false,
+    "k_tuned": false,
+    "weights": false,
+    "phase2_7_modified": false,
+    "rerank": false
+  }
+}

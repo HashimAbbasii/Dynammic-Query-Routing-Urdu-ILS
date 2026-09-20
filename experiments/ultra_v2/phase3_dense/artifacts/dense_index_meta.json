@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "model_id": "intfloat/multilingual-e5-small",
+  "model_revision": "8d923955b027282ba975c0a4c825486c9ca4c490",
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "n_docs": 111860,
+  "dim": 384,
+  "prefix_mode": "manual_concat",
+  "normalize": true,
+  "embed_seconds": 30948.2
+}

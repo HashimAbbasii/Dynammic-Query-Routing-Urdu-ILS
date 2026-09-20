@@ -1,0 +1,26 @@
+{
+  "dump_date": "20260901",
+  "base_url": "https://dumps.wikimedia.org/urwiki/20260901/",
+  "user_agent": "ULTRA-v2-phase9/0.1 (research; Hashim Shazad; urwiki dump fetch)",
+  "downloaded_utc": "2026-09-14T18:53:07Z",
+  "files": {
+    "urwiki-20260901-langlinks.sql.gz": {
+      "url": "https://dumps.wikimedia.org/urwiki/20260901/urwiki-20260901-langlinks.sql.gz",
+      "path": "dumps/urwiki-20260901-langlinks.sql.gz",
+      "bytes": 166442090,
+      "sha256": "baafc0ae92bb6f27d2568e275b9adf2dd3ff38eb220fa5772841979c44cd9b1f"
+    },
+    "urwiki-20260901-page.sql.gz": {
+      "url": "https://dumps.wikimedia.org/urwiki/20260901/urwiki-20260901-page.sql.gz",
+      "path": "dumps/urwiki-20260901-page.sql.gz",
+      "bytes": 93037172,
+      "sha256": "a08eaf932e385892501afbab0259a5b33f36e5ce954a971236a435454edf8347"
+    },
+    "urwiki-20260901-redirect.sql.gz": {
+      "url": "https://dumps.wikimedia.org/urwiki/20260901/urwiki-20260901-redirect.sql.gz",
+      "path": "dumps/urwiki-20260901-redirect.sql.gz",
+      "bytes": 9473175,
+      "sha256": "7abe39a936c53745d02c513f0814eaee4e71edfc376309da33e2b4a9fc081991"
+    }
+  }
+}

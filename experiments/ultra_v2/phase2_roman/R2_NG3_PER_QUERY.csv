@@ -1,0 +1,52 @@
+query_id,split,query_script,gold_doc_id,baseline_rank,baseline_hit1,baseline_hit5,baseline_hit10,baseline_hit50,ng3_rank,ng3_hit1,ng3_hit5,ng3_hit10,ng3_hit50,baseline_status,treatment_status,recovered,regressed,rank_delta,primary_slice,negative_control,failure_category_if_known,ng3_q_features,ng3_overlap_gold,shared_trigrams_sample
+KN001,train,ROMAN,92506,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,1,,ROOM,33,7,ala hir kab mal mpi orl rld
+KN002,train,ROMAN,90691,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,23,5,ein has ke ko mei
+KN004,train,ROMAN,14991,1,1,1,1,1,1,1,1,1,1,HIT,HIT,0,0,0,0,,SUCCESS,22,13,aid eha fai ghe hai hat hee ida ke man qsa san seh
+KN005,train,ROMAN,64084,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,NEIGH,38,5,amr baa ira ke ran
+KN006,train,ROMAN,29860,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,1,split_acronym,ROOM,30,13,ara aya ein gin har hri ko kol mei ne olk ril se
+KN008,train,ROMAN,47197,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,1,,ROOM,37,10,ana ati eet har ion itl jee ne nis sat
+KN010,train,ROMAN,1674,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,1,,ROOM,35,10,alo ami aza ke khi ki laf nam ne nts
+KN011,train,ROMAN,60226,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,1,,ROOM,28,8,anc dro fra hai ki ola ran sol
+KN012,train,ROMAN,13580,5,0,1,1,1,,0,0,0,0,HIT,MISS,0,1,994,0,,SUCCESS,25,8,adi ahi ali ban cha dad hte nah
+KN013,train,ROMAN,82652,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ROOM,36,16,aki cke ein ick ind ist ke ket kis mei orl pak rah rld sta tan
+KN014,train,ROMAN,79754,44,0,0,0,1,,0,0,0,0,RANK,MISS,0,1,955,0,,RANK,27,13,bil cha hai hal har ho hon ile ki kti mob obi one
+KN015,train,ROMAN,22450,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,VOCAB,30,10,ern int iya kiy ko ne net nte rne ter
+KN016,train,ROMAN,100673,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,36,10,afr air ank fri hai ke nka par pri se
+KN017,train,ROMAN,19341,,0,0,0,0,5,0,1,1,1,MISS,HIT,1,0,-994,0,vocab,VOCAB,30,6,oto pro rot rso son tot
+KN018,train,ROMAN,17943,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,1,,ROOM,32,15,abl add aha akh ala ani bni din hai han isi khs lad par sha
+KN019,train,ROMAN,5092,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,25,14,50 aal ain ais ein ess ise ki mai mar mei ne nes tai
+KN020,train,ROMAN,60895,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,vocab,VOCAB,39,10,aha ein har ka kis mei mit oin rah tha
+KN021,train,ROMAN,13065,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ROOM,31,6,dia ind ndi ne ngl par
+KN022,train,ROMAN,14664,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,35,14,adi ahi ari hah hat hle ira iya kha ki mir se sha tam
+KN023,train,ROMAN,12128,3,0,1,1,1,3,0,1,1,1,HIT,HIT,0,0,0,0,,SUCCESS,22,14,ara ars ati azi bar hai ian jat ki kis mia rsi tar ziz
+KN024,train,ROMAN,31154,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ROOM,43,16,aki hai hil ila ile ind ist ka ke khi kis laf ndi pak sta tan
+KN025,train,ROMAN,60831,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ROOM,33,9,aha ein kar ke mei ne ntr pm se
+KN026,train,ROMAN,102664,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,34,11,fil hai hla ilm ka ki lma man ost pos sal
+KN027,train,ROMAN,59279,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ROOM,40,11,ain aya cha ein hai ion kar kte mei min nay
+KN028,train,ROMAN,76785,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,VOCAB,36,7,ank ban ein ke mei sta tab
+KN029,train,ROMAN,101347,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,34,5,ein ka mar mei san
+KN030,train,ROMAN,47083,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,27,9,ahi ane ein imr lin mei mra ran tah
+KN031,train,ROMAN,29423,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ROOM,31,14,aki ein fif hai ifa ist ka kis mei pak par ran sta tan
+KN032,train,ROMAN,41695,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,27,7,akm ein ki mei ndi pab par
+KN033,train,ROMAN,81673,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,32,7,ane arn ili ko qam rne se
+KN034,train,ROMAN,13398,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,40,8,bar ein ent har mei men ort sha
+KN035,train,ROMAN,10546,,0,0,0,0,5,0,1,1,1,MISS,HIT,1,0,-994,0,,ENT,25,14,adi ari han ika iya ka kha kiy laa ne rik sag se sha
+KN036,train,ROMAN,76509,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,VOCAB,30,6,ein hai mah mei oil zaf
+KN037,dev,ROMAN,22739,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,1,,ROOM,27,7,arn hai hre kar ke oto rti
+KN038,dev,ROMAN,40057,3,0,1,1,1,1,1,1,1,1,HIT,HIT,0,0,-2,0,,SUCCESS,30,17,awa che ein esh gon haw ki lch log mei ogo par pes sha spi thi war
+KN039,dev,ROMAN,23062,,0,0,0,0,17,0,0,0,1,MISS,RANK,1,0,-982,0,,VOCAB,34,12,chi ein han hin ina kia mei nch ndr nok oid oki
+KN040,dev,ROMAN,24596,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,28,7,ein ko lti mei ne sam se
+KN041,dev,ROMAN,65903,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,vocab,VOCAB,44,10,are ist iya kam kar kiy mal nan ne waz
+KN042,dev,ROMAN,111652,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,VOCAB,33,4,fta ke ki tab
+KN043,dev,ROMAN,21399,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,28,6,fro hai mot oto ple se
+KN044,dev,ROMAN,23544,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ROOM,37,9,abl aya cha hai ka kar nay qab se
+KN045,dev,ROMAN,19783,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,1,,ROOM,32,9,add ais cha gro hat iya jai kiy ne
+KN046,dev,ROMAN,109714,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,VOCAB,37,13,adl ail ari hai hle ine ki ko lan lin par rai se
+KN047,dev,ROMAN,61862,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,1,split_acronym,ROOM,26,5,aur ki ndh ne par
+KN048,dev,ROMAN,20073,42,0,0,0,1,31,0,0,0,1,RANK,RANK,0,0,-11,0,,RANK,33,9,020 10 202 aur hon lin nch not sam
+KN049,dev,ROMAN,86593,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ROOM,36,8,aho hon hor ina ke lah nge ore
+KN050,dev,ROMAN,34762,,0,0,0,0,1,1,1,1,1,MISS,HIT,1,0,-998,1,,ROOM,35,14,afg fgh gha goi han hgo ion ki orl par rld shg sta tan
+KN051,dev,ROMAN,21160,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,1,split_acronym,ROOM,37,13,ais ana ane aya hai isa ise jai ke ko nay ran rfa
+KN052,dev,ROMAN,59426,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,27,10,bot gas ikh kha lik man ne ots par sam
+KN053,dev,ROMAN,22115,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,35,17,10 aar aki ath aya ein hli ist itn ke kis mei pak ras sat sta tan
+KN054,dev,ROMAN,4400,,0,0,0,0,,0,0,0,0,MISS,MISS,0,0,,0,,ENT,23,9,ana diy iya ke min mom ne par ram

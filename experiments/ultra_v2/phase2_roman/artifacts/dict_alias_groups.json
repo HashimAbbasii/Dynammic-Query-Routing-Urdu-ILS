@@ -1,0 +1,42 @@
+{
+  "n_groups_with_aliases": 9,
+  "groups": {
+    "aaj": [
+      "aaj",
+      "aj",
+      "today"
+    ],
+    "adalat": [
+      "adalat",
+      "court"
+    ],
+    "gaya": [
+      "gaya",
+      "geya"
+    ],
+    "government": [
+      "government",
+      "hukumat"
+    ],
+    "jeet": [
+      "jeet",
+      "win"
+    ],
+    "kiya": [
+      "kiya",
+      "kya"
+    ],
+    "loss": [
+      "loss",
+      "shikast"
+    ],
+    "ne": [
+      "ne",
+      "ny"
+    ],
+    "se": [
+      "se",
+      "sy"
+    ]
+  }
+}

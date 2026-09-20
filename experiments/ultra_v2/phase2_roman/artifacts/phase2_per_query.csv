@@ -1,0 +1,163 @@
+experiment_id,query_id,split,script,detector,path,intent_type,source_doc_id,rank,miss50,hit@5,qtoks
+R2-B0,KN001,train,ROMAN,ROMAN,roman,event,92506,,1,0,malaysia air race world championship third round kab shuru hua
+R2-B0,KN002,train,ROMAN,ROMAN,roman,factoid,90691,,1,0,zim t20 mein hosts ko chase ke liye kitna target mila
+R2-B0,KN003,train,URDU,URDU,urdu,explanatory,17150,3,0,1,تھیٹر کے عالمی دن پر ثقافت کے فروغ کیوں ضروری سمجھا جاتا ہے
+R2-B0,KN004,train,ROMAN,ROMAN,roman,topical,14991,1,0,1,desi ghee sehat ke liye faida mand hai ya nuqsan deh
+R2-B0,KN005,train,ROMAN,ROMAN,roman,event,64084,,1,0,iran amreeka tension ke baad local equities opening par kyun rebound hua
+R2-B0,KN006,train,ROMAN,ROMAN,roman,factoid,29860,,1,0,kolkata ne delhi ko ipl thriller mein kis margin se haraaya
+R2-B0,KN007,train,URDU,URDU,urdu,event,70358,1,0,1,وفاقی ادارے ٹڈی دل کو کھاد میں کیسے تبدیل کرنے جا رہے ہیں
+R2-B0,KN008,train,ROMAN,ROMAN,roman,entity_person,47197,,1,0,teen tennis sensation ne kaunsa canadian hardcourt title jeeta
+R2-B0,KN009,train,URDU,URDU,urdu,explanatory,21892,1,0,1,برقی رو انسانی جسم کے لیے کیوں جان لیوا بن جاتی ہے
+R2-B0,KN010,train,ROMAN,ROMAN,roman,event,1674,,1,0,benami accounts walo ke khilaf revenue board ne kya saza tajweez ki
+R2-B0,KN011,train,ROMAN,ROMAN,roman,factoid,60226,,1,0,france ki hydrogen solar wind powered boat ka naam kya hai
+R2-B0,KN012,train,ROMAN,ROMAN,roman,entity_person,13580,5,0,1,comedy nights wali dadi wapas kyun nahi ban na chahte
+R2-B0,KN013,train,ROMAN,ROMAN,roman,event,82652,,1,0,world cup mein pakistan india fixture ke tickets black mein kyun bik rahe
+R2-B0,KN014,train,ROMAN,ROMAN,roman,explanatory,79754,44,0,0,mobile slow charge hone ki user side ghalti kya ho sakti hai
+R2-B0,KN015,train,ROMAN,ROMAN,roman,topical,22450,,1,0,viral maths puzzle ne internet users ko kyun confuse kiya
+R2-B0,KN016,train,ROMAN,ROMAN,roman,entity_person,100673,,1,0,priyanka ke african kids se hair compliment exchange kis tour par hua
+R2-B0,KN017,train,ROMAN,ROMAN,roman,factoid,19341,,1,0,boom supersonic passenger prototype kab unveil hua
+R2-B0,KN018,train,ROMAN,ROMAN,roman,topical,17943,,1,0,aladdin kahani kisi haqeeqi shakhs par mabni hai ya sirf fable hai
+R2-B0,KN019,train,ROMAN,ROMAN,roman,entity_person,5092,,1,0,jlo ne 50 saal ki umar mein fitness kaise maintain ki
+R2-B0,KN020,train,ROMAN,ROMAN,roman,location,60895,,1,0,cpec joint cooperation committee ka session kis shehar mein chal raha tha
+R2-B0,KN021,train,ROMAN,ROMAN,roman,event,13065,,1,0,jungle book live action ne india box office par kya record banaya
+R2-B0,KN022,train,ROMAN,ROMAN,roman,event,14664,,1,0,shahid mira sangeet se pehle shaadi ki tayyariyan kab khatam huin
+R2-B0,KN023,train,ROMAN,ROMAN,roman,entity_person,12128,3,0,1,qawwal aziz mian ki barsi kis tarah yaad ki jati hai
+R2-B0,KN024,train,ROMAN,ROMAN,roman,factoid,31154,,1,0,west indies ke khilaf dubai day night series pakistan ka kaunsa milestone test hai
+R2-B0,KN025,train,ROMAN,ROMAN,roman,event,60831,,1,0,adb country director ne pm se mil kar investment ke bare mein kya kaha
+R2-B0,KN026,train,ROMAN,ROMAN,roman,entity_person,102664,,1,0,salman ki wrestler film ka pehla poster kis director ki movie ka hai
+R2-B0,KN027,train,ROMAN,ROMAN,roman,explanatory,59279,,1,0,chameleon satellite minutes mein naya mission kyun assume kar sakte hain
+R2-B0,KN028,train,ROMAN,ROMAN,roman,factoid,76785,,1,0,state bank ke mutabiq external debt burden mein kitni percent kami hui
+R2-B0,KN029,train,ROMAN,ROMAN,roman,event,101347,,1,0,houston new year show mein kumar sanu kis community event ka hissa bane
+R2-B0,KN030,train,ROMAN,ROMAN,roman,entity_person,47083,,1,0,imran tahir odi bowling ranking mein number one kab bane
+R2-B0,KN031,train,ROMAN,ROMAN,roman,factoid,29423,,1,0,fifa ranking mein germany top par hai to pakistan ka number kya hai
+R2-B0,KN032,train,ROMAN,ROMAN,roman,factoid,41695,,1,0,umar akmal par fixing case mein kitne saal ki pabandi lagi
+R2-B0,KN033,train,ROMAN,ROMAN,roman,factoid,81673,,1,0,shane warne test cap auction se bushfire fund ko kitni raqam mili
+R2-B0,KN034,train,ROMAN,ROMAN,roman,entity_person,13398,,1,0,sharmeen obaid oscar short documentary category mein dobara kab jeeti
+R2-B0,KN035,train,ROMAN,ROMAN,roman,entity_person,10546,,1,0,zaheer khan ne sagarika se shaadi ka elaan kab kiya
+R2-B0,KN036,train,ROMAN,ROMAN,roman,factoid,76509,,1,0,aglay das mahine mein local oil gas output mein kya izafa verqai hai
+R2-B0,KN037,dev,ROMAN,ROMAN,roman,topical,22739,,1,0,nayi photo app chehre tabdeel karne ke ilawa kya karti hai
+R2-B0,KN038,dev,ROMAN,ROMAN,roman,location,40057,3,0,1,peshawar used car mela mein logon ki dilchaspi kis cheez par thi
+R2-B0,KN039,dev,ROMAN,ROMAN,roman,event,23062,,1,0,nokia android handset china launch par ek minute mein kyun sold out hua
+R2-B0,KN040,dev,ROMAN,ROMAN,roman,factoid,24596,,1,0,samsung ne galaxy s7 active ko galti se kis app mein leak kiya
+R2-B0,KN041,dev,ROMAN,ROMAN,roman,event,65903,,1,0,caretaker finance minister ne cpec projects mukammal karne ka kya wazheh kiya
+R2-B0,KN042,dev,ROMAN,ROMAN,roman,explanatory,111652,,1,0,current account deficit ki raftaar slow kyun hui sbp ke mutabiq
+R2-B0,KN043,dev,ROMAN,ROMAN,roman,topical,21399,,1,0,moto p30 front design kis apple flagship se milta julta hai
+R2-B0,KN044,dev,ROMAN,ROMAN,roman,topical,23544,,1,0,twitter ka naya feature facebook snapchat se muqabla kyun karta hai
+R2-B0,KN045,dev,ROMAN,ROMAN,roman,factoid,19783,,1,0,messenger rooms jaisa group video chat facebook ne kab add kiya
+R2-B0,KN046,dev,ROMAN,ROMAN,roman,event,109714,,1,0,ml1 railway upgrade ko deadline se pehle track par lanay ki tayyari kya hai
+R2-B0,KN047,dev,ROMAN,ROMAN,roman,event,61862,,1,0,fbr aur sindh revenue board ne sales tax input par kya deal ki
+R2-B0,KN048,dev,ROMAN,ROMAN,roman,factoid,20073,42,0,0,samsung s10 lite aur note 10 lite 2020 lineup kab launch honay walay thay
+R2-B0,KN049,dev,ROMAN,ROMAN,roman,factoid,86593,,1,0,lahore psl final ke liye stadium ke gird kitne personnel deploy honge
+R2-B0,KN050,dev,ROMAN,ROMAN,roman,topical,34762,,1,0,afghanistan world cup jeetne ki peshgoi kis foundation par ki gai
+R2-B0,KN051,dev,ROMAN,ROMAN,roman,explanatory,21160,,1,0,gmail ke naye interface ko purane layout jaisa kaise banaya ja sakta hai
+R2-B0,KN052,dev,ROMAN,ROMAN,roman,event,59426,,1,0,samsung ne vegas ces par human like robots kyun dikhaye
+R2-B0,KN053,dev,ROMAN,ROMAN,roman,factoid,22115,,1,0,huawei mate 10 lite pakistan mein pehli baar kitne cameras ke sath aaya
+R2-B0,KN054,dev,ROMAN,ROMAN,roman,entity_person,4400,,1,0,kangana ke bayan par momina iram ne kya jawab diya
+R2-1,KN001,train,ROMAN,ROMAN,roman,event,92506,,1,0,malaysia air race world championship third round kab shuru hua
+R2-1,KN002,train,ROMAN,ROMAN,roman,factoid,90691,,1,0,zim t20 mein hosts ko chase ke liye kitna target mila
+R2-1,KN003,train,URDU,URDU,urdu,explanatory,17150,3,0,1,تھیٹر کے عالمی دن پر ثقافت کے فروغ کیوں ضروری سمجھا جاتا ہے
+R2-1,KN004,train,ROMAN,ROMAN,roman,topical,14991,1,0,1,desi ghee sehat ke liye faida mand hai ya nuqsan deh
+R2-1,KN005,train,ROMAN,ROMAN,roman,event,64084,,1,0,iran amreeka tension ke baad local equities opening par kyun rebound hua
+R2-1,KN006,train,ROMAN,ROMAN,roman,factoid,29860,,1,0,kolkata ne delhi ko ipl thriller mein kis margin se haraaya
+R2-1,KN007,train,URDU,URDU,urdu,event,70358,1,0,1,وفاقی ادارے ٹڈی دل کو کھاد میں کیسے تبدیل کرنے جا رہے ہیں
+R2-1,KN008,train,ROMAN,ROMAN,roman,entity_person,47197,,1,0,teen tennis sensation ne kaunsa canadian hardcourt title jeeta
+R2-1,KN009,train,URDU,URDU,urdu,explanatory,21892,1,0,1,برقی رو انسانی جسم کے لیے کیوں جان لیوا بن جاتی ہے
+R2-1,KN010,train,ROMAN,ROMAN,roman,event,1674,,1,0,benami accounts walo ke khilaf revenue board ne kiya saza tajweez ki
+R2-1,KN011,train,ROMAN,ROMAN,roman,factoid,60226,,1,0,france ki hydrogen solar wind powered boat ka naam kiya hai
+R2-1,KN012,train,ROMAN,ROMAN,roman,entity_person,13580,5,0,1,comedy nights wali dadi wapas kyun nahi ban na chahte
+R2-1,KN013,train,ROMAN,ROMAN,roman,event,82652,,1,0,world cup mein pakistan india fixture ke tickets black mein kyun bik rahe
+R2-1,KN014,train,ROMAN,ROMAN,roman,explanatory,79754,,1,0,mobile slow charge hone ki user side ghalti kiya ho sakti hai
+R2-1,KN015,train,ROMAN,ROMAN,roman,topical,22450,,1,0,viral maths puzzle ne internet users ko kyun confuse kiya
+R2-1,KN016,train,ROMAN,ROMAN,roman,entity_person,100673,,1,0,priyanka ke african kids se hair compliment exchange kis tour par hua
+R2-1,KN017,train,ROMAN,ROMAN,roman,factoid,19341,,1,0,boom supersonic passenger prototype kab unveil hua
+R2-1,KN018,train,ROMAN,ROMAN,roman,topical,17943,,1,0,aladdin kahani kisi haqeeqi shakhs par mabni hai ya sirf fable hai
+R2-1,KN019,train,ROMAN,ROMAN,roman,entity_person,5092,,1,0,jlo ne 50 saal ki umar mein fitness kaise maintain ki
+R2-1,KN020,train,ROMAN,ROMAN,roman,location,60895,,1,0,cpec joint cooperation committee ka session kis shehar mein chal raha tha
+R2-1,KN021,train,ROMAN,ROMAN,roman,event,13065,,1,0,jungle book live action ne india box office par kiya record banaya
+R2-1,KN022,train,ROMAN,ROMAN,roman,event,14664,,1,0,shahid mira sangeet se pehle shaadi ki tayyariyan kab khatam huin
+R2-1,KN023,train,ROMAN,ROMAN,roman,entity_person,12128,3,0,1,qawwal aziz mian ki barsi kis tarah yaad ki jati hai
+R2-1,KN024,train,ROMAN,ROMAN,roman,factoid,31154,,1,0,west indies ke khilaf dubai day night series pakistan ka kaunsa milestone test hai
+R2-1,KN025,train,ROMAN,ROMAN,roman,event,60831,,1,0,adb country director ne pm se mil kar investment ke bare mein kiya kaha
+R2-1,KN026,train,ROMAN,ROMAN,roman,entity_person,102664,,1,0,salman ki wrestler film ka pehla poster kis director ki movie ka hai
+R2-1,KN027,train,ROMAN,ROMAN,roman,explanatory,59279,,1,0,chameleon satellite minutes mein naya mission kyun assume kar sakte hain
+R2-1,KN028,train,ROMAN,ROMAN,roman,factoid,76785,,1,0,state bank ke mutabiq external debt burden mein kitni percent kami hui
+R2-1,KN029,train,ROMAN,ROMAN,roman,event,101347,,1,0,houston new year show mein kumar sanu kis community event ka hissa bane
+R2-1,KN030,train,ROMAN,ROMAN,roman,entity_person,47083,,1,0,imran tahir odi bowling ranking mein number one kab bane
+R2-1,KN031,train,ROMAN,ROMAN,roman,factoid,29423,,1,0,fifa ranking mein germany top par hai to pakistan ka number kiya hai
+R2-1,KN032,train,ROMAN,ROMAN,roman,factoid,41695,,1,0,umar akmal par fixing case mein kitne saal ki pabandi lagi
+R2-1,KN033,train,ROMAN,ROMAN,roman,factoid,81673,,1,0,shane warne test cap auction se bushfire fund ko kitni raqam mili
+R2-1,KN034,train,ROMAN,ROMAN,roman,entity_person,13398,,1,0,sharmeen obaid oscar short documentary category mein dobara kab jeeti
+R2-1,KN035,train,ROMAN,ROMAN,roman,entity_person,10546,,1,0,zaheer khan ne sagarika se shaadi ka elaan kab kiya
+R2-1,KN036,train,ROMAN,ROMAN,roman,factoid,76509,,1,0,aglay das mahine mein local oil gas output mein kiya izafa verqai hai
+R2-1,KN037,dev,ROMAN,ROMAN,roman,topical,22739,,1,0,nayi photo app chehre tabdeel karne ke ilawa kiya karti hai
+R2-1,KN038,dev,ROMAN,ROMAN,roman,location,40057,3,0,1,peshawar used car mela mein logon ki dilchaspi kis cheez par thi
+R2-1,KN039,dev,ROMAN,ROMAN,roman,event,23062,,1,0,nokia android handset china launch par ek minute mein kyun sold out hua
+R2-1,KN040,dev,ROMAN,ROMAN,roman,factoid,24596,,1,0,samsung ne galaxy s7 active ko galti se kis app mein leak kiya
+R2-1,KN041,dev,ROMAN,ROMAN,roman,event,65903,,1,0,caretaker finance minister ne cpec projects mukammal karne ka kiya wazheh kiya
+R2-1,KN042,dev,ROMAN,ROMAN,roman,explanatory,111652,,1,0,current account deficit ki raftaar slow kyun hui sbp ke mutabiq
+R2-1,KN043,dev,ROMAN,ROMAN,roman,topical,21399,,1,0,moto p30 front design kis apple flagship se milta julta hai
+R2-1,KN044,dev,ROMAN,ROMAN,roman,topical,23544,,1,0,twitter ka naya feature facebook snapchat se muqabla kyun karta hai
+R2-1,KN045,dev,ROMAN,ROMAN,roman,factoid,19783,,1,0,messenger rooms jaisa group video chat facebook ne kab add kiya
+R2-1,KN046,dev,ROMAN,ROMAN,roman,event,109714,,1,0,ml1 railway upgrade ko deadline se pehle track par lanay ki tayyari kiya hai
+R2-1,KN047,dev,ROMAN,ROMAN,roman,event,61862,,1,0,fbr aur sindh revenue board ne sales tax input par kiya deal ki
+R2-1,KN048,dev,ROMAN,ROMAN,roman,factoid,20073,42,0,0,samsung s10 lite aur note 10 lite 2020 lineup kab launch honay walay thay
+R2-1,KN049,dev,ROMAN,ROMAN,roman,factoid,86593,,1,0,lahore psl final ke liye stadium ke gird kitne personnel deploy honge
+R2-1,KN050,dev,ROMAN,ROMAN,roman,topical,34762,,1,0,afghanistan world cup jeetne ki peshgoi kis foundation par ki gai
+R2-1,KN051,dev,ROMAN,ROMAN,roman,explanatory,21160,,1,0,gmail ke naye interface ko purane layout jaisa kaise banaya ja sakta hai
+R2-1,KN052,dev,ROMAN,ROMAN,roman,event,59426,,1,0,samsung ne vegas ces par human like robots kyun dikhaye
+R2-1,KN053,dev,ROMAN,ROMAN,roman,factoid,22115,,1,0,huawei mate 10 lite pakistan mein pehli baar kitne cameras ke sath aaya
+R2-1,KN054,dev,ROMAN,ROMAN,roman,entity_person,4400,,1,0,kangana ke bayan par momina iram ne kiya jawab diya
+R2-3,KN001,train,ROMAN,ROMAN,roman,event,92506,,1,0,malaysia air race world championship third round kab shuru hua
+R2-3,KN002,train,ROMAN,ROMAN,roman,factoid,90691,,1,0,zim t20 mein hosts ko chase ke liye kitna target mila
+R2-3,KN003,train,URDU,URDU,urdu,explanatory,17150,3,0,1,تھیٹر کے عالمی دن پر ثقافت کے فروغ کیوں ضروری سمجھا جاتا ہے
+R2-3,KN004,train,ROMAN,ROMAN,roman,topical,14991,1,0,1,desi ghee sehat ke liye faida mand hai ya nuqsan deh
+R2-3,KN005,train,ROMAN,ROMAN,roman,event,64084,,1,0,iran amreeka tension ke baad local equities opening par kyun rebound hua
+R2-3,KN006,train,ROMAN,ROMAN,roman,factoid,29860,,1,0,kolkata ne ny delhi ko ipl thriller mein kis margin se sy haraaya
+R2-3,KN007,train,URDU,URDU,urdu,event,70358,1,0,1,وفاقی ادارے ٹڈی دل کو کھاد میں کیسے تبدیل کرنے جا رہے ہیں
+R2-3,KN008,train,ROMAN,ROMAN,roman,entity_person,47197,,1,0,teen tennis sensation ne ny kaunsa canadian hardcourt title jeeta
+R2-3,KN009,train,URDU,URDU,urdu,explanatory,21892,1,0,1,برقی رو انسانی جسم کے لیے کیوں جان لیوا بن جاتی ہے
+R2-3,KN010,train,ROMAN,ROMAN,roman,event,1674,,1,0,benami accounts walo ke khilaf revenue board ne ny kiya kya saza tajweez ki
+R2-3,KN011,train,ROMAN,ROMAN,roman,factoid,60226,,1,0,france ki hydrogen solar wind powered boat ka naam kiya kya hai
+R2-3,KN012,train,ROMAN,ROMAN,roman,entity_person,13580,5,0,1,comedy nights wali dadi wapas kyun nahi ban na chahte
+R2-3,KN013,train,ROMAN,ROMAN,roman,event,82652,,1,0,world cup mein pakistan india fixture ke tickets black kyun bik rahe
+R2-3,KN014,train,ROMAN,ROMAN,roman,explanatory,79754,,1,0,mobile slow charge hone ki user side ghalti kiya kya ho sakti hai
+R2-3,KN015,train,ROMAN,ROMAN,roman,topical,22450,,1,0,viral maths puzzle ne ny internet users ko kyun confuse kiya kya
+R2-3,KN016,train,ROMAN,ROMAN,roman,entity_person,100673,,1,0,priyanka ke african kids se sy hair compliment exchange kis tour par hua
+R2-3,KN017,train,ROMAN,ROMAN,roman,factoid,19341,,1,0,boom supersonic passenger prototype kab unveil hua
+R2-3,KN018,train,ROMAN,ROMAN,roman,topical,17943,,1,0,aladdin kahani kisi haqeeqi shakhs par mabni hai ya sirf fable
+R2-3,KN019,train,ROMAN,ROMAN,roman,entity_person,5092,,1,0,jlo ne ny 50 saal ki umar mein fitness kaise maintain
+R2-3,KN020,train,ROMAN,ROMAN,roman,location,60895,,1,0,cpec joint cooperation committee ka session kis shehar mein chal raha tha
+R2-3,KN021,train,ROMAN,ROMAN,roman,event,13065,,1,0,jungle book live action ne ny india box office par kiya kya record banaya
+R2-3,KN022,train,ROMAN,ROMAN,roman,event,14664,,1,0,shahid mira sangeet se sy pehle shaadi ki tayyariyan kab khatam huin
+R2-3,KN023,train,ROMAN,ROMAN,roman,entity_person,12128,3,0,1,qawwal aziz mian ki barsi kis tarah yaad jati hai
+R2-3,KN024,train,ROMAN,ROMAN,roman,factoid,31154,,1,0,west indies ke khilaf dubai day night series pakistan ka kaunsa milestone test hai
+R2-3,KN025,train,ROMAN,ROMAN,roman,event,60831,,1,0,adb country director ne ny pm se sy mil kar investment ke bare mein kiya kya kaha
+R2-3,KN026,train,ROMAN,ROMAN,roman,entity_person,102664,,1,0,salman ki wrestler film ka pehla poster kis director movie hai
+R2-3,KN027,train,ROMAN,ROMAN,roman,explanatory,59279,,1,0,chameleon satellite minutes mein naya mission kyun assume kar sakte hain
+R2-3,KN028,train,ROMAN,ROMAN,roman,factoid,76785,,1,0,state bank ke mutabiq external debt burden mein kitni percent kami hui
+R2-3,KN029,train,ROMAN,ROMAN,roman,event,101347,,1,0,houston new year show mein kumar sanu kis community event ka hissa bane
+R2-3,KN030,train,ROMAN,ROMAN,roman,entity_person,47083,,1,0,imran tahir odi bowling ranking mein number one kab bane
+R2-3,KN031,train,ROMAN,ROMAN,roman,factoid,29423,,1,0,fifa ranking mein germany top par hai to pakistan ka number kiya kya
+R2-3,KN032,train,ROMAN,ROMAN,roman,factoid,41695,,1,0,umar akmal par fixing case mein kitne saal ki pabandi lagi
+R2-3,KN033,train,ROMAN,ROMAN,roman,factoid,81673,,1,0,shane warne test cap auction se sy bushfire fund ko kitni raqam mili
+R2-3,KN034,train,ROMAN,ROMAN,roman,entity_person,13398,,1,0,sharmeen obaid oscar short documentary category mein dobara kab jeeti
+R2-3,KN035,train,ROMAN,ROMAN,roman,entity_person,10546,,1,0,zaheer khan ne ny sagarika se sy shaadi ka elaan kab kiya kya
+R2-3,KN036,train,ROMAN,ROMAN,roman,factoid,76509,,1,0,aglay das mahine mein local oil gas output kiya kya izafa verqai hai
+R2-3,KN037,dev,ROMAN,ROMAN,roman,topical,22739,,1,0,nayi photo app chehre tabdeel karne ke ilawa kiya kya karti hai
+R2-3,KN038,dev,ROMAN,ROMAN,roman,location,40057,3,0,1,peshawar used car mela mein logon ki dilchaspi kis cheez par thi
+R2-3,KN039,dev,ROMAN,ROMAN,roman,event,23062,,1,0,nokia android handset china launch par ek minute mein kyun sold out hua
+R2-3,KN040,dev,ROMAN,ROMAN,roman,factoid,24596,,1,0,samsung ne ny galaxy s7 active ko galti se sy kis app mein leak kiya kya
+R2-3,KN041,dev,ROMAN,ROMAN,roman,event,65903,,1,0,caretaker finance minister ne ny cpec projects mukammal karne ka kiya kya wazheh
+R2-3,KN042,dev,ROMAN,ROMAN,roman,explanatory,111652,,1,0,current account deficit ki raftaar slow kyun hui sbp ke mutabiq
+R2-3,KN043,dev,ROMAN,ROMAN,roman,topical,21399,,1,0,moto p30 front design kis apple flagship se sy milta julta hai
+R2-3,KN044,dev,ROMAN,ROMAN,roman,topical,23544,,1,0,twitter ka naya feature facebook snapchat se sy muqabla kyun karta hai
+R2-3,KN045,dev,ROMAN,ROMAN,roman,factoid,19783,,1,0,messenger rooms jaisa group video chat facebook ne ny kab add kiya kya
+R2-3,KN046,dev,ROMAN,ROMAN,roman,event,109714,,1,0,ml1 railway upgrade ko deadline se sy pehle track par lanay ki tayyari kiya kya hai
+R2-3,KN047,dev,ROMAN,ROMAN,roman,event,61862,,1,0,fbr aur sindh revenue board ne ny sales tax input par kiya kya deal ki
+R2-3,KN048,dev,ROMAN,ROMAN,roman,factoid,20073,42,0,0,samsung s10 lite aur note 10 2020 lineup kab launch honay walay thay
+R2-3,KN049,dev,ROMAN,ROMAN,roman,factoid,86593,,1,0,lahore psl final ke liye stadium gird kitne personnel deploy honge
+R2-3,KN050,dev,ROMAN,ROMAN,roman,topical,34762,,1,0,afghanistan world cup jeetne ki peshgoi kis foundation par gai
+R2-3,KN051,dev,ROMAN,ROMAN,roman,explanatory,21160,,1,0,gmail ke naye interface ko purane layout jaisa kaise banaya ja sakta hai
+R2-3,KN052,dev,ROMAN,ROMAN,roman,event,59426,,1,0,samsung ne ny vegas ces par human like robots kyun dikhaye
+R2-3,KN053,dev,ROMAN,ROMAN,roman,factoid,22115,,1,0,huawei mate 10 lite pakistan mein pehli baar kitne cameras ke sath aaya
+R2-3,KN054,dev,ROMAN,ROMAN,roman,entity_person,4400,,1,0,kangana ke bayan par momina iram ne ny kiya kya jawab diya

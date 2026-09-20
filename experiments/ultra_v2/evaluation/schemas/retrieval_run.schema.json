@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ultra.local/ultra_v2/retrieval_run.schema.json",
+  "title": "ULTRA v2 retrieval dump row",
+  "type": "object",
+  "required": ["run_id", "system_id", "query_id", "rank", "doc_id", "score", "n_hits_returned"],
+  "properties": {
+    "run_id": { "type": "string", "minLength": 1 },
+    "system_id": { "type": "string", "minLength": 1 },
+    "query_id": { "type": "string", "minLength": 1 },
+    "rank": { "type": "integer", "minimum": 1, "maximum": 50 },
+    "doc_id": { "type": "integer", "minimum": 0 },
+    "score": { "type": "number" },
+    "n_hits_returned": { "type": "integer", "minimum": 0, "maximum": 50 }
+  }
+}

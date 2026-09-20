@@ -1,0 +1,21 @@
+{
+  "experiment_id": "PHASE10-CASCADE-B",
+  "timestamp_utc": "2026-09-20T11:28:19Z",
+  "branch": "research/ultra-v2-strengthening",
+  "commit": "fd54ac9b65c2db93e7e16fbf0c5a40b6a6025be1",
+  "preregistration_sha256": "c85eeb3509423d98fb40eb5ff8e9d44d5e6ee76e2239dc162a9c4ef710369eee",
+  "hybrid_keep": 40,
+  "cascade_slots": 10,
+  "rrf_k": 60,
+  "fusion": "option_b_hybrid_first",
+  "trigger": "phase9_v2_title_hit_ge1",
+  "test_accessed": false,
+  "gates": {
+    "bm25": "PASS",
+    "dense": "PASS",
+    "hybrid": "PASS",
+    "ng3": "PASS",
+    "trigger_set": "PASS",
+    "option_b_repeat": "PASS"
+  }
+}

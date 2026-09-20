@@ -1,0 +1,168 @@
+{
+  "experiment_id": "PHASE10-CASCADE-B",
+  "timestamp_utc": "2026-09-20T11:28:19Z",
+  "decision": "PHASE10 PARTIALLY SUPPORTED",
+  "test_accessed": false,
+  "preregistration_sha256": "c85eeb3509423d98fb40eb5ff8e9d44d5e6ee76e2239dc162a9c4ef710369eee",
+  "scored_csv_sha256": "b32a7a4d52f2688b65df7636cd570393011c15333c8418455339bdecedc2d0c6",
+  "gates": {
+    "bm25": "PASS",
+    "dense": "PASS",
+    "hybrid": "PASS",
+    "ng3": "PASS",
+    "trigger_set": "PASS",
+    "option_b_repeat": "PASS"
+  },
+  "frozen_hybrid": {
+    "n": 51,
+    "hit@1_n": 3,
+    "hit@5_n": 11,
+    "hit@10_n": 19,
+    "hit@50_n": 25,
+    "mrr": 0.1422
+  },
+  "reproduced_hybrid": {
+    "n": 51,
+    "hit@1_n": 3,
+    "hit@1": 0.0588,
+    "hit@5_n": 11,
+    "hit@5": 0.2157,
+    "hit@10_n": 19,
+    "hit@10": 0.3725,
+    "hit@50_n": 25,
+    "hit@50": 0.4902,
+    "mrr": 0.1422
+  },
+  "phase10_cascade_b": {
+    "n": 51,
+    "hit@1_n": 3,
+    "hit@1": 0.0588,
+    "hit@5_n": 11,
+    "hit@5": 0.2157,
+    "hit@10_n": 19,
+    "hit@10": 0.3725,
+    "hit@50_n": 24,
+    "hit@50": 0.4706,
+    "mrr": 0.1418
+  },
+  "n_triggered": 22,
+  "triggered_ids": [
+    "KN006",
+    "KN014",
+    "KN018",
+    "KN021",
+    "KN022",
+    "KN023",
+    "KN027",
+    "KN028",
+    "KN029",
+    "KN030",
+    "KN031",
+    "KN033",
+    "KN034",
+    "KN035",
+    "KN037",
+    "KN043",
+    "KN044",
+    "KN045",
+    "KN047",
+    "KN049",
+    "KN051",
+    "KN053"
+  ],
+  "oracle_diagnostic": {
+    "label": "NON_DEPLOYABLE_CEILING_ONLY",
+    "n": 26,
+    "ids": [
+      "KN002",
+      "KN005",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN018",
+      "KN020",
+      "KN021",
+      "KN022",
+      "KN024",
+      "KN025",
+      "KN026",
+      "KN027",
+      "KN028",
+      "KN032",
+      "KN035",
+      "KN036",
+      "KN037",
+      "KN040",
+      "KN041",
+      "KN042",
+      "KN044",
+      "KN047",
+      "KN050",
+      "KN051",
+      "KN054"
+    ],
+    "trigger_intersect_n": 11,
+    "trigger_intersect_ids": [
+      "KN006",
+      "KN018",
+      "KN021",
+      "KN022",
+      "KN027",
+      "KN028",
+      "KN035",
+      "KN037",
+      "KN044",
+      "KN047",
+      "KN051"
+    ],
+    "note": "Not Phase 10's scored result. Deployable metrics are phase10_cascade_b vs hybrid."
+  },
+  "overlap_hit50": {
+    "p10_vs_hybrid": {
+      "hit_hit": 22,
+      "a_hit_b_miss": 2,
+      "a_miss_b_hit": 3,
+      "miss_miss": 24,
+      "n": 51
+    }
+  },
+  "vs_hybrid": {
+    "recovered_hit50": [
+      "KN027",
+      "KN035"
+    ],
+    "regressed_hit50": [
+      "KN030",
+      "KN043",
+      "KN045"
+    ],
+    "regressed_hit5": []
+  },
+  "room_cat1": {
+    "hybrid_hit@50": 3,
+    "hybrid_ids": [
+      "KN001",
+      "KN011",
+      "KN045"
+    ],
+    "p10_hit@50": 2,
+    "p10_ids": [
+      "KN001",
+      "KN011"
+    ]
+  },
+  "quad23": {
+    "p10_hit@50_n": 1,
+    "p10_ids": [
+      "KN027"
+    ]
+  },
+  "runtime_wall_seconds": 527.658,
+  "safety": {
+    "test_accessed": false,
+    "query_injection_into_hybrid_bm25": false,
+    "option_a_full_rrf": false,
+    "oracle_used_as_trigger": false,
+    "phase2_9_modified": false
+  }
+}

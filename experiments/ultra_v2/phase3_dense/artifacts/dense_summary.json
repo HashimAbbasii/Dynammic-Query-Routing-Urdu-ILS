@@ -1,0 +1,384 @@
+{
+  "experiment_id": "DENSE-BASELINE",
+  "timestamp_utc": "2026-09-11T19:29:19Z",
+  "test_accessed": false,
+  "nl_evaluation": "pending official pooled annotation; not scored",
+  "model": {
+    "id": "intfloat/multilingual-e5-small",
+    "revision": "8d923955b027282ba975c0a4c825486c9ca4c490",
+    "dim": 384,
+    "max_seq_length": 512,
+    "prefix_mode": "manual_concat"
+  },
+  "data": {
+    "kn_train": 36,
+    "kn_dev": 18,
+    "kn_total": 54,
+    "roman_kn": 51,
+    "nl_train": 44,
+    "nl_dev": 22,
+    "nl_scored": false,
+    "safety": {
+      "forbidden_ids": [],
+      "id_pattern_failures": [],
+      "script_mismatches": [],
+      "split_mismatches": [],
+      "test_paths_opened": false,
+      "qtrn": 0,
+      "historical_h": 0,
+      "historical_k": 0,
+      "historical_u": 0
+    },
+    "script_counts": {
+      "ROMAN/train": 33,
+      "URDU/train": 3,
+      "ROMAN/dev": 18
+    },
+    "kn_script_totals": {
+      "ROMAN": 51,
+      "URDU": 3
+    }
+  },
+  "baseline_frozen": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@5_n": 4,
+    "hit@10_n": 4,
+    "hit@50_n": 6,
+    "mrr": 0.0375
+  },
+  "baseline_reproduced_from_artifact": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@1": 0.0196,
+    "hit@5_n": 4,
+    "hit@5": 0.0784,
+    "hit@10_n": 4,
+    "hit@10": 0.0784,
+    "hit@50_n": 6,
+    "hit@50": 0.1176,
+    "mrr": 0.0375
+  },
+  "metrics_roman_kn_traindev": {
+    "n": 51,
+    "hit@1_n": 5,
+    "hit@1": 0.098,
+    "hit@5_n": 15,
+    "hit@5": 0.2941,
+    "hit@10_n": 16,
+    "hit@10": 0.3137,
+    "hit@50_n": 22,
+    "hit@50": 0.4314,
+    "mrr": 0.1726
+  },
+  "metrics_roman_kn_train": {
+    "n": 33,
+    "hit@1_n": 4,
+    "hit@1": 0.1212,
+    "hit@5_n": 9,
+    "hit@5": 0.2727,
+    "hit@10_n": 10,
+    "hit@10": 0.303,
+    "hit@50_n": 13,
+    "hit@50": 0.3939,
+    "mrr": 0.171
+  },
+  "metrics_roman_kn_dev": {
+    "n": 18,
+    "hit@1_n": 1,
+    "hit@1": 0.0556,
+    "hit@5_n": 6,
+    "hit@5": 0.3333,
+    "hit@10_n": 6,
+    "hit@10": 0.3333,
+    "hit@50_n": 9,
+    "hit@50": 0.5,
+    "mrr": 0.1754
+  },
+  "metrics_kn_by_script": {
+    "URDU": {
+      "n": 3,
+      "hit@1_n": 2,
+      "hit@1": 0.6667,
+      "hit@5_n": 3,
+      "hit@5": 1.0,
+      "hit@10_n": 3,
+      "hit@10": 1.0,
+      "hit@50_n": 3,
+      "hit@50": 1.0,
+      "mrr": 0.7778
+    },
+    "ROMAN": {
+      "n": 51,
+      "hit@1_n": 5,
+      "hit@1": 0.098,
+      "hit@5_n": 15,
+      "hit@5": 0.2941,
+      "hit@10_n": 16,
+      "hit@10": 0.3137,
+      "hit@50_n": 22,
+      "hit@50": 0.4314,
+      "mrr": 0.1726
+    },
+    "MIXED": {
+      "n": 0
+    },
+    "OTHER": {
+      "n": 0
+    }
+  },
+  "dense_mechanical": {
+    "hit@5": 15,
+    "rank_in50_out5": 7,
+    "miss50": 29,
+    "n": 51
+  },
+  "transition_top5": {
+    "hit_hit": 0,
+    "hit_miss": 4,
+    "miss_hit": 15,
+    "miss_miss": 32,
+    "n": 51,
+    "recovered": 15,
+    "regressed": 4
+  },
+  "transition_top50": {
+    "hit_hit": 2,
+    "hit_miss": 4,
+    "miss_hit": 20,
+    "miss_miss": 25,
+    "n": 51,
+    "recovered": 20,
+    "regressed": 4
+  },
+  "taxonomy": {
+    "ENT": {
+      "n": 16,
+      "baseline_hit@50": 0,
+      "dense_hit@50": 10,
+      "recovered_hit@50": 10,
+      "regressed_hit@50": 0,
+      "baseline_hit@5": 0,
+      "dense_hit@5": 7
+    },
+    "NEIGH": {
+      "n": 1,
+      "baseline_hit@50": 0,
+      "dense_hit@50": 0,
+      "recovered_hit@50": 0,
+      "regressed_hit@50": 0,
+      "baseline_hit@5": 0,
+      "dense_hit@5": 0
+    },
+    "RANK": {
+      "n": 2,
+      "baseline_hit@50": 2,
+      "dense_hit@50": 2,
+      "recovered_hit@50": 0,
+      "regressed_hit@50": 0,
+      "baseline_hit@5": 0,
+      "dense_hit@5": 1
+    },
+    "ROOM": {
+      "n": 19,
+      "baseline_hit@50": 0,
+      "dense_hit@50": 6,
+      "recovered_hit@50": 6,
+      "regressed_hit@50": 0,
+      "baseline_hit@5": 0,
+      "dense_hit@5": 4
+    },
+    "SUCCESS": {
+      "n": 4,
+      "baseline_hit@50": 4,
+      "dense_hit@50": 0,
+      "recovered_hit@50": 0,
+      "regressed_hit@50": 4,
+      "baseline_hit@5": 4,
+      "dense_hit@5": 0
+    },
+    "VOCAB": {
+      "n": 9,
+      "baseline_hit@50": 0,
+      "dense_hit@50": 4,
+      "recovered_hit@50": 4,
+      "regressed_hit@50": 0,
+      "baseline_hit@5": 0,
+      "dense_hit@5": 3
+    }
+  },
+  "room_cat1": {
+    "ids": [
+      "KN001",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN011",
+      "KN018",
+      "KN037",
+      "KN045",
+      "KN047",
+      "KN050",
+      "KN051"
+    ],
+    "n": 11,
+    "baseline_hit@50": 0,
+    "dense_hit@50": 3,
+    "recovered_hit@50": 3,
+    "regressed_hit@50": 0,
+    "baseline_hit@5": 0,
+    "dense_hit@5": 1,
+    "per_query": [
+      {
+        "query_id": "KN001",
+        "dense_rank": 16,
+        "dense_hit@50": 1,
+        "baseline_hit@50": 0
+      },
+      {
+        "query_id": "KN006",
+        "dense_rank": 13002,
+        "dense_hit@50": 0,
+        "baseline_hit@50": 0
+      },
+      {
+        "query_id": "KN008",
+        "dense_rank": 2036,
+        "dense_hit@50": 0,
+        "baseline_hit@50": 0
+      },
+      {
+        "query_id": "KN010",
+        "dense_rank": 466,
+        "dense_hit@50": 0,
+        "baseline_hit@50": 0
+      },
+      {
+        "query_id": "KN011",
+        "dense_rank": 1,
+        "dense_hit@50": 1,
+        "baseline_hit@50": 0
+      },
+      {
+        "query_id": "KN018",
+        "dense_rank": 11213,
+        "dense_hit@50": 0,
+        "baseline_hit@50": 0
+      },
+      {
+        "query_id": "KN037",
+        "dense_rank": 2537,
+        "dense_hit@50": 0,
+        "baseline_hit@50": 0
+      },
+      {
+        "query_id": "KN045",
+        "dense_rank": 23,
+        "dense_hit@50": 1,
+        "baseline_hit@50": 0
+      },
+      {
+        "query_id": "KN047",
+        "dense_rank": 59,
+        "dense_hit@50": 0,
+        "baseline_hit@50": 0
+      },
+      {
+        "query_id": "KN050",
+        "dense_rank": 3531,
+        "dense_hit@50": 0,
+        "baseline_hit@50": 0
+      },
+      {
+        "query_id": "KN051",
+        "dense_rank": 616,
+        "dense_hit@50": 0,
+        "baseline_hit@50": 0
+      }
+    ]
+  },
+  "vocab_controls": {
+    "ids": [
+      "KN017",
+      "KN020",
+      "KN041"
+    ],
+    "n": 3,
+    "baseline_hit@50": 0,
+    "dense_hit@50": 1,
+    "recovered_hit@50": 1,
+    "regressed_hit@50": 0,
+    "baseline_hit@5": 0,
+    "dense_hit@5": 1,
+    "per_query": [
+      {
+        "query_id": "KN017",
+        "dense_rank": 1,
+        "dense_hit@50": 1,
+        "dense_hit@5": 1,
+        "rank1_doc_id": 19341,
+        "note": "VOCAB negative control; do not claim as romanization recovery"
+      },
+      {
+        "query_id": "KN020",
+        "dense_rank": 110,
+        "dense_hit@50": 0,
+        "dense_hit@5": 0,
+        "rank1_doc_id": 55485,
+        "note": "VOCAB negative control; do not claim as romanization recovery"
+      },
+      {
+        "query_id": "KN041",
+        "dense_rank": 11599,
+        "dense_hit@50": 0,
+        "dense_hit@5": 0,
+        "rank1_doc_id": 1401,
+        "note": "VOCAB negative control; do not claim as romanization recovery"
+      }
+    ]
+  },
+  "other_categories_collapsed": {
+    "n": 7,
+    "baseline_hit@50": 6,
+    "dense_hit@50": 2,
+    "recovered_hit@50": 0,
+    "regressed_hit@50": 4,
+    "baseline_hit@5": 4,
+    "dense_hit@5": 1
+  },
+  "mcnemar_exact": {
+    "hit@50_baseline_hit_dense_miss": 4,
+    "hit@50_baseline_miss_dense_hit": 20,
+    "hit@50_p": 0.001544,
+    "hit@5_baseline_hit_dense_miss": 4,
+    "hit@5_baseline_miss_dense_hit": 15,
+    "hit@5_p": 0.019211,
+    "note": "n=51; p-values are descriptive only"
+  },
+  "reproducibility": {
+    "second_query_encode_rank_identity": true,
+    "second_query_encode_allclose_1e-6": true,
+    "second_query_embed_seconds": 0.582
+  },
+  "runtime": {
+    "index_or_load_seconds": 30948.21,
+    "query_embed_seconds": 0.486,
+    "search_seconds": 0.761,
+    "rss_mb": 651.5,
+    "device": "cpu",
+    "cuda": false
+  },
+  "safety": {
+    "test_accessed": false,
+    "frozen_m0_modified": false,
+    "plos_modified": false,
+    "historical_r2_modified": false,
+    "query_tuning": false,
+    "model_shopping": false,
+    "parameter_tuning": false,
+    "hybrid": false,
+    "reranking": false,
+    "gold_injection": false,
+    "data_leakage_detected": false
+  }
+}

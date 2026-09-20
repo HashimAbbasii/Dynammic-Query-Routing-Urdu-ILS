@@ -1,0 +1,15 @@
+{
+  "total_tokens": 31236340,
+  "dictionary_first_key_tokens": 10115123,
+  "fallback_tokens": 20524326,
+  "latin_tokens": 596891,
+  "pct_fallback": 65.7066,
+  "pct_dictionary": 32.3825,
+  "fallback_changed_vs_control": 1109393,
+  "unique_fallback_outputs_control": 345883,
+  "unique_fallback_outputs_treatment": 345888,
+  "treatment_empty_fallback": 6573,
+  "avg_fallback_len_control": 4.416,
+  "avg_fallback_len_treatment": 4.416,
+  "reverse_dict_mismatches": 0
+}

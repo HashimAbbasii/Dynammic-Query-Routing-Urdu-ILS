@@ -1,0 +1,187 @@
+[
+  {
+    "query_id": "KN004",
+    "split": "train",
+    "source_doc_id": 14991,
+    "category": "SUCCESS",
+    "gold_rank": 1,
+    "query_tokens": [
+      "desi",
+      "ghee",
+      "sehat",
+      "ke",
+      "liye",
+      "faida",
+      "mand",
+      "hai",
+      "ya",
+      "nuqsan",
+      "deh"
+    ],
+    "query_tokens_in_roman_index": [
+      "ghee",
+      "hai",
+      "ke",
+      "mand",
+      "sehat"
+    ],
+    "gold_roman_token_count": 1039,
+    "matching_terms_query_and_gold_roman": [
+      "ghee",
+      "hai",
+      "ke",
+      "sehat"
+    ],
+    "n_matching_terms": 4,
+    "retrieved_top5": [
+      {
+        "rank": 1,
+        "doc_id": 14991,
+        "score": 19.134267807006836
+      },
+      {
+        "rank": 2,
+        "doc_id": 14618,
+        "score": 17.176755905151367
+      },
+      {
+        "rank": 3,
+        "doc_id": 15119,
+        "score": 16.927942276000977
+      },
+      {
+        "rank": 4,
+        "doc_id": 72444,
+        "score": 16.895225524902344
+      },
+      {
+        "rank": 5,
+        "doc_id": 1141,
+        "score": 16.331104278564453
+      }
+    ],
+    "n_hits_returned": 50,
+    "note": "Method D: query tokens as typed; gold tokens are document-side romanization."
+  },
+  {
+    "query_id": "KN014",
+    "split": "train",
+    "source_doc_id": 79754,
+    "category": "RANK",
+    "gold_rank": 44,
+    "query_tokens": [
+      "mobile",
+      "slow",
+      "charge",
+      "hone",
+      "ki",
+      "user",
+      "side",
+      "ghalti",
+      "kya",
+      "ho",
+      "sakti",
+      "hai"
+    ],
+    "query_tokens_in_roman_index": [
+      "hai",
+      "ho",
+      "hone",
+      "ki",
+      "mobile"
+    ],
+    "gold_roman_token_count": 464,
+    "matching_terms_query_and_gold_roman": [
+      "hai",
+      "ho",
+      "hone",
+      "ki",
+      "mobile"
+    ],
+    "n_matching_terms": 5,
+    "retrieved_top5": [
+      {
+        "rank": 1,
+        "doc_id": 17485,
+        "score": 10.819120407104492
+      },
+      {
+        "rank": 2,
+        "doc_id": 59694,
+        "score": 10.771675109863281
+      },
+      {
+        "rank": 3,
+        "doc_id": 79989,
+        "score": 10.660005569458008
+      },
+      {
+        "rank": 4,
+        "doc_id": 79881,
+        "score": 10.658792495727539
+      },
+      {
+        "rank": 5,
+        "doc_id": 79960,
+        "score": 10.341181755065918
+      }
+    ],
+    "n_hits_returned": 50,
+    "note": "Method D: query tokens as typed; gold tokens are document-side romanization."
+  },
+  {
+    "query_id": "KN001",
+    "split": "train",
+    "source_doc_id": 92506,
+    "category": "VOCAB/MISS",
+    "gold_rank": null,
+    "query_tokens": [
+      "malaysia",
+      "air",
+      "race",
+      "world",
+      "championship",
+      "third",
+      "round",
+      "kab",
+      "shuru",
+      "hua"
+    ],
+    "query_tokens_in_roman_index": [
+      "air",
+      "kab"
+    ],
+    "gold_roman_token_count": 91,
+    "matching_terms_query_and_gold_roman": [],
+    "n_matching_terms": 0,
+    "retrieved_top5": [
+      {
+        "rank": 1,
+        "doc_id": 18668,
+        "score": 19.96223258972168
+      },
+      {
+        "rank": 2,
+        "doc_id": 60908,
+        "score": 13.530654907226562
+      },
+      {
+        "rank": 3,
+        "doc_id": 87995,
+        "score": 12.740555763244629
+      },
+      {
+        "rank": 4,
+        "doc_id": 61499,
+        "score": 12.63193130493164
+      },
+      {
+        "rank": 5,
+        "doc_id": 88009,
+        "score": 12.34286117553711
+      }
+    ],
+    "n_hits_returned": 50,
+    "note": "Method D: query tokens as typed; gold tokens are document-side romanization."
+  }
+]

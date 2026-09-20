@@ -1,0 +1,21 @@
+{
+  "dump_date": "20260901",
+  "base_url": "https://dumps.wikimedia.org/urwiki/20260901/",
+  "built_utc": "2026-09-15T18:23:17Z",
+  "n_langlinks_rows": 14616015,
+  "n_langlinks_en": 1280436,
+  "n_page_rows": 2988000,
+  "n_redirect_rows": 1128977,
+  "n_article_rows_emitted": 500683,
+  "n_redirect_rows_emitted": 738354,
+  "n_table_rows": 1239037,
+  "n_unique_ur_titles": 1238968,
+  "n_unique_en_titles": 496463,
+  "sample_seed": 20260901,
+  "sample_n": 20,
+  "manual_curation": false,
+  "query_benchmark_used": false,
+  "csv_path": "artifacts/bilingual_titles.csv",
+  "csv_sha256": "7686f02d5bb2110eb4cccc7cdbd326324e4f7fa5e4dd34d7125a76d7795cf55d",
+  "csv_bytes": 102620316
+}

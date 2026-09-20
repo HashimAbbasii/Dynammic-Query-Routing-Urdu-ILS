@@ -1,0 +1,277 @@
+{
+  "experiment_id": "R2-NG3",
+  "timestamp_utc": "2026-09-11T10:02:22Z",
+  "test_accessed": false,
+  "baseline_reproduction": "PASS",
+  "decision": "R2-NG3 PARTIALLY SUPPORTED",
+  "search_repeat_identical": true,
+  "control_metrics": {
+    "train": {
+      "n": 33,
+      "hit@1_n": 1,
+      "hit@1": 0.0303,
+      "hit@5_n": 3,
+      "hit@5": 0.0909,
+      "hit@10_n": 3,
+      "hit@10": 0.0909,
+      "hit@50_n": 4,
+      "hit@50": 0.1212,
+      "mrr": 0.0472
+    },
+    "dev": {
+      "n": 18,
+      "hit@1_n": 0,
+      "hit@1": 0.0,
+      "hit@5_n": 1,
+      "hit@5": 0.0556,
+      "hit@10_n": 1,
+      "hit@10": 0.0556,
+      "hit@50_n": 2,
+      "hit@50": 0.1111,
+      "mrr": 0.0198
+    },
+    "train+dev": {
+      "n": 51,
+      "hit@1_n": 1,
+      "hit@1": 0.0196,
+      "hit@5_n": 4,
+      "hit@5": 0.0784,
+      "hit@10_n": 4,
+      "hit@10": 0.0784,
+      "hit@50_n": 6,
+      "hit@50": 0.1176,
+      "mrr": 0.0375
+    }
+  },
+  "treatment_metrics": {
+    "train": {
+      "n": 33,
+      "hit@1_n": 1,
+      "hit@1": 0.0303,
+      "hit@5_n": 4,
+      "hit@5": 0.1212,
+      "hit@10_n": 4,
+      "hit@10": 0.1212,
+      "hit@50_n": 4,
+      "hit@50": 0.1212,
+      "mrr": 0.0525
+    },
+    "dev": {
+      "n": 18,
+      "hit@1_n": 2,
+      "hit@1": 0.1111,
+      "hit@5_n": 2,
+      "hit@5": 0.1111,
+      "hit@10_n": 2,
+      "hit@10": 0.1111,
+      "hit@50_n": 4,
+      "hit@50": 0.2222,
+      "mrr": 0.1162
+    },
+    "train+dev": {
+      "n": 51,
+      "hit@1_n": 3,
+      "hit@1": 0.0588,
+      "hit@5_n": 6,
+      "hit@5": 0.1176,
+      "hit@10_n": 6,
+      "hit@10": 0.1176,
+      "hit@50_n": 8,
+      "hit@50": 0.1569,
+      "mrr": 0.075
+    }
+  },
+  "primary_room_cat1": {
+    "n": 11,
+    "baseline_hit50_n": 0,
+    "treatment_hit50_n": 1,
+    "absolute_change_n": 1,
+    "recovered": [
+      "KN050"
+    ],
+    "remaining_misses": [
+      "KN001",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN011",
+      "KN018",
+      "KN037",
+      "KN045",
+      "KN047",
+      "KN051"
+    ],
+    "detail": [
+      {
+        "query_id": "KN001",
+        "baseline_rank": "",
+        "ng3_rank": "",
+        "recovered": 0,
+        "baseline_in50": 0,
+        "ng3_in50": 0,
+        "ng3_overlap_gold": 7,
+        "shared_trigrams_sample": "ala hir kab mal mpi orl rld"
+      },
+      {
+        "query_id": "KN006",
+        "baseline_rank": "",
+        "ng3_rank": "",
+        "recovered": 0,
+        "baseline_in50": 0,
+        "ng3_in50": 0,
+        "ng3_overlap_gold": 13,
+        "shared_trigrams_sample": "ara aya ein gin har hri ko kol mei ne olk ril se"
+      },
+      {
+        "query_id": "KN008",
+        "baseline_rank": "",
+        "ng3_rank": "",
+        "recovered": 0,
+        "baseline_in50": 0,
+        "ng3_in50": 0,
+        "ng3_overlap_gold": 10,
+        "shared_trigrams_sample": "ana ati eet har ion itl jee ne nis sat"
+      },
+      {
+        "query_id": "KN010",
+        "baseline_rank": "",
+        "ng3_rank": "",
+        "recovered": 0,
+        "baseline_in50": 0,
+        "ng3_in50": 0,
+        "ng3_overlap_gold": 10,
+        "shared_trigrams_sample": "alo ami aza ke khi ki laf nam ne nts"
+      },
+      {
+        "query_id": "KN011",
+        "baseline_rank": "",
+        "ng3_rank": "",
+        "recovered": 0,
+        "baseline_in50": 0,
+        "ng3_in50": 0,
+        "ng3_overlap_gold": 8,
+        "shared_trigrams_sample": "anc dro fra hai ki ola ran sol"
+      },
+      {
+        "query_id": "KN018",
+        "baseline_rank": "",
+        "ng3_rank": "",
+        "recovered": 0,
+        "baseline_in50": 0,
+        "ng3_in50": 0,
+        "ng3_overlap_gold": 15,
+        "shared_trigrams_sample": "abl add aha akh ala ani bni din hai han isi khs lad par sha"
+      },
+      {
+        "query_id": "KN037",
+        "baseline_rank": "",
+        "ng3_rank": "",
+        "recovered": 0,
+        "baseline_in50": 0,
+        "ng3_in50": 0,
+        "ng3_overlap_gold": 7,
+        "shared_trigrams_sample": "arn hai hre kar ke oto rti"
+      },
+      {
+        "query_id": "KN045",
+        "baseline_rank": "",
+        "ng3_rank": "",
+        "recovered": 0,
+        "baseline_in50": 0,
+        "ng3_in50": 0,
+        "ng3_overlap_gold": 9,
+        "shared_trigrams_sample": "add ais cha gro hat iya jai kiy ne"
+      },
+      {
+        "query_id": "KN047",
+        "baseline_rank": "",
+        "ng3_rank": "",
+        "recovered": 0,
+        "baseline_in50": 0,
+        "ng3_in50": 0,
+        "ng3_overlap_gold": 5,
+        "shared_trigrams_sample": "aur ki ndh ne par"
+      },
+      {
+        "query_id": "KN050",
+        "baseline_rank": "",
+        "ng3_rank": 1,
+        "recovered": 1,
+        "baseline_in50": 0,
+        "ng3_in50": 1,
+        "ng3_overlap_gold": 14,
+        "shared_trigrams_sample": "afg fgh gha goi han hgo ion ki orl par rld shg sta tan"
+      },
+      {
+        "query_id": "KN051",
+        "baseline_rank": "",
+        "ng3_rank": "",
+        "recovered": 0,
+        "baseline_in50": 0,
+        "ng3_in50": 0,
+        "ng3_overlap_gold": 13,
+        "shared_trigrams_sample": "ais ana ane aya hai isa ise jai ke ko nay ran rfa"
+      }
+    ]
+  },
+  "candidate_generation": {
+    "baseline_outside_top50": 45,
+    "treatment_outside_top50": 43,
+    "recovered": [
+      "KN017",
+      "KN035",
+      "KN039",
+      "KN050"
+    ],
+    "regressed": [
+      "KN012",
+      "KN014"
+    ],
+    "net_hit50_n": 2
+  },
+  "transitions": {
+    "HIT->HIT": 3,
+    "HIT->MISS": 1,
+    "MISS->HIT": 3,
+    "MISS->MISS": 41,
+    "MISS->RANK": 1,
+    "RANK->MISS": 1,
+    "RANK->RANK": 1
+  },
+  "negative_controls_vocab": {
+    "KN017": {
+      "category": "VOCAB",
+      "baseline_rank": "",
+      "ng3_rank": 5,
+      "baseline_hit50": 0,
+      "ng3_hit50": 1,
+      "ng3_overlap_gold": 6
+    },
+    "KN020": {
+      "category": "VOCAB",
+      "baseline_rank": "",
+      "ng3_rank": "",
+      "baseline_hit50": 0,
+      "ng3_hit50": 0,
+      "ng3_overlap_gold": 10
+    },
+    "KN041": {
+      "category": "VOCAB",
+      "baseline_rank": "",
+      "ng3_rank": "",
+      "baseline_hit50": 0,
+      "ng3_hit50": 0,
+      "ng3_overlap_gold": 10
+    }
+  },
+  "mcnemar_hit50": {
+    "n_discordant": 6,
+    "n01_recovered": 4,
+    "n10_regressed": 2,
+    "p_two_sided": 0.6875
+  },
+  "tokenize_expand_sec": 108.71,
+  "bm25_build_sec": 49.65,
+  "n_docs": 111860,
+  "python": "3.13.9"
+}

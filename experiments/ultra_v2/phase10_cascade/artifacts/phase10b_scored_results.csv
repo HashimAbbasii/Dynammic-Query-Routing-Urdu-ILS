@@ -1,0 +1,52 @@
+query_id,split,script,source_doc_id,query_text,triggered,n_en_hits,spans,oracle_hybrid_miss,bm25_rank,dense_rank,ng3_rank,hybrid_rank,p10b_rank,bm25_hit@50,dense_hit@50,ng3_hit@50,hybrid_hit@1,hybrid_hit@5,hybrid_hit@10,hybrid_hit@50,p10b_hit@1,p10b_hit@5,p10b_hit@10,p10b_hit@50,hybrid_rr,p10b_rr,n_cascade_fill_outside_hybrid50,equals_hybrid_top50,quad23,room_cat1,p10b_recovered_hybrid_miss50,p10b_regressed_hybrid_hit50,p10b_regressed_hybrid_hit5
+KN001,train,ROMAN,92506,malaysia air race world championship third round kab shuru hua,0,0,,0,,16,,32,32,0,1,0,0,0,0,1,0,0,0,1,0.03125,0.03125,0,1,0,1,0,0,0
+KN002,train,ROMAN,90691,zim t20 mein hosts ko chase ke liye kitna target mila,0,0,,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN004,train,ROMAN,14991,desi ghee sehat ke liye faida mand hai ya nuqsan deh,0,0,,0,1,107,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1.0,1.0,0,1,0,0,0,0,0
+KN005,train,ROMAN,64084,iran amreeka tension ke baad local equities opening par kyun rebound hua,0,0,,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN006,train,ROMAN,29860,kolkata ne delhi ko ipl thriller mein kis margin se haraaya,1,1,ipl,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,1,0,0,0
+KN008,train,ROMAN,47197,teen tennis sensation ne kaunsa canadian hardcourt title jeeta,0,0,,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,1,0,0,0
+KN010,train,ROMAN,1674,benami accounts walo ke khilaf revenue board ne kya saza tajweez ki,0,0,,1,,466,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,1,0,0,0
+KN011,train,ROMAN,60226,france ki hydrogen solar wind powered boat ka naam kya hai,0,0,,0,,1,,2,2,0,1,0,0,1,1,1,0,1,1,1,0.5,0.5,0,1,0,1,0,0,0
+KN012,train,ROMAN,13580,comedy nights wali dadi wapas kyun nahi ban na chahte,0,0,,0,5,59,,10,10,1,0,0,0,0,1,1,0,0,1,1,0.1,0.1,0,1,0,0,0,0,0
+KN013,train,ROMAN,82652,world cup mein pakistan india fixture ke tickets black mein kyun bik rahe,0,0,,0,,4,,8,8,0,1,0,0,0,1,1,0,0,1,1,0.125,0.125,0,1,0,0,0,0,0
+KN014,train,ROMAN,79754,mobile slow charge hone ki user side ghalti kya ho sakti hai,1,1,ghalti,0,44,16,,3,3,1,1,0,0,1,1,1,0,1,1,1,0.333333,0.333333,0,1,0,0,0,0,0
+KN015,train,ROMAN,22450,viral maths puzzle ne internet users ko kyun confuse kiya,0,0,,0,,9,,18,18,0,1,0,0,0,0,1,0,0,0,1,0.055556,0.055556,0,1,0,0,0,0,0
+KN016,train,ROMAN,100673,priyanka ke african kids se hair compliment exchange kis tour par hua,0,0,,0,,1,,1,1,0,1,0,1,1,1,1,1,1,1,1,1.0,1.0,0,1,0,0,0,0,0
+KN017,train,ROMAN,19341,boom supersonic passenger prototype kab unveil hua,0,0,,0,,1,5,2,2,0,1,1,0,1,1,1,0,1,1,1,0.5,0.5,0,1,0,0,0,0,0
+KN018,train,ROMAN,17943,aladdin kahani kisi haqeeqi shakhs par mabni hai ya sirf fable hai,1,2,mabni | fable,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,1,0,0,0
+KN019,train,ROMAN,5092,jlo ne 50 saal ki umar mein fitness kaise maintain ki,0,0,,0,,5,,9,9,0,1,0,0,0,1,1,0,0,1,1,0.111111,0.111111,0,1,0,0,0,0,0
+KN020,train,ROMAN,60895,cpec joint cooperation committee ka session kis shehar mein chal raha tha,0,0,,1,,110,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN021,train,ROMAN,13065,jungle book live action ne india box office par kya record banaya,1,1,live action,1,,167,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN022,train,ROMAN,14664,shahid mira sangeet se pehle shaadi ki tayyariyan kab khatam huin,1,1,shahid,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN023,train,ROMAN,12128,qawwal aziz mian ki barsi kis tarah yaad ki jati hai,1,1,aziz mian,0,3,,3,5,5,1,0,1,0,1,1,1,0,1,1,1,0.2,0.2,0,1,0,0,0,0,0
+KN024,train,ROMAN,31154,west indies ke khilaf dubai day night series pakistan ka kaunsa milestone test hai,0,0,,1,,204,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN025,train,ROMAN,60831,adb country director ne pm se mil kar investment ke bare mein kya kaha,0,0,,1,,301,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN026,train,ROMAN,102664,salman ki wrestler film ka pehla poster kis director ki movie ka hai,0,0,,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN027,train,ROMAN,59279,chameleon satellite minutes mein naya mission kyun assume kar sakte hain,1,1,chameleon,1,,196,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN028,train,ROMAN,76785,state bank ke mutabiq external debt burden mein kitni percent kami hui,1,1,external debt,1,,523,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN029,train,ROMAN,101347,houston new year show mein kumar sanu kis community event ka hissa bane,1,1,kumar sanu,0,,1,,2,2,0,1,0,0,1,1,1,0,1,1,1,0.5,0.5,0,1,0,0,0,0,0
+KN030,train,ROMAN,47083,imran tahir odi bowling ranking mein number one kab bane,1,1,imran tahir,0,,24,,47,47,0,1,0,0,0,0,1,0,0,0,1,0.021277,0.021277,0,1,0,0,0,0,0
+KN031,train,ROMAN,29423,fifa ranking mein germany top par hai to pakistan ka number kya hai,1,1,fifa,0,,4,,8,8,0,1,0,0,0,1,1,0,0,1,1,0.125,0.125,0,1,0,0,0,0,0
+KN032,train,ROMAN,41695,umar akmal par fixing case mein kitne saal ki pabandi lagi,0,0,,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN033,train,ROMAN,81673,shane warne test cap auction se bushfire fund ko kitni raqam mili,1,1,shane warne,0,,3,,6,6,0,1,0,0,0,1,1,0,0,1,1,0.166667,0.166667,0,1,0,0,0,0,0
+KN034,train,ROMAN,13398,sharmeen obaid oscar short documentary category mein dobara kab jeeti,1,1,dobara,0,,3,,5,5,0,1,0,0,1,1,1,0,1,1,1,0.2,0.2,0,1,0,0,0,0,0
+KN035,train,ROMAN,10546,zaheer khan ne sagarika se shaadi ka elaan kab kiya,1,2,zaheer khan | sagarika,1,,623,5,,,0,0,1,0,0,0,0,0,0,0,0,0.0,0.0,0,1,0,0,0,0,0
+KN036,train,ROMAN,76509,aglay das mahine mein local oil gas output mein kya izafa verqai hai,0,0,,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN037,dev,ROMAN,22739,nayi photo app chehre tabdeel karne ke ilawa kya karti hai,1,1,chehre,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,1,0,0,0
+KN038,dev,ROMAN,40057,peshawar used car mela mein logon ki dilchaspi kis cheez par thi,0,0,,0,3,,1,6,6,1,0,1,0,0,1,1,0,0,1,1,0.166667,0.166667,0,1,0,0,0,0,0
+KN039,dev,ROMAN,23062,nokia android handset china launch par ek minute mein kyun sold out hua,0,0,,0,,2,17,15,15,0,1,1,0,0,0,1,0,0,0,1,0.066667,0.066667,0,1,0,0,0,0,0
+KN040,dev,ROMAN,24596,samsung ne galaxy s7 active ko galti se kis app mein leak kiya,0,0,,1,,27,,54,,0,1,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,0,0,0,0,0
+KN041,dev,ROMAN,65903,caretaker finance minister ne cpec projects mukammal karne ka kya wazheh kiya,0,0,,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN042,dev,ROMAN,111652,current account deficit ki raftaar slow kyun hui SBP ke mutabiq,0,0,,1,,469,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN043,dev,ROMAN,21399,moto p30 front design kis apple flagship se milta julta hai,1,1,flagship,0,,23,,44,44,0,1,0,0,0,0,1,0,0,0,1,0.022727,0.022727,0,1,0,0,0,0,0
+KN044,dev,ROMAN,23544,twitter ka naya feature facebook snapchat se muqabla kyun karta hai,1,1,facebook,1,,454,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0
+KN045,dev,ROMAN,19783,messenger rooms jaisa group video chat facebook ne kab add kiya,1,1,facebook,0,,23,,45,45,0,1,0,0,0,0,1,0,0,0,1,0.022222,0.022222,0,1,0,1,0,0,0
+KN046,dev,ROMAN,109714,ml1 railway upgrade ko deadline se pehle track par lanay ki tayyari kya hai,0,0,,0,,2,,4,4,0,1,0,0,1,1,1,0,1,1,1,0.25,0.25,0,1,0,0,0,0,0
+KN047,dev,ROMAN,61862,fbr aur sindh revenue board ne sales tax input par kya deal ki,1,2,sindh | sales tax,1,,59,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,1,0,0,0
+KN048,dev,ROMAN,20073,samsung s10 lite aur note 10 lite 2020 lineup kab launch honay walay thay,0,0,,0,42,3,31,1,1,1,1,1,1,1,1,1,1,1,1,1,1.0,1.0,0,1,0,0,0,0,0
+KN049,dev,ROMAN,86593,lahore psl final ke liye stadium ke gird kitne personnel deploy honge,1,1,lahore,0,,1,,2,2,0,1,0,0,1,1,1,0,1,1,1,0.5,0.5,0,1,0,0,0,0,0
+KN050,dev,ROMAN,34762,afghanistan world cup jeetne ki peshgoi kis foundation par ki gai,0,0,,1,,,1,,,0,0,1,0,0,0,0,0,0,0,0,0.0,0.0,0,1,0,1,0,0,0
+KN051,dev,ROMAN,21160,gmail ke naye interface ko purane layout jaisa kaise banaya ja sakta hai,1,1,gmail,1,,616,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,1,0,0,0
+KN052,dev,ROMAN,59426,samsung ne vegas ces par human-like robots kyun dikhaye,0,0,,0,,2,,7,7,0,1,0,0,0,1,1,0,0,1,1,0.142857,0.142857,0,1,0,0,0,0,0
+KN053,dev,ROMAN,22115,huawei mate 10 lite pakistan mein pehli baar kitne cameras ke sath aaya,1,1,huawei,0,,5,,9,9,0,1,0,0,0,1,1,0,0,1,1,0.111111,0.111111,0,1,0,0,0,0,0
+KN054,dev,ROMAN,4400,kangana ke bayan par momina iram ne kya jawab diya,0,0,,1,,,,,,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0,1,1,0,0,0,0

@@ -1,0 +1,141 @@
+{
+  "experiment_id": "PHASE10B-TAIL-PRESERVE",
+  "timestamp_utc": "2026-09-20T11:49:58Z",
+  "decision": "PHASE10B PARTIALLY SUPPORTED",
+  "test_accessed": false,
+  "preregistration_sha256": "60f691c38e4b3d8a6f26f9c435cf4c0fa55ddafaa73dd7da1093bddfaa49e60e",
+  "scored_csv_sha256": "fde7ba16e43b57f753a5558bc44c1d082f363418f612ec64971740496e1436f5",
+  "gates": {
+    "bm25": "PASS",
+    "dense": "PASS",
+    "hybrid": "PASS",
+    "ng3": "PASS",
+    "trigger_set": "PASS",
+    "option_b10b_repeat": "PASS"
+  },
+  "frozen_hybrid": {
+    "n": 51,
+    "hit@1_n": 3,
+    "hit@5_n": 11,
+    "hit@10_n": 19,
+    "hit@50_n": 25,
+    "mrr": 0.1422
+  },
+  "reproduced_hybrid": {
+    "n": 51,
+    "hit@1_n": 3,
+    "hit@1": 0.0588,
+    "hit@5_n": 11,
+    "hit@5": 0.2157,
+    "hit@10_n": 19,
+    "hit@10": 0.3725,
+    "hit@50_n": 25,
+    "hit@50": 0.4902,
+    "mrr": 0.1422
+  },
+  "phase10b_tail_preserve": {
+    "n": 51,
+    "hit@1_n": 3,
+    "hit@1": 0.0588,
+    "hit@5_n": 11,
+    "hit@5": 0.2157,
+    "hit@10_n": 19,
+    "hit@10": 0.3725,
+    "hit@50_n": 25,
+    "hit@50": 0.4902,
+    "mrr": 0.1422
+  },
+  "n_triggered": 22,
+  "n_queries_equals_hybrid_top50": 51,
+  "focus_ids": {
+    "KN027": {
+      "hybrid_rank": null,
+      "p10b_rank": null,
+      "hybrid_hit@50": 0,
+      "p10b_hit@50": 0,
+      "triggered": 1,
+      "equals_hybrid_top50": 1
+    },
+    "KN035": {
+      "hybrid_rank": null,
+      "p10b_rank": null,
+      "hybrid_hit@50": 0,
+      "p10b_hit@50": 0,
+      "triggered": 1,
+      "equals_hybrid_top50": 1
+    },
+    "KN030": {
+      "hybrid_rank": 47,
+      "p10b_rank": 47,
+      "hybrid_hit@50": 1,
+      "p10b_hit@50": 1,
+      "triggered": 1,
+      "equals_hybrid_top50": 1
+    },
+    "KN043": {
+      "hybrid_rank": 44,
+      "p10b_rank": 44,
+      "hybrid_hit@50": 1,
+      "p10b_hit@50": 1,
+      "triggered": 1,
+      "equals_hybrid_top50": 1
+    },
+    "KN045": {
+      "hybrid_rank": 45,
+      "p10b_rank": 45,
+      "hybrid_hit@50": 1,
+      "p10b_hit@50": 1,
+      "triggered": 1,
+      "equals_hybrid_top50": 1
+    }
+  },
+  "oracle_diagnostic": {
+    "label": "NON_DEPLOYABLE_CEILING_ONLY",
+    "n": 26,
+    "note": "Not Phase 10b's scored result."
+  },
+  "overlap_hit50": {
+    "p10b_vs_hybrid": {
+      "hit_hit": 25,
+      "a_hit_b_miss": 0,
+      "a_miss_b_hit": 0,
+      "miss_miss": 26,
+      "n": 51
+    }
+  },
+  "vs_hybrid": {
+    "recovered_hit50": [],
+    "regressed_hit50": [],
+    "regressed_hit5": [],
+    "hit50_net": 0
+  },
+  "room_cat1": {
+    "hybrid_hit@50": 3,
+    "hybrid_ids": [
+      "KN001",
+      "KN011",
+      "KN045"
+    ],
+    "p10b_hit@50": 3,
+    "p10b_ids": [
+      "KN001",
+      "KN011",
+      "KN045"
+    ]
+  },
+  "quad23": {
+    "p10b_hit@50_n": 0,
+    "p10b_ids": []
+  },
+  "stop_rule": {
+    "further_option_b_variants": false,
+    "reason": "Hit@50 not net-positive vs Hybrid"
+  },
+  "runtime_wall_seconds": 415.086,
+  "safety": {
+    "test_accessed": false,
+    "phase10_artifacts_overwritten": false,
+    "query_injection_into_hybrid_bm25": false,
+    "oracle_used_as_trigger": false
+  }
+}

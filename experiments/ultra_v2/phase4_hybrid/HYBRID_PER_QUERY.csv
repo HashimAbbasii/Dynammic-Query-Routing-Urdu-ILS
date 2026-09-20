@@ -1,0 +1,52 @@
+query_id,split,script,source_doc_id,r2_primary,query_text,bm25_rank,dense_rank,hybrid_rank,bm25_hit@1,bm25_hit@5,bm25_hit@10,bm25_hit@50,dense_hit@1,dense_hit@5,dense_hit@10,dense_hit@50,hybrid_hit@1,hybrid_hit@5,hybrid_hit@10,hybrid_hit@50,bm25_rr,dense_rr,hybrid_rr,hybrid_rrf_score,n_bm25_hits,n_dense_hits,n_union,n_overlap,A_bm25_success_retained,B_dense_success_retained,C_bm25_miss_recovered,D_dense_miss_recovered,E_both_miss,F_lost_single_system_success,room_cat1,vocab_control
+KN001,train,ROMAN,92506,ROOM,malaysia air race world championship third round kab shuru hua,,16,32,0,0,0,0,0,0,0,1,0,0,0,1,0.0,0.0625,0.03125,0.01315789,50,50,100,0,0,1,1,0,0,0,1,0
+KN002,train,ROMAN,90691,ENT,zim t20 mein hosts ko chase ke liye kitna target mila,,13094,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN004,train,ROMAN,14991,SUCCESS,desi ghee sehat ke liye faida mand hai ya nuqsan deh,1,107,1,1,1,1,1,0,0,0,0,1,1,1,1,1.0,0.0,1.0,0.01639344,50,50,100,0,1,0,0,1,0,0,0,0
+KN005,train,ROMAN,64084,NEIGH,iran amreeka tension ke baad local equities opening par kyun rebound hua,,20301,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN006,train,ROMAN,29860,ROOM,kolkata ne delhi ko ipl thriller mein kis margin se haraaya,,13002,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,1,0
+KN008,train,ROMAN,47197,ROOM,teen tennis sensation ne kaunsa canadian hardcourt title jeeta,,2036,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,1,0
+KN010,train,ROMAN,1674,ROOM,benami accounts walo ke khilaf revenue board ne kya saza tajweez ki,,466,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,98,2,0,0,0,0,1,0,1,0
+KN011,train,ROMAN,60226,ROOM,france ki hydrogen solar wind powered boat ka naam kya hai,,1,2,0,0,0,0,1,1,1,1,0,1,1,1,0.0,1.0,0.5,0.01639344,50,50,100,0,0,1,1,0,0,0,1,0
+KN012,train,ROMAN,13580,SUCCESS,comedy nights wali dadi wapas kyun nahi ban na chahte,5,59,10,0,1,1,1,0,0,0,0,0,0,1,1,0.2,0.0,0.1,0.01538462,50,50,100,0,1,0,0,1,0,0,0,0
+KN013,train,ROMAN,82652,ROOM,world cup mein pakistan india fixture ke tickets black mein kyun bik rahe,,4,8,0,0,0,0,0,1,1,1,0,0,1,1,0.0,0.25,0.125,0.015625,50,50,100,0,0,1,1,0,0,0,0,0
+KN014,train,ROMAN,79754,RANK,mobile slow charge hone ki user side ghalti kya ho sakti hai,44,16,3,0,0,0,1,0,0,0,1,0,1,1,1,0.022727,0.0625,0.333333,0.02277328,50,50,97,3,1,1,0,0,0,0,0,0
+KN015,train,ROMAN,22450,VOCAB,viral maths puzzle ne internet users ko kyun confuse kiya,,9,18,0,0,0,0,0,0,1,1,0,0,0,1,0.0,0.111111,0.055556,0.01449275,50,50,100,0,0,1,1,0,0,0,0,0
+KN016,train,ROMAN,100673,ENT,priyanka ke african kids se hair compliment exchange kis tour par hua,,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0.0,1.0,1.0,0.01639344,50,50,100,0,0,1,1,0,0,0,0,0
+KN017,train,ROMAN,19341,VOCAB,boom supersonic passenger prototype kab unveil hua,,1,2,0,0,0,0,1,1,1,1,0,1,1,1,0.0,1.0,0.5,0.01639344,1,50,51,0,0,1,1,0,0,0,0,1
+KN018,train,ROMAN,17943,ROOM,aladdin kahani kisi haqeeqi shakhs par mabni hai ya sirf fable hai,,11213,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,1,0
+KN019,train,ROMAN,5092,ENT,jlo ne 50 saal ki umar mein fitness kaise maintain ki,,5,9,0,0,0,0,0,1,1,1,0,0,1,1,0.0,0.2,0.111111,0.01538462,50,50,100,0,0,1,1,0,0,0,0,0
+KN020,train,ROMAN,60895,VOCAB,cpec joint cooperation committee ka session kis shehar mein chal raha tha,,110,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,1
+KN021,train,ROMAN,13065,ROOM,jungle book live action ne india box office par kya record banaya,,167,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN022,train,ROMAN,14664,ENT,shahid mira sangeet se pehle shaadi ki tayyariyan kab khatam huin,,4030,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN023,train,ROMAN,12128,SUCCESS,qawwal aziz mian ki barsi kis tarah yaad ki jati hai,3,47725,5,0,1,1,1,0,0,0,0,0,1,1,1,0.333333,0.0,0.2,0.01587302,50,50,100,0,1,0,0,1,0,0,0,0
+KN024,train,ROMAN,31154,ROOM,west indies ke khilaf dubai day night series pakistan ka kaunsa milestone test hai,,204,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN025,train,ROMAN,60831,ROOM,adb country director ne pm se mil kar investment ke bare mein kya kaha,,301,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN026,train,ROMAN,102664,ENT,salman ki wrestler film ka pehla poster kis director ki movie ka hai,,16757,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN027,train,ROMAN,59279,ROOM,chameleon satellite minutes mein naya mission kyun assume kar sakte hain,,196,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN028,train,ROMAN,76785,VOCAB,state bank ke mutabiq external debt burden mein kitni percent kami hui,,523,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,99,1,0,0,0,0,1,0,0,0
+KN029,train,ROMAN,101347,ENT,houston new year show mein kumar sanu kis community event ka hissa bane,,1,2,0,0,0,0,1,1,1,1,0,1,1,1,0.0,1.0,0.5,0.01639344,50,50,100,0,0,1,1,0,0,0,0,0
+KN030,train,ROMAN,47083,ENT,imran tahir odi bowling ranking mein number one kab bane,,24,47,0,0,0,0,0,0,0,1,0,0,0,1,0.0,0.041667,0.021277,0.01190476,50,50,100,0,0,1,1,0,0,0,0,0
+KN031,train,ROMAN,29423,ROOM,fifa ranking mein germany top par hai to pakistan ka number kya hai,,4,8,0,0,0,0,0,1,1,1,0,0,1,1,0.0,0.25,0.125,0.015625,50,50,99,1,0,1,1,0,0,0,0,0
+KN032,train,ROMAN,41695,ENT,umar akmal par fixing case mein kitne saal ki pabandi lagi,,6216,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN033,train,ROMAN,81673,ENT,shane warne test cap auction se bushfire fund ko kitni raqam mili,,3,6,0,0,0,0,0,1,1,1,0,0,1,1,0.0,0.333333,0.166667,0.01587302,50,50,100,0,0,1,1,0,0,0,0,0
+KN034,train,ROMAN,13398,ENT,sharmeen obaid oscar short documentary category mein dobara kab jeeti,,3,5,0,0,0,0,0,1,1,1,0,1,1,1,0.0,0.333333,0.2,0.01587302,50,50,100,0,0,1,1,0,0,0,0,0
+KN035,train,ROMAN,10546,ENT,zaheer khan ne sagarika se shaadi ka elaan kab kiya,,623,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN036,train,ROMAN,76509,VOCAB,aglay das mahine mein local oil gas output mein kya izafa verqai hai,,1674,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,99,1,0,0,0,0,1,0,0,0
+KN037,dev,ROMAN,22739,ROOM,nayi photo app chehre tabdeel karne ke ilawa kya karti hai,,2537,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,1,0
+KN038,dev,ROMAN,40057,SUCCESS,peshawar used car mela mein logon ki dilchaspi kis cheez par thi,3,7228,6,0,1,1,1,0,0,0,0,0,0,1,1,0.333333,0.0,0.166667,0.01587302,50,50,100,0,1,0,0,1,0,0,0,0
+KN039,dev,ROMAN,23062,VOCAB,nokia android handset china launch par ek minute mein kyun sold out hua,,2,15,0,0,0,0,0,1,1,1,0,0,0,1,0.0,0.5,0.066667,0.01612903,50,50,88,12,0,1,1,0,0,0,0,0
+KN040,dev,ROMAN,24596,ENT,samsung ne galaxy s7 active ko galti se kis app mein leak kiya,,27,54,0,0,0,0,0,0,0,1,0,0,0,0,0.0,0.037037,0.0,0.01149425,50,50,100,0,0,0,0,0,0,1,0,0
+KN041,dev,ROMAN,65903,VOCAB,caretaker finance minister ne cpec projects mukammal karne ka kya wazheh kiya,,11599,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,1
+KN042,dev,ROMAN,111652,VOCAB,current account deficit ki raftaar slow kyun hui SBP ke mutabiq,,469,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN043,dev,ROMAN,21399,ENT,moto p30 front design kis apple flagship se milta julta hai,,23,44,0,0,0,0,0,0,0,1,0,0,0,1,0.0,0.043478,0.022727,0.01204819,50,50,98,2,0,1,1,0,0,0,0,0
+KN044,dev,ROMAN,23544,ROOM,twitter ka naya feature facebook snapchat se muqabla kyun karta hai,,454,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0
+KN045,dev,ROMAN,19783,ROOM,messenger rooms jaisa group video chat facebook ne kab add kiya,,23,45,0,0,0,0,0,0,0,1,0,0,0,1,0.0,0.043478,0.022222,0.01204819,50,50,100,0,0,1,1,0,0,0,1,0
+KN046,dev,ROMAN,109714,VOCAB,ml1 railway upgrade ko deadline se pehle track par lanay ki tayyari kya hai,,2,4,0,0,0,0,0,1,1,1,0,1,1,1,0.0,0.5,0.25,0.01612903,50,50,100,0,0,1,1,0,0,0,0,0
+KN047,dev,ROMAN,61862,ROOM,fbr aur sindh revenue board ne sales tax input par kya deal ki,,59,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,1,0
+KN048,dev,ROMAN,20073,RANK,samsung s10 lite aur note 10 lite 2020 lineup kab launch honay walay thay,42,3,1,0,0,0,1,0,1,1,1,1,1,1,1,0.02381,0.333333,1.0,0.02567694,50,50,99,1,1,1,0,0,0,0,0,0
+KN049,dev,ROMAN,86593,ROOM,lahore psl final ke liye stadium ke gird kitne personnel deploy honge,,1,2,0,0,0,0,1,1,1,1,0,1,1,1,0.0,1.0,0.5,0.01639344,50,50,100,0,0,1,1,0,0,0,0,0
+KN050,dev,ROMAN,34762,ROOM,afghanistan world cup jeetne ki peshgoi kis foundation par ki gai,,3531,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,1,0
+KN051,dev,ROMAN,21160,ROOM,gmail ke naye interface ko purane layout jaisa kaise banaya ja sakta hai,,616,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,1,0
+KN052,dev,ROMAN,59426,ENT,samsung ne vegas ces par human-like robots kyun dikhaye,,2,7,0,0,0,0,0,1,1,1,0,0,1,1,0.0,0.5,0.142857,0.01612903,50,50,96,4,0,1,1,0,0,0,0,0
+KN053,dev,ROMAN,22115,ENT,huawei mate 10 lite pakistan mein pehli baar kitne cameras ke sath aaya,,5,9,0,0,0,0,0,1,1,1,0,0,1,1,0.0,0.2,0.111111,0.01538462,50,50,100,0,0,1,1,0,0,0,0,0
+KN054,dev,ROMAN,4400,ENT,kangana ke bayan par momina iram ne kya jawab diya,,2978,,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,,50,50,100,0,0,0,0,0,1,0,0,0

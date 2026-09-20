@@ -1,0 +1,2 @@
+SHA-256 of PHASE7_PREREGISTRATION.md immediately before execution (not after scores):
+d5937c525b8933a7abfa1adcc4086db605ad58aa5e75be3b3b4b1cbd6168fc43

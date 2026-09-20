@@ -1,0 +1,97 @@
+{
+  "phrases": {
+    "fbr": "ایف بی آر",
+    "ipl": "آئی پی ایل",
+    "cpec": "سی پی ای سی",
+    "adb": "اے ڈی بی",
+    "jlo": "جے ایل او"
+  },
+  "n_exact_phrase": {
+    "fbr": 0,
+    "ipl": 1,
+    "cpec": 0,
+    "adb": 0,
+    "jlo": 0
+  },
+  "n_compact_normalized": {
+    "fbr": 0,
+    "ipl": 2,
+    "cpec": 0,
+    "adb": 0,
+    "jlo": 0
+  },
+  "exact_samples": {
+    "ipl": [
+      {
+        "en": "Indian Premier League",
+        "ur": "آئی پی ایل",
+        "type": "redirect"
+      }
+    ]
+  },
+  "compact_samples": {
+    "ipl": [
+      {
+        "en": "Indian Premier League",
+        "ur": "آئی پی ایل",
+        "type": "redirect"
+      },
+      {
+        "en": "Indian Premier League",
+        "ur": "آئي پي ايل",
+        "type": "redirect"
+      }
+    ]
+  },
+  "wanted_lettername_en": {
+    "fbr": {
+      "n_en": 0,
+      "unique": false,
+      "en_titles": []
+    },
+    "ipl": {
+      "n_en": 1,
+      "unique": true,
+      "en_titles": [
+        "Indian Premier League"
+      ]
+    },
+    "cpec": {
+      "n_en": 0,
+      "unique": false,
+      "en_titles": []
+    },
+    "adb": {
+      "n_en": 0,
+      "unique": false,
+      "en_titles": []
+    },
+    "jlo": {
+      "n_en": 0,
+      "unique": false,
+      "en_titles": []
+    }
+  },
+  "n_lettername_ur_rows": 734,
+  "n_lettername_keys": 491,
+  "n_unique_lettername_keys": 487,
+  "n_colliding_lettername_keys": 4,
+  "collision_examples": {
+    "me": [
+      "Emae",
+      "Master of Engineering"
+    ],
+    "rss": [
+      "RSS",
+      "Rashtriya Swayamsevak Sangh"
+    ],
+    "tb": [
+      "Tuberculosis",
+      "Täby"
+    ],
+    "uu": [
+      "Yo-yo",
+      "Yuyao"
+    ]
+  }
+}

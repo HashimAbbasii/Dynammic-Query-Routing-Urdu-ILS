@@ -1,0 +1,84 @@
+{
+  "experiment_id": "R2-B0",
+  "timestamp_utc": "2026-09-11T06:02:27Z",
+  "test_accessed": false,
+  "nl_evaluation": "pending official pooled annotation; not scored",
+  "data": {
+    "train_roman_kn": 33,
+    "dev_roman_kn": 18,
+    "traindev_roman_kn": 51,
+    "train_roman_nl": 22,
+    "dev_roman_nl": 11,
+    "test": "not accessed"
+  },
+  "metrics": {
+    "train": {
+      "n": 33,
+      "hit@1_n": 1,
+      "hit@1": 0.0303,
+      "hit@5_n": 3,
+      "hit@5": 0.0909,
+      "hit@10_n": 3,
+      "hit@10": 0.0909,
+      "hit@50_n": 4,
+      "hit@50": 0.1212,
+      "mrr": 0.0472
+    },
+    "dev": {
+      "n": 18,
+      "hit@1_n": 0,
+      "hit@1": 0.0,
+      "hit@5_n": 1,
+      "hit@5": 0.0556,
+      "hit@10_n": 1,
+      "hit@10": 0.0556,
+      "hit@50_n": 2,
+      "hit@50": 0.1111,
+      "mrr": 0.0198
+    },
+    "train+dev": {
+      "n": 51,
+      "hit@1_n": 1,
+      "hit@1": 0.0196,
+      "hit@5_n": 4,
+      "hit@5": 0.0784,
+      "hit@10_n": 4,
+      "hit@10": 0.0784,
+      "hit@50_n": 6,
+      "hit@50": 0.1176,
+      "mrr": 0.0375
+    }
+  },
+  "taxonomy": {
+    "SUCCESS": 4,
+    "RANK": 2,
+    "VOCAB/MISS": 45,
+    "sum": 51,
+    "n": 51
+  },
+  "config": {
+    "experiment_id": "R2-B0",
+    "label": "ULTRA v2 development experiment",
+    "not_a_plos_result": true,
+    "method": "frozen Method D",
+    "m0_module": "experiments/phase5_roman_urdu/run_phase5.py",
+    "m0_edited": false,
+    "detector": "detect_script (Urdu U+0600-U+06FF vs ASCII letters)",
+    "routing": "ROMAN -> romanized-document BM25 (Method D)",
+    "query_representation": "tokenize(query) as typed; no dictionary on query",
+    "document_representation": "romanize_token: reverse-dict first key else naive_roman_word",
+    "dictionary_path": "models/roman_urdu_dict_expanded.json",
+    "dictionary_n_keys": 198,
+    "bm25_implementation": "run_phase5.BM25",
+    "candidate_depth": 50,
+    "official_cutoff": 5,
+    "test_accessed": false,
+    "nl_scored": false,
+    "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+    "dict_sha256": "30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3",
+    "k1": 1.5,
+    "b": 0.75,
+    "tokenizer": "[\\u0600-\\u06FF]+|[A-Za-z0-9]+",
+    "top_k": 50
+  }
+}

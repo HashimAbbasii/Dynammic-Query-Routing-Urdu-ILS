@@ -1,0 +1,283 @@
+{
+  "n_rows": 1239037,
+  "n_unique_en": 496420,
+  "n_rows_en_disambiguation_paren": 1381,
+  "n_rows_ur_or_en_zidd_ibham": 2422,
+  "n_unique_en_disambiguation_paren": 317,
+  "n_rows_original_initialism_2_6": 1916,
+  "init_examples": [
+    {
+      "en": "01.AI",
+      "ur": "01. اے آئی",
+      "type": "article"
+    },
+    {
+      "en": "1 SGM",
+      "ur": "1ایس جی ایم، بھارت",
+      "type": "article"
+    },
+    {
+      "en": "10 MPH",
+      "ur": "10 ایم پی ایچ (فلم)",
+      "type": "article"
+    },
+    {
+      "en": "115 BC",
+      "ur": "115 قبل مسیح",
+      "type": "article"
+    },
+    {
+      "en": "12B",
+      "ur": "12بی (فلم)",
+      "type": "article"
+    },
+    {
+      "en": "1991 BA",
+      "ur": "1991 بی اے",
+      "type": "article"
+    },
+    {
+      "en": "1991 VG",
+      "ur": "1991 وی جی",
+      "type": "article"
+    },
+    {
+      "en": "1993 DA",
+      "ur": "1993 ڈی اے",
+      "type": "article"
+    },
+    {
+      "en": "1993 RP",
+      "ur": "1993 آر پی",
+      "type": "article"
+    },
+    {
+      "en": "1995 GJ",
+      "ur": "1995 جی جے",
+      "type": "article"
+    },
+    {
+      "en": "1996 PW",
+      "ur": "1996 پی ڈبلیو",
+      "type": "article"
+    },
+    {
+      "en": "1BR",
+      "ur": "فرسٹ بی آر (فلم)",
+      "type": "article"
+    },
+    {
+      "en": "1G",
+      "ur": "1 جی",
+      "type": "article"
+    },
+    {
+      "en": "1Q84",
+      "ur": "1Q84",
+      "type": "article"
+    },
+    {
+      "en": "2 B R 0 2 B",
+      "ur": "2 بی آر 0 2 بی",
+      "type": "article"
+    }
+  ],
+  "wanted_compact_from_unique_en": {
+    "fbr": [],
+    "ipl": [],
+    "cpec": [],
+    "adb": [],
+    "jlo": []
+  },
+  "wanted_dotted_row_samples": {},
+  "wanted_compact_row_samples": {},
+  "wanted_content_word_acronyms": {
+    "fbr": {
+      "n_en_titles": 3,
+      "en_titles": [
+        "Fahmi Ben Romdhane",
+        "Folies Bergère",
+        "Frosty Boss Ribs"
+      ],
+      "unique": false
+    },
+    "ipl": {
+      "n_en_titles": 4,
+      "en_titles": [
+        "Iberia Parish, Louisiana",
+        "Iberville Parish, Louisiana",
+        "Indian Premier League",
+        "Islam Pur Lokari"
+      ],
+      "unique": false
+    },
+    "cpec": {
+      "n_en_titles": 2,
+      "en_titles": [
+        "Charles Pope (English cricketer)",
+        "China–Pakistan Economic Corridor"
+      ],
+      "unique": false
+    },
+    "adb": {
+      "n_en_titles": 14,
+      "en_titles": [
+        "Aaron Douglas (basketball)",
+        "Administrative districts in Baghdad",
+        "Administrative divisions of Belarus",
+        "Amarillo Design Bureau",
+        "Amy DuBois Barnett",
+        "Anbar Dan, Bostanabad",
+        "Andrea del Boca",
+        "Andrew Davies (businessman)",
+        "Andy Duncan (businessman)",
+        "Angèle Diabang Brener",
+        "Aritra Dutta Banik",
+        "Arjun Das Bugti",
+        "Asian Development Bank",
+        "Aurangabad district, Bihar"
+      ],
+      "unique": false
+    },
+    "jlo": {
+      "n_en_titles": 2,
+      "en_titles": [
+        "Jennings Lodge, Oregon",
+        "John Leonard Orr"
+      ],
+      "unique": false
+    }
+  },
+  "n_unique_acronyms": 30515,
+  "n_colliding_acronyms": 16531,
+  "collision_examples": {
+    "pp": [
+      "\"P\" Is for Peril",
+      "A Pain in the Pullman",
+      "A priori and a posteriori",
+      "El Paraíso, El Paraíso",
+      "El Paso, La Palma",
+      "Elías Piña Province",
+      "His Prehistoric Past",
+      "La Paloma, Paraguay"
+    ],
+    "qq": [
+      "\"Q\" Is for Quarry",
+      "Qalat, Qazvin",
+      "Qaleh Qassab",
+      "Qaleh Qurineh",
+      "Qaleh, Qazvin",
+      "Qalin Qayah",
+      "Qameshlu, Qazvin",
+      "Qanat Qazi"
+    ],
+    "rr": [
+      "\"R\" Is for Ricochet",
+      "A Romance of the Redwoods",
+      "A. R. Rahman",
+      "A. Ramana Rao",
+      "La Rabatelière",
+      "La Regrippière",
+      "La Remaudière",
+      "La Renaudière"
+    ],
+    "rgw": [
+      "\"Rommel?\" \"Gunner Who?\"",
+      "Rainbow Glacier (Washington)",
+      "Ralph G. Wright",
+      "Rhiana Gunn-Wright",
+      "Richardson Glacier (Washington)",
+      "Robert G. Wetzel",
+      "Robin Grove-White",
+      "Rudolf G. Wagner"
+    ],
+    "ss": [
+      "\"S\" Is for Silence",
+      "A Score to Settle",
+      "A Single Spark",
+      "A Storm of Swords",
+      "A Study in Scarlet",
+      "A. Samad Said",
+      "And the Ship Sails On",
+      "Anō Station (Shiga)"
+    ],
+    "sjw": [
+      "\"Scarface\" John Williams",
+      "S. J. Watson",
+      "Scott James Wells",
+      "Sheree J. Wilson",
+      "Shin Jee-won",
+      "Spencer Johnson (writer)",
+      "St John Without",
+      "St. John, Washington"
+    ],
+    "stk": [
+      "\"Shotgun Tom\" Kelly",
+      "Santhosh T. Kuruvilla",
+      "Sar Takht, Kermanshah",
+      "Sar Tall, Khash",
+      "Sar Tit Kan",
+      "Sar Tuf, Khuzestan",
+      "Science and technology in Kazakhstan",
+      "Seh Tapan, Kermanshah"
+    ],
+    "scm": [
+      "\"Steeplejack\" Charles Miller",
+      "Le Sueur County, Minnesota",
+      "S. C. Manchanda",
+      "Sadhan Chandra Majumder",
+      "Sagadahoc County, Maine",
+      "Saginaw County, Michigan",
+      "Saint Clair, Missouri",
+      "Saint Clement, Missouri"
+    ]
+  },
+  "wordlist_n": 9894,
+  "wordlist_contains": {
+    "apple": true,
+    "galaxy": true,
+    "messenger": true,
+    "world": true,
+    "black": true,
+    "group": true,
+    "human": true,
+    "tennis": true,
+    "comedy": true,
+    "internet": true,
+    "office": true,
+    "record": true,
+    "joint": true,
+    "cooperation": true,
+    "country": true,
+    "director": true,
+    "investment": true,
+    "satellite": true,
+    "mission": true,
+    "event": true,
+    "bowling": true,
+    "minute": true,
+    "finance": true,
+    "design": true,
+    "flagship": false,
+    "stadium": true,
+    "fable": false,
+    "malaysia": true,
+    "delhi": true,
+    "france": true,
+    "pakistan": true,
+    "india": true,
+    "dubai": true,
+    "houston": true,
+    "fifa": false,
+    "germany": true,
+    "samsung": true,
+    "facebook": false,
+    "gmail": false,
+    "huawei": false,
+    "lahore": false,
+    "sindh": false,
+    "afghanistan": true,
+    "android": false,
+    "china": true
+  }
+}

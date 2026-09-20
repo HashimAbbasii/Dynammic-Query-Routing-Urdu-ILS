@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ultra.local/ultra_v2/qrel.schema.json",
+  "title": "ULTRA v2 qrel row",
+  "type": "object",
+  "required": ["query_id", "doc_id", "annotator_id", "label", "official", "adjudicated"],
+  "properties": {
+    "query_id": { "type": "string" },
+    "doc_id": { "type": "integer", "minimum": 0 },
+    "annotator_id": { "type": "string", "minLength": 1 },
+    "label": { "enum": ["A", "B", "C", "D", "E"] },
+    "interpretation_id": { "type": "string" },
+    "official": { "type": "integer", "enum": [0, 1] },
+    "adjudicated": { "type": "integer", "enum": [0, 1] }
+  }
+}

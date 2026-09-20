@@ -141,6 +141,11 @@ HashimAbbasii/
 
 # ===== RAW EMBEDDING DUMPS & VECTOR INDEX BINARIES =====
 # Keep *.pkl in models/ (small SVM/scaler). Do not ignore models/*.json.
+experiments/ultra_v2/phase2_roman/artifacts/*.pkl
+experiments/ultra_v2/phase3_dense/artifacts/*.memmap
+experiments/ultra_v2/phase3_dense/artifacts/dense_embed_progress.json
+experiments/ultra_v2/phase9_entity_resource/dumps/*.sql.gz
+experiments/ultra_v2/phase9_entity_resource/artifacts/bilingual_titles.csv
 *.f32
 *.faiss
 *.ckpt

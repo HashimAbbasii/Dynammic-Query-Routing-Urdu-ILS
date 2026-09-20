@@ -1,0 +1,249 @@
+{
+  "experiment_id": "R2-NG3-P5-REPRO",
+  "timestamp_utc": "2026-09-12T13:44:57Z",
+  "decision": "R2-NG3 PARTIALLY SUPPORTED",
+  "test_accessed": false,
+  "gates": {
+    "corpus_sha": "PASS",
+    "query_gold_vs_phase3_4": "PASS",
+    "dual_miss_n25": "PASS",
+    "bm25_vs_r2_b0": "PASS",
+    "ng3_vs_R2_NG3_PER_QUERY": "PASS",
+    "feature_stream_sha": "PASS"
+  },
+  "frozen_bm25": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@5_n": 4,
+    "hit@10_n": 4,
+    "hit@50_n": 6,
+    "mrr": 0.0375
+  },
+  "frozen_dense": {
+    "n": 51,
+    "hit@1_n": 5,
+    "hit@5_n": 15,
+    "hit@10_n": 16,
+    "hit@50_n": 22,
+    "mrr": 0.1726
+  },
+  "frozen_hybrid": {
+    "n": 51,
+    "hit@1_n": 3,
+    "hit@5_n": 11,
+    "hit@10_n": 19,
+    "hit@50_n": 25,
+    "mrr": 0.1422
+  },
+  "reproduced_bm25": {
+    "n": 51,
+    "hit@1_n": 1,
+    "hit@1": 0.0196,
+    "hit@5_n": 4,
+    "hit@5": 0.0784,
+    "hit@10_n": 4,
+    "hit@10": 0.0784,
+    "hit@50_n": 6,
+    "hit@50": 0.1176,
+    "mrr": 0.0375
+  },
+  "reproduced_ng3": {
+    "n": 51,
+    "hit@1_n": 3,
+    "hit@1": 0.0588,
+    "hit@5_n": 6,
+    "hit@5": 0.1176,
+    "hit@10_n": 6,
+    "hit@10": 0.1176,
+    "hit@50_n": 8,
+    "hit@50": 0.1569,
+    "mrr": 0.075
+  },
+  "dense_from_frozen_csv": {
+    "n": 51,
+    "hit@1_n": 5,
+    "hit@1": 0.098,
+    "hit@5_n": 15,
+    "hit@5": 0.2941,
+    "hit@10_n": 16,
+    "hit@10": 0.3137,
+    "hit@50_n": 22,
+    "hit@50": 0.4314,
+    "mrr": 0.1726
+  },
+  "hybrid_from_frozen_csv": {
+    "n": 51,
+    "hit@1_n": 3,
+    "hit@1": 0.0588,
+    "hit@5_n": 11,
+    "hit@5": 0.2157,
+    "hit@10_n": 19,
+    "hit@10": 0.3725,
+    "hit@50_n": 25,
+    "hit@50": 0.4902,
+    "mrr": 0.1422
+  },
+  "overlap_hit50": {
+    "ng3_vs_bm25": {
+      "hit_hit": 4,
+      "a_hit_b_miss": 4,
+      "a_miss_b_hit": 2,
+      "miss_miss": 41,
+      "n": 51
+    },
+    "ng3_vs_dense": {
+      "hit_hit": 3,
+      "a_hit_b_miss": 5,
+      "a_miss_b_hit": 19,
+      "miss_miss": 24,
+      "n": 51
+    },
+    "ng3_vs_hybrid": {
+      "hit_hit": 6,
+      "a_hit_b_miss": 2,
+      "a_miss_b_hit": 19,
+      "miss_miss": 24,
+      "n": 51
+    }
+  },
+  "ng3_only_vs_bm25_and_dense": [
+    "KN035",
+    "KN050"
+  ],
+  "dual_miss": {
+    "n": 25,
+    "ids": [
+      "KN002",
+      "KN005",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN018",
+      "KN020",
+      "KN021",
+      "KN022",
+      "KN024",
+      "KN025",
+      "KN026",
+      "KN027",
+      "KN028",
+      "KN032",
+      "KN035",
+      "KN036",
+      "KN037",
+      "KN041",
+      "KN042",
+      "KN044",
+      "KN047",
+      "KN050",
+      "KN051",
+      "KN054"
+    ],
+    "ng3_recovered": [
+      "KN035",
+      "KN050"
+    ],
+    "ng3_recovered_n": 2,
+    "ng3_remaining_miss": [
+      "KN002",
+      "KN005",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN018",
+      "KN020",
+      "KN021",
+      "KN022",
+      "KN024",
+      "KN025",
+      "KN026",
+      "KN027",
+      "KN028",
+      "KN032",
+      "KN036",
+      "KN037",
+      "KN041",
+      "KN042",
+      "KN044",
+      "KN047",
+      "KN051",
+      "KN054"
+    ]
+  },
+  "room_cat1": {
+    "ids": [
+      "KN001",
+      "KN006",
+      "KN008",
+      "KN010",
+      "KN011",
+      "KN018",
+      "KN037",
+      "KN045",
+      "KN047",
+      "KN050",
+      "KN051"
+    ],
+    "bm25_hit@50": 0,
+    "dense_hit@50": 3,
+    "hybrid_hit@50": 3,
+    "ng3_hit@50": 1,
+    "bm25_ids": [],
+    "dense_ids": [
+      "KN001",
+      "KN011",
+      "KN045"
+    ],
+    "hybrid_ids": [
+      "KN001",
+      "KN011",
+      "KN045"
+    ],
+    "ng3_ids": [
+      "KN050"
+    ]
+  },
+  "vs_bm25": {
+    "ng3_recovered_bm25_miss@50": [
+      "KN017",
+      "KN035",
+      "KN039",
+      "KN050"
+    ],
+    "ng3_lost_bm25_hit@50": [
+      "KN012",
+      "KN014"
+    ]
+  },
+  "runtime": {
+    "tokenize_expand_seconds": 111.893,
+    "ng3_bm25_build_seconds": 67.025,
+    "search_seconds": 2.915,
+    "wall_seconds": 200.009,
+    "device": "cpu",
+    "cuda": false,
+    "document_embeddings_regenerated": false,
+    "hardware": {
+      "platform": "Windows-11-10.0.26100-SP0",
+      "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+      "cpu_count": 12,
+      "python": "3.13.9",
+      "packages": {
+        "numpy": "2.3.5"
+      }
+    }
+  },
+  "safety": {
+    "test_accessed": false,
+    "phase2_ng3_overwritten": false,
+    "phase3_modified": false,
+    "phase4_modified": false,
+    "frozen_m0_modified": false,
+    "parameter_tuning": false,
+    "raw_urdu_ngrams": false,
+    "tfidf": false,
+    "n_changed": false,
+    "fusion": false,
+    "reranking": false
+  }
+}

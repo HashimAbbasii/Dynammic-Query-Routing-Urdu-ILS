@@ -1,0 +1,550 @@
+{
+  "label": "ULTRA v2 development experiment",
+  "not_a_plos_result": true,
+  "test_used": false,
+  "test_seal_aggregate_sha256": "48610601209c3723a7252bb9a197d8fbbece18640e0bf7aef972884816ab46c4",
+  "nl_evaluation": "pending official pooled annotation; no qrels",
+  "timestamp_utc": "2026-09-09T12:06:39Z",
+  "index_meta": {
+    "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+    "dict_sha256": "30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3",
+    "k1": 1.5,
+    "b": 0.75,
+    "tokenizer": "[\\u0600-\\u06FF]+|[A-Za-z0-9]+"
+  },
+  "n_dict_keys": 198,
+  "n_alias_families": 9,
+  "experiments": {
+    "R2-B0": {
+      "all_kn": {
+        "n": 54,
+        "hit@1": 0.0556,
+        "hit@5": 0.1296,
+        "hit@10": 0.1296,
+        "hit@50": 0.1667,
+        "mrr": 0.0786,
+        "hit@1_n": 3,
+        "hit@5_n": 7,
+        "hit@10_n": 7,
+        "hit@50_n": 9
+      },
+      "train": {
+        "n": 36,
+        "hit@1": 0.0833,
+        "hit@5": 0.1667,
+        "hit@10": 0.1667,
+        "hit@50": 0.1944,
+        "mrr": 0.108,
+        "hit@1_n": 3,
+        "hit@5_n": 6,
+        "hit@10_n": 6,
+        "hit@50_n": 7
+      },
+      "dev": {
+        "n": 18,
+        "hit@1": 0.0,
+        "hit@5": 0.0556,
+        "hit@10": 0.0556,
+        "hit@50": 0.1111,
+        "mrr": 0.0198,
+        "hit@1_n": 0,
+        "hit@5_n": 1,
+        "hit@10_n": 1,
+        "hit@50_n": 2
+      },
+      "roman": {
+        "n": 51,
+        "hit@1": 0.0196,
+        "hit@5": 0.0784,
+        "hit@10": 0.0784,
+        "hit@50": 0.1176,
+        "mrr": 0.0375,
+        "hit@1_n": 1,
+        "hit@5_n": 4,
+        "hit@10_n": 4,
+        "hit@50_n": 6
+      },
+      "roman_train": {
+        "n": 33,
+        "hit@1": 0.0303,
+        "hit@5": 0.0909,
+        "hit@10": 0.0909,
+        "hit@50": 0.1212,
+        "mrr": 0.0472,
+        "hit@1_n": 1,
+        "hit@5_n": 3,
+        "hit@10_n": 3,
+        "hit@50_n": 4
+      },
+      "roman_dev": {
+        "n": 18,
+        "hit@1": 0.0,
+        "hit@5": 0.0556,
+        "hit@10": 0.0556,
+        "hit@50": 0.1111,
+        "mrr": 0.0198,
+        "hit@1_n": 0,
+        "hit@5_n": 1,
+        "hit@10_n": 1,
+        "hit@50_n": 2
+      },
+      "urdu": {
+        "n": 3,
+        "hit@1": 0.6667,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "hit@50": 1.0,
+        "mrr": 0.7778,
+        "hit@1_n": 2,
+        "hit@5_n": 3,
+        "hit@10_n": 3,
+        "hit@50_n": 3
+      },
+      "mixed": {
+        "n": 0,
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "hit@10": 0.0,
+        "hit@50": 0.0,
+        "mrr": 0.0,
+        "hit@1_n": 0,
+        "hit@5_n": 0,
+        "hit@10_n": 0,
+        "hit@50_n": 0
+      }
+    },
+    "R2-1": {
+      "all_kn": {
+        "n": 54,
+        "hit@1": 0.0556,
+        "hit@5": 0.1296,
+        "hit@10": 0.1296,
+        "hit@50": 0.1481,
+        "mrr": 0.0782,
+        "hit@1_n": 3,
+        "hit@5_n": 7,
+        "hit@10_n": 7,
+        "hit@50_n": 8
+      },
+      "train": {
+        "n": 36,
+        "hit@1": 0.0833,
+        "hit@5": 0.1667,
+        "hit@10": 0.1667,
+        "hit@50": 0.1667,
+        "mrr": 0.1074,
+        "hit@1_n": 3,
+        "hit@5_n": 6,
+        "hit@10_n": 6,
+        "hit@50_n": 6
+      },
+      "dev": {
+        "n": 18,
+        "hit@1": 0.0,
+        "hit@5": 0.0556,
+        "hit@10": 0.0556,
+        "hit@50": 0.1111,
+        "mrr": 0.0198,
+        "hit@1_n": 0,
+        "hit@5_n": 1,
+        "hit@10_n": 1,
+        "hit@50_n": 2
+      },
+      "roman": {
+        "n": 51,
+        "hit@1": 0.0196,
+        "hit@5": 0.0784,
+        "hit@10": 0.0784,
+        "hit@50": 0.098,
+        "mrr": 0.0371,
+        "hit@1_n": 1,
+        "hit@5_n": 4,
+        "hit@10_n": 4,
+        "hit@50_n": 5
+      },
+      "roman_train": {
+        "n": 33,
+        "hit@1": 0.0303,
+        "hit@5": 0.0909,
+        "hit@10": 0.0909,
+        "hit@50": 0.0909,
+        "mrr": 0.0465,
+        "hit@1_n": 1,
+        "hit@5_n": 3,
+        "hit@10_n": 3,
+        "hit@50_n": 3
+      },
+      "roman_dev": {
+        "n": 18,
+        "hit@1": 0.0,
+        "hit@5": 0.0556,
+        "hit@10": 0.0556,
+        "hit@50": 0.1111,
+        "mrr": 0.0198,
+        "hit@1_n": 0,
+        "hit@5_n": 1,
+        "hit@10_n": 1,
+        "hit@50_n": 2
+      },
+      "urdu": {
+        "n": 3,
+        "hit@1": 0.6667,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "hit@50": 1.0,
+        "mrr": 0.7778,
+        "hit@1_n": 2,
+        "hit@5_n": 3,
+        "hit@10_n": 3,
+        "hit@50_n": 3
+      },
+      "mixed": {
+        "n": 0,
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "hit@10": 0.0,
+        "hit@50": 0.0,
+        "mrr": 0.0,
+        "hit@1_n": 0,
+        "hit@5_n": 0,
+        "hit@10_n": 0,
+        "hit@50_n": 0
+      },
+      "vs_B0_hit@5_all": {
+        "improved": 0,
+        "unchanged": 54,
+        "degraded": 0,
+        "total": 54
+      },
+      "vs_B0_hit@5_roman": {
+        "improved": 0,
+        "unchanged": 51,
+        "degraded": 0,
+        "total": 51
+      },
+      "vs_B0_hit@5_roman_train": {
+        "improved": 0,
+        "unchanged": 33,
+        "degraded": 0,
+        "total": 33
+      },
+      "vs_B0_hit@5_roman_dev": {
+        "improved": 0,
+        "unchanged": 18,
+        "degraded": 0,
+        "total": 18
+      }
+    },
+    "R2-3": {
+      "all_kn": {
+        "n": 54,
+        "hit@1": 0.0556,
+        "hit@5": 0.1296,
+        "hit@10": 0.1296,
+        "hit@50": 0.1481,
+        "mrr": 0.0782,
+        "hit@1_n": 3,
+        "hit@5_n": 7,
+        "hit@10_n": 7,
+        "hit@50_n": 8
+      },
+      "train": {
+        "n": 36,
+        "hit@1": 0.0833,
+        "hit@5": 0.1667,
+        "hit@10": 0.1667,
+        "hit@50": 0.1667,
+        "mrr": 0.1074,
+        "hit@1_n": 3,
+        "hit@5_n": 6,
+        "hit@10_n": 6,
+        "hit@50_n": 6
+      },
+      "dev": {
+        "n": 18,
+        "hit@1": 0.0,
+        "hit@5": 0.0556,
+        "hit@10": 0.0556,
+        "hit@50": 0.1111,
+        "mrr": 0.0198,
+        "hit@1_n": 0,
+        "hit@5_n": 1,
+        "hit@10_n": 1,
+        "hit@50_n": 2
+      },
+      "roman": {
+        "n": 51,
+        "hit@1": 0.0196,
+        "hit@5": 0.0784,
+        "hit@10": 0.0784,
+        "hit@50": 0.098,
+        "mrr": 0.0371,
+        "hit@1_n": 1,
+        "hit@5_n": 4,
+        "hit@10_n": 4,
+        "hit@50_n": 5
+      },
+      "roman_train": {
+        "n": 33,
+        "hit@1": 0.0303,
+        "hit@5": 0.0909,
+        "hit@10": 0.0909,
+        "hit@50": 0.0909,
+        "mrr": 0.0465,
+        "hit@1_n": 1,
+        "hit@5_n": 3,
+        "hit@10_n": 3,
+        "hit@50_n": 3
+      },
+      "roman_dev": {
+        "n": 18,
+        "hit@1": 0.0,
+        "hit@5": 0.0556,
+        "hit@10": 0.0556,
+        "hit@50": 0.1111,
+        "mrr": 0.0198,
+        "hit@1_n": 0,
+        "hit@5_n": 1,
+        "hit@10_n": 1,
+        "hit@50_n": 2
+      },
+      "urdu": {
+        "n": 3,
+        "hit@1": 0.6667,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "hit@50": 1.0,
+        "mrr": 0.7778,
+        "hit@1_n": 2,
+        "hit@5_n": 3,
+        "hit@10_n": 3,
+        "hit@50_n": 3
+      },
+      "mixed": {
+        "n": 0,
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "hit@10": 0.0,
+        "hit@50": 0.0,
+        "mrr": 0.0,
+        "hit@1_n": 0,
+        "hit@5_n": 0,
+        "hit@10_n": 0,
+        "hit@50_n": 0
+      },
+      "vs_B0_hit@5_all": {
+        "improved": 0,
+        "unchanged": 54,
+        "degraded": 0,
+        "total": 54
+      },
+      "vs_B0_hit@5_roman": {
+        "improved": 0,
+        "unchanged": 51,
+        "degraded": 0,
+        "total": 51
+      },
+      "vs_B0_hit@5_roman_train": {
+        "improved": 0,
+        "unchanged": 33,
+        "degraded": 0,
+        "total": 33
+      },
+      "vs_B0_hit@5_roman_dev": {
+        "improved": 0,
+        "unchanged": 18,
+        "degraded": 0,
+        "total": 18
+      }
+    }
+  },
+  "train_roman_b0_failures": {
+    "n": 30,
+    "taxonomy_counts": {
+      "MISS/VOCAB": 29,
+      "RANK/RANK": 1
+    },
+    "rows": [
+      {
+        "query_id": "KN001",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN002",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN005",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN006",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN008",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN010",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN011",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN013",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN014",
+        "rank": 44,
+        "primary": "RANK",
+        "secondary": "RANK"
+      },
+      {
+        "query_id": "KN015",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN016",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN017",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN018",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN019",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN020",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN021",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN022",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN024",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN025",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN026",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN027",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN028",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN029",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN030",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN031",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN032",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN033",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN034",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN035",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      },
+      {
+        "query_id": "KN036",
+        "rank": "miss50",
+        "primary": "MISS",
+        "secondary": "VOCAB"
+      }
+    ]
+  }
+}

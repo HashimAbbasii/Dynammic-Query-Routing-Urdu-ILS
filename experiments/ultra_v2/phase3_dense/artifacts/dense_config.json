@@ -1,0 +1,64 @@
+{
+  "experiment_id": "DENSE-BASELINE",
+  "timestamp_utc_start": "2026-09-11T10:53:32Z",
+  "test_accessed": false,
+  "preregistration_sha256": "83fcd3c1aca2e9489621b41484d89d074df5e5b8bcd0c01112044677fc48cf9d",
+  "dense_retrieval_py_sha256": "bd25cf497cbf004f8e09744329bf5aa82f780a5aeaba681591802f9ae7ff238b",
+  "run_dense_baseline_py_sha256": "47ddf7dcf0794afc19d0da3900f8fe005282e295e12d69cbf53783e848a1aed9",
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "python": "3.13.9",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "encoder": {
+    "model_id": "intfloat/multilingual-e5-small",
+    "model_revision_pinned": "8d923955b027282ba975c0a4c825486c9ca4c490",
+    "embedding_dimension_expected": 384,
+    "max_seq_length": 512,
+    "prefix_mode": "manual_concat",
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "query_prompt_name": null,
+    "passage_prompt_name": null,
+    "st_prompts": {
+      "query": "",
+      "document": ""
+    },
+    "auto_query_prefix_detected": false,
+    "auto_passage_prefix_detected": false,
+    "pooling": "mean (SentenceTransformer module / E5 default)",
+    "normalize_embeddings": true,
+    "similarity": "cosine (inner product of L2-normalized vectors)",
+    "encode_batch_size": 64,
+    "device": "cpu",
+    "st_model_card_present": true,
+    "loaded_revision": "8d923955b027282ba975c0a4c825486c9ca4c490"
+  },
+  "population": {
+    "kn_train": 36,
+    "kn_dev": 18,
+    "kn_total": 54,
+    "roman_kn": 51,
+    "nl_train": 44,
+    "nl_dev": 22,
+    "nl_scored": false,
+    "script_counts": {
+      "ROMAN/train": 33,
+      "URDU/train": 3,
+      "ROMAN/dev": 18
+    },
+    "kn_script_totals": {
+      "ROMAN": 51,
+      "URDU": 3
+    }
+  },
+  "top_k": 50,
+  "hit_k": 5,
+  "hybrid": false,
+  "rerank": false,
+  "finetune": false,
+  "model_shopping": false,
+  "parameter_tuning": false,
+  "gold_injection": false,
+  "query_rewriting": false,
+  "nl_scored": false,
+  "baseline_artifact": "experiments/ultra_v2/phase2_roman/artifacts/r2_b0_per_query.csv"
+}

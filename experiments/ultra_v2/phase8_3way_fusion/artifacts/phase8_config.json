@@ -1,0 +1,34 @@
+{
+  "experiment_id": "PHASE8-3WAY-RRF",
+  "timestamp_utc": "2026-09-13T07:10:43Z",
+  "branch": "research/ultra-v2-strengthening",
+  "commit": "fd54ac9b65c2db93e7e16fbf0c5a40b6a6025be1",
+  "test_accessed": false,
+  "preregistration_sha256": "fcd93d2fccadd561a994bd3feac12fbcadb301c5665626edb70fcee0cf515532",
+  "rrf_k": 60,
+  "n_inputs": 3,
+  "weights": null,
+  "csv_sha256": {
+    "bm25": "cc0d31c2b4bb108ea7114811cafe1da68c1f1f4a88db8dd1d4700a5dd9429509",
+    "dense": "4875884cbaeecd025df343befc5bccc6c35fc01dda54cff45173b56efab9fdb1",
+    "hybrid": "c5174379abc872c2e2e7584b7974a461c32c287270e37f961483d4ead959828a",
+    "ng3": "0149bd52dc00d7ace5bb510e17b5789037766ea69886738368e6f546a21ab3e5"
+  },
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "dict_sha256": "30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3",
+  "method_d_token_stream_sha256": "323a07b46e2377b5ec807006c2efd06f9b1ae19a65f1389d22f32b435ca0c3fb",
+  "ng3_feature_stream_sha256": "1ab004bb26e9231827137020808ca008981648d62a834755af5779454d8c553d",
+  "gates": {
+    "csv_sha_vs_phase6": "PASS",
+    "corpus_sha": "PASS",
+    "query_gold": "PASS",
+    "bm25_vs_r2_b0": "PASS",
+    "dense_vs_DENSE_PER_QUERY": "PASS",
+    "ng3_vs_R2NG3_PER_QUERY": "PASS",
+    "ng3_stream_sha": "PASS",
+    "hybrid2_vs_HYBRID_PER_QUERY": "PASS",
+    "rrf3_repeat": "PASS"
+  },
+  "document_embeddings_regenerated": false,
+  "parameter_tuning": false
+}

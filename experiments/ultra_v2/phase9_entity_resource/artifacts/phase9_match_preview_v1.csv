@@ -1,0 +1,85 @@
+query_id,split,query_text,span,span_len,en_title,ur_titles
+KN001,train,malaysia air race world championship third round kab shuru hua,malaysia,1,Malaysia,ملائیشیا | مليشيا | ملیشیا | ملائشيا
+KN001,train,malaysia air race world championship third round kab shuru hua,world,1,World,دنیا | جگ | دنيا | دُنيا
+KN002,train,zim t20 mein hosts ko chase ke liye kitna target mila,,0,,
+KN004,train,desi ghee sehat ke liye faida mand hai ya nuqsan deh,,0,,
+KN005,train,iran amreeka tension ke baad local equities opening par kyun rebound hua,,0,,
+KN006,train,kolkata ne delhi ko ipl thriller mein kis margin se haraaya,delhi,1,Delhi,دہلی | دلي | دلی | دلّي
+KN008,train,teen tennis sensation ne kaunsa canadian hardcourt title jeeta,tennis,1,Tennis,ٹینس | ٹينس
+KN010,train,benami accounts walo ke khilaf revenue board ne kya saza tajweez ki,,0,,
+KN011,train,france ki hydrogen solar wind powered boat ka naam kya hai,france,1,France,فرانس | فرانسيسي | فرانسیسی | فرانسيسيوں
+KN011,train,france ki hydrogen solar wind powered boat ka naam kya hai,hydrogen,1,Hydrogen,ہائیڈروجن | آبزا | آبگر | ابزا
+KN012,train,comedy nights wali dadi wapas kyun nahi ban na chahte,comedy,1,Comedy,طربیہ | طربيه | طربيہ | طربیه
+KN013,train,world cup mein pakistan india fixture ke tickets black mein kyun bik rahe,world,1,World,دنیا | جگ | دنيا | دُنيا
+KN013,train,world cup mein pakistan india fixture ke tickets black mein kyun bik rahe,pakistan,1,Pakistan,پاکستان | پاكستان | پاكستاني | پاكستانی
+KN013,train,world cup mein pakistan india fixture ke tickets black mein kyun bik rahe,india,1,India,بھارت | هند | ہند | انڈيا
+KN013,train,world cup mein pakistan india fixture ke tickets black mein kyun bik rahe,black,1,Black,سیاہ | سياہ | كالا | کالا
+KN014,train,mobile slow charge hone ki user side ghalti kya ho sakti hai,ghalti,1,Ghalti,غلطی 2016ء (اے پلس ٹی وی) | غلطي 2016ء (اے پلس ٹي وي)
+KN015,train,viral maths puzzle ne internet users ko kyun confuse kiya,internet,1,Internet,انٹرنیٹ | شبكه | شبكہ | شبکه
+KN016,train,priyanka ke african kids se hair compliment exchange kis tour par hua,,0,,
+KN017,train,boom supersonic passenger prototype kab unveil hua,,0,,
+KN018,train,aladdin kahani kisi haqeeqi shakhs par mabni hai ya sirf fable hai,mabni,1,Mabni,مابنی | مابني
+KN018,train,aladdin kahani kisi haqeeqi shakhs par mabni hai ya sirf fable hai,fable,1,Fable,حکایت | حكایت | حکايت
+KN019,train,jlo ne 50 saal ki umar mein fitness kaise maintain ki,,0,,
+KN020,train,cpec joint cooperation committee ka session kis shehar mein chal raha tha,joint,1,Joint,مفصل | جوڑ | مفصلی نظام
+KN020,train,cpec joint cooperation committee ka session kis shehar mein chal raha tha,cooperation,1,Cooperation,تعاون
+KN021,train,jungle book live action ne india box office par kya record banaya,live action,2,Live action,لائیو ایکشن
+KN021,train,jungle book live action ne india box office par kya record banaya,india,1,India,بھارت | هند | ہند | انڈيا
+KN021,train,jungle book live action ne india box office par kya record banaya,office,1,Office,دفتر
+KN021,train,jungle book live action ne india box office par kya record banaya,record,1,Record,ریکارڈ | سجل | تسجيل | تسجیل
+KN022,train,shahid mira sangeet se pehle shaadi ki tayyariyan kab khatam huin,shahid,1,Shahid,شہید (اسلام) | شهيد (اسلام) | شهید (اسلام) | شہيد (اسلام)
+KN023,train,qawwal aziz mian ki barsi kis tarah yaad ki jati hai,aziz mian,2,Aziz Mian,عزیز میاں | عزيزمياں | عزیزمیاں | عزيز مياں
+KN024,train,west indies ke khilaf dubai day night series pakistan ka kaunsa milestone test hai,dubai,1,Dubai,دبئی | دبئي | دوبئي | دوبئی
+KN024,train,west indies ke khilaf dubai day night series pakistan ka kaunsa milestone test hai,pakistan,1,Pakistan,پاکستان | پاكستان | پاكستاني | پاكستانی
+KN025,train,adb country director ne pm se mil kar investment ke bare mein kya kaha,country,1,Country,ملک | ملك | Country
+KN025,train,adb country director ne pm se mil kar investment ke bare mein kya kaha,director,1,Director,ہدایت کار (ضد ابہام) | هدايت كار (ضد ابهام) | هدايت کار (ضد ابهام) | هدایت كار (ضد ابهام)
+KN025,train,adb country director ne pm se mil kar investment ke bare mein kya kaha,investment,1,Investment,سرمایہ کاری | سرمايه كاري | سرمايه کاري | سرمايہ كاري
+KN026,train,salman ki wrestler film ka pehla poster kis director ki movie ka hai,director,1,Director,ہدایت کار (ضد ابہام) | هدايت كار (ضد ابهام) | هدايت کار (ضد ابهام) | هدایت كار (ضد ابهام)
+KN027,train,chameleon satellite minutes mein naya mission kyun assume kar sakte hain,chameleon,1,Chameleon,گرگٹ
+KN027,train,chameleon satellite minutes mein naya mission kyun assume kar sakte hain,satellite,1,Satellite,مصنوعی سیارچہ | مصنوعي سيارچه | مصنوعي سيارچہ | مصنوعی سیارچه
+KN027,train,chameleon satellite minutes mein naya mission kyun assume kar sakte hain,mission,1,Mission,مشن
+KN028,train,state bank ke mutabiq external debt burden mein kitni percent kami hui,external debt,2,External debt,بیرونی قرضہ | بيروني قرضه | بيروني قرضہ | بيروني قرضے
+KN029,train,houston new year show mein kumar sanu kis community event ka hissa bane,houston,1,Houston,ہیوسٹن | هوسٹن | ہوسٹن | هيوسٹن
+KN029,train,houston new year show mein kumar sanu kis community event ka hissa bane,kumar sanu,2,Kumar Sanu,کمار سانو | كمار سانو
+KN029,train,houston new year show mein kumar sanu kis community event ka hissa bane,event,1,Event,واقعہ | Event | واقعه | واقعات
+KN030,train,imran tahir odi bowling ranking mein number one kab bane,imran tahir,2,Imran Tahir,عمران طاہر | عمران طاهر
+KN030,train,imran tahir odi bowling ranking mein number one kab bane,bowling,1,Bowling,بولنگ
+KN031,train,fifa ranking mein germany top par hai to pakistan ka number kya hai,fifa,1,FIFA,فیفا | FIFA | فيفا | فيڈريشن انٹرنيشنل دي فٹ بال ايسوسي ايشن
+KN031,train,fifa ranking mein germany top par hai to pakistan ka number kya hai,germany,1,Germany,جرمنی | جرمن | جرمني | ڈوئچ لينڈ
+KN031,train,fifa ranking mein germany top par hai to pakistan ka number kya hai,pakistan,1,Pakistan,پاکستان | پاكستان | پاكستاني | پاكستانی
+KN032,train,umar akmal par fixing case mein kitne saal ki pabandi lagi,,0,,
+KN033,train,shane warne test cap auction se bushfire fund ko kitni raqam mili,shane warne,2,Shane Warne,شین وارن | شين وارن
+KN034,train,sharmeen obaid oscar short documentary category mein dobara kab jeeti,dobara,1,Dobara,دوبارہ (فلم)
+KN035,train,zaheer khan ne sagarika se shaadi ka elaan kab kiya,zaheer khan,2,Zaheer Khan,ظہیرخان | ظهيرخان | ظهیرخان | ظہيرخان
+KN035,train,zaheer khan ne sagarika se shaadi ka elaan kab kiya,sagarika,1,Sagarika,ساگاریکا | ساگاريكا | ساگاريکا | ساگاریكا
+KN036,train,aglay das mahine mein local oil gas output mein kya izafa verqai hai,,0,,
+KN037,dev,nayi photo app chehre tabdeel karne ke ilawa kya karti hai,chehre,1,Chehre,چہرے | چهرے
+KN038,dev,peshawar used car mela mein logon ki dilchaspi kis cheez par thi,,0,,
+KN039,dev,nokia android handset china launch par ek minute mein kyun sold out hua,android,1,Android,اینڈروئیڈ (ضد ابہام) | Android | اينڈروئيڈ (ضد ابهام) | اينڈروئيڈ (ضد ابہام)
+KN039,dev,nokia android handset china launch par ek minute mein kyun sold out hua,china,1,China,چین | چين | چائنه | چائنہ
+KN039,dev,nokia android handset china launch par ek minute mein kyun sold out hua,minute,1,Minute,دقیقہ (وقت) | منٹ | دقيقه (وقت) | دقيقہ (وقت)
+KN040,dev,samsung ne galaxy s7 active ko galti se kis app mein leak kiya,samsung,1,Samsung,سیمسنگ | سامسنگ | سيمسنگ | سيمسنگ گروپ
+KN040,dev,samsung ne galaxy s7 active ko galti se kis app mein leak kiya,galaxy,1,Galaxy,کہکشاں | كهكشاں | كہكشاں | کهکشاں
+KN041,dev,caretaker finance minister ne cpec projects mukammal karne ka kya wazheh kiya,finance,1,Finance,فنانس
+KN042,dev,current account deficit ki raftaar slow kyun hui SBP ke mutabiq,,0,,
+KN043,dev,moto p30 front design kis apple flagship se milta julta hai,design,1,Design,ترتیب | ترتيب
+KN043,dev,moto p30 front design kis apple flagship se milta julta hai,apple,1,Apple,سیب | سيب | تفاح
+KN043,dev,moto p30 front design kis apple flagship se milta julta hai,flagship,1,Flagship,فلیگ شپ | فليگ شپ | پرچمي جهاز | پرچمي جہاز
+KN044,dev,twitter ka naya feature facebook snapchat se muqabla kyun karta hai,facebook,1,Facebook,فیس بک | فيس بك | فيس بک | فیس بك
+KN045,dev,messenger rooms jaisa group video chat facebook ne kab add kiya,messenger,1,MESSENGER,میسنجر (خلائی جہاز) | ميسنجر (خلائي جهاز) | ميسنجر (خلائي جہاز) | میسنجر (خلائی جهاز)
+KN045,dev,messenger rooms jaisa group video chat facebook ne kab add kiya,group,1,Group,گروہ | گروه | گروپ
+KN045,dev,messenger rooms jaisa group video chat facebook ne kab add kiya,facebook,1,Facebook,فیس بک | فيس بك | فيس بک | فیس بك
+KN046,dev,ml1 railway upgrade ko deadline se pehle track par lanay ki tayyari kya hai,,0,,
+KN047,dev,fbr aur sindh revenue board ne sales tax input par kya deal ki,sindh,1,Sindh,سندھ | سندهوديس | سندهوديش | سندهودیس
+KN047,dev,fbr aur sindh revenue board ne sales tax input par kya deal ki,sales tax,2,Sales tax,محصول فروخت
+KN048,dev,samsung s10 lite aur note 10 lite 2020 lineup kab launch honay walay thay,samsung,1,Samsung,سیمسنگ | سامسنگ | سيمسنگ | سيمسنگ گروپ
+KN049,dev,lahore psl final ke liye stadium ke gird kitne personnel deploy honge,lahore,1,Lahore,لاہور | لهور | لہور | لاهور
+KN049,dev,lahore psl final ke liye stadium ke gird kitne personnel deploy honge,stadium,1,Stadium,اسٹیڈیم | مدرج | سٹيڈيم | سٹیڈیم
+KN050,dev,afghanistan world cup jeetne ki peshgoi kis foundation par ki gai,afghanistan,1,Afghanistan,افغانستان | اسلامی امارت افغانستان | امارت اسلامي افغانستان | امارت اسلامی افغانستان
+KN050,dev,afghanistan world cup jeetne ki peshgoi kis foundation par ki gai,world,1,World,دنیا | جگ | دنيا | دُنيا
+KN051,dev,gmail ke naye interface ko purane layout jaisa kaise banaya ja sakta hai,gmail,1,Gmail,جی میل | جي ميل
+KN052,dev,samsung ne vegas ces par human-like robots kyun dikhaye,samsung,1,Samsung,سیمسنگ | سامسنگ | سيمسنگ | سيمسنگ گروپ
+KN052,dev,samsung ne vegas ces par human-like robots kyun dikhaye,human,1,Human,انسان | انساني | انسانی | انسانوں
+KN053,dev,huawei mate 10 lite pakistan mein pehli baar kitne cameras ke sath aaya,huawei,1,Huawei,ہواوے ٹیکنالوجیز | هواوے | ہواوے | هواوے ٹيكنالوجيز
+KN053,dev,huawei mate 10 lite pakistan mein pehli baar kitne cameras ke sath aaya,pakistan,1,Pakistan,پاکستان | پاكستان | پاكستاني | پاكستانی
+KN054,dev,kangana ke bayan par momina iram ne kya jawab diya,,0,,

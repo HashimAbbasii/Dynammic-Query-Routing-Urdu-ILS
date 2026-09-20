@@ -1,0 +1,44 @@
+{
+  "experiment_id": "R2-NG3",
+  "n_gram": 3,
+  "token_boundary_policy": "A_within_existing_tokens",
+  "short_token_policy": "len<3 keep token as single feature",
+  "document_representation": "frozen Method D romanize_token then char-3-grams",
+  "r2_1_hunterian_used": false,
+  "query_representation": "frozen tokenize then char-3-grams; no dictionary",
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "candidate_depth": 50,
+  "official_cutoff": 5,
+  "primary_endpoint": "ExactSource Hit@50 on ROOM Category 1 n=11",
+  "primary_slice_ids": [
+    "KN001",
+    "KN006",
+    "KN008",
+    "KN010",
+    "KN011",
+    "KN018",
+    "KN037",
+    "KN045",
+    "KN047",
+    "KN050",
+    "KN051"
+  ],
+  "negative_controls_vocab": [
+    "KN017",
+    "KN020",
+    "KN041"
+  ],
+  "negative_controls_split": [
+    "KN006",
+    "KN047",
+    "KN051"
+  ],
+  "dictionary_sha256": "30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3",
+  "corpus_sha256": "8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231",
+  "method_d_token_stream_sha256": "323a07b46e2377b5ec807006c2efd06f9b1ae19a65f1389d22f32b435ca0c3fb",
+  "ng3_feature_stream_sha256": "1ab004bb26e9231827137020808ca008981648d62a834755af5779454d8c553d",
+  "test_accessed": false,
+  "git_branch": "research/ultra-v2-strengthening",
+  "git_commit": "fd54ac9b65c2db93e7e16fbf0c5a40b6a6025be1"
+}

@@ -1,0 +1,451 @@
+{
+  "romanizer": {
+    "name": "hunterian_ascii_positional_v1",
+    "version": "1.0.0",
+    "scheme": "Hunterian/ASCII positional matres lectionis",
+    "waw_initial": "w",
+    "waw_non_initial": "o",
+    "ye_initial": "y",
+    "ye_non_initial": "i",
+    "short_vowel_insertion": false,
+    "diacritics": false,
+    "lexicon": false,
+    "query_dependent": false
+  },
+  "generic_n": 18,
+  "empty_treatment_outputs": 0,
+  "n_compared": 64,
+  "n_changed": 5,
+  "rows": [
+    {
+      "token": "پاکستان",
+      "control_fallback": "pakstan",
+      "treatment_fallback": "pakstan",
+      "changed": false
+    },
+    {
+      "token": "حکومت",
+      "control_fallback": "hkomt",
+      "treatment_fallback": "hkomt",
+      "changed": false
+    },
+    {
+      "token": "کراچی",
+      "control_fallback": "krachi",
+      "treatment_fallback": "krachi",
+      "changed": false
+    },
+    {
+      "token": "اخبار",
+      "control_fallback": "akhbar",
+      "treatment_fallback": "akhbar",
+      "changed": false
+    },
+    {
+      "token": "دوست",
+      "control_fallback": "dost",
+      "treatment_fallback": "dost",
+      "changed": false
+    },
+    {
+      "token": "کتاب",
+      "control_fallback": "ktab",
+      "treatment_fallback": "ktab",
+      "changed": false
+    },
+    {
+      "token": "وقت",
+      "control_fallback": "oqt",
+      "treatment_fallback": "wqt",
+      "changed": true
+    },
+    {
+      "token": "وزیر",
+      "control_fallback": "ozir",
+      "treatment_fallback": "wzir",
+      "changed": true
+    },
+    {
+      "token": "اور",
+      "control_fallback": "aor",
+      "treatment_fallback": "aor",
+      "changed": false
+    },
+    {
+      "token": "ہے",
+      "control_fallback": "he",
+      "treatment_fallback": "he",
+      "changed": false
+    },
+    {
+      "token": "میں",
+      "control_fallback": "min",
+      "treatment_fallback": "min",
+      "changed": false
+    },
+    {
+      "token": "دو",
+      "control_fallback": "do",
+      "treatment_fallback": "do",
+      "changed": false
+    },
+    {
+      "token": "ہو",
+      "control_fallback": "ho",
+      "treatment_fallback": "ho",
+      "changed": false
+    },
+    {
+      "token": "ایک",
+      "control_fallback": "aik",
+      "treatment_fallback": "aik",
+      "changed": false
+    },
+    {
+      "token": "یہ",
+      "control_fallback": "ih",
+      "treatment_fallback": "yh",
+      "changed": true
+    },
+    {
+      "token": "وہ",
+      "control_fallback": "oh",
+      "treatment_fallback": "wh",
+      "changed": true
+    },
+    {
+      "token": "کام",
+      "control_fallback": "kam",
+      "treatment_fallback": "kam",
+      "changed": false
+    },
+    {
+      "token": "لوگ",
+      "control_fallback": "log",
+      "treatment_fallback": "log",
+      "changed": false
+    },
+    {
+      "token": "عالمی",
+      "control_fallback": "aalmi",
+      "treatment_fallback": "aalmi",
+      "changed": false,
+      "doc_index": 0
+    },
+    {
+      "token": "عسکریت",
+      "control_fallback": "askrit",
+      "treatment_fallback": "askrit",
+      "changed": false,
+      "doc_index": 0
+    },
+    {
+      "token": "پسندی",
+      "control_fallback": "psndi",
+      "treatment_fallback": "psndi",
+      "changed": false,
+      "doc_index": 0
+    },
+    {
+      "token": "متاثرہ",
+      "control_fallback": "mtasrh",
+      "treatment_fallback": "mtasrh",
+      "changed": false,
+      "doc_index": 0
+    },
+    {
+      "token": "خاندانوں",
+      "control_fallback": "khandanon",
+      "treatment_fallback": "khandanon",
+      "changed": false,
+      "doc_index": 0
+    },
+    {
+      "token": "معاونت",
+      "control_fallback": "maaont",
+      "treatment_fallback": "maaont",
+      "changed": false,
+      "doc_index": 0
+    },
+    {
+      "token": "کرے",
+      "control_fallback": "kre",
+      "treatment_fallback": "kre",
+      "changed": false,
+      "doc_index": 0
+    },
+    {
+      "token": "گا",
+      "control_fallback": "ga",
+      "treatment_fallback": "ga",
+      "changed": false,
+      "doc_index": 0
+    },
+    {
+      "token": "اسلام",
+      "control_fallback": "aslam",
+      "treatment_fallback": "aslam",
+      "changed": false,
+      "doc_index": 0
+    },
+    {
+      "token": "جولائی",
+      "control_fallback": "jolaii",
+      "treatment_fallback": "jolaii",
+      "changed": false,
+      "doc_index": 250
+    },
+    {
+      "token": "ریکارڈ",
+      "control_fallback": "rikard",
+      "treatment_fallback": "rikard",
+      "changed": false,
+      "doc_index": 250
+    },
+    {
+      "token": "ارب",
+      "control_fallback": "arb",
+      "treatment_fallback": "arb",
+      "changed": false,
+      "doc_index": 250
+    },
+    {
+      "token": "کروڑ",
+      "control_fallback": "kror",
+      "treatment_fallback": "kror",
+      "changed": false,
+      "doc_index": 250
+    },
+    {
+      "token": "ترسیلات",
+      "control_fallback": "trsilat",
+      "treatment_fallback": "trsilat",
+      "changed": false,
+      "doc_index": 250
+    },
+    {
+      "token": "زر",
+      "control_fallback": "zr",
+      "treatment_fallback": "zr",
+      "changed": false,
+      "doc_index": 250
+    },
+    {
+      "token": "موصول",
+      "control_fallback": "mosol",
+      "treatment_fallback": "mosol",
+      "changed": false,
+      "doc_index": 250
+    },
+    {
+      "token": "پورٹ",
+      "control_fallback": "port",
+      "treatment_fallback": "port",
+      "changed": false,
+      "doc_index": 2500
+    },
+    {
+      "token": "قاسم",
+      "control_fallback": "qasm",
+      "treatment_fallback": "qasm",
+      "changed": false,
+      "doc_index": 2500
+    },
+    {
+      "token": "ایل",
+      "control_fallback": "ail",
+      "treatment_fallback": "ail",
+      "changed": false,
+      "doc_index": 2500
+    },
+    {
+      "token": "این",
+      "control_fallback": "ain",
+      "treatment_fallback": "ain",
+      "changed": false,
+      "doc_index": 2500
+    },
+    {
+      "token": "جی",
+      "control_fallback": "ji",
+      "treatment_fallback": "ji",
+      "changed": false,
+      "doc_index": 2500
+    },
+    {
+      "token": "ٹرمنل",
+      "control_fallback": "trmnl",
+      "treatment_fallback": "trmnl",
+      "changed": false,
+      "doc_index": 2500
+    },
+    {
+      "token": "تکنیکی",
+      "control_fallback": "tkniki",
+      "treatment_fallback": "tkniki",
+      "changed": false,
+      "doc_index": 2500
+    },
+    {
+      "token": "خرابی",
+      "control_fallback": "khrabi",
+      "treatment_fallback": "khrabi",
+      "changed": false,
+      "doc_index": 2500
+    },
+    {
+      "token": "شکار",
+      "control_fallback": "shkar",
+      "treatment_fallback": "shkar",
+      "changed": false,
+      "doc_index": 2500
+    },
+    {
+      "token": "مائیکل",
+      "control_fallback": "maiikl",
+      "treatment_fallback": "maiikl",
+      "changed": false,
+      "doc_index": 25000
+    },
+    {
+      "token": "ہولڈنگ",
+      "control_fallback": "holdng",
+      "treatment_fallback": "holdng",
+      "changed": false,
+      "doc_index": 25000
+    },
+    {
+      "token": "نسلی",
+      "control_fallback": "nsli",
+      "treatment_fallback": "nsli",
+      "changed": false,
+      "doc_index": 25000
+    },
+    {
+      "token": "تعصب",
+      "control_fallback": "tasb",
+      "treatment_fallback": "tasb",
+      "changed": false,
+      "doc_index": 25000
+    },
+    {
+      "token": "بات",
+      "control_fallback": "bat",
+      "treatment_fallback": "bat",
+      "changed": false,
+      "doc_index": 25000
+    },
+    {
+      "token": "کرتے",
+      "control_fallback": "krte",
+      "treatment_fallback": "krte",
+      "changed": false,
+      "doc_index": 25000
+    },
+    {
+      "token": "ہوئے",
+      "control_fallback": "hoie",
+      "treatment_fallback": "hoie",
+      "changed": false,
+      "doc_index": 25000
+    },
+    {
+      "token": "بدیدہ",
+      "control_fallback": "bdidh",
+      "treatment_fallback": "bdidh",
+      "changed": false,
+      "doc_index": 25000
+    },
+    {
+      "token": "ہوگئے",
+      "control_fallback": "hogie",
+      "treatment_fallback": "hogie",
+      "changed": false,
+      "doc_index": 25000
+    },
+    {
+      "token": "ویسٹ",
+      "control_fallback": "oist",
+      "treatment_fallback": "wist",
+      "changed": true,
+      "doc_index": 25000
+    },
+    {
+      "token": "انڈیز",
+      "control_fallback": "andiz",
+      "treatment_fallback": "andiz",
+      "changed": false,
+      "doc_index": 25000
+    },
+    {
+      "token": "اینی",
+      "control_fallback": "aini",
+      "treatment_fallback": "aini",
+      "changed": false,
+      "doc_index": 50000
+    },
+    {
+      "token": "میٹڈفلم",
+      "control_fallback": "mitdflm",
+      "treatment_fallback": "mitdflm",
+      "changed": false,
+      "doc_index": 50000
+    },
+    {
+      "token": "دی",
+      "control_fallback": "di",
+      "treatment_fallback": "di",
+      "changed": false,
+      "doc_index": 50000
+    },
+    {
+      "token": "باس",
+      "control_fallback": "bas",
+      "treatment_fallback": "bas",
+      "changed": false,
+      "doc_index": 50000
+    },
+    {
+      "token": "بے",
+      "control_fallback": "be",
+      "treatment_fallback": "be",
+      "changed": false,
+      "doc_index": 50000
+    },
+    {
+      "token": "بی",
+      "control_fallback": "bi",
+      "treatment_fallback": "bi",
+      "changed": false,
+      "doc_index": 50000
+    },
+    {
+      "token": "امریکی",
+      "control_fallback": "amriki",
+      "treatment_fallback": "amriki",
+      "changed": false,
+      "doc_index": 50000
+    },
+    {
+      "token": "باکس",
+      "control_fallback": "baks",
+      "treatment_fallback": "baks",
+      "changed": false,
+      "doc_index": 50000
+    },
+    {
+      "token": "افس",
+      "control_fallback": "afs",
+      "treatment_fallback": "afs",
+      "changed": false,
+      "doc_index": 50000
+    },
+    {
+      "token": "راج",
+      "control_fallback": "raj",
+      "treatment_fallback": "raj",
+      "changed": false,
+      "doc_index": 50000
+    }
+  ]
+}

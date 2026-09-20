@@ -1,0 +1,15 @@
+{
+  "n_docs": 111860,
+  "text_column": "combined_text",
+  "n_empty": 0,
+  "char_len_mean": 1320.0307348471304,
+  "char_len_median": 1034.0,
+  "char_len_max": 36265,
+  "whitespace_tokens_mean": 277.75102807080276,
+  "whitespace_tokens_median": 216.0,
+  "n_unique_texts": 111856,
+  "n_exact_duplicate_groups": 4,
+  "n_exact_duplicate_extra_copies": 4,
+  "deduplicated_for_index": false,
+  "note": "Exact duplicates reported only. Frozen corpus is not modified."
+}

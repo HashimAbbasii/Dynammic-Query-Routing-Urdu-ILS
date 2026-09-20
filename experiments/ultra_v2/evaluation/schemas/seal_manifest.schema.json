@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ultra.local/ultra_v2/seal_manifest.schema.json",
+  "title": "ULTRA v2 TEST seal manifest",
+  "type": "object",
+  "required": [
+    "kind",
+    "benchmark_version",
+    "sealed_at_utc",
+    "input_path",
+    "files",
+    "aggregate_sha256"
+  ],
+  "properties": {
+    "kind": { "const": "ultra_v2_test_seal" },
+    "benchmark_version": { "type": "string", "minLength": 1 },
+    "sealed_at_utc": { "type": "string", "minLength": 1 },
+    "created_by": { "type": "string" },
+    "input_path": { "type": "string", "minLength": 1 },
+    "notes": { "type": "string" },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["relative_path", "bytes", "sha256"],
+        "properties": {
+          "relative_path": { "type": "string" },
+          "bytes": { "type": "integer", "minimum": 0 },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        }
+      }
+    },
+    "aggregate_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}
