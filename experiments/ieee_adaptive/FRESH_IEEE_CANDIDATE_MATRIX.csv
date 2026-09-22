@@ -1,0 +1,15 @@
+candidate_id,area,problem,evidence_class,gate,main_rejection_reason,closest_work
+CAND-01,trustworthy_RAG,citation faithfulness beyond correctness,literature-saturated,NO-GO,2025 methods RECLAIM VeriCite occupy mitigation,Wallat et al.; RECLAIM; VeriCite
+CAND-02,evaluation,standardized counterfactual faithfulness bench,weak-incremental,NO-GO,incremental on CiteEval AttributionBench,AttributionBench; CiteEval
+CAND-03,agentic_retrieval,mid-reasoning when-to-retrieve,literature-saturated,NO-GO,hot competitive space high compute,Adaptive-RAG; SoK Agentic RAG
+CAND-04,adaptive_RAG,complexity routing no/single/multi retrieve,literature-saturated,NO-GO,published Adaptive-RAG solution,Adaptive-RAG NAACL 2024
+CAND-05,LC_vs_RAG,cost-aware RAG vs long-context routing,literature-saturated,NO-GO,LaRA no-silver-bullet already,LaRA 2025
+CAND-06,IR_evaluation,LLM-as-judge qrel reliability,saturated-unrealistic-MS,NO-GO,SIGIR2025 critiques; heavy annotation,LLM assessment limitation papers
+CAND-07,robustness,query variation robustness,literature-saturated,NO-GO,Penha and EMNLP24 Findings occupy,Penha et al.; EMNLP Findings 2024
+CAND-08,first_stage_IR,semantic first-stage vocab mismatch,literature-saturated,NO-GO,classic TOIS-reviewed area,Guo et al. TOIS
+CAND-09,efficient_IR,sparse-dense cost routing,literature-saturated,NO-GO,Arabzadeh LiteGator MoR; C1-adjacent,Arabzadeh CIKM 2021
+CAND-10,multimodal_IR,OCR-noisy multimodal retrieval,insufficient-evidence,NO-GO,likely saturated unclear MS gap,multimodal IR literature
+CAND-11,conversational_IR,multi-turn context drift,literature-saturated,NO-GO,TREC CAsT mature,conversational search literature
+CAND-12,failure_diagnosis,taxonomy-to-repair controller,weak-engineering,NO-GO,pipeline without new mechanism,RAG error taxonomy 2025
+CAND-13,low_resource_apply,apply modern RAG to Urdu,weak-novelty,NO-GO,domain transfer forbidden as novelty,Butt 2025; Program B
+CAND-14,empirical_writeup,package Program B as journal paper,out_of_scope,OUT_OF_SCOPE,not a new method discovery,Program B Phase 14

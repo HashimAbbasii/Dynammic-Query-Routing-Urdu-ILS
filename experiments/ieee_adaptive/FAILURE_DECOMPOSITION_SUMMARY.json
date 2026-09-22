@@ -1,0 +1,161 @@
+{
+  "TEST_CONTENT_ACCESSED": false,
+  "population": "Roman KN TRAIN+DEV ExactSource n=80",
+  "source_csv": "experiments/ultra_v2/phase13_population/artifacts/scoring/PHASE13_SCORING_PER_QUERY.csv",
+  "source_sha256": "f59c37102ba5c212e7b2c14600cf3781732eef98757379f51c26f0a250fe5d66",
+  "n": 80,
+  "coverage": {
+    "bm25": {
+      "hit@1": 1,
+      "hit@5": 5,
+      "hit@10": 5,
+      "hit@20": 6,
+      "hit@50": 13
+    },
+    "ng3": {
+      "hit@1": 4,
+      "hit@5": 10,
+      "hit@10": 13,
+      "hit@20": 16,
+      "hit@50": 19
+    },
+    "dense": {
+      "hit@1": 9,
+      "hit@5": 20,
+      "hit@10": 23,
+      "hit@20": 29,
+      "hit@50": 36
+    },
+    "hybrid": {
+      "hit@1": 5,
+      "hit@5": 17,
+      "hit@10": 25,
+      "hit@20": 29,
+      "hit@50": 40
+    }
+  },
+  "PERFECT_RANKING_UPPER_BOUND": {
+    "BM25": {
+      "PERFECT_RANKING_UPPER_BOUND_hit5": 13,
+      "pct": 16.25
+    },
+    "NG3": {
+      "PERFECT_RANKING_UPPER_BOUND_hit5": 19,
+      "pct": 23.75
+    },
+    "Dense": {
+      "PERFECT_RANKING_UPPER_BOUND_hit5": 36,
+      "pct": 45.0
+    },
+    "Hybrid": {
+      "PERFECT_RANKING_UPPER_BOUND_hit5": 40,
+      "pct": 50.0
+    },
+    "BM25_U_NG3": {
+      "PERFECT_RANKING_UPPER_BOUND_hit5": 23,
+      "pct": 28.75
+    },
+    "BM25_U_Dense": {
+      "PERFECT_RANKING_UPPER_BOUND_hit5": 44,
+      "pct": 55.0
+    },
+    "NG3_U_Dense": {
+      "PERFECT_RANKING_UPPER_BOUND_hit5": 47,
+      "pct": 58.75
+    },
+    "BM25_U_NG3_U_Dense": {
+      "PERFECT_RANKING_UPPER_BOUND_hit5": 49,
+      "pct": 61.25
+    }
+  },
+  "primary_counts": {
+    "RANKING_FAILURE": 21,
+    "CANDIDATE_GENERATION_FAILURE": 31,
+    "SUCCESS": 28
+  },
+  "ranking_buckets": {
+    "bm25": {
+      "miss50": 67,
+      "1-5": 5,
+      "21-50": 7,
+      "11-20": 1
+    },
+    "ng3": {
+      "miss50": 61,
+      "1-5": 10,
+      "11-20": 3,
+      "6-10": 3,
+      "21-50": 3
+    },
+    "dense": {
+      "11-20": 6,
+      "miss50": 44,
+      "1-5": 20,
+      "6-10": 3,
+      "21-50": 7
+    },
+    "hybrid": {
+      "21-50": 11,
+      "miss50": 40,
+      "1-5": 17,
+      "6-10": 8,
+      "11-20": 4
+    },
+    "BND_best": {
+      "11-20": 7,
+      "miss50": 31,
+      "1-5": 28,
+      "6-10": 5,
+      "21-50": 9
+    }
+  },
+  "complementarity_hit50": {
+    "DENSE": 26,
+    "none": 31,
+    "BM25+NG3": 6,
+    "BM25": 2,
+    "BM25+DENSE": 2,
+    "NG3+DENSE": 5,
+    "NG3": 5,
+    "BM25+NG3+DENSE": 3
+  },
+  "complementarity_hit5": {
+    "none": 52,
+    "BM25+NG3": 3,
+    "DENSE": 17,
+    "BM25": 1,
+    "NG3+DENSE": 2,
+    "NG3": 4,
+    "BM25+NG3+DENSE": 1
+  },
+  "dense_hit5": 20,
+  "hybrid_hit5": 17,
+  "oracle_best_of_3_hit5": 28,
+  "bnd_candidate_generation_ceiling_hit5": 49,
+  "ranking_headroom_queries": 21,
+  "cg_failure_queries": 31,
+  "cg_mechanism_counts": {
+    "entity_name": 18,
+    "acronym_institution": 6,
+    "other": 1,
+    "lexical_mismatch": 1,
+    "semantic_paraphrase": 2,
+    "orthographic_variation": 3
+  },
+  "cg_recoverability": {
+    "uncertain": 19,
+    "plausibly_recoverable": 9,
+    "likely_intrinsically_difficult": 3
+  },
+  "target_80pct": {
+    "target_hits": 64,
+    "current_best_hit5_dense": 20,
+    "additional_needed_from_dense": 44,
+    "additional_needed_from_oracle28": 36,
+    "ceiling_bnd_union": 49,
+    "compatible_with_bnd_ceiling": false,
+    "gap_beyond_ceiling": 15
+  },
+  "hybrid_rank_failures_hit50_not_hit5": 23,
+  "dense_rank_failures_hit50_not_hit5": 16
+}

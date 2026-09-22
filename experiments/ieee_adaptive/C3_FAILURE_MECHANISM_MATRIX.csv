@@ -1,0 +1,23 @@
+mechanism,evidence,approx_affected,already_tested,literature,remaining_gap,primary_type,c3_verdict
+orthographic_spelling,ROOM R2-B0; Method D near-forms,high among BM25 misses,R2-1 UNSUPPORTED; NG3 partial,Gupta MSIR; FIRE; phonetic QE,incremental only,D_linguistic_norm,REJECT
+transliteration_ambiguity,multiple Roman forms; NORM primary=0,present but not primary,dict fold rejected,UrduPhone; RU translit models,tooling exists,D_linguistic_norm,REJECT
+phonetic_variation,NG3 motivation,narrow dual-miss,NG3 PARTIAL,phonetic IR,covered,D_linguistic_norm,REJECT
+script_conversion_same_EN_name,C2a D cases state bank<->Urdu loan,3/31,Method D index,Chari SIGIR 2025,covered,D_linguistic_norm,REJECT
+method_D_lexical_bridge,R2-C0 zero overlap,systemic for Method D,Method D / R2-1,romanization IR,diagnosed fix failed,A_candgen+C_repr,REJECT
+bilingual_paraphrase_VOCAB,Phase 11; VOCAB labels,5 VOCAB in miss31 n51,Dense; Phase11 Option2 skipped,CLIR surveys; dense first-stage TOIS,generic CLIR,E_semantic+A_candgen,REJECT
+morphology,not primary R2-B0,unclear,not dedicated,morphology-aware IR,weak evidence,D_linguistic_norm,REJECT
+code_mixing,EN+RU queries,many queries,implicit Dense/BM25,Hinglish code-mixed IR benches,known setting,C_repr,REJECT
+person_product_entertainment_entity,C2a B=18/31; R2 ENT=16/47,dominant among all-miss,Phase9 WP partial; Phase7 no,JRC-Names; cross-script name IR,crowded,A_candgen,REJECT
+acronym_letter_name,Phase7 Quad-23,targeted,UNSUPPORTED,letter-name hacks,closed empirically,D_linguistic_norm,REJECT
+institutional_descriptive_alias,C2a A=6/31,6 confirmed,Phase7/9/11,Jacquet acronym-expansion CLIR,C2a NO-GO rare,A_candgen,CLOSED_C2A
+semantic_paraphrase,VOCAB/C labels,overlaps Phase11,Dense,multilingual dense,covered,E_semantic,REJECT
+query_doc_lexical_bridge,ROOM+ENT+VOCAB,most misses,multi-rep Program B,first-stage semantic models,covered class,A_candgen,REJECT
+candidate_generation_ceiling,31/80 BND miss50; Hybrid miss50=40,majority residual,all first-stages,first-stage retrieval lit,symptom not mechanism,A_candgen,REJECT_as_standalone
+ranking_failure,Hybrid RANK-like 23; Dense 16,secondary,Phase12 SKIPPED,rerankers,wrong primary bet,B_ranking,REJECT
+representation_failure_dense_VOCAB,Phase11 deep ranks,Phase11 five,e5-small,multilingual embeddings,better-model engineering,C_repr,REJECT
+ambiguity_NEIGH,KN005,1,labeled,query ambiguity,benchmark/need,F_benchmark,BENCHMARK_LIMITATION
+long_multiconcept_queries,compositional KN queries,present not isolated,not IV,compositional IR,not isolated,mixed,REJECT
+rare_vocabulary,C2a E=1,1,none dedicated,OOV IR,too few,A_candgen,REJECT
+doc_side_terminology_MethodD,R2-C0 gold encoding,systemic,R2-C0,indexing choices,engineering/analysis,C_repr,REJECT
+adaptive_expert_selection,oracle 28 vs Dense 20,discordances,C1 NO-GO,Arabzadeh; MoR,CLOSED_C1,mixed,CLOSED_C1
+always_on_fusion_dilution,Phase8 Hit@5 drop,n=51,UNSUPPORTED,RRF lit,closed empirically,B_ranking,REJECT
