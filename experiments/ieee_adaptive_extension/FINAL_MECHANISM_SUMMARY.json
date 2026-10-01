@@ -1,0 +1,48 @@
+{
+  "n": 80,
+  "status_counts": {
+    "RANKING_FAILURE": 21,
+    "CG_FAILURE": 31,
+    "SUCCESS": 28
+  },
+  "cg_bridge_mechanisms": {
+    "underspecified_referent_no_linkable_surface": 3,
+    "en_jargon_plus_entity_event_composition": 6,
+    "cross_script_or_docside_entity_variant": 5,
+    "institutional_descriptive_alias": 6,
+    "other_or_ambiguous_need": 1,
+    "rare_vocabulary_product": 1,
+    "crosslingual_semantic_paraphrase": 2,
+    "en_brand_in_urdu_news_framing": 4,
+    "same_en_name_script_conversion": 3
+  },
+  "rank_bridge_mechanisms": {
+    "heterogeneous_or_uncertain_bridge": 18,
+    "en_brand_in_urdu_news_framing": 3
+  },
+  "cg_surface_tags": {
+    "latin_acronym_or_abbrev": 9,
+    "urdu_function_words_roman": 31,
+    "english_domain_jargon_untranslated": 12,
+    "english_brand_token": 5,
+    "hyphen_or_apostrophe": 1
+  },
+  "cg_linguistic_tags": {
+    "underspecified_referent": 3,
+    "intent_factoid": 8,
+    "wh_question_form": 17,
+    "intent_event": 10,
+    "intent_entity_person": 3,
+    "institutional_surface": 10,
+    "intent_topical": 3,
+    "intent_location": 1,
+    "explicit_person_name": 4,
+    "multi_entity_relation": 4,
+    "intent_explanatory": 6
+  },
+  "underspecified_in_cg": 3,
+  "en_jargon_entity_comp_in_cg": 6,
+  "en_brand_in_cg": 4,
+  "entity_variant_in_cg": 5,
+  "institutional_in_cg": 6
+}

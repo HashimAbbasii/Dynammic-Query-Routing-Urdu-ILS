@@ -1,0 +1,37 @@
+{
+  "n_rows": 260,
+  "columns": [
+    "query_id",
+    "split",
+    "query_text",
+    "language_type",
+    "query_category",
+    "source",
+    "creation_method",
+    "source_doc_id",
+    "article_category",
+    "word_count",
+    "char_len",
+    "protocol_label",
+    "protocol_route",
+    "wordcount_route",
+    "headline_p5",
+    "headline_ndcg5",
+    "headline_hit5",
+    "headline_rank",
+    "full_p5",
+    "full_ndcg5",
+    "full_hit5",
+    "full_rank",
+    "oracle_route",
+    "oracle_margin",
+    "oracle_primary_metric"
+  ],
+  "split_key": "split",
+  "split_counts": {
+    "train": 182,
+    "dev": 39,
+    "internal_val": 39
+  },
+  "pop_a_n": 78
+}

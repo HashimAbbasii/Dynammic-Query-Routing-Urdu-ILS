@@ -1,0 +1,386 @@
+% Template for PLoS
+% Version 3.8 Apr 2026
+%
+% Manuscript: Roman Urdu first-stage retrieval for Urdu news (Program B / ULTRA v2)
+% Hit@k source of truth: experiments/ultra_v2/PHASE14_FINAL_REPORT.md
+%   SHA-256: 0cf7c9a928e9d9e734293d18c1d8fbab8c167775340a880d76c0dcaeea862f7b
+% CG-failure diagnostic: experiments/ieee_adaptive_extension/CG31_FAILURE_ANALYSIS_SUMMARY.md
+% TEST sealed / never opened. Do not average with M0 87.18% / 67.50% / 57.50%.
+%
+% Portal fields (Editorial Manager, not Acknowledgments):
+%   Funding: No specific funding was received for this work.
+%   Competing interests: The authors have declared that no competing interests exist.
+%   Author contributions (CRediT):
+%     Hashim Shazad: Conceptualization, Methodology, Software, Formal analysis,
+%       Writing -- original draft, Writing -- review & editing.
+%     Adnan Aslam: Supervision, Writing -- review & editing.
+%   Data availability: third-party Urdu news corpus (same SHA as M0);
+%     Program B artifacts under experiments/ultra_v2/; TEST sealed.
+%   Short title: Roman Urdu first-stage retrieval for Urdu news
+%
+% Aligned to official plos_latex_template.tex (Version 3.8 Apr 2026).
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled (pdfTeX only; ignored under XeTeX/LuaTeX/Tectonic)
+\usepackage[nopatch=eqnum]{microtype}
+\ifdefined\pdftexversion
+\DisableLigatures[f]{encoding = *, family = * }
+\fi
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+% Remove comment for double spacing
+%\usepackage{setspace}
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Please use the included `plos2025.bst` as your BibTeX style
+\bibliographystyle{plos2025}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+%\setlength{\headheight}{27.023pt}
+%\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+%% Include all macros below
+
+%% END MACROS SECTION
+
+
+\begin{document}
+\vspace*{0.2in}
+
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf{Roman {Urdu} first-stage retrieval for {Urdu} news: dense and hybrid candidates after a frozen lexical baseline}
+}
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+Hashim Shazad\textsuperscript{1*},
+Adnan Aslam\textsuperscript{1}
+\\
+\bigskip
+\textbf{1} Department of Creative Technologies, Air University, Islamabad, Pakistan
+\\
+\bigskip
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+* abbasihashim30@gmail.com
+
+\end{flushleft}
+% Please keep the abstract below 300 words
+
+\section*{Abstract}
+Ordinary Roman Urdu is the main failure mode of a previously frozen script-aware BM25 retriever (M0) on Urdu news. M0 recovers title-derived known items when Roman queries match its own romanization family, but sealed ordinary-Roman known-item and naturalistic tests leave a first-stage matching gap. This paper reports ULTRA v2 (Program B): a preregistered follow-on that attacks that gap on a new Roman known-item (KN) TRAIN+DEV population. M0's official scores are not rewritten. The sealed TEST partition was never opened.
+
+On human-written Roman KN queries ($n = 51$), Method-D BM25 scored ExactSource Hit@5 of 4/51 (7.84\%). Dense retrieval with multilingual-e5-small was the strongest single first-stage method (15/51 Hit@5; 22/51 Hit@50; MRR 0.1726). Hybrid reciprocal-rank fusion of BM25 and dense ($k = 60$) gave the strongest deployable candidate pool at depth 50 (25/51 Hit@50). Letter-name expansion and unweighted three-way fusion were unsupported. Wikipedia-title expansion and cascade variants yielded only partial or null net gains.
+
+After a frozen expansion to $n = 80$ (51 human-written plus 29 LLM-drafted, human-reviewed queries) and confirmatory scoring without retuning, Dense remained best at Hit@5 (20/80 $= 25.00\%$; MRR 0.1718). Hybrid and a tail-preserving cascade tied for best Hit@50 (40/80 $= 50.00\%$). Relative to an $\sim$80\% ExactSource Hit@5 stretch target on this development population, best Hit@5 is 55 percentage points short. A post-freeze diagnostic of the 31 candidate-generation failures---queries whose gold document never entered the BM25$\cup$NG3$\cup$Dense Top-50---found Covered 17 / Partial 14 / Uncovered 0, with Potential\_New\_Mechanism $=$ Yes on 0/31 cases. Residual misses were heterogeneous and mapped onto existing method families (transliteration, entity linking, acronym expansion, character $n$-grams, dense matching, query expansion). No shared previously unmodeled structural phenomenon survived the evidence test. These Program B results must not be averaged with M0's 87.18\% / 67.50\% / 57.50\% headlines.
+
+
+\clearpage
+\newgeometry{top=0.85in,left=1in,right=1in,footskip=0.75in}
+\linenumbers
+
+\section*{Introduction}
+Urdu news search is bilingual in practice. Many users type Perso-Arabic script; many others type informal Roman Urdu~\cite{bib1,bib2,bib3}. Shared evaluation for Urdu NLP and IR is still thinner than for English~\cite{bib4}. Ranking collections such as CURE~\cite{bib5} and Urdu MS MARCO~\cite{bib6} exist, but they do not freeze a script-conditional lexical baseline and then measure ordinary Roman known-item recovery on a separate TRAIN/DEV/TEST program. Most Roman Urdu work remains classification---sentiment, offensive language---rather than news search~\cite{bib1,bib2}. Multilingual dense retrievers can lose effectiveness on languages outside the pretraining head~\cite{bib7}, even when scaled multilingual encoders help related tasks~\cite{bib8}. Users of lower-resource varieties are also often pushed toward high-resource query forms~\cite{bib9}.
+
+The ULTRA dual-embedding Urdu news architecture~\cite{bib10} originally switches on a static length threshold. Length does not decide which script index to open. English work on choosing sparse versus dense retrieval~\cite{bib11} or adapting retrieval depth~\cite{bib12} is related engineering context, not the protocol evaluated here. Okapi BM25 remains a strong lexical baseline~\cite{bib13}. Reciprocal rank fusion (RRF) is a standard way to combine ranked lists without score calibration~\cite{bib15}.
+
+A frozen lexical system called M0 routes Urdu and Roman queries to separate BM25 indexes and reports three official metrics that answer different questions: ExactSource Hit@5 of 68/78 (87.18\%) on a development/validation known-item pool, 27/40 (67.50\%) on a sealed known-item set K, and human Success@5 of 23/40 (57.50\%) on a sealed naturalistic set U. Native-script Urdu search on that collection is often useful. Ordinary Roman Urdu is not. On sealed K, ordinary Roman titles recovered the source in 1 of 12 cases; on sealed U, Roman queries succeeded in 6 of 18. Those sealed sets were burned for further M0 tuning once retrieved and labeled. They cannot serve as an honest test bed for a later Roman-repair program.
+
+The high development score mixes a different Roman construction. Development Roman strings were pipeline \texttt{title\_roman} forms---dictionary reverse lookup plus a closed character table---not chat-style spelling. Method D, the romanized-document BM25 path that M0 uses for ROMAN queries, was selected on that family~\cite{bib13}. Treating 87.18\% as evidence that Roman Urdu search is solved would misread the freeze. The scientific gap left for follow-on work is first-stage recovery of ordinary Roman known items on a fresh population, under preregistration, with TEST sealed until a single candidate is frozen.
+
+ULTRA v2 (Program B) is that follow-on. It keeps the same 111,860-article corpus and the same frozen M0 code as a baseline, builds a new TRAIN/DEV/TEST benchmark, and scores Roman KN ExactSource Hit@$k$ only on TRAIN+DEV. The v2 protocol set an aspirational $\sim$80\% ExactSource Hit@5 stretch target on the Roman KN development population to frame how far first-stage methods would need to move. This manuscript reports the frozen Program B outcome against that stretch reading, then a post-freeze diagnostic of the residual candidate-generation failures. We do not claim a new retrieval algorithm, and we do not claim state of the art against CURE or Urdu MS MARCO~\cite{bib5,bib6}. The contribution is empirical and diagnostic: a preregistered negative-and-partial map of first-stage Roman Urdu known-item recovery, a quantified gap between aligned and ordinary Roman evaluation, and evidence that the remaining candidate-generation failures do not reduce to a single previously unmodeled mechanism.
+
+We ask four empirical questions on Roman KN TRAIN+DEV only.
+
+\subsection*{Research questions}
+
+\begin{itemize}
+\item \textbf{RQ1.} How often does frozen Method-D BM25 recover the ExactSource document for new human-written Roman KN queries ($n = 51$), relative to the development \texttt{title\_roman} setting where Method D was selected?
+\item \textbf{RQ2.} Do controlled first-stage alternatives---fallback romanization, character $n$-gram overlap (NG3), dense e5-small, two-way hybrid RRF, letter-name expansion, three-way RRF, Wikipedia-title expansion, and cascade variants---improve ExactSource Hit@5 or Hit@50 on that population under preregistered stop rules?
+\item \textbf{RQ3.} Do the selected methods' rates hold under a frozen population expansion to $n = 80$ when scored without retuning?
+\item \textbf{RQ4.} Relative to an $\sim$80\% Hit@5 stretch reading on this development population, how large is the remaining shortfall after Program B freezes?
+\end{itemize}
+
+\section*{Materials and methods}
+\subsection*{Research design}
+
+Program B is an offline known-item evaluation of first-stage retrieval methods on Roman Urdu queries over the same hashed Urdu news collection used by M0. Each scored phase was preregistered before ranking. Negative outcomes closed methods under written stop rules; they did not trigger silent retuning. The sealed TEST partition of the v2 benchmark was never opened for retrieval in any Program B phase. Program A headlines (68/78, 27/40, 23/40) are historical context only and are not recomputed or averaged here.
+
+The primary metric is ExactSource Hit@$k$: 1 if and only if the designated source document identifier appears in the retrieved top $k$. Official cutoffs reported throughout are Hit@1, Hit@5, Hit@10, and Hit@50, plus mean reciprocal rank (MRR). Human Success@5 is not scored in this paper: the naturalistic (NL) track was not labeled for Program B.
+
+\subsection*{Corpus and frozen lexical baseline}
+
+The collection is \texttt{data/clean\_articles.csv}: 111,860 articles; SHA-256 \texttt{8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231}. The local precursor is schema- and size-consistent with the third-party Urdu News Dataset 1M compilation~\cite{bib16,bib17}. The Roman dictionary used by Method D remains \texttt{models/roman\_urdu\_dict\_expanded.json} (198 keys; SHA-256 \texttt{30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3}). Method-D BM25 (R2-B0) is imported from the frozen M0 implementation and is not edited in place. BM25 uses $k_1 = 1.5$ and $b = 0.75$~\cite{bib13}. Lists are retrieved to depth 50.
+
+\subsection*{Benchmark population}
+
+Roman KN queries are known-item strings with a single \texttt{source\_doc\_id}. The original Program B TRAIN+DEV Roman KN set has $n = 51$ human-written queries (\texttt{writer\_id = W1}). Phase 13 froze an expanded TRAIN+DEV set of $n = 80$: the original 51 plus 29 new queries (\texttt{KN091}--\texttt{KN119}) that were LLM-drafted and human naturalness-reviewed (\texttt{writer\_id = LLM1}). Authorship of those 29 must not be blurred with the human-written 51. The TEST directory exists and remains sealed; Program B runners hard-refuse TEST paths. NL queries were collected under the same benchmark design but are not scored here.
+
+\subsection*{Methods compared (Phases 2--10b)}
+
+Methods were introduced in sequence. Each Hit@$k$ claim below cites the frozen Phase 14 consolidation (\nameref{S1_File}), which supersedes scattered per-phase write-ups for Program B citation.
+
+\textbf{R2-B0 (Method-D BM25).} Baseline Roman path: typed Roman query against documents romanized with the reverse 198-key dictionary and the Phase 2 character table.
+
+\textbf{R2-1.} Controlled fallback romanizer on the document side. Preregistered as a close of that direction if Hit@50 did not improve.
+
+\textbf{R2-NG3 / Phase 5 NG3.} Character $n$-gram overlap matching as a complementary lexical channel.
+
+\textbf{Dense.} \texttt{intfloat/multilingual-e5-small} first-stage dense retrieval over the news collection (Program B build; not the abandoned M0 CPU-time gate for a full e5 index in Program A). Cross-lingual dense retrieval is known to be fragile for some low-resource settings~\cite{bib7,bib8}.
+
+\textbf{Hybrid.} Reciprocal rank fusion of Method-D BM25 and Dense with RRF constant $k = 60$~\cite{bib15}.
+
+\textbf{Phase 7 letter-name.} Acronym-to-Urdu letter-name expansion as a query treatment.
+
+\textbf{Phase 8 three-way RRF.} Unweighted RRF of BM25, Dense, and NG3 ($k = 60$)~\cite{bib15}.
+
+\textbf{Phase 9.} Wikipedia-title entity resource: expand queries using exact title keys under a frozen matcher, then retrieve (\nameref{S4_File}).
+
+\textbf{Phase 10 Option B.} Hybrid-first cascade that fills from an auxiliary list (\nameref{S5_File}).
+
+\textbf{Phase 10b.} Tail-preserving cascade variant; stopping rule: stop further Option-B variants if the result is identical to Hybrid with no net new recoveries (\nameref{S5_File}).
+
+\subsection*{Phases 11--14 (gating, population, consolidation)}
+
+\textbf{Phase 11.} Inspection of remaining vocabulary / paraphrase dual-misses where Dense also fails badly (KN020, KN028, KN036, KN041, KN042). An Option-1 probe tested whether frozen Phase 9 resources could inject candidate lists for acronym and institutional misses (including CPEC and SBP title lookups). No viable candidate-generation path from existing frozen resources was found; Option 2 (building a new bilingual glossary) was not authorized after that no-go. Phase 11 is therefore not a Hit@$k$ row (\nameref{S1_File}).
+
+\textbf{Phase 12 (reranking).} Skipped under a gating rule: reranking presupposes a pool that already contains the gold more often. Phase 9's gain remained small at both $n = 51$ and $n = 80$; Phase 10 regressed Hit@50 relative to Hybrid; Phase 10b equalled Hybrid. The program did not spend a phase reordering a pool that was not genuinely expanded (\nameref{S1_File}).
+
+\textbf{Phase 13.} Population freeze to $n = 80$ and confirmatory scoring of frozen methods without retuning. Scoring was locked by preregistration (SHA-256 prefix \texttt{55788660\ldots}) before the scoring runner executed. The $n = 51$ subset of the $n = 80$ run was required to exact-match frozen Phase 2--10b cells (gate PASS) (\nameref{S2_File}).
+
+\textbf{Phase 14.} Consolidation report: single source of truth for Program B claims (file SHA-256 \texttt{0cf7c9a928e9d9e734293d18c1d8fbab8c167775340a880d76c0dcaeea862f7b}) (\nameref{S1_File}).
+
+\subsection*{Candidate-generation failure diagnostic}
+
+After Phase 14 froze the Hit@$k$ tables, we ran a separate diagnostic on the 31 TRAIN+DEV queries whose ExactSource gold never appeared in the union of Method-D BM25, NG3, and Dense Top-50 lists (candidate-generation failures). Each case was compared against the gold document text and tagged for coverage by existing method families: transliteration, entity linking, acronym expansion, character $n$-gram overlap, dense multilingual matching, and query expansion. Tags were assigned as Covered, Partial, or Uncovered for existing-method coverage, plus a binary Potential\_New\_Mechanism flag. This pass did not retune retrieval methods, did not open TEST, and did not alter any frozen Program B count.
+
+\subsection*{Integrity constraints}
+
+TEST access is recorded as false in controlled-experiment summaries for Phases 2--13 and in the post-freeze diagnostic. Unsupported methods were closed rather than retuned after negative results (R2-1, Phase 7, Phase 8; Phase 10 Option-B stopping after 10b; Phase 11 Option 2 skipped; Phase 12 skipped). Program B numbers must not replace or be averaged into Program A headlines.
+
+\subsection*{Ethics}
+
+No search-user logs or identifiable participant records were collected for Program B scoring. KN labels are ExactSource identifiers assigned at query writing, not graded usefulness judgments. This study is an offline retrieval evaluation using an existing, previously compiled news corpus (\texttt{data/clean\_articles.csv}) and did not involve human participants, identifiable individuals, or personal data collection; institutional ethics review was therefore not required.
+
+\section*{Results}
+Table~\ref{table1} states the Program B headline against the stretch reading. Tables~\ref{table2} and~\ref{table3} give the consolidated ExactSource counts for $n = 51$ and $n = 80$. All counts are copied from the Phase 14 consolidation of frozen JSON summaries (\nameref{S1_File}); they were not recomputed for this manuscript.
+
+\begin{table}[!ht]
+\centering
+\caption{\textbf{Program B headline versus stretch reading.} ExactSource on Roman KN TRAIN+DEV. Do not average with M0's 87.18\% / 67.50\% / 57.50\%.}
+\label{table1}
+\begin{tabular}{ll}
+\thickhline
+\textbf{Quantity} & \textbf{Result} \\
+\thickhline
+Best Hit@5 ($n = 80$) & Dense e5-small: 20/80 $= 0.2500$ (MRR 0.1718) \\
+Best Hit@50 ($n = 80$) & Hybrid RRF and Phase 10b (tied): 40/80 $= 0.5000$ \\
+Phase 10 Option B Hit@50 ($n = 80$) & 39/80 (strictly worse than Hybrid/10b) \\
+Method-D Hit@5 ($n = 51$ / $n = 80$) & 4/51 $= 0.0784$; 5/80 $= 0.0625$ \\
+Stretch reading ($\sim$80\% Hit@5) & Best Hit@5 is 25\%; 55 percentage points short of 80\% \\
+Hit@50 versus an 80\% bar at depth 50 & Peak 50\%; still 30 points short if that bar were applied at Hit@50 \\
+Program B vs stretch & Did not reach the stretch target \\
+\thickhline
+\end{tabular}
+\begin{flushleft} Counts from \nameref{S1_File}. Stretch reading is ExactSource Hit@5 on Roman KN TRAIN+DEV.
+\end{flushleft}
+\end{table}
+
+\subsection*{Human-written Roman KN ($n = 51$)}
+
+Method-D BM25 recovered the source in the Top-5 for 4 of 51 queries (Table~\ref{table2}). Dense e5-small recovered 15/51 at Hit@5 and 22/51 at Hit@50 (MRR 0.1726). Hybrid RRF scored 11/51 Hit@5 and 25/51 Hit@50 (MRR 0.1422). NG3 scored 6/51 Hit@5 and 8/51 Hit@50. Phase 9 Wikipedia titles scored 5/51 Hit@5 and 10/51 Hit@50. Phase 10 Option B matched Hybrid through Hit@10 but fell to 24/51 Hit@50. Phase 10b matched Hybrid exactly at Hit@50 (25/51).
+
+R2-1 failed its improvement gate: Hit@50 stayed 6/51 while Hit@5 fell from 4 to 3; the direction was closed as not supported. Phase 7 letter-name scored 0/51 Hit@5 and 1/51 Hit@50 (MRR 0.0007) and was unsupported. Phase 8 three-way RRF scored 8/51 Hit@5 and 24/51 Hit@50---worse Hit@5 than two-way Hybrid (11)---and was unsupported.
+
+\begin{table}[!ht]
+\centering
+\caption{\textbf{ExactSource on Roman KN TRAIN+DEV, $n = 51$ (human-written, W1).} Decisions are frozen Program B outcomes.}
+\label{table2}
+\begin{tabular}{llrrrrr}
+\thickhline
+\textbf{Method} & \textbf{Decision} & \textbf{H@1} & \textbf{H@5} & \textbf{H@10} & \textbf{H@50} & \textbf{MRR} \\
+\thickhline
+Method-D BM25 & Baseline & 1 & 4 & 4 & 6 & 0.0375 \\
+R2-1 fallback & Not supported & 1 & 3 & 4 & 6 & 0.0358 \\
+NG3 & Partially supported & 3 & 6 & 6 & 8 & 0.0750 \\
+Dense e5-small & Partially supported & 5 & 15 & 16 & 22 & 0.1726 \\
+Hybrid RRF $k{=}60$ & 2-way baseline & 3 & 11 & 19 & 25 & 0.1422 \\
+Phase 7 letter-name & Unsupported & 0 & 0 & 0 & 1 & 0.0007 \\
+Phase 8 3-way RRF & Unsupported & 4 & 8 & 14 & 24 & 0.1310 \\
+Phase 9 titles & Partially supported & 1 & 5 & 6 & 10 & 0.0478 \\
+Phase 10 Option B & Partially supported & 3 & 11 & 19 & 24 & 0.1418 \\
+Phase 10b & Partially supported & 3 & 11 & 19 & 25 & 0.1422 \\
+\thickhline
+\end{tabular}
+\begin{flushleft} Source: Phase 14 consolidation of frozen JSON summaries (\nameref{S1_File}).
+\end{flushleft}
+\end{table}
+
+\subsection*{Expanded population ($n = 80$) without retuning}
+
+Confirmatory scoring on the frozen $n = 80$ set left the ranking story intact (Table~\ref{table3}). Dense remained best at Hit@5 (20/80) and MRR (0.1718). Hybrid and Phase 10b tied at Hit@50 (40/80). Phase 10 Option B remained one Hit@50 behind (39/80). Method D stayed near floor (5/80 Hit@5). Methods never re-scored on $n = 80$ (R2-1, Phase 7, Phase 8) are marked n/a and retain their $n = 51$ unsupported decisions.
+
+\begin{table}[!ht]
+\centering
+\caption{\textbf{ExactSource on Roman KN TRAIN+DEV, $n = 80$ (51 W1 + 29 LLM1).} No retuning. $n = 51$ subset gate PASS against frozen Phase 2--10b cells.}
+\label{table3}
+\begin{tabular}{lrrrrr}
+\thickhline
+\textbf{Method} & \textbf{H@1} & \textbf{H@5} & \textbf{H@10} & \textbf{H@50} & \textbf{MRR} \\
+\thickhline
+Method-D BM25 & 1 & 5 & 5 & 13 & 0.0336 \\
+NG3 & 4 & 10 & 13 & 19 & 0.0766 \\
+Dense e5-small & 9 & 20 & 23 & 36 & 0.1718 \\
+Hybrid RRF $k{=}60$ & 5 & 17 & 25 & 40 & 0.1376 \\
+Phase 9 titles & 1 & 9 & 10 & 19 & 0.0520 \\
+Phase 10 Option B & 5 & 17 & 25 & 39 & 0.1373 \\
+Phase 10b & 5 & 17 & 25 & 40 & 0.1376 \\
+R2-1 / Ph.~7 / Ph.~8 & n/a & n/a & n/a & n/a & n/a \\
+\thickhline
+\end{tabular}
+\begin{flushleft} n/a: not re-scored on $n = 80$. Counts from \nameref{S1_File} / \nameref{S2_File}.
+\end{flushleft}
+\end{table}
+
+The Phase-13-only slice ($n = 29$, descriptive) showed Dense Hit@5 5/29 and Hybrid Hit@5 6/29, with Hybrid Hit@50 15/29. Those rates are not a tuning target; they are reported so the expansion is inspectable (\nameref{S2_File}).
+
+\subsection*{Skipped and closed phases}
+
+Phase 11 did not produce a Hit@$k$ improvement path from frozen resources for the five deep vocabulary dual-misses (Dense gold ranks 110, 523, 1674, 11599, and 469 for KN020, KN028, KN036, KN041, and KN042). Phase 12 reranking was not run. Those absences are results of gating, not omitted negative trials (\nameref{S1_File}).
+
+\subsection*{Candidate-generation failure coverage}
+
+On the $n = 80$ population, 28/80 queries were recovered in at least one expert Top-5 (SUCCESS), 21/80 had gold in the BM25$\cup$NG3$\cup$Dense Top-50 but not Top-5 (RANKING\_FAILURE), and 31/80 had gold absent from that Top-50 union (CG\_FAILURE). Among those 31 CG failures, existing-method coverage was Covered 17, Partial 14, and Uncovered 0. Potential\_New\_Mechanism was Yes for 0/31. The misses fragmented across institutional acronym/alias forms, brand or title script bridges, person/geo name variants, English jargon composed with entity or event cues, underspecified or descriptive referents, and residual bilingual paraphrase. No single cell dominated the set in a way that would support a new first-stage mechanism claim.
+
+\section*{Discussion}
+Program B answers RQ1 bluntly. Method D, which scored 22/23 on development \texttt{title\_roman} under Program A method selection, scores 4/51 Hit@5 on new Roman KN. The lexical romanized-document path does not transfer to this ordinary Roman known-item population. That matches M0's sealed K/U Roman failures, and it is cleaner evidence here because the queries were written for a new benchmark rather than after M0 was burned.
+
+RQ2 splits into what moved and what did not. Dense e5-small is the strongest single first-stage method: largest Hit@5 and MRR at both $n = 51$ and $n = 80$. It recovers some paraphrase and entity cases that Method D cannot bridge, while still missing a hard vocabulary tail. Hybrid RRF is the strongest deployable depth-50 pool among the fusions tried. It restores lexical recalls that Dense drops, at some cost to Hit@5 relative to Dense alone. Phase 9 helps a little on entity/title cases but does not cover FBR/CPEC/ADB/JLO-class acronyms absent as exact Wikipedia title keys under the frozen rule. R2-1 did not build a BM25 bridge for the residual miss room. Letter-name expansion fired without recovering the hypothesized organizations in the Top-50. Unweighted three-way RRF diluted Hybrid ranks (Hit@5 11$\to$8 at $n = 51$): union membership is not a ranked Top-$k$. Phase 10's cascade evicted Hybrid-tail golds faster than it added recoveries; Phase 10b removed those regressions and collapsed to Hybrid, which triggered the written stop on further Option-B variants.
+
+RQ3 holds for the ranking story under population growth. Expanding from 51 to 80 without retuning did not invent a new winner. Dense still leads Hit@5; Hybrid/10b still lead Hit@50; Method D remains near floor. The $n = 51$ subset gate PASS is the integrity check that the expansion did not silently change frozen cells.
+
+RQ4 is not close. Interpreting the supervisory $\sim$80\% stretch as ExactSource Hit@5 on this Roman KN development population, best Hit@5 is 25\%---55 points short. Even Hit@50 peaks at 50\%. Program B freezes that shortfall as a result.
+
+The CG-failure diagnostic adds a final layer to that shortfall. The 31 Top-50 misses are real, but they are not one unexplained bridge. Under the Covered / Partial / Uncovered coding, 17 were Covered and 14 Partial; none were Uncovered, and none carried Potential\_New\_Mechanism $=$ Yes. Put differently, residual difficulty looks like a mixture of known IR problems---transliteration and script variants, entity linking, acronym or institutional alias expansion, character $n$-gram matching, dense paraphrase, and query expansion---rather than a single structural phenomenon that current method families leave unaddressed. That finding does not make the Hit@5 shortfall smaller. It does change how the shortfall should be read: stacking familiar bridges may still help operationally, but the evidence does not support claiming a new Roman Urdu retrieval mechanism from these TRAIN+DEV misses.
+
+This paper is therefore not a claim that Roman Urdu news search is solved, and not a replacement for M0's three official metrics. It is a frozen account of how far first-stage dense and hybrid retrieval moved a hard Roman KN population under preregistration, how far short of an 80\% stretch that movement landed, and how the leftover candidate-generation failures distribute across existing method families. Relative to CURE and Urdu MS MARCO~\cite{bib5,bib6}, the protocol here is news known-item ExactSource on ordinary Roman queries, not a passage-ranking leaderboard entry.
+
+\section*{Limitations}
+All Hit@$k$ figures are TRAIN+DEV only. TEST is sealed and unused; no claim about held-out generalization is made. NL usefulness is unscored. The $n = 29$ expansion queries are LLM-drafted with human review; they are disclosed and sliced, but they are not interchangeable with the human-written 51. Dense and Hybrid were not deployed as a replacement production system; Program A M0 remains the frozen lexical baseline for its own evaluations. The CG-failure tags are case-level judgments against gold documents on TRAIN+DEV; they are not a second retrieval experiment and should not be read as proof that any one existing method would have recovered all Covered cases into Top-5. We do not assert an external acceptance letter or DOI for Program A.
+
+\section*{Conclusion}
+On a new Roman known-item TRAIN+DEV population, frozen Method-D BM25 recovers few ExactSource documents (4/51 Hit@5; 5/80 after expansion). Dense multilingual-e5-small is the strongest single first-stage method (20/80 Hit@5). Hybrid RRF ($k = 60$) and an equivalent tail-preserving cascade are the strongest depth-50 pools tried (40/80 Hit@50). Letter-name expansion, unweighted three-way fusion, and cascade fill that evicts Hybrid-tail golds do not help. Wikipedia-title expansion helps narrowly. Reranking was not justified after candidate generation failed to expand the pool. Relative to an $\sim$80\% Hit@5 stretch on this development population, Program B finishes 55 percentage points short. Among the 31 residual candidate-generation failures, coverage was Covered 17 / Partial 14 / Uncovered 0, with no Potential\_New\_Mechanism $=$ Yes case and no shared previously unmodeled structural phenomenon. TEST was never opened. The contribution is a preregistered negative-and-partial map of first-stage Roman Urdu known-item recovery, a quantified gap between aligned and ordinary Roman evaluation, and a diagnostic showing that remaining candidate-generation failures do not reduce to a single new mechanism---not an 80\% system, not a rewrite of M0, and not a new retrieval algorithm.
+
+\section*{Supporting information}
+
+% Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
+\paragraph*{S1 File.}
+\label{S1_File}
+\textbf{Phase 14 final report (Program B consolidation).} Single source of truth for Program B Hit@$k$ claims, skipped-phase record (Phases 11--12), integrity table, and artifact index. Repository path: \texttt{experiments/ultra\_v2/PHASE14\_FINAL\_REPORT.md} (SHA-256 \texttt{0cf7c9a928e9d9e734293d18c1d8fbab8c167775340a880d76c0dcaeea862f7b}). Companion hash file: \texttt{PHASE14\_FINAL\_REPORT.sha256}.
+
+\paragraph*{S2 File.}
+\label{S2_File}
+\textbf{Phase 13 population freeze and confirmatory scoring.} Freeze manifest (51 W1 + 29 LLM1), scoring preregistration (SHA-256 prefix \texttt{55788660\ldots}), scoring summary JSON, and per-query ranks CSV. Paths under \texttt{experiments/ultra\_v2/phase13\_population/artifacts/}.
+
+\paragraph*{S3 File.}
+\label{S3_File}
+\textbf{Phases 2--8 preregistrations and controlled-experiment summaries.} Method-D baseline, R2-1, Dense, Hybrid, NG3, letter-name, and three-way RRF preregistrations plus frozen JSON summaries listed in the Phase 14 artifact index.
+
+\paragraph*{S4 File.}
+\label{S4_File}
+\textbf{Phase 9 Wikipedia-title entity resource.} Preregistration, controlled-experiment report, and frozen summary JSON under \texttt{experiments/ultra\_v2/phase9\_entity\_resource/}.
+
+\paragraph*{S5 File.}
+\label{S5_File}
+\textbf{Phase 10 / 10b cascade bundle.} Option B and tail-preserve preregistrations, controlled-experiment reports, and frozen summary JSON under \texttt{experiments/ultra\_v2/phase10\_cascade/}.
+
+\paragraph*{S6 File.}
+\label{S6_File}
+\textbf{Corpus and dictionary freeze hashes.} Corpus SHA-256 \texttt{8992a6acca3459eea17a7d7356dd490445daa00b958eab765713853c97a9f231}; dictionary SHA-256 \texttt{30c3f61a64ec641abbb3acdbc7a8bcaf197f0238f1bf9e76c2c7ce8e590f86a3} (\texttt{models/roman\_urdu\_dict\_expanded.json}, 198 keys).
+
+\section*{Acknowledgments}
+
+We thank Adnan Aslam for supervision and for framing the follow-on Roman first-stage program relative to the frozen M0 baseline. This work was completed as part of an M.S.\ thesis at Air University, Islamabad.
+
+Drafting of this manuscript was assisted by a large language model (Cursor / Composer) used for organization and prose under author direction. All scientific claims, counts, and freeze decisions were taken from sealed Program B artifacts (principally \texttt{PHASE14\_FINAL\_REPORT.md}) and from the confirmed 31 CG-failure diagnostic on TRAIN+DEV; the authors reviewed the text for accuracy and take responsibility for the content. This disclosure is included for compliance with PLOS ONE's policy on AI-assisted manuscript preparation and may be edited by the corresponding author before submission.
+
+\nolinenumbers
+
+% Please compile your BiBTeX database using the "plos2025.bst" BibTeX style.
+\bibliography{references}
+
+\end{document}

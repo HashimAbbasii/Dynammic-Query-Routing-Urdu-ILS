@@ -1,0 +1,261 @@
+{
+  "summaries": {
+    "A_n78_dev_internal_val": {
+      "n": 78,
+      "scripts": {
+        "URDU": 46,
+        "ROMAN": 23,
+        "MIXED": 9
+      },
+      "mean_cov": 0.481,
+      "median_cov": 0.5714,
+      "pct_cov_ge_0.5": 58.97,
+      "pct_cov_eq_0": 28.21,
+      "mean_jaccard": 0.3661,
+      "mean_char_bigram_jaccard": 0.3797,
+      "mean_tokens": 10.5128,
+      "pct_acronym": 0.0,
+      "creation_methods": {
+        "why": 8,
+        "title_short": 10,
+        "lead": 9,
+        "title_roman": 23,
+        "how": 9,
+        "effects": 10,
+        "mixed_short": 9
+      }
+    },
+    "A_n78_dev_internal_val__ROMAN": {
+      "n": 23,
+      "scripts": {
+        "ROMAN": 23
+      },
+      "mean_cov": 0.0036,
+      "median_cov": 0.0,
+      "pct_cov_ge_0.5": 0.0,
+      "pct_cov_eq_0": 95.65,
+      "mean_jaccard": 0.0017,
+      "mean_char_bigram_jaccard": 0.001,
+      "mean_tokens": 10.3043,
+      "pct_acronym": 0.0,
+      "creation_methods": {
+        "title_roman": 23
+      }
+    },
+    "A_n78_dev_internal_val__URDU": {
+      "n": 46,
+      "scripts": {
+        "URDU": 46
+      },
+      "mean_cov": 0.7035,
+      "median_cov": 0.8182,
+      "pct_cov_ge_0.5": 80.43,
+      "pct_cov_eq_0": 0.0,
+      "mean_jaccard": 0.5628,
+      "mean_char_bigram_jaccard": 0.595,
+      "mean_tokens": 11.3043,
+      "pct_acronym": 0.0,
+      "creation_methods": {
+        "why": 8,
+        "title_short": 10,
+        "lead": 9,
+        "how": 9,
+        "effects": 10
+      }
+    },
+    "A_n78_dev_internal_val__MIXED": {
+      "n": 9,
+      "scripts": {
+        "MIXED": 9
+      },
+      "mean_cov": 0.5635,
+      "median_cov": 0.5714,
+      "pct_cov_ge_0.5": 100.0,
+      "pct_cov_eq_0": 0.0,
+      "mean_jaccard": 0.2923,
+      "mean_char_bigram_jaccard": 0.2474,
+      "mean_tokens": 7.0,
+      "pct_acronym": 0.0,
+      "creation_methods": {
+        "mixed_short": 9
+      }
+    },
+    "B_K001_K040": {
+      "n": 40,
+      "scripts": {
+        "URDU": 28,
+        "ROMAN": 12
+      },
+      "mean_cov": 0.6928,
+      "median_cov": 1.0,
+      "pct_cov_ge_0.5": 70.0,
+      "pct_cov_eq_0": 27.5,
+      "mean_jaccard": 0.5653,
+      "mean_char_bigram_jaccard": 0.5812,
+      "mean_tokens": 8.85,
+      "pct_acronym": 2.5,
+      "creation_methods": {
+        "title-like shorten of headline": 21,
+        "title-like from headline": 6,
+        "title-like": 1,
+        "ordinary Roman Urdu of headline": 11,
+        "ordinary Roman Urdu": 1
+      }
+    },
+    "B_K001_K040__ROMAN": {
+      "n": 12,
+      "scripts": {
+        "ROMAN": 12
+      },
+      "mean_cov": 0.006,
+      "median_cov": 0.0,
+      "pct_cov_ge_0.5": 0.0,
+      "pct_cov_eq_0": 91.67,
+      "mean_jaccard": 0.0031,
+      "mean_char_bigram_jaccard": 0.0009,
+      "mean_tokens": 10.1667,
+      "pct_acronym": 8.33,
+      "creation_methods": {
+        "ordinary Roman Urdu of headline": 11,
+        "ordinary Roman Urdu": 1
+      }
+    },
+    "B_K001_K040__URDU": {
+      "n": 28,
+      "scripts": {
+        "URDU": 28
+      },
+      "mean_cov": 0.9872,
+      "median_cov": 1.0,
+      "pct_cov_ge_0.5": 100.0,
+      "pct_cov_eq_0": 0.0,
+      "mean_jaccard": 0.8063,
+      "mean_char_bigram_jaccard": 0.8299,
+      "mean_tokens": 8.2857,
+      "pct_acronym": 0.0,
+      "creation_methods": {
+        "title-like shorten of headline": 21,
+        "title-like from headline": 6,
+        "title-like": 1
+      }
+    },
+    "C_U001_U040": {
+      "n": 40,
+      "scripts": {
+        "URDU": 18,
+        "ROMAN": 18,
+        "MIXED": 4
+      },
+      "mean_cov": null,
+      "median_cov": null,
+      "pct_cov_ge_0.5": null,
+      "pct_cov_eq_0": null,
+      "mean_jaccard": null,
+      "mean_char_bigram_jaccard": null,
+      "mean_tokens": 8.6,
+      "pct_acronym": 5.0,
+      "creation_methods": {
+        "human_naturalistic": 40
+      }
+    },
+    "D_programB_roman_kn_n80": {
+      "n": 80,
+      "scripts": {
+        "ROMAN": 80
+      },
+      "mean_cov": 0.0022,
+      "median_cov": 0.0,
+      "pct_cov_ge_0.5": 0.0,
+      "pct_cov_eq_0": 97.5,
+      "mean_jaccard": 0.0011,
+      "mean_char_bigram_jaccard": 0.0005,
+      "mean_tokens": 12.175,
+      "pct_acronym": 15.0,
+      "creation_methods": {
+        "W1": 51,
+        "LLM1": 29
+      }
+    },
+    "D_programB_roman_kn_n80__ROMAN": {
+      "n": 80,
+      "scripts": {
+        "ROMAN": 80
+      },
+      "mean_cov": 0.0022,
+      "median_cov": 0.0,
+      "pct_cov_ge_0.5": 0.0,
+      "pct_cov_eq_0": 97.5,
+      "mean_jaccard": 0.0011,
+      "mean_char_bigram_jaccard": 0.0005,
+      "mean_tokens": 12.175,
+      "pct_acronym": 15.0,
+      "creation_methods": {
+        "W1": 51,
+        "LLM1": 29
+      }
+    }
+  },
+  "hypotheses": {
+    "H1_dev_higher_lexical_overlap": {
+      "A_all_mean_cov": 0.481,
+      "A_roman_mean_cov": 0.0036,
+      "K_all_mean_cov": 0.6928,
+      "K_roman_mean_cov": 0.006,
+      "D_roman_mean_cov": 0.0022,
+      "A_roman_pct_cov_ge_0.5": 0.0,
+      "K_roman_pct_cov_ge_0.5": 0.0,
+      "D_roman_pct_cov_ge_0.5": 0.0,
+      "A_roman_pct_cov_0": 95.65,
+      "D_roman_pct_cov_0": 97.5,
+      "interpretation": "If A Roman mean coverage >> D Roman, H1 supported: 87% pool is title-lexical; hard Roman KN is low-overlap."
+    },
+    "H10_benchmark_construction": {
+      "A_creation_methods": {
+        "why": 8,
+        "title_short": 10,
+        "lead": 9,
+        "title_roman": 23,
+        "how": 9,
+        "effects": 10,
+        "mixed_short": 9
+      },
+      "K_creation_methods": {
+        "title-like shorten of headline": 21,
+        "title-like from headline": 6,
+        "title-like": 1,
+        "ordinary Roman Urdu of headline": 11,
+        "ordinary Roman Urdu": 1
+      },
+      "D_writers": {
+        "W1": 51,
+        "LLM1": 29
+      },
+      "D_headline_overlap_meta_zero_or_empty": 78,
+      "note": "A=title-derived QTRN; K=title-like/ordinary Roman of headline; D=naturalistic Roman with ~0 headline_overlap meta"
+    },
+    "D_failure_levels": {
+      "LEVEL4_RANKING": 21,
+      "LEVEL2_BRIDGING_AND_LEVEL3_CG": 27,
+      "SUCCESS": 28,
+      "LEVEL3_CANDIDATE_GENERATION": 1,
+      "LEVEL1_OR_2_SCRIPT_REPRESENTATION": 3
+    },
+    "D_failure_mechanisms_among_LEVEL3": {
+      "entity_name_heterogeneous": 18,
+      "institutional_alias_bridge": 6,
+      "other": 1,
+      "vocabulary_mismatch": 1,
+      "semantic_paraphrase_bridge": 2
+    },
+    "official_hit5_reference_not_recomputed": {
+      "A_overall": "68/78=87.18%",
+      "A_roman_methodD": "22/23 from DEVELOPMENT_RESULTS",
+      "K_overall": "27/40=67.50%",
+      "K_roman": "1/12 from Program A manuscript narrative",
+      "K_urdu": "26/28 from Program A manuscript narrative",
+      "U_success5": "23/40=57.50% (not ExactSource)",
+      "D_dense": "20/80",
+      "D_bnd_ceiling": "49/80"
+    }
+  }
+}
