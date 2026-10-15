@@ -131,14 +131,19 @@ def length_report(lengths) -> dict:
     arr = np.asarray(lengths)
     return {
         "n": int(arr.size),
+        "mean": float(arr.mean()) if arr.size else None,
+        "sum": int(arr.astype(np.int64).sum()),
         "p50": float(np.percentile(arr, 50)),
         "p90": float(np.percentile(arr, 90)),
         "p99": float(np.percentile(arr, 99)),
+        "p99_9": float(np.percentile(arr, 99.9)) if arr.size else None,
         "max": int(arr.max()) if arr.size else None,
         "min": int(arr.min()) if arr.size else None,
         "gt_512": int((arr > 512).sum()),
         "gt_1024": int((arr > 1024).sum()),
         "gt_2048": int((arr > 2048).sum()),
+        "gt_4096": int((arr > 4096).sum()),
+        "gt_8192": int((arr > 8192).sum()),
         "gt_candidate_max_length": int((arr > CANDIDATE_MAX_LENGTH).sum()),
         "percentile_definition": "numpy.percentile default (linear)",
         "add_special_tokens": True,
@@ -349,6 +354,8 @@ def main() -> None:
     print("loading model in fp16 on cuda", flush=True)
     model, load_info = load_model_fp16(local_dir, torch)
 
+    # sentence-transformers sorts by length inside encode(); the hours estimate
+    # is linear in document count and excludes model load and the token census.
     torch.cuda.reset_peak_memory_stats()
     torch.cuda.synchronize()
     t0 = time.perf_counter()
@@ -363,12 +370,30 @@ def main() -> None:
     encode_seconds = time.perf_counter() - t0
 
     import numpy as np
+    import huggingface_hub
+    import pandas
+    import sentence_transformers
+    import transformers
 
     arr = np.asarray(emb)
     if arr.shape != (SAMPLE_N, EXPECTED_DIM):
         raise SystemExit("BLOCKED - embedding shape %s != (%s, %s)" % (arr.shape, SAMPLE_N, EXPECTED_DIM))
     norms = np.linalg.norm(arr.astype(np.float32), axis=1)
     hours = (encode_seconds / SAMPLE_N) * EXPECTED_N_DOCS / 3600.0
+    longest_order = np.argsort(-full_lengths, kind="mergesort")[:5]
+    longest_5 = [
+        {"row_index": int(i), "token_length": int(full_lengths[i])}
+        for i in longest_order
+    ]
+    package_versions = {
+        "torch": torch.__version__,
+        "transformers": transformers.__version__,
+        "sentence_transformers": sentence_transformers.__version__,
+        "huggingface_hub": huggingface_hub.__version__,
+        "pandas": pandas.__version__,
+        "numpy": np.__version__,
+        "cuda": torch.version.cuda,
+    }
 
     summary = {
         "experiment": "phase15-step1-pilot",
@@ -387,6 +412,8 @@ def main() -> None:
         "sample_n": SAMPLE_N,
         "sample_index": sample_index,
         "python": sys.version,
+        "package_versions": package_versions,
+        "longest_5_full_corpus": longest_5,
         "candidate_max_length": CANDIDATE_MAX_LENGTH,
         "candidate_max_length_source": "sentence_bert_config.json max_seq_length; config.json max_position_embeddings",
         "candidate_batch_size": CANDIDATE_BATCH_SIZE,
